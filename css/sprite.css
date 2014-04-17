@@ -1,0 +1,102 @@
+.arrow-bottom {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 25px;
+  height: 16px;
+}
+.arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -53px;
+  width: 11px;
+  height: 17px;
+}
+.arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -26px;
+  width: 11px;
+  height: 17px;
+}
+.arrow-right_gray {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -237px;
+  width: 16px;
+  height: 25px;
+}
+.arrow-right_lg {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -272px;
+  width: 16px;
+  height: 25px;
+}
+.barselona {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -109px;
+  width: 21px;
+  height: 22px;
+}
+.channels {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -425px;
+  width: 31px;
+  height: 31px;
+}
+.channels_blue {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -80px;
+  width: 18px;
+  height: 19px;
+}
+.competitions {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -385px;
+  width: 30px;
+  height: 30px;
+}
+.germany {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -173px;
+  width: 30px;
+  height: 22px;
+}
+.logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -588px;
+  width: 181px;
+  height: 90px;
+}
+.matches {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -466px;
+  width: 34px;
+  height: 34px;
+}
+.navbar-toggle {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -345px;
+  width: 37px;
+  height: 30px;
+}
+.real {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -205px;
+  width: 13px;
+  height: 22px;
+}
+.search-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -510px;
+  width: 30px;
+  height: 68px;
+}
+.spain {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -141px;
+  width: 30px;
+  height: 22px;
+}
+.teams {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -307px;
+  width: 34px;
+  height: 28px;
+}
