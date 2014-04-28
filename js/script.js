@@ -1,6 +1,6 @@
 $(window).load(function() {
     var wh = $(window).height();
-    var dwh = wh - 100;
+    var dwh = wh - 90;
     $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
@@ -11,7 +11,7 @@ $(window).load(function() {
         $('.navbar-collapse').css('max-height', dwh + 'px');
     });
 
-    $('.navbar_calendar_link').on('click', function(){
+    $('.open-calendar').on('click', function(){
         $('.b_calendar').toggle();
     });
 
