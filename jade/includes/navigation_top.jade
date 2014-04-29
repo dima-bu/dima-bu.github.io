@@ -1,0 +1,16 @@
+mixin navigation_top(title)
+    .navbar-header
+         button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+         h1 #{title} 
+    .navbar-collapse.collapse.col-xs-12     
+        ul.nav.navbar-nav
+            li.first
+                a.logo( href="#")
+            li.active
+                a(href="matches.html")
+                    i.matches.icon
+                    | Matches
+                    i.icon.arrow-right_lg.flr
+            <li><a href="competitions.html"><i class="competitions icon"></i>Competitions<i class="icon arrow-right_lg flr"></i></a></li>
+            <li><a href="teams.html"><i class="teams icon"></i>Teams<i class="icon arrow-right_lg flr"></i></a></li>
+            <li><a href="channels.html"><i class="channels icon"></i>Channels<i class="icon arrow-right_lg flr"></i></a></li>

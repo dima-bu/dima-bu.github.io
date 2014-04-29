@@ -1,0 +1,16 @@
+mixin b_statline(statlinename, number1, persent1, number2, persent2)
+    .b_statline.b_normal_line.col-xs-12.b_trim
+        .row
+            .fll.b_statline_left
+                span.b_statline_number #{number1}
+                .clearfix.b_statline_persentline.-left
+                    .b_statline_persentline_inner
+                        div(class="flr" style="width: #{persent1}; ")
+            .fll.b_statline_center #{statlinename}
+
+            .fll.b_statline_right
+                .clearfix.b_statline_persentline.-right
+                    .b_statline_persentline_inner
+                        div(class="fll" style="width: #{persent2}; ")
+                span.b_statline_number #{number2}
+

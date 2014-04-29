@@ -1,0 +1,14 @@
+mixin b_channel(imglink, channelname, count, channellink)
+    .b_channel.col-xs-12
+        .row
+            .fll.b_channel_logo 
+                a(href="#{channellink}")
+                    <img src="files/#{imglink}"/>
+            .fll.b_channel_name
+                 a(href="#{channellink}")  #{channelname}
+
+            .b_row_left-link.-mod.flr
+                 a(href="#{channellink}")
+                        i.icon.arrow-right_gray
+             .b_channel_count.flr  #{count}
+             a(href="#" class="b_all-link")

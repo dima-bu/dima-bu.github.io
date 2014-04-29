@@ -1,0 +1,11 @@
+mixin b_league_accordion(class1, imglink, leaguename, leaguelink, accordionid, leftlinkicon, mod1)
+    div(class="b_league #{class1}")
+        .clearfix.b_trim
+            a(href="#{leaguelink}" data-toggle="collapse" data-parent="#{accordionid}" class="collapsed" )
+                span.fll.b_league_logo
+                    if imglink
+                        <img src="files/#{imglink}" />
+                span.fll.b_league_name.b_trim_inner
+                    | #{leaguename}
+                span(class="flr b_row_left-link #{mod1}")
+                    i(class="icon #{leftlinkicon} ")

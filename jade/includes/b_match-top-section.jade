@@ -1,0 +1,31 @@
+mixin b_match-top-section(team1, logo1, teamnuber1, team2,  logo2, teamnuber2, score, time, min)
+    .b_match-top-section.col-xs-12
+       .row
+            .col-xs-5.b-match-top-section_team.b-match-top-section_col
+                h2
+                    a(href="#") #{team1}
+            .col-xs-5.col-xs-offset-2.b-match-top-section_team.b-match-top-section_col
+                h2
+                    a(href="#") #{team2}
+       .row
+            .col-xs-10.col-xs-offset-1
+                .row
+                    .col-xs-4.b-match-top-section_team.b-match-top-section_col
+                        .b-match-top-section_team_logo
+                            a(href="#")
+                                img(src="files/#{logo1}")
+                            .b-match-top-section_team_number
+                                a(href="#") #{teamnuber1}
+                    .col-xs-4.b-match-top-section_score.b-match-top-section_col
+                        h2 #{score}
+                        if min
+                            .b-match-top-section_min-btn.clearfix
+                                span(class="timer icon")
+                                span.b-match-top-section_min #{min}'
+                        .b-match-top-section_score_time #{time}
+                    .col-xs-4.b-match-top-section_team.b-match-top-section_col
+                        .b-match-top-section_team_logo
+                            a(href="#")
+                                img(src="files/#{logo2}")
+                            .b-match-top-section_team_number.-right
+                                a(href="#") #{teamnuber2}

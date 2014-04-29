@@ -1,0 +1,191 @@
+
+.b_league {
+  font-size: 33px;
+  line-height: 40px;
+  color: @gray-dark;
+  border-bottom: 1px solid @gray;
+  position: relative;
+
+  .collapsed {
+    .b_row_left-link {
+      i.arrow-bottom {
+        background-position: 0 -231px;
+        width: 16px;
+        height: 25px;
+      }
+      i.arrow-bottom_gray {
+        background-position: 0 -336px;
+        width: 16px;
+        height: 25px;
+      }
+    }
+  }
+
+  &:last-child {
+    border-bottom: 0 none;
+  }
+
+  &.-bell {
+    .b_league_name {
+      padding-left: 150px;
+      margin-left: -150px;
+    }
+  }
+
+  &.-low {
+    .b_league_logo {
+      height: @row-h_low;
+      line-height: @row-h_low;
+    }
+
+    .b_league_name {
+      padding-top: 16px;
+      height: @row-h_low;
+    }
+
+    .b_row_left-link {
+      height: @row-h_low;
+      line-height: @row-h_low;
+    }
+
+    .b_all-link {
+      height: @row-h_low;
+    }
+  }
+
+  &.-blue-bg {
+    background-color: @darker-blue;
+    color: @second-text-color;
+    border-bottom: 0 none;
+    .b_league_name {
+      a {
+        color: @second-text-color;
+      }
+    }
+  }
+
+  &.-accordion {
+    .b_league_logo {
+      width: 110px;
+      font-size: 0;
+      img {
+        padding-right: 20px;
+      }
+    }
+
+    .b_league_name {
+      margin-left: -110px;
+      padding-left: 110px;
+      a {
+        display: block;
+        width: 100%;
+      }
+    }
+    .b_row_left-link {
+      width: 80px;
+      text-align: center;
+    }
+  }
+
+  &.-level2-padding {
+
+    .b_league_logo {
+      width: 110px;
+    }
+
+    .b_league_name {
+      margin-left: -110px;
+      padding-left: 110px;
+    }
+
+  }
+
+  &.-level2-padding-mod {
+
+    .b_league_logo {
+      width: 130px;
+    }
+
+    .b_league_name {
+      margin-left: -130px;
+      padding-left: 130px;
+    }
+
+  }
+
+  &.-level3-padding {
+    .b_league_name {
+      margin-left: -170px;
+      padding-left: 170px;
+    }
+    .b_league_logo {
+      width: 170px;
+    }
+  }
+
+  &.-level4-padding {
+    .b_league_name {
+      margin-left: -150px;
+      padding-left: 150px;
+    }
+    .b_league_logo {
+      width: 150px;
+    }
+  }
+
+  &.-light-blue-bg {
+    border-bottom-color:#fff;
+  }
+
+}
+
+.b_league_logo, .b_league_name, .b_all-link {
+  height: @row-h_low;
+}
+
+.b_league_logo {
+  line-height: @row-h;
+  text-align: center;
+  width: 90px;
+  a {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    font-size: 0;
+    vertical-align: top;
+  }
+}
+
+.b_league_bell {
+  width: 60px;
+  text-align: right;
+  height: @row-h;
+  line-height: @row-h;
+  a {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    font-size: 0;
+    vertical-align: top;
+    i {
+      vertical-align: middle;
+    }
+  }
+}
+
+
+
+.b_league_name {
+  padding-top: 25px;
+  a {
+    text-decoration: none;
+    color: @gray-dark;
+    padding-left: 20px;
+  }
+  &.b_trim_inner {
+    margin-right: -80px;
+    padding-right: 80px;
+    margin-left: -90px;
+    padding-left: 90px;
+  }
+}
