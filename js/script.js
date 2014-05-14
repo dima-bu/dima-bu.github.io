@@ -28,7 +28,6 @@ $('.b_calendar_wrapper').on('click', '.b_calendar_header a',  function() {
 });
 
 $(document).ready(function() {
-
     // lets push in a viewport
     var insc = (screen.width>=768)?'1.0':'0.5';
     $('head').prepend('<meta name="viewport" content="width=device-width, initial-scale='+insc+', user-scalable=yes" />');
