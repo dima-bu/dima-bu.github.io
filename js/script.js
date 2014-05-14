@@ -15,6 +15,10 @@ $(window).load(function() {
         $('.b_calendar').toggle();
     });
 
+    $('.settings').on('click', function(){
+        $('.b_settings_bubble').toggle();
+    });
+
 });
 
 $('.match-wrapper').on('click', '.navbar-bottom a',  function() {
