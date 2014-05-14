@@ -1,12 +1,13 @@
 $(window).load(function() {
     var wh = $(window).height();
     var wsh = window.screen.height;
+    var wsw = window.screen.width;
     var ww = $(window).width();
 
 
-    var dwh = wsh-90;
+    var dwh = 530;
 
-    alert('ww='+ww+'wh='+wh+'wsh='+wsh);
+    alert('ww='+ww+'wh='+wh+'wsh='+wsh+'wsw='+wsw);
     $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
