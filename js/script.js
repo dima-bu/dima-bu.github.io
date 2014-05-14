@@ -26,3 +26,11 @@ $('.b_calendar_wrapper').on('click', '.b_calendar_header a',  function() {
     var address1=$(this).attr('id');
     $('.b_calendar_wrapper').load("monthes.html .b_calendar#"+address1);
 });
+
+$(document).ready(function() {
+
+    // lets push in a viewport
+    var vpw = (screen.width>=768)?'980':'device-width';
+    $('head').prepend('<meta name="viewport" content="width='+vpw+'" />');
+
+});
