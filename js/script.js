@@ -9,8 +9,8 @@ $(window).load(function() {
 
     var dwh = (screen.width>=768)?wh-90:wsh+20;
 
-    alert('ww='+ww+'wh='+wh+'wsh='+wsh+'wsw='+wsh);
-    $('.navbar-collapse').css('max-height', dwh + 'px');
+//    alert('ww='+ww+'wh='+wh+'wsh='+wsh+'wsw='+wsh);
+//    $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
     $(window).resize(function() {
@@ -19,7 +19,7 @@ $(window).load(function() {
         var dh = $(document).height();
         var wsh = window.screen.height;
         var dwh = wh-90;
-        $('.navbar-collapse').css('max-height', dwh + 'px');
+//        $('.navbar-collapse').css('max-height', dwh + 'px');
     });
 
     $('.open-calendar').on('click', function(){
