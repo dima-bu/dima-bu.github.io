@@ -1,13 +1,11 @@
 $(window).load(function() {
     var wh = $(window).height();
     var wsh = window.screen.height;
-    var wsw = window.screen.width;
     var ww = $(window).width();
 
+    var dwh = wsh;
 
-    var dwh = 530;
-
-    alert('ww='+ww+'wh='+wh+'wsh='+wsh+'wsw='+wsw);
+    alert('ww='+ww+'wh='+wh+'wsh='+wsh+'wsw='+wsh);
     $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
@@ -16,7 +14,7 @@ $(window).load(function() {
         var woH = $(window).outerHeight();
         var dh = $(document).height();
         var wsh = window.screen.height;
-        var dwh = wsh - 90;
+        var dwh = wsh;
         $('.navbar-collapse').css('max-height', dwh + 'px');
     });
 
