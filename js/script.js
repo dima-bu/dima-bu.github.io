@@ -1,20 +1,21 @@
 $(window).load(function() {
     var wh = $(window).height();
-    var wh = $(window).height();
+    var woH = $(window).outerHeight();
     var dh = $(document).height();
     var ww = $(window).width();
 
 
-    var dwh = dh - 90;
+    var dwh = wh - 90;
 
-    alert('ww='+ww+'wh='+wh+'dh='+dh);
+    alert('ww='+ww+'wh='+wh+'dh='+dh,'woH='+woH);
     $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
     $(window).resize(function() {
         var wh = $(window).height();
+        var woH = $(window).outerHeight();
         var dh = $(document).height();
-        var dwh = dh - 90;
+        var dwh = wh - 90;
         $('.navbar-collapse').css('max-height', dwh + 'px');
     });
 
