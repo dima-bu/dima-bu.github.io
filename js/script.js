@@ -7,7 +7,7 @@ $(window).load(function() {
 
     var dwh = wh - 90;
 
-    alert('ww='+ww+'wh='+wh+'dh='+dh, );
+    alert('ww='+ww+'wh='+wh+'dh='+dh);
     $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
