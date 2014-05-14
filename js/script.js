@@ -31,6 +31,6 @@ $(document).ready(function() {
 
     // lets push in a viewport
     var vpw = (screen.width>=768)?'980':'device-width';
-    $('head').prepend('<meta name="viewport" content="width='+vpw+'" />');
+    $('head').prepend('<meta name="viewport" content="width='+vpw+', initial-scale=1.0, user-scalable=yes" />');
 
 });
