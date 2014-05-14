@@ -4,7 +4,7 @@ $(window).load(function() {
     var ww = $(window).width();
 
 
-    var dwh = wh-90;
+    var dwh = wsh-90;
 
     alert('ww='+ww+'wh='+wh+'wsh='+wsh);
     $('.navbar-collapse').css('max-height', dwh + 'px');
@@ -14,7 +14,8 @@ $(window).load(function() {
         var wh = $(window).height();
         var woH = $(window).outerHeight();
         var dh = $(document).height();
-        var dwh = wh - 90;
+        var wsh = window.screen.height;
+        var dwh = wsh - 90;
         $('.navbar-collapse').css('max-height', dwh + 'px');
     });
 
