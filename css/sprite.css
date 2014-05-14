@@ -12,49 +12,49 @@
 }
 .arrow-left {
   background-image: url(../img/sprite.png);
-  background-position: 0px -79px;
+  background-position: 0px -52px;
   width: 11px;
   height: 17px;
 }
 .arrow-left_full {
   background-image: url(../img/sprite.png);
-  background-position: 0px -197px;
+  background-position: 0px -163px;
   width: 21px;
   height: 24px;
 }
 .arrow-left_lg {
   background-image: url(../img/sprite.png);
-  background-position: 0px -301px;
+  background-position: 0px -266px;
   width: 16px;
   height: 25px;
 }
 .arrow-right {
   background-image: url(../img/sprite.png);
-  background-position: 0px -52px;
+  background-position: 0px -79px;
   width: 11px;
   height: 17px;
 }
 .arrow-right_full {
   background-image: url(../img/sprite.png);
-  background-position: 0px -163px;
+  background-position: 0px -197px;
   width: 21px;
   height: 24px;
 }
 .arrow-right_gray {
   background-image: url(../img/sprite.png);
-  background-position: 0px -336px;
+  background-position: 0px -231px;
   width: 16px;
   height: 25px;
 }
 .arrow-right_lg {
   background-image: url(../img/sprite.png);
-  background-position: 0px -231px;
+  background-position: 0px -336px;
   width: 16px;
   height: 25px;
 }
 .blue-bell {
   background-image: url(../img/sprite.png);
-  background-position: 0px -688px;
+  background-position: 0px -606px;
   width: 29px;
   height: 31px;
 }
@@ -66,7 +66,7 @@
 }
 .channels {
   background-image: url(../img/sprite.png);
-  background-position: 0px -647px;
+  background-position: 0px -688px;
   width: 31px;
   height: 31px;
 }
@@ -78,7 +78,7 @@
 }
 .competitions {
   background-image: url(../img/sprite.png);
-  background-position: 0px -446px;
+  background-position: 0px -486px;
   width: 30px;
   height: 30px;
 }
@@ -90,19 +90,19 @@
 }
 .gray-bell {
   background-image: url(../img/sprite.png);
-  background-position: 0px -606px;
+  background-position: 0px -647px;
   width: 29px;
   height: 31px;
 }
 .international_btn {
   background-image: url(../img/sprite.png);
-  background-position: 0px -961px;
+  background-position: 0px -1011px;
   width: 44px;
   height: 44px;
 }
 .logo {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1093px;
+  background-position: 0px -1143px;
   width: 181px;
   height: 90px;
 }
@@ -132,19 +132,25 @@
 }
 .replacement {
   background-image: url(../img/sprite.png);
-  background-position: 0px -266px;
+  background-position: 0px -301px;
   width: 32px;
   height: 25px;
 }
 .search-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1015px;
+  background-position: 0px -1065px;
   width: 30px;
   height: 68px;
 }
-.stream-btn {
+.settings {
   background-image: url(../img/sprite.png);
   background-position: 0px -908px;
+  width: 40px;
+  height: 40px;
+}
+.stream-btn {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -958px;
   width: 115px;
   height: 43px;
 }
@@ -162,7 +168,7 @@
 }
 .yellow-card {
   background-image: url(../img/sprite.png);
-  background-position: 0px -486px;
+  background-position: 0px -446px;
   width: 20px;
   height: 30px;
 }
