@@ -1,8 +1,13 @@
 $(window).load(function() {
     var wh = $(window).height();
-    var dwh = wh - 90;
-    $('.navbar-collapse').css('max-height', dwh + 'px');
+    var ww = $(window).width();
 
+
+
+    var dwh = wh - 90;
+
+    alert('ww='+ww+'wh='+wh+'dwh='+dwh);
+    $('.navbar-collapse').css('max-height', dwh + 'px');
 
 
     $(window).resize(function() {
