@@ -15,7 +15,7 @@ $(window).load(function() {
         $('.b_calendar').toggle();
     });
 
-    $('.settings').on('click', function(){
+    $('.navbar_cal_settings').on('click', function(){
         $('.b_settings_bubble').toggle();
     });
 
