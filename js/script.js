@@ -26,6 +26,11 @@ $(window).load(function() {
         $('.b_calendar').toggle();
     });
 
+    $('.navbar-toggle').on('click', function(){
+        $('html, body').animate({scrollTop:0}, 'fast');
+    });
+
+
     $('.navbar_cal_settings').on('click', function(){
         $('.b_settings_bubble').toggle();
     });
