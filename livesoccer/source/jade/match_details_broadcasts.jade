@@ -1,0 +1,44 @@
+include includes/b_league
+include includes/navigation_top
+include includes/navigation_menu
+include includes/navigation_bottom_id
+include includes/b_match-top-section
+include includes/b_broadcast
+include includes/b_blue-title
+
+doctype html
+html(class="no-js")
+    include includes/head
+    body.nav-top
+        +navigation_menu
+        .navbar.navbar-inverse.navbar-fixed-top.navbar-main(role="navigation")    
+            +navigation_top('Match Details')
+        .main-content
+            +b_league('-low -blue-bg', 'spain_lg.png', 'Primera Division' , 'comp_matches.html')
+            +b_match-top-section('Real Madrid','real_lg.png', '#12', 'Atletico Madrid', 'atletico_lg.png', '#1', '2 : 3', '21 May - 7:30pm', '65')
+            .match-wrapper
+                #match-broadcasts
+                    .navbar-inverse.clearfix
+                        +navigation_bottom_id('Lineups','lineups', 'Broadcasts', 'broadcasts', 'Stats', 'stats')
+                    include includes/content/match_details-broadcasts-content.jade
+        include includes/footer-script              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

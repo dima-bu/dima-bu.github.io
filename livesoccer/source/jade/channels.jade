@@ -1,0 +1,41 @@
+include includes/b_channel
+include includes/navigation_top
+include includes/navigation_menu
+
+doctype html
+html(class="no-js")
+    include includes/head
+    body.nav-top.nav-top_padding.clearfix
+        +navigation_menu
+        .navbar.navbar-inverse.navbar-fixed-top.navbar-main(role="navigation")    
+            +navigation_top('Channels')
+        .main-content
+            include includes/content/channels-content.jade
+        include includes/footer-script              
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+mixin b_match_high(status, flagcountry, statusword, time, command1, command2, count1, count2, command1img, command2img, channel1, channel2, linkmod)
+    div(class="b_match b_match_#{status} col-xs-12")
+        .row
+            .fll.b_match_info
+                .b_match_info_inner
+                    .b_match_info-elem-wrapper
+                        .b_match_flag.b_match_info-elem
+                            if flagcountry
+                                img(src="files/#{flagcountry}")
+                        .b_match_time.b_match_info-elem
+                            | #{time}
+                            if statusword == 'LIVE'
+                                span.g-blink '
+                        .b_match_status.b_match_info-elem  #{statusword}
+            .fll.b_match_teams 
+                .b_match_team
+                    div.icon_wrapper
+                        if command1img
+                            img(src="files/#{command1img}")
+                    span #{command1}
+                .b_match_team
+                    div.icon_wrapper
+                         if command2img
+                            img(src="files/#{command2img}")
+                    span #{command2}
+                .b_match_channel
+                    .icon_wrapper
+                        i.channels_blue.icon 
+                    div.b_match_channel_links    
+                        a(href="channel.html") #{channel1},
+                        a(href="channel.html") #{channel2}
+            div(class="flr b_row_left-link #{linkmod}")
+                  a(href="#")
+                        i.icon.arrow-right_gray
+            .flr.b_match_counts
+                .b_match_count #{count1}
+                .b_match_count #{count2}
+        a(class="b_match_all-link" href="match_details_broadcasts.html")

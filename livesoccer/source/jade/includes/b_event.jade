@@ -1,0 +1,38 @@
+mixin b_event(side, eventbtn, minute, player1, player2)
+    .b_event.col-xs-12.b_trim
+        .clearfix
+            if side=='left'
+                .b_event-left-side.b_event_col.fll.b_trim_inner
+                    if eventbtn=='replacement'
+                        span.b_event_replacement.b_event_player.-left
+                            span.green #{player1}
+                            br
+                            span.red #{player2}
+                        span.icon-wrapper
+                            i(class="#{eventbtn} icon")
+                    else
+                        span.b_event_player #{player1}
+                        span.icon-wrapper
+                            i(class="#{eventbtn} icon")
+                .b_event-center-side.b_event_col.fll
+                    .b_event-center-side_inner
+                        span #{minute}'
+                .b_event-right-side.b_event_col.fll
+            else
+                .b_event-left-side.b_event_col.fll
+                    span.b_eye-hidden 1
+                .b_event-center-side.b_event_col.fll
+                    .b_event-center-side_inner
+                        span #{minute}'
+                .b_event-right-side.b_event_col.fll.b_trim_inner
+                    if eventbtn=='replacement'
+                        span.icon-wrapper
+                            i(class="#{eventbtn} icon")
+                        span.b_event_replacement.b_event_player
+                            span.green #{player1}
+                            br
+                            span.red #{player2}
+                    else
+                        span.icon-wrapper
+                            i(class="#{eventbtn} icon")
+                        span.b_event_player #{player1}

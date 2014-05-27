@@ -1,0 +1,44 @@
+include includes/b_match
+include includes/navigation_top
+include includes/navigation_menu
+include includes/navigation_bottom 
+include includes/b_match_high
+
+doctype html
+html(class="no-js")
+    include includes/head
+    body.nav-top_padding_minus-padding
+        +navigation_menu
+        .navbar.navbar-inverse.navbar-fixed-top.navbar-main(role="navigation")    
+            +navigation_top('beIN Sports USA') 
+            +navigation_bottom('hidden','', 'All Matches', '#', 'Live only', '#')
+        .main-content
+            include includes/content/channel-content.jade
+        include includes/footer-script              
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

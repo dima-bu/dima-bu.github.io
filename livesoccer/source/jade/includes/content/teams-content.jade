@@ -1,0 +1,39 @@
+.b_panel-simple
+    .b_panel-simple_heading
+        a(data-toggle="collapse"  href="#collapseOne" class="collapsed")
+            |Popular Teams
+            i.arrow-bottom.icon.flr
+    #collapseOne.panel-collapse.clearfix.collapse
+        +b_league('', 'germany.png', 'Bayern Munchen', 'comp_matches.html', '')
+        +b_league('', 'spain.png', 'Barselona', 'comp_matches.html', '')
+        +b_league('', 'england.png', 'Arsenal', 'comp_matches.html', '')
+.b_panel-simple
+    .b_panel-simple_heading
+        a(data-toggle="collapse"  href="#collapseTwo" class="collapsed")
+            |All Teams
+            i.arrow-bottom.icon.flr
+    #collapseTwo.panel-collapse.clearfix.collapse
+        .b_panel-simple
+            +b_league_accordion('-light-blue-bg -accordion', 'england.png', 'England' , '#tcollapseOne', '', 'arrow-bottom', '-mod3', 'collapsed')
+            #tcollapseOne.panel-collapse.clearfix.collapse
+                +b_league('-level2-padding', 'england.png', 'England National Team', 'comp_matches.html', '')
+                .b_panel-simple
+                    +b_league_accordion('-lighter-blue-bg -accordion -level2-padding-mod', '', 'Premier League' , '#ttcollapseOne', '', 'arrow-bottom_gray', '-mod3', 'collapsed' )
+                    #ttcollapseOne.panel-collapse.clearfix.collapse
+                        +b_league('-level4-padding -low', '', 'Arsenal', 'comp_matches.html', '')
+                        +b_league('-level4-padding -low', '', 'Chelsea', 'comp_matches.html', '')
+                        +b_league('-level4-padding -gray-border-bottom -low', '', 'Chelsea', 'comp_matches.html', '')
+                .b_panel-simple
+                    +b_league_accordion('-lighter-blue-bg -accordion -level2-padding-mod ', '', 'Championship' , '#ttcollapseTwo', '', 'arrow-bottom_gray', '-mod3','collapsed')
+                    #ttcollapseTwo.panel-collapse.clearfix.collapse
+                        +b_league('-level4-padding -low', '', 'Arsenal', 'comp_matches.html', '')
+                        +b_league('-level4-padding -low', '', 'Manchester City', 'comp_matches.html', '')
+                        +b_league('-level4-padding -low', '', 'Chelsea', 'comp_matches.html', '')
+        .b_panel-simple
+            +b_league_accordion('-light-blue-bg -accordion', 'angola.png', 'Angola' , '#tcollapseTwo', '', 'arrow-bottom', '-mod3', 'collapsed')
+            #tcollapseTwo.panel-collapse.clearfix.collapse
+                +b_league('-level2-padding-mod', 'angola.png', 'Angola National Team', 'comp_matches.html', '')
+
+
+
+

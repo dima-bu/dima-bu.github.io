@@ -1,0 +1,33 @@
+mixin b_broadcast(class1, stream, status, imglink, channelname, channellink, secondtext, country )
+    div(class="b_channel col-xs-12 #{class1} #{status}")
+        .row
+            .fll.b_channel_logo 
+                a(href="#{channellink}")
+                    <img src="files/#{imglink}"/>
+
+            if status == '-live'
+                .fll.b_channel_name.-broadcast.b_trim
+                     .clearfix   
+                        a(href="#{channellink}" class="fll")  #{channelname}
+                        if stream == 'true'   
+                            a(href="#{channellink}" class="flr stream-btn")
+                     if stream == 'true' 
+                        .b_channel_subname.b_trim_inner  #{secondtext}
+
+            if status == '-international'
+                .fll.b_channel_name.-broadcast.-country.b_trim_inner
+                     a(href="#{channellink}") #{secondtext}
+                .fll.b_channel_name.-broadcast.b_trim_inner
+                     a(href="#{channellink}")  #{channelname}
+
+            if status == '-repeat'
+                .fll.b_channel_name.-broadcast.b_trim
+                    a(href="#{channellink}")  #{channelname}
+                .flr.b_channel_time #{secondtext}
+            if status == '-live' 
+                .b_row_left-link.-mod.flr
+                    a(href="#{channellink}")
+                        i.icon.arrow-right_gray
+            if status == '-none'
+                .fll.b_channel_name.-broadcast.b_trim
+                    a(href="#{channellink}")  #{channelname}

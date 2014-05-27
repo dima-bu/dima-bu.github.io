@@ -1,0 +1,43 @@
+include includes/b_channel
+include includes/b_comp-scorers_row
+include includes/navigation_top 
+include includes/navigation_bottom
+include includes/navigation_menu
+doctype html
+html(class="no-js")
+    include includes/head
+    body.nav-top_padding_minus-padding
+        +navigation_menu
+        .navbar.navbar-inverse.navbar-fixed-top.navbar-main(role="navigation")    
+            +navigation_top('Premier League')
+            +navigation_bottom ('Matches', 'comp_matches.html', 'Top Scorers', 'comp_top-scorers.html', 'Tables', 'comp_tables.html')
+        .main-content.b_tables.b_top-scorers_tables
+            include includes/content/comp_top-scorers-content.jade
+        include includes/footer-script              
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

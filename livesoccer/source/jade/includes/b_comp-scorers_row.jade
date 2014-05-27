@@ -1,0 +1,11 @@
+mixin b_comp-scorers_row(col1, col2, col2command, col3, col4)
+    .b_tables_body_row.clearfix
+        .col-xs-2.b_table_col-1 
+              .b_two-number-width #{col1}
+        .col-xs-6.b_table_col-2.b_trim
+            .b_trim_inner
+                span.b_top-scorers_name #{col2}
+                span.b_top-scorers_team (#{col2command})       
+        .col-xs-2.b_table_col-3
+             .b_two-number-width #{col3}   
+        .col-xs-2.b_table_col-4 #{col4}

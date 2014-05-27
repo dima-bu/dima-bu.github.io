@@ -1,0 +1,9 @@
+mixin b_lineup(player1, player1number, player1status, player2, player2number, player2status)
+    .b_lineup.col-xs-12.b_trim
+        .clearfix
+            .fll.b_lineup_players.b_trim_inner.-left
+                span.b_lineup_number #{player1number}
+                | #{player1} #{player1status}
+            .fll.b_lineup_players.b_trim_inner.-right
+                span.b_lineup_number #{player2number}
+                | #{player2} #{player2status}

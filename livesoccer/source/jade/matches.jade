@@ -1,0 +1,36 @@
+include includes/b_league_accordion
+include includes/b_match_high
+include includes/navigation_top_calendar
+include includes/navigation_menu
+include includes/b_calendar
+
+doctype html
+html(class="no-js")
+    include includes/head
+    body.nav-top
+        +navigation_menu
+        .navbar.navbar-inverse.navbar-fixed-top.navbar-main(role="navigation")    
+            +navigation_top_calendar('20 May', '21 May', '22 May', 'Wednesday' )
+        .main-content
+            include includes/content/matches-content.jade
+        include includes/footer-script              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

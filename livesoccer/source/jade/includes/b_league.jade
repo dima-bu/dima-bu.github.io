@@ -1,0 +1,17 @@
+mixin b_league(class1, imglink, leaguename, link)
+    div(class="b_league #{class1} -normal")
+        a(href="#{link}" class="b_all-link")
+        .clearfix.b_trim
+            .fll.b_league_logo
+                 a(href="#{link}" )
+                       if imglink
+                            <img src="files/#{imglink}" />
+            .fll.b_league_name.b_trim_inner
+                 a(href="#{link}") #{leaguename}
+            .flr.b_row_left-link.-mod3
+                 a(href="#{link}")
+                       if class1 == '-low -blue-bg'
+                             i.icon.arrow-right_lg
+                       else
+                             i.icon.arrow-right_gray
+                        

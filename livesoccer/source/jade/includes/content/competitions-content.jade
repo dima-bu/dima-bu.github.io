@@ -1,0 +1,43 @@
+.b_panel-simple
+    .b_panel-simple_heading
+        a(data-toggle="collapse"  href="#collapseOne" class="collapsed")
+            |Popular Competitions
+            i.arrow-bottom.icon.flr
+    #collapseOne.panel-collapse.clearfix.collapse
+        +b_league('', 'england.png', 'Premier League', 'comp_matches.html')
+        +b_league('', 'spain.png', 'Primera Division', 'comp_matches.html')
+        +b_league('', 'usa.png', 'Major League Soccer', 'comp_matches.html')
+.b_panel-simple
+    .b_panel-simple_heading
+        a(data-toggle="collapse"  href="#collapseTwo" class="collapsed")
+            |National Teams
+            i.arrow-bottom.icon.flr
+    #collapseTwo.panel-collapse.clearfix.collapse
+        +b_league('', 'england.png', 'Premier League', 'comp_matches.html')
+        +b_league('', 'spain.png', 'Primera Division', 'comp_matches.html')
+        +b_league('', 'usa.png', 'Major League Soccer', 'comp_matches.html')
+
+.b_panel-simple
+    .b_panel-simple_heading
+        a(data-toggle="collapse"  href="#collapseFour" class="collapsed")
+            |Club Domestic
+            i.arrow-bottom.icon.flr
+    #collapseFour.panel-collapse.clearfix.collapse
+        +b_league_accordion('-white-bg -low -accordion', 'england.png', 'England' , '#ttcollapseOne', '', 'arrow-bottom_gray', '-mod3','collapsed')
+        #ttcollapseOne.panel-collapse.clearfix.collapse
+            +b_league('-level4-padding -white-bg -low', '', 'Arsenal', 'comp_matches.html', '')
+            +b_league('-level4-padding -white-bg -low', '', 'Chelsea', 'comp_matches.html', '')
+            +b_league('-level4-padding -white-bg -low -gray-border-bottom', '', 'Chelsea', 'comp_matches.html', '')
+        +b_league_accordion('-white-bg -low -accordion', 'angola.png', 'Angola' , '#ttcollapseTwo', '', 'arrow-bottom_gray', '-mod3','collapsed')
+        #ttcollapseTwo.panel-collapse.clearfix.collapse
+            +b_league('-level4-padding -white-bg -low', '', 'Superliga', 'comp_matches.html', '')
+            +b_league('-level4-padding -white-bg -low', '', 'Angola Cup', 'comp_matches.html', '')
+.b_panel-simple
+    .b_panel-simple_heading
+        a(data-toggle="collapse"  href="#collapseThree" class="collapsed")
+            |Club International
+            i.arrow-bottom.icon.flr
+    #collapseThree.panel-collapse.clearfix.collapse
+        +b_league('', 'england.png', 'Premier League', 'comp_matches.html')
+        +b_league('', 'spain.png', 'Primera Division', 'comp_matches.html')
+        +b_league('', 'usa.png', 'Super Major League Soccer USA Football', 'comp_matches.html')
