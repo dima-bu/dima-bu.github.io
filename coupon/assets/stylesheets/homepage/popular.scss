@@ -1,0 +1,49 @@
+.popular {
+  button {
+    @include  border-top-radius(0);
+  }
+}
+.popular_title {
+  color: #489ac5;
+  font-size: 38px;
+  font-family: $ff-bold;
+  text-transform: uppercase;
+  margin-top: 10px;
+  line-height: 1;
+}
+
+.popular_subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-family: $ff-semibold;
+  line-height: 1;
+  margin-top: -4px;
+}
+
+.popular_header {
+  margin-bottom: 25px;
+}
+
+
+.popular-list {
+  padding: 15px;
+}
+
+.popular-list_inner {
+  margin-bottom: 9px;
+
+}
+
+.popular-list_name {
+  color:  #8f9497;
+  font-size: 18px;
+  font-family: $ff-bold;
+  width: 100%;
+  margin-right: -40px;
+  padding: 5px 40px 5px 0;
+  &:hover, :focus, :active {
+    text-decoration: none;
+    color:  #8f9497;
+  }
+
+}

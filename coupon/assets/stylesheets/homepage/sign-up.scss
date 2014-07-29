@@ -1,0 +1,92 @@
+
+.sign-up {
+  background: transparent url('../img/green-bg.png') no-repeat 50% 0;
+  background-size: 100%;
+  padding: 20px 20px 30px 20px;
+}
+
+.sign-up_title {
+  color: #e4fb5e;
+  font-size: 22px;
+  font-family: $ff-bold;
+  line-height: 22px;
+  text-shadow: 0px 1px 3px rgba(71, 124, 18, 0.6);
+  margin: 0 0 30px 0;
+}
+
+.sign-up_list_title {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: $ff-bold;
+  line-height: 18px;
+  margin: 0 0 10px 0;
+}
+
+.sign-up_list {
+  color:#fff;
+}
+
+.sign-up_list_item {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: $ff-semibold;
+  line-height: 18px;
+  margin-top: 7px;
+
+  span {
+    vertical-align: top;
+  }
+
+  .icon {
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+.sign-up_wrapper {
+  padding-bottom: 137px;
+  position: relative;
+}
+
+
+.sign-up_form {
+  margin: 0 -5px;
+  margin-top: -146px;
+  position: relative;
+  background-color:  #aae051;
+  background: -webkit-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
+  background: -moz-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
+  background: -o-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
+  background: -ms-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
+  background: linear-gradient(0deg, #76ab20 0%, #a6d953 100%);
+  border-top: 1px solid #649d39;
+
+  
+  button {
+    width: 100%;
+    .icon {
+      margin-bottom: -2px;
+    }
+  }
+}
+
+.sign-up_input-wrapper {
+  position: relative;
+  margin-bottom: 12px;
+  .mail {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+  }
+
+  .gray-line {
+    position: absolute;
+    top: 10px;
+    left: 42px;
+  }
+}
+
+.sign-up_form_inner {
+  border-top: 1px solid #d2f666;
+  padding: 17px;
+}

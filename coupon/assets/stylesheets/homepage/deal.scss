@@ -1,0 +1,28 @@
+.deal-wrapper {
+  margin-bottom: 20px;
+}
+
+.deal-descr {
+  color:  #8f9497;
+  font-size: 18px; /* Approximation due to font substitution */
+  font-family: $ff-bold;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.deal_item {
+  margin-bottom: 30px;
+  margin-top: 14px;
+  margin-right: 0;
+
+
+  .getdeal {
+    margin-top: 3px;
+
+  }
+
+  .white-wrapper {
+    display: inline-block;
+  }
+}

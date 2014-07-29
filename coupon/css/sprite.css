@@ -1,0 +1,205 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.carusel-item {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -14px;
+  width: 8px;
+  height: 8px;
+}
+.carusel-item_active {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -72px;
+  width: 12px;
+  height: 12px;
+}
+.checkmark {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -443px;
+  width: 21px;
+  height: 21px;
+}
+.fb {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -412px;
+  width: 10px;
+  height: 21px;
+}
+.getdeal {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1201px;
+  width: 160px;
+  height: 84px;
+}
+.getdeal_active {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1013px;
+  width: 160px;
+  height: 84px;
+}
+.getdeal_hover {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1107px;
+  width: 160px;
+  height: 84px;
+}
+.google-plus {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -351px;
+  width: 21px;
+  height: 20px;
+}
+.gray-line {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -599px;
+  width: 1px;
+  height: 26px;
+}
+.green-star {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -213px;
+  width: 16px;
+  height: 17px;
+}
+.left-arrow-hover {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -505px;
+  width: 13px;
+  height: 21px;
+}
+.left-arrow {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -536px;
+  width: 13px;
+  height: 21px;
+}
+.light-orange-arrow {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -685px;
+  width: 33px;
+  height: 57px;
+}
+.mail {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -116px;
+  width: 18px;
+  height: 12px;
+}
+.markdown-circle {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -267px;
+  width: 15px;
+  height: 17px;
+}
+.markdown-small {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px 0px;
+  width: 4px;
+  height: 4px;
+}
+.orange-arrow {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -94px;
+  width: 7px;
+  height: 12px;
+}
+.orange-arrow_bottom {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -138px;
+  width: 13px;
+  height: 13px;
+}
+.orange-arrow_left {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -52px;
+  width: 11px;
+  height: 10px;
+}
+.orange-arrow_right {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -32px;
+  width: 11px;
+  height: 10px;
+}
+.right-arrow-hover {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -381px;
+  width: 13px;
+  height: 21px;
+}
+.right-arrow {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -474px;
+  width: 13px;
+  height: 21px;
+}
+.search-md {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -567px;
+  width: 22px;
+  height: 22px;
+}
+.search {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -187px;
+  width: 16px;
+  height: 16px;
+}
+.share {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -322px;
+  width: 24px;
+  height: 19px;
+}
+.showcoupon {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -926px;
+  width: 162px;
+  height: 77px;
+}
+.showcoupon_hover {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -752px;
+  width: 162px;
+  height: 77px;
+}
+.showcoupon_pressed {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -839px;
+  width: 162px;
+  height: 77px;
+}
+.small-logo {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -635px;
+  width: 64px;
+  height: 40px;
+}
+.submit_bg {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1295px;
+  width: 310px;
+  height: 393px;
+}
+.ticket {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -294px;
+  width: 20px;
+  height: 18px;
+}
+.toggle-nav {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -240px;
+  width: 20px;
+  height: 17px;
+}
+.tw {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -161px;
+  width: 19px;
+  height: 16px;
+}

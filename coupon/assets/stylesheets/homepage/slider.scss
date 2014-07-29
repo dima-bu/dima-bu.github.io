@@ -1,0 +1,158 @@
+
+.carousel-wrapper {
+  box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.19);
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 6px;
+  margin-bottom: 25px;
+
+  .button-cover-wrapper {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+
+  .button-cover {
+    display: inline-block;
+  }
+
+}
+
+.carousel-control {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: $carousel-control-width;
+  text-align: center;
+  @extend .hidden-xs;
+  &.next {
+    right: 0;
+    left: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+    @include opacity(1);
+    .icon {
+      @include opacity(1);
+    }
+
+  }
+
+}
+
+
+
+.half-round {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 76px;
+  display: inline-block;
+  position: absolute;
+  top: 34%;
+  @include opacity(1);
+
+  &.-left {
+    left: -28px;
+    .icon {
+    right: 9px;
+    }
+  }
+
+  &.-right {
+    right: -28px;
+    .icon {
+      left: 9px;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 27px;
+    @include opacity(0.6);
+  }
+}
+
+.carousel-title {
+  position: absolute;
+  font-size: 42px;
+  color: $almost-white;
+  font-family: $ff-bold;
+  line-height: 34px;
+  text-shadow: 0px 1px 1px rgba(100, 44, 56, 0.75);
+  top: 130px;
+  left: 50px;
+
+  text-transform: uppercase;
+  border-bottom: 1px solid #d9929e;
+  padding-bottom: 15px;
+  span {
+    font-size: 26px;
+  }
+}
+
+.carousel-subtitle {
+  color: $almost-white;
+  font-family: $ff-semibold;
+  font-size: 14px; /* Approximation due to font substitution */
+  line-height: 18px;
+  position: absolute;
+  left: 50px;
+  top: 230px;
+  max-width: 170px;
+}
+
+.carousel-logo {
+  position: absolute;
+  left: 40px;
+  top: 23px;
+}
+
+
+.carousel-indicators{
+  position: absolute;
+  bottom: -47px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  @extend .visible-xs-block;
+
+  li {
+    background-position: $carusel-item-offset-x $carusel-item-offset-y;
+    height: $carusel-item-height;
+    width: $carusel-item-width;
+    background-image:  url('../assets/sprite.png');
+    background-color: transparent !important;
+    border: 0 none;
+    display: inline-block;
+    margin-left: 3px;
+    cursor: pointer;
+    vertical-align: top;
+
+    &.active {
+      background-position: $carusel-item_active-offset-x $carusel-item_active-offset-y;
+      height: $carusel-item_active-height;
+      width: $carusel-item_active-width;
+      margin-top: 1px;
+      margin-left: 1px;
+    }
+  }
+}
+
+.carusel-item {
+  display: inline-block;
+  margin-left: 3px;
+  cursor: pointer;
+  &.active {
+    background-position: $carusel-item_active-offset-x $carusel-item_active-offset-y;
+  }
+}

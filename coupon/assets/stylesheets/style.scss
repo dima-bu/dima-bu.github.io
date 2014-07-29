@@ -1,0 +1,41 @@
+@import "../font/stylesheet.css";
+
+@import "variables";
+
+@import "bootstrap";
+@import "sprite";
+
+@import "carousel";
+@import "general";
+
+@import "header";
+@import "main-menu";
+@import "paginator";
+@import "footer";
+
+
+@import "homepage/slider";
+@import "homepage/sign-up";
+@import "homepage/banner-right";
+@import "homepage/deal";
+@import "homepage/popular";
+
+
+
+
+.bg-wrapper {
+  background: url('#{$path-to-img}bg_top.png') transparent 50% 0 no-repeat ;
+  overflow: hidden;
+}
+
+.bg-wrapper_bottom {
+//  background: url('#{$path-to-img}bg_bottom.png') transparent 50% 100% no-repeat ;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+@import "responsive";

@@ -1,0 +1,108 @@
+
+
+
+/*header*/
+
+.topline {
+  background: -webkit-linear-gradient(0deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
+  background: -moz-linear-gradient(0deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
+  background: -o-linear-gradient(0deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
+  background: -ms-linear-gradient(0deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
+  background: linear-gradient(90deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.08);
+  height: 5px;
+}
+
+.header {
+  background: -webkpopular_headerit-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
+  background: -moz-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
+  background: -o-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
+  background: -ms-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
+  background: linear-gradient(0deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  height: 63px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+
+  .orange-btn {
+    width: 100%;
+  }
+}
+
+.header-col {
+  padding: 12px 0;
+  background: url('#{$path-to-img}header-divider.png') 100% 28px no-repeat;
+}
+
+
+
+
+.header-icon-wrapper {
+  width: 55px;
+  padding: 16px 0;
+  text-align: center;
+  display: inline-block;
+  background-color:  rgba(180, 177, 172, 0.2);
+//  box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.75);
+
+
+&.collapsed {
+    background-color:  transparent;
+    box-shadow: none;
+  &:hover {
+    background-color:  rgba(180, 177, 172, 0.2);
+//    box-shadow: 1px 0px 0px 0px rgba(255, 255, 255, 0.75);
+  }
+}
+
+
+
+}
+
+.logo {
+  margin-left: 8px;
+}
+
+.search-form {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.search-submit {
+  position: absolute;
+  top:10px;
+  right: 12px;
+}
+
+.soc-links {
+  font-size: 0;
+}
+
+.soc-links_item {
+  float: right;
+  margin-left: 4px;
+
+  &.-footer {
+    margin: 0 7px;
+  }
+
+  a {
+    display: block;
+    cursor: pointer;
+  }
+  .icon {
+    margin-top: 10px;
+    &.tw {
+      margin-left: 2px;
+      margin-top: 12px;
+    }
+  }
+}
+
+.search-xs {
+  background-color:  #f5f4f0;
+  padding: 15px 10px;
+  margin: 0;
+}
+
