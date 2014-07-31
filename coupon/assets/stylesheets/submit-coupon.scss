@@ -1,0 +1,44 @@
+
+.submit-coupon {
+  background: transparent url('#{$path-to-img}orange-weave-bg.png') 50% 0 no-repeat;
+  background-size: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.submit-coupon_title {
+  color:  #ffe397;
+  font-family: $ff-bold;
+  font-size: 30px; /* Approximation due to font substitution */
+  text-shadow: 0px 1px 3px rgba(175, 50, 0, 0.6);
+  margin-top: 0;
+}
+
+.submit-coupon_subtitle {
+  color:  #ffffff;
+  font-size: 20px; /* Approximation due to font substitution */
+  font-family: $ff-semibold;
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+.submit-coupon_subtitle-small {
+  color:  #ffffff;
+  font-family: $ff-semibold;
+  font-size: 18px; /* Approximation due to font substitution */
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.captha-wrapper {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+  img {
+    vertical-align: middle;
+
+  }
+}

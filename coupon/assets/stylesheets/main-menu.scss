@@ -1,6 +1,5 @@
 $menu-heihgt: 73px;
 
-
 .main-menu_wrapper {
   height: $menu-heihgt;
   background-color: rgba($brown, 0.75);
@@ -39,3 +38,51 @@ $menu-heihgt: 73px;
     border-bottom: 4px solid $dark-green;
   }
 }
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- MAIN MENU*/
+@media  (max-width: $screen-sm-max) {
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- MAIN MENU -- END*/
+
+
+/*EXTRA SMALL -- xs -- MAIN MENU*/
+@media (max-width: $screen-xs-max) {
+
+}
+/*EXTRA SMALL -- xs -- MAIN MENU -- END*/
+
+
+
+/*SMALL -- sm -- MAIN MENU*/
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .main-menu_wrapper {
+    &.collapse {
+      display: block !important;
+      height: auto!important;
+      padding-bottom: 0;
+      overflow: visible!important;
+    }
+  }
+}
+/*SMALL -- sm -- MAIN MENU -- END*/
+
+/*LARGE and MEDIUM -- lg and md -- MAIN MENU*/
+@media (min-width: $screen-sm-max) {
+  .main-menu_wrapper {
+    &.collapse {
+      display: block !important;
+      height: auto!important;
+      padding-bottom: 0;
+      overflow: visible!important;
+    }
+  }
+}
+/*LARGE and MEDIUM -- lg and md -- MAIN MENU -- END*/

@@ -1,0 +1,297 @@
+
+.company-col-0 {
+  @extend .visible-xs-block;
+  @extend .col-xs-18;
+}
+
+.company-col-1 {
+  @extend .col-md-5;
+  @extend .col-sm-5;
+  @extend .col-xs-18;
+}
+
+.company-col-1mod {
+  @extend .col-md-5;
+  @extend .col-sm-5;
+  @extend .col-xs-9;
+}
+
+.company-col-2split {
+  @extend .col-md-13;
+  @extend .col-sm-13;
+  @extend .col-xs-18;
+  &.-with-top-margin {
+    margin-top: 22px;
+  }
+}
+
+.company-col-2-1 {
+  @extend .col-md-10;
+  @extend .col-sm-10;
+  @extend .col-xs-9;
+}
+
+.company-col-2-2 {
+  @extend .col-md-8;
+  @extend .col-sm-8;
+  @extend .col-xs-9;
+  text-align: right;
+}
+
+.company-col-2 {
+  @extend .col-md-8;
+  @extend .col-sm-8;
+  @extend .col-xs-6;
+  @extend .hidden-xs;
+}
+
+
+.company-col-3 {
+  @extend .col-md-5;
+  @extend .col-sm-5;
+  @extend .col-xs-9;
+  text-align: right;
+}
+
+.company-title {
+  margin-bottom: 20px;
+}
+
+/*hut-coupons*/
+
+.hut-coupons-wrapper {
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+.hut-coupons-col-1 {
+  @extend .col-md-5;
+  @extend .col-sm-5;
+  @extend .col-xs-18;
+}
+
+.hut-coupons-col-2 {
+  @extend .col-md-13;
+  @extend .col-sm-13;
+  @extend .col-xs-18;
+}
+
+
+
+/*top-coupons*/
+
+.top-coupons-wrapper {
+  margin-bottom: 45px;
+}
+
+.top-coupon {
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+
+.coupon-percent {
+  text-align: center;
+  padding-top: 17px;
+  border-radius: 5px;
+  &.-green {
+    background: #71A639 url('#{$path-to-img}green-weave-bg.png') 50% 0 no-repeat;
+    background-size: 100%;
+    span.bg-color  {
+      color:  #ecfd84;
+    }
+    .coupon-percent_code {
+      color:  #e4fb5e;
+      text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.46);
+    }
+  }
+
+  &.-blue {
+    background: rgb(0, 130, 200) url('#{$path-to-img}blue-weave-bg.png') 50% 0 no-repeat;
+    background-size: 100%;
+
+    span.bg-color  {
+      color:  #adf3ff;
+    }
+
+    .coupon-percent_code {
+      color:  #adf2ff;
+      text-shadow: 0px 1px 1px rgba(2, 19, 46, 0.46);
+    }
+  }
+}
+
+.coupon-percent_count {
+
+  font-size: 0;
+
+  span {
+    color:  #fdfbf1;
+    font-family: $ff-bold;
+    text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.56);
+    font-size: 46px;
+    line-height: 36px;
+  }
+}
+
+.coupon-percent_off {
+  color:  #fdfbf1;
+  font-family: $ff-bold;
+  text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.56);
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.coupon-percent_code {
+  font-size: 20px;
+  font-family: $ff-semibold;
+  letter-spacing: 3px;
+}
+
+.coupon-descr {
+  @extend .deal-descr;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+
+
+/*user coupons*/
+
+.user-coupons-wrapper {
+  margin-bottom: 20px;
+}
+
+.user-coupon {
+  margin-bottom: 30px;
+  margin-top: 0px;
+
+}
+
+
+        /*rate*/
+
+.rate-wrapper {
+  margin-top: 20px;
+  font-size: 0;
+  .rate-divider  {
+    vertical-align: top;
+    margin-top: 15px;
+  }
+}
+
+.rate {
+  margin: 0 14px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  cursor: pointer;
+
+
+  &.-green {
+    .icon {
+      background-position:  $rate-up_active-offset-x  $rate-up_active-offset-y;
+    }
+
+    .rate-count {
+      color:  #82be1d;
+    }
+  }
+
+  &.-red {
+    .icon {
+      background-position:  $rate-down_active-offset-x  $rate-down_active-offset-y;
+    }
+
+    .rate-count {
+      color:  #e25d5f;
+    }
+  }
+
+}
+
+.rate-count {
+  font-family: $ff-semibold;
+  color:  #8f9497;
+  font-size: 16px;
+  margin-top: 4px;
+
+}
+
+.user-coupon_title {
+  font-size: 18px;
+  color:  #8f9497;
+  font-family: $ff-bold;
+  margin-top: 22px;
+  width: 82%;
+
+}
+
+.user-coupon_descr {
+  font-size: 15px;
+  font-family: $ff-semibold;
+}
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
+  @media  (max-width: $screen-sm-max) {
+
+  }
+/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
+
+
+/*EXTRA SMALL -- xs -- COMPANY*/
+  @media (max-width: $screen-xs-max) {
+
+    .company-col-0 {
+      margin-bottom: 10px;
+    }
+
+    .company-col-1mod {
+      text-align: left;
+    }
+
+    .company-col-3 {
+      text-align: right;
+    }
+
+    .hut-coupons-wrapper {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+    
+    .company-title {
+      font-size: 28px;
+    }
+
+    .hut-coupons-col-1 {
+      margin-bottom: 25px;
+    }
+
+    .coupon-percent_code {
+      font-size: 24px;
+    }
+
+    .coupon-percent_off {
+      margin-bottom: 20px;
+    }
+
+    .coupon-descr {
+      font-size: 18px;
+    }
+
+  }
+/*EXTRA SMALL -- xs -- COMPANY -- END*/
+
+
+
+/*SMALL -- sm -- COMPANY*/
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+  }
+/*SMALL -- sm -- COMPANY -- END*/

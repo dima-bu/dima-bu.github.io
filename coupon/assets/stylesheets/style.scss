@@ -20,12 +20,17 @@
 @import "homepage/deal";
 @import "homepage/popular";
 
-
+@import "submit-coupon";
+@import "company";
 
 
 .bg-wrapper {
-  background: url('#{$path-to-img}bg_top.png') transparent 50% 0 no-repeat ;
+  background: url('#{$path-to-img}bg_top-narrow.png') transparent 50% 0 no-repeat ;
+  &.-with-slider {
+    background: url('#{$path-to-img}bg_top.png') transparent 50% 0 no-repeat ;
+  }
   overflow: hidden;
+
 }
 
 .bg-wrapper_bottom {

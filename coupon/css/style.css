@@ -914,14 +914,14 @@ pre code {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .footer-col-1, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .footer-col-3, .col-lg-4, .col-xs-5, .col-sm-5, .deal_item-col-1, .col-md-5, .deal_item-col-1, .footer-col-4, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .right-column_top, .right-column_bottom, .footer-col-2, .col-lg-6, .col-xs-7, .col-sm-7, .deal_item-col-3, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .deal_item-col-3, .col-lg-8, .col-xs-9, .deal_item-col-2, .deal_item-col-3, .col-sm-9, .footer-col-2, .footer-col-3, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .deal_item-col-2, .col-lg-10, .col-xs-11, .col-sm-11, .deal_item-col-2, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .left-column_top, .left-column_bottom, .col-lg-12, .col-xs-13, .col-sm-13, .deal_item-col-2-3, .col-md-13, .deal_item-col-2-3, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5, .col-md-18, .col-lg-18 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .footer-col-1, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .footer-col-3, .col-lg-4, .col-xs-5, .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .col-md-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .footer-col-4, .col-lg-5, .col-xs-6, .company-col-2, .col-sm-6, .col-md-6, .right-column_top, .right-column_bottom, .footer-col-2, .col-lg-6, .col-xs-7, .col-sm-7, .deal_item-col-3, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .company-col-2-2, .company-col-2, .col-md-8, .company-col-2-2, .company-col-2, .deal_item-col-3, .col-lg-8, .col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3, .col-sm-9, .footer-col-2, .footer-col-3, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .company-col-2-1, .col-md-10, .company-col-2-1, .deal_item-col-2, .col-lg-10, .col-xs-11, .col-sm-11, .deal_item-col-2, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .left-column_top, .left-column_bottom, .col-lg-12, .col-xs-13, .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-md-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5, .col-md-18, .col-lg-18 {
   position: relative;
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .deal_item-col-2, .deal_item-col-3, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .company-col-2, .col-xs-7, .col-xs-8, .col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
   float: left;
 }
 
@@ -945,7 +945,7 @@ pre code {
   width: 27.77778%;
 }
 
-.col-xs-6 {
+.col-xs-6, .company-col-2 {
   width: 33.33333%;
 }
 
@@ -957,7 +957,7 @@ pre code {
   width: 44.44444%;
 }
 
-.col-xs-9, .deal_item-col-2, .deal_item-col-3 {
+.col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3 {
   width: 50%;
 }
 
@@ -993,7 +993,7 @@ pre code {
   width: 94.44444%;
 }
 
-.col-xs-18, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
+.col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
   width: 100%;
 }
 
@@ -1226,7 +1226,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .deal_item-col-1, .col-sm-6, .col-sm-7, .deal_item-col-3, .col-sm-8, .col-sm-9, .footer-col-2, .footer-col-3, .col-sm-10, .col-sm-11, .deal_item-col-2, .col-sm-12, .col-sm-13, .deal_item-col-2-3, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .col-sm-6, .col-sm-7, .deal_item-col-3, .col-sm-8, .company-col-2-2, .company-col-2, .col-sm-9, .footer-col-2, .footer-col-3, .col-sm-10, .company-col-2-1, .col-sm-11, .deal_item-col-2, .col-sm-12, .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5 {
     float: left;
   }
 
@@ -1246,7 +1246,7 @@ pre code {
     width: 22.22222%;
   }
 
-  .col-sm-5, .deal_item-col-1 {
+  .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1 {
     width: 27.77778%;
   }
 
@@ -1258,7 +1258,7 @@ pre code {
     width: 38.88889%;
   }
 
-  .col-sm-8 {
+  .col-sm-8, .company-col-2-2, .company-col-2 {
     width: 44.44444%;
   }
 
@@ -1266,7 +1266,7 @@ pre code {
     width: 50%;
   }
 
-  .col-sm-10 {
+  .col-sm-10, .company-col-2-1 {
     width: 55.55556%;
   }
 
@@ -1278,7 +1278,7 @@ pre code {
     width: 66.66667%;
   }
 
-  .col-sm-13, .deal_item-col-2-3 {
+  .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3 {
     width: 72.22222%;
   }
 
@@ -1531,7 +1531,7 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .footer-col-1, .col-md-4, .footer-col-3, .col-md-5, .deal_item-col-1, .footer-col-4, .col-md-6, .right-column_top, .right-column_bottom, .footer-col-2, .col-md-7, .col-md-8, .deal_item-col-3, .col-md-9, .col-md-10, .deal_item-col-2, .col-md-11, .col-md-12, .left-column_top, .left-column_bottom, .col-md-13, .deal_item-col-2-3, .col-md-14, .col-md-15, .col-md-16, .col-md-17, .col-md-18 {
+  .col-md-1, .col-md-2, .col-md-3, .footer-col-1, .col-md-4, .footer-col-3, .col-md-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .footer-col-4, .col-md-6, .right-column_top, .right-column_bottom, .footer-col-2, .col-md-7, .col-md-8, .company-col-2-2, .company-col-2, .deal_item-col-3, .col-md-9, .col-md-10, .company-col-2-1, .deal_item-col-2, .col-md-11, .col-md-12, .left-column_top, .left-column_bottom, .col-md-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-md-14, .col-md-15, .col-md-16, .col-md-17, .col-md-18 {
     float: left;
   }
 
@@ -1551,7 +1551,7 @@ pre code {
     width: 22.22222%;
   }
 
-  .col-md-5, .deal_item-col-1, .footer-col-4 {
+  .col-md-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .footer-col-4 {
     width: 27.77778%;
   }
 
@@ -1563,7 +1563,7 @@ pre code {
     width: 38.88889%;
   }
 
-  .col-md-8, .deal_item-col-3 {
+  .col-md-8, .company-col-2-2, .company-col-2, .deal_item-col-3 {
     width: 44.44444%;
   }
 
@@ -1571,7 +1571,7 @@ pre code {
     width: 50%;
   }
 
-  .col-md-10, .deal_item-col-2 {
+  .col-md-10, .company-col-2-1, .deal_item-col-2 {
     width: 55.55556%;
   }
 
@@ -1583,7 +1583,7 @@ pre code {
     width: 66.66667%;
   }
 
-  .col-md-13, .deal_item-col-2-3 {
+  .col-md-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3 {
     width: 72.22222%;
   }
 
@@ -6032,7 +6032,7 @@ button.close {
   display: none !important;
 }
 
-.visible-xs-block, .carousel-indicators,
+.visible-xs-block, .carousel-indicators, .company-col-0,
 .visible-xs-inline,
 .visible-xs-inline-block,
 .visible-sm-block,
@@ -6066,7 +6066,7 @@ button.close {
   }
 }
 @media (max-width: 767px) {
-  .visible-xs-block, .carousel-indicators {
+  .visible-xs-block, .carousel-indicators, .company-col-0 {
     display: block !important;
   }
 }
@@ -6192,7 +6192,7 @@ button.close {
 }
 
 @media (max-width: 767px) {
-  .hidden-xs, .carousel-control {
+  .hidden-xs, .carousel-control, .company-col-2 {
     display: none !important;
   }
 }
@@ -6445,7 +6445,7 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
   }
 }
 /*Typography*/
-h1 {
+h1, .h1 {
   color: #489ac5;
   font-family: "proxima_nova_bold";
   font-size: 37px;
@@ -6456,8 +6456,22 @@ h2 {
   color: #fb8c30;
 }
 
+p {
+  font-family: "proxima_nova_semibold";
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
 /* Helper classes */
-.clear-list {
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.clear-list, .ik_select_list_inner ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -6498,7 +6512,7 @@ h2 {
 }
 
 /*form*/
-.standard-input {
+.standard-input, .ik_select_link {
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: inset 0px 3px 3px 0px rgba(192, 192, 192, 0.24), 0px 2px 1px 0px white;
@@ -6511,29 +6525,67 @@ h2 {
   width: 100%;
   font-family: "proxima_nova_semibold_italic";
 }
-.standard-input.-medium {
+.standard-input.-medium, .-medium.ik_select_link {
   height: 47px;
 }
-.standard-input.-green-text {
+.standard-input.-green-text, .-green-text.ik_select_link {
   color: #7aa72f;
 }
-.standard-input.-green-text::-webkit-input-placeholder {
+.standard-input.-green-text::-webkit-input-placeholder, .-green-text.ik_select_link::-webkit-input-placeholder {
   color: #7aa72f;
 }
-.standard-input.-green-text::-moz-placeholder {
+.standard-input.-green-text::-moz-placeholder, .-green-text.ik_select_link::-moz-placeholder {
   /* Firefox 19+ */
   color: #7aa72f;
 }
-.standard-input.-green-bg {
+.standard-input.-light-pink-input, .-light-pink-input.ik_select_link {
+  background-color: #fff8de;
+}
+.standard-input.-green-bg, .-green-bg.ik_select_link {
   border: 1px solid #83af38;
   box-shadow: inset 0px 5px 7px 0px rgba(213, 225, 199, 0.95);
 }
-.standard-input.-orange-bg {
+.standard-input.-orange-bg, .ik_select_link, .ik_select_dropdown {
   border: 1px solid #ce3e0c;
   box-shadow: inset 0px 3px 3px 0px rgba(213, 96, 31, 0.24), 0px 2px 2px 0px rgba(225, 204, 81, 0.69);
 }
-.standard-input.-icon-left {
+.standard-input.-icon-left, .-icon-left.ik_select_link {
   padding-left: 50px;
+}
+
+.ik_select_link:after {
+  height: 10px;
+  width: 10px;
+  background: transparent url("../assets/sprite.png") 0px -14px no-repeat;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -11px;
+  content: "";
+}
+
+.ik_select_list {
+  background-color: transparent !important;
+  color: #a59e91 !important;
+}
+
+.ik_select_dropdown {
+  background: #fff !important;
+  box-sizing: content-box;
+}
+
+.ik_select_option.ik_select_hover {
+  background-color: #fff8de !important;
+}
+
+.ik_select_option {
+  padding: 10px;
+}
+
+.ik_select_list_inner ul {
+  border-radius: 4px;
 }
 
 /*Buttons*/
@@ -6643,6 +6695,9 @@ h2 {
 .simple-round .green-star, .paginator-list_link.-number .green-star {
   margin-top: 10px;
 }
+.simple-round .ticket, .paginator-list_link.-number .ticket {
+  margin-top: 10px;
+}
 .simple-round .orange-arrow, .paginator-list_link.-number .orange-arrow {
   margin-top: 8px;
   margin-left: 2px;
@@ -6673,11 +6728,19 @@ h2 {
   color: #fc9b32;
   font-size: 14px;
   /* Approximation due to font substitution */
-  font-weight: 600;
+  font-family: "proxima_nova_semibold";
   line-height: 18px;
   padding: 6px 13px;
   border-radius: 15px;
+  text-align: center;
   background-color: #fff;
+}
+.simple-btn.-icon-left {
+  padding: 7px 16px 7px 13px;
+  border-radius: 16px;
+}
+.simple-btn.-icon-left .icon {
+  margin-right: 4px;
 }
 
 .getdeal {
@@ -6690,27 +6753,46 @@ h2 {
   text-align: center;
 }
 .getdeal:hover {
-  background-position: 0px -1107px;
+  background-position: 0px -1527px;
   color: #ffffff;
 }
 .getdeal:active, .getdeal:focus {
-  background-position: 0px -1013px;
+  background-position: 0px -1433px;
   color: #ffffff;
 }
 
 .showcoupon {
   font-size: 0;
+  text-align: center;
   color: #fc9b32;
   font-family: "proxima_nova_bold";
   text-shadow: 0px 1px 1px #ffffff;
   line-height: 77px;
 }
 .showcoupon:hover {
-  background-position: 0px -752px;
+  background-position: 0px -1165px;
 }
-.showcoupon:active, .showcoupon:focus {
-  background-position: 0px -839px;
+.showcoupon:active, .showcoupon:focus, .showcoupon.focus {
+  background-position: 0px -1252px;
   font-size: 14px;
+}
+
+.orange-arrow-link span {
+  font-size: 16px;
+  font-family: "proxima_nova_bold";
+  vertical-align: top;
+  padding-left: 5px;
+}
+.orange-arrow-link.-in-title-right {
+  margin-top: 15px;
+}
+
+.rate-up:hover {
+  background-position: 0px -834px;
+}
+
+.rate-down:hover {
+  background-position: 0px -952px;
 }
 
 /*wrappers*/
@@ -6884,6 +6966,33 @@ h2 {
   border-bottom: 4px solid #6a9a1f;
 }
 
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- MAIN MENU*/
+/*SMALL and EXTRA SMALL -- sm and xs -- MAIN MENU -- END*/
+/*EXTRA SMALL -- xs -- MAIN MENU*/
+/*EXTRA SMALL -- xs -- MAIN MENU -- END*/
+/*SMALL -- sm -- MAIN MENU*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-menu_wrapper.collapse {
+    display: block !important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+}
+/*SMALL -- sm -- MAIN MENU -- END*/
+/*LARGE and MEDIUM -- lg and md -- MAIN MENU*/
+@media (min-width: 991px) {
+  .main-menu_wrapper.collapse {
+    display: block !important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+}
+/*LARGE and MEDIUM -- lg and md -- MAIN MENU -- END*/
 .paginator-list {
   font-size: 0;
   text-align: center;
@@ -7202,7 +7311,7 @@ footer .orange-btn {
   text-align: center;
 }
 .carousel-indicators li {
-  background-position: 0px -14px;
+  background-position: 0px -29px;
   height: 8px;
   width: 8px;
   background-image: url("../assets/sprite.png");
@@ -7214,7 +7323,7 @@ footer .orange-btn {
   vertical-align: top;
 }
 .carousel-indicators li.active {
-  background-position: 0px -72px;
+  background-position: 0px -107px;
   height: 12px;
   width: 12px;
   margin-top: 1px;
@@ -7227,7 +7336,7 @@ footer .orange-btn {
   cursor: pointer;
 }
 .carusel-item.active {
-  background-position: 0px -72px;
+  background-position: 0px -107px;
 }
 
 .sign-up {
@@ -7300,6 +7409,15 @@ footer .orange-btn {
   position: relative;
   margin-bottom: 12px;
 }
+.sign-up_input-wrapper.-dooted {
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 5px;
+  border: 1px dashed rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-color: rgba(62, 0, 0, 0.2);
+  margin-bottom: 7px;
+}
 .sign-up_input-wrapper .mail {
   position: absolute;
   top: 16px;
@@ -7356,7 +7474,7 @@ footer .orange-btn {
   margin-bottom: 20px;
 }
 
-.deal-descr {
+.deal-descr, .coupon-descr {
   color: #8f9497;
   font-size: 18px;
   /* Approximation due to font substitution */
@@ -7425,9 +7543,256 @@ footer .orange-btn {
   color: #8f9497;
 }
 
+.submit-coupon {
+  background: transparent url("../img/orange-weave-bg.png") 50% 0 no-repeat;
+  background-size: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.submit-coupon_title {
+  color: #ffe397;
+  font-family: "proxima_nova_bold";
+  font-size: 30px;
+  /* Approximation due to font substitution */
+  text-shadow: 0px 1px 3px rgba(175, 50, 0, 0.6);
+  margin-top: 0;
+}
+
+.submit-coupon_subtitle {
+  color: #ffffff;
+  font-size: 20px;
+  /* Approximation due to font substitution */
+  font-family: "proxima_nova_semibold";
+  margin-bottom: 0;
+  line-height: 18px;
+}
+
+.submit-coupon_subtitle-small {
+  color: #ffffff;
+  font-family: "proxima_nova_semibold";
+  font-size: 18px;
+  /* Approximation due to font substitution */
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.captha-wrapper {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  height: 40px;
+  line-height: 40px;
+}
+.captha-wrapper img {
+  vertical-align: middle;
+}
+
+.company-col-2split.-with-top-margin {
+  margin-top: 22px;
+}
+
+.company-col-2-2 {
+  text-align: right;
+}
+
+.company-col-3 {
+  text-align: right;
+}
+
+.company-title {
+  margin-bottom: 20px;
+}
+
+/*hut-coupons*/
+.hut-coupons-wrapper {
+  margin-top: 15px;
+  margin-bottom: 55px;
+}
+
+/*top-coupons*/
+.top-coupons-wrapper {
+  margin-bottom: 45px;
+}
+
+.top-coupon {
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+
+.coupon-percent {
+  text-align: center;
+  padding-top: 17px;
+  border-radius: 5px;
+}
+.coupon-percent.-green {
+  background: #71a639 url("../img/green-weave-bg.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+.coupon-percent.-green span.bg-color {
+  color: #ecfd84;
+}
+.coupon-percent.-green .coupon-percent_code {
+  color: #e4fb5e;
+  text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.46);
+}
+.coupon-percent.-blue {
+  background: #0082c8 url("../img/blue-weave-bg.png") 50% 0 no-repeat;
+  background-size: 100%;
+}
+.coupon-percent.-blue span.bg-color {
+  color: #adf3ff;
+}
+.coupon-percent.-blue .coupon-percent_code {
+  color: #adf2ff;
+  text-shadow: 0px 1px 1px rgba(2, 19, 46, 0.46);
+}
+
+.coupon-percent_count {
+  font-size: 0;
+}
+.coupon-percent_count span {
+  color: #fdfbf1;
+  font-family: "proxima_nova_bold";
+  text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.56);
+  font-size: 46px;
+  line-height: 36px;
+}
+
+.coupon-percent_off {
+  color: #fdfbf1;
+  font-family: "proxima_nova_bold";
+  text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.56);
+  font-size: 24px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.coupon-percent_code {
+  font-size: 20px;
+  font-family: "proxima_nova_semibold";
+  letter-spacing: 3px;
+}
+
+.coupon-descr {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+/*user coupons*/
+.user-coupons-wrapper {
+  margin-bottom: 20px;
+}
+
+.user-coupon {
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+/*rate*/
+.rate-wrapper {
+  margin-top: 20px;
+  font-size: 0;
+}
+.rate-wrapper .rate-divider {
+  vertical-align: top;
+  margin-top: 15px;
+}
+
+.rate {
+  margin: 0 14px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 12px;
+  cursor: pointer;
+}
+.rate.-green .icon {
+  background-position: 0px -834px;
+}
+.rate.-green .rate-count {
+  color: #82be1d;
+}
+.rate.-red .icon {
+  background-position: 0px -952px;
+}
+.rate.-red .rate-count {
+  color: #e25d5f;
+}
+
+.rate-count {
+  font-family: "proxima_nova_semibold";
+  color: #8f9497;
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.user-coupon_title {
+  font-size: 18px;
+  color: #8f9497;
+  font-family: "proxima_nova_bold";
+  margin-top: 22px;
+  width: 82%;
+}
+
+.user-coupon_descr {
+  font-size: 15px;
+  font-family: "proxima_nova_semibold";
+}
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
+/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
+/*EXTRA SMALL -- xs -- COMPANY*/
+@media (max-width: 767px) {
+  .company-col-0 {
+    margin-bottom: 10px;
+  }
+
+  .company-col-1mod {
+    text-align: left;
+  }
+
+  .company-col-3 {
+    text-align: right;
+  }
+
+  .hut-coupons-wrapper {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  .company-title {
+    font-size: 28px;
+  }
+
+  .hut-coupons-col-1 {
+    margin-bottom: 25px;
+  }
+
+  .coupon-percent_code {
+    font-size: 24px;
+  }
+
+  .coupon-percent_off {
+    margin-bottom: 20px;
+  }
+
+  .coupon-descr {
+    font-size: 18px;
+  }
+}
+/*EXTRA SMALL -- xs -- COMPANY -- END*/
+/*SMALL -- sm -- COMPANY*/
+/*SMALL -- sm -- COMPANY -- END*/
 .bg-wrapper {
-  background: url("../img/bg_top.png") transparent 50% 0 no-repeat;
+  background: url("../img/bg_top-narrow.png") transparent 50% 0 no-repeat;
   overflow: hidden;
+}
+.bg-wrapper.-with-slider {
+  background: url("../img/bg_top.png") transparent 50% 0 no-repeat;
 }
 
 a:active,
@@ -7615,7 +7980,19 @@ a:hover {
 /*Extra small ex. Iphone 320px, Iphone640 px*/
 @media (max-width: 767px) {
   .bg-wrapper {
+    background-position: 50% -105px;
+  }
+  .bg-wrapper.-with-slider {
     background-position: 53% -140px;
+  }
+
+  /*helpers*/
+  .full-width-xs {
+    width: 100%;
+  }
+
+  .pull-no-xs {
+    float: none;
   }
 
   /*header*/
@@ -7663,6 +8040,8 @@ a:hover {
   /*slider*/
   .carousel-wrapper {
     padding: 0;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   /*main menu*/
@@ -7733,7 +8112,16 @@ a:hover {
     text-align: center;
   }
 
-  /*footer*/
+  /*company*/
+  .coupon-percent_off,
+  .coupon-percent_count {
+    display: inline-block;
+  }
+
+  .coupon-percent_off {
+    font-size: 46px;
+    line-height: 46px;
+  }
 }
 /*tablet and phone*/
 @media (max-width: 991px) {
@@ -7765,11 +8153,3 @@ a:hover {
   }
 }
 /*md and lg*/
-@media (min-width: 991px) {
-  .main-menu_wrapper.collapse {
-    display: block !important;
-    height: auto!important;
-    padding-bottom: 0;
-    overflow: visible!important;
-  }
-}

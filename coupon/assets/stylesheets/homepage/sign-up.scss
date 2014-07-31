@@ -1,6 +1,6 @@
 
 .sign-up {
-  background: transparent url('../img/green-bg.png') no-repeat 50% 0;
+  background: transparent url('#{$path-to-img}green-bg.png') no-repeat 50% 0;
   background-size: 100%;
   padding: 20px 20px 30px 20px;
 }
@@ -73,6 +73,16 @@
 .sign-up_input-wrapper {
   position: relative;
   margin-bottom: 12px;
+
+  &.-dooted {
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 5px;
+    border: 1px dashed rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-color:  rgba(62, 0, 0, 0.2);
+    margin-bottom: 7px;
+  }
   .mail {
     position: absolute;
     top: 16px;

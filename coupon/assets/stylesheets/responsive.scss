@@ -295,11 +295,26 @@ $header-grid-gutter-width: 40px;
 /*Extra small ex. Iphone 320px, Iphone640 px*/
 
 @media (max-width: $screen-xs-max) {
-
   .bg-wrapper {
-    background-position: 53% -140px;
+    background-position: 50% -105px;
+    &.-with-slider {
+       background-position: 53% -140px;
+    }
   }
 
+
+
+  
+  /*helpers*/
+
+  .full-width-xs {
+    width: 100%;
+  }
+
+  .pull-no-xs {
+    float: none;
+  }
+  
   /*header*/
 
   .topline {
@@ -350,6 +365,8 @@ $header-grid-gutter-width: 40px;
   /*slider*/
   .carousel-wrapper {
     padding: 0;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
 
@@ -432,7 +449,17 @@ $header-grid-gutter-width: 40px;
   }
 
 
-  /*footer*/
+  /*company*/
+
+  .coupon-percent_off,
+  .coupon-percent_count {
+    display: inline-block;
+  }
+
+  .coupon-percent_off {
+    font-size: 46px;
+    line-height: 46px;
+  }
 
 
 }
@@ -479,12 +506,5 @@ $header-grid-gutter-width: 40px;
 /*md and lg*/
 
 @media (min-width: $screen-sm-max) {
-  .main-menu_wrapper {
-    &.collapse {
-      display: block !important;
-      height: auto!important;
-      padding-bottom: 0;
-      overflow: visible!important;
-    }
-  }
+
 }
