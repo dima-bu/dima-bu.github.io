@@ -4,6 +4,10 @@ $( document ).ready(function() {
            ddFullWidth: false
    });
 
+    $('.carousel').carousel();
+
+    $('.collapse').collapse();
+
     $( ".showcoupon" ).on( "click", function() {
          $( this ).toggleClass('focus');
     });
