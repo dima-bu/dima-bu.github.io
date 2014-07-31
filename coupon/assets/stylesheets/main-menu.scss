@@ -2,6 +2,7 @@ $menu-heihgt: 73px;
 
 .main-menu_wrapper {
   height: $menu-heihgt;
+  background-color:$brown;
   background-color: rgba($brown, 0.75);
   border-bottom: 4px solid rgba($brown, 0.90);
   margin-bottom: 40px;
@@ -11,12 +12,16 @@ $menu-heihgt: 73px;
   position: relative; display: table;
   width: 100%;
   height: $menu-heihgt - 3px;
+  border-left: 1px solid $dark-brown;
   border-left: 1px solid rgba($dark-brown, .35);
+  border-right: 1px solid $pink;
   border-right: 1px solid rgba($pink, .19);
 }
 
 .main-menu_item {
   display: table-cell; position: relative;
+  border-right: 1px solid $dark-brown;
+  border-left: 1px solid $pink;
   border-right: 1px solid rgba($dark-brown, .35);
   border-left: 1px solid rgba($pink, .19);
 }
@@ -56,6 +61,7 @@ $menu-heihgt: 73px;
 /*EXTRA SMALL -- xs -- MAIN MENU*/
 @media screen and (max-width: $screen-xs-max) {
 
+  
 }
 /*EXTRA SMALL -- xs -- MAIN MENU -- END*/
 

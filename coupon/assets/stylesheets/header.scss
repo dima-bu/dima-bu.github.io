@@ -9,11 +9,13 @@
   background: -o-linear-gradient(0deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
   background: -ms-linear-gradient(0deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
   background: linear-gradient(90deg, #dd3437 8%, #fd8934 37%, #61dbb2 62%, #2a5b84 88%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd3437', endColorstr='#61dbb2',GradientType=1 ); /* IE6-8 */
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.08);
   height: 5px;
 }
 
 .header {
+  background: #edebe6;
   background: -webkpopular_headerit-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
   background: -moz-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
   background: -o-linear-gradient(90deg, #f4f1eb 0%, #edebe6 12%, #fffdfa 100%);
