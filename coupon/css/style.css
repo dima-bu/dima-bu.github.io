@@ -7339,6 +7339,33 @@ footer .orange-btn {
   background-position: 0px -107px;
 }
 
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- SLIDER*/
+/*SMALL and EXTRA SMALL -- sm and xs -- SLIDER -- END*/
+/*EXTRA SMALL -- xs -- SLIDER*/
+@media (max-width: 767px) {
+  .carousel-logo {
+    height: 60px !important;
+    width: auto;
+    left: 20px;
+  }
+
+  .carousel-title {
+    border-bottom: none;
+    right: 0;
+    left: initial;
+    top: 23px;
+  }
+
+  .carousel-subtitle {
+    display: none;
+  }
+}
+/*EXTRA SMALL -- xs -- SLIDER -- END*/
+/*SMALL -- sm -- SLIDER*/
+/*SMALL -- sm -- SLIDER -- END*/
 .sign-up {
   background: transparent url("../img/green-bg.png") no-repeat 50% 0;
   background-size: 100%;
