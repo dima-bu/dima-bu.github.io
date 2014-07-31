@@ -177,14 +177,17 @@
   .carousel-logo {
     height: 60px !important;
     width: auto;
-    left: 20px;
+    left: 10px;
+    top: 16px;
   }
 
   .carousel-title {
     border-bottom: none;
-    right: 0;
+    right: 10px;
     left: initial;
     top: 23px;
+    padding-left: 80px;
+
   }
 
   .carousel-subtitle {
