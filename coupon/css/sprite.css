@@ -25,25 +25,25 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .fb {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -471px;
+  background-position: 0px -564px;
   width: 10px;
   height: 21px;
 }
 .getdeal {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1339px;
+  background-position: 0px -1487px;
   width: 160px;
   height: 84px;
 }
 .getdeal_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1433px;
+  background-position: 0px -1393px;
   width: 160px;
   height: 84px;
 }
 .getdeal_hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1527px;
+  background-position: 0px -1581px;
   width: 160px;
   height: 84px;
 }
@@ -59,27 +59,33 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 1px;
   height: 26px;
 }
+.gray-round {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -775px;
+  width: 44px;
+  height: 44px;
+}
 .green-star {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -328px;
+  background-position: 0px -274px;
   width: 16px;
   height: 17px;
 }
 .left-arrow-hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -564px;
+  background-position: 0px -471px;
   width: 13px;
   height: 21px;
 }
 .left-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -626px;
+  background-position: 0px -533px;
   width: 13px;
   height: 21px;
 }
 .light-orange-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1011px;
+  background-position: 0px -1065px;
   width: 33px;
   height: 57px;
 }
@@ -91,7 +97,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .markdown-circle {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -274px;
+  background-position: 0px -328px;
   width: 15px;
   height: 17px;
 }
@@ -121,13 +127,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .orange-arrow_left {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -67px;
+  background-position: 0px -87px;
   width: 11px;
   height: 10px;
 }
 .orange-arrow_right {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -87px;
+  background-position: 0px -67px;
   width: 11px;
   height: 10px;
 }
@@ -145,37 +151,37 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .rate-down {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -893px;
+  background-position: 0px -1006px;
   width: 48px;
   height: 49px;
 }
 .rate-down_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -952px;
+  background-position: 0px -947px;
   width: 48px;
   height: 49px;
 }
 .rate-up {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -775px;
+  background-position: 0px -888px;
   width: 48px;
   height: 49px;
 }
 .rate-up_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -834px;
+  background-position: 0px -829px;
   width: 48px;
   height: 49px;
 }
 .right-arrow-hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -533px;
+  background-position: 0px -595px;
   width: 13px;
   height: 21px;
 }
 .right-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -595px;
+  background-position: 0px -626px;
   width: 13px;
   height: 21px;
 }
@@ -205,19 +211,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .showcoupon {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1078px;
+  background-position: 0px -1132px;
   width: 162px;
   height: 77px;
 }
 .showcoupon_hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1165px;
+  background-position: 0px -1219px;
   width: 162px;
   height: 77px;
 }
 .showcoupon_pressed {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1252px;
+  background-position: 0px -1306px;
   width: 162px;
   height: 77px;
 }

@@ -169,12 +169,12 @@ p {
 /*Buttons*/
 
 .orange-btn {
+  background: #fb8b30;
   background: -webkit-linear-gradient(90deg, #fb8b30 0%, #fda634 100%);
   background: -moz-linear-gradient(90deg, #fb8b30 0%, #fda634 100%);
   background: -o-linear-gradient(90deg, #fb8b30 0%, #fda634 100%);
   background: -ms-linear-gradient(90deg, #fb8b30 0%, #fda634 100%);
   background: linear-gradient(0deg, #fb8b30 0%, #fda634 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb8b30', endColorstr='#61dbb2',GradientType=0 ); /* IE6-9 */  border-radius: 4px;
   border:1px solid #d4761a;
   box-shadow: 0px 3px 3px 0px rgba(207, 158, 110, 0.75);
   color:#fff;
@@ -187,6 +187,7 @@ p {
   padding: 0 25px;
   white-space: nowrap;
   letter-spacing: 0;
+  behavior: url('#{$path-to-behaivor}/border-radius.htc');
 
   &.-light-border {
     box-shadow: 0px 3px 3px 0px rgba(45, 29, 58, 0.33);
@@ -255,21 +256,22 @@ p {
 
 
 .gray-round {
-  background: -webkit-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
-  background: -moz-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
-  background: -o-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
-  background: -ms-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
-  background: linear-gradient(0deg, #ffffff 100%, #e8e6e2 0%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61dbb2',GradientType=0 ); /* IE6-9 */
-  border-radius: 50%;
-  box-shadow: 0px 1px 3px 1px rgb(211, 203, 194);
-  box-shadow: 0px 1px 3px 1px rgba(211, 203, 194, 0.86);
-  width: 40px;
-  height: 39px;
-  line-height: 39px;
+
+//  background: -webkit-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
+//  background: -moz-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
+//  background: -o-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
+//  background: -ms-linear-gradient(90deg, #ffffff 100%, #e8e6e2 0%);
+//  background: linear-gradient(0deg, #ffffff 100%, #e8e6e2 0%);
+//  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#61dbb2',GradientType=0 ); /* IE6-9 */
+//  border-radius: 50%;
+//  box-shadow: 0px 1px 3px 1px rgb(211, 203, 194);
+//  box-shadow: 0px 1px 3px 1px rgba(211, 203, 194, 0.86);
+//  width: 40px;
+//  height: 39px;
+  line-height: 40px;
   text-align: center;
-  border: 1px solid #cec8be;
-  behavior: url('#{$path-to-behaivor}/border-radius.htc');
+//  border: 1px solid #cec8be;
+//  behavior: url('#{$path-to-behaivor}/border-radius.htc');
 
 
   &.-no-shadow {
