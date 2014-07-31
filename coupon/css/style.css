@@ -6764,6 +6764,7 @@ p {
 .showcoupon {
   font-size: 0;
   text-align: center;
+  margin-right: 5px;
   color: #fc9b32;
   font-family: "proxima_nova_bold";
   text-shadow: 0px 1px 1px #ffffff;
@@ -7165,7 +7166,7 @@ footer .orange-btn {
 
 /*footer-bottom*/
 .footer-bottom {
-  background-color: rgba(159, 41, 27, 0.62);
+  background-color: #b6331e;
   padding: 8px 0;
 }
 
@@ -7521,9 +7522,6 @@ footer .orange-btn {
 .deal_item .getdeal {
   margin-top: 3px;
 }
-.deal_item .white-wrapper {
-  display: inline-block;
-}
 
 .popular button {
   border-top-right-radius: 0;
@@ -7812,6 +7810,10 @@ footer .orange-btn {
   .coupon-descr {
     font-size: 18px;
   }
+
+  .rate {
+    margin: 0 8px;
+  }
 }
 /*EXTRA SMALL -- xs -- COMPANY -- END*/
 /*SMALL -- sm -- COMPANY*/
@@ -7933,7 +7935,7 @@ a:hover {
 /*extra small FOOTER*/
 @media (max-width: 767px) {
   footer {
-    background: url("../img/bg_bottom-sm.png") transparent 50% -10px no-repeat;
+    background: url("../img/bg_bottom-sm.png") transparent 50% -30px no-repeat;
   }
 
   .footer-col {

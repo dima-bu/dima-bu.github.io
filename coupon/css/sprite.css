@@ -227,12 +227,6 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 64px;
   height: 40px;
 }
-.submit_bg {
-  background-image: url(../assets/sprite.png);
-  background-position: 0px -1621px;
-  width: 310px;
-  height: 393px;
-}
 .ticket {
   background-image: url(../assets/sprite.png);
   background-position: 0px -355px;
