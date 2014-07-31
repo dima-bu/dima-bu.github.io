@@ -7166,7 +7166,7 @@ footer .orange-btn {
 
 /*footer-bottom*/
 .footer-bottom {
-  background-color: #b6331e;
+  background-color: rgba(159, 41, 27, 0.62);
   padding: 8px 0;
 }
 
@@ -7915,7 +7915,7 @@ a:hover {
 }
 
 /*small FOOTER*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   footer {
     background: url("../img/bg_bottom-sm.png") transparent 50% -10px no-repeat;
   }
@@ -7934,18 +7934,6 @@ a:hover {
 }
 /*extra small FOOTER*/
 @media screen and (max-width: 767px) {
-  h1 {
-    background-color: red;
-    color: red;
-  }
-  h1 img {
-    width: 20px !important;
-  }
-
-  .carousel-title {
-    color: red;
-  }
-
   footer {
     background: url("../img/bg_bottom-sm.png") transparent 50% -30px no-repeat;
   }

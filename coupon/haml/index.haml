@@ -21,6 +21,11 @@
 
     %script{:src => "https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js" }
     %script{:src => "../js/modernizr.js" }
+    %script{:src => "../js/jquery.min.js" }
+    %script{:src => "../js/bootstrap.js" }
+    %script{:src => "../js/jquery.ikSelect.min.js" }
+    %script{:src => "../js/main.js" }
+
 %body
     .bg-wrapper.-with-slider
         .bg-wrapper_bottom
@@ -80,7 +85,7 @@
                 .row.main-top-section
                     .left-column_top
                         .carousel-wrapper
-                            .carousel.slide#slide-images
+                            .slide#slide-images
                                 -#.carousel.slide{:id=>"slide-images", :data => {:ride => "carousel"}}
 
                                 %ol.carousel-indicators
@@ -393,10 +398,6 @@
     -  #  window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')
 
     -# Custom JS
-    %script{:src => "../js/jquery.min.js" }
-    %script{:src => "../js/bootstrap.js" }
-    %script{:src => "../js/jquery.ikSelect.min.js" }
-    %script{:src => "../js/main.js" }
 
 
 

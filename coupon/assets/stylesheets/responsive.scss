@@ -169,7 +169,7 @@ $header-grid-gutter-width: 40px;
 }
 
 /*small FOOTER*/
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 
   footer {
     background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -10px no-repeat ;
@@ -192,18 +192,6 @@ $header-grid-gutter-width: 40px;
 
 /*extra small FOOTER*/
 @media screen and (max-width: $screen-xs-max) {
-
-  h1 {
-    background-color: red;
-    color:red;
-    img {
-      width: 20px !important;
-    }
-  }
-
-  .carousel-title {
-    color:red;
-  }
 
   footer {
     background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -30px no-repeat ;

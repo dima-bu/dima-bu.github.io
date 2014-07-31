@@ -4,7 +4,7 @@ $( document ).ready(function() {
            ddFullWidth: false
    });
 
-    $('.carousel').carousel();
+    $('.slide').carousel();
 
     $('.collapse').collapse();
 
