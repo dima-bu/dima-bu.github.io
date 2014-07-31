@@ -6975,7 +6975,7 @@ p {
 /*EXTRA SMALL -- xs -- MAIN MENU*/
 /*EXTRA SMALL -- xs -- MAIN MENU -- END*/
 /*SMALL -- sm -- MAIN MENU*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .main-menu_wrapper.collapse {
     display: block !important;
     height: auto!important;
@@ -6985,7 +6985,7 @@ p {
 }
 /*SMALL -- sm -- MAIN MENU -- END*/
 /*LARGE and MEDIUM -- lg and md -- MAIN MENU*/
-@media (min-width: 991px) {
+@media screen and (min-width: 991px) {
   .main-menu_wrapper.collapse {
     display: block !important;
     height: auto!important;
@@ -7346,7 +7346,7 @@ footer .orange-btn {
 /*SMALL and EXTRA SMALL -- sm and xs -- SLIDER*/
 /*SMALL and EXTRA SMALL -- sm and xs -- SLIDER -- END*/
 /*EXTRA SMALL -- xs -- SLIDER*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .carousel-logo {
     height: 60px !important;
     width: auto;
@@ -7773,7 +7773,7 @@ footer .orange-btn {
 /*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
 /*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
 /*EXTRA SMALL -- xs -- COMPANY*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .company-col-0 {
     margin-bottom: 10px;
   }
@@ -7963,7 +7963,7 @@ a:hover {
   }
 }
 /*small and extra small FOOTER*/
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   footer {
     padding-top: 90px;
   }
@@ -8007,7 +8007,7 @@ a:hover {
 /*menu*/
 /*media*/
 /*small ex. Ipad in Portrait 768px and 991px*/
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .header-col-2 {
     width: 38%;
   }
@@ -8021,7 +8021,7 @@ a:hover {
   }
 }
 /*Extra small ex. Iphone 320px, Iphone640 px*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .bg-wrapper {
     background-position: 50% -105px;
   }
@@ -8171,7 +8171,7 @@ a:hover {
   }
 }
 /*tablet and phone*/
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /*footer*/
   .small-logo_wrapper {
     display: inline-block;

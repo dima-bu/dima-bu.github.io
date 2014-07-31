@@ -225,7 +225,7 @@ $header-grid-gutter-width: 40px;
 }
 
 /*small and extra small FOOTER*/
-@media  (max-width: $screen-sm-max) {
+@media  screen and (max-width: $screen-sm-max) {
 
   footer {
     padding-top: 90px;
@@ -286,7 +286,7 @@ $header-grid-gutter-width: 40px;
 /*small ex. Ipad in Portrait 768px and 991px*/
 
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 
   .header-col-2 {
     width: 38%;
@@ -306,7 +306,7 @@ $header-grid-gutter-width: 40px;
 
 /*Extra small ex. Iphone 320px, Iphone640 px*/
 
-@media (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
   .bg-wrapper {
     background-position: 50% -105px;
     &.-with-slider {
@@ -481,7 +481,7 @@ $header-grid-gutter-width: 40px;
 
 
 /*tablet and phone*/
-@media  (max-width: $screen-sm-max) {
+@media  screen and (max-width: $screen-sm-max) {
 
   /*footer*/
 
@@ -519,6 +519,6 @@ $header-grid-gutter-width: 40px;
 
 /*md and lg*/
 
-@media (min-width: $screen-sm-max) {
+@media screen and (min-width: $screen-sm-max) {
 
 }
