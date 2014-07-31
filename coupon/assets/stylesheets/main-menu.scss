@@ -2,7 +2,7 @@ $menu-heihgt: 73px;
 
 .main-menu_wrapper {
   height: $menu-heihgt;
-  background-color:$brown;
+  background-color:#ae3e28;
   background-color: rgba($brown, 0.75);
   border-bottom: 4px solid rgba($brown, 0.90);
   margin-bottom: 40px;
@@ -61,7 +61,7 @@ $menu-heihgt: 73px;
 /*EXTRA SMALL -- xs -- MAIN MENU*/
 @media screen and (max-width: $screen-xs-max) {
 
-  
+
 }
 /*EXTRA SMALL -- xs -- MAIN MENU -- END*/
 

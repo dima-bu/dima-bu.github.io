@@ -6595,6 +6595,8 @@ p {
   background: -o-linear-gradient(90deg, #fb8b30 0%, #fda634 100%);
   background: -ms-linear-gradient(90deg, #fb8b30 0%, #fda634 100%);
   background: linear-gradient(0deg, #fb8b30 0%, #fda634 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb8b30', endColorstr='#61dbb2',GradientType=0 );
+  /* IE6-9 */
   border-radius: 4px;
   border: 1px solid #d4761a;
   box-shadow: 0px 3px 3px 0px rgba(207, 158, 110, 0.75);
@@ -6679,6 +6681,7 @@ p {
   line-height: 39px;
   text-align: center;
   border: 1px solid #cec8be;
+  behavior: url("../assets//border-radius.htc");
 }
 .gray-round.-no-shadow {
   box-shadow: none;
@@ -6913,12 +6916,8 @@ p {
   display: block;
   cursor: pointer;
 }
-.soc-links_item .icon {
-  margin-top: 10px;
-}
 .soc-links_item .icon.tw {
   margin-left: 2px;
-  margin-top: 12px;
 }
 
 .search-xs {
@@ -6929,7 +6928,7 @@ p {
 
 .main-menu_wrapper {
   height: 73px;
-  background-color: #901b1d;
+  background-color: #ae3e28;
   background-color: rgba(144, 27, 29, 0.75);
   border-bottom: 4px solid rgba(144, 27, 29, 0.9);
   margin-bottom: 40px;
