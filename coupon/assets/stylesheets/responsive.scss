@@ -191,7 +191,19 @@ $header-grid-gutter-width: 40px;
 }
 
 /*extra small FOOTER*/
-@media (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-xs-max) {
+
+  h1 {
+    background-color: red;
+    color:red;
+    img {
+      width: 20px !important;
+    }
+  }
+
+  .carousel-title {
+    color:red;
+  }
 
   footer {
     background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -30px no-repeat ;

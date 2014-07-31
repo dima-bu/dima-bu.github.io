@@ -7933,7 +7933,19 @@ a:hover {
   }
 }
 /*extra small FOOTER*/
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  h1 {
+    background-color: red;
+    color: red;
+  }
+  h1 img {
+    width: 20px !important;
+  }
+
+  .carousel-title {
+    color: red;
+  }
+
   footer {
     background: url("../img/bg_bottom-sm.png") transparent 50% -30px no-repeat;
   }
