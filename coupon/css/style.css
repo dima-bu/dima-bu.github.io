@@ -6634,6 +6634,7 @@ p {
 }
 .orange-btn.-lg .icon {
   margin-right: 20px;
+  height: 55px;
 }
 .orange-btn.-medium {
   height: 45px;
@@ -6776,11 +6777,11 @@ p {
   text-align: center;
 }
 .getdeal:hover {
-  background-position: 0px -1527px;
+  background-position: 0px -1581px;
   color: #ffffff;
 }
 .getdeal:active, .getdeal:focus {
-  background-position: 0px -1433px;
+  background-position: 0px -1487px;
   color: #ffffff;
 }
 
@@ -6794,10 +6795,10 @@ p {
   line-height: 77px;
 }
 .showcoupon:hover {
-  background-position: 0px -1165px;
+  background-position: 0px -1219px;
 }
 .showcoupon:active, .showcoupon:focus, .showcoupon.focus {
-  background-position: 0px -1252px;
+  background-position: 0px -1306px;
   font-size: 14px;
 }
 
@@ -6812,11 +6813,11 @@ p {
 }
 
 .rate-up:hover {
-  background-position: 0px -834px;
+  background-position: 0px -888px;
 }
 
 .rate-down:hover {
-  background-position: 0px -952px;
+  background-position: 0px -1006px;
 }
 
 /*wrappers*/
@@ -6830,6 +6831,7 @@ p {
   border-radius: 6px;
   background-color: #fff;
   padding: 6px;
+  behavior: url("../assets//ie-css3.htc");
 }
 .white-wrapper .no-padding {
   padding: 0;
@@ -7227,6 +7229,7 @@ footer .orange-btn {
   color: #fff;
   font-size: 14px;
   font-family: "proxima_nova_bold";
+  border-color: #fdc33a;
   border-right: 1px solid rgba(253, 195, 58, 0.53);
   padding: 0 12px;
 }
@@ -7246,6 +7249,7 @@ footer .orange-btn {
   position: absolute;
   bottom: 10px;
   left: 0;
+  font-size: 0;
 }
 .carousel-wrapper .button-cover {
   display: inline-block;
@@ -7338,8 +7342,8 @@ footer .orange-btn {
   position: absolute;
   left: 40px;
   top: 23px;
-  width: auto;
-  height: 82px !important;
+  width: 82px !important;
+  height: 83px !important;
 }
 
 .carousel-indicators {
@@ -7787,13 +7791,13 @@ footer .orange-btn {
   cursor: pointer;
 }
 .rate.-green .icon {
-  background-position: 0px -834px;
+  background-position: 0px -888px;
 }
 .rate.-green .rate-count {
   color: #82be1d;
 }
 .rate.-red .icon {
-  background-position: 0px -952px;
+  background-position: 0px -1006px;
 }
 .rate.-red .rate-count {
   color: #e25d5f;

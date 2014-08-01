@@ -19,31 +19,31 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .checkmark {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -502px;
+  background-position: 0px -595px;
   width: 21px;
   height: 21px;
 }
 .fb {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -471px;
+  background-position: 0px -564px;
   width: 10px;
   height: 21px;
 }
 .getdeal {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1541px;
+  background-position: 0px -1393px;
   width: 160px;
   height: 84px;
 }
 .getdeal_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1447px;
+  background-position: 0px -1487px;
   width: 160px;
   height: 84px;
 }
 .getdeal_hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1635px;
+  background-position: 0px -1581px;
   width: 160px;
   height: 84px;
 }
@@ -61,37 +61,31 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .gray-round {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -829px;
-  width: 44px;
-  height: 44px;
-}
-.gray-round_orange-bg {
-  background-image: url(../assets/sprite.png);
   background-position: 0px -775px;
   width: 44px;
   height: 44px;
 }
 .green-star {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -301px;
+  background-position: 0px -328px;
   width: 16px;
   height: 17px;
 }
 .left-arrow-hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -626px;
+  background-position: 0px -502px;
   width: 13px;
   height: 21px;
 }
 .left-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -595px;
+  background-position: 0px -533px;
   width: 13px;
   height: 21px;
 }
 .light-orange-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1119px;
+  background-position: 0px -1065px;
   width: 33px;
   height: 57px;
 }
@@ -103,7 +97,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .markdown-circle {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -328px;
+  background-position: 0px -301px;
   width: 15px;
   height: 17px;
 }
@@ -115,7 +109,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .orange-arrow-small {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -248px;
+  background-position: 0px -222px;
   width: 16px;
   height: 16px;
 }
@@ -133,13 +127,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .orange-arrow_left {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -87px;
+  background-position: 0px -67px;
   width: 11px;
   height: 10px;
 }
 .orange-arrow_right {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -67px;
+  background-position: 0px -87px;
   width: 11px;
   height: 10px;
 }
@@ -151,43 +145,43 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .rate-divider {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -383px;
+  background-position: 0px -412px;
   width: 5px;
   height: 19px;
 }
 .rate-down {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1060px;
+  background-position: 0px -947px;
   width: 48px;
   height: 49px;
 }
 .rate-down_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1001px;
+  background-position: 0px -1006px;
   width: 48px;
   height: 49px;
 }
 .rate-up {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -942px;
+  background-position: 0px -829px;
   width: 48px;
   height: 49px;
 }
 .rate-up_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -883px;
+  background-position: 0px -888px;
   width: 48px;
   height: 49px;
 }
 .right-arrow-hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -533px;
+  background-position: 0px -471px;
   width: 13px;
   height: 21px;
 }
 .right-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -564px;
+  background-position: 0px -626px;
   width: 13px;
   height: 21px;
 }
@@ -211,31 +205,31 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .share {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -412px;
+  background-position: 0px -383px;
   width: 24px;
   height: 19px;
 }
 .showcoupon {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1186px;
+  background-position: 0px -1132px;
   width: 162px;
   height: 77px;
 }
 .showcoupon_hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1273px;
+  background-position: 0px -1219px;
   width: 162px;
   height: 77px;
 }
 .showcoupon_pressed {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1360px;
+  background-position: 0px -1306px;
   width: 162px;
   height: 77px;
 }
 .small-logo {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1729px;
+  background-position: 0px -1675px;
   width: 87px;
   height: 88px;
 }
@@ -259,7 +253,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .tw {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -222px;
+  background-position: 0px -248px;
   width: 19px;
   height: 16px;
 }

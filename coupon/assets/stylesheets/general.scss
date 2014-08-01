@@ -206,6 +206,7 @@ p {
     padding: 0 30px;
     .icon {
       margin-right: 20px;
+      height: 55px;
     }
   }
 
@@ -413,6 +414,7 @@ p {
 }
 
 
+
 /*wrappers*/
 
 .button-cover-wrapper {
@@ -425,6 +427,7 @@ p {
   border-radius: 6px;
   background-color: #fff;
   padding: 6px;
+  behavior: url('#{$path-to-behaivor}/ie-css3.htc');
   .no-padding {
     padding: 0;
   }
