@@ -169,6 +169,17 @@ $header-grid-gutter-width: 40px;
 }
 
 
+.footer-bottom-col-1 {
+  @extend  .col-sm-9;
+  @extend  .col-xs-18;
+}
+
+.footer-bottom-col-2 {
+  @extend  .col-sm-9;
+  @extend  .col-xs-18;
+}
+
+
 /*banner-right*/
 
 .banner-right {

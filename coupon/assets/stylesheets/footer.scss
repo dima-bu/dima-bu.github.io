@@ -138,12 +138,13 @@ footer {
   color:#fff;
   font-size: 14px;
   font-family: $ff-bold;
-  border-right: 1px solid $dark-yellow;
-  border-right: 1px solid rgba($dark-yellow, .53);
-  padding: 0 12px;
-  &:last-child {
-    border-right: 0;
-    padding-right: 0;
+  padding-right: 0 ;
+  padding-left: 12px;
+  &:first-child {
+    border-right: 1px solid $dark-yellow;
+    border-right: 1px solid rgba($dark-yellow, .53);
+    padding-right: 12px ;
+    padding-left: 12px;
   }
 }
 

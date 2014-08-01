@@ -914,14 +914,14 @@ pre code {
   clear: both;
 }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .footer-col-1, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .footer-col-3, .col-lg-4, .col-xs-5, .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .col-md-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .footer-col-4, .col-lg-5, .col-xs-6, .company-col-2, .col-sm-6, .col-md-6, .right-column_top, .right-column_bottom, .footer-col-2, .col-lg-6, .col-xs-7, .col-sm-7, .deal_item-col-3, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .company-col-2-2, .company-col-2, .col-md-8, .company-col-2-2, .company-col-2, .deal_item-col-3, .col-lg-8, .col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3, .col-sm-9, .footer-col-2, .footer-col-3, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .company-col-2-1, .col-md-10, .company-col-2-1, .deal_item-col-2, .col-lg-10, .col-xs-11, .col-sm-11, .deal_item-col-2, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .left-column_top, .left-column_bottom, .col-lg-12, .col-xs-13, .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-md-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5, .col-md-18, .col-lg-18 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .footer-col-1, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .footer-col-3, .col-lg-4, .col-xs-5, .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .col-md-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .footer-col-4, .col-lg-5, .col-xs-6, .company-col-2, .col-sm-6, .col-md-6, .right-column_top, .right-column_bottom, .footer-col-2, .col-lg-6, .col-xs-7, .col-sm-7, .deal_item-col-3, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .company-col-2-2, .company-col-2, .col-md-8, .company-col-2-2, .company-col-2, .deal_item-col-3, .col-lg-8, .col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3, .col-sm-9, .footer-col-2, .footer-col-3, .footer-bottom-col-1, .footer-bottom-col-2, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .company-col-2-1, .col-md-10, .company-col-2-1, .deal_item-col-2, .col-lg-10, .col-xs-11, .col-sm-11, .deal_item-col-2, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .left-column_top, .left-column_bottom, .col-lg-12, .col-xs-13, .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-md-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5, .footer-bottom-col-1, .footer-bottom-col-2, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5, .col-md-18, .col-lg-18 {
   position: relative;
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .company-col-2, .col-xs-7, .col-xs-8, .col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .company-col-2, .col-xs-7, .col-xs-8, .col-xs-9, .company-col-1mod, .company-col-2-1, .company-col-2-2, .company-col-3, .deal_item-col-2, .deal_item-col-3, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5, .footer-bottom-col-1, .footer-bottom-col-2 {
   float: left;
 }
 
@@ -993,7 +993,7 @@ pre code {
   width: 94.44444%;
 }
 
-.col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5 {
+.col-xs-18, .company-col-0, .company-col-1, .company-col-2split, .hut-coupons-col-1, .hut-coupons-col-2, .deal_item-col-1, .deal_item-col-2-3, .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4, .footer-col-5, .footer-bottom-col-1, .footer-bottom-col-2 {
   width: 100%;
 }
 
@@ -1226,7 +1226,7 @@ pre code {
 }
 
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .col-sm-6, .col-sm-7, .deal_item-col-3, .col-sm-8, .company-col-2-2, .company-col-2, .col-sm-9, .footer-col-2, .footer-col-3, .col-sm-10, .company-col-2-1, .col-sm-11, .deal_item-col-2, .col-sm-12, .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .company-col-1, .company-col-1mod, .company-col-3, .hut-coupons-col-1, .deal_item-col-1, .col-sm-6, .col-sm-7, .deal_item-col-3, .col-sm-8, .company-col-2-2, .company-col-2, .col-sm-9, .footer-col-2, .footer-col-3, .footer-bottom-col-1, .footer-bottom-col-2, .col-sm-10, .company-col-2-1, .col-sm-11, .deal_item-col-2, .col-sm-12, .col-sm-13, .company-col-2split, .hut-coupons-col-2, .deal_item-col-2-3, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .footer-col-1, .footer-col-4, .footer-col-5 {
     float: left;
   }
 
@@ -1262,7 +1262,7 @@ pre code {
     width: 44.44444%;
   }
 
-  .col-sm-9, .footer-col-2, .footer-col-3 {
+  .col-sm-9, .footer-col-2, .footer-col-3, .footer-bottom-col-1, .footer-bottom-col-2 {
     width: 50%;
   }
 
@@ -7320,13 +7320,14 @@ footer .orange-btn {
   color: #fff;
   font-size: 14px;
   font-family: "proxima_nova_bold";
+  padding-right: 0;
+  padding-left: 12px;
+}
+.footer-bottom_link:first-child {
   border-right: 1px solid #fdc33a;
   border-right: 1px solid rgba(253, 195, 58, 0.53);
-  padding: 0 12px;
-}
-.footer-bottom_link:last-child {
-  border-right: 0;
-  padding-right: 0;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 /****************/
@@ -8467,6 +8468,12 @@ a:hover {
 }
 .ie8 .footer-col-5, .ie9 .footer-col-5 {
   display: none;
+}
+.ie8 .footer-bottom-col-1, .ie9 .footer-bottom-col-1 {
+  float: left;
+}
+.ie8 .footer-bottom-col-2, .ie9 .footer-bottom-col-2 {
+  float: right;
 }
 
 /*main top section*/

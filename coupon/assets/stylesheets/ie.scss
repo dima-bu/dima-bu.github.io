@@ -85,10 +85,12 @@
 
   .footer-bottom-col-1 {
     @extend .col-ie-9;
+    float: left;
   }
 
   .footer-bottom-col-2 {
     @extend .col-ie-9;
+    float: right;
   }
 
 }
