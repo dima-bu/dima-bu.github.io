@@ -107,10 +107,13 @@
   max-width: 170px;
 }
 
-.carousel-logo {
+.carousellogo {
   position: absolute;
   left: 40px;
   top: 23px;
+  img {
+    width: auto;
+  }
 }
 
 
@@ -174,7 +177,7 @@
 /*EXTRA SMALL -- xs -- SLIDER*/
 @media screen and (max-width: $screen-xs-max) {
   
-  .carousel-logo {
+  .carousellogo {
     height: 60px !important;
     width: auto;
     left: 10px;

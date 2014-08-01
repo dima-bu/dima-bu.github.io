@@ -6609,7 +6609,7 @@ p {
   border: 1px solid #d4761a;
   box-shadow: 0px 3px 3px 0px #cf9e6e;
   box-shadow: 0px 3px 3px 0px rgba(207, 158, 110, 0.75);
-  color: #fff;
+  color: #ffffff;
   text-shadow: 0px 2px 1px #e65b17;
   text-shadow: 0px 2px 1px rgba(230, 91, 23, 0.75);
   font-size: 14px;
@@ -6621,7 +6621,7 @@ p {
   padding: 0 25px;
   white-space: nowrap;
   letter-spacing: 0;
-  behavior: url("../assets//border-radius.htc");
+  border-radius: 4px;
 }
 .orange-btn.-light-border {
   box-shadow: 0px 3px 3px 0px rgba(45, 29, 58, 0.33);
@@ -7325,10 +7325,13 @@ footer .orange-btn {
   max-width: 170px;
 }
 
-.carousel-logo {
+.carousellogo {
   position: absolute;
   left: 40px;
   top: 23px;
+}
+.carousellogo img {
+  width: auto;
 }
 
 .carousel-indicators {
@@ -7378,7 +7381,7 @@ footer .orange-btn {
 /*SMALL and EXTRA SMALL -- sm and xs -- SLIDER -- END*/
 /*EXTRA SMALL -- xs -- SLIDER*/
 @media screen and (max-width: 767px) {
-  .carousel-logo {
+  .carousellogo {
     height: 60px !important;
     width: auto;
     left: 10px;
@@ -7451,12 +7454,22 @@ footer .orange-btn {
   margin: 0 -5px;
   margin-top: -146px;
   position: relative;
-  background-color: #aae051;
-  background: -webkit-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
-  background: -moz-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
-  background: -o-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
-  background: -ms-linear-gradient(90deg, #76ab20 0%, #a6d953 100%);
-  background: linear-gradient(0deg, #76ab20 0%, #a6d953 100%);
+  background: #76ab20;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #76ab20 0%, #a6d953 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #76ab20), color-stop(100%, #a6d953));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #76ab20 0%, #a6d953 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #76ab20 0%, #a6d953 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #76ab20 0%, #a6d953 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #76ab20 0%, #a6d953 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76ab20', endColorstr='#a6d953',GradientType=0 );
+  /* IE6-9 */
   border-top: 1px solid #649d39;
 }
 .sign-up_form button {
