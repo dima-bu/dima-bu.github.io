@@ -1,5 +1,6 @@
 @import "../font/stylesheet.css";
 
+
 @import "variables";
 
 @import "bootstrap";
@@ -22,7 +23,7 @@
 
 @import "submit-coupon";
 @import "company";
-
+@import "ie";
 
 .bg-wrapper {
   background: url('#{$path-to-img}bg_top-narrow.png') transparent 50% 0 no-repeat ;
@@ -43,8 +44,6 @@ a:hover {
   text-decoration: none;
 }
 
-.ie8 .container, .ie9 .container {
-  width: 984px !important;
-}
+
 
 @import "responsive";
