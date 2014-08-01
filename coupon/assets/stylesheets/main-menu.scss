@@ -4,6 +4,7 @@ $menu-heihgt: 73px;
   height: $menu-heihgt;
   background-color:#ae3e28;
   background-color: rgba($brown, 0.75);
+  border-bottom: 4px solid $brown;
   border-bottom: 4px solid rgba($brown, 0.90);
   margin-bottom: 40px;
 }
