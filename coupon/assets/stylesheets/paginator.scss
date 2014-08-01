@@ -38,7 +38,13 @@
     border-radius: 15px;
     @extend .simple-round;
     margin-right: 8px;
-    &:hover, &.active {
+    &:hover {
+      color:#ffffff;
+      background-color: #85b735;
+      border-color: #85b735;
+    }
+
+    &.active {
       color:#ffffff;
       background-color: #85b735;
       border-color: #85b735;

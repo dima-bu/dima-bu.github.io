@@ -6779,11 +6779,11 @@ p {
   text-align: center;
 }
 .getdeal:hover {
-  background-position: 0px -1581px;
+  background-position: 0px -1635px;
   color: #ffffff;
 }
 .getdeal:active, .getdeal:focus {
-  background-position: 0px -1487px;
+  background-position: 0px -1447px;
   color: #ffffff;
 }
 
@@ -6797,10 +6797,10 @@ p {
   line-height: 77px;
 }
 .showcoupon:hover {
-  background-position: 0px -1219px;
+  background-position: 0px -1273px;
 }
 .showcoupon:active, .showcoupon:focus, .showcoupon.focus {
-  background-position: 0px -1306px;
+  background-position: 0px -1360px;
   font-size: 14px;
 }
 
@@ -6815,11 +6815,11 @@ p {
 }
 
 .rate-up:hover {
-  background-position: 0px -888px;
+  background-position: 0px -883px;
 }
 
 .rate-down:hover {
-  background-position: 0px -1006px;
+  background-position: 0px -1001px;
 }
 
 /*wrappers*/
@@ -7078,7 +7078,12 @@ p {
   border-radius: 15px;
   margin-right: 8px;
 }
-.paginator-list_link.-number:hover, .paginator-list_link.-number.active {
+.paginator-list_link.-number:hover {
+  color: #ffffff;
+  background-color: #85b735;
+  border-color: #85b735;
+}
+.paginator-list_link.-number.active {
   color: #ffffff;
   background-color: #85b735;
   border-color: #85b735;
@@ -7792,13 +7797,13 @@ footer .orange-btn {
   cursor: pointer;
 }
 .rate.-green .icon {
-  background-position: 0px -888px;
+  background-position: 0px -883px;
 }
 .rate.-green .rate-count {
   color: #82be1d;
 }
 .rate.-red .icon {
-  background-position: 0px -1006px;
+  background-position: 0px -1001px;
 }
 .rate.-red .rate-count {
   color: #e25d5f;

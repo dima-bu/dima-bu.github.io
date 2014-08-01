@@ -4,11 +4,13 @@ $( document ).ready(function() {
            ddFullWidth: false
    });
 
-    $('.slide').carousel();
-
-    $('.collapse').collapse();
-
     $( ".showcoupon" ).on( "click", function() {
-         $( this ).addClass('focus');
+        $( this ).addClass('focus');
     });
+
+//    $('.slide').carousel();
+//
+//    $('.collapse').collapse();
+
+
 });
