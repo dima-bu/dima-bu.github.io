@@ -7079,7 +7079,7 @@ p {
   margin-right: 8px;
 }
 .paginator-list_link.-number:hover, .paginator-list_link.-number.active {
-  color: #fff;
+  color: #ffffff;
   background-color: #85b735;
   border-color: #85b735;
 }
@@ -7880,12 +7880,12 @@ footer .orange-btn {
 }
 
 .ie8 .left-column_top, .ie9 .left-column_top {
-  width: 33.33333%;
+  width: 66.66667%;
   float: left;
 }
 .ie8 .right-column_top, .ie9 .right-column_top {
-  width: 66.66667%;
-  float: right;
+  width: 33.33333%;
+  float: left;
 }
 .ie8 .main-menu_wrapper.collapse, .ie9 .main-menu_wrapper.collapse {
   display: block !important;
