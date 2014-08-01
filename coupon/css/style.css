@@ -6702,14 +6702,11 @@ p {
   color: #fff;
 }
 
-.gray-round {
+.gray-round, .gray-round_orange-bg {
   line-height: 40px;
   text-align: center;
 }
-.gray-round.-no-shadow {
-  box-shadow: none;
-}
-.gray-round i {
+.gray-round i, .gray-round_orange-bg i {
   vertical-align: middle;
 }
 
@@ -6970,7 +6967,7 @@ p {
 
 .main-menu_wrapper {
   height: 73px;
-  background-color: #ae3e28;
+  background-color: #A93C23;
   background-color: rgba(144, 27, 29, 0.75);
   border-bottom: 4px solid #901b1d;
   border-bottom: 4px solid rgba(144, 27, 29, 0.9);
@@ -7187,17 +7184,9 @@ footer .orange-btn {
 }
 
 /**/
-.small-logo_wrapper {
-  padding: 15px 2px;
-  border-radius: 16px;
-  margin-top: 5px;
-  margin-bottom: 18px;
-  background-color: #fff;
+.small-logo {
+  margin-bottom: -2px;
   text-align: center;
-  display: inline-block;
-  -webkit-box-shadow: inset 0px -3px 3px 0px #dfe4e3;
-  -moz-box-shadow: inset 0px -3px 3px 0px #dfe4e3;
-  box-shadow: inset 0px -3px 3px 0px #dfe4e3;
 }
 
 .sign-up_footer .orange-btn {
@@ -7216,6 +7205,7 @@ footer .orange-btn {
 
 /*footer-bottom*/
 .footer-bottom {
+  background-color: #B4321E;
   background-color: rgba(159, 41, 27, 0.62);
   padding: 8px 0;
 }
@@ -7348,8 +7338,6 @@ footer .orange-btn {
   position: absolute;
   left: 40px;
   top: 23px;
-}
-.carousellogo img {
   width: auto;
   height: 82px !important;
 }
@@ -8235,6 +8223,7 @@ a:hover {
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
+    margin-bottom: 12px;
   }
 
   .company-list {
