@@ -97,4 +97,48 @@
     float: right;
   }
 
+  /*company*/
+
+
+
+  .company-col-1 {
+    @extend .col-ie-5;
+
+  }
+
+  .company-col-1mod {
+    @extend .col-ie-5;
+  }
+
+  .company-col-2split {
+    @extend .col-ie-13;
+  }
+
+  .company-col-2-1 {
+    @extend .col-ie-10;
+  }
+
+  .company-col-2-2 {
+    @extend .col-ie-8;
+
+  }
+
+  .company-col-2 {
+    @extend .col-ie-8;
+
+  }
+
+
+  .company-col-3 {
+    @extend .col-ie-5;
+  }
+
+  .hut-coupons-col-1 {
+    @extend .col-ie-5;
+  }
+
+  .hut-coupons-col-2 {
+    @extend .col-ie-13;
+  }
+
 }

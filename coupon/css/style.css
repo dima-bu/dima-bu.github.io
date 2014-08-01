@@ -8129,7 +8129,7 @@ a:hover {
   text-decoration: none;
 }
 
-.col-ie-1, .col-ie-2, .col-ie-3, .ie8 .footer-col-1, .ie9 .footer-col-1, .col-ie-4, .ie8 .footer-col-3, .ie9 .footer-col-3, .col-ie-5, .ie8 .deal_item-col-1, .ie9 .deal_item-col-1, .ie8 .footer-col-4, .ie9 .footer-col-4, .col-ie-6, .ie8 .right-column_top, .ie9 .right-column_top, .ie8 .footer-col-2, .ie9 .footer-col-2, .col-ie-7, .col-ie-8, .ie8 .deal_item-col-3, .ie9 .deal_item-col-3, .col-ie-9, .ie8 .footer-bottom-col-1, .ie9 .footer-bottom-col-1, .ie8 .footer-bottom-col-2, .ie9 .footer-bottom-col-2, .col-ie-10, .ie8 .deal_item-col-2, .ie9 .deal_item-col-2, .col-ie-11, .col-ie-12, .ie8 .left-column_top, .ie9 .left-column_top, .col-ie-13, .ie8 .deal_item-col-2-3, .ie9 .deal_item-col-2-3, .col-ie-14, .col-ie-15, .col-ie-16, .col-ie-17, .col-ie-18 {
+.col-ie-1, .col-ie-2, .col-ie-3, .ie8 .footer-col-1, .ie9 .footer-col-1, .col-ie-4, .ie8 .footer-col-3, .ie9 .footer-col-3, .col-ie-5, .ie8 .deal_item-col-1, .ie9 .deal_item-col-1, .ie8 .footer-col-4, .ie9 .footer-col-4, .ie8 .company-col-1, .ie9 .company-col-1, .ie8 .company-col-1mod, .ie9 .company-col-1mod, .ie8 .company-col-3, .ie9 .company-col-3, .ie8 .hut-coupons-col-1, .ie9 .hut-coupons-col-1, .col-ie-6, .ie8 .right-column_top, .ie9 .right-column_top, .ie8 .footer-col-2, .ie9 .footer-col-2, .col-ie-7, .col-ie-8, .ie8 .deal_item-col-3, .ie9 .deal_item-col-3, .ie8 .company-col-2-2, .ie9 .company-col-2-2, .ie8 .company-col-2, .ie9 .company-col-2, .col-ie-9, .ie8 .footer-bottom-col-1, .ie9 .footer-bottom-col-1, .ie8 .footer-bottom-col-2, .ie9 .footer-bottom-col-2, .col-ie-10, .ie8 .deal_item-col-2, .ie9 .deal_item-col-2, .ie8 .company-col-2-1, .ie9 .company-col-2-1, .col-ie-11, .col-ie-12, .ie8 .left-column_top, .ie9 .left-column_top, .col-ie-13, .ie8 .deal_item-col-2-3, .ie9 .deal_item-col-2-3, .ie8 .company-col-2split, .ie9 .company-col-2split, .ie8 .hut-coupons-col-2, .ie9 .hut-coupons-col-2, .col-ie-14, .col-ie-15, .col-ie-16, .col-ie-17, .col-ie-18 {
   float: left;
 }
 
@@ -8149,7 +8149,7 @@ a:hover {
   width: 22.22222%;
 }
 
-.col-ie-5, .ie8 .deal_item-col-1, .ie9 .deal_item-col-1, .ie8 .footer-col-4, .ie9 .footer-col-4 {
+.col-ie-5, .ie8 .deal_item-col-1, .ie9 .deal_item-col-1, .ie8 .footer-col-4, .ie9 .footer-col-4, .ie8 .company-col-1, .ie9 .company-col-1, .ie8 .company-col-1mod, .ie9 .company-col-1mod, .ie8 .company-col-3, .ie9 .company-col-3, .ie8 .hut-coupons-col-1, .ie9 .hut-coupons-col-1 {
   width: 27.77778%;
 }
 
@@ -8161,7 +8161,7 @@ a:hover {
   width: 38.88889%;
 }
 
-.col-ie-8, .ie8 .deal_item-col-3, .ie9 .deal_item-col-3 {
+.col-ie-8, .ie8 .deal_item-col-3, .ie9 .deal_item-col-3, .ie8 .company-col-2-2, .ie9 .company-col-2-2, .ie8 .company-col-2, .ie9 .company-col-2 {
   width: 44.44444%;
 }
 
@@ -8169,7 +8169,7 @@ a:hover {
   width: 50%;
 }
 
-.col-ie-10, .ie8 .deal_item-col-2, .ie9 .deal_item-col-2 {
+.col-ie-10, .ie8 .deal_item-col-2, .ie9 .deal_item-col-2, .ie8 .company-col-2-1, .ie9 .company-col-2-1 {
   width: 55.55556%;
 }
 
@@ -8181,7 +8181,7 @@ a:hover {
   width: 66.66667%;
 }
 
-.col-ie-13, .ie8 .deal_item-col-2-3, .ie9 .deal_item-col-2-3 {
+.col-ie-13, .ie8 .deal_item-col-2-3, .ie9 .deal_item-col-2-3, .ie8 .company-col-2split, .ie9 .company-col-2split, .ie8 .hut-coupons-col-2, .ie9 .hut-coupons-col-2 {
   width: 72.22222%;
 }
 
@@ -8436,6 +8436,7 @@ a:hover {
 .ie8, .ie9 {
   /*deal*/
   /*footer*/
+  /*company*/
 }
 .ie8 body, .ie9 body {
   min-width: 984px !important;
