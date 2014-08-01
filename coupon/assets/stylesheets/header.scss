@@ -113,3 +113,69 @@
   margin: 0;
 }
 
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- HEADER*/
+@media  screen and (max-width: $screen-sm-max) {
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- HEADER -- END*/
+
+
+/*EXTRA SMALL -- xs -- HEADER*/
+@media screen and (max-width: $screen-xs-max) {
+
+  .topline {
+    height: 2px;
+  }
+
+  .header {
+    height: 50px;
+  }
+
+  .header-col {
+    background: none;
+  }
+
+  .header-col-1 {
+    width: 230px;
+    padding-top: 8px;
+  }
+
+  .header-col-2 {
+    display: none;
+  }
+
+  .header-col-3 {
+    display: none;
+  }
+
+}
+/*EXTRA SMALL -- xs -- HEADER -- END*/
+
+
+
+/*SMALL -- sm -- HEADER*/
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+  .header-col-2 {
+    width: 38%;
+  }
+
+  .header-col-3 {
+    background: none;
+  }
+
+}
+/*SMALL -- sm -- HEADER -- END*/
+
+/*LARGE and MEDIUM -- lg and md -- HEADER*/
+@media screen and (min-width: $screen-sm-max) {
+
+}
+/*LARGE and MEDIUM -- lg and md -- HEADER -- END*/

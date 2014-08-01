@@ -63,6 +63,46 @@ $menu-heihgt: 73px;
 @media screen and (max-width: $screen-xs-max) {
 
 
+  .main-menu  {
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .main-menu_wrapper {
+    height: auto;
+    margin-bottom: 0px;
+    padding: 0;
+    border-bottom-width: 2px;
+
+    .container {
+      padding: 0;
+    }
+
+    .orange-btn {
+      box-shadow: none;
+    }
+  }
+
+  .main-menu_item {
+    width: 50%;
+    float: left;
+  }
+
+  .main-menu_link {
+    height: 55px;
+    line-height:55px;
+    text-align: left;
+    padding: 0 10px;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba($dark-brown, .35);
+    border-top: 1px solid rgba($pink, .19);
+
+    &:hover {
+      border-bottom: 1px solid rgba($dark-brown, .35);
+      margin-bottom: 0;
+    }
+  }
+
 }
 /*EXTRA SMALL -- xs -- MAIN MENU -- END*/
 

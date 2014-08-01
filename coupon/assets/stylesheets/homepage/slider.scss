@@ -173,6 +173,10 @@
 /*SMALL and EXTRA SMALL -- sm and xs -- SLIDER*/
 @media  screen and (max-width: $screen-sm-max) {
 
+  .carousel-wrapper {
+    margin-top: 20px;
+  }
+
 }
 /*SMALL and EXTRA SMALL -- sm and xs -- SLIDER -- END*/
 
@@ -199,6 +203,22 @@
 
   .carousel-subtitle {
     display: none;
+  }
+
+  .carousel-title {
+    font-size: 34px;
+    line-height: 28px;
+    padding-bottom: 4px;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .carousel-wrapper {
+    padding: 0;
+    margin-left: -12px;
+    margin-right: -12px;
   }
   
 }

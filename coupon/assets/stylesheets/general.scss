@@ -383,6 +383,7 @@ p {
   &:active, &:focus, &.focus {
     background-position: $showcoupon_pressed-offset-x $showcoupon_pressed-offset-y;
     font-size: 14px;
+    cursor: text;
   }
 }
 

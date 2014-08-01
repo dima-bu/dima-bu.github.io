@@ -7,11 +7,13 @@
   }
 
   .left-column_top {
-    width: 66.66667%;
+    @extend .col-ie-12;
+    float: left;
   }
 
   .right-column_top {
-    width: 33.33333%;
+    @extend .col-ie-6;
+    float: left;
   }
 
   .main-menu_wrapper.collapse {
@@ -30,6 +32,8 @@
       }
     }
   }
+
+  /*deal*/
 
 
   .deal_item-col-1 {
@@ -79,5 +83,12 @@
     display: none;
   }
 
+  .footer-bottom-col-1 {
+    @extend .col-ie-9;
+  }
+
+  .footer-bottom-col-2 {
+    @extend .col-ie-9;
+  }
 
 }

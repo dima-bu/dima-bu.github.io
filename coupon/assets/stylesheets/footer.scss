@@ -77,6 +77,8 @@ footer {
   padding: 0 6px;
   line-height: 21px;
   margin-top: 3px;
+  margin-bottom: 4px;
+
 
   span {
     color:  #ffca3b;
@@ -88,16 +90,9 @@ footer {
 
 
 .small-logo {
-//  padding: 15px 2px;
-//  border-radius: 16px;
-//  margin-top: 5px;
   margin-bottom: -2px;
-//  background-color: #fff;
   text-align: center;
-//  display: inline-block;
-//  -webkit-box-shadow: inset 0px -3px 3px 0px rgb(223, 228, 227);
-//  -moz-box-shadow:    inset 0px -3px 3px 0px rgb(223, 228, 227);
-//  box-shadow:         inset 0px -3px 3px 0px rgb(223, 228, 227);
+
 }
 
 .sign-up_footer {
@@ -116,8 +111,6 @@ footer {
   margin-bottom: 7px;
   margin-top: -13px;
 }
-
-
 
 
 
@@ -145,7 +138,7 @@ footer {
   color:#fff;
   font-size: 14px;
   font-family: $ff-bold;
-  border-color:$dark-yellow;
+  border-right: 1px solid $dark-yellow;
   border-right: 1px solid rgba($dark-yellow, .53);
   padding: 0 12px;
   &:last-child {
@@ -153,3 +146,144 @@ footer {
     padding-right: 0;
   }
 }
+
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- FOOTER*/
+@media  screen and (max-width: $screen-sm-max) {
+
+  footer {
+    padding-top: 90px;
+    .soc-links {
+      display: inline-block;
+    }
+  }
+
+  .footer-col-1 {
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+  }
+
+  .footer-col-2 {
+    padding-bottom: 22px;
+    margin-bottom: 15px;
+    .footer_title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .latest-list_data {
+      margin-top: 0;
+    }
+  }
+
+  .footer-col-3 {
+    padding-bottom: 31px;
+    margin-bottom: 20px;
+  }
+
+  .footer-col-4 {
+    padding-bottom: 33px;
+    margin-bottom: 11px;
+  }
+
+  .footer-col-5 {
+    padding-bottom: 30px;
+    background: none;
+  }
+
+  .small-logo_wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .get-the-app_button {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  .company-list {
+    text-align: center;
+  }
+
+  .company-list_item {
+    display: inline-block;
+    vertical-align: top;
+
+
+    i.icon {
+      vertical-align: middle;
+      margin-right: 10px;
+      margin-left: 11px;
+    }
+
+  }
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- FOOTER -- END*/
+
+
+/*EXTRA SMALL -- xs -- FOOTER*/
+@media screen and (max-width: $screen-xs-max) {
+
+  footer {
+    background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -25px no-repeat ;
+  }
+
+  .footer-col {
+    background: transparent url('#{$path-to-img}footer-divider_sm.png')  50%  100% no-repeat;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom-col-1 {
+    text-align: center;
+  }
+
+}
+/*EXTRA SMALL -- xs -- FOOTER END*/
+
+
+
+/*SMALL -- sm -- FOOTER*/
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+  footer {
+    background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -10px no-repeat ;
+  }
+
+  .footer-col {
+    background: none;
+  }
+
+  .footer-col-1, .footer-col-4 {
+    background: transparent url('#{$path-to-img}footer-divider_sm.png')  50%  100% no-repeat;
+  }
+
+  .footer-col-3 {
+    margin-top: 45px;
+  }
+
+}
+/*SMALL -- sm -- FOOTER -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- FOOTER*/
+@media screen and (min-width: $screen-sm-max) {
+
+}
+/*LARGE and MEDIUM -- lg and md -- FOOTER -- END*/
+
+
+

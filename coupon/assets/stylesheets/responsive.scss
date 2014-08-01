@@ -168,94 +168,6 @@ $header-grid-gutter-width: 40px;
   @extend  .col-xs-18;
 }
 
-/*small FOOTER*/
-@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-
-  footer {
-    background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -10px no-repeat ;
-  }
-
-  .footer-col {
-    background: none;
-  }
-
-  .footer-col-1, .footer-col-4 {
-    background: transparent url('#{$path-to-img}footer-divider_sm.png')  50%  100% no-repeat;
-  }
-
- .footer-col-3 {
-   margin-top: 45px;
-  }
-
-
-}
-
-/*extra small FOOTER*/
-@media screen and (max-width: $screen-xs-max) {
-
-  footer {
-    background: url('#{$path-to-img}bg_bottom-sm.png') transparent 50% -25px no-repeat ;
-  }
-
-
-  .footer-col {
-    background: transparent url('#{$path-to-img}footer-divider_sm.png')  50%  100% no-repeat;
-  }
-
-  .footer-bottom {
-    text-align: center;
-  }
-
-  .footer-bottom-col-1 {
-    text-align: center;
-  }
-
-}
-
-/*small and extra small FOOTER*/
-@media  screen and (max-width: $screen-sm-max) {
-
-  footer {
-    padding-top: 90px;
-    .soc-links {
-      display: inline-block;
-    }
-  }
-
-  .footer-col-1 {
-    padding-bottom: 7px;
-    margin-bottom: 6px;
-  }
-
-  .footer-col-2 {
-    padding-bottom: 22px;
-    margin-bottom: 15px;
-    .footer_title {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .latest-list_data {
-      margin-top: 0;
-    }
-  }
-
-  .footer-col-3 {
-    padding-bottom: 31px;
-    margin-bottom: 20px;
-  }
-
-  .footer-col-4 {
-    padding-bottom: 33px;
-    margin-bottom: 11px;
-  }
-
-  .footer-col-5 {
-    padding-bottom: 30px;
-    background: none;
-  }
-
-}
-
 
 /*banner-right*/
 
@@ -263,12 +175,7 @@ $header-grid-gutter-width: 40px;
   @extend .hidden-sm;
 }
 
-/*menu*/
-.main-menu_item {
 
-}
-
-/*media*/
 
 
 /*small ex. Ipad in Portrait 768px and 991px*/
@@ -276,32 +183,19 @@ $header-grid-gutter-width: 40px;
 
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 
-  .header-col-2 {
-    width: 38%;
-  }
-  
-  .header-col-3 {
-    background: none;
-    
-  }
-
-
-  .carousel-wrapper {
-    margin-top: 20px;
-  }
 
 }
 
 /*Extra small ex. Iphone 320px, Iphone640 px*/
 
 @media screen and (max-width: $screen-xs-max) {
+
   .bg-wrapper {
     background-position: 50% -105px;
     &.-with-slider {
        background-position: 53% -140px;
     }
   }
-
 
   h1, .h1 {
     font-size: 28px;
@@ -316,105 +210,7 @@ $header-grid-gutter-width: 40px;
   .pull-no-xs {
     float: none;
   }
-  
-  /*header*/
 
-  .topline {
-    height: 2px;
-  }
-
-  .header {
-    height: 50px;
-  }
-  
-  .header-col {
-    background: none;
-  }
-
-  .header-col-1 {
-    width: 230px;
-    padding-top: 8px;
-  }
-
-  .header-col-2 {
-    display: none;
-  }
-
-  .header-col-3 {
-    display: none;
-  }
-
-  /*slider*/
-
-  .carousel-title {
-    font-size: 34px;
-    line-height: 28px;
-    padding-bottom: 4px;
-
-    span {
-      font-size: 20px;
-    }
-
-  }
-
-  .carousel-subtitle {
-    font-size: 18px;
-    top: 198px;
-    max-width: 190px;
-  }
-
-
-  /*slider*/
-  .carousel-wrapper {
-    padding: 0;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
-
-
-  /*main menu*/
-
-  .main-menu  {
-    height: auto;
-    margin-bottom: 0px;
-  }
-
-  .main-menu_wrapper {
-    height: auto;
-    margin-bottom: 0px;
-    padding: 0;
-    border-bottom-width: 2px;
-
-    .container {
-      padding: 0;
-    }
-
-    .orange-btn {
-      box-shadow: none;
-    }
-  }
-
-  .main-menu_item {
-    width: 50%;
-    float: left;
-
-  }
-
-  .main-menu_link {
-    height: 55px;
-    line-height:55px;
-    text-align: left;
-    padding: 0 10px;
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba($dark-brown, .35);
-    border-top: 1px solid rgba($pink, .19);
-
-    &:hover {
-      border-bottom: 1px solid rgba($dark-brown, .35);
-      margin-bottom: 0;
-
-    }
-  }
 
   /*deal*/
 
@@ -436,7 +232,6 @@ $header-grid-gutter-width: 40px;
       background: transparent url('#{$path-to-img}gray-shadow-xs.png') 50% 0 no-repeat;
       width: 100%;
       height: 18px;
-
   }
 
   /*banner-right*/
@@ -450,20 +245,6 @@ $header-grid-gutter-width: 40px;
     text-align: center;
   }
 
-
-  /*company*/
-
-  .coupon-percent_off,
-  .coupon-percent_count {
-    display: inline-block;
-  }
-
-  .coupon-percent_off {
-    font-size: 46px;
-    line-height: 46px;
-  }
-
-
 }
 
 
@@ -471,37 +252,7 @@ $header-grid-gutter-width: 40px;
 /*tablet and phone*/
 @media  screen and (max-width: $screen-sm-max) {
 
-  /*footer*/
 
-  .small-logo_wrapper {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
-  }
-
-  .get-the-app_button {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 20px;
-    margin-bottom: 12px;
-  }
-
-  .company-list {
-    text-align: center;
-  }
-
-  .company-list_item {
-    display: inline-block;
-    vertical-align: top;
-
-
-    i.icon {
-      vertical-align: middle;
-      margin-right: 10px;
-      margin-left: 11px;
-    }
-
-  }
 
 }
 
