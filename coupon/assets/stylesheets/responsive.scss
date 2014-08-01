@@ -160,7 +160,7 @@ $header-grid-gutter-width: 40px;
   @extend .col-md-5;
   @extend .col-sm-18;
   @extend  .col-xs-18;
-  background: none;
+
 }
 
 .footer-col-5 {
@@ -271,5 +271,7 @@ $header-grid-gutter-width: 40px;
 /*md and lg*/
 
 @media screen and (min-width: $screen-sm-max) {
-
+  .footer-col-4 {
+    background: none;
+  }
 }

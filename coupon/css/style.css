@@ -879,7 +879,7 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 964px;
+    width: 984px;
   }
 }
 @media (min-width: 1200px) {
@@ -7111,6 +7111,9 @@ p {
 /*EXTRA SMALL -- xs -- MAIN MENU -- END*/
 /*SMALL -- sm -- MAIN MENU*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .main-menu_wrapper {
+    margin-bottom: 0;
+  }
   .main-menu_wrapper.collapse {
     display: block !important;
     height: auto!important;
@@ -7320,7 +7323,7 @@ footer .orange-btn {
   color: #fff;
   font-size: 14px;
   font-family: "proxima_nova_bold";
-  padding-right: 0;
+  padding-right: 12px;
   padding-left: 12px;
 }
 .footer-bottom_link:first-child {
@@ -7371,6 +7374,8 @@ footer .orange-btn {
 
   .footer-col-5 {
     padding-bottom: 30px;
+  }
+  .footer-col-5.footer-col {
     background: none;
   }
 
@@ -7635,6 +7640,7 @@ footer .orange-btn {
     padding: 0;
     margin-left: -12px;
     margin-right: -12px;
+    margin-top: 0;
   }
 }
 /*EXTRA SMALL -- xs -- SLIDER -- END*/
@@ -8431,6 +8437,9 @@ a:hover {
   /*deal*/
   /*footer*/
 }
+.ie8 body, .ie9 body {
+  min-width: 984px !important;
+}
 .ie8 .container, .ie9 .container {
   width: 984px !important;
 }
@@ -8554,10 +8563,6 @@ a:hover {
   padding-right: 30px;
 }
 
-.footer-col-4 {
-  background: none;
-}
-
 /*banner-right*/
 /*small ex. Ipad in Portrait 768px and 991px*/
 /*Extra small ex. Iphone 320px, Iphone640 px*/
@@ -8614,3 +8619,8 @@ a:hover {
 }
 /*tablet and phone*/
 /*md and lg*/
+@media screen and (min-width: 991px) {
+  .footer-col-4 {
+    background: none;
+  }
+}

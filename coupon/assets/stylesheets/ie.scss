@@ -2,6 +2,10 @@
 
 .ie8, .ie9 {
 
+  body {
+    min-width: 984px !important;
+  }
+
   .container {
     width: 984px !important;
   }
