@@ -295,7 +295,7 @@ p {
   border: 1px solid #cec8be;
   display: inline-block;
   behavior: url('#{$path-to-behaivor}/border-radius.htc');
-
+  background-color: #fff;
 
   .green-star {
     margin-top: 10px;
@@ -429,7 +429,7 @@ p {
   border-radius: 6px;
   background-color: #fff;
   padding: 6px;
-  behavior: url('#{$path-to-behaivor}/ie-css3.htc');
+//  behavior: url('#{$path-to-behaivor}/ie-css3.htc');
   .no-padding {
     padding: 0;
   }

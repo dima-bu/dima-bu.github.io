@@ -6716,6 +6716,7 @@ p {
   border: 1px solid #cec8be;
   display: inline-block;
   behavior: url("../assets//border-radius.htc");
+  background-color: #fff;
 }
 .simple-round .green-star, .paginator-list_link.-number .green-star {
   margin-top: 10px;
@@ -6832,7 +6833,6 @@ p {
   border-radius: 6px;
   background-color: #fff;
   padding: 6px;
-  behavior: url("../assets//ie-css3.htc");
 }
 .white-wrapper .no-padding {
   padding: 0;
