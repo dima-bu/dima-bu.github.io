@@ -23,7 +23,7 @@
 
 @import "submit-coupon";
 @import "company";
-@import "ie";
+
 
 .bg-wrapper {
   background: url('#{$path-to-img}bg_top-narrow.png') transparent 50% 0 no-repeat ;
@@ -47,3 +47,4 @@ a:hover {
 
 
 @import "responsive";
+@import "ie";

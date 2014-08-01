@@ -1,16 +1,17 @@
-.ie8 .container, .ie9 .container {
-  width: 984px !important;
-}
+@include make-grid(ie);
 
 .ie8, .ie9 {
-  .left-column_top {
 
-    width: 66.66667%;
-    float: left;
+  .container {
+    width: 984px !important;
   }
+
+  .left-column_top {
+    width: 66.66667%;
+  }
+
   .right-column_top {
     width: 33.33333%;
-    float: left;
   }
 
   .main-menu_wrapper.collapse {
@@ -19,5 +20,64 @@
     padding-bottom: 0;
     overflow: visible!important;
   }
+
+  .paginator-list_link {
+    &.-number {
+      &:hover {
+        color:  #8f9497;
+        background-color: #ffffff;
+        border: 1px solid #cec8be;
+      }
+    }
+  }
+
+
+  .deal_item-col-1 {
+    @extend .col-ie-5;
+    text-align: center;
+  }
+
+  .deal_item-col-2-3 {
+    @extend .col-ie-13;
+  }
+
+  .deal_item-col-2 {
+    @extend .col-ie-10;
+  }
+
+  .deal_item-col-3 {
+    @extend .col-ie-8;
+    text-align: center;
+  }
+
+  /*footer*/
+
+  .footer-col-1 {
+    @extend .col-ie-3;
+  }
+
+  .footer-col-2 {
+    @extend .col-ie-6;
+    .footer-col_inner {
+      padding-right:20px;
+    }
+  }
+
+  .footer-col-3 {
+    @extend .col-ie-4;
+    .footer-col_inner {
+      padding-right:30px;
+    }
+  }
+
+  .footer-col-4 {
+    @extend .col-ie-5;
+    background: none;
+  }
+
+  .footer-col-5 {
+    display: none;
+  }
+
 
 }
