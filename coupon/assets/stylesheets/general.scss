@@ -294,6 +294,8 @@ p {
   text-align: center;
   border: 1px solid #cec8be;
   display: inline-block;
+  behavior: url('#{$path-to-behaivor}/border-radius.htc');
+
 
   .green-star {
     margin-top: 10px;

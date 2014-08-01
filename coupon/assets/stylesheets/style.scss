@@ -43,4 +43,8 @@ a:hover {
   text-decoration: none;
 }
 
+.ie8 .container, .ie9 .container {
+  width: 984px !important;
+}
+
 @import "responsive";

@@ -9,6 +9,6 @@ $( document ).ready(function() {
     $('.collapse').collapse();
 
     $( ".showcoupon" ).on( "click", function() {
-         $( this ).toggleClass('focus');
+         $( this ).addClass('focus');
     });
 });

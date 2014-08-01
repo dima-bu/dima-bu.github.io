@@ -6715,6 +6715,7 @@ p {
   text-align: center;
   border: 1px solid #cec8be;
   display: inline-block;
+  behavior: url("../assets//border-radius.htc");
 }
 .simple-round .green-star, .paginator-list_link.-number .green-star {
   margin-top: 10px;
@@ -7208,7 +7209,6 @@ footer .orange-btn {
 /*footer-bottom*/
 .footer-bottom {
   background-color: #B4321E;
-  background-color: rgba(159, 41, 27, 0.62);
   padding: 8px 0;
 }
 
@@ -7395,6 +7395,7 @@ footer .orange-btn {
 @media screen and (max-width: 767px) {
   .carousellogo {
     height: 60px !important;
+    width: 59px !important;
     width: auto;
     left: 10px;
     top: 16px;
@@ -7888,6 +7889,10 @@ a:hover {
   text-decoration: none;
 }
 
+.ie8 .container, .ie9 .container {
+  width: 984px !important;
+}
+
 /*main top section*/
 /*main bottom section*/
 .main-bottom-section.row {
@@ -7991,7 +7996,7 @@ a:hover {
 /*extra small FOOTER*/
 @media screen and (max-width: 767px) {
   footer {
-    background: url("../img/bg_bottom-sm.png") transparent 50% -30px no-repeat;
+    background: url("../img/bg_bottom-sm.png") transparent 50% -25px no-repeat;
   }
 
   .footer-col {
