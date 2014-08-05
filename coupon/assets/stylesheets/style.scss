@@ -23,12 +23,18 @@
 
 @import "submit-coupon";
 @import "company";
-
+@import "categories";
+@import "deal-alerts";
+@import "blog";
 
 .bg-wrapper {
   background: url('#{$path-to-img}bg_top-narrow.png') transparent 50% 0 no-repeat ;
   &.-with-slider {
     background: url('#{$path-to-img}bg_top.png') transparent 50% 0 no-repeat ;
+  }
+
+  &.-deal {
+    background: url('#{$path-to-img}bg_top_deal.png') transparent 50% 0 no-repeat ;
   }
   overflow: hidden;
 

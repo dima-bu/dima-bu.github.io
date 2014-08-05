@@ -93,6 +93,9 @@
   text-align: center;
   padding-top: 17px;
   border-radius: 5px;
+  &.-pt {
+    padding-top: 7px;
+  }
   &.-green {
     background: #71A639 url('#{$path-to-img}green-weave-bg.png') 50% 0 no-repeat;
     background-size: 100%;
@@ -118,6 +121,22 @@
       text-shadow: 0px 1px 1px rgba(2, 19, 46, 0.46);
     }
   }
+
+  &.-orange {
+    background: rgb(235, 112, 45) url('#{$path-to-img}orange-weave-bg_sm.png') 50% 0 no-repeat;
+    span.bg-color  {
+      color:  #ecfd84;
+    }
+  }
+
+}
+
+.coupon-percent_bottom {
+  font-size: 14px;
+  font-family: $ff-semibold;
+  color:  #fdfbf1;
+  text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.56);
+  padding-bottom: 12px;
 }
 
 .coupon-percent_count {
@@ -131,6 +150,36 @@
     font-size: 46px;
     line-height: 36px;
   }
+
+  &.-medium {
+    margin-bottom: 6px;
+      span {
+        font-size: 36px;
+        line-height: 32px;
+      }
+
+      span.sm {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $ff-bold;
+        margin-right: 7px;
+
+
+      }
+
+      span.lg-top-text {
+        margin-right: 8px;
+      }
+  }
+
+}
+
+.coupon-percent_large-text {
+  font-size: 34px;
+  line-height: 30px;
+  color:  #fdfbf1;
+  text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.56);
+  text-align: center;
 }
 
 .coupon-percent_off {

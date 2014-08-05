@@ -136,7 +136,7 @@
     background-position: $carusel-item-offset-x $carusel-item-offset-y;
     height: $carusel-item-height;
     width: $carusel-item-width;
-    background-image:  url('../assets/sprite.png');
+    background-image:  url('#{$path-to-sprite}sprite.png');
     background-color: transparent !important;
     border: 0 none;
     display: inline-block;

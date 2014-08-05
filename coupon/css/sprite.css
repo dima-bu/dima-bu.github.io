@@ -5,6 +5,30 @@ Icon classes can be used entirely standalone. They are named after their origina
 <i class="icon-home"></i>
 ```
 */
+.babies {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1320px;
+  width: 50px;
+  height: 51px;
+}
+.blog-date {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1901px;
+  width: 64px;
+  height: 66px;
+}
+.business {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1506px;
+  width: 62px;
+  height: 53px;
+}
+.carts {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -408px;
+  width: 32px;
+  height: 18px;
+}
 .carusel-item {
   background-image: url(../assets/sprite.png);
   background-position: 0px -29px;
@@ -13,97 +37,151 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .carusel-item_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -107px;
+  background-position: 0px -129px;
   width: 12px;
   height: 12px;
 }
+.checkbox {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -552px;
+  width: 18px;
+  height: 20px;
+}
+.checkbox_active {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -522px;
+  width: 18px;
+  height: 20px;
+}
+.checkbox_active_transparent {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -612px;
+  width: 18px;
+  height: 20px;
+}
+.checkbox_hover {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -642px;
+  width: 18px;
+  height: 20px;
+}
 .checkmark {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -502px;
+  background-position: 0px -765px;
   width: 21px;
   height: 21px;
 }
+.clothing-w {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1699px;
+  width: 33px;
+  height: 57px;
+}
+.clothing {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1634px;
+  width: 64px;
+  height: 55px;
+}
 .fb {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -471px;
+  background-position: 0px -796px;
   width: 10px;
   height: 21px;
 }
+.food-shops {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -2598px;
+  width: 92px;
+  height: 86px;
+}
 .getdeal {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1541px;
+  background-position: 0px -2316px;
   width: 160px;
   height: 84px;
 }
 .getdeal_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1447px;
+  background-position: 0px -2410px;
   width: 160px;
   height: 84px;
 }
 .getdeal_hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1635px;
+  background-position: 0px -2504px;
   width: 160px;
   height: 84px;
 }
 .google-plus {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -441px;
+  background-position: 0px -582px;
   width: 21px;
   height: 20px;
 }
 .gray-line {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -689px;
+  background-position: 0px -890px;
   width: 1px;
   height: 26px;
 }
 .gray-round {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -829px;
+  background-position: 0px -1030px;
   width: 44px;
   height: 44px;
 }
 .gray-round_orange-bg {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -775px;
+  background-position: 0px -976px;
   width: 44px;
   height: 44px;
 }
 .green-star {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -301px;
+  background-position: 0px -300px;
   width: 16px;
   height: 17px;
 }
+.health {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1443px;
+  width: 52px;
+  height: 53px;
+}
+.home {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1381px;
+  width: 62px;
+  height: 52px;
+}
 .left-arrow-hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -626px;
+  background-position: 0px -827px;
   width: 13px;
   height: 21px;
 }
 .left-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -595px;
+  background-position: 0px -703px;
   width: 13px;
   height: 21px;
 }
 .light-orange-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1119px;
+  background-position: 0px -1766px;
   width: 33px;
   height: 57px;
 }
 .mail {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -151px;
+  background-position: 0px -107px;
   width: 18px;
   height: 12px;
 }
 .markdown-circle {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -328px;
+  background-position: 0px -354px;
   width: 15px;
   height: 17px;
 }
@@ -113,15 +191,21 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 4px;
   height: 4px;
 }
+.orange-arrow-in-round {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -196px;
+  width: 16px;
+  height: 16px;
+}
 .orange-arrow-small {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -248px;
+  background-position: 0px -222px;
   width: 16px;
   height: 16px;
 }
 .orange-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -129px;
+  background-position: 0px -151px;
   width: 7px;
   height: 12px;
 }
@@ -139,67 +223,85 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .orange-arrow_right {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -67px;
+  background-position: 0px -47px;
   width: 11px;
   height: 10px;
 }
 .orange-plus {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -47px;
+  background-position: 0px -67px;
   width: 10px;
   height: 10px;
 }
+.pets {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1833px;
+  width: 60px;
+  height: 58px;
+}
+.pizza-icon {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -2792px;
+  width: 168px;
+  height: 170px;
+}
 .rate-divider {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -383px;
+  background-position: 0px -464px;
   width: 5px;
   height: 19px;
 }
 .rate-down {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1060px;
+  background-position: 0px -1143px;
   width: 48px;
   height: 49px;
 }
 .rate-down_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1001px;
+  background-position: 0px -1202px;
   width: 48px;
   height: 49px;
 }
 .rate-up {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -942px;
+  background-position: 0px -1261px;
   width: 48px;
   height: 49px;
 }
 .rate-up_active {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -883px;
+  background-position: 0px -1084px;
   width: 48px;
   height: 49px;
 }
 .right-arrow-hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -533px;
+  background-position: 0px -734px;
   width: 13px;
   height: 21px;
 }
 .right-arrow {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -564px;
+  background-position: 0px -672px;
   width: 13px;
   height: 21px;
 }
+.scissors {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -327px;
+  width: 23px;
+  height: 17px;
+}
 .search-md {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -657px;
+  background-position: 0px -858px;
   width: 22px;
   height: 22px;
 }
 .search {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -196px;
+  background-position: 0px -248px;
   width: 16px;
   height: 16px;
 }
@@ -211,55 +313,67 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .share {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -412px;
+  background-position: 0px -493px;
   width: 24px;
   height: 19px;
 }
 .showcoupon {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1186px;
+  background-position: 0px -2229px;
   width: 162px;
   height: 77px;
 }
 .showcoupon_hover {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1273px;
+  background-position: 0px -2055px;
   width: 162px;
   height: 77px;
 }
 .showcoupon_pressed {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1360px;
+  background-position: 0px -2142px;
   width: 162px;
   height: 77px;
 }
 .small-logo {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -1729px;
+  background-position: 0px -2694px;
   width: 87px;
   height: 88px;
 }
 .small-logo_icon {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -725px;
+  background-position: 0px -926px;
   width: 64px;
   height: 40px;
 }
+.sport-fitness {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1977px;
+  width: 68px;
+  height: 68px;
+}
+.technology {
+  background-image: url(../assets/sprite.png);
+  background-position: 0px -1569px;
+  width: 62px;
+  height: 55px;
+}
 .ticket {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -355px;
+  background-position: 0px -436px;
   width: 20px;
   height: 18px;
 }
 .toggle-nav {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -274px;
+  background-position: 0px -381px;
   width: 20px;
   height: 17px;
 }
 .tw {
   background-image: url(../assets/sprite.png);
-  background-position: 0px -222px;
+  background-position: 0px -274px;
   width: 19px;
   height: 16px;
 }

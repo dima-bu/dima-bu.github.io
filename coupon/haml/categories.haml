@@ -76,62 +76,35 @@
                         %button.orange-btn.full-width.-medium SUBMIT COUPON
             %form.search-xs.collapse.hidden-sm.hidden-md.hidden-lg
                 %input.standard-input{ :type => "text", :placeholder => "Search" }
-
             .container
+                .row
+                    .col-md-18
+                        .full-banner_wrapper
+                            .white-wrapper
+                                .full-banner{ :style => "background-image: url('../files/fullbanner-bg.jpg')" }
+                                    %i.icon.pizza-icon
+                                    %h2.full-banner_title
+                                        %span PIZZA COUPONS
+                                    .full-banner_descr  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.
+
                 .row.main-top-section
                     .left-column_top
-                        .carousel-wrapper
-                            .carousel.slide{:id=>"slide-images", :data => {:ride => "carousel"}}
-
-                                %ol.carousel-indicators
-                                    %li.active{:'data-target' => "#slide-images", :"data-slide-to" => '0'}
-                                    %li{:'data-target' => "#slide-images", :"data-slide-to" => '1'}
-                                    %li{:'data-target' => "#slide-images", :"data-slide-to" => '2'}
-                                .carousel-inner
-                                    .item.active.slide-1
-                                        %img.img-responsive{:src => "../files/slider1.jpg", :alt => ""}/
-                                        %img.carousellogo{:src => "../files/slider-logo.png", :alt => ""}/
-
-                                        .carousel-title
-                                            Get 50% off
-                                            %br
-                                            %span selected beverages
-                                        .carousel-subtitle Donec eget scelerisque quam.
 
 
+                        .tabs-wrapper
+                            %a.tab{ :href => "#" } Stores
+                            %a.tab.active{ :href => "#" } New Coupons
+                            %a.tab{ :href => "#" } Popular Coupons
 
-
-                                        .button-cover-wrapper
-                                            .button-cover
-                                                %button.orange-btn.-lg.-light-border.-left-icon
-                                                    %i.icon.light-orange-arrow
-                                                    %span VISIT COUPON PAGE
-
-                                    .item.slide-2
-                                        %img.img-responsive{:src => "../files/slider1.jpg", :alt => ""}/
-                                    .item.slide-3
-                                        %img.img-responsive{:src => "../files/slider1.jpg", :alt => ""}/
-
-                                %a.prev.carousel-control{:href => "#slide-images", :data => {:slide => "prev"}}
-                                    %span.half-round.-left
-                                        %i.left-arrow-hover.icon
-                                %a.next.carousel-control{:href => "#slide-images", :data => {:slide => "next"}}
-                                    %span.half-round.-right
-                                        %i.right-arrow-hover.icon
                         .deal-wrapper
-                            %h1 Hot deals
                             .row.deal_item
                                 .deal_item-col-1
-                                    .white-wrapper.ie-border
-                                        %img.img-responsive{:src => "../files/hotdeal2.jpg", :alt => ""}/
+                                    .white-wrapper.ie-border.logo-wrapper
+                                        %img.img-responsive{:src => "../files/Pizza_Hut_logo.png", :alt => ""}/
                                 .deal_item-col-2-3
                                     .row
                                         .deal_item-col-2
-                                            .deal-descr
-                                                Macy's 10% Off Domestic
-                                                %br
-                                                Visitor
-
+                                            .deal-descr Macy's 10% Off Domestic Visitor
                                         .deal_item-col-3
                                             %a.getdeal.link-btn GET DEAL
                                     .row
@@ -140,8 +113,8 @@
                             .gray-shadow
                             .row.deal_item
                                 .deal_item-col-1
-                                    .white-wrapper.ie-border
-                                        %img.img-responsive{:src => "../files/hotdeal2.jpg", :alt => ""}/
+                                    .white-wrapper.ie-border.logo-wrapper
+                                        %img.img-responsive{:src => "../files/Dominos_pizza_logo.png", :alt => ""}/
                                 .deal_item-col-2-3
                                     .row
                                         .deal_item-col-2
@@ -159,7 +132,7 @@
                             .row.deal_item
                                 .deal_item-col-1
                                     .white-wrapper.ie-border
-                                        %img.img-responsive{:src => "../files/hotdeal2.jpg", :alt => ""}/
+                                        %img.img-responsive.logo-wrapper{:src => "../files/PapaJohns.svg.png", :alt => ""}/
                                 .deal_item-col-2-3
                                     .row
                                         .deal_item-col-2
@@ -178,7 +151,7 @@
                             .row.deal_item
                                 .deal_item-col-1
                                     .white-wrapper.ie-border
-                                        %img.img-responsive{:src => "../files/hotdeal2.jpg", :alt => ""}/
+                                        %img.img-responsive{:src => "../files/Topper's_Pizza.jpg", :alt => ""}/
                                 .deal_item-col-2-3
                                     .row
                                         .deal_item-col-2
@@ -219,12 +192,12 @@
                                 %li.paginator-list_item
                                     %a.paginator-list_link.-number.-last{ :href => "#" }
                                         %span 145
-
                                 %li.paginator-list_item.-next
                                     %a.paginator-list_link{ :href => "#" }
                                         %span Previous
                                         %i.icon.orange-arrow_right
                     .right-column_top
+
                         %section.right-section
                             .sign-up_wrapper.white-wrapper
                                 .sign-up
@@ -300,6 +273,14 @@
                                             .gray-shadow_md
                                     .full-bottom_wrapper
                                         %button.orange-btn.full-btn.-medium MORE
+                        %section.right-section.clearfix
+                            .col-md-18
+                                .simple-text_wrapper
+                                    %h3.simple-text_title More Info
+                                    .simple-text_descr
+                                        Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nos exercitation.
+                                        %a{ :href => "#" } Show more...
+
             %footer
                 .container
                     .row

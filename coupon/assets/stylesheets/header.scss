@@ -109,8 +109,11 @@
 
 .search-xs {
   background-color:  #f5f4f0;
-  padding: 15px 10px;
-  margin: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  input {
+    margin: 15px 0;
+  }
 }
 
 

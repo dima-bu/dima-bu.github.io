@@ -227,6 +227,7 @@ footer {
       vertical-align: middle;
       margin-right: 10px;
       margin-left: 11px;
+      margin-bottom: 8px;
     }
 
   }
@@ -284,6 +285,19 @@ footer {
 
 /*LARGE and MEDIUM -- lg and md -- FOOTER*/
 @media screen and (min-width: $screen-sm-max) {
+
+  .footer-col-2 {
+    background-position: 100% 0;
+  }
+
+  .footer-col-3 {
+    background-position: 98% 0;
+  }
+
+  .footer-col_inner {
+    min-height: 187px;
+  }
+
 
 }
 /*LARGE and MEDIUM -- lg and md -- FOOTER -- END*/

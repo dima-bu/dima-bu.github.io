@@ -12,11 +12,22 @@ h2 {
   color: $h2-color;
 }
 
+h3 {
+  color: $h3-color;
+  font-size: 20px;
+  font-family: $ff-bold;
+}
+
 p {
   font-family: $ff-semibold;
   line-height: 24px;
   margin-bottom: 20px;
+}
 
+.lg-text {
+  font-size: 22px;
+  color: #8f9497;
+  font-family: $ff-bold;
 }
 
 
@@ -128,7 +139,7 @@ p {
 //  color:red;
   height: 10px;
   width: 10px;
-  background: transparent url('../assets/sprite.png') 0px -14px no-repeat;
+  background: transparent url('#{$path-to-sprite}/sprite.png') 0px -14px no-repeat;
   position: absolute;
   top: 28px;
   right: 15px;
@@ -151,6 +162,8 @@ p {
   background: #fff !important;
   @extend  .standard-input.-orange-bg;
   box-sizing:  content-box;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .ik_select_option.ik_select_hover {
@@ -165,6 +178,18 @@ p {
   @extend .clear-list;
   border-radius: 4px;
 }
+
+
+
+.fake-checkbox {
+  background-position: $checkbox-offset-x $checkbox-offset-y;
+  height: $checkbox-height;
+  width: $checkbox-width;
+  background-image: url('#{$path-to-sprite}/sprite.png');
+}
+
+
+
 
 /*Buttons*/
 
@@ -299,15 +324,23 @@ p {
 
   .green-star {
     margin-top: 10px;
+    vertical-align: top;
   }
 
   .ticket {
     margin-top: 10px;
+    vertical-align: top;
   }
 
   .orange-arrow {
     margin-top: 8px;
     margin-left: 2px;
+
+  }
+
+  .carts {
+    vertical-align: top;
+    margin-top: 9px;
   }
 }
 
@@ -375,6 +408,7 @@ p {
   font-family: $ff-bold;
   text-shadow: 0px 1px 1px #ffffff;
   line-height:$showcoupon-height;
+  height: $showcoupon-height;
 
   &:hover {
     background-position:$showcoupon_hover-offset-x $showcoupon_hover-offset-y;
@@ -436,6 +470,14 @@ p {
   }
 }
 
+.ie8 .ie-border {
+  border:1px solid #ccc;
+}
+
+.logo-wrapper {
+  padding: 20px;
+}
+
 .gray-shadow {
   background: transparent url('#{$path-to-img}gray-shadow.png') 50% 0 no-repeat;
   width: 100%;
@@ -455,4 +497,17 @@ p {
   button {
     width: 100%;
   }
+}
+
+.green-gradient {
+
+  background: #6a9a1f; /* Old browsers */
+  background: -moz-linear-gradient(top,  #6a9a1f 2%, #86b935 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#6a9a1f), color-stop(100%,#86b935)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #6a9a1f 2%,#86b935 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #6a9a1f 2%,#86b935 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #6a9a1f 2%,#86b935 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #6a9a1f 2%,#86b935 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a9a1f', endColorstr='#86b935',GradientType=0 ); /* IE6-9 */
+
 }

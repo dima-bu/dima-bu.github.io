@@ -1,0 +1,158 @@
+
+.blog-block-title {
+  margin-bottom: 25px;
+}
+
+.blog-preview_wrapper {
+  margin-top: 10px;
+}
+
+.blog-preview_title {
+  font-size: 24px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.blog-preview_autor {
+  font-family: $ff-semibold-italic;
+  font-size: 15px;
+  span {
+    font-size: 14px;
+  }
+}
+
+.blog-date.pull-left  {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.blog-date_month {
+  font-size: 10px;
+  font-family: $ff-bold;
+  line-height: 24px;
+  color:#fff;
+}
+
+.blog-date_num {
+  color:  #6a3022;
+  font-family: $ff-semibold;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.blog-img_wrapper {
+  @extend .white-wrapper;
+  @extend .ie-border;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+.blog-preview_post {
+  margin-bottom: 40px;
+  margin-top: 10px;
+
+}
+
+.blog-preview_header.media {
+  margin-bottom: 20px !important;
+}
+
+.right-list_item {
+  margin-bottom: 20px;
+  .icon {
+    margin-top: 3px;
+  }
+}
+
+.right-list_title {
+  font-size: 30px;
+  font-family: $ff-bold;
+  margin-bottom: 24px;
+
+}
+
+.right-list_link {
+  margin-left: -30px;
+  padding-left: 30px;
+  width: 100%;
+  color:  #8f9497;
+  font-size: 16px;
+  font-family: $ff-semibold;
+}
+
+
+/*Blog post*/
+
+.blog-post_title {
+
+}
+
+.blog-post_header {
+  margin-bottom: 20px;
+}
+
+.blog-post_coupons {
+  border-radius: 6px;
+  border: 1px dashed #998675;
+  border: 1px dashed rgba(153, 134, 117, 0.6);
+  position: relative;
+  padding: 20px;
+  margin-bottom: 30px;
+
+
+  .icon {
+    position: absolute;
+    top: -9px;
+    right: 23px;
+  }
+}
+
+.blog-post_coupons_title {
+  font-family: $ff-bold;
+  font-size: 37px;
+  margin-top: 0;
+}
+
+.blog-post_coupons_col {
+  @extend .col-md-6;
+
+}
+
+.blog-post_coupons_col_inner {
+  @extend .white-wrapper;
+}
+
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
+@media screen and (max-width: $screen-sm-max) {
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
+
+
+/*EXTRA SMALL -- xs -- COMPANY*/
+@media screen and (max-width: $screen-xs-max) {
+
+}
+/*EXTRA SMALL -- xs -- COMPANY -- END*/
+
+
+
+/*SMALL -- sm -- COMPANY*/
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+}
+/*SMALL -- sm -- COMPANY -- END*/
+
+
