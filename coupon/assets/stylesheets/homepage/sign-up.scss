@@ -1,7 +1,7 @@
 
 .sign-up {
   background: transparent url('#{$path-to-img}green-bg.png') no-repeat 50% 0;
-  background-size: 100%;
+//  background-size: 100%;
   padding: 20px 20px 30px 20px;
 }
 
@@ -104,3 +104,45 @@
   border-top: 1px solid #d2f666;
   padding: 17px;
 }
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- SIGN UP*/
+@media screen and (max-width: $screen-sm-max) {
+
+  .sign-up {
+    background: transparent url('#{$path-to-img}green-bg_sm.png') no-repeat 50% 0;
+    border-radius: 5px;
+  }
+
+  .sign-up_wrapper {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- SIGN UP -- END*/
+
+
+/*EXTRA SMALL -- xs -- SIGN UP*/
+@media screen and (max-width: $screen-xs-max) {
+
+}
+/*EXTRA SMALL -- xs -- SIGN UP -- END*/
+
+
+/*SMALL -- sm -- SIGN UP*/
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+  .sign-up_list_item {
+    width: 49%;
+    display: inline-block;
+  }
+
+}
+/*SMALL -- sm -- SIGN UP -- END*/

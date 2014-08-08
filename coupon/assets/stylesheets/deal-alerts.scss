@@ -47,7 +47,7 @@
 }
 
 .deal-categories_col {
-  padding: 15px;
+  padding: 13px;
   width: 20%;
   float: left;
 }
@@ -86,8 +86,54 @@
     .deal-label-checkbox {
       color:#fff;
     }
+  }
+
+  &:hover, &.active {
+
+
+    .technology {
+      background-position: $technology_hover-offset-x $technology_hover-offset-y;
+    }
+
+    .food-shops {
+     background-position: $food-shops_hover-offset-x $food-shops_hover-offset-y;
+    }
+
+    .business {
+      background-position: $business_hover-offset-x $business_hover-offset-y;
+    }
+
+    .clothing {
+      background-position: $clothing_hover-offset-x $clothing_hover-offset-y;
+    }
+
+    .clothing-w {
+      background-position: $clothing-w_hover-offset-x $clothing-w_hover-offset-y;
+    }
+
+    .sport-fitness {
+      background-position: $sport-fitness_hover-offset-x $sport-fitness_hover-offset-y;
+    }
+
+    .pets {
+      background-position: $pets_hover-offset-x $pets_hover-offset-y;
+    }
+
+    .home {
+      background-position: $home_hover-offset-x $home_hover-offset-y;
+    }
+
+    .health {
+      background-position: $health_hover-offset-x $health_hover-offset-y;
+    }
+
+//    .babies {
+//      background-position: $babies_hover-offset-x $babies_hover-offset-y;
+//    }
+
 
   }
+
 }
 
 .deal-categories_overlay {
@@ -254,3 +300,16 @@
 
   }
 /*SMALL -- sm -- DEAL ALERTS -- END*/
+
+
+
+/*LARGE and MEDIUM -- lg and md -- DEAL ALERTS*/
+@media screen and (min-width: $screen-sm-max) {
+.deal_item-col-2-3 {
+    &.-search {
+      margin-top: 50px;
+    }
+  }
+
+}
+/*LARGE and MEDIUM -- lg and md -- DEAL ALERTS END*/

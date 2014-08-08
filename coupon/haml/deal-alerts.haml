@@ -4,277 +4,277 @@
 
 
 %head
-	%meta{:charset => "utf-8"}
+  %meta{:charset => "utf-8"}
 
-	%title
-	%meta{:name => "description", :content => ""}
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  %title
+  %meta{:name => "description", :content => ""}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	%meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+  %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
 
-	%link{:rel => "stylesheet", :href => "../css/sprite.css"}
-	%link{:rel => "stylesheet", :href => "../css/style.css"}
+  %link{:rel => "stylesheet", :href => "../css/sprite.css"}
+  %link{:rel => "stylesheet", :href => "../css/style.css"}
 
-	%script{:src => "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" }
-	%script{:src => "https://oss.maxcdn.com/respond/1.4.2/respond.min.js" }
+  %script{:src => "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" }
+  %script{:src => "https://oss.maxcdn.com/respond/1.4.2/respond.min.js" }
 
 %body
-	.bg-wrapper.-deal
-		.bg-wrapper_bottom
-			.topline
-			%header.header
-				.container
-					.row
-						.header-col-0.header-col.visible-xs-block
-							%a.header-icon-wrapper.collapsed{ :href => "#", :data => {:target => ".main-menu_wrapper", :toggle => "collapse" }}
-								%i.toggle-nav.icon
-						.header-col-1.header-col
-							%a.logo.icon{ :href => "#"}
-								%img{:src => "../img/logo.png", :alt => ""}/
-						.header-col-2.header-col
-							%form.search-form
-								%input.standard-input{ :type => "text", :placeholder => "Search" }
-								%button.search-submit.clear-btn.search
-						.header-col-3.header-col
-							%button.orange-btn SUBMIT COUPON
-						.header-col-4.header-col.last.hidden-xs.hidden-sm
-							%ul.soc-links.clear-list.clearfix
-								%li.soc-links_item
-									%a.gray-round{ :href => "#" }
-										%i.google-plus.icon
-								%li.soc-links_item
-									%a.gray-round{ :href => "#" }
-										%i.fb.icon
-								%li.soc-links_item
-									%a.gray-round{ :href => "#" }
-										%i.tw.icon
-						.header-col-5.header-col.visible-xs-block
-							%a.header-icon-wrapper.collapsed{ :href => "#", :data => {:target => ".search-xs", :toggle => "collapse" }}
-								%i.search-md.icon
+  .bg-wrapper.-deal
+    .bg-wrapper_bottom
+      .topline
+      %header.header
+        .container
+          .row
+            .header-col-0.header-col.visible-xs-block
+              %a.header-icon-wrapper.collapsed{ :href => "#", :data => {:target => ".main-menu_wrapper", :toggle => "collapse" }}
+                %i.toggle-nav.icon
+            .header-col-1.header-col
+              %a.logo.icon{ :href => "#"}
+                %img{:src => "../img/logo.png", :alt => ""}/
+            .header-col-2.header-col
+              %form.search-form
+                %input.standard-input{ :type => "text", :placeholder => "Search" }
+                %button.search-submit.clear-btn.search
+            .header-col-3.header-col
+              %button.orange-btn SUBMIT COUPON
+            .header-col-4.header-col.last.hidden-xs.hidden-sm
+              %ul.soc-links.clear-list.clearfix
+                %li.soc-links_item
+                  %a.gray-round{ :href => "#" }
+                    %i.google-plus.icon
+                %li.soc-links_item
+                  %a.gray-round{ :href => "#" }
+                    %i.fb.icon
+                %li.soc-links_item
+                  %a.gray-round{ :href => "#" }
+                    %i.tw.icon
+            .header-col-5.header-col.visible-xs-block
+              %a.header-icon-wrapper.collapsed{ :href => "#", :data => {:target => ".search-xs", :toggle => "collapse" }}
+                %i.search-md.icon
 
-			%nav.main-menu_wrapper.collapse
-				.container
-					%ul.main-menu.clear-list
-						%li.main-menu_item
-							%a.main-menu_link{ :href => "#" } Home
-						%li.main-menu_item
-							%a.main-menu_link{ :href => "#" } Categories
-						%li.main-menu_item
-							%a.main-menu_link{ :href => "#" } Events
-						%li.main-menu_item
-							%a.main-menu_link{ :href => "#" } Deal alerts
-						%li.main-menu_item
-							%a.main-menu_link{ :href => "#" } Blog
-						%li.main-menu_item
-							%a.main-menu_link{ :href => "#" } Get the app
-					.clearfix.full-width_wrapper.visible-xs-block
-						%button.orange-btn.full-width.-medium SUBMIT COUPON
+      %nav.main-menu_wrapper.collapse
+        .container
+          %ul.main-menu.clear-list
+            %li.main-menu_item
+              %a.main-menu_link{ :href => "index.html" } Home
+            %li.main-menu_item
+              %a.main-menu_link{ :href => "categories.html" } Categories
+            %li.main-menu_item
+              %a.main-menu_link{ :href => "company.html" } Events
+            %li.main-menu_item
+              %a.main-menu_link{ :href => "deal-alerts.html" } Deal alerts
+            %li.main-menu_item
+              %a.main-menu_link{ :href => "blog.html" } Blog
+            %li.main-menu_item
+              %a.main-menu_link{ :href => "#" } Get the app
+          .clearfix.full-width_wrapper.visible-xs-block
+            %button.orange-btn.full-width.-medium SUBMIT COUPON
 
-			%form.search-xs.collapse.hidden-sm.hidden-md.hidden-lg.clearfix
-				%input.standard-input{ :type => "text", :placeholder => "Search" }
+      %form.search-xs.collapse.hidden-sm.hidden-md.hidden-lg.clearfix
+        %input.standard-input{ :type => "text", :placeholder => "Search" }
 
-			.container
-				.row
-					.col-md-18.deal-alerts_bg
-						.deal-alerts_wrapper
-							%header.deal-alerts_header
-								.deal-alerts_title Deal Alerts
-								.deal-alerts_subtitle Get the best deals on everything you love.
-							.deal-step_wrapper
-								.deal-step_step Step 1
-								%h2.deal-step_title Select Your Interests
-								.deal-step_descr Select what you interested in and we’ll alert you when great deals are on.
-								%ul.clear-list.deal-categories.clearfix
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.technology
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Technology
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.food-shops
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Food Shops & Restaurants
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.business
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Business & Marketing
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.clothing
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Clothing (Men)
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.clothing-w
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Clothing (Women)
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.sport-fitness
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Sport & Fitness
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.pets
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Pets
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.home
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Home & Garden
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.health
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Health & Beauty
-									%li.deal-categories_col
-										.deal-categories_item
-											.deal-categories_overlay
-											.deal-categories_icon-wrapper
-												%i.icon.babies
-											%fieldset.deal-checkbox
-												%span.deal-checkbox-wrapper
-													%input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
-													%span.fake-checkbox
-												%label.deal-label-checkbox{:for=>"technology"} Babies & Children
-							.deal-step_wrapper
-								.deal-step_step Step 2
-								%h2.deal-step_title Enter Your Email
-								%fieldset.deal-simple-checkbox
-									.deal-categories_overlay
-									%span.deal-checkbox-wrapper
-										%input{ :id=>"step2", :name=>"first", :type=>"checkbox"}
-										%span.fake-checkbox
-									%label.deal-label-checkbox.-simple{:for=>"step2"} This is an additional option that may be used
-								%fieldset.deal-inline-fieldset
-									%input.standard-input.-medium.deal-inline-input{ :type => "text", :placeholder => "Enter your email..." }
-									%button.orange-btn.deal-inline-btn.-medium SIGN ME UP!
+      .container
+        .row
+          .col-md-18.deal-alerts_bg
+            .deal-alerts_wrapper
+              %header.deal-alerts_header
+                .deal-alerts_title Deal Alerts
+                .deal-alerts_subtitle Get the best deals on everything you love.
+              .deal-step_wrapper
+                .deal-step_step Step 1
+                %h2.deal-step_title Select Your Interests
+                .deal-step_descr Select what you interested in and we’ll alert you when great deals are on.
+                %ul.clear-list.deal-categories.clearfix
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.technology
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Technology
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.food-shops
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Food Shops & Restaurants
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.business
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Business & Marketing
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.clothing
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Clothing (Men)
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.clothing-w
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Clothing (Women)
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.sport-fitness
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Sport & Fitness
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.pets
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Pets
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.home
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Home & Garden
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.health
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Health & Beauty
+                  %li.deal-categories_col
+                    .deal-categories_item
+                      .deal-categories_overlay
+                      .deal-categories_icon-wrapper
+                        %i.icon.babies
+                      %fieldset.deal-checkbox
+                        %span.deal-checkbox-wrapper
+                          %input{ :id=>"technology", :name=>"first", :type=>"checkbox"}
+                          %span.fake-checkbox
+                        %label.deal-label-checkbox{:for=>"technology"} Babies & Children
+              .deal-step_wrapper
+                .deal-step_step Step 2
+                %h2.deal-step_title Enter Your Email
+                %fieldset.deal-simple-checkbox
+                  .deal-categories_overlay
+                  %span.deal-checkbox-wrapper
+                    %input{ :id=>"step2", :name=>"first", :type=>"checkbox"}
+                    %span.fake-checkbox
+                  %label.deal-label-checkbox.-simple{:for=>"step2"} This is an additional option that may be used
+                %fieldset.deal-inline-fieldset
+                  %input.standard-input.-medium.deal-inline-input{ :type => "text", :placeholder => "Enter your email..." }
+                  %button.orange-btn.deal-inline-btn.-medium SIGN ME UP!
 
 
 %footer
-	.container
-		.row
-			.footer-col-1.footer-col
-				.footer-col_inner
-					%h3.footer_title.hidden-xs.hidden-sm Company links
-					%ul.company-list.clear-list
-						%li.company-list_item
-							%a.company-list_link{ :href => "#" }
-								%i.icon.markdown-circle.hidden-sm.hidden-xs
-								%span About us
-						%li.company-list_item
-							%a.company-list_link{ :href => "#" }
-								%i.icon.markdown-circle.hidden-sm.hidden-xs
-								%i.icon.markdown-small.visible-sm-inline-block.visible-xs-inline-block
-								%span Advesting
-						%li.company-list_item
-							%a.company-list_link{ :href => "#" }
-								%i.icon.markdown-circle.hidden-sm.hidden-xs
-								%i.icon.markdown-small.visible-sm-inline-block.visible-xs-inline-block
-								%span Contact us
-			.footer-col-2.footer-col
-				.footer-col_inner
-					%h3.footer_title Latest blog posts
-					%ul.latest-list.clear-list
-						%li.latest-list_item.media
-							.latest-list_data.pull-left
-								%span 23.06
-							%a.media-body.latest-list_title{ :href => "#" } How to Style Summer Shorts that Look Good on Everyone.
-						%li.latest-list_item.media
-							.latest-list_data.pull-left
-								%span 05.04
-							%a.media-body.latest-list_title{ :href => "#" } 4 Things to Know About the FIFA World Cup.
-			.footer-col-3.ta-c.get-the-app.footer-col
-				.footer-col_inner
-					.small-logo_wrapper
-						%a.icon.small-logo{ :href => "#" }
-					.ta-c.get-the-app_button
-						%a.orange-btn.link-btn.-orange-bg{ :href => "#" }  Get the app
-			.footer-col-4.footer-col
-				.footer-col_inner
-					.sign-up_footer
-						.sign-up_footer_title Get the latest coupons, just enter your e-mail below:
-						.sign-up_input-wrapper
-							%input.standard-input.-medium.-orange.-icon-left.-green-text.-orange-bg{ :type => "text", :placeholder => "Your e-mail" }
-							%i.mail.icon
-							%i.gray-line.icon
-						.button-wrapper
-							%button.orange-btn.-orange-bg  SIGN ME UP!
-			.footer-col-5.footer-col.hidden-md.hidden-lg.ta-c
-				%ul.soc-links.clear-list.clearfix
-					%li.soc-links_item.-footer
-						%a.gray-round_orange-bg{ :href => "#" }
-							%i.google-plus.icon
-					%li.soc-links_item.-footer
-						%a.gray-round_orange-bg{ :href => "#" }
-							%i.fb.icon
-					%li.soc-links_item.-footer
-						%a.gray-round_orange-bg{ :href => "#" }
-							%i.tw.icon
+  .container
+    .row
+      .footer-col-1.footer-col
+        .footer-col_inner
+          %h3.footer_title.hidden-xs.hidden-sm Company links
+          %ul.company-list.clear-list
+            %li.company-list_item
+              %a.company-list_link{ :href => "#" }
+                %i.icon.markdown-circle.hidden-sm.hidden-xs
+                %span About us
+            %li.company-list_item
+              %a.company-list_link{ :href => "#" }
+                %i.icon.markdown-circle.hidden-sm.hidden-xs
+                %i.icon.markdown-small.visible-sm-inline-block.visible-xs-inline-block
+                %span Advesting
+            %li.company-list_item
+              %a.company-list_link{ :href => "#" }
+                %i.icon.markdown-circle.hidden-sm.hidden-xs
+                %i.icon.markdown-small.visible-sm-inline-block.visible-xs-inline-block
+                %span Contact us
+      .footer-col-2.footer-col
+        .footer-col_inner
+          %h3.footer_title Latest blog posts
+          %ul.latest-list.clear-list
+            %li.latest-list_item.media
+              .latest-list_data.pull-left
+                %span 23.06
+              %a.media-body.latest-list_title{ :href => "#" } How to Style Summer Shorts that Look Good on Everyone.
+            %li.latest-list_item.media
+              .latest-list_data.pull-left
+                %span 05.04
+              %a.media-body.latest-list_title{ :href => "#" } 4 Things to Know About the FIFA World Cup.
+      .footer-col-3.ta-c.get-the-app.footer-col
+        .footer-col_inner
+          .small-logo_wrapper
+            %a.icon.small-logo{ :href => "#" }
+          .ta-c.get-the-app_button
+            %a.orange-btn.link-btn.-orange-bg{ :href => "#" }  Get the app
+      .footer-col-4.footer-col
+        .footer-col_inner
+          .sign-up_footer
+            .sign-up_footer_title Get the latest coupons, just enter your e-mail below:
+            .sign-up_input-wrapper
+              %input.standard-input.-medium.-orange.-icon-left.-green-text.-orange-bg{ :type => "text", :placeholder => "Your e-mail" }
+              %i.mail.icon
+              %i.gray-line.icon
+            .button-wrapper
+              %button.orange-btn.-orange-bg  SIGN ME UP!
+      .footer-col-5.footer-col.hidden-md.hidden-lg.ta-c
+        %ul.soc-links.clear-list.clearfix
+          %li.soc-links_item.-footer
+            %a.gray-round_orange-bg{ :href => "#" }
+              %i.google-plus.icon
+          %li.soc-links_item.-footer
+            %a.gray-round_orange-bg{ :href => "#" }
+              %i.fb.icon
+          %li.soc-links_item.-footer
+            %a.gray-round_orange-bg{ :href => "#" }
+              %i.tw.icon
 
-	.footer-bottom
-		.container
-			.row
-				.pull-right.footer-bottom_link-wrapper.footer-bottom-col-1
-					%a.footer-bottom_link{ :href => "#" } Terms of use
-					%a.footer-bottom_link{ :href => "#" } Privacy Policy
-				.pull-left.copyright.footer-bottom-col-2
-					%span ©
-					2014 CouponGem. All Rights Reserved.
+  .footer-bottom
+    .container
+      .row
+        .pull-right.footer-bottom_link-wrapper.footer-bottom-col-1
+          %a.footer-bottom_link{ :href => "#" } Terms of use
+          %a.footer-bottom_link{ :href => "#" } Privacy Policy
+        .pull-left.copyright.footer-bottom-col-2
+          %span ©
+          2014 CouponGem. All Rights Reserved.
 
 
 
-		-# Custom JS
-		%script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" }
-		%script{:src => "../js/bootstrap.js" }
-		%script{:src => "../js/jquery.ikSelect.min.js" }
-		%script{:src => "../js/main.js" }
+    -# Custom JS
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" }
+    %script{:src => "../js/bootstrap.js" }
+    %script{:src => "../js/jquery.ikSelect.min.js" }
+    %script{:src => "../js/main.js" }
 

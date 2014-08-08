@@ -51,7 +51,8 @@ module.exports = function(grunt) {
                     'html/categories.html': 'haml/categories.haml',
                     'html/deal-alerts.html': 'haml/deal-alerts.haml',
                     'html/blog.html': 'haml/blog.haml',
-                    'html/blog-post.html': 'haml/blog-post.haml'
+                    'html/blog-post.html': 'haml/blog-post.haml',
+                    'html/search.html': 'haml/search.haml'
                 }
             }
         },

@@ -6603,7 +6603,7 @@ p {
 }
 
 .fake-checkbox {
-  background-position: 0px -552px;
+  background-position: 0px -612px;
   height: 20px;
   width: 18px;
   background-image: url("../assets//sprite.png");
@@ -6788,6 +6788,9 @@ p {
   text-align: center;
   background-color: #fff;
 }
+.simple-btn.-wide {
+  padding: 6px 20px;
+}
 .simple-btn.-icon-left {
   padding: 7px 16px 7px 13px;
   border-radius: 16px;
@@ -6806,11 +6809,11 @@ p {
   text-align: center;
 }
 .getdeal:hover {
-  background-position: 0px -2504px;
+  background-position: 0px -3038px;
   color: #ffffff;
 }
 .getdeal:active, .getdeal:focus {
-  background-position: 0px -2410px;
+  background-position: 0px -2850px;
   color: #ffffff;
 }
 
@@ -6825,10 +6828,10 @@ p {
   height: 77px;
 }
 .showcoupon:hover {
-  background-position: 0px -2055px;
+  background-position: 0px -2676px;
 }
 .showcoupon:active, .showcoupon:focus, .showcoupon.focus {
-  background-position: 0px -2142px;
+  background-position: 0px -2763px;
   font-size: 14px;
   cursor: text;
 }
@@ -6844,11 +6847,11 @@ p {
 }
 
 .rate-up:hover {
-  background-position: 0px -1084px;
+  background-position: 0px -1143px;
 }
 
 .rate-down:hover {
-  background-position: 0px -1202px;
+  background-position: 0px -1084px;
 }
 
 /*wrappers*/
@@ -6857,13 +6860,13 @@ p {
   text-align: center;
 }
 
-.white-wrapper, .deal-categories_item, .blog-img_wrapper, .blog-post_coupons_col_inner {
+.white-wrapper, .full-banner_wrapper, .deal-categories_item, .blog-img_wrapper, .blog-post_coupons_col_inner {
   box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.19);
   border-radius: 6px;
   background-color: #fff;
   padding: 6px;
 }
-.white-wrapper .no-padding, .deal-categories_item .no-padding, .blog-img_wrapper .no-padding, .blog-post_coupons_col_inner .no-padding {
+.white-wrapper .no-padding, .full-banner_wrapper .no-padding, .deal-categories_item .no-padding, .blog-img_wrapper .no-padding, .blog-post_coupons_col_inner .no-padding {
   padding: 0;
 }
 
@@ -6892,7 +6895,7 @@ p {
   margin-right: -6px;
   margin-bottom: -6px;
 }
-.full-bottom_wrapper button {
+.full-bottom_wrapper button, .full-bottom_wrapper a {
   width: 100%;
 }
 
@@ -7629,7 +7632,7 @@ footer .orange-btn {
 
 .carousel-indicators {
   position: absolute;
-  bottom: -47px;
+  bottom: -43px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -7651,7 +7654,7 @@ footer .orange-btn {
   vertical-align: top;
 }
 .carousel-indicators li.active {
-  background-position: 0px -129px;
+  background-position: 0px -107px;
   height: 12px;
   width: 12px;
   margin-top: 1px;
@@ -7664,7 +7667,7 @@ footer .orange-btn {
   cursor: pointer;
 }
 .carusel-item.active {
-  background-position: 0px -129px;
+  background-position: 0px -107px;
 }
 
 /****************/
@@ -7720,7 +7723,6 @@ footer .orange-btn {
 /*SMALL -- sm -- SLIDER -- END*/
 .sign-up {
   background: transparent url("../img/green-bg.png") no-repeat 50% 0;
-  background-size: 100%;
   padding: 20px 20px 30px 20px;
 }
 
@@ -7823,6 +7825,32 @@ footer .orange-btn {
   padding: 17px;
 }
 
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- SIGN UP*/
+@media screen and (max-width: 991px) {
+  .sign-up {
+    background: transparent url("../img/green-bg_sm.png") no-repeat 50% 0;
+    border-radius: 5px;
+  }
+
+  .sign-up_wrapper {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- SIGN UP -- END*/
+/*EXTRA SMALL -- xs -- SIGN UP*/
+/*EXTRA SMALL -- xs -- SIGN UP -- END*/
+/*SMALL -- sm -- SIGN UP*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .sign-up_list_item {
+    width: 49%;
+    display: inline-block;
+  }
+}
+/*SMALL -- sm -- SIGN UP -- END*/
 .banner-right {
   position: relative;
 }
@@ -7882,9 +7910,10 @@ footer .orange-btn {
   margin-top: 3px;
 }
 
-.popular button {
+.popular .link-btn, .popular button {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  text-align: center;
 }
 
 .popular_title {
@@ -7908,7 +7937,7 @@ footer .orange-btn {
 }
 
 .popular-list {
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
 }
 
 .popular-list_inner {
@@ -7930,7 +7959,6 @@ footer .orange-btn {
 
 .submit-coupon {
   background: transparent url("../img/orange-weave-bg.png") 50% 0 no-repeat;
-  background-size: 100%;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 0;
@@ -7974,6 +8002,20 @@ footer .orange-btn {
   vertical-align: middle;
 }
 
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- SUBMIT COUPON*/
+@media screen and (max-width: 991px) {
+  .submit-coupon {
+    background: #ec6d2e url("../img/orange-bg_sm.png") 50% 0 no-repeat;
+  }
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- SUBMIT COUPON -- END*/
+/*EXTRA SMALL -- xs -- SUBMIT COUPON*/
+/*EXTRA SMALL -- xs -- SUBMIT COUPON -- END*/
+/*SMALL -- sm -- SUBMIT COUPON*/
+/*SMALL -- sm -- SUBMIT COUPON -- END*/
 .company-col-2split.-with-top-margin {
   margin-top: 22px;
 }
@@ -8015,8 +8057,7 @@ footer .orange-btn {
   padding-top: 7px;
 }
 .coupon-percent.-green {
-  background: #71a639 url("../img/green-weave-bg.png") 50% 0 no-repeat;
-  background-size: 100%;
+  background: #71a639 url("../img/green-weave-bg_xs.png") 50% 0 no-repeat;
 }
 .coupon-percent.-green span.bg-color {
   color: #ecfd84;
@@ -8026,8 +8067,7 @@ footer .orange-btn {
   text-shadow: 0px 1px 1px rgba(25, 46, 2, 0.46);
 }
 .coupon-percent.-blue {
-  background: #0082c8 url("../img/blue-weave-bg.png") 50% 0 no-repeat;
-  background-size: 100%;
+  background: #0082c8 url("../img/blue-weave-bg_xs.png") 50% 0 no-repeat;
 }
 .coupon-percent.-blue span.bg-color {
   color: #adf3ff;
@@ -8037,7 +8077,7 @@ footer .orange-btn {
   text-shadow: 0px 1px 1px rgba(2, 19, 46, 0.46);
 }
 .coupon-percent.-orange {
-  background: #eb702d url("../img/orange-weave-bg_sm.png") 50% 0 no-repeat;
+  background: #eb702d url("../img/orange-weave-bg_xs.png") 50% 0 no-repeat;
 }
 .coupon-percent.-orange span.bg-color {
   color: #ecfd84;
@@ -8134,13 +8174,13 @@ footer .orange-btn {
   cursor: pointer;
 }
 .rate.-green .icon {
-  background-position: 0px -1084px;
+  background-position: 0px -1143px;
 }
 .rate.-green .rate-count {
   color: #82be1d;
 }
 .rate.-red .icon {
-  background-position: 0px -1202px;
+  background-position: 0px -1084px;
 }
 .rate.-red .rate-count {
   color: #e25d5f;
@@ -8170,9 +8210,26 @@ footer .orange-btn {
 /** RESPONSIVE **/
 /****************/
 /*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
-/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
-/*EXTRA SMALL -- xs -- COMPANY*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
+  .coupon-percent.-green {
+    background: #71a639 url("../img/green-weave-bg_sm.png") 50% 0 no-repeat;
+  }
+  .coupon-percent.-blue {
+    background: #0082c8 url("../img/blue-weave-bg_sm.png") 50% 0 no-repeat;
+  }
+  .coupon-percent.-orange {
+    background: #eb702d url("../img/orange-weave-bg_sm.png") 50% 0 no-repeat;
+  }
+  .coupon-percent .coupon-percent_off {
+    margin-bottom: 13px;
+  }
+
+  /*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
+  /*EXTRA SMALL -- xs -- COMPANY*/
+  /*EXTRA SMALL -- xs -- COMPANY -- END*/
+  /*SMALL -- sm -- COMPANY*/
+}
+@media screen and (max-width: 991px) and (max-width: 767px) {
   .company-col-0 {
     margin-bottom: 10px;
   }
@@ -8202,10 +8259,6 @@ footer .orange-btn {
     font-size: 24px;
   }
 
-  .coupon-percent_off {
-    margin-bottom: 20px;
-  }
-
   .coupon-descr {
     font-size: 18px;
   }
@@ -8223,9 +8276,12 @@ footer .orange-btn {
     font-size: 46px;
     line-height: 46px;
   }
+
+  .hut-coupons_header .orange-arrow-link {
+    margin-bottom: 20px;
+    display: block;
+  }
 }
-/*EXTRA SMALL -- xs -- COMPANY -- END*/
-/*SMALL -- sm -- COMPANY*/
 /*SMALL -- sm -- COMPANY -- END*/
 /*full-banner*/
 .full-banner_wrapper {
@@ -8235,8 +8291,8 @@ footer .orange-btn {
 .full-banner {
   background-position: 0 0;
   background-color: transparent;
-  border-radius: 5px;
   text-align: center;
+  border-radius: 5px;
 }
 .full-banner .icon {
   margin-top: 10px;
@@ -8303,6 +8359,18 @@ footer .orange-btn {
 /*SMALL and EXTRA SMALL -- sm and xs -- CATEGORIES -- END*/
 /*EXTRA SMALL -- xs -- CATEGORIES*/
 @media screen and (max-width: 767px) {
+  .col-full-banner {
+    padding: 0;
+  }
+
+  .full-banner_wrapper {
+    padding: 0;
+  }
+
+  .full-banner {
+    border-radius: 0px;
+  }
+
   .full-banner_descr {
     font-size: 24px;
     line-height: 28px;
@@ -8325,8 +8393,15 @@ footer .orange-btn {
   .full-banner_descr {
     width: 80%;
   }
+
+  .full-banner_wrapper {
+    margin-top: 30px;
+    background: none;
+  }
 }
 /*SMALL -- sm -- CATEGORIES -- END*/
+/*LARGE and MEDIUM -- lg and md -- CATEGORIES*/
+/*LARGE and MEDIUM -- lg and md -- CATEGORIES--END*/
 .deal-step_wrapper {
   margin-bottom: 45px;
 }
@@ -8375,7 +8450,7 @@ footer .orange-btn {
 }
 
 .deal-categories_col {
-  padding: 15px;
+  padding: 13px;
   width: 20%;
   float: left;
 }
@@ -8391,7 +8466,7 @@ footer .orange-btn {
   box-shadow: 0px 1px 2px 0px rgba(1, 1, 1, 0.31);
 }
 .deal-categories_item:hover .fake-checkbox {
-  background-position: 0px -642px;
+  background-position: 0px -522px;
 }
 .deal-categories_item:hover .deal-label-checkbox {
   color: #fff;
@@ -8400,10 +8475,37 @@ footer .orange-btn {
   box-shadow: 0px 1px 2px 0px rgba(1, 1, 1, 0.31);
 }
 .deal-categories_item.active .fake-checkbox {
-  background-position: 0px -522px;
+  background-position: 0px -552px;
 }
 .deal-categories_item.active .deal-label-checkbox {
   color: #fff;
+}
+.deal-categories_item:hover .technology, .deal-categories_item.active .technology {
+  background-position: 0px -1823px;
+}
+.deal-categories_item:hover .food-shops, .deal-categories_item.active .food-shops {
+  background-position: 0px -3228px;
+}
+.deal-categories_item:hover .business, .deal-categories_item.active .business {
+  background-position: 0px -1506px;
+}
+.deal-categories_item:hover .clothing, .deal-categories_item.active .clothing {
+  background-position: 0px -1953px;
+}
+.deal-categories_item:hover .clothing-w, .deal-categories_item.active .clothing-w {
+  background-position: 0px -2152px;
+}
+.deal-categories_item:hover .sport-fitness, .deal-categories_item.active .sport-fitness {
+  background-position: 0px -2510px;
+}
+.deal-categories_item:hover .pets, .deal-categories_item.active .pets {
+  background-position: 0px -2287px;
+}
+.deal-categories_item:hover .home, .deal-categories_item.active .home {
+  background-position: 0px -1569px;
+}
+.deal-categories_item:hover .health, .deal-categories_item.active .health {
+  background-position: 0px -1759px;
 }
 
 .deal-categories_overlay {
@@ -8487,7 +8589,7 @@ footer .orange-btn {
   position: relative;
 }
 .deal-simple-checkbox.active .fake-checkbox {
-  background-position: 0px -612px;
+  background-position: 0px -642px;
 }
 
 .deal-inline-fieldset {
@@ -8546,12 +8648,21 @@ footer .orange-btn {
   }
 }
 /*SMALL -- sm -- DEAL ALERTS -- END*/
+/*LARGE and MEDIUM -- lg and md -- DEAL ALERTS*/
+@media screen and (min-width: 991px) {
+  .deal_item-col-2-3.-search {
+    margin-top: 50px;
+  }
+}
+/*LARGE and MEDIUM -- lg and md -- DEAL ALERTS END*/
 .blog-block-title {
   margin-bottom: 25px;
+  margin-top: 20px;
 }
 
 .blog-preview_wrapper {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .blog-preview_title {
@@ -8622,6 +8733,13 @@ footer .orange-btn {
   font-family: "proxima_nova_semibold";
 }
 
+.blog-preview_cutbody p {
+  font-family: "proxima_nova_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.blog-preview_cutbody p.lg-text {
+  font-family: "proxima_nova_semibold";
+}
+
 /*Blog post*/
 .blog-post_header {
   margin-bottom: 20px;
@@ -8650,12 +8768,70 @@ footer .orange-btn {
 /****************/
 /** RESPONSIVE **/
 /****************/
-/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
-/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
-/*EXTRA SMALL -- xs -- COMPANY*/
-/*EXTRA SMALL -- xs -- COMPANY -- END*/
-/*SMALL -- sm -- COMPANY*/
-/*SMALL -- sm -- COMPANY -- END*/
+/*SMALL and EXTRA SMALL -- sm and xs -- BLOG*/
+@media screen and (max-width: 991px) {
+  .blog-post_coupons_col {
+    margin-bottom: 20px;
+  }
+
+  .blog-post_title {
+    margin-top: 40px;
+  }
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- BLOG -- END*/
+/*EXTRA SMALL -- xs -- BLOG*/
+@media screen and (max-width: 767px) {
+  .blog-preview_cutbody p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .blog-preview_cutbody p.lg-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+/*EXTRA SMALL -- xs -- BLOG -- END*/
+/*SMALL -- sm -- BLOG*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-block-title {
+    margin-top: 40px;
+  }
+}
+/*SMALL -- sm -- BLOG -- END*/
+.search-results_subtitle {
+  color: #fb8c30;
+  font-size: 24px;
+  font-family: "proxima_nova_bold";
+  margin-bottom: 40px;
+}
+
+.search-results_title {
+  margin-bottom: 10px;
+}
+
+.search-pages_descr {
+  font-size: 18px;
+  /* Approximation due to font substitution */
+  color: #8f9497;
+  font-family: "proxima_nova_bold";
+}
+
+.search-related-title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- HEADER*/
+/*SMALL and EXTRA SMALL -- sm and xs -- HEADER -- END*/
+/*EXTRA SMALL -- xs -- HEADER*/
+/*EXTRA SMALL -- xs -- HEADER -- END*/
+/*SMALL -- sm -- HEADER*/
+/*SMALL -- sm -- HEADER -- END*/
+/*LARGE and MEDIUM -- lg and md -- HEADER*/
+/*LARGE and MEDIUM -- lg and md -- HEADER -- END*/
 .bg-wrapper {
   background: url("../img/bg_top-narrow.png") transparent 50% 0 no-repeat;
   overflow: hidden;
@@ -9169,3 +9345,17 @@ a:hover {
     background: none;
   }
 }
+/****************/
+/** RESPONSIVE **/
+/****************/
+/*SMALL and EXTRA SMALL -- sm and xs -- ALL*/
+/*SMALL and EXTRA SMALL -- sm and xs -- ALL -- END*/
+/*EXTRA SMALL -- xs -- ALL*/
+@media screen and (max-width: 767px) {
+  .bg-wrapper .main-menu_wrapper {
+    background-color: #A93C23;
+  }
+}
+/*EXTRA SMALL -- xs -- ALL -- END*/
+/*SMALL -- sm -- ALL*/
+/*SMALL -- sm -- ALL -- END*/

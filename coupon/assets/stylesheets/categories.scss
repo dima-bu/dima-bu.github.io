@@ -2,14 +2,14 @@
 
 .full-banner_wrapper {
   margin-bottom: 30px;
+  @extend .white-wrapper;
 }
 
 .full-banner {
   background-position: 0 0;
   background-color: transparent;
-  border-radius: 5px;
   text-align: center;
-
+  border-radius:5px;
 
   .icon {
     margin-top: 10px;
@@ -89,6 +89,21 @@
 
 /*EXTRA SMALL -- xs -- CATEGORIES*/
 @media screen and (max-width: $screen-xs-max) {
+
+  .col-full-banner {
+    padding: 0;
+  }
+
+
+  .full-banner_wrapper {
+      padding:0;
+  }
+
+
+  .full-banner {
+    border-radius:0px;
+  }
+
   .full-banner_descr {
     font-size: 24px;
     line-height: 28px;
@@ -103,10 +118,6 @@
   .full-banner_title {
     margin-bottom: 40px;
     font-size: 34px;
-
-    span {
-
-    }
   }
 
 
@@ -119,5 +130,17 @@
   .full-banner_descr {
     width: 80%;
   }
+
+  .full-banner_wrapper {
+    margin-top: 30px;
+    background:none;
+  }
+
 }
 /*SMALL -- sm -- CATEGORIES -- END*/
+
+/*LARGE and MEDIUM -- lg and md -- CATEGORIES*/
+@media screen and (min-width: $screen-sm-max) {
+
+}
+/*LARGE and MEDIUM -- lg and md -- CATEGORIES--END*/

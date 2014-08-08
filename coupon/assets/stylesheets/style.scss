@@ -27,6 +27,8 @@
 @import "deal-alerts";
 @import "blog";
 
+@import "search-results";
+
 .bg-wrapper {
   background: url('#{$path-to-img}bg_top-narrow.png') transparent 50% 0 no-repeat ;
   &.-with-slider {
@@ -37,11 +39,6 @@
     background: url('#{$path-to-img}bg_top_deal.png') transparent 50% 0 no-repeat ;
   }
   overflow: hidden;
-
-}
-
-.bg-wrapper_bottom {
-//  background: url('#{$path-to-img}bg_bottom.png') transparent 50% 100% no-repeat ;
 }
 
 a:active,
@@ -53,3 +50,43 @@ a:hover {
 
 @import "ie";
 @import "responsive";
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- ALL*/
+@media screen and (max-width: $screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- ALL -- END*/
+
+
+/*EXTRA SMALL -- xs -- ALL*/
+@media screen and (max-width: $screen-xs-max) {
+
+  .bg-wrapper {
+    .main-menu_wrapper {
+      background-color: #A93C23;
+    }
+  }
+
+}
+/*EXTRA SMALL -- xs -- ALL -- END*/
+
+
+
+/*SMALL -- sm -- ALL*/
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+
+}
+/*SMALL -- sm -- ALL -- END*/
+
+
+
+

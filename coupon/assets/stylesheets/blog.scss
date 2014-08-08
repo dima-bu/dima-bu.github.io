@@ -1,10 +1,13 @@
 
 .blog-block-title {
   margin-bottom: 25px;
+  margin-top: 20px;
 }
 
 .blog-preview_wrapper {
   margin-top: 10px;
+  margin-bottom: 20px;
+
 }
 
 .blog-preview_title {
@@ -84,6 +87,13 @@
   font-family: $ff-semibold;
 }
 
+.blog-preview_cutbody p {
+  font-family: $font-family-sans-serif;
+  &.lg-text {
+    font-family: $ff-semibold;
+  }
+}
+
 
 /*Blog post*/
 
@@ -134,25 +144,47 @@
 /****************/
 
 
-/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
+/*SMALL and EXTRA SMALL -- sm and xs -- BLOG*/
 @media screen and (max-width: $screen-sm-max) {
 
+  .blog-post_coupons_col {
+    margin-bottom: 20px;
+  }
+
+  .blog-post_title {
+    margin-top: 40px;
+  }
+
 }
-/*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
+/*SMALL and EXTRA SMALL -- sm and xs -- BLOG -- END*/
 
 
-/*EXTRA SMALL -- xs -- COMPANY*/
+/*EXTRA SMALL -- xs -- BLOG*/
 @media screen and (max-width: $screen-xs-max) {
-
+  .blog-preview_cutbody p {
+    font-size: 16px;
+    line-height: 22px;
+    &.lg-text {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 }
-/*EXTRA SMALL -- xs -- COMPANY -- END*/
+/*EXTRA SMALL -- xs -- BLOG -- END*/
 
 
 
-/*SMALL -- sm -- COMPANY*/
+/*SMALL -- sm -- BLOG*/
 @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 
+  .blog-block-title {
+    margin-top: 40px;
+  }
+
+
+
+
 }
-/*SMALL -- sm -- COMPANY -- END*/
+/*SMALL -- sm -- BLOG -- END*/
 
 

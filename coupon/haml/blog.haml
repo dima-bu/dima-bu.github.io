@@ -56,15 +56,15 @@
         .container
           %ul.main-menu.clear-list
             %li.main-menu_item
-              %a.main-menu_link{ :href => "#" } Home
+              %a.main-menu_link{ :href => "index.html" } Home
             %li.main-menu_item
-              %a.main-menu_link{ :href => "#" } Categories
+              %a.main-menu_link{ :href => "categories.html" } Categories
             %li.main-menu_item
-              %a.main-menu_link{ :href => "#" } Events
+              %a.main-menu_link{ :href => "company.html" } Events
             %li.main-menu_item
-              %a.main-menu_link{ :href => "#" } Deal alerts
+              %a.main-menu_link{ :href => "deal-alerts.html" } Deal alerts
             %li.main-menu_item
-              %a.main-menu_link{ :href => "#" } Blog
+              %a.main-menu_link{ :href => "blog.html" } Blog
             %li.main-menu_item
               %a.main-menu_link{ :href => "#" } Get the app
           .clearfix.full-width_wrapper.visible-xs-block
@@ -86,7 +86,7 @@
                     .blog-date_num 25
                   .media-body
                     %h3.blog-preview_title
-                      %a Lorem ipsum dolor sit amet consectetur
+                      %a{:href=> 'blog-post.html'} Lorem ipsum dolor sit amet consectetur
                     .blog-preview_autor
                       %span by
                       %a Donna Freedman
@@ -96,7 +96,7 @@
                   %p.lg-text With weddings and Father’s Day, it’s a gifty, gifty month
                   %p
                     %span Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                    %a Read more...
+                    %a{:href=> 'blog-post.html'} Read more...
               .gray-shadow
               .blog-preview_post
                 .media.blog-preview_header
@@ -105,7 +105,7 @@
                     .blog-date_num 25
                   .media-body
                     %h3.blog-preview_title
-                      %a Lorem ipsum dolor sit amet consectetur
+                      %a{:href=> 'blog-post.html'} Lorem ipsum dolor sit amet consectetur
                     .blog-preview_autor
                       %span by
                       %a Donna Freedman
@@ -115,7 +115,7 @@
                   %p.lg-text With weddings and Father’s Day, it’s a gifty, gifty month
                   %p
                     %span Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                    %a Read more...
+                    %a{:href=> 'blog-post.html'} Read more...
               .gray-shadow
               .blog-preview_post
                 .media.blog-preview_header
@@ -124,7 +124,7 @@
                     .blog-date_num 25
                   .media-body
                     %h3.blog-preview_title
-                      %a Lorem ipsum dolor sit amet consectetur
+                      %a{:href=> 'blog-post.html'} Lorem ipsum dolor sit amet consectetur
                     .blog-preview_autor
                       %span by
                       %a Donna Freedman
@@ -134,14 +134,14 @@
                   %p.lg-text With weddings and Father’s Day, it’s a gifty, gifty month
                   %p
                     %span Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-                    %a Read more...
+                    %a{:href=> 'blog-post.html'} Read more...
               .gray-shadow
 
             .show-more-wrapper.visible-xs-block.visible-sm-block
               %a{ :href => "#" }
                 %span.simple-round_30.simple-round
                   %i.orange-arrow_bottom.icon
-                %span Show more deals
+                %span Show more posts
             .paginator-wrapper.hidden-xs.hidden-sm
               %ul.paginator-list.clear-list
                 %li.paginator-list_item.-previous
@@ -207,7 +207,6 @@
                         %a.pull-left.popular-list_name{ :href => "#" } Holidays
                         %a.pull-right.simple-round_30.simple-round{ :href => "#" }
                           %i.orange-arrow.icon
-                      .gray-shadow_md
                   .full-bottom_wrapper
                     %button.orange-btn.full-btn.-medium MORE
 
@@ -233,11 +232,11 @@
                 .sign-up_form_inner
                   .sign-up_input-wrapper
                     %input.standard-input.-medium.-green-text.-green-bg.-icon-left{ :type => "text", :placeholder => "Your e-mail" }
-                      %i.mail.icon
-                      %i.gray-line.icon
-                    %button.orange-btn.-medium.-green-bg
-                      %i.share.icon
-                      %span SIGN ME UP!
+                    %i.mail.icon
+                    %i.gray-line.icon
+                  %button.orange-btn.-medium.-green-bg
+                    %i.share.icon
+                    %span SIGN ME UP!
 
             %section.right-section
               .right-list_wrapper

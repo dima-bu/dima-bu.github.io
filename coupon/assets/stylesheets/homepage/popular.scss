@@ -1,7 +1,10 @@
 .popular {
-  button {
+  .link-btn, button {
     @include  border-top-radius(0);
+    text-align: center;
   }
+
+
 }
 .popular_title {
   color: #489ac5;
@@ -26,7 +29,7 @@
 
 
 .popular-list {
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
 }
 
 .popular-list_inner {

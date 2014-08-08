@@ -97,8 +97,8 @@
     padding-top: 7px;
   }
   &.-green {
-    background: #71A639 url('#{$path-to-img}green-weave-bg.png') 50% 0 no-repeat;
-    background-size: 100%;
+    background: #71A639 url('#{$path-to-img}green-weave-bg_xs.png') 50% 0 no-repeat;
+//    background-size: 100%;
     span.bg-color  {
       color:  #ecfd84;
     }
@@ -109,8 +109,8 @@
   }
 
   &.-blue {
-    background: rgb(0, 130, 200) url('#{$path-to-img}blue-weave-bg.png') 50% 0 no-repeat;
-    background-size: 100%;
+    background: rgb(0, 130, 200) url('#{$path-to-img}blue-weave-bg_xs.png') 50% 0 no-repeat;
+//    background-size: 100%;
 
     span.bg-color  {
       color:  #adf3ff;
@@ -123,7 +123,7 @@
   }
 
   &.-orange {
-    background: rgb(235, 112, 45) url('#{$path-to-img}orange-weave-bg_sm.png') 50% 0 no-repeat;
+    background: rgb(235, 112, 45) url('#{$path-to-img}orange-weave-bg_xs.png') 50% 0 no-repeat;
     span.bg-color  {
       color:  #ecfd84;
     }
@@ -290,6 +290,23 @@
 /*SMALL and EXTRA SMALL -- sm and xs -- COMPANY*/
   @media screen and (max-width: $screen-sm-max) {
 
+    .coupon-percent {
+      &.-green {
+        background: #71A639 url('#{$path-to-img}green-weave-bg_sm.png') 50% 0 no-repeat;
+      }
+
+      &.-blue {
+        background: rgb(0, 130, 200) url('#{$path-to-img}blue-weave-bg_sm.png') 50% 0 no-repeat;
+      }
+
+      &.-orange {
+        background: rgb(235, 112, 45) url('#{$path-to-img}orange-weave-bg_sm.png') 50% 0 no-repeat;
+    }
+
+    .coupon-percent_off {
+      margin-bottom: 13px;
+    }
+
   }
 /*SMALL and EXTRA SMALL -- sm and xs -- COMPANY -- END*/
 
@@ -326,10 +343,6 @@
       font-size: 24px;
     }
 
-    .coupon-percent_off {
-      margin-bottom: 20px;
-    }
-
     .coupon-descr {
       font-size: 18px;
     }
@@ -348,6 +361,11 @@
       line-height: 46px;
     }
 
+    .hut-coupons_header .orange-arrow-link {
+      margin-bottom: 20px;
+      display: block;
+    }
+
   }
 /*EXTRA SMALL -- xs -- COMPANY -- END*/
 
@@ -355,6 +373,8 @@
 
 /*SMALL -- sm -- COMPANY*/
   @media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-
+.nnn {
+}
+  }
   }
 /*SMALL -- sm -- COMPANY -- END*/

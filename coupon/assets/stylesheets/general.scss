@@ -370,6 +370,10 @@ p {
   border-radius: 15px;
   text-align: center;
   background-color: #fff;
+
+  &.-wide {
+    padding: 6px 20px;
+  }
   
   &.-icon-left {
     padding: 7px 16px 7px 13px;
@@ -494,7 +498,7 @@ p {
   margin-left: -6px;
   margin-right: -6px;
   margin-bottom: -6px;
-  button {
+  button, a {
     width: 100%;
   }
 }

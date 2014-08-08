@@ -1,7 +1,6 @@
 
 .submit-coupon {
   background: transparent url('#{$path-to-img}orange-weave-bg.png') 50% 0 no-repeat;
-  background-size: 100%;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 0;
@@ -42,3 +41,34 @@
 
   }
 }
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- SUBMIT COUPON*/
+@media screen and (max-width: $screen-sm-max) {
+  .submit-coupon {
+    background: #EC6D2E url('#{$path-to-img}orange-bg_sm.png') 50% 0 no-repeat;
+  }
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- SUBMIT COUPON -- END*/
+
+
+/*EXTRA SMALL -- xs -- SUBMIT COUPON*/
+@media screen and (max-width: $screen-xs-max) {
+
+}
+/*EXTRA SMALL -- xs -- SUBMIT COUPON -- END*/
+
+
+/*SMALL -- sm -- SUBMIT COUPON*/
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+}
+/*SMALL -- sm -- SUBMIT COUPON -- END*/
+
+
+

@@ -3,6 +3,10 @@
 // NB: in Sass 3.3 there is a native function: function-exists(twbs-font-path)
 $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")')) !default;
 
+$path-to-img: '../img/';
+$path-to-behaivor: '../assets/';
+$path-to-sprite: '../assets/';
+
 //
 // Variables
 // --------------------------------------------------
@@ -50,9 +54,7 @@ $h2-color: $text-orange;
 $h3-color: $text-blue;
 
 
-$path-to-img: '../img/';
-$path-to-behaivor: '../assets/';
-$path-to-sprite: '../assets/';
+
 
 //== Scaffolding
 //
@@ -75,6 +77,8 @@ $link-hover-color:      darken($link-color, 5%) !default;
 
 $font-family-sans-serif:  'proxima_nova_regular', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+
+
 
 $ff-bold: 'proxima_nova_bold'; //700
 $ff-semibold: 'proxima_nova_semibold'; //600
