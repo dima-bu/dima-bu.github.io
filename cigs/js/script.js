@@ -15,6 +15,30 @@ $(document).ready(function() {
             width: 282
     });
 
+
+    $('.standart-select.-time').ddslick({
+        width: 96
+    });
+
+    $('.quantity-up').on( "click", function() {
+        $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
+            return ++oldval;
+        });
+    });
+
+    $('.quantity-drop').on( "click", function() {
+
+        $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
+            if (oldval > 0) {
+                return --oldval;
+            }
+
+            else {
+                return 0;
+            }
+        });
+    });
+
     /*GALLERY*/
 
     $(".product_img_gallery_item img").click(function() {
