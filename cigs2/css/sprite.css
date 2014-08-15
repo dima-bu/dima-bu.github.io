@@ -1,0 +1,258 @@
+.DHL {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -396px;
+  width: 138px;
+  height: 31px;
+}
+.Geschmack {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1205px;
+  width: 60px;
+  height: 60px;
+}
+.Zutaten {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1415px;
+  width: 60px;
+  height: 60px;
+}
+.achive_icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -437px;
+  width: 32px;
+  height: 32px;
+}
+.begutachtet {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1275px;
+  width: 60px;
+  height: 60px;
+}
+.benefits {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -278px;
+  width: 28px;
+  height: 28px;
+}
+.blog {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2313px;
+  width: 410px;
+  height: 200px;
+}
+.blog_min {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1673px;
+  width: 330px;
+  height: 150px;
+}
+.breadcrumb_divider {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -814px;
+  width: 22px;
+  height: 40px;
+}
+.cart {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -521px;
+  width: 40px;
+  height: 33px;
+}
+.category-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -38px;
+  width: 13px;
+  height: 10px;
+}
+.drop {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 10px;
+  height: 8px;
+}
+.facebook {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -244px;
+  width: 12px;
+  height: 24px;
+}
+.flavor {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1485px;
+  width: 165px;
+  height: 80px;
+}
+.fragen {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2943px;
+  width: 410px;
+  height: 200px;
+}
+.fragen_min {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2153px;
+  width: 330px;
+  height: 150px;
+}
+.google-plus {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -114px;
+  width: 25px;
+  height: 21px;
+}
+.locator {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2733px;
+  width: 410px;
+  height: 200px;
+}
+.locator_min {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1833px;
+  width: 330px;
+  height: 150px;
+}
+.loupe {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -58px;
+  width: 17px;
+  height: 16px;
+}
+.made {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1135px;
+  width: 60px;
+  height: 60px;
+}
+.paypal {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -145px;
+  width: 52px;
+  height: 22px;
+}
+.pinterest {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -210px;
+  width: 24px;
+  height: 24px;
+}
+.point {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -18px;
+  width: 10px;
+  height: 10px;
+}
+.popularsten {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -914px;
+  width: 41px;
+  height: 40px;
+}
+.premium {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1345px;
+  width: 60px;
+  height: 60px;
+}
+.quad_email {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -964px;
+  width: 40px;
+  height: 40px;
+}
+.quad_facebook {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -864px;
+  width: 40px;
+  height: 40px;
+}
+.quad_google_plus {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -564px;
+  width: 40px;
+  height: 40px;
+}
+.quad_twitter {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -764px;
+  width: 40px;
+  height: 40px;
+}
+.recycling {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2523px;
+  width: 410px;
+  height: 200px;
+}
+.recycling_min {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1993px;
+  width: 330px;
+  height: 150px;
+}
+.ribbon-new {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1575px;
+  width: 89px;
+  height: 88px;
+}
+.ribbon-new_mini {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1068px;
+  width: 58px;
+  height: 57px;
+}
+.schnelle {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -714px;
+  width: 41px;
+  height: 40px;
+}
+.sofort {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -177px;
+  width: 70px;
+  height: 23px;
+}
+.support {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -479px;
+  width: 78px;
+  height: 32px;
+}
+.telephone {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1014px;
+  width: 33px;
+  height: 44px;
+}
+.title-arrow_left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -316px;
+  width: 222px;
+  height: 30px;
+}
+.title-arrow_right {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -356px;
+  width: 222px;
+  height: 30px;
+}
+.trusted {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -614px;
+  width: 41px;
+  height: 40px;
+}
+.twitter {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -84px;
+  width: 24px;
+  height: 20px;
+}
+.versandkostenfreie {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -664px;
+  width: 41px;
+  height: 40px;
+}
