@@ -20,6 +20,16 @@ $(document).ready(function() {
         width: 96
     });
 
+    $('.standart-select.-date-day').ddslick({
+        width: 130
+    });
+    $('.standart-select.-date-month').ddslick({
+        width: 130
+    });
+    $('.standart-select.-date-year').ddslick({
+        width: 130
+    });
+
     $('.quantity-up').on( "click", function() {
         $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
             return ++oldval;
