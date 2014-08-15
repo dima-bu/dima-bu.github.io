@@ -1766,7 +1766,7 @@ address {
 span.sep {
   height: 40px;
   width: 22px;
-  background: transparent url('../img/sprite.png') 0px -789px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1007px no-repeat;
   float: left;
 }
 .footer {
@@ -1846,7 +1846,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -36px;
+  background: transparent url('../img/sprite.png') 0px -54px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2030,7 +2030,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -1139px;
+  background-position: 0px -1157px;
   height: 57px;
   width: 58px;
 }
@@ -2319,7 +2319,7 @@ a.dd-selected label {
   height: 15px;
   display: block;
   background-image: url(../img/sprite.png);
-  background-position: 28px -13px;
+  background-position: 28px -30px;
 }
 .categories-block ul {
   overflow: hidden;
@@ -2365,6 +2365,58 @@ a.dd-selected label {
 }
 .categories-block .menthol {
   background: #53b0c5;
+}
+.checkout .nav.nav-tabs li {
+  background: #fff;
+  padding: 0;
+}
+.checkout .nav.nav-tabs li.active a {
+  background: #282937;
+  color: #fff;
+  opacity: 1;
+}
+.checkout .nav.nav-tabs li.first,
+.checkout .nav.nav-tabs li:last-child a {
+  margin: 0;
+}
+.checkout .nav.nav-tabs li a {
+  background: #36374a;
+  color: #6d93bc;
+  margin-right: 1px;
+  border: none;
+  border-radius: 0;
+  opacity: 0.7;
+}
+.checkout .col-md-5 {
+  min-height: 70px;
+  margin-bottom: 20px;
+}
+.checkout .col-md-5.last {
+  float: none;
+  clear: both;
+}
+.checkout .g_input {
+  min-height: 50px;
+}
+.date-select {
+  padding-left: 0;
+}
+.date-select li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.date-select li:last-child {
+  margin-right: 0;
+}
+.date-select li .standart-select_wrapper li {
+  display: block;
+  margin: 0;
+}
+.date-select .dd-select {
+  border: 1px solid #000;
+}
+.date-select .dd-pointer-down {
+  background: transparent url('../img/sprite.png') 0px 0px;
 }
 .quantity-input_wrapper {
   position: relative;
@@ -2578,7 +2630,7 @@ a.dd-selected label {
   display: none;
 }
 .checking_item.-black .black-check {
-  background-position: 0px -133px;
+  background-position: 0px -151px;
 }
 .checking_item.-gray {
   /*variables for gray version START*/
