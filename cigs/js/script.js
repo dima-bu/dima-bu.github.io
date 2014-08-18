@@ -51,9 +51,38 @@ $(document).ready(function() {
 
     /*GALLERY*/
 
+
+    $(".product_img_gallery .next-img").on( "click", function(e) {
+        e.preventDefault();
+        var wrap= $(this).parents('.product_img_gallery');
+//        wrap.addClass('red');
+
+        var index = wrap.find('.active');
+        var column = index.next('.column').index();
+//        console.log(column);
+        if (column > 0) {
+            index.next('.column').find('img').trigger('click');
+        }
+        else {
+            wrap.find('.column:first img').trigger('click');
+        }
+
+    });
+
+    $(".product_img_gallery .prev-img").on( "click", function(e) {
+        e.preventDefault();
+        var wrap= $(this).parents('.product_img_gallery');
+        var column = index.next('.column').index();
+        console.log(column);
+
+        var index = wrap.find('.active');
+        index.prev('.column').find('img').trigger('click');
+
+    });
+
     $(".product_img_gallery_item img").click(function() {
         // see if same thumb is being clicked
-        if ($(this).parent('.product_img_gallery_item').hasClass("active")) { return; }
+        if ($(this).parent('.product_img_gallery_item').parent('.column').hasClass("active")) { return; }
 
         // calclulate large image's  based on the thumbnail URL (flickr specific)
         var url = $(this).attr("alt");
@@ -75,8 +104,8 @@ $(document).ready(function() {
         img.src = url;
 
         // activate item
-        $(".product_img_gallery_item").removeClass("active");
-        $(this).parent('.product_img_gallery_item').addClass("active");
+        $(".column").removeClass("active");
+        $(this).parent('.product_img_gallery_item').parent('.column').addClass("active");
 
 // when page loads simulate a "click" on the first image
 

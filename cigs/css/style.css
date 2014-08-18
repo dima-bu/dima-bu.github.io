@@ -1766,7 +1766,7 @@ address {
 span.sep {
   height: 40px;
   width: 22px;
-  background: transparent url('../img/sprite.png') 0px -1180px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1302px no-repeat;
   float: left;
 }
 .footer {
@@ -1846,7 +1846,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -36px;
+  background: transparent url('../img/sprite.png') 0px 0px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -1855,7 +1855,7 @@ h3.footer_title {
   width: 10px !important;
   display: inline-block;
   border: 0 none transparent !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -18px;
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
@@ -1874,15 +1874,16 @@ h2.arrow-title {
   font-weight: 700;
 }
 .welcome_wrapper {
-  background: #9068ae url('../img/welcome_bg.jpg') center 0 no-repeat;
+  background: #000000 url('../img/welcome_bg.jpg') center 0 no-repeat;
   padding: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #ffffff;
 }
 .welcome_wrapper p {
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px #000;
 }
 .welcome_wrapper.-starterkit {
   background: #9068ae url('../img/welcome_bg-starterkit.jpg') center 0 no-repeat;
@@ -1902,17 +1903,18 @@ h2.arrow-title {
 .welcome_title {
   color: #ffffff;
   margin-top: 0;
-  font-size: 32px;
+  font-size: 18px;
   line-height: 44px;
   margin-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .stars {
   clear: both;
 }
 .option-block {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-top: 110px;
-  padding-left: 35px;
   font-size: 16px;
   color: #ffffff;
 }
@@ -1930,6 +1932,40 @@ h2.arrow-title {
 }
 .option-block.mini h4 {
   font-size: 24px;
+}
+/*  banners on Home Page  */
+.row.banners {
+  margin: 0;
+  overflow: hidden;
+}
+.row.banners h4 {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-left: 0;
+  width: 65%;
+  text-align: center;
+  line-height: 30px;
+}
+.row.banners .col-md-8 {
+  overflow: hidden;
+  padding-left: 20px;
+}
+.row.banners .store_locator {
+  margin-bottom: 25px;
+  margin-left: -15px;
+  padding-top: 90px;
+}
+.row.banners .col-md-4 {
+  padding-left: 0;
+}
+.row.banners .kundenservice,
+.row.banners .recycling {
+  float: right;
+}
+.row.banners .row:last-child {
+  padding-right: 0;
 }
 .banner_premium-liquid {
   border: 1px solid #d8d8e4;
@@ -2030,7 +2066,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -1330px;
+  background-position: 0px -1402px;
   height: 57px;
   width: 58px;
 }
@@ -2103,18 +2139,20 @@ h2.arrow-title {
   /* Approximation due to font substitution */
   font-weight: 700;
 }
-.product_img_gallery_item {
+.column.active .product_img_gallery_item {
+  opacity: 1;
+  border: 1px solid #314d6b;
+}
+.column.active:hover .product_img_gallery_item {
+  opacity: 1;
+}
+.column:hover .product_img_gallery_item {
+  opacity: 0.6;
+}
+.column .product_img_gallery_item {
   opacity: 0.3;
   cursor: pointer;
-}
-.product_img_gallery_item.active {
-  opacity: 1;
-}
-.product_img_gallery_item.active:hover {
-  opacity: 1;
-}
-.product_img_gallery_item:hover {
-  opacity: 0.6;
+  border: 1px solid #d7dee4;
 }
 .product_img_section {
   margin-bottom: 20px;
@@ -2135,11 +2173,11 @@ h2.arrow-title {
 .product_img_gallery {
   margin: 10px 0;
 }
-.product_img_gallery_item.g_gray-border {
-  border: 1px solid #d7dee4;
+.product_img_gallery .icon {
+  vertical-align: middle;
 }
-.product_img_gallery_item.active.g_gray-border {
-  border: 1px solid #314d6b;
+.product_img_gallery .arrow-column {
+  line-height: 80px;
 }
 .product_header {
   border-bottom: 1px solid #ccc;
@@ -2302,6 +2340,22 @@ a.dd-selected label {
   border: none;
   border-top: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
+}
+.product_select-type_wrapper label {
+  color: #3c6086;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+}
+.product_select-type_header {
+  margin-bottom: 15px;
+}
+.product_select-type_header h3 {
+  color: #aeb6bd;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
 }
 .categories-block a {
   display: block;
@@ -2671,7 +2725,7 @@ a.dd-selected label {
   display: none;
 }
 .checking_item.-black .black-check {
-  background-position: 0px -130px;
+  background-position: 0px -151px;
 }
 .checking_item.-gray {
   /*variables for gray version START*/
