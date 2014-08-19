@@ -42,6 +42,10 @@ $(document).ready(function() {
         width: 126
     });
 
+    $('.standart-select.-quantity-sm').ddslick({
+        width: 80
+    });
+
     $('.quantity-up').on( "click", function() {
         $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
             return ++oldval;

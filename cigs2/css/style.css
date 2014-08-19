@@ -2798,6 +2798,7 @@ ul.address_type .checking_label {
 }
 .row.title {
   margin-top: 40px;
+  margin-bottom: 10px;
 }
 .btn-title {
   display: block;
@@ -2841,6 +2842,14 @@ ul.address_type .checking_label {
 .product-in-cart .product-nm h4 {
   font-size: 14px;
   color: #d7dee4;
+}
+.product-in-cart .product-nm .stars {
+  clear: both;
+  float: left;
+  margin-right: 5px;
+}
+.product-in-cart .product-nm .review_count {
+  padding-top: 2px;
 }
 .product-in-cart .unit-price,
 .product-in-cart .total {
