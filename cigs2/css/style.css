@@ -3377,7 +3377,7 @@ ul.address_type .checking_label {
 /*Private exception*/
 .header-bottom .container,
 .main-menu .container {
-  padding: 0 30px;
+  padding: 0 45px 0 15px;
 }
 /*Typography*/
 a:hover {
