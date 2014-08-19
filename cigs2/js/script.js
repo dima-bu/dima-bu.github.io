@@ -34,6 +34,14 @@ $(document).ready(function() {
         width: 282
     });
 
+    $('.standart-select.-accu').ddslick({
+        width: 282
+    });
+
+    $('.standart-select.-quantity').ddslick({
+        width: 126
+    });
+
     $('.quantity-up').on( "click", function() {
         $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
             return ++oldval;
