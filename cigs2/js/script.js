@@ -42,7 +42,7 @@ $(document).ready(function() {
         width: 126
     });
 
-    $('.standart-select.-quantity-sm').ddslick({
+    $('.standart-select.-quntt-sm').ddslick({
         width: 80
     });
 

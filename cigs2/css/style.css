@@ -1948,7 +1948,7 @@ address {
 span.sep {
   height: 40px;
   width: 22px;
-  background: transparent url('../img/sprite.png') 0px -1289px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1397px no-repeat;
   float: left;
 }
 .footer {
@@ -2028,7 +2028,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -54px;
+  background: transparent url('../img/sprite.png') 0px -18px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2037,7 +2037,7 @@ h3.footer_title {
   width: 10px !important;
   display: inline-block;
   border: 0 none transparent !important;
-  background: transparent url('../img/sprite.png') 0px -18px;
+  background: transparent url('../img/sprite.png') 0px -54px;
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
@@ -2248,7 +2248,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -1493px;
+  background-position: 0px -1551px;
   height: 57px;
   width: 58px;
 }
@@ -2732,7 +2732,7 @@ ul.date-select {
   clear: both;
 }
 ul.date-select li {
-  margin-right: 20px;
+  margin-right: 12px;
   background: #fff;
 }
 ul.date-select li:last-child {
@@ -2806,6 +2806,7 @@ ul.address_type .checking_label {
   padding: 5px 10px 0 0px;
   font-size: 16px;
   text-transform: none;
+  font-weight: 700;
 }
 .table-title-row {
   background: #ebf1f6;
@@ -2816,6 +2817,9 @@ ul.address_type .checking_label {
   text-transform: uppercase;
   color: #7c848c;
   margin: 10px 0;
+}
+.table-cart {
+  margin-bottom: 20px;
 }
 .product-in-cart {
   height: 120px;
@@ -2841,7 +2845,7 @@ ul.address_type .checking_label {
 }
 .product-in-cart .product-nm h4 {
   font-size: 14px;
-  color: #d7dee4;
+  color: #aeaeb9;
 }
 .product-in-cart .product-nm .stars {
   clear: both;
@@ -2851,6 +2855,10 @@ ul.address_type .checking_label {
 .product-in-cart .product-nm .review_count {
   padding-top: 2px;
 }
+.product-in-cart .qty,
+.product-in-cart .delete-btn {
+  padding-top: 20px;
+}
 .product-in-cart .unit-price,
 .product-in-cart .total {
   font-size: 26px;
@@ -2858,6 +2866,81 @@ ul.address_type .checking_label {
 .product-in-cart .unit-price .price,
 .product-in-cart .total .price {
   font-size: 26px;
+  margin-top: 30px;
+}
+.continue {
+  color: #9090a0;
+  font-size: 16px;
+  clear: both;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8ecf0;
+  margin-bottom: 20px;
+}
+.continue .col-md-3,
+.continue .col-md-8 {
+  padding: 0;
+}
+.continue .block-lft,
+.continue .block-rght {
+  margin: 0;
+}
+.continue .update_info {
+  text-align: right;
+  padding-left: 10%;
+}
+.continue .simple-btn {
+  height: 45px;
+}
+.continue .simple-btn .btn-title {
+  padding-top: 0;
+  text-transform: capitalize;
+}
+.amount {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.amount .sum {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.amount .sum .txt {
+  text-align: left;
+}
+.amount .sum.sub {
+  color: #7c848c;
+}
+.amount .sum.sub .txt {
+  padding-right: 25px;
+}
+.amount .sum .price {
+  margin-left: 50px;
+  font-size: 26px;
+}
+.discount {
+  margin-bottom: 90px;
+}
+.discount h3 {
+  font-size: 20px;
+  color: #3b3d3f;
+  text-transform: uppercase;
+}
+.discount span.txt {
+  color: #9090a0;
+}
+.discount .g_input {
+  height: 50px;
+  width: 70%;
+}
+.discount .simple-btn {
+  display: block;
+  height: 50px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .quantity-input_wrapper {
   position: relative;
@@ -3561,6 +3644,9 @@ footer .g_input::-moz-placeholder {
 .g_input.-black-border {
   border: 1px solid #000;
 }
+.g_input.-gray-border {
+  border: 1px solid #d7dee4;
+}
 .g_input::-webkit-input-placeholder {
   color: #7c98b6;
   font-style: italic;
@@ -3617,6 +3703,11 @@ footer .g_input::-moz-placeholder {
 .simple-btn.-transparent {
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+.simple-btn.-wh-or {
+  color: #ee9565;
+  background-color: #ffffff;
+  border: 1px solid #ee9565;
 }
 .simple-btn.-lg {
   padding: 20px 30px;
