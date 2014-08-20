@@ -2071,6 +2071,9 @@ h2.arrow-title {
   background: #9068ae url('../img/welcome_bg-starterkit.jpg') center 0 no-repeat;
   padding: 0;
 }
+.welcome_wrapper.-starterkit p {
+  text-align: left;
+}
 .welcome_wrapper.-starterkit h2 {
   font-size: 32px;
   text-transform: uppercase;
@@ -2619,6 +2622,12 @@ a.dd-selected label {
 .categories-block .menthol {
   background: #53b0c5;
 }
+.checkout {
+  margin-top: 35px;
+}
+.checkout .nav {
+  margin-top: 20px;
+}
 .checkout .nav.nav-tabs li {
   background: #fff;
   padding: 0;
@@ -2724,7 +2733,6 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   color: #314d6b;
-  margin: 55px 0 30px 0;
 }
 ul.date-select {
   padding-left: 0;
@@ -2944,6 +2952,7 @@ ul.address_type .checking_label {
 }
 .quantity-input_wrapper {
   position: relative;
+  width: 90px;
 }
 .quantity-input_icon {
   position: absolute;
