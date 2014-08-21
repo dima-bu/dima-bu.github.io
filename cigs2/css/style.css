@@ -2673,6 +2673,8 @@ span.label {
 .review_field textarea {
   min-height: 180px;
   width: 100%;
+  padding: 10px;
+  color: #777785;
 }
 .other_questions h4,
 .other_reviews h4 {
@@ -3064,7 +3066,7 @@ ul.address_type .checking_label {
 }
 ul.country-select .dd-pointer-down,
 ul.date-select .dd-pointer-down {
-  background: transparent url('../img/sprite.png') 0px -54px;
+  background: transparent url('../img/sprite.png') 0px -36px;
 }
 .row.title {
   margin-top: 40px;
@@ -3228,15 +3230,15 @@ ul.date-select .dd-pointer-down {
   height: 0;
   display: none;
 }
-.categories-block ul {
+.product_categories ul {
   height: auto;
 }
-.categories-block li {
+.product_categories li {
   width: 105px;
   margin-right: 15px;
   margin-bottom: 10px;
 }
-.categories-block li:nth-child(5n) {
+.product_categories li:nth-child(5n) {
   margin-right: 0;
 }
 .quantity-input_wrapper {
