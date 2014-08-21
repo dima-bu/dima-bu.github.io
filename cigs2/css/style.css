@@ -1954,7 +1954,7 @@ span.sep {
 .footer {
   background-color: #314d6b;
   padding-top: 35px;
-  margin-top: 10px;
+  margin-top: 110px;
   color: #e7e7e9;
 }
 .footer_inner {
@@ -2503,7 +2503,7 @@ a.dd-selected label {
   padding: 0;
 }
 .product_information {
-  margin: 80px 0 150px 0;
+  margin-top: 80px;
   color: #9090a0;
   font-size: 18px;
 }
@@ -2927,7 +2927,6 @@ span.label {
   float: right;
 }
 .checkout .tab-pane {
-  margin-bottom: 80px;
   padding: 60px 90px;
   background: #f9fafc;
 }
@@ -3190,9 +3189,6 @@ ul.date-select .dd-pointer-down {
   margin-left: 50px;
   font-size: 26px;
 }
-.discount {
-  margin-bottom: 90px;
-}
 .discount h3 {
   font-size: 20px;
   color: #3b3d3f;
@@ -3240,6 +3236,22 @@ ul.date-select .dd-pointer-down {
 }
 .product_categories li:nth-child(5n) {
   margin-right: 0;
+}
+.impressum_block_wrwpper {
+  border-top: 1px solid #d7dee4;
+}
+.impressum_block_wrwpper .impressum_block {
+  padding-top: 20px;
+}
+.impressum_block_wrwpper h5 {
+  color: #314d6b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.impressum_block_wrwpper .label {
+  color: #b0b0b8;
+  font-size: 16px;
+  font-weight: 300;
 }
 .quantity-input_wrapper {
   position: relative;
