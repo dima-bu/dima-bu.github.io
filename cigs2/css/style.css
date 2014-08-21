@@ -2608,104 +2608,136 @@ span.label {
   color: #000000;
   display: block;
 }
-.questions .add_question {
+.questions .add_question,
+.reviews .add_question,
+.questions .add_review,
+.reviews .add_review {
   display: block;
   border-bottom: 1px solid #d7dee4;
   overflow: hidden;
   padding-bottom: 20px;
 }
 .questions .add_question .block-lft,
-.questions .add_question .block-rght {
+.reviews .add_question .block-lft,
+.questions .add_review .block-lft,
+.reviews .add_review .block-lft,
+.questions .add_question .block-rght,
+.reviews .add_question .block-rght,
+.questions .add_review .block-rght,
+.reviews .add_review .block-rght {
   margin: 0;
 }
-.questions h5 {
+.questions .add_question .add-btn.block-lft,
+.reviews .add_question .add-btn.block-lft,
+.questions .add_review .add-btn.block-lft,
+.reviews .add_review .add-btn.block-lft,
+.questions .add_question .add-btn.block-rght,
+.reviews .add_question .add-btn.block-rght,
+.questions .add_review .add-btn.block-rght,
+.reviews .add_review .add-btn.block-rght {
+  margin-top: 7px;
+}
+.questions h5,
+.reviews h5 {
   color: #314d6b;
   font-size: 18px;
   font-weight: 700;
 }
-.questions .add-btn {
+.questions .add-btn,
+.reviews .add-btn {
   color: #ee9565;
-  margin-top: 7px;
 }
-.questions .add-btn span {
+.questions .add-btn span,
+.reviews .add-btn span {
   display: inline-block;
   float: left;
   padding-right: 15px;
   font-size: 18px;
   font-style: italic;
 }
-.question_field {
+.questions .add-btn .simple-btn,
+.reviews .add-btn .simple-btn {
+  padding: 0;
+}
+.question_field,
+.review_field {
   padding: 20px 0 30px;
   border-bottom: 1px solid #d7dee4;
 }
-.question_field .label {
+.question_field .label,
+.review_field .label {
   padding-bottom: 10px;
   color: #b0b0b8;
 }
-.question_field textarea {
+.question_field textarea,
+.review_field textarea {
   min-height: 180px;
   width: 100%;
 }
-.other_questions h4 {
+.other_questions h4,
+.other_reviews h4 {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 300;
   margin-top: 30px;
-  margin-bottom: 20px;
 }
-.question-answer-block .foto {
+.user-block {
+  margin-top: 20px;
+}
+.user-block .foto {
   float: left;
   height: 90px;
   width: 90px;
   position: relative;
 }
-.question-answer-block .foto .verification {
+.user-block .foto .verification {
   position: absolute;
   top: 58px;
   left: 65px;
 }
-.question-answer-block .user-name {
+.user-block .user-name {
   float: left;
   margin-bottom: 0;
   margin-right: 5px;
 }
-.question-answer-block .verif_status {
+.user-block .verif_status {
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
   margin-top: 7px;
   text-transform: capitalize;
 }
-.question-answer-block .whenpost {
+.user-block .whenpost {
   clear: both;
   font-size: 14px;
 }
-.question-answer-block .label-orng {
+.user-block .label-orng {
   float: left;
   margin-right: 5px;
 }
-.question-answer-block p {
+.user-block p {
   font-size: 16px;
 }
-.question-answer-block .way-arr {
+.user-block .way-arr {
   margin: 30px 50px 0 30px;
   float: left;
 }
-.score {
+/*only for reviews*/
+.reviews .score {
   margin-top: 10px;
 }
-.score .label {
+.reviews .score .label {
   margin: 20px 0 10px;
 }
-.filter-wrapper {
+.reviews .filter-wrapper {
   height: 50px;
   padding: 5px;
 }
-.filter-wrapper ul.filters {
+.reviews .filter-wrapper ul.filters {
   padding: 0;
   margin: 0;
 }
-.filter-wrapper ul.filters li {
+.reviews .filter-wrapper ul.filters li {
   list-style: none;
   display: inline-block;
   padding: 5px 15px;
@@ -2713,42 +2745,56 @@ span.label {
   background: #eff3f6;
   border: 1px solid #dfe5e9;
 }
-.filter-wrapper ul.filters li a {
+.reviews .filter-wrapper ul.filters li a {
   font-size: 16px;
   font-weight: bold;
   color: #777785;
 }
-.filter-wrapper ul.filters li .delete-filter {
+.reviews .filter-wrapper ul.filters li .delete-filter {
   padding: 0;
   padding-left: 20px;
 }
-.helpfulness {
+.reviews .helpfulness {
   float: right;
   width: 190px;
 }
-.helpfulness .label {
+.reviews .helpfulness .label {
   font-size: 18px;
   font-style: italic;
   font-weight: 300;
   text-align: right;
   padding-right: 1px;
 }
-.helpfulness .block-lft,
-.helpfulness .block-rght {
+.reviews .helpfulness .block-lft,
+.reviews .helpfulness .block-rght {
   margin: 10px 0;
 }
-.helpfulness .block-lft {
+.reviews .helpfulness .block-lft {
   padding-left: 60px;
 }
-.helpfulness .simple-btn {
+.reviews .helpfulness .simple-btn {
   padding: 0;
 }
-.helpfulness .count {
+.reviews .helpfulness .count {
   float: left;
   padding-right: 10px;
 }
-.review {
+.reviews .user-review {
   clear: both;
+}
+.reviews .add_review .product_score .block-lft {
+  padding-right: 10px;
+}
+.reviews .add_review .product_score .label {
+  margin-top: 2px;
+}
+.reviews .add_review .product_score h5 {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.reviews .user-block p {
+  font-size: 18px;
+  font-weight: 300;
 }
 .categories-block a {
   display: block;
@@ -3891,7 +3937,6 @@ footer .g_input::-moz-placeholder {
 }
 textarea:focus {
   outline: 0 none;
-  border: 0 none;
 }
 .-blue-border {
   border: 1px solid #D7DEE4;
