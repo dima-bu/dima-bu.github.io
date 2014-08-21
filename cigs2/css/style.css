@@ -3253,6 +3253,68 @@ ul.date-select .dd-pointer-down {
   font-size: 16px;
   font-weight: 300;
 }
+.article-title {
+  padding-bottom: 20px;
+}
+.label {
+  font-size: 18px;
+  color: #aeaeb9;
+  font-weight: 300;
+}
+h2 {
+  text-transform: none;
+}
+.article-body {
+  padding: 20px 0;
+}
+.article-body h5 {
+  color: #314d6b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.article-body p {
+  font-size: 16px;
+  color: #9090a0;
+  font-weight: 300;
+}
+.article-body .article-part {
+  margin-top: 20px;
+}
+.article-body .img-field {
+  width: 230px;
+  height: auto;
+  margin: 0 25px 15px 0;
+  float: left;
+}
+/*comments block*/
+.comments_wrapper textarea {
+  width: 100%;
+  min-height: 185px;
+}
+.comments_wrapper h4 {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.comments_wrapper h5 {
+  font-size: 18px;
+  color: #b0b0b8;
+}
+.comments_wrapper label.required {
+  font-size: 18px;
+}
+#bewertung-select {
+  padding: 0;
+}
+#bewertung-select .dd-select {
+  border: 1px solid #d7dee4;
+}
+#bewertung-select .standart-select_wrapper a.dd-selected label {
+  color: #b0b0b8;
+  font-size: 16px;
+  font-weight: 300;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
@@ -3960,6 +4022,12 @@ textarea:focus {
 }
 .-gray-border {
   border: 1px solid #d7dee4;
+}
+.-blue-top-brd {
+  border-top: 1px solid #d7dee4;
+}
+.-blue-bottom-brd {
+  border-bottom: 1px solid #d7dee4;
 }
 .g_input::-webkit-input-placeholder {
   color: #7c98b6;
