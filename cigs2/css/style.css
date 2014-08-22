@@ -3351,6 +3351,9 @@ p.sm-hint {
 .fb-box {
   margin-top: 30px;
 }
+.wiki-sidebar {
+  margin-right: -15px;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
