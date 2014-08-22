@@ -3260,7 +3260,7 @@ ul.date-select .dd-pointer-down {
 .article-title {
   padding-bottom: 20px;
 }
-p {
+.article-title p {
   font-size: 18px;
   color: #aeaeb9;
   font-weight: 300;
@@ -3318,6 +3318,38 @@ h2 {
   color: #b0b0b8;
   font-size: 16px;
   font-weight: 300;
+}
+/* bottom part */
+.bottom-part {
+  margin-top: 20px;
+}
+p.sm-hint {
+  font-size: 13px;
+  font-style: italic;
+  color: #aeaeb9;
+}
+.captcha-field {
+  float: left;
+  width: 30%;
+}
+.captcha-input.g_input.-blue-border {
+  float: left;
+  margin-left: 5px;
+  height: 62px;
+  width: 50%;
+}
+.required-hint {
+  float: right;
+}
+.speichern.block-rght {
+  margin: 0;
+}
+.ad-wrapper {
+  padding: 30px;
+  margin-top: 30px;
+}
+.fb-box {
+  margin-top: 30px;
 }
 .quantity-input_wrapper {
   position: relative;
