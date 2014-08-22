@@ -3248,15 +3248,19 @@ ul.date-select .dd-pointer-down {
   font-size: 18px;
   font-weight: 700;
 }
-.impressum_block_wrwpper .label {
+.impressum_block_wrwpper div {
+  margin-bottom: 10px;
+}
+.impressum_block_wrwpper p {
   color: #b0b0b8;
   font-size: 16px;
   font-weight: 300;
+  margin: 0;
 }
 .article-title {
   padding-bottom: 20px;
 }
-.label {
+p {
   font-size: 18px;
   color: #aeaeb9;
   font-weight: 300;
