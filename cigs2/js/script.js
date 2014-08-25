@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
 
     $('.standart-select.-bewertung').ddslick({
-        width: 385
+        width: 375
     });
 
     $('.quantity-up').on( "click", function() {
