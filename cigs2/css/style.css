@@ -2864,68 +2864,6 @@ span.label {
 .checkout {
   margin-top: 35px;
 }
-.checkout .nav {
-  margin-top: 20px;
-}
-.checkout .nav.nav-tabs li {
-  background: #fff;
-  padding: 0;
-}
-.checkout .nav.nav-tabs li i.icon.reload,
-.checkout .nav.nav-tabs li i.icon.reload-act {
-  margin-top: 5px;
-}
-.checkout .nav.nav-tabs li i.icon.reload-act,
-.checkout .nav.nav-tabs li i.icon.check-act {
-  display: none;
-}
-.checkout .nav.nav-tabs li.active a {
-  background: #3c6086;
-  color: #fff;
-  opacity: 1;
-}
-.checkout .nav.nav-tabs li.active .num {
-  border: 2px solid #ffffff;
-}
-.checkout .nav.nav-tabs li.active i.icon.reload-act,
-.checkout .nav.nav-tabs li.active i.icon.check-act {
-  display: block;
-}
-.checkout .nav.nav-tabs li.active i.icon.reload,
-.checkout .nav.nav-tabs li.active i.icon.check {
-  margin-top: 5px;
-  display: none;
-}
-.checkout .nav.nav-tabs li.first,
-.checkout .nav.nav-tabs li:last-child a {
-  margin: 0;
-}
-.checkout .nav.nav-tabs li a {
-  font-size: 16px;
-  text-transform: uppercase;
-  height: 50px;
-  background: #36374a;
-  color: #6d93bc;
-  margin-right: 1px;
-  border: none;
-  border-radius: 0;
-  opacity: 0.7;
-}
-.checkout .nav.nav-tabs li a span {
-  display: block;
-  float: left;
-  padding: 3px 0 0 15px;
-}
-.checkout .nav.nav-tabs li .num {
-  float: left;
-  border: 2px solid #6d93bc;
-  border-radius: 15px;
-  padding: 1px 8px;
-  font-weight: 700;
-}
-.checkout .nav.nav-tabs li i.right {
-  float: right;
-}
 .checkout .tab-pane {
   padding: 60px 90px;
   background: #f9fafc;
@@ -2988,6 +2926,68 @@ span.label {
   width: 48%;
 }
 .checkout ul li.rght {
+  float: right;
+}
+.nav.checkout-tabs {
+  margin-top: 40px;
+}
+.nav.nav-tabs.checkout-tabs li {
+  background: #fff;
+  padding: 0;
+}
+.nav.nav-tabs.checkout-tabs li i.icon.reload,
+.nav.nav-tabs.checkout-tabs li i.icon.reload-act {
+  margin-top: 5px;
+}
+.nav.nav-tabs.checkout-tabs li i.icon.reload-act,
+.nav.nav-tabs.checkout-tabs li i.icon.check-act {
+  display: none;
+}
+.nav.nav-tabs.checkout-tabs li.active a {
+  background: #3c6086;
+  color: #fff;
+  opacity: 1;
+}
+.nav.nav-tabs.checkout-tabs li.active .num {
+  border: 2px solid #ffffff;
+}
+.nav.nav-tabs.checkout-tabs li.active i.icon.reload-act,
+.nav.nav-tabs.checkout-tabs li.active i.icon.check-act {
+  display: block;
+}
+.nav.nav-tabs.checkout-tabs li.active i.icon.reload,
+.nav.nav-tabs.checkout-tabs li.active i.icon.check {
+  margin-top: 5px;
+  display: none;
+}
+.nav.nav-tabs.checkout-tabs li.first,
+.nav.nav-tabs.checkout-tabs li:last-child a {
+  margin: 0;
+}
+.nav.nav-tabs.checkout-tabs li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 50px;
+  background: #36374a;
+  color: #6d93bc;
+  margin-right: 1px;
+  border: none;
+  border-radius: 0;
+  opacity: 0.7;
+}
+.nav.nav-tabs.checkout-tabs li a span {
+  display: block;
+  float: left;
+  padding: 3px 0 0 15px;
+}
+.nav.nav-tabs.checkout-tabs li .num {
+  float: left;
+  border: 2px solid #6d93bc;
+  border-radius: 15px;
+  padding: 1px 8px;
+  font-weight: 700;
+}
+.nav.nav-tabs.checkout-tabs li i.right {
   float: right;
 }
 h2 {
@@ -3093,7 +3093,8 @@ ul.date-select .dd-pointer-down {
   margin-bottom: 20px;
 }
 .product-in-cart {
-  height: 120px;
+  height: auto;
+  overflow: hidden;
   padding: 15px 0;
   border-bottom: 1px solid #e8ecf0;
 }
@@ -3103,7 +3104,7 @@ ul.date-select .dd-pointer-down {
   padding: 0 30px 0 0;
 }
 .product-in-cart .product-set_img-wrapper .img-responsive {
-  height: 100%;
+  height: auto;
   border: 1px solid #d7dee4;
 }
 .product-in-cart .product-nm .product-set_title {
@@ -3169,25 +3170,30 @@ ul.date-select .dd-pointer-down {
 .amount {
   text-align: right;
   margin-bottom: 20px;
+  min-width: 250px;
+  float: right;
 }
 .amount .sum {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
   padding-bottom: 10px;
+  float: right;
+  clear: both;
+  width: 100%;
 }
 .amount .sum .txt {
   text-align: left;
+  clear: both;
+  float: left;
 }
 .amount .sum.sub {
   color: #7c848c;
 }
-.amount .sum.sub .txt {
-  padding-right: 25px;
-}
 .amount .sum .price {
   margin-left: 50px;
   font-size: 26px;
+  float: right;
 }
 .discount h3 {
   font-size: 20px;
@@ -3199,7 +3205,7 @@ ul.date-select .dd-pointer-down {
 }
 .discount .g_input {
   height: 50px;
-  width: 70%;
+  width: 50%;
 }
 .discount .simple-btn {
   display: block;
