@@ -4280,5 +4280,14 @@ textarea:focus {
     top: 0;
     right: -145px;
   }
+  .col-md-4.sidebar {
+    width: 100%;
+  }
+  .col-md-4.sidebar .col-md-12 {
+    width: 50%;
+  }
+  .col-md-8.-starterkit {
+    width: 100%;
+  }
   /* end STARTER KITS*/
 }
