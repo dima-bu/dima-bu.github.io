@@ -1949,7 +1949,7 @@ address {
 span.sep {
   height: 40px;
   width: 22px;
-  background: transparent url('../img/sprite.png') 0px -1742px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1642px no-repeat;
   float: left;
 }
 .footer {
@@ -2032,7 +2032,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -18px;
+  background: transparent url('../img/sprite.png') 0px 0px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2041,7 +2041,7 @@ h3.footer_title {
   width: 10px !important;
   display: inline-block;
   border: 0 none transparent !important;
-  background: transparent url('../img/sprite.png') 0px -72px;
+  background: transparent url('../img/sprite.png') 0px -36px;
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
@@ -2103,9 +2103,9 @@ h2.arrow-title {
 }
 .option-block {
   margin-bottom: 15px;
-  padding-top: 110px;
   font-size: 16px;
   color: #ffffff;
+  overflow: hidden;
 }
 .option-block h4 {
   color: #ffffff;
@@ -2113,6 +2113,11 @@ h2.arrow-title {
   text-transform: uppercase;
   margin: 0;
   width: 50%;
+}
+.option-block img {
+  position: relative;
+  z-index: 0;
+  float: left;
 }
 .option-block.mini {
   padding-top: 60px;
@@ -2131,20 +2136,23 @@ h2.arrow-title {
   color: #ffffff;
   font-size: 20px;
   text-transform: uppercase;
-  margin: 0 auto;
+  margin: 120px 0 0 20px;
   padding-left: 0;
-  width: 65%;
+  width: 80%;
   text-align: center;
   line-height: 30px;
+  position: absolute;
 }
 .row.banners .col-md-8 {
   overflow: hidden;
   padding-left: 20px;
 }
-.row.banners .store_locator {
-  margin-bottom: 25px;
+.row.banners img.store_locator {
   margin-left: -15px;
-  padding-top: 90px;
+  position: relative;
+  z-index: 0;
+  float: left;
+  max-width: 104%;
 }
 .row.banners .col-md-4 {
   padding-left: 0;
@@ -2251,7 +2259,6 @@ h2.arrow-title {
   border: 1px solid #ccc;
   position: relative;
   text-align: center;
-  min-height: 360px;
 }
 .product-set .ribbon {
   position: absolute;
@@ -2329,6 +2336,9 @@ h2.arrow-title {
   font-size: 16px;
   /* Approximation due to font substitution */
   font-weight: 700;
+}
+.option-block.mini img {
+  display: none;
 }
 /*premium-set*/
 .text-info-block {
@@ -4142,8 +4152,8 @@ textarea:focus {
   background: #fef5f5;
 }
 /* responsive - TABLET*/
-/*LAYOUT*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
+  /*LAYOUT*/
   .header-top .container {
     margin: 0;
     width: 100%;
@@ -4214,35 +4224,61 @@ textarea:focus {
     bottom: 0;
     right: 28%;
   }
-}
-/* end LAYOUT */
-/*Home Page*/
-.slider {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.slider img {
-  width: 100%;
-}
-.arrow-title_wrapper h2.arrow-title {
-  width: 580px;
-}
-.arrow-title_wrapper .title-arrow_left {
-  background-position: -85px -1093px;
-  width: 70px;
-}
-.arrow-title_wrapper .title-arrow_right {
-  background-position: -66px -1053px;
-  width: 70px;
-}
-.product-set {
-  position: relative;
-  height: auto;
-  min-height: inherit;
-}
-.product-set .fll {
-  margin-bottom: 10px;
-}
-.welcome_wrapper {
-  padding: 10px;
+  /* end LAYOUT */
+  /*HOME PAGE*/
+  .slider {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .slider img {
+    width: 100%;
+  }
+  .arrow-title_wrapper h2.arrow-title {
+    width: 75%;
+    font-size: 28px;
+  }
+  .arrow-title_wrapper .title-arrow_left {
+    background-position: -85px -1093px;
+    width: 70px;
+  }
+  .arrow-title_wrapper .title-arrow_right {
+    background-position: -66px -1053px;
+    width: 70px;
+  }
+  .product-set {
+    position: relative;
+    height: auto;
+    min-height: inherit;
+  }
+  .product-set .fll {
+    margin-bottom: 10px;
+  }
+  .welcome_wrapper {
+    padding: 10px;
+  }
+  .welcome_wrapper p {
+    font-size: 15px;
+  }
+  .row.banners h4 {
+    font-size: 18px;
+    width: 80%;
+    margin: 100px 0 0 10px;
+  }
+  /*end HOME PAGE*/
+  /*STARTER KITS*/
+  .welcome_wrapper.-starterkit {
+    position: relative;
+    overflow: hidden;
+  }
+  .welcome_wrapper.-starterkit .text {
+    width: 75%;
+    float: none;
+    padding: 10px 0 10px 20px;
+  }
+  .welcome_wrapper.-starterkit img {
+    position: absolute;
+    top: 0;
+    right: -145px;
+  }
+  /* end STARTER KITS*/
 }
