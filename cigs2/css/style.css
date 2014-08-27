@@ -4163,6 +4163,12 @@ textarea:focus {
   .header-top .header-col-3 {
     width: 40%;
   }
+  .header-top .cart_my-cart {
+    margin-right: 10px;
+  }
+  .header-top .cart_count {
+    padding-left: 10px;
+  }
   .bottom-part-header.container {
     padding: 0;
     width: 100%;
