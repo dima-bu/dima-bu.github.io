@@ -54,6 +54,14 @@ $(document).ready(function() {
         width: 50
     });
 
+    /*popups elements*/
+
+    $('.popup-toggle').click(function(){
+        $('.popup').fadeIn(400);
+    });
+
+    /*end popups elements*/
+
     $('.quantity-up').on( "click", function() {
         $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
             return ++oldval;
