@@ -2244,13 +2244,13 @@ h2.arrow-title {
   width: 55%;
   padding-top: 7px;
 }
-.icon_block {
+.share-main-panel {
   float: right;
 }
-.icon_block i {
+.share-main-panel i {
   display: block;
 }
-.icon_block a {
+.share-main-panel a {
   float: left;
   margin-right: 3px;
 }
@@ -2391,7 +2391,6 @@ h2.arrow-title {
   line-height: 80px;
 }
 .product_header {
-  border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -2400,12 +2399,11 @@ h2.arrow-title {
   font-size: 40px;
   font-weight: 700;
   float: left;
-  margin-bottom: 0;
+  margin: 0;
 }
 .product_header .price {
   float: right;
   font-size: 40px;
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 .product_header .product_art {
@@ -2429,7 +2427,7 @@ h2.arrow-title {
 }
 .product_benefits {
   background: #fcfdfd;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
   margin-bottom: 30px;
   padding: 20px 20px 10px 20px;
 }
