@@ -3341,9 +3341,10 @@ h3.search-word strong {
   color: #2c4560;
   font-weight: bold;
   font-style: italic;
+  padding-right: 5px;
 }
 .sort {
-  overflow: hidden;
+  height: 45px;
   margin-bottom: 20px;
   padding: 10px;
   background: #f8fafb;
@@ -3354,6 +3355,46 @@ h3.search-word strong {
 .sort p {
   float: left;
   margin: 0 10px 0 0;
+}
+.sort .standart-select_wrapper a.dd-selected label {
+  padding: 0;
+  color: #9090a0;
+  font-size: 16px;
+}
+.sort .dd-select {
+  border: none;
+  height: 22px;
+}
+.sort .dd-selected {
+  padding: 1px !important;
+}
+.sort .dd-options {
+  margin-top: 11px;
+}
+.sidebar p.filter {
+  font-size: 26px;
+  font-weight: bold;
+  color: #484a4c;
+  margin-top: 20px;
+}
+.sidebar .filterblock {
+  overflow: hidden;
+  padding-bottom: 15px;
+  border-bottom: none;
+}
+.sidebar .filterblock h5 {
+  background: #f8fafb;
+  font-size: 16px;
+  font-weight: 900;
+  color: #3c6086;
+  text-transform: capitalize;
+  padding: 13px 15px;
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.sidebar .filterblock.last {
+  border-bottom: 1px solid #cccccc;
 }
 .quantity-input_wrapper {
   position: relative;
@@ -3890,7 +3931,7 @@ textarea:focus {
   border: 1px solid #000;
 }
 .-gray-border {
-  border: 1px solid #d7dee4;
+  border: 1px solid #cccccc;
 }
 .-blue-top-brd {
   border-top: 1px solid #d7dee4;

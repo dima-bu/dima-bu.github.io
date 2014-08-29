@@ -46,6 +46,14 @@ $(document).ready(function() {
         width: 375
     });
 
+    $('.standart-select.-sorting').ddslick({
+        width: 100
+    });
+
+    $('.standart-select.-article').ddslick({
+        width: 50
+    });
+
     $('.quantity-up').on( "click", function() {
         $(this).parent('.quantity-input_wrapper').find('input').val( function(i, oldval) {
             return ++oldval;
