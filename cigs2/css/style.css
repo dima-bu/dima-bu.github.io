@@ -1838,6 +1838,89 @@ address {
 .cart_count-item strong {
   color: #ffffff;
 }
+/* POPUPS BLOCKS*/
+.login-block {
+  display: none;
+}
+.popup {
+  background: #ffffff;
+  position: absolute;
+  box-shadow: 0px 2px 5px #D4D4D4;
+}
+.popup .online-order {
+  padding: 15px 5px;
+}
+.popup .online-order .title-row {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.popup p {
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9090a0;
+  margin: 0;
+}
+.popup .col-md-12.title {
+  border-bottom: 1px solid #d7dee4;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.popup .col-md-12.title h4 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 900;
+  margin: 0 10px 15px;
+}
+.popup h5 {
+  font-size: 18px;
+  color: #314d6b;
+  font-weight: 700;
+}
+.popup .simple-btn {
+  text-transform: capitalize;
+  font-size: 17px;
+}
+.popup .new-user {
+  border-bottom: 1px solid #d7dee4;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.popup .new-user ul.checking_list.clear-list.-light.-square.ertellen {
+  margin-top: 10px;
+}
+.popup .new-user .checking_list.-light .checking_item {
+  height: 16px;
+  line-height: 16px;
+}
+.popup .new-user .checking_list.-light .checking_input,
+.popup .new-user .checking_list.-light .checking_input-pseudo-wrapper {
+  height: 16px;
+  width: 16px;
+  line-height: 14px;
+}
+.popup .new-user .checking_list.-light .checking_input-pseudo-wrapper {
+  border-color: #d7dee4;
+}
+.popup .new-user .checking_list.-light .checking_input-pseudo {
+  height: 10px;
+  width: 10px;
+}
+.popup .new-user .checking_label {
+  font-size: 14px;
+  color: #3c6086;
+}
+.popup::before {
+  content: '';
+  position: absolute;
+  right: 10%;
+  top: -13px;
+  height: 0;
+  width: 0;
+  border-bottom: 13px solid #ffffff;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+}
 .header-bottom {
   background-color: #3c6086;
   color: #ffffff;
@@ -4039,6 +4122,14 @@ textarea:focus {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #dc4848;
+}
+.warning_hint a {
+  float: right;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 22px;
+  color: #3c6086;
+  cursor: pointer;
 }
 .error h5 {
   color: #dc4848;
