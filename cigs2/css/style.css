@@ -1941,6 +1941,7 @@ address {
 }
 .breadcrumb a:last-child {
   color: #486a8d;
+  font-weight: 700;
 }
 .broadcrumb a.active,
 .broadcrumb a:hover {
@@ -3399,6 +3400,10 @@ h3.search-word strong {
 .sidebar .filterblock.last {
   border-bottom: 1px solid #cccccc;
 }
+.simple-btn.account-btn {
+  text-transform: none;
+  margin: 15px 15px 15px 0;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
@@ -3993,6 +3998,10 @@ textarea:focus {
 }
 .simple-btn.-blue {
   background-color: #108bbf;
+  color: #ffffff;
+}
+.simple-btn.-gray {
+  background-color: #c5ccd2;
   color: #ffffff;
 }
 .simple-btn.-transparent {
