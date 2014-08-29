@@ -3393,6 +3393,9 @@ h3.search-word strong {
   margin: 0;
   margin-bottom: 15px;
 }
+.sidebar .filterblock .checking_label {
+  color: #3c6086;
+}
 .sidebar .filterblock.last {
   border-bottom: 1px solid #cccccc;
 }
