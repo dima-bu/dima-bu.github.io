@@ -2887,8 +2887,7 @@ span.label {
 .checkout .col-md-6.last {
   float: none;
   clear: both;
-  margin-top: 20px;
-  overflow: hidden;
+  padding-top: 5px;
 }
 .checkout ul.checking_list.-inline.gender .checking_item {
   margin-right: 0;
@@ -3077,7 +3076,7 @@ ul.address_type .checking_label {
 }
 ul.country-select .dd-pointer-down,
 ul.date-select .dd-pointer-down {
-  background: transparent url('../img/sprite.png') 0px -36px;
+  background: transparent url('../img/sprite.png') 0px 0px;
 }
 .row.title {
   margin-top: 40px;
@@ -3334,6 +3333,30 @@ ul.date-select .dd-pointer-down {
 .wiki-sidebar {
   margin-right: -15px;
 }
+h3.search-word {
+  font-size: 26px;
+  color: #9090a0;
+  float: left;
+  margin-bottom: 20px;
+}
+h3.search-word strong {
+  color: #2c4560;
+  font-weight: bold;
+  font-style: italic;
+}
+.sort {
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f8fafb;
+  border: 1px solid #ccc;
+  color: #9090a0;
+  font-size: 16px;
+}
+.sort p {
+  float: left;
+  margin: 0 10px 0 0;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
@@ -3486,12 +3509,22 @@ ul.date-select .dd-pointer-down {
 .checking_list.-square .checking_input-pseudo {
   border-radius: 0 !important;
 }
+.checking_list.-square .-color .checking_input-pseudo {
+  width: 33px;
+  height: 33px;
+  display: block;
+  margin: 5px;
+  border: 1px solid #dddde4;
+}
+.checking_list.-square .-color .checking_input-pseudo .icon {
+  display: none;
+}
 .checking_list.-inline .checking_item {
   float: left;
   margin-right: 5px;
 }
 /*color checkboxes*/
-.checking_item.-black {
+.checking_item.-color {
   /*variables for black version START*/
   /*variables for black version END*/
   position: relative;
@@ -3499,7 +3532,7 @@ ul.date-select .dd-pointer-down {
   line-height: 45px;
   height: 45px;
 }
-.checking_item.-black .checking_input-pseudo-wrapper {
+.checking_item.-color .checking_input-pseudo-wrapper {
   cursor: pointer;
   font-size: 0;
   vertical-align: top;
@@ -3512,7 +3545,7 @@ ul.date-select .dd-pointer-down {
   display: inline-block;
   text-align: center;
 }
-.checking_item.-black .checking_input {
+.checking_item.-color .checking_input {
   opacity: 0;
   position: absolute;
   height: 45px;
@@ -3521,199 +3554,15 @@ ul.date-select .dd-pointer-down {
   float: left;
   margin-right: 15px;
 }
-.checking_item.-black .checking_input:checked ~ .checking_input-pseudo-wrapper {
+.checking_item.-color .checking_input:checked ~ .checking_input-pseudo-wrapper {
   background-color: #ffffff;
   border-color: #000000;
 }
-.checking_item.-black .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo {
-  background-color: #000000;
-}
-.checking_item.-black .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
-  display: inline-block;
-}
-.checking_item.-black .checking_input-pseudo {
-  -webkit-appearance: none;
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #000000;
-  height: 33px;
-  width: 33px;
-  line-height: 33px;
-  border-radius: 16.5px;
-  cursor: pointer;
-}
-.checking_item.-black .checking_input-pseudo .icon {
-  vertical-align: middle;
-  display: none;
-}
-.checking_item.-black .black-check {
-  background-position: 0px -150px;
-}
-.checking_item.-gray {
-  /*variables for gray version START*/
-  /*variables for gray version END*/
-  position: relative;
-  margin-bottom: 10px;
-  line-height: 45px;
-  height: 45px;
-}
-.checking_item.-gray .checking_input-pseudo-wrapper {
-  cursor: pointer;
-  font-size: 0;
-  vertical-align: top;
-  background-color: #ffffff;
-  border: 1px solid #dddde4;
-  height: 45px;
-  line-height: 43px;
-  width: 45px;
-  border-radius: 22.5px;
-  display: inline-block;
-  text-align: center;
-}
-.checking_item.-gray .checking_input {
-  opacity: 0;
-  position: absolute;
-  height: 45px;
-  width: 45px;
-  cursor: pointer;
-  float: left;
-  margin-right: 15px;
-}
-.checking_item.-gray .checking_input:checked ~ .checking_input-pseudo-wrapper {
-  background-color: #ffffff;
-  border-color: #2c4560;
-}
-.checking_item.-gray .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo {
-  background-color: #dddde4;
-}
-.checking_item.-gray .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
-  display: inline-block;
-}
-.checking_item.-gray .checking_input-pseudo {
-  -webkit-appearance: none;
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #dddde4;
-  height: 33px;
-  width: 33px;
-  line-height: 33px;
-  border-radius: 16.5px;
-  cursor: pointer;
-}
-.checking_item.-gray .checking_input-pseudo .icon {
-  vertical-align: middle;
-  display: none;
-}
-.checking_item.-gray {
-  /*variables for gray version START*/
-  /*variables for gray version END*/
-  position: relative;
-  margin-bottom: 10px;
-  line-height: 45px;
-  height: 45px;
-}
-.checking_item.-gray .checking_input-pseudo-wrapper {
-  cursor: pointer;
-  font-size: 0;
-  vertical-align: top;
-  background-color: #ffffff;
-  border: 1px solid #dddde4;
-  height: 45px;
-  line-height: 43px;
-  width: 45px;
-  border-radius: 22.5px;
-  display: inline-block;
-  text-align: center;
-}
-.checking_item.-gray .checking_input {
-  opacity: 0;
-  position: absolute;
-  height: 45px;
-  width: 45px;
-  cursor: pointer;
-  float: left;
-  margin-right: 15px;
-}
-.checking_item.-gray .checking_input:checked ~ .checking_input-pseudo-wrapper {
-  background-color: #ffffff;
-  border-color: #2c4560;
-}
-.checking_item.-gray .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo {
-  background-color: #dddde4;
-}
-.checking_item.-gray .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
-  display: inline-block;
-}
-.checking_item.-gray .checking_input-pseudo {
-  -webkit-appearance: none;
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #dddde4;
-  height: 33px;
-  width: 33px;
-  line-height: 33px;
-  border-radius: 16.5px;
-  cursor: pointer;
-}
-.checking_item.-gray .checking_input-pseudo .icon {
-  vertical-align: middle;
-  display: none;
-}
-.checking_item.-white {
-  /*variables for gray version START*/
-  /*variables for gray version END*/
-  position: relative;
-  margin-bottom: 10px;
-  line-height: 45px;
-  height: 45px;
-}
-.checking_item.-white .checking_input-pseudo-wrapper {
-  cursor: pointer;
-  font-size: 0;
-  vertical-align: top;
-  background-color: #ffffff;
-  border: 1px solid #dddde4;
-  height: 45px;
-  line-height: 43px;
-  width: 45px;
-  border-radius: 22.5px;
-  display: inline-block;
-  text-align: center;
-}
-.checking_item.-white .checking_input {
-  opacity: 0;
-  position: absolute;
-  height: 45px;
-  width: 45px;
-  cursor: pointer;
-  float: left;
-  margin-right: 15px;
-}
-.checking_item.-white .checking_input:checked ~ .checking_input-pseudo-wrapper {
-  background-color: #ffffff;
-  border-color: #2c4560;
-}
-.checking_item.-white .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo {
+.checking_item.-color .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo {
   background-color: #ffffff;
 }
-.checking_item.-white .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
+.checking_item.-color .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
-}
-.checking_item.-white .checking_input-pseudo {
-  -webkit-appearance: none;
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #ffffff;
-  height: 33px;
-  width: 33px;
-  line-height: 33px;
-  border-radius: 16.5px;
-  cursor: pointer;
-  border: 1px solid #dddde4;
-}
-.checking_item.-white .checking_input-pseudo .icon {
-  vertical-align: middle;
-  display: none;
 }
 .row.-sm {
   margin-left: -5px;
@@ -3937,6 +3786,9 @@ ul.date-select .dd-pointer-down {
 .dd-option-image,
 .dd-selected-image {
   margin-top: 4px;
+}
+.dd-options {
+  max-height: 240px;
 }
 /*Typography*/
 a:hover {
