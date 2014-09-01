@@ -2114,7 +2114,7 @@ address {
 span.sep {
   height: 40px;
   width: 22px;
-  background: transparent url('../img/sprite.png') 0px -1488px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1636px no-repeat;
   float: left;
 }
 .footer {
@@ -2197,7 +2197,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -54px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2431,7 +2431,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -1892px;
+  background-position: 0px -1890px;
   height: 57px;
   width: 58px;
 }
