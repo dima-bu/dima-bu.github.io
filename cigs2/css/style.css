@@ -2033,7 +2033,7 @@ address {
 span.sep {
   height: 40px;
   width: 22px;
-  background: transparent url('../img/sprite.png') 0px -1642px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1492px no-repeat;
   float: left;
 }
 .footer {
@@ -2116,7 +2116,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -54px;
   display: inline-block;
   border: 0 none !important;
 }
