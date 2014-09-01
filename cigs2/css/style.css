@@ -4227,7 +4227,10 @@ textarea:focus {
   background: #fef5f5;
 }
 /* responsive - TABLET*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
   /*LAYOUT*/
   .header-top .container {
     margin: 0;
