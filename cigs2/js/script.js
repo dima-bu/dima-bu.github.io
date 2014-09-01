@@ -56,8 +56,12 @@ $(document).ready(function() {
 
     /*popups elements*/
 
-    $('.popup-toggle').click(function(){
-        $('.popup').fadeIn(400);
+    $('.login_link.popup-toggle').click(function(){
+        $('.popup.login-block').fadeIn(300);
+    });
+
+    $('.cart_my-cart').click(function(){
+        $('.popup.cart-block').fadeIn(300);
     });
 
     /*end popups elements*/
