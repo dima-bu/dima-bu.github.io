@@ -3206,6 +3206,10 @@ span.label {
 .checkout ul li.rght {
   float: right;
 }
+.checkout .tab-content {
+  border: 1px solid #d7dee4;
+  border-top: none;
+}
 .nav.checkout-tabs {
   margin-top: 40px;
 }
@@ -3234,7 +3238,6 @@ span.label {
   font-weight: 700;
   margin-right: 1px;
   border: 1px solid #d7dee4;
-  border-bottom: none;
   border-radius: 0;
   opacity: 0.7;
 }
@@ -3274,6 +3277,7 @@ span.label {
 }
 .nav.nav-tabs.checkout-tabs li.active a {
   background: #f9fafc;
+  border-bottom: none;
 }
 .nav.nav-tabs.checkout-tabs li i.right {
   float: right;
