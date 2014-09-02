@@ -3687,6 +3687,84 @@ h3.search-word strong {
   text-transform: none;
   margin: 15px 15px 15px 0;
 }
+.account-wrapper {
+  margin-top: 20px;
+  background-color: #fcfcfd;
+}
+.account-wrapper .tab-content {
+  float: left;
+  width: 75%;
+  padding: 0 20px 40px;
+  background: #ffffff;
+  border-left: 1px solid #D7DEE4;
+}
+.account-wrapper .tab-content h3 {
+  font-size: 26px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  margin-top: 38px;
+  text-transform: capitalize;
+}
+.account-tabs.col-md-3.nav.nav-tabs {
+  padding: 0;
+  height: 100%;
+  background: #fcfcfd;
+}
+.account-tabs.col-md-3.nav.nav-tabs li {
+  width: 100%;
+  border-bottom: 1px solid #d7dee4;
+  border-radius: none;
+}
+.account-tabs.col-md-3.nav.nav-tabs li:first-child.active {
+  border-top: none;
+}
+.account-tabs.col-md-3.nav.nav-tabs li.active {
+  border-right: none;
+  border-top: 1px solid transparent;
+}
+.account-tabs.col-md-3.nav.nav-tabs li.active a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c4560;
+  background: #ffffff url('../img/account-act-tab.png') no-repeat;
+  background-position: 95% 50%;
+  border: none;
+  border-radius: 0;
+  width: 101%;
+}
+.account-tabs.col-md-3.nav.nav-tabs li a {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9090a0;
+  margin-right: 0;
+  border: none;
+  border-radius: 0;
+}
+.account-tabs.col-md-3.nav.nav-tabs li.active > a,
+.account-tabs.col-md-3.nav.nav-tabs li > a:hover,
+.account-tabs.col-md-3.nav.nav-tabs li > a:focus {
+  border: none;
+  border-radius: none;
+  margin-right: 0;
+}
+.account-tabs.col-md-3.nav.nav-tabs p.curpoints {
+  float: left;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  color: #9090a0;
+  margin: 0;
+  padding: 10px 15px;
+  line-height: 1.42857143;
+}
+.account-tabs.col-md-3.nav.nav-tabs p.num {
+  float: right;
+  margin: 10px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #9090a0;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
