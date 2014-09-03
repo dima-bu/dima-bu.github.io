@@ -2076,7 +2076,7 @@ address {
 .breadcrumb a:first-child {
   padding-left: 0;
 }
-.breadcrumb a:last-child {
+.breadcrumb span:last-child a {
   color: #486a8d;
   font-weight: 700;
 }
@@ -2085,6 +2085,7 @@ address {
   color: #486a8d;
 }
 span.sep {
+  margin-right: 10px;
   height: 40px;
   width: 5px;
   background: transparent url('../img/sprite.png') 0px -1531px no-repeat;
@@ -2601,8 +2602,10 @@ a.dd-selected label {
 .standart-select_wrapper a.dd-selected label {
   padding-left: 20px;
 }
-.buy_now {
+.simple-btn.buy_now.-lg {
   float: right;
+  padding: 20px 10px;
+  font-size: 17px;
 }
 .product-data {
   padding: 20px;
@@ -2682,16 +2685,16 @@ a.dd-selected label {
   text-transform: uppercase;
 }
 .product_information .nav-tabs li {
-  width: 20%;
   text-align: center;
 }
 .product_information .nav-tabs li.active a {
   color: #000000;
 }
-.product_information .nav-tabs > li > a {
+.product_information .nav.nav-tabs > li > a {
   margin-right: 0;
   border-radius: 0;
   cursor: pointer;
+  padding: 10px 25px;
 }
 .product_information .nav-tabs > li.active > a,
 .product_information .nav-tabs > li.active > a:hover,
