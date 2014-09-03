@@ -3116,7 +3116,7 @@ span.label {
 #your-address.tab-pane,
 #check_order.tab-pane {
   padding: 60px 90px;
-  background: #f9fafc;
+  background: #fdfdfd;
   border: 1px solid #d7dee4;
   border-top: none;
 }
@@ -3251,10 +3251,10 @@ span.label {
   color: #8ed097;
 }
 .nav.nav-tabs.checkout-tabs li.active {
-  border-bottom: 1px solid #f9fafc;
+  border-bottom: 1px solid #fdfdfd;
 }
 .nav.nav-tabs.checkout-tabs li.active a {
-  background: #f9fafc;
+  background: #fdfdfd;
   border-bottom: none;
 }
 .nav.nav-tabs.checkout-tabs li i.right {
