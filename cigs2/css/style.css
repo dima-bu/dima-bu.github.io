@@ -3195,6 +3195,14 @@ span.label {
   font-size: 14px;
   color: #77777e;
 }
+#your-address .post-and-pl {
+  width: 51%;
+  padding-right: 25px;
+}
+#your-address .country-input-field {
+  width: 49%;
+  padding-left: 10px;
+}
 .nav.checkout-tabs {
   margin-top: 40px;
 }
@@ -3335,7 +3343,12 @@ ul.address_type .checking_label {
   font-size: 16px;
 }
 .next-step {
-  margin-top: 95px;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  margin: 0 -20px;
+  position: relative;
+  bottom: -35px;
+  background: #f9fafc;
 }
 .next-step button.simple-btn {
   float: right;
@@ -4508,7 +4521,7 @@ textarea:focus {
   font-size: 14px;
   font-style: italic;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   color: #dc4848;
 }
 .warning_hint a {
@@ -4666,17 +4679,17 @@ textarea:focus {
     top: 0;
     right: -145px;
   }
-  .col-md-4.sidebar {
+  .sidebar {
     width: 100%;
     margin-top: 40px;
   }
-  .col-md-4.sidebar .col-md-12 {
+  .sidebar .col-md-12 {
     width: 50%;
   }
-  .col-md-4.sidebar .col-md-12 .option-block.mini {
+  .sidebar .col-md-12 .option-block.mini {
     margin: 20px auto;
   }
-  .col-md-8.main-content {
+  .main-content {
     width: 100%;
   }
   /* end STARTER KITS*/
@@ -4836,4 +4849,95 @@ textarea:focus {
     text-align: center;
   }
   /* end PRODUCT-PAGE-A, PRODUCT-PAGE-B*/
+  /*SHOPPING-CART*/
+  #your-cart.tab-pane,
+  #your-address.tab-pane,
+  #check_order.tab-pane {
+    padding: 35px;
+  }
+  .table-cart .col-md-2.title-frst,
+  .table-cart .col-md-2.product-set_img-wrapper {
+    display: none;
+  }
+  .table-cart .col-md-3 {
+    width: 40%;
+  }
+  .continue .simple-btn {
+    padding: 10px;
+  }
+  .continue .update_info {
+    width: 73%;
+    font-size: 14px;
+  }
+  .discount .col-md-8 {
+    position: relative;
+    top: -73px;
+  }
+  .discount .col-md-8 .col-md-6 {
+    width: 100%;
+  }
+  .discount .simple-btn {
+    padding: 11px;
+  }
+  /*end SOPPING-CART*/
+  /*CHECKOUT (ADDRESS)*/
+  #your-address .col-md-6 {
+    width: 70%;
+  }
+  #your-address .col-md-6.first-line {
+    width: 50%;
+  }
+  #your-address ul.date-select li {
+    margin-right: 6%;
+  }
+  #your-address ul.date-select li:last-child {
+    margin: 0;
+  }
+  /* END CHECKOUT*/
+  /*WIKI_PAGE*/
+  .sidebar .wiki-sidebar .col-md-12 {
+    width: 45%;
+    margin: 0 15px;
+    padding: 0;
+  }
+  #bewertung-select .dd-select,
+  #bewertung-select .dd-container {
+    width: 345px !important;
+  }
+  .fb-box {
+    margin: 0;
+  }
+  .register-wrapper {
+    margin-top: 0;
+    padding: 40px 0;
+  }
+  .register-wrapper img.img-responsive {
+    margin: 0 auto;
+  }
+  /*end WIKI_PAGE*/
+  /*ACCOUNT-PAGES*/
+  /*MyAccount*/
+  #myaccount .col-md-6 {
+    width: 100%;
+  }
+  #myaccount .resp-button-group-1 {
+    width: 60%;
+    padding: 0;
+    padding-left: 15px;
+  }
+  #myaccount .resp-button-group-1 a:last-child {
+    margin-right: 0;
+  }
+  #myaccount .resp-button-group-2 {
+    width: 40%;
+    padding: 0;
+    float: right;
+    text-align: right;
+  }
+  .simple-btn.account-btn {
+    margin: 10px 15px 0px 0;
+  }
+  .account-wrapper .tab-content #changebilling .col-md-6 {
+    width: 100%;
+  }
 }
