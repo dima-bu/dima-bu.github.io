@@ -4710,6 +4710,11 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 768px) {
+  /*layout*/
+  .bottom-part-header.container .search_wrapper {
+    padding-top: 25px;
+    width: 425px;
+  }
   /*HOME PAGE*/
   .arrow-title_wrapper h2.arrow-title {
     width: 80%;
