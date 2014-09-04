@@ -55,7 +55,7 @@ module.exports = function(grunt) {
                         debug: true
                     },
                     client: false,
-                    pretty: false
+                    pretty: true
                 },
                 files:
                         [{
