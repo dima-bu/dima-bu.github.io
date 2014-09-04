@@ -1,0 +1,75 @@
+-var row = {checkgroup: 'col-md-4'}
+
+form
+  .row_main-title
+    h2.g_main-title <i class="icon checkbox-icon"></i>Filter
+  .g_dotted_header.dotted-bg
+    .row
+      .col-md-12 Staus
+  .row_std
+    .row
+      .col-md-11
+        .checking_group_column
+          +checkbox('checkbox', 'new', '-white-blue')
+          label.checking_label-inline.-after(for="new") New
+        .checking_group_column
+          +checkbox('checkbox', 'Completed', '-white-blue')
+          label.checking_label-inline.-after(for="Completed") Completed
+        .checking_group_column
+          +checkbox('checkbox', 'Myleads', '-white-blue')
+          label.checking_label-inline.-after(for="Myleads") My leads
+        .checking_group_column
+          +checkbox('checkbox', 'Live', '-white-blue')
+          label.checking_label-inline.-after(for="Live") Live
+        .checking_group_column
+          +checkbox('checkbox', 'Rejected', '-white-blue')
+          label.checking_label-inline.-after(for="Rejected") Rejected
+  .g_dotted_header.dotted-bg
+    .row
+      .col-md-12 Date
+  .row_std
+    .row
+      .col-md-12
+          .checking_group_column
+            +checkbox('checkbox', 'last', '-white-blue')
+            label.checking_label-inline.-after(for="last") Last 24 hrs
+          .checking_group_column
+            +checkbox('checkbox', 'week', '-white-blue')
+            label.checking_label-inline.-after(for="week") This Week
+          .checking_group_column
+            +checkbox('checkbox', 'month', '-white-blue')
+            label.checking_label-inline.-after(for="month") This Month
+          .checking_group_column
+            +checkbox('checkbox', '222', '-white-blue')
+            label.checking_label-inline.-after(for="222") Last 48 hrs
+          .checking_group_column
+            +checkbox('checkbox', 'Rejected1', '-white-blue')
+            label.checking_label-inline.-after(for="Rejected1") Last Week
+          .checking_group_column
+            +checkbox('checkbox', 'Rejected', '-white-blue')
+            label.checking_label-inline.-after(for="Rejected") Last Month
+          .checking_group_column
+            +checkbox('checkbox', 'Specific', '-white-blue')
+            label.checking_label-inline.-after(for="Specific") Specific date or Month
+            .checking_group_data
+              input.g_input.-sm.-data.-inline(type="text")
+              |.
+              input.g_input.-sm.-data.-inline(type="text")
+              |.
+              input.g_input.-sm.-year.-inline(type="text")
+  .g_dotted_header.dotted-bg
+    .row
+      .col-md-12 Product
+  .g_form-row.top-bottom
+    .row
+      .col-md-12
+        select.g_select
+          option GoQuoty.com - Handyman
+          option GoQuoty.com - Lawyer
+          option GoQuoty.com - Accountant
+  .g_form-row.top-bottom
+    .row
+      .col-md-12
+        button.simple-btn
+          i.icon.refresh
+          | Refresh

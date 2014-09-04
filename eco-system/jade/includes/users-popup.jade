@@ -1,0 +1,36 @@
+-var col = {left: 'col-md-4', right: 'col-md-8' }
+-var row = {class: 'row g_form-row -groups', button: 'row g_form-row -groups'}
+
+
+.all-gray-wrapper.js-create-form.user-popup(style="display:none")
+  .g_block
+    form
+      .g_form_header
+        h2.g_main-title
+          i.icon.red-plus
+          | Create User
+      div(class="#{row.class}")
+        label(class="g_label #{col.left}") Name
+        div(class="#{col.right}")
+          input.g_input(type="text")
+      div(class="#{row.class}")
+        label(class="g_label #{col.left}") Email
+        div(class="#{col.right}")
+          input.g_input(type="text")
+      div(class="#{row.class}")
+        label(class="g_label #{col.left}") Phone
+        div(class="#{col.right}")
+          input.g_input(type="text")
+      div(class="#{row.class}")
+        label(class="g_label #{col.left}") Make admin?
+        div(class="#{col.right}")
+          .checking_group
+            +checkbox('checkbox', 'makeadmin', '-white-blue')
+            label.checking_label-inline.-after(for="makeadmin") Yes
+      hr.sm-hr
+      div(class="#{row.button}")
+        .col-md-12
+          button.simple-btn
+            i.icon.white-check
+            | Save
+    a.close.icon.js-close-create-form

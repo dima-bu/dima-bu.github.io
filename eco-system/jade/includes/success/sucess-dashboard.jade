@@ -1,0 +1,76 @@
+
+-var col = {num1: 'col-md-2', num2: 'col-md-3', num3: 'col-md-2 ta-c', num4: 'col-md-2 ta-c', num5: 'col-md-3 clear-selection ta-r' }
+
+.row_lg
+  h1.sucess-title WELCOME # CLIENT _ NAME!
+  p.large Below you will find the # amount_offers offers we have collected for you.
+  p.large Accepting an offer will take you to our payment section. We will charge you #fee % of the offer value upgront, and the vendor will invoice you the remaining amount.
+  p.large Completing payment will automaticcaly reject the other offers.
+.collapse-block
+  .collapse-element
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer A
+        div(class="#{col.num2}") Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 7
+        div(class="#{col.num4}") 1500 euro
+        div(class="#{col.num5} ")
+          i.icon.arrow-circle-white.js-collapse-panel
+  .collapse-panel(style="height:0px")
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer AAAsdf
+        div(class="#{col.num2}") Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 7
+        div(class="#{col.num4}") 1500ss euro
+        div(class="#{col.num5} ")
+          button.transparent-btn.js-open-offer-form <i class="icon black-check"></i> Accept
+.collapse-block
+  .collapse-element
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer B
+        div(class="#{col.num2}") Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 7
+        div(class="#{col.num4}") 1500 euro
+        div(class="#{col.num5} ")
+          i.icon.arrow-circle-white.js-collapse-panel
+  .collapse-panel(style="height:0px")
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer B B B
+        div(class="#{col.num2}") Lorem sdfipsdsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 9
+        div(class="#{col.num4}") 1800 euro
+        div(class="#{col.num5} ")
+          button.transparent-btn.js-open-offer-form <i class="icon black-check"></i> Accept
+.collapse-block
+  .collapse-element
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer C
+        div(class="#{col.num2}") Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 7
+        div(class="#{col.num4}") 2500 euro
+        div(class="#{col.num5} ")
+          i.icon.arrow-circle-white.js-collapse-panel
+  .collapse-panel(style="height:0px")
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer CCC
+        div(class="#{col.num2}") Lorem sdfipsdsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 9
+        div(class="#{col.num4}") 1700 euro
+        div(class="#{col.num5} ")
+          button.transparent-btn.js-open-offer-form <i class="icon black-check"></i> Accept
+  .collapse-panel(style="height:0px")
+    .row_lg
+      .row
+        div(class="#{col.num1}") Offer CCC
+        div(class="#{col.num2}") Lorem sdfipsdsum dolor sit amet, consectetur adipiscing elit
+        div(class="#{col.num3}") 9
+        div(class="#{col.num4}") 1700 euro
+        div(class="#{col.num5} ")
+          button.transparent-btn.js-open-offer-form <i class="icon black-check"></i> Accept
+.row_lg
+  p.very-large ... Thank you for using our service!

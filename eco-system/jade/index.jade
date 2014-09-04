@@ -1,0 +1,56 @@
+extends ./layout.jade
+block title
+  title Products page
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '', show: true,link: 'dashboard.html'}
+  -var item2 = {title: 'Create', class: 'create', active: '', show: true, link: 'create.html'}
+  -var item3 = {title: 'Search', class: 'search', active: '', show: true, link: 'search.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: '', show: true}
+block footer-script
+  include general-includes/footer-script
+  script(src="js/plot.js")
+block main-content
+  .container
+    .g_block
+      .row_lg
+          h2 Employee section
+          ul
+            li
+              a(href="home.html") Home - Create Products
+            li
+              a(href="dashboard.html") Dashboard - List of Leads
+            li
+              a(href="lead.html") Lead
+            li
+              a(href="search.html") Search
+            li
+              a(href="create.html") Create Form
+            li
+              a(href="create-partner.html") Create Partners
+            li
+              a(href="categories.html") Categories
+            li
+              a(href="partners.html") Partners
+            li
+              a(href="products.html") Products
+            li
+              a(href="users.html") Users
+          h2 Partners section
+          ul
+            li
+              a(href="partners-list-of-leads.html") Leads
+            li
+              a(href="partners-lead.html") Lead
+            li
+              a(href="partners-lead_send.html") Lead send
+            li
+              a(href="partners-leads-history.html") Leads History
+          h2 Sucess section
+          ul
+            li
+              a(href="success-dashboard.html") Sucess Dashboard
+            li
+              a(href="success-landing.html") Sucess landing
+
+
+      .row_button @2014 Templates created by <a href="mailto:dimabuhal@gmail.com"> Dima Buhal</a>

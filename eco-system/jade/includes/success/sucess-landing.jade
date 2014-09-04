@@ -1,0 +1,30 @@
+
+-var col = {num1: 'col-md-2', num2: 'col-md-3', num3: 'col-md-2 ta-c', num4: 'col-md-2 ta-c', num5: 'col-md-3 clear-selection ta-r' }
+
+.row_lg
+  h1.sucess-title WELCOME BACK!
+
+  p.large We have collected # amount offers great offers for you, and hope you will find what you are lokking for.
+  p.large NOTICE, If you decide to accept one of the offers, the rest of the offers will automatically be rejected, and we will charge you #fee % of the total amount upfront. The vendor you have chosen will invoice you the remaining amount.
+  p.large Accepting a offer is  to be regarded as a purchase order. Any exchange of services and payment beyond charging the upfront fee, happens outside our control and therefor we can not be held liable  for fraud or malpractice in any form.
+  br
+  .checking_group_column
+    +checkbox('checkbox', 'accept', '-white-blue' )
+    label.checking_label-inline.-after.-lg(for="accept") I accept terms and conditions
+form
+  .row_lg
+    h2.g_main-title.-margin2 <i class="icon login"></i> Login
+    .row.row_topbottom
+      .col-md-1
+        label.g_label Phone
+      .col-md-3
+        input.g_input
+    .row.row_topbottom
+      .col-md-1
+        label.g_label Email
+      .col-md-3
+        input.g_input
+  hr.clear-hr
+
+.row_lg
+  button.simple-btn <i class="icon arrow-circle-white_sm"></i> GO

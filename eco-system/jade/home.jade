@@ -1,0 +1,20 @@
+extends ./layout.jade
+
+block title
+  title Home title
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '-active', show: true, link: 'dashboard.html'}
+  -var item2 = {title: 'Create', class: 'create', active: '', show: true, link: 'create.html'}
+  -var item3 = {title: 'Search', class: 'search', active: '', show: true, link: 'search.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: '', show: true}
+
+block footer-script
+  include general-includes/footer-script
+  script(src="js/plot.js")
+
+block main-content
+  .container.g_block
+    include includes/create-products
+
+  include general-includes/graphs-block

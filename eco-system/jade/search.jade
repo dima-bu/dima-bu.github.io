@@ -1,0 +1,40 @@
+extends ./layout.jade
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '', show: true,link: 'dashboard.html'}
+  -var item2 = {title: 'Create', class: 'create', active: '', show: true, link: 'create.html'}
+  -var item3 = {title: 'Search', class: 'search', active: '-active', show: true, link: 'search.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: '', show: true}
+
+block title
+  title Search pages
+
+block footer-script
+  include general-includes/footer-script
+  script(src="js/plot.js")
+
+block main-content
+  .container
+    .row
+      .col-md-7
+        .g_block.search-form-wrapper
+          include includes/search-form
+      .col-md-5
+        .g_block.filter-wrapper
+          include includes/filters
+
+  include general-includes/graphs-block
+
+
+
+
+
+
+
+
+
+
+
+
+
+

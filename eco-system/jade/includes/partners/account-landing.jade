@@ -1,0 +1,114 @@
+
+- var col = { leftnum1: 'col-md-6', leftnum2: 'col-md-6',  rightnum1:  'col-md-3', rightnum2: 'col-md-6', rightnum3: 'col-md-3'}
+- var row = {lefttable: 'row_clear',  leftform: 'g_form-row -groups', leftbutton: 'row_md',  righttable: 'g_table_row -lg'}
+
+
+.row
+  .col-md-6
+    .row_main-title
+      h2.g_main-title <i class="icon geo"></i> Contact Details
+    div(class="#{row.lefttable}")
+      .row
+        label(class="#{col.leftnum1} g_label") Company Name
+        div(class="#{col.leftnum2}")
+          .g_input.-pceudo Partner # 1
+    div(class="#{row.lefttable}")
+      .row
+        label(class="#{col.leftnum1} g_label") Street
+        div(class="#{col.leftnum2}")
+          .g_input.-pceudo Big Street 500
+    div(class="#{row.lefttable}")
+      .row
+        label(class="#{col.leftnum1} g_label") City
+        div(class="#{col.leftnum2}")
+          .g_input.-pceudo Test City
+    div(class="#{row.lefttable}")
+      .row
+        label(class="#{col.leftnum1} g_label") VAT
+        div(class="#{col.leftnum2}")
+          .g_input.-pceudo 123456789
+    .row_main-title
+      h2.g_main-title <i class="icon login"></i> Login Info
+    div(class="#{row.lefttable}")
+      .row
+        label(class="#{col.leftnum1} g_label") Username
+        div(class="#{col.leftnum2}")
+          .g_input.-pceudo testuser
+    div(class="#{row.lefttable}")
+      .row
+        label(class="#{col.leftnum1} g_label") Password
+        div(class="#{col.leftnum2}")
+          .g_input.-pceudo testuser
+    div(class="#{row.leftform}")
+      .row
+        label(class="#{col.leftnum1} g_label") Contact mail
+        div(class="#{col.leftnum2}")
+          input.g_input(placeholder="user@mail.com")
+
+    div(class="#{row.leftform}")
+      .row
+        label(class="#{col.leftnum1} g_label") New Password
+        div(class="#{col.leftnum2}")
+          input.g_input
+    div(class="#{row.leftform}")
+      .row
+        label(class="#{col.leftnum1} g_label") Repet New Password
+        div(class="#{col.leftnum2}")
+          input.g_input
+    hr.sm-hr.-clear-right
+    div(class="#{row.leftbutton}")
+      button.simple-btn <i class="icon refresh"></i> Update
+    .row_std
+      .attention-block
+        p Did your company change its adress? Or maybe a new VAT?
+        p To protect  our Clients and Partners, we require such changes to be processed by our employeers.
+        p Contact new-details @goquoty.com
+
+
+
+  .col-md-6
+    .row_main-title.-clear-left
+      h2.g_main-title <i class="list icon"></i> Lead Summary
+    .g_dotted_header.dotted-bg
+      .row
+        div(class=" #{col.rightnum1}") Date
+        div(class=" #{col.rightnum2}") Event
+        div(class=" #{col.rightnum3}") Created
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class=" #{row.righttable}")
+      .row
+        div(class=" #{col.rightnum1}") 01.02.14
+        div(class=" #{col.rightnum2}") Sent Offer (#12345678)
+        div(class=" #{col.rightnum3}") 900 USD
+    div(class="#{row.leftbutton}")
+      include ../paginator
+a.icon.close

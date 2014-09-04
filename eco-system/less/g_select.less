@@ -1,0 +1,56 @@
+
+
+.ik_select_link {
+  &:extend(.g_input);
+}
+
+.ik_select_link:after {
+  //  color:red;
+  height: 10px;
+  width: 10px;
+  background: transparent url('@{img-path}/drop.png') 0px 0px no-repeat;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -11px;
+  content:""
+}
+
+.ik_select_link_focus {
+
+}
+
+.ik_select_list {
+  background-color: transparent !important ;
+  color: #a59e91 !important;
+
+}
+
+.ik_select_dropdown {
+  background: #fff !important;
+
+box-sizing:  content-box;
+overflow: hidden;
+}
+
+.ik_select_option.ik_select_hover {
+  background-color: #E3E7EA !important;
+}
+
+.ik_select_option {
+  &:extend(.g_input);
+  border: 0 none transparent !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid #E7E7E7 !important;
+}
+
+.ik_select_list_inner ul {
+  &:extend(.clear-list);
+  border-left:  1px solid #E7E7E7;
+  border-right: 1px solid #E7E7E7;
+  border-radius: 3px;
+
+  //  border-bottom: 1px solid #E7E7E7;
+}

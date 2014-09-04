@@ -1,0 +1,78 @@
+
+- var column = { left: 'col-md-4', right:  'col-md-8', rightleft: 'col-md-3', rightright: 'col-md-7',  historyleft: 'col-lg-9 col-md-8' , historyright: 'col-lg-3 col-md-4' }
+- var row = {class: 'g_form-row -lead', leadhistoryclass: 'g_form-row -lead-history'}
+
+.row_main-title
+  h2.g_main-title.-margin2
+    | Lead ID # 2398172367
+.g_form-row
+  .row
+    .col-md-7
+      div(class="row #{row.class}")
+        label(class="g_label #{column.left} ") Product
+        div(class="#{column.right} ")
+          .g_input.-pceudo
+            | GoQuoty.com -&nbsp;
+            a Handyman
+      div(class="row #{row.class}")
+        label(class="g_label #{column.left} ") Client Name
+        div(class="#{column.right} ")
+          .g_input.-pceudo Andrew Cooper
+      div(class="clearfix #{row.class}")
+        label(class="g_label pull-left ") Request
+        div(class="pull-right left-icons-block")
+          a.icon.pen-blue
+          a.icon.plus-blue
+      div(class="row #{row.class}")
+        .col-md-12
+          textarea.g_textarea(rows="6")
+    .col-md-5
+      div(class="row #{row.class}")
+        label(class="g_label #{column.rightleft} ") Phone
+        div(class="#{column.rightright} ")
+          .g_input.-pceudo +45 123 456 789
+      div(class="row #{row.class}")
+        label(class="g_label #{column.rightleft} ") Email
+        div(class="#{column.rightright} ")
+          .g_input.-pceudo anders@pedersen.com
+      div(class="clearfix #{row.class}")
+        label(class="g_label  ") Lead History
+      div(class="row #{row.leadhistoryclass}")
+        div(class="#{column.historyleft} ")
+          span.leads-history_field Lead created by <em> User </em>
+        div(class="#{column.historyright} ta-r")
+          span.leads-history_date 01.01.14
+      div(class="row #{row.leadhistoryclass}")
+        div(class="#{column.historyleft} ")
+          span.leads-history_field Lead created by <em> Employee #2 </em>
+        div(class="#{column.historyright} ta-r")
+          span.leads-history_date 01.01.14
+      div(class="row #{row.leadhistoryclass}")
+        div(class="#{column.historyleft} ")
+          span.leads-history_field Lead unassigned by <em> Employee #1 </em>
+        div(class="#{column.historyright} ta-r")
+          span.leads-history_date 01.01.14
+      div(class="row #{row.leadhistoryclass}")
+        div(class="#{column.historyleft} ")
+          span.leads-history_field Lead assigned by <em> Employee #3 </em>
+        div(class="#{column.historyright} ta-r")
+          span.leads-history_date 01.01.14
+      div(class="row #{row.leadhistoryclass}")
+        div(class="#{column.historyleft} ")
+          span.leads-history_field Lead assigned by <em> Employee #3 </em>
+        div(class="#{column.historyright} ta-r")
+          span.leads-history_date 01.01.14
+hr.clear-hr
+.row_button.group_buttons
+  button.simple-btn(disabled="disabled")
+    i.icon.assign
+    |Assign to Me
+  button.simple-btn
+    i.icon.validate
+    | Validate
+  button.simple-btn
+    i.icon.rejected-sm
+    | Reject
+
+
+a.icon.close

@@ -1,0 +1,34 @@
+.paginator {
+  .clear-list();
+  margin-top: 20px;
+  li {
+    display: inline-block;
+  }
+
+  a {
+    height: 24px;
+    line-height: 22px;
+    border-radius: 12px;
+    border: 1px solid #CAD2D8;
+    background-color: #fff;
+    display: inline-block;
+    color:  #474646;
+    font-size: 11px;
+    padding: 0 8px;
+    margin-right: 5px;
+    cursor: pointer;
+    i {
+      vertical-align: top;
+      margin-top: 5px;
+    }
+    &.active, &:hover {
+      background-color: #5EAEE3;
+      color:#fff;
+    }
+
+    &.prev, &.next {
+      padding: 0 5px;
+    }
+  }
+
+}

@@ -1,0 +1,49 @@
+-var col = {num1: 'col-md-2',num2: 'col-md-3', num3: 'col-md-4', num4: 'col-md-3', class: 'g_table_column'}
+-var row = {class: ' g_table_row -lg-status'}
+.row_main-title
+  h1.g_main-title
+    i.icon.history_sm
+    | Leads History
+.g_dotted_header.dotted-bg
+  .row
+    div(class="#{col.num1}")
+      span Date
+    div(class="#{col.num2}")
+      span Client Name
+    div(class="#{col.num3}")
+      span Short Description
+    div(class="#{col.num4}")
+      span Status
+div(class="#{row.class}")
+  .row
+    div(class="#{col.num1} #{col.class}")
+      span 01.02.14
+    div(class="#{col.num2} #{col.class}")
+      span Patricia Silva
+    div(class="#{col.num3} #{col.class}")
+      span Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    div(class="#{col.num4} #{col.class}")
+      span Awaiting Client
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}") 02.04.14
+    div(class="#{col.num2} #{col.class}") Katy Weerd
+    div(class="#{col.num3} #{col.class}") Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    div(class="#{col.num4} #{col.class} -status")
+      .status-wrapper.-rejected
+        i.icon.status
+        span.status-text Offer Rejected
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}") 15.07.14
+    div(class="#{col.num2} #{col.class}") John Hammond
+    div(class="#{col.num3} #{col.class}") Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur
+    div(class="#{col.num4} #{col.class}")
+      div Leads Won!
+      a(href="#") Details <i class="icon arrow-blue"></i>
+div(class="#{row.class}")
+  .row
+    label.g_label.col-md-2 Client Seach
+    .col-md-7.col-lg-6.search-wrappers
+      input.g_input
+      button.simple-btn.-icon-only <i class="search-white icon"></i>

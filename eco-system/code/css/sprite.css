@@ -1,0 +1,378 @@
+.account {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1397px;
+  width: 40px;
+  height: 33px;
+}
+.account_active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1440px;
+  width: 40px;
+  height: 33px;
+}
+.admin {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1808px;
+  width: 34px;
+  height: 37px;
+}
+.admin_active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1761px;
+  width: 34px;
+  height: 37px;
+}
+.arrow-blue {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -33px;
+  width: 8px;
+  height: 9px;
+}
+.arrow-circle-red {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1105px;
+  width: 30px;
+  height: 30px;
+}
+.arrow-circle-white {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1145px;
+  width: 32px;
+  height: 32px;
+}
+.arrow-circle-white_sm {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -446px;
+  width: 16px;
+  height: 17px;
+}
+.arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -137px;
+  width: 12px;
+  height: 12px;
+}
+.arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -225px;
+  width: 12px;
+  height: 12px;
+}
+.assign {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -269px;
+  width: 16px;
+  height: 13px;
+}
+.attention {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2008px;
+  width: 55px;
+  height: 55px;
+}
+.bird {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1855px;
+  width: 38px;
+  height: 38px;
+}
+.black-check {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -181px;
+  width: 17px;
+  height: 12px;
+}
+.checkbox-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -583px;
+  width: 21px;
+  height: 18px;
+}
+.close {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -956px;
+  width: 24px;
+  height: 24px;
+}
+.close_hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -858px;
+  width: 22px;
+  height: 22px;
+}
+.create-red {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -611px;
+  width: 23px;
+  height: 18px;
+}
+.create {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1575px;
+  width: 36px;
+  height: 36px;
+}
+.create_active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1529px;
+  width: 36px;
+  height: 36px;
+}
+.delete-black {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -52px;
+  width: 11px;
+  height: 11px;
+}
+.dollar {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -923px;
+  width: 13px;
+  height: 23px;
+}
+.geo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -669px;
+  width: 18px;
+  height: 21px;
+}
+.graphes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -639px;
+  width: 24px;
+  height: 20px;
+}
+.gray-divider-vertical {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -990px;
+  width: 5px;
+  height: 25px;
+}
+.gray-divider {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 25px;
+  height: 5px;
+}
+.gray-left-arrow {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -203px;
+  width: 8px;
+  height: 12px;
+}
+.history {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1667px;
+  width: 37px;
+  height: 37px;
+}
+.history_active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1714px;
+  width: 37px;
+  height: 37px;
+}
+.history_sm {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -762px;
+  width: 22px;
+  height: 22px;
+}
+.leads {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1025px;
+  width: 38px;
+  height: 30px;
+}
+.leads_active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1065px;
+  width: 38px;
+  height: 30px;
+}
+.list {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -555px;
+  width: 23px;
+  height: 18px;
+}
+.login {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -393px;
+  width: 14px;
+  height: 16px;
+}
+.logo_affilate {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1187px;
+  width: 32px;
+  height: 32px;
+}
+.logout {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1954px;
+  width: 44px;
+  height: 44px;
+}
+.notice {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -731px;
+  width: 23px;
+  height: 21px;
+}
+.partner {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -700px;
+  width: 29px;
+  height: 21px;
+}
+.pen-blue {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -94px;
+  width: 11px;
+  height: 11px;
+}
+.plane {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2073px;
+  width: 175px;
+  height: 120px;
+}
+.plus-blue {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -73px;
+  width: 12px;
+  height: 11px;
+}
+.print {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -292px;
+  width: 14px;
+  height: 14px;
+}
+.red-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -15px;
+  width: 5px;
+  height: 8px;
+}
+.red-clock {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1903px;
+  width: 41px;
+  height: 41px;
+}
+.red-plus {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -527px;
+  width: 18px;
+  height: 18px;
+}
+.refresh {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -367px;
+  width: 16px;
+  height: 16px;
+}
+.rejected-sm {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -500px;
+  width: 16px;
+  height: 17px;
+}
+.search-red {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -794px;
+  width: 21px;
+  height: 22px;
+}
+.search-white {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -473px;
+  width: 18px;
+  height: 17px;
+}
+.search {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1621px;
+  width: 36px;
+  height: 36px;
+}
+.search_active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1483px;
+  width: 36px;
+  height: 36px;
+}
+.send {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -341px;
+  width: 17px;
+  height: 16px;
+}
+.settings {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -826px;
+  width: 24px;
+  height: 22px;
+}
+.status-complete {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1355px;
+  width: 32px;
+  height: 32px;
+}
+.status-live {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1313px;
+  width: 32px;
+  height: 32px;
+}
+.status-new {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1271px;
+  width: 32px;
+  height: 32px;
+}
+.status-rejected {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1229px;
+  width: 32px;
+  height: 32px;
+}
+.user-sm {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -159px;
+  width: 11px;
+  height: 12px;
+}
+.users {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -890px;
+  width: 24px;
+  height: 23px;
+}
+.validate {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -419px;
+  width: 16px;
+  height: 17px;
+}
+.white-check-btn {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -247px;
+  width: 17px;
+  height: 12px;
+}
+.white-check {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -115px;
+  width: 12px;
+  height: 12px;
+}
+.white-plus {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -316px;
+  width: 15px;
+  height: 15px;
+}

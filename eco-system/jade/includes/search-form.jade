@@ -1,0 +1,35 @@
+
+- var col = { left: 'col-md-3', right:  'col-md-7', leftoffset: 'col-md-offset-3'}
+- var row = {class: 'g_form-row -groups'}
+form
+  .g_form_header
+    h2.g_main-title.-margin2 <i class="icon search-red icon"></i>Search
+  div(class="#{row.class}")
+    .row
+      label(class="g_label #{col.left} ") Product
+      div(class="#{col.right}")
+        select.g_select
+          option GoQuoty.com - Handyman
+          option GoQuoty.com - Lawyer
+          option GoQuoty.com - Accountant
+  div(class="#{row.class}")
+    .row
+      label(class="g_label #{col.left} ") Client Name
+      div(class="#{col.right}")
+        input.g_input
+  div(class="#{row.class}")
+    .row
+      label(class="g_label #{col.left} ") Phone
+      div(class="#{col.right}")
+        input.g_input
+  div(class="#{row.class}")
+    .row
+      label(class="g_label #{col.left} ") E-mail
+      div(class="#{col.right}")
+        input.g_input
+  .js-search-delta
+  hr.hr-form
+  .row_button
+    .row
+      div(class=" #{col.leftoffset} #{col.right} ")
+        button.simple-btn <i class="icon white-check"></i>Save

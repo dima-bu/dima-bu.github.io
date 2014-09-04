@@ -1,0 +1,28 @@
+extends ./layout.jade
+
+block title
+  title Dashboard page
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '-active', show: true, link: 'dashboard.html'}
+  -var item2 = {title: 'Create', class: 'create', active: '', show: truel , link: 'create.html'}
+  -var item3 = {title: 'Search', class: 'search', active: '', show: true, link: 'search.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: '', show: true}
+
+
+block footer-script
+  include general-includes/footer-script
+  script(src="js/plot.js")
+
+block main-content
+  .container
+    .row
+      .col-md-7.col-lg-7
+        .g_block
+          include includes/list-of-leads
+        include includes/paginator
+      .col-md-5.col-lg-5
+        .g_block
+          include includes/filters
+
+  include general-includes/graphs-block
