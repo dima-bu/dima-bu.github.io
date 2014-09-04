@@ -3098,10 +3098,10 @@ span.label {
   display: inline-block;
   padding: 10px 7px;
 }
-.paginator ul li:first-child {
+.paginator ul li.prev-btn {
   padding-right: 20px;
 }
-.paginator ul li:last-child {
+.paginator ul li.next-btn {
   padding-left: 20px;
 }
 .paginator ul li a {
