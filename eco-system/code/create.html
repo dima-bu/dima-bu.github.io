@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Create page</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sprite.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul class="left-menu clear-list">
+      <li class="left-menu_logo"><a href="index.html"><img src="img/logo.png"></a></li>
+      <li><i class="icon gray-divider"></i></li>
+      <li><a href="dashboard.html" class="left-menu_link "><i class="icon red-line"></i><span class="left-menu_icon"><i class="icon leads"></i></span><span class="left-menu_name">Leads</span></a></li>
+      <li><i class="icon gray-divider"></i></li>
+      <li><a href="create.html" class="left-menu_link -active "><i class="icon red-line"></i><span class="left-menu_icon"><i class="icon create"></i></span><span class="left-menu_name">Create</span></a></li>
+      <li><i class="icon gray-divider"></i></li>
+      <li><a href="search.html" class="left-menu_link  "><i class="icon red-line"></i><span class="left-menu_icon"><i class="icon search"></i></span><span class="left-menu_name">Search</span></a></li>
+      <li><i class="icon gray-divider"></i></li>
+      <li><a href="undefined" class="left-menu_link  "><i class="icon red-line"></i><span class="left-menu_icon"><i class="icon admin"></i></span><span class="left-menu_name">Admin</span></a></li>
+    </ul>
+    <div class="main-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 header-col"><i class="red-clock icon"></i><span class="header_status-bar">Days With Us:&nbsp;<span>"Yay, Tom has been with us for 2 years“</span></span></div>
+            <div class="col-md-6 header-col -right"><i class="icon gray-divider-vertical"></i><a href="#" class="logout_link"><i class="logout icon"></i>
+                <h2 class="span">Logout</h2></a></div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="g_block">
+                <form>
+                  <div class="g_form_header">
+                    <h2 class="g_main-title -margin2"><i class="icon create-red"></i>Create Form</h2>
+                  </div>
+                  <div class="g_form-row -groups">
+                    <div class="row">
+                      <label class="g_label col-md-3 ">Product</label>
+                      <div class="col-md-7">
+                        <select class="g_select">
+                          <option>GoQuoty.com - Handyman</option>
+                          <option>GoQuoty.com - Lawyer</option>
+                          <option>GoQuoty.com - Accountant</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_form-row -groups">
+                    <div class="row">
+                      <label class="g_label col-md-3 ">Client Name</label>
+                      <div class="col-md-7">
+                        <input class="g_input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_form-row -groups">
+                    <div class="row">
+                      <label class="g_label col-md-3 ">Phone</label>
+                      <div class="col-md-7">
+                        <input class="g_input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_form-row -groups">
+                    <div class="row">
+                      <label class="g_label col-md-3 ">E-mail</label>
+                      <div class="col-md-7">
+                        <input class="g_input">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_form-row -groups">
+                    <div class="row">
+                      <label class="g_label col-md-3 ">Request</label>
+                      <div class="col-md-7">
+                        <textarea rows="6" class="g_textarea"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="hr-form">
+                  <div class="row_button">
+                    <button class="simple-btn"><i class="icon white-check"></i>Save</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="g_block">
+                <form>
+                  <div class="row_main-title">
+                    <h2 class="g_main-title"><i class="icon checkbox-icon"></i>Filter</h2>
+                  </div>
+                  <div class="g_dotted_header dotted-bg">
+                    <div class="row">
+                      <div class="col-md-12">Staus</div>
+                    </div>
+                  </div>
+                  <div class="row_std">
+                    <div class="row">
+                      <div class="col-md-11">
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="new" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="new" class="checking_label-inline -after">New</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Completed" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Completed" class="checking_label-inline -after">Completed</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Myleads" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Myleads" class="checking_label-inline -after">My leads</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Live" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Live" class="checking_label-inline -after">Live</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Rejected" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Rejected" class="checking_label-inline -after">Rejected</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_dotted_header dotted-bg">
+                    <div class="row">
+                      <div class="col-md-12">Date</div>
+                    </div>
+                  </div>
+                  <div class="row_std">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="last" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="last" class="checking_label-inline -after">Last 24 hrs</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="week" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="week" class="checking_label-inline -after">This Week</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="month" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="month" class="checking_label-inline -after">This Month</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="222" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="222" class="checking_label-inline -after">Last 48 hrs</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Rejected1" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Rejected1" class="checking_label-inline -after">Last Week</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Rejected" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Rejected" class="checking_label-inline -after">Last Month</label>
+                        </div>
+                        <div class="checking_group_column">
+                          <div class="checking_item  -white-blue checking_item-inline">
+                            <input type="checkbox" id="Specific" class="checking_input"/>
+                            <div class="checking_input-pseudo-wrapper">
+                              <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                            </div>
+                          </div>
+                          <label for="Specific" class="checking_label-inline -after">Specific date or Month</label>
+                          <div class="checking_group_data">
+                            <input type="text" class="g_input -sm -data -inline">.
+                            <input type="text" class="g_input -sm -data -inline">.
+                            <input type="text" class="g_input -sm -year -inline">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_dotted_header dotted-bg">
+                    <div class="row">
+                      <div class="col-md-12">Product</div>
+                    </div>
+                  </div>
+                  <div class="g_form-row top-bottom">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <select class="g_select">
+                          <option>GoQuoty.com - Handyman</option>
+                          <option>GoQuoty.com - Lawyer</option>
+                          <option>GoQuoty.com - Accountant</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="g_form-row top-bottom">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button class="simple-btn"><i class="icon refresh"></i>Refresh</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="g_block graph-block">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="g_block_inner">
+                  <h2 class="g_main-title"><i class="icon graphes"></i>Leads Graphs</h2>
+                  <div class="graph-descr">
+                    <div class="graph-marker icon -blue"></div><span class="graph-marker_name">New Leads/hour</span>
+                    <div class="graph-marker icon -orange"></div><span class="graph-marker_name">Leads Handled/hour</span>
+                    <button class="simple-btn -blue -sm">Last 24 Hours</button>
+                  </div>
+                  <div id="graph" style="width:540px;height:250px"></div>
+                </div>
+              </div>
+              <div class="col-md-6 circle-graphs_wrapper">
+                <div class="clearfix">
+                  <div class="col-md-4 circle-graphs_col">
+                    <div class="progress-70 progress-radial">
+                      <div class="overlay"></div>
+                    </div>
+                    <h3 class="circle-graphs_title">CURRENT LEAD QUOTE</h3>
+                    <div class="circle-graphs_count">56</div>
+                  </div>
+                  <div class="col-md-4 circle-graphs_col">
+                    <div class="progress-30_orange progress-radial">
+                      <div class="overlay"></div>
+                    </div>
+                    <h3 class="circle-graphs_title">LIVE LEADS</h3>
+                    <div class="circle-graphs_count">120</div>
+                  </div>
+                  <div class="col-md-4 circle-graphs_col">
+                    <div class="progress-50_green progress-radial">
+                      <div class="overlay"></div>
+                    </div>
+                    <h3 class="circle-graphs_title">LEADS SOLD THIS MONTH</h3>
+                    <div class="circle-graphs_count">350</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>2014 © GoQuoty.com</footer>
+    </div>
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/jquery.flot.min.js"></script>
+    <script src="js/vendor/jquery.ikSelect.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plot.js"></script>
+  </body>
+</html>

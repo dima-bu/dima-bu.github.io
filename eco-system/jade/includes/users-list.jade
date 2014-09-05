@@ -1,0 +1,40 @@
+-var col = {num1: 'col-md-2', num2: 'col-md-4', num3: 'col-md-2', num4: 'col-md-2', num5: 'col-md-2' }
+-var row = {class: 'g_table_row -lg'}
+
+mixin user-row
+  div(class="#{row.class}")
+    .row
+      div(class="#{col.num1} g_table_column") Stasy Cooper
+      div(class="#{col.num2} g_table_column") 4 years / 2 months / 3 weeks / 5 days
+      div(class="#{col.num3} g_table_column") amo1@gmail.com
+      div(class="#{col.num4} g_table_column") +45 12 34 56 78
+      div(class="#{col.num5} g_table_column") <a class="delete-black icon"></a> / <a class="user-sm icon"></a>
+
+.row_main-title
+  h1.g_main-title
+    i.users.icon
+    | Users
+.g_dotted_header.dotted-bg
+  .row
+    div(class="#{col.num1}") Name
+    div(class="#{col.num2}") Days with Us
+    div(class="#{col.num3}") Email
+    div(class="#{col.num4}") Phone
+    div(class="#{col.num5}") Options
+
++user-row
++user-row
++user-row
+
+div(class="#{row.class}")
+  .row
+    .col-md-5
+      .row
+        label.g_label.col-md-2 Seach
+        .col-md-10.search-wrappers
+          input.g_input
+          button.simple-btn.-icon-only <i class="search-white icon"></i>
+
+    .col-md-6
+      span.or-text.-right OR
+      button.simple-btn.js-open-create-form <i class="white-plus icon"></i>Create New

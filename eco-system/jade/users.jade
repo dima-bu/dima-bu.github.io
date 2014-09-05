@@ -1,0 +1,39 @@
+extends ./layout.jade
+
+block title
+  title Users page
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '-active', show: true}
+  -var item2 = {title: 'Create', class: 'create', active: '', show: true}
+  -var item3 = {title: 'Search', class: 'search', active: '', show: true}
+  -var item4 = {title: 'Admin', class: 'admin', active: '', show: true}
+
+
+block footer-script
+  include general-includes/footer-script
+  script(src="js/plot.js")
+
+block main-content
+
+  .container
+    .row
+      .col-md-12.col-lg-12
+        .g_block
+          include includes/users-list
+        include includes/paginator
+
+  include general-includes/graphs-block
+  include includes/users-popup
+
+
+
+
+
+
+
+
+
+
+
+

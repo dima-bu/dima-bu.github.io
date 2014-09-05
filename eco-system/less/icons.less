@@ -1,0 +1,160 @@
+.left-menu_link{
+  &.-active, &:hover {
+
+    .leads {
+      background-position: @leads_active-offset-x @leads_active-offset-y;
+    }
+
+    .admin {
+      background-position: @admin_active-offset-x @admin_active-offset-y;
+    }
+
+    .search {
+      background-position: @search_active-offset-x @search_active-offset-y;
+    }
+
+    .create {
+      background-position: @create_active-offset-x @create_active-offset-y;
+    }
+
+    .history {
+      background-position: @history_active-offset-x @history_active-offset-y;
+    }
+
+    .account {
+      background-position: @account_active-offset-x @account_active-offset-y;
+    }
+
+  }
+}
+
+
+.red-line {
+  background-color: @main-red;
+  height: 100%;
+  width: 4px;
+  .border-right-radius(2px)
+}
+
+.close {
+  cursor: pointer;
+  &:hover {
+    background-position: @close_hover-offset-x @close_hover-offset-y;
+  }
+}
+
+.print {
+
+}
+
+
+.graph-marker {
+  height: 8px;
+  width: 24px;
+
+  &.-blue {
+    background-color: #4CB5DB;
+  }
+
+  &.-orange {
+    background-color: #F8A20F;
+  }
+
+}
+
+@g_main-title_height: 22px;
+@list-delata: (@g_main-title_height - @list-height)/2;
+@red-plus-delata: (@g_main-title_height - @red-plus-height)/2;
+@login-delata: (@g_main-title_height - @login-height )/2;
+@checkbox-icon-delata: (@g_main-title_height - @checkbox-icon-height )/2;
+@create-red-delata: (@g_main-title_height - @create-red-height )/2;
+
+.g_main-title {
+  .list {
+    height: @g_main-title_height;
+    background-position: @list-offset-x @list-offset-y + @list-delata;
+  }
+
+  .red-plus {
+    height: @g_main-title_height;
+    background-position: @red-plus-offset-x @red-plus-offset-y + @red-plus-delata;
+  }
+
+  .login {
+    height: @g_main-title_height;
+    background-position: @login-offset-x @login-offset-y + @login-delata;
+  }
+
+ .checkbox-icon {
+   height: @g_main-title_height;
+   background-position: @checkbox-icon-offset-x @checkbox-icon-offset-y + @checkbox-icon-delata;
+ }
+
+  .create-red {
+  height: @g_main-title_height;
+  background-position: @create-red-offset-x @create-red-offset-y + 3;
+  }
+
+}
+
+
+
+
+.status-wrapper {
+  height: 32px;
+  &.-new {
+    .status {
+      background-position: @status-new-offset-x @status-new-offset-y;
+    }
+
+    .status-text {
+      color: #66c5e8;
+    }
+  }
+
+  &.-live {
+    .status {
+      background-position: @status-live-offset-x @status-live-offset-y;
+    }
+    .status-text {
+      color: #f8a413;
+    }
+  }
+
+  &.-rejected {
+    .status {
+      background-position: @status-rejected-offset-x @status-rejected-offset-y;
+    }
+    .status-text {
+      color: #f9765c;
+    }
+  }
+
+  &.-complete {
+    .status {
+      background-position: @status-complete-offset-x @status-complete-offset-y;
+    }
+    .status-text {
+      color: #accd51;
+    }
+  }
+
+}
+
+.left-icons-block {
+  padding-top: 10px;
+  .icon {
+    margin-left: 10px;
+  }
+}
+
+.arrow-circle-white {
+  cursor: pointer;
+  &:hover {
+    background-position:  @arrow-circle-red-offset-x  @arrow-circle-red-offset-y;
+  }
+}
+
+.active-icon .arrow-circle-white {
+  background-position:  @arrow-circle-red-offset-x  @arrow-circle-red-offset-y;
+}

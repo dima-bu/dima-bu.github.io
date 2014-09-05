@@ -1,0 +1,46 @@
+-var col = {num1: 'col-md-2',num2: 'col-md-3', num3: 'col-md-3', num4: 'col-md-2', num5: 'col-md-2',  class: 'g_table_column'}
+-var row = {class: ' g_table_row -lg-status'}
+.row_main-title
+  h1.g_main-title
+    i.icon.list
+    | List of Leads
+.g_dotted_header.dotted-bg
+  .row
+    div(class="#{col.num1}") Client Name
+    div(class="#{col.num2}") Category
+    div(class="#{col.num3}") Short Description
+    div(class="#{col.num4}") Fee
+    div(class="#{col.num4}") Status
+div(class="#{row.class}")
+  .row
+    div(class="#{col.num1} #{col.class} -status -lg")
+      .status-wrapper
+        i.icon.bird
+        span.status-text Stasy Cooper
+    div(class="#{col.num2} #{col.class}") Lawyers
+    div(class="#{col.num3} #{col.class}") Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    div(class="#{col.num4} #{col.class}") 10 %
+    div(class="#{col.num4} #{col.class}") Available: 3/3
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}") Stasy Cooper
+    div(class="#{col.num2} #{col.class}") Accountants
+    div(class="#{col.num3} #{col.class}") Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    div(class="#{col.num4} #{col.class}") 20 %
+    div(class="#{col.num5} #{col.class} -status")
+      .status-wrapper.-complete
+        i.icon.status
+        span.status-text Offer Sent
+div(class="#{row.class}")
+  .row
+    div(class="#{col.num1} #{col.class}") Stasy Cooper
+    div(class="#{col.num2} #{col.class}") Lawyers
+    div(class="#{col.num3} #{col.class}") Lorem ipsum dolor sit am, consectetur adipiscing elit
+    div(class="#{col.num4} #{col.class}") 10 %
+    div(class="#{col.num5} #{col.class}") Available: 1/3
+div(class="#{row.class}")
+  .row
+    label.g_label.col-md-2 Keyword Seach
+    .col-md-7.col-lg-6.search-wrappers
+      input.g_input
+      button.simple-btn.-icon-only <i class="search-white icon"></i>

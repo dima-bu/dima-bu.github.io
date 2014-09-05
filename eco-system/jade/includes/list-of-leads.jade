@@ -1,0 +1,68 @@
+-var col = {num1: 'col-md-4',num2: 'col-md-3', num3: 'col-md-2', num4: 'col-md-3', class: 'g_table_column'}
+-var row = {class: ' g_table_row -lg-status'}
+
+.row_main-title
+  h1.g_main-title
+    i.icon.list
+    | List of Leads
+.g_dotted_header.dotted-bg
+  .row
+    div(class="#{col.num1}") Product
+    div(class="#{col.num2}") Client Name
+    div(class="#{col.num3}") Created
+    div(class="#{col.num4}") Status
+div(class="#{row.class}")
+  .row
+    div(class="#{col.num1} #{col.class}")
+      span GoQuoty.com   -
+      a &nbsp; Handyman
+    div(class="#{col.num2} #{col.class}") Patricia Silva
+    div(class="#{col.num3} #{col.class}") 01.04.2014
+    div(class="#{col.num4} #{col.class} -status")
+      .status-wrapper.-new
+        i.icon.status
+        span.status-text New
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}")
+      span GoQuoty.com   -
+      a &nbsp; Lawyer
+    div(class="#{col.num2} #{col.class}") Katy Weerd
+    div(class="#{col.num3} #{col.class}") 01.04.2014
+    div(class="#{col.num4} #{col.class} -status")
+      .status-wrapper.-live
+        i.icon.status
+        span.status-text Live
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}")
+      span GoQuoty.com   -
+      a &nbsp; Accountant
+    div(class="#{col.num2} #{col.class}") John Hammond
+    div(class="#{col.num3} #{col.class}") 01.04.2014
+    div(class="#{col.num4} #{col.class} -status")
+      .status-wrapper.-rejected
+        i.icon.status
+        span.status-text Rejected
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}")
+      span GoQuoty.com   -
+      a &nbsp; Handyman
+    div(class="#{col.num2} #{col.class}") Angelina Dunes
+    div(class="#{col.num3} #{col.class}") 01.04.2014
+    div(class="#{col.num4} #{col.class} -status")
+      .status-wrapper.-complete
+        i.icon.status
+        span.status-text Completed
+div(class="#{row.class}")  
+  .row
+    div(class="#{col.num1} #{col.class}")
+      span GoQuoty.com   -
+      a &nbsp; Accountant
+    div(class="#{col.num2} #{col.class}") Dennis Grant
+    div(class="#{col.num3} #{col.class}") 01.04.2014
+    div(class="#{col.num4} #{col.class} -status")
+      .status-wrapper.-new
+        i.icon.status
+        span.status-text New

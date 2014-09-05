@@ -1,0 +1,22 @@
+extends ./layout.jade
+
+block title
+  title Account landing
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '', show: true, link: 'partners-list-of-leads.html'}
+  -var item2 = {title: 'Account', class: 'account', active: '-active', show: true, link: 'partners-account-landing.html'}
+  -var item3 = {title: 'History', class: 'history', active: '', show: true, link: 'partners-leads-history.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: 'hide'}
+
+
+
+block main-content
+  .container
+    .row
+      .col-md-9.col-lg-9
+        .g_block
+          include includes/partners/account-landing
+      .col-md-3.col-lg-3
+        .g_block.-blue
+          include includes/partners/right-banner

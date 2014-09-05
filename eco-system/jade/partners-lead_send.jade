@@ -1,0 +1,26 @@
+extends ./layout.jade
+
+block title
+  title Lead Single
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '-active', show: true, link: 'partners-list-of-leads.html'}
+  -var item2 = {title: 'Account', class: 'account', active: '', show: true, link: 'partners-account-landing.html'}
+  -var item3 = {title: 'History', class: 'history', active: '', show: true, link: 'partners-leads-history.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: 'hide'}
+
+
+
+block main-content
+  .container
+    .row
+      .col-md-9.col-lg-9
+        .g_block
+          .row
+            .col-md-6
+              include includes/partners/lead-descr
+            .col-md-6
+              include includes/partners/already-send
+          a.icon.close
+      .col-md-3.col-lg-3
+        include includes/partners/right-banner3

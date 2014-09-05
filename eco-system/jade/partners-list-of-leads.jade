@@ -1,0 +1,33 @@
+extends ./layout.jade
+
+block title
+  title List of leads
+
+block variables
+  -var item1 = {title: 'Leads', class: 'leads', active: '-active', show: true, link: 'partners-list-of-leads.html'}
+  -var item2 = {title: 'Account', class: 'account', active: '', show: true, link: 'partners-account-landing.html'}
+  -var item3 = {title: 'History', class: 'history', active: '', show: true, link: 'partners-leads-history.html'}
+  -var item4 = {title: 'Admin', class: 'admin', active: 'hide'}
+
+
+
+block main-content
+  .container
+    .row
+      .col-md-12
+        .g_block
+          include includes/partners/list-of-leads_partners
+    .row
+      .col-md-12
+        include includes/paginator
+
+
+
+
+
+
+
+
+
+
+

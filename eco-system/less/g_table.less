@@ -1,0 +1,54 @@
+.g_table_row {
+  .row_table();
+  line-height: 18px;
+  font-size: 16px;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.31);
+  border-bottom: 1px solid @light-gray;
+  &.-lg {
+    .row_high ();
+  }
+
+  &.-without-border {
+    border-bottom: 0 none;
+  }
+
+  &.-lg-status {
+    .row_status();
+    .g_table_column {
+      line-height: 18px;
+      padding-top: 8px;
+      &.-status{
+        line-height: 32px;
+        padding-top: 0;
+      }
+      &.-lg {
+        .icon {
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+
+  &.-md {
+    .row_button();
+  }
+}
+
+
+.status {
+  height: 32px;
+  width: 32px;
+  background-image: url('@{img-path}/sprite.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+.status-text {
+  vertical-align: top;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 10px;
+
+}
+

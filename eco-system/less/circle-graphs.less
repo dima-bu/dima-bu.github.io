@@ -1,0 +1,140 @@
+
+.circle-graphs_wrapper {
+  background-color: #f8f9fd;
+  height: 410px;
+}
+
+.circle-graphs_col {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.circle-graphs_title {
+  color:  #3e454d;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 30px 0 0 0;
+}
+
+.circle-graphs_count {
+  color:  #3e454d;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+@step: 5;
+
+@loops: floor(100/@step); //20
+@increment: 360 / @loops;//18
+@half: floor(@loops / 2);//10
+@bar-color: #647280;
+@progress-color: #4CB5DB;
+
+@progress-color_orange: #F8A20F;
+@bar-color_orange: #647280;
+
+@progress-color_green:  #AACC4E;
+@bar-color_green:#647280;
+
+
+.progress-first(@n, @i: 0) when (@i < 50) {
+  .progress-@{i} {
+    background-image:
+      linear-gradient(90deg, @progress-color 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)),
+      linear-gradient((90deg+(@increment*@i*1deg/@step)), @bar-color 50%, @progress-color 50%, @progress-color);
+  }
+  .progress-first(@n, (@i + @step));
+}
+
+.progress-second(@n, @i: 50) when  (@i =< 100) {
+  .progress-@{i} {
+    background-image:
+      linear-gradient( ((@increment*@i*1deg/@step)-270deg), @bar-color 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)),
+      linear-gradient(270deg, @bar-color 50%, @progress-color 50%, @progress-color);
+  }
+  .progress-second(@n, (@i + @step));
+}
+
+.progress-first_orange(@n, @i: 0) when (@i < 50) {
+  .progress-@{i}_orange {
+    background-image:
+      linear-gradient(90deg, @progress-color_orange 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)),
+      linear-gradient((90deg+(@increment*@i*1deg/@step)), @bar-color_orange 50%, @progress-color_orange 50%, @progress-color_orange);
+  }
+  .progress-first_orange(@n, (@i + @step));
+}
+
+.progress-second_orange(@n, @i: 50) when  (@i =< 100) {
+  .progress-@{i}_orange {
+    background-image:
+      linear-gradient( ((@increment*@i*1deg/@step)-270deg), @bar-color 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)),
+      linear-gradient(270deg, @bar-color_orange 50%, @progress-color_orange 50%, @progress-color_orange);
+  }
+  .progress-second_orange(@n, (@i + @step));
+}
+
+.progress-first_green(@n, @i: 0) when (@i < 50) {
+  .progress-@{i}_green {
+    background-image:
+      linear-gradient(90deg, @progress-color_green 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)),
+      linear-gradient((90deg+(@increment*@i*1deg/@step)), @bar-color_green 50%, @progress-color_green 50%, @progress-color_green);
+  }
+  .progress-first_green(@n, (@i + @step));
+}
+
+.progress-second_green(@n, @i: 50) when  (@i =< 100) {
+  .progress-@{i}_green {
+    background-image:
+      linear-gradient( ((@increment*@i*1deg/@step)-270deg), @bar-color 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)),
+      linear-gradient(270deg, @bar-color_green 50%, @progress-color_green 50%, @progress-color_green);
+  }
+  .progress-second_orange(@n, (@i + @step));
+}
+
+
+.progress-first(100);
+.progress-second(100);
+
+
+.progress-first_orange(100);
+.progress-second_orange(100);
+
+.progress-first_green(100);
+.progress-second_green(100);
+
+/* -------------------------------------
+ * player variables
+ * ------------------------------------- */
+
+@bar-color: #647280;
+@progress-color: #4CB5DB;
+@overlay-bg-color:#f8f9fd;
+
+
+@progress-radial_size:154px;
+@overlay_size: 136px;
+@margin_size: (@progress-radial_size - @overlay_size)/2;
+
+
+.progress-radial {
+  margin: 0 auto;
+  position: relative;
+  width: @progress-radial_size;
+  height: @progress-radial_size;
+  border-radius: 50%;
+  background-color: @bar-color;
+  .overlay {
+    position: absolute;
+    width: @overlay_size;
+    height: @overlay_size;
+    background-color: @overlay-bg-color;
+    border-radius: 50%;
+    margin-left: @margin_size;
+    margin-top: @margin_size;
+    text-align: center;
+    line-height: 30px;
+    font-size: 22px;
+  }
+}
+

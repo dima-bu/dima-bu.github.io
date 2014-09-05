@@ -1,0 +1,84 @@
+-var col = {formleft: 'col-md-2', formright: 'col-md-5', formtable: 'col-all-20p'}
+-var row = {class: 'g_form-row -groups', formtableclass: 'g_form-row -groups -toppadding', button: 'row_button'}
+
+form
+  .row_main-title
+    h2.g_main-title.-margin2  <i class="icon red-plus"></i> Create Products
+  div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") Product Name
+      div(class="#{col.formright}")
+        input.g_input(type="text")
+  div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") Offers to gather
+      div(class="#{col.formright}")
+        input.g_input(type="text")
+  div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") URL (thank you)
+      div(class="#{col.formright}")
+        input.g_input(type="text")
+        .attention-block.media.-home.-right
+          i.icon.red-arrow-left
+          i.icon.attention.fll
+          .media-body <p> Leave the URL Settings blank if uncertain. These will need to be set correctly for the webform to work</p>
+  .div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") URL (client login)
+      div(class="#{col.formright}")
+        input.g_input(type="text")
+  div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") Early Bird Window
+      div(class="#{col.formright}")
+        input.g_input(type="text")
+  div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") Fee (% of offer)
+      div(class="#{col.formright}")
+        input.g_input(type="text")
+  div(class=" #{row.class} ")
+    .row
+      label(class="g_label #{col.formleft}") Category
+      div(class="#{col.formright}").checking_group
+          +checkbox('checkbox', 'lawyers', '-white-blue')
+          label.checking_label-inline(for="lawyers") Lawyers
+          +checkbox('checkbox', 'accountants', '-white-blue')
+          label.checking_label-inline(for="accountants") Accountants
+  hr.clear-hr
+  .row_main-title
+    h2.g_form-subtitle Form Builder
+  .g_dotted_header.dotted-bg
+    .row
+      label(class="g_label #{col.formtable}") Name
+      label(class="g_label #{col.formtable}") Type
+      label(class="g_label #{col.formtable}") Description
+      label(class="g_label #{col.formtable}") Required
+      label(class="g_label #{col.formtable}") Paid Info
+  div(class=" #{row.formtableclass} ")
+    .row
+      div(class="#{col.formtable}")
+        input.g_input(type="text", placeholder="Request")
+      div(class="#{col.formtable}")
+        select.g_select
+          option Textared
+          option Input
+          option Select
+      div(class="#{col.formtable}")
+        input.g_input(type="text", placeholder="Your Request *")
+      div(class="#{col.formtable} checking_group")
+        +checkbox('checkbox', '33', '-white-blue')
+      div(class="#{col.formtable} checking_group ")
+        +checkbox('checkbox', '222', '-white-blue')
+  div(class=" #{row.button} ")
+      button.simple-btn <i class="icon white-plus"></i> Add Field
+  .row_main-title
+    h2.g_form-subtitle Form Kode
+  div(class=" #{row.class} ")
+    .row
+      .col-md-8
+        textarea.g_textarea(rows="12") <html class=" cc-js cc-history cc-borderimage cc-cssanimations cc-localstorage cc-no-cssscrollbar" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml" dir="ltr"><head><body class="glossary show" data-current-user-id="53f464e27c82ca6a1600154d"></html>
+  div(class=" #{row.button} ")
+    button.simple-btn <i class="icon white-check"></i>Save
+a.icon.close

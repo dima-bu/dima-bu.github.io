@@ -1,0 +1,44 @@
+ul.left-menu.clear-list
+      li.left-menu_logo
+        a(href="index.html")
+          img(src="img/logo.png")
+      li
+        i.icon.gray-divider
+      li
+        a(class="left-menu_link #{item1.active}", href="#{item1.link}")
+          i.icon.red-line
+          span.left-menu_icon
+            i(class="icon #{item1.class}")
+          span.left-menu_name #{item1.title}
+
+      li
+        i.icon.gray-divider
+      li
+        a(class="left-menu_link #{item2.active} ", href="#{item2.link}")
+          i.icon.red-line
+          span.left-menu_icon
+            i(class="icon #{item2.class}")
+          span.left-menu_name #{item2.title}
+
+      li
+        i.icon.gray-divider
+      li
+        a(class="left-menu_link #{item3.active} ", href="#{item3.link}")
+          i.icon.red-line
+          span.left-menu_icon
+            i(class="icon #{item3.class}")
+          span.left-menu_name #{item3.title}
+      if item4.show=true
+        li(class="#{item4.active}")
+          i.icon.gray-divider
+        li
+          a(class="left-menu_link #{item4.active} ", href="#{item4.link}")
+            i.icon.red-line
+            span.left-menu_icon
+              i(class="icon #{item4.class}")
+            span.left-menu_name #{item4.title}
+      else
+        li sfddsf
+
+
+

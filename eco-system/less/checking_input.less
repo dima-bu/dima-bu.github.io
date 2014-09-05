@@ -1,0 +1,142 @@
+
+/*checking mixins*/
+
+
+.checking_input(@checking-wrapper-size, @checking-inner-color_checked, @checking-wrapper-color_checked, @checking-wrapper-border-color_checked) {
+  opacity: 0;
+  position: absolute;
+  height: @checking-wrapper-size;
+  width: @checking-wrapper-size;
+  cursor: pointer;
+  float: left;
+  margin-right: 15px;
+  &:checked{
+    ~.checking_input-pseudo-wrapper {
+      background-color:@checking-wrapper-color_checked;
+      border-color: @checking-wrapper-border-color_checked;
+      .checking_input-pseudo {
+        background-color:@checking-inner-color_checked;
+        .icon {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.checking_input-pseudo-wrapper(@checking-wrapper-color, @checking-wrapper-border-color, @checking-wrapper-size, @checking-wrapper-border-size, @checking-wrapper-radius) {
+  cursor: pointer;
+  font-size: 0;
+  vertical-align: top;
+  background-color:  @checking-wrapper-color;
+  border:@checking-wrapper-border-size solid @checking-wrapper-border-color;
+  height: @checking-wrapper-size;
+  line-height: @checking-wrapper-size - (@checking-wrapper-border-size*2);
+  width: @checking-wrapper-size;
+  border-radius:  @checking-wrapper-radius;
+  display: inline-block;
+  text-align: center;
+}
+
+.checking_input-pseudo (@checking-inner-color, @checking-inner-size, @checking-inner-radius) {
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: @checking-inner-color;
+  height: @checking-inner-size;
+  width: @checking-inner-size;
+  line-height: @checking-inner-size;
+  border-radius: @checking-inner-radius;
+  cursor: pointer;
+  .icon {
+    vertical-align: middle;
+    display: none;
+  }
+}
+
+.checking_item(@checking-wrapper-size) {
+  position: relative;
+  line-height: @checking-wrapper-size;
+  height: @checking-wrapper-size;
+}
+
+
+
+@checking-wrapper-size: 22px;
+@checking-inner-size: 12px;
+@checking-wrapper-border-size: 1px;
+@checking-wrapper-radius:3px;
+@checking-inner-radius:3px;
+
+.checking_item {
+
+  &.-white-blue {
+
+    vertical-align: top;
+    /*variables for gray version START*/
+    @checking-wrapper-color:#ffffff;
+    @checking-wrapper-color_checked:#5eaee3;
+
+    @checking-inner-color:#ffffff;
+    @checking-inner-color_checked:#5eaee3;
+
+
+    @checking-wrapper-border-color:  #E7E7E7;
+    @checking-wrapper-border-color_checked: #5eaee3;
+    /*variables for gray version END*/
+
+
+    .checking_item(@checking-wrapper-size);
+
+    .checking_input-pseudo-wrapper {
+      .checking_input-pseudo-wrapper(@checking-wrapper-color, @checking-wrapper-border-color, @checking-wrapper-size, @checking-wrapper-border-size, @checking-wrapper-radius);
+    }
+
+    .checking_input {
+      .checking_input(@checking-wrapper-size, @checking-inner-color_checked, @checking-wrapper-color_checked, @checking-wrapper-border-color_checked);
+    }
+
+    .checking_input-pseudo {
+      .checking_input-pseudo (@checking-inner-color, @checking-inner-size, @checking-inner-radius);
+    }
+
+  }
+
+  &.-white-blue-radio {
+
+    vertical-align: top;
+    /*variables for gray version START*/
+
+    @checking-wrapper-radius:11px;
+    @checking-inner-radius:10px;
+    @checking-inner-size: 10px;
+    @checking-wrapper-color:#ffffff;
+    @checking-wrapper-color_checked:#5eaee3;
+
+    @checking-inner-color:#ffffff;
+    @checking-inner-color_checked:#ffffff;
+
+
+    @checking-wrapper-border-color:  #E7E7E7;
+    @checking-wrapper-border-color_checked: #5eaee3;
+    /*variables for gray version END*/
+
+
+    .checking_item(@checking-wrapper-size);
+
+    .checking_input-pseudo-wrapper {
+      .checking_input-pseudo-wrapper(@checking-wrapper-color, @checking-wrapper-border-color, @checking-wrapper-size, @checking-wrapper-border-size, @checking-wrapper-radius);
+    }
+
+    .checking_input {
+      .checking_input(@checking-wrapper-size, @checking-inner-color_checked, @checking-wrapper-color_checked, @checking-wrapper-border-color_checked);
+    }
+
+    .checking_input-pseudo {
+      .checking_input-pseudo (@checking-inner-color, @checking-inner-size, @checking-inner-radius);
+    }
+
+  }
+
+}
+
