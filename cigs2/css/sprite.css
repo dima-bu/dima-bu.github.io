@@ -1,72 +1,72 @@
 .DHL {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1131px;
+  background-position: 0px -1230px;
   width: 138px;
   height: 31px;
 }
 .Geschmack {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2332px;
+  background-position: 0px -2151px;
   width: 60px;
   height: 60px;
 }
 .Zutaten {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2052px;
+  background-position: 0px -2431px;
   width: 60px;
   height: 60px;
 }
 .achive_icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1213px;
+  background-position: 0px -1312px;
   width: 32px;
   height: 32px;
 }
 .begutachtet {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2262px;
+  background-position: 0px -2291px;
   width: 60px;
   height: 60px;
 }
 .benefits {
   background-image: url(../img/sprite.png);
-  background-position: 0px -907px;
+  background-position: 0px -893px;
   width: 26px;
   height: 26px;
 }
 .black-check {
   background-image: url(../img/sprite.png);
-  background-position: 0px -150px;
+  background-position: 0px -171px;
   width: 13px;
   height: 11px;
 }
 .blog {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3230px;
+  background-position: 0px -3749px;
   width: 410px;
   height: 200px;
 }
 .blog_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2750px;
+  background-position: 0px -3169px;
   width: 330px;
   height: 150px;
 }
 .bonus {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1340px;
+  background-position: 0px -1439px;
   width: 35px;
   height: 35px;
 }
 .breadcrumb_divider {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1531px;
+  background-position: 0px -1730px;
   width: 6px;
   height: 40px;
 }
 .cart {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1297px;
+  background-position: 0px -1396px;
   width: 40px;
   height: 33px;
 }
@@ -78,19 +78,19 @@
 }
 .check-act {
   background-image: url(../img/sprite.png);
-  background-position: 0px -979px;
+  background-position: 0px -965px;
   width: 26px;
   height: 26px;
 }
 .check {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1015px;
+  background-position: 0px -785px;
   width: 26px;
   height: 26px;
 }
 .delete {
   background-image: url(../img/sprite.png);
-  background-position: 0px -427px;
+  background-position: 0px -449px;
   width: 24px;
   height: 23px;
 }
@@ -108,151 +108,169 @@
 }
 .drop {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: 0px -54px;
   width: 10px;
   height: 8px;
 }
 .drop_sm {
   background-image: url(../img/sprite.png);
-  background-position: 0px -54px;
+  background-position: 0px 0px;
   width: 8px;
   height: 8px;
 }
 .email-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1731px;
+  background-position: 0px -1780px;
   width: 40px;
   height: 40px;
 }
 .facebook-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1481px;
+  background-position: 0px -1630px;
   width: 40px;
   height: 40px;
 }
 .facebook {
   background-image: url(../img/sprite.png);
-  background-position: 0px -625px;
+  background-position: 0px -647px;
   width: 12px;
   height: 24px;
 }
 .flavor {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2402px;
+  background-position: 0px -2501px;
   width: 165px;
   height: 80px;
 }
 .fragen {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3440px;
+  background-position: 0px -3539px;
   width: 410px;
   height: 200px;
 }
 .fragen_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2910px;
+  background-position: 0px -2689px;
   width: 330px;
   height: 150px;
 }
 .google-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1831px;
+  background-position: 0px -1580px;
   width: 40px;
   height: 40px;
 }
 .google-plus {
   background-image: url(../img/sprite.png);
-  background-position: 0px -364px;
+  background-position: 0px -386px;
   width: 25px;
   height: 21px;
 }
 .helpfl {
   background-image: url(../img/sprite.png);
-  background-position: 0px -493px;
+  background-position: 0px -581px;
   width: 23px;
   height: 23px;
 }
+.icon-user {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -857px;
+  width: 19px;
+  height: 26px;
+}
 .locator {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3650px;
+  background-position: 0px -3329px;
   width: 410px;
   height: 200px;
 }
 .locator_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3070px;
+  background-position: 0px -2849px;
   width: 330px;
   height: 150px;
 }
 .logo-paypal {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1385px;
+  background-position: 0px -1484px;
   width: 135px;
   height: 36px;
 }
+.loupe-mbl {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1271px;
+  width: 36px;
+  height: 31px;
+}
 .loupe {
   background-image: url(../img/sprite.png);
-  background-position: 0px -192px;
+  background-position: 0px -214px;
   width: 17px;
   height: 16px;
 }
 .made {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2122px;
+  background-position: 0px -2361px;
   width: 60px;
   height: 60px;
 }
+.main-menu-arr {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -192px;
+  width: 8px;
+  height: 12px;
+}
 .more {
   background-image: url(../img/sprite.png);
-  background-position: 0px -559px;
+  background-position: 0px -548px;
   width: 23px;
   height: 23px;
 }
 .next-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -943px;
+  background-position: 0px -1001px;
   width: 21px;
   height: 26px;
 }
 .next-step-arr {
   background-image: url(../img/sprite.png);
-  background-position: 0px -592px;
+  background-position: 0px -482px;
   width: 24px;
   height: 23px;
 }
 .nothelpfl {
   background-image: url(../img/sprite.png);
-  background-position: 0px -526px;
+  background-position: 0px -614px;
   width: 23px;
   height: 23px;
 }
 .num_first {
   background-image: url(../img/sprite.png);
-  background-position: 0px -871px;
+  background-position: 0px -929px;
   width: 27px;
   height: 26px;
 }
 .num_second {
   background-image: url(../img/sprite.png);
-  background-position: 0px -835px;
+  background-position: 0px -1073px;
   width: 27px;
   height: 26px;
 }
 .num_third {
   background-image: url(../img/sprite.png);
-  background-position: 0px -799px;
+  background-position: 0px -1037px;
   width: 27px;
   height: 26px;
 }
 .paypal {
   background-image: url(../img/sprite.png);
-  background-position: 0px -395px;
+  background-position: 0px -417px;
   width: 52px;
   height: 22px;
 }
 .pinterest {
   background-image: url(../img/sprite.png);
-  background-position: 0px -659px;
+  background-position: 0px -681px;
   width: 24px;
   height: 24px;
 }
@@ -264,121 +282,121 @@
 }
 .popularsten {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1781px;
+  background-position: 0px -1830px;
   width: 41px;
   height: 40px;
 }
 .premium {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2192px;
+  background-position: 0px -2221px;
   width: 60px;
   height: 60px;
 }
 .prev-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -763px;
+  background-position: 0px -821px;
   width: 21px;
   height: 26px;
 }
 .qustn {
   background-image: url(../img/sprite.png);
-  background-position: 0px -693px;
+  background-position: 0px -715px;
   width: 24px;
   height: 25px;
 }
 .recycling_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2590px;
+  background-position: 0px -3009px;
   width: 330px;
   height: 150px;
 }
 .reload-act {
   background-image: url(../img/sprite.png);
-  background-position: 0px -276px;
+  background-position: 0px -269px;
   width: 24px;
   height: 19px;
 }
 .reload {
   background-image: url(../img/sprite.png);
-  background-position: 0px -247px;
+  background-position: 0px -298px;
   width: 24px;
   height: 19px;
 }
 .review {
   background-image: url(../img/sprite.png);
-  background-position: 0px -728px;
+  background-position: 0px -750px;
   width: 24px;
   height: 25px;
 }
 .ribbon-new-mini {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1985px;
+  background-position: 0px -2084px;
   width: 58px;
   height: 57px;
 }
 .ribbon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2492px;
+  background-position: 0px -2591px;
   width: 89px;
   height: 88px;
 }
 .schnelle {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1631px;
+  background-position: 0px -1980px;
   width: 41px;
   height: 40px;
 }
 .sep {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1431px;
+  background-position: 0px -1530px;
   width: 6px;
   height: 40px;
 }
 .sofort {
   background-image: url(../img/sprite.png);
-  background-position: 0px -460px;
+  background-position: 0px -515px;
   width: 70px;
   height: 23px;
 }
 .support {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1255px;
+  background-position: 0px -1354px;
   width: 78px;
   height: 32px;
 }
 .telephone {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1931px;
+  background-position: 0px -2030px;
   width: 33px;
   height: 44px;
 }
 .title-arrow_left {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1091px;
+  background-position: 0px -1109px;
   width: 222px;
   height: 30px;
 }
 .title-arrow_right {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1051px;
+  background-position: 0px -1149px;
   width: 222px;
   height: 30px;
 }
 .trusted {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1881px;
+  background-position: 0px -1880px;
   width: 41px;
   height: 40px;
 }
 .twitter-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1681px;
+  background-position: 0px -1680px;
   width: 40px;
   height: 40px;
 }
 .twitter {
   background-image: url(../img/sprite.png);
-  background-position: 0px -334px;
+  background-position: 0px -356px;
   width: 24px;
   height: 20px;
 }
@@ -396,31 +414,31 @@
 }
 .update-or {
   background-image: url(../img/sprite.png);
-  background-position: 0px -218px;
+  background-position: 0px -327px;
   width: 24px;
   height: 19px;
 }
 .update-orng {
   background-image: url(../img/sprite.png);
-  background-position: 0px -305px;
+  background-position: 0px -240px;
   width: 24px;
   height: 19px;
 }
 .versandkostenfreie {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1581px;
+  background-position: 0px -1930px;
   width: 41px;
   height: 40px;
 }
 .way-arr {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1172px;
+  background-position: 0px -1189px;
   width: 40px;
   height: 31px;
 }
 .white-check {
   background-image: url(../img/sprite.png);
-  background-position: 0px -171px;
+  background-position: 0px -150px;
   width: 13px;
   height: 11px;
 }
