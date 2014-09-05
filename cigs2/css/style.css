@@ -4049,7 +4049,7 @@ h3.search-word strong {
   width: 33px;
   height: 33px;
   display: block;
-  margin: 5px;
+  margin: 5px !important;
   border: 1px solid #dddde4;
 }
 .checking_list.-square .-color .checking_input-pseudo .icon {
@@ -4057,7 +4057,7 @@ h3.search-word strong {
 }
 .checking_list.-inline .checking_item {
   float: left;
-  margin-right: 5px;
+  margin-right: 5px !important;
 }
 /*color checkboxes*/
 .checking_item.-color {
