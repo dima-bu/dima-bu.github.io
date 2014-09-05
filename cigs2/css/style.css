@@ -3933,6 +3933,7 @@ h3.search-word strong {
   /*variables for light version*/
 }
 .checking_list.-light .checking_input-pseudo-wrapper {
+  padding: 3px;
   cursor: pointer;
   font-size: 0;
   vertical-align: top;
@@ -3944,7 +3945,6 @@ h3.search-word strong {
   border-radius: 12px;
   display: inline-block;
   text-align: center;
-  padding: 5px;
 }
 .checking_list.-light .checking_input {
   opacity: 0;
@@ -3989,6 +3989,7 @@ h3.search-word strong {
   /*variables for dark version*/
 }
 .checking_list.-dark .checking_input-pseudo-wrapper {
+  padding: 0;
   cursor: pointer;
   font-size: 0;
   vertical-align: top;
@@ -4000,7 +4001,6 @@ h3.search-word strong {
   border-radius: 12px;
   display: inline-block;
   text-align: center;
-  padding: 5px;
 }
 .checking_list.-dark .checking_input {
   opacity: 0;
@@ -4068,6 +4068,7 @@ h3.search-word strong {
   height: 45px;
 }
 .checking_item.-color .checking_input-pseudo-wrapper {
+  padding: 5px;
   cursor: pointer;
   font-size: 0;
   vertical-align: top;
@@ -4079,7 +4080,6 @@ h3.search-word strong {
   border-radius: 22.5px;
   display: inline-block;
   text-align: center;
-  padding: 5px;
 }
 .checking_item.-color .checking_input {
   opacity: 0;
@@ -4557,6 +4557,7 @@ textarea:focus {
 .cart-block-mbl,
 button.search_submit.loupe-mbl,
 .slider-wrapper-mbl,
+.menu-home-mbl,
 button.send-mbl,
 .desktop-mbl {
   display: none;
@@ -4872,7 +4873,7 @@ button.send-mbl,
     height: 66px;
   }
   .product_information ul.nav-tabs li a {
-    height: 100%;
+    height: 66px;
   }
   /* end PRODUCT-PAGE-A, PRODUCT-PAGE-B*/
   /*SHOPPING-CART*/
@@ -4975,8 +4976,12 @@ button.send-mbl,
   .cart_wrapper,
   .search_intro,
   button.search_submit.loupe,
-  .slider-wrapper .slider {
+  .slider-wrapper .slider,
+  .bottom-part-header .main-menu ul.main-menu_list {
     display: none;
+  }
+  .menu-home-mbl {
+    display: block;
   }
   .header-top {
     height: 50px;
