@@ -54,6 +54,7 @@ $(document).ready(function() {
         width: 50
     });
 
+
     /*popups elements*/
 
     $('.login_link.popup-toggle').click(function(){
