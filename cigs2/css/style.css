@@ -2844,6 +2844,7 @@ p.product-type {
   font-style: italic;
   color: #ee9565;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .add_more_wrapper .more-btn {
   padding: 0;
@@ -3054,7 +3055,7 @@ span.label {
   margin-bottom: 0;
 }
 .reviews .user-block p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 .bonus_block .bonus-image {
@@ -5596,6 +5597,13 @@ button.send-mbl,
   .product_header-tablet {
     display: block;
   }
+  .product_header-tablet .product_title,
+  .product_header-tablet .product_art,
+  .product_header-tablet .price,
+  .product_header-tablet .review_count-wrapper {
+    width: 100%;
+    float: none;
+  }
   .product-page-type {
     /*PREMIUM-PAGE*/
   }
@@ -6457,4 +6465,64 @@ button.send-mbl,
     text-align: left;
   }
   /*PRODUCT-INFORMATION*/
+  .questions .add-btn.block-rght span,
+  .reviews .add-btn.block-rght span {
+    display: none;
+  }
+  .questions .simple-btn.-lg,
+  .reviews .simple-btn.-lg {
+    width: 100%;
+  }
+  .questions .info-qstn .label-orng,
+  .reviews .info-qstn .label-orng {
+    color: #ee9565;
+    font-weight: 700;
+  }
+  .questions .info-qstn .col-md-10:last-child,
+  .reviews .info-qstn .col-md-10:last-child {
+    width: 100%;
+    padding-left: 0;
+  }
+  .reviews .user-block {
+    border-bottom: 2px solid #d7dee4;
+  }
+  .question_block {
+    border-bottom: 2px solid #d7dee4;
+  }
+  .question_block:last-child {
+    border: none;
+  }
+  .user-block {
+    position: relative;
+  }
+  .user-block .way {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .question_field .label,
+  .review_field .label,
+  .reviews .score .label {
+    text-transform: uppercase;
+  }
+  .reviews .user-review {
+    padding-bottom: 80px;
+  }
+  .reviews .helpfulness {
+    position: absolute;
+    bottom: 0;
+    float: none;
+    width: 100%;
+  }
+  .reviews .helpfulness .label {
+    float: left;
+    width: 70%;
+    text-align: left;
+  }
+  .reviews .helpfulness .block-lft,
+  .reviews .helpfulness .block-rght {
+    margin-top: 0;
+    padding: 0;
+    width: 15%;
+  }
 }
