@@ -3135,28 +3135,28 @@ span.label {
   border: 1px solid #d7dee4;
   border-top: none;
 }
-#your-address .col-md-6 {
+.your-address .col-md-6 {
   min-height: 70px;
   margin-bottom: 10px;
 }
-#your-address .col-md-6.last {
+.your-address .col-md-6.last {
   float: none;
   clear: both;
   padding-top: 5px;
 }
-#your-address ul.checking_list.-inline.gender .checking_item {
+.your-address ul.checking_list.-inline.gender .checking_item {
   margin-right: 0;
 }
-#your-address ul.checking_list.-inline.gender li {
+.your-address ul.checking_list.-inline.gender li {
   width: 48%;
 }
-#your-address label.required {
+.your-address label.required {
   color: #dc4848;
 }
-#your-address .g_input {
+.your-address .g_input {
   min-height: 50px;
 }
-#your-address h3 {
+.your-address h3 {
   font-size: 26px;
   text-transform: capitalize;
   border-bottom: 1px solid #ccc;
@@ -3164,45 +3164,45 @@ span.label {
   margin-right: 15px;
   padding-bottom: 20px;
 }
-#your-address h3 strong {
+.your-address h3 strong {
   text-transform: capitalize;
 }
-#your-address h5 {
+.your-address h5 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
 }
-#your-address .quick {
+.your-address .quick {
   padding-top: 35px;
 }
-#your-address ul {
+.your-address ul {
   padding: 0;
 }
-#your-address ul li {
+.your-address ul li {
   list-style: none;
   display: inline-block;
 }
-#your-address ul li.street {
+.your-address ul li.street {
   width: 70%;
 }
-#your-address ul li.number {
+.your-address ul li.number {
   width: 25%;
 }
-#your-address ul li.half {
+.your-address ul li.half {
   width: 48%;
 }
-#your-address ul li.rght {
+.your-address ul li.rght {
   float: right;
 }
-#your-address .tab-content {
+.your-address .tab-content {
   border: 1px solid #d7dee4;
   border-top: none;
 }
-#your-address .post-and-pl {
+.your-address .post-and-pl {
   width: 51%;
   padding-right: 25px;
 }
-#your-address .country-input-field {
+.your-address .country-input-field {
   width: 49%;
   padding-left: 10px;
 }
@@ -3898,6 +3898,36 @@ h3.search-word strong {
 }
 .account-wrapper .tab-content #changebilling .details-button-block {
   padding-top: 30px;
+}
+#changeaddress .your-address h3 {
+  margin: 38px 0 0 0;
+}
+#changeaddress .checking_list.-light .checking_item {
+  margin-bottom: 0;
+}
+#changeaddress ul.address_type,
+#changeaddress ul.gender {
+  overflow: hidden;
+}
+#changeaddress ul.address_type {
+  margin-bottom: 0;
+}
+#changeaddress ul.address_type li {
+  width: 32%;
+}
+#changeaddress .col-md-8 {
+  margin-top: 15px;
+}
+#changeaddress .details-button-block {
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+#changeaddress .back-btn {
+  padding: 15px 25px;
+}
+#changeaddress .back-btn .btn-title {
+  padding: 0;
 }
 #curpoints h3.fll {
   font-weight: 700;
