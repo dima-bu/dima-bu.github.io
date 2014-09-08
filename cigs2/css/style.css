@@ -2261,9 +2261,12 @@ h2.arrow-title {
   float: left;
 }
 .option-block.mini {
-  padding-top: 60px;
-  padding-left: 25px;
+  padding-top: 15px;
+  padding-left: 15px;
   font-size: 14px;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  background-position-x: -85px !important;
 }
 .option-block.mini h4 {
   font-size: 24px;
@@ -3709,6 +3712,7 @@ h3.search-word strong {
   padding: 0 20px 60px;
   background: #ffffff;
   border-left: 1px solid #D7DEE4;
+  min-height: 421px;
 }
 .account-wrapper .tab-content h3 {
   font-size: 26px;
@@ -3744,6 +3748,17 @@ h3.search-word strong {
   border-radius: 0;
   width: 101%;
 }
+.account-tabs.col-md-3.nav.nav-tabs li.active a:last-child {
+  background: #ffffff;
+}
+.account-tabs.col-md-3.nav.nav-tabs li.active a:last-child p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c4560;
+}
+.account-tabs.col-md-3.nav.nav-tabs li.active a:last-child p.num {
+  color: #ee9565;
+}
 .account-tabs.col-md-3.nav.nav-tabs li a {
   text-transform: capitalize;
   font-size: 16px;
@@ -3752,6 +3767,7 @@ h3.search-word strong {
   margin-right: 0;
   border: none;
   border-radius: 0;
+  overflow: hidden;
 }
 .account-tabs.col-md-3.nav.nav-tabs li.active > a,
 .account-tabs.col-md-3.nav.nav-tabs li > a:hover,
@@ -3767,12 +3783,12 @@ h3.search-word strong {
   font-weight: 300;
   color: #9090a0;
   margin: 0;
-  padding: 10px 15px;
+  padding: 0;
   line-height: 1.42857143;
 }
 .account-tabs.col-md-3.nav.nav-tabs p.num {
   float: right;
-  margin: 10px 15px;
+  margin: 0px 15px;
   font-weight: 700;
   font-size: 16px;
   color: #9090a0;
@@ -3883,12 +3899,73 @@ h3.search-word strong {
 .account-wrapper .tab-content #changebilling .details-button-block {
   padding-top: 30px;
 }
-.col-md-7.already,
-.col-md-5.new {
+#curpoints h3.fll {
+  font-weight: 700;
+  color: #484a4c;
+}
+#curpoints p.points {
+  font-size: 26px;
+  font-weight: 700;
+  margin-left: 5px;
+  margin-top: 35px;
+  text-transform: capitalize;
+  color: #ee9565;
+  float: left;
+}
+#curpoints .table-points .table-title-row {
+  background: #ebf1f6;
+  overflow: hidden;
+  height: 30px;
+  border-top: 1px solid #dae1e8;
+  border-bottom: 1px solid #dae1e8;
+  background: #f4f7fa;
+}
+#curpoints .table-points .table-title-row p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9ba3ab;
+  margin: 5px 0;
+}
+#curpoints .table-points .table-title-row .quantity-input_icon.up_wrapper {
+  top: -1px;
+}
+#curpoints .table-points .table-title-row .quantity-input_icon.drop_wrapper {
+  bottom: -3px;
+}
+#curpoints .table-points .my-points-block {
+  height: 50px;
+  border-bottom: 1px solid #d7dee4;
+  padding-top: 15px;
+}
+#curpoints .table-points .my-points-block .ver-status {
+  float: left;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+#curpoints .table-points .my-points-block .date-of-ord {
+  color: #9ba3ab;
+}
+#curpoints .table-points .my-points-block .number-of-ord,
+#curpoints .table-points .my-points-block .amount-points,
+#curpoints .table-points .my-points-block .collected-points {
+  color: #3c6086;
+  font-weight: 700;
+}
+#curpoints .table-points .my-points-block .status-of-ord p {
+  color: #9ba3ab;
+  font-style: italic;
+  font-weight: 300;
+}
+#curpoints .table-points .my-points-block .issued-points {
+  color: #eb7070;
+  font-weight: 300;
+}
+.col-md-7.login-already,
+.col-md-5.login-new {
   padding: 30px 20px;
 }
-.col-md-7.already .title,
-.col-md-5.new .title {
+.col-md-7.login-already .title,
+.col-md-5.login-new .title {
   clear: both;
   overflow: hidden;
   width: 100%;
@@ -3896,33 +3973,33 @@ h3.search-word strong {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.col-md-7.already .title span,
-.col-md-5.new .title span {
+.col-md-7.login-already .title span,
+.col-md-5.login-new .title span {
   float: left;
   font-size: 26px;
   color: #484a4c;
   margin-right: 5px;
 }
-.col-md-7.already .title span.company-name,
-.col-md-5.new .title span.company-name {
+.col-md-7.login-already .title span.company-name,
+.col-md-5.login-new .title span.company-name {
   color: #3c6086;
   float: left;
 }
-.col-md-7.already h4,
-.col-md-5.new h4 {
+.col-md-7.login-already h4,
+.col-md-5.login-new h4 {
   font-size: 14px;
   font-weight: bold;
   color: #3b3d3f;
   text-transform: uppercase;
 }
-.col-md-7.already .title {
+.col-md-7.login-already .title {
   font-weight: 700;
 }
-.col-md-7.already .col-md-6.address {
+.col-md-7.login-already .col-md-6.address {
   padding-left: 0;
   margin-top: 20px;
 }
-.col-md-7.already .col-md-6.password {
+.col-md-7.login-already .col-md-6.password {
   padding-right: 0;
   margin-top: 20px;
 }
@@ -5293,8 +5370,8 @@ button.send-mbl,
     display: none;
   }
   /*LOGIN PAGE*/
-  .col-md-7.already,
-  .col-md-5.new {
+  .col-md-7.login-already,
+  .col-md-5.login-new {
     width: 100%;
   }
 }
