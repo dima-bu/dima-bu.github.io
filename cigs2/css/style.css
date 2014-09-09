@@ -3748,9 +3748,6 @@ h3.search-word strong {
   border-radius: 0;
   width: 101%;
 }
-.account-tabs.col-md-3.nav.nav-tabs li.active a:last-child {
-  background-color: #ffffff;
-}
 .account-tabs.col-md-3.nav.nav-tabs li.active a:last-child p {
   font-size: 16px;
   font-weight: bold;
@@ -3758,6 +3755,9 @@ h3.search-word strong {
 }
 .account-tabs.col-md-3.nav.nav-tabs li.active a:last-child p.num {
   color: #ee9565;
+}
+.account-tabs.col-md-3.nav.nav-tabs li.active .no-backgr {
+  background: #ffffff;
 }
 .account-tabs.col-md-3.nav.nav-tabs li a {
   text-transform: capitalize;
@@ -3961,6 +3961,31 @@ h3.search-word strong {
 }
 #paymentmethod .details-button-block .back-btn .btn-title {
   padding: 0;
+}
+#friends .email-field textarea,
+#friends .message textarea {
+  width: 100%;
+  min-height: 130px;
+  padding: 10px 15px;
+}
+#friends .email-field textarea {
+  color: #314d6b;
+  font-weight: 700;
+}
+#friends .message textarea {
+  color: #9090a0;
+}
+#friends .details-button-block {
+  margin-top: 20px;
+}
+.instruction {
+  margin-bottom: 20px;
+}
+.instruction p {
+  padding-top: 25px;
+  margin: 0;
+  font-size: 16px;
+  color: #9090a0;
 }
 #curpoints h3.fll {
   font-weight: 700;
