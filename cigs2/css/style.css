@@ -3899,6 +3899,121 @@ h3.search-word strong {
 .account-wrapper .tab-content #changebilling .details-button-block {
   padding-top: 30px;
 }
+.col-md-1.actions {
+  padding: 0;
+  text-align: center;
+}
+.my-order-block {
+  min-height: 50px;
+  border-bottom: 1px solid #d7dee4;
+  clear: both;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.my-order-block .ver-status {
+  float: left;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+.my-order-block .date-of-ord {
+  color: #9ba3ab;
+  font-weight: 300;
+}
+.my-order-block .number-of-ord {
+  color: #3c6086;
+  font-weight: 700;
+}
+.my-order-block .col-md-2.dispatch-of-ord {
+  color: #9ba3ab;
+  font-weight: 900;
+  padding: 0 5px;
+}
+.my-order-block .status-ord p {
+  color: #9ba3ab;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+}
+.my-order-block a.simple-btn.action {
+  width: 60px;
+  height: 30px;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 6px 12px;
+  background: #3c6086;
+  opacity: 0.3;
+}
+.my-order-block .col-md-12.account-table.hide-block {
+  margin-top: 15px;
+  display: none;
+}
+.my-order-block.active {
+  padding-bottom: 0;
+}
+.my-order-block.active a.simple-btn.action {
+  opacity: 1;
+}
+.my-order-block.active .col-md-12.account-table.hide-block {
+  display: block;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .col-md-4.article-name {
+  padding-left: 0;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .product-set_title {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .product-set_subtitle {
+  font-size: 12px;
+  color: #aeaeb9;
+  font-weight: 300;
+  margin: 0;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .menge p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 25%;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .price {
+  font-size: 18px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .unit-price .price {
+  font-weight: 700;
+  margin-top: 25px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .total .price {
+  font-weight: 900;
+  margin-top: 25px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .order-details {
+  overflow: hidden;
+  margin-top: 15px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .order-details .btn-title {
+  padding: 5px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .order-details .details-block {
+  width: 50%;
+  float: left;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .order-details .details-block p {
+  color: #9ba3ab;
+  float: left;
+  clear: both;
+  margin-right: 5px;
+  width: 30%;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .order-details .details-block span {
+  margin-bottom: 10px;
+  display: block;
+  color: #9ba3ab;
+  font-weight: 300;
+}
+.my-order-block:last-child {
+  border-bottom: none;
+}
 #changeaddress .your-address h3 {
   margin: 38px 0 0 0;
 }
