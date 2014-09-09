@@ -3962,6 +3962,54 @@ h3.search-word strong {
 #paymentmethod .details-button-block .back-btn .btn-title {
   padding: 0;
 }
+.my-wish-block.-blue-bottom-brd {
+  padding: 15px 0;
+}
+.my-wish-block.-blue-bottom-brd .col-md-2.image {
+  padding-left: 0;
+}
+.my-wish-block.-blue-bottom-brd .general-row h4 {
+  font-size: 18px;
+  font-weight: 900;
+  color: #252536;
+  margin-bottom: 3px;
+}
+.my-wish-block.-blue-bottom-brd .general-row .artikel {
+  font-size: 12px;
+  color: #aeaeb9;
+  font-weight: 300;
+}
+.my-wish-block.-blue-bottom-brd .general-row .description,
+.my-wish-block.-blue-bottom-brd .general-row .data-adding {
+  font-size: 14px;
+  color: #9494a5;
+  font-weight: 300;
+}
+.my-wish-block.-blue-bottom-brd .general-row .data-adding {
+  text-align: right;
+  padding-right: 20px;
+}
+.my-wish-block.-blue-bottom-brd .general-row .col-md-12.description {
+  padding-right: 0;
+}
+.my-wish-block.-blue-bottom-brd .general-row .total .price {
+  font-size: 18px;
+  padding-left: 15px;
+}
+.my-wish-block.-blue-bottom-brd .col-md-1 .simple-btn {
+  padding: 100% 0;
+}
+.my-wish-block.-blue-bottom-brd:last-child {
+  border: none;
+}
+#wishlist .instruction {
+  padding-top: 20px;
+}
+#wishlist .instruction p {
+  padding-top: 0;
+  padding-bottom: 5px;
+  font-weight: 300;
+}
 #friends .email-field textarea,
 #friends .message textarea {
   width: 100%;
@@ -4000,7 +4048,7 @@ h3.search-word strong {
   color: #ee9565;
   float: left;
 }
-#curpoints .table-points .table-title-row {
+.account-table .table-title-row {
   background: #ebf1f6;
   overflow: hidden;
   height: 30px;
@@ -4008,43 +4056,43 @@ h3.search-word strong {
   border-bottom: 1px solid #dae1e8;
   background: #f4f7fa;
 }
-#curpoints .table-points .table-title-row p {
+.account-table .table-title-row p {
   font-size: 12px;
   text-transform: uppercase;
   color: #9ba3ab;
   margin: 5px 0;
 }
-#curpoints .table-points .table-title-row .quantity-input_icon.up_wrapper {
+.account-table .table-title-row .quantity-input_icon.up_wrapper {
   top: -1px;
 }
-#curpoints .table-points .table-title-row .quantity-input_icon.drop_wrapper {
+.account-table .table-title-row .quantity-input_icon.drop_wrapper {
   bottom: -3px;
 }
-#curpoints .table-points .my-points-block {
+.account-table .my-points-block {
   height: 50px;
   border-bottom: 1px solid #d7dee4;
   padding-top: 15px;
 }
-#curpoints .table-points .my-points-block .ver-status {
+.account-table .my-points-block .ver-status {
   float: left;
   margin-top: 4px;
   margin-right: 5px;
 }
-#curpoints .table-points .my-points-block .date-of-ord {
+.account-table .my-points-block .date-of-ord {
   color: #9ba3ab;
 }
-#curpoints .table-points .my-points-block .number-of-ord,
-#curpoints .table-points .my-points-block .amount-points,
-#curpoints .table-points .my-points-block .collected-points {
+.account-table .my-points-block .number-of-ord,
+.account-table .my-points-block .amount-points,
+.account-table .my-points-block .collected-points {
   color: #3c6086;
   font-weight: 700;
 }
-#curpoints .table-points .my-points-block .status-of-ord p {
+.account-table .my-points-block .status-of-ord p {
   color: #9ba3ab;
   font-style: italic;
   font-weight: 300;
 }
-#curpoints .table-points .my-points-block .issued-points {
+.account-table .my-points-block .issued-points {
   color: #eb7070;
   font-weight: 300;
 }
