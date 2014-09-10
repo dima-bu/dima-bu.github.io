@@ -3617,6 +3617,45 @@ ul.date-select .dd-pointer-down {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+.tab-content .check-and-order-tab h3 {
+  font-size: 26px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.tab-content .check-and-order-tab ~ .next-step {
+  padding: 30px 60px 30px;
+  margin: 50px -90px 0;
+}
+.tab-content .check-and-order-tab ~ .next-step button.simple-btn.-lg {
+  text-transform: capitalize;
+  padding: 15px 30px;
+}
+.tab-content .check-and-order-tab ~ .next-step ul.agreement {
+  margin-top: 10px;
+  float: left;
+}
+.tab-content .check-and-order-tab ~ .next-step ul.agreement li {
+  float: left;
+}
+.tab-content .check-and-order-tab ~ .next-step ul.agreement li label {
+  font-size: 14px;
+  color: #9090a0;
+}
+.tab-content .check-and-order-tab ~ .next-step ul.agreement li label strong,
+.tab-content .check-and-order-tab ~ .next-step ul.agreement li label.continue-label {
+  padding-left: 5px;
+  color: #ee9565;
+  font-style: italic;
+}
+.tab-content .check-and-order-tab .resp-button-group {
+  margin-top: 10px;
+}
+.tab-content .check-and-order-tab .resp-button-group .simple-btn {
+  padding: 11px 25px;
+  text-transform: capitalize;
+}
 .product_categories ul {
   height: auto;
 }
@@ -4986,7 +5025,7 @@ textarea:focus {
   color: #ffffff;
 }
 .simple-btn.-gray {
-  background-color: #c5ccd2;
+  background-color: #cdd8e4;
   color: #ffffff;
 }
 .simple-btn.-transparent {
