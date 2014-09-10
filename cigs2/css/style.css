@@ -4270,12 +4270,16 @@ h3.search-word strong {
   color: #eb7070;
   font-weight: 300;
 }
-.col-md-7.login-already,
-.col-md-5.login-new {
-  padding: 30px 20px;
+.col-md-6.login-already,
+.col-md-6.login-new {
+  padding: 40px;
 }
-.col-md-7.login-already .title,
-.col-md-5.login-new .title {
+.col-md-6.login-already p.hint,
+.col-md-6.login-new p.hint {
+  font-weight: 300;
+}
+.col-md-6.login-already .title,
+.col-md-6.login-new .title {
   clear: both;
   overflow: hidden;
   width: 100%;
@@ -4283,44 +4287,60 @@ h3.search-word strong {
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.col-md-7.login-already .title span,
-.col-md-5.login-new .title span {
+.col-md-6.login-already .title span,
+.col-md-6.login-new .title span {
   float: left;
   font-size: 26px;
   color: #484a4c;
   margin-right: 5px;
 }
-.col-md-7.login-already .title span.company-name,
-.col-md-5.login-new .title span.company-name {
+.col-md-6.login-already .title span.company-name,
+.col-md-6.login-new .title span.company-name {
   color: #3c6086;
   float: left;
 }
-.col-md-7.login-already h4,
-.col-md-5.login-new h4 {
+.col-md-6.login-already h4,
+.col-md-6.login-new h4 {
   font-size: 14px;
   font-weight: bold;
   color: #3b3d3f;
   text-transform: uppercase;
 }
-.col-md-7.login-already .title {
-  font-weight: 700;
-}
-.col-md-7.login-already .col-md-6.address {
-  padding-left: 0;
-  margin-top: 20px;
-}
-.col-md-7.login-already .col-md-6.password {
-  padding-right: 0;
-  margin-top: 20px;
-}
-.button-block {
-  background: #fdfdfe;
-  padding: 20px 5px;
-}
-.button-block .simple-btn {
+.col-md-6.login-already .simple-btn,
+.col-md-6.login-new .simple-btn {
   font-size: 20px;
   line-height: 20px;
   text-transform: capitalize;
+  padding: 11px 25px;
+  margin-top: 25px;
+}
+.col-md-6.login-already {
+  border-right: 1px solid #d7deed;
+}
+.col-md-6.login-already .title {
+  font-weight: 700;
+}
+.col-md-6.login-already .address,
+.col-md-6.login-already .password,
+.col-md-6.login-already .button-block {
+  width: 85%;
+  margin-top: 20px;
+}
+.col-md-6.login-already .simple-btn {
+  float: left;
+  margin-top: 0;
+}
+.col-md-6.login-already .warning_hint a {
+  color: #ee9565;
+}
+.col-md-6.login-new ul {
+  padding: 0 0 0 15px;
+  margin-top: 20px;
+  color: #9090a0;
+  font-weight: 300;
+}
+.col-md-6.login-new ul li {
+  line-height: 27px;
 }
 .quantity-input_wrapper {
   position: relative;
