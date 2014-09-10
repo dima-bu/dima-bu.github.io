@@ -2089,7 +2089,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -1615px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1678px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -2173,7 +2173,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -54px;
+  background: transparent url('../img/sprite.png') 0px -72px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2425,7 +2425,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -2169px;
+  background-position: 0px -2232px;
   height: 57px;
   width: 58px;
 }
@@ -4037,7 +4037,26 @@ h3.search-word strong {
 }
 .col-md-1.actions {
   padding: 0;
-  text-align: center;
+  text-align: right;
+  width: 10%;
+}
+.table-title-row.orders .col-md-3.title-frst.date {
+  padding-right: 0;
+  width: 20%;
+}
+.table-title-row.orders .col-md-3.title-frst.date .quantity-input_icon {
+  right: 40%;
+}
+.table-title-row.orders .col-md-2.order_no {
+  padding: 0;
+}
+.table-title-row.orders .col-md-2.order_no .quantity-input_icon {
+  right: -3px;
+}
+.table-title-row.orders .col-md-1.actions {
+  width: 13%;
+  padding: 0 10px 0 0;
+  text-align: right;
 }
 .my-order-block {
   min-height: 50px;
@@ -4054,15 +4073,24 @@ h3.search-word strong {
 .my-order-block .date-of-ord {
   color: #9ba3ab;
   font-weight: 300;
+  padding-right: 0;
+  padding-left: 10px;
+  width: 20%;
 }
 .my-order-block .number-of-ord {
   color: #3c6086;
   font-weight: 700;
+  padding: 0 5px 0 30px;
+  width: 14%;
 }
 .my-order-block .col-md-2.dispatch-of-ord {
   color: #9ba3ab;
   font-weight: 900;
-  padding: 0 5px;
+  padding: 0;
+  width: 22%;
+}
+.my-order-block .status-ord {
+  padding: 0;
 }
 .my-order-block .status-ord p {
   color: #9ba3ab;
