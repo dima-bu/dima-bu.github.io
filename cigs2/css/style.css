@@ -2089,7 +2089,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -1669px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1615px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -2173,7 +2173,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -54px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2186,13 +2186,28 @@ h3.footer_title {
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
-  font-size: 0;
+  clear: both;
+  overflow: hidden;
+}
+.arrow-title_wrapper .arrow-wrap {
+  width: 20%;
+  float: left;
+  overflow: hidden;
+}
+.arrow-title_wrapper .title-wrap {
+  text-align: center;
+  width: 60%;
+  float: left;
+}
+.arrow-title_wrapper .title-arrow_left {
+  background-image: url(../img/sprite.png);
+  background-position: -45px -1148px;
 }
 h2.arrow-title {
   text-transform: uppercase;
   margin: 0;
   color: #252536;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 30px;
   width: 596px;
   text-align: center;
@@ -2410,7 +2425,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -2173px;
+  background-position: 0px -2169px;
   height: 57px;
   width: 58px;
 }
@@ -2493,6 +2508,50 @@ h2.arrow-title {
   font-size: 18px;
   font-weight: 300;
   color: #9090a0;
+}
+.product-lineup {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.product-lineup .lineup-base-hover {
+  display: none;
+}
+.product-lineup .product-lineup_img-wrapper {
+  position: relative;
+}
+.product-lineup .product-lineup_img-wrapper img {
+  position: absolute;
+  bottom: -40px;
+}
+.product-lineup.lineup-startersets img {
+  bottom: -20px;
+  right: -5px;
+}
+.product-lineup.lineup-shopnow img {
+  right: -27px;
+}
+.product-lineup.lineup-accessories img {
+  left: -35px;
+}
+.product-lineup h3.product-lineup_title {
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2c4560;
+}
+.product-lineup:hover .lineup-base {
+  display: none;
+}
+.product-lineup:hover .lineup-base-hover {
+  display: block;
+}
+.product-lineup:hover h3.product-lineup_title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  color: #ee9565;
 }
 .column.active .product_img_gallery_item {
   opacity: 1;
