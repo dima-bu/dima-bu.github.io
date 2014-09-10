@@ -2431,6 +2431,7 @@ h2.arrow-title {
 }
 .product-set.-sm .product-set_title {
   font-size: 20px;
+  height: 45px;
 }
 .product-set.-sm .product-set_subtitle {
   font-size: 12px;
@@ -3085,16 +3086,17 @@ span.label {
   text-align: center;
 }
 .categories-block a:hover {
-  padding: 10px 0 7px;
+  padding: 10px 0 20px;
 }
-.categories-block a:hover::after,
-.categories-block a.active::after {
-  content: '';
-  height: 10px;
+.categories-block a:hover .category-arrow,
+.categories-block a.active .category-arrow {
   display: block;
-  background-image: url(../img/sprite.png);
-  background-position: 28px 3720px;
-  margin-top: 5px;
+}
+.categories-block .category-arrow {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 45px;
 }
 .categories-block ul {
   overflow: hidden;
@@ -3681,9 +3683,8 @@ ul.date-select .dd-pointer-down {
 }
 .register-wrapper {
   padding: 30px;
-  margin-top: 30px;
 }
-.fb-box {
+.box {
   margin-top: 30px;
 }
 .wiki-sidebar {
@@ -3753,6 +3754,10 @@ h3.search-word strong {
 }
 .sidebar .filterblock .checking_label {
   color: #3c6086;
+  font-size: 14px;
+}
+.sidebar .filterblock .checking_list.-light .checking_item {
+  height: auto;
 }
 .sidebar .filterblock.last {
   border-bottom: 1px solid #cccccc;
@@ -4414,6 +4419,9 @@ h3.search-word strong {
 .checking_list.-light .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
 }
+.checking_list.-light .checking_input:checked ~ .checking_label {
+  font-weight: 900;
+}
 .checking_list.-light .checking_input-pseudo {
   -webkit-appearance: none;
   display: inline-block;
@@ -4469,6 +4477,9 @@ h3.search-word strong {
 }
 .checking_list.-dark .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
+}
+.checking_list.-dark .checking_input:checked ~ .checking_label {
+  font-weight: 900;
 }
 .checking_list.-dark .checking_input-pseudo {
   -webkit-appearance: none;
@@ -4548,6 +4559,9 @@ h3.search-word strong {
 }
 .checking_item.-color .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
+}
+.checking_item.-color .checking_input:checked ~ .checking_label {
+  font-weight: 900;
 }
 .row.-sm {
   margin-left: -5px;
