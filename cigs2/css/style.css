@@ -3374,7 +3374,7 @@ ul.date-select {
   clear: both;
 }
 ul.date-select li {
-  margin-right: 12px;
+  margin-right: 9px;
   background: #fff;
 }
 ul.date-select li:last-child {
@@ -3576,7 +3576,7 @@ ul.date-select .dd-pointer-down {
   padding-bottom: 10px;
   float: right;
   clear: both;
-  width: 215px;
+  width: 300px;
 }
 .col-md-6.amount .sum .txt {
   text-align: left;
@@ -3930,109 +3930,138 @@ h3.search-word strong {
   color: #9090a0;
 }
 /* YOUR PERSONAL DETAILS */
-.account-wrapper .tab-content #changebilling .col-md-6 {
+.account-wrapper .tab-content #changebilling .col-md-6,
+.account-wrapper .tab-content #changeaddress .col-md-6 {
   min-height: 70px;
   margin-bottom: 10px;
   width: 60%;
 }
-.account-wrapper .tab-content #changebilling .col-md-6.last {
+.account-wrapper .tab-content #changebilling .col-md-6.last,
+.account-wrapper .tab-content #changeaddress .col-md-6.last {
   float: none;
   clear: both;
   padding-top: 5px;
 }
-.account-wrapper .tab-content #changebilling .col-md-6.last h5 {
+.account-wrapper .tab-content #changebilling .col-md-6.last h5,
+.account-wrapper .tab-content #changeaddress .col-md-6.last h5 {
   margin-top: 0;
 }
-.account-wrapper .tab-content #changebilling ul.checking_list.-inline.gender .checking_item {
+.account-wrapper .tab-content #changebilling ul.checking_list.-inline.gender .checking_item,
+.account-wrapper .tab-content #changeaddress ul.checking_list.-inline.gender .checking_item {
   margin-right: 0;
 }
-.account-wrapper .tab-content #changebilling ul.checking_list.-inline.gender li {
+.account-wrapper .tab-content #changebilling ul.checking_list.-inline.gender li,
+.account-wrapper .tab-content #changeaddress ul.checking_list.-inline.gender li {
   width: 30%;
 }
-.account-wrapper .tab-content #changebilling label.required {
+.account-wrapper .tab-content #changebilling label.required,
+.account-wrapper .tab-content #changeaddress label.required {
   color: #dc4848;
 }
-.account-wrapper .tab-content #changebilling .g_input {
+.account-wrapper .tab-content #changebilling .g_input,
+.account-wrapper .tab-content #changeaddress .g_input {
   min-height: 50px;
 }
-.account-wrapper .tab-content #changebilling h3 {
+.account-wrapper .tab-content #changebilling h3,
+.account-wrapper .tab-content #changeaddress h3 {
   font-size: 26px;
   text-transform: capitalize;
   border-bottom: 1px solid #D7DEE4;
   padding-bottom: 20px;
   margin-bottom: 10px;
 }
-.account-wrapper .tab-content #changebilling h3 strong {
+.account-wrapper .tab-content #changebilling h3 strong,
+.account-wrapper .tab-content #changeaddress h3 strong {
   text-transform: capitalize;
 }
-.account-wrapper .tab-content #changebilling h5 {
+.account-wrapper .tab-content #changebilling h5,
+.account-wrapper .tab-content #changeaddress h5 {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
 }
-.account-wrapper .tab-content #changebilling ul {
-  padding: 0;
+.account-wrapper .tab-content #changebilling ul,
+.account-wrapper .tab-content #changeaddress ul {
+  padding-left: 0;
 }
-.account-wrapper .tab-content #changebilling ul li {
+.account-wrapper .tab-content #changebilling ul li,
+.account-wrapper .tab-content #changeaddress ul li {
   list-style: none;
   display: inline-block;
 }
-.account-wrapper .tab-content #changebilling ul li.street {
+.account-wrapper .tab-content #changebilling ul li.street,
+.account-wrapper .tab-content #changeaddress ul li.street {
   width: 70%;
 }
-.account-wrapper .tab-content #changebilling ul li.number {
+.account-wrapper .tab-content #changebilling ul li.number,
+.account-wrapper .tab-content #changeaddress ul li.number {
   width: 25%;
 }
-.account-wrapper .tab-content #changebilling ul li.half {
+.account-wrapper .tab-content #changebilling ul li.half,
+.account-wrapper .tab-content #changeaddress ul li.half {
   width: 48%;
 }
-.account-wrapper .tab-content #changebilling ul li.rght {
+.account-wrapper .tab-content #changebilling ul li.rght,
+.account-wrapper .tab-content #changeaddress ul li.rght {
   float: right;
 }
-.account-wrapper .tab-content #changebilling ul.date-select {
+.account-wrapper .tab-content #changebilling ul.date-select,
+.account-wrapper .tab-content #changeaddress ul.date-select {
   padding-left: 0;
   margin-bottom: 15px;
   clear: both;
 }
-.account-wrapper .tab-content #changebilling ul.date-select li {
-  margin-right: 11px;
+.account-wrapper .tab-content #changebilling ul.date-select li,
+.account-wrapper .tab-content #changeaddress ul.date-select li {
+  margin-right: 8px;
   background: #fff;
 }
-.account-wrapper .tab-content #changebilling ul.date-select li:last-child {
+.account-wrapper .tab-content #changebilling ul.date-select li:last-child,
+.account-wrapper .tab-content #changeaddress ul.date-select li:last-child {
   margin-right: 0;
 }
-.account-wrapper .tab-content #changebilling ul.date-select li .standart-select_wrapper {
+.account-wrapper .tab-content #changebilling ul.date-select li .standart-select_wrapper,
+.account-wrapper .tab-content #changeaddress ul.date-select li .standart-select_wrapper {
   display: block;
   margin: 0;
 }
-.account-wrapper .tab-content #changebilling ul.date-select .dd-select {
+.account-wrapper .tab-content #changebilling ul.date-select .dd-select,
+.account-wrapper .tab-content #changeaddress ul.date-select .dd-select {
   border: 1px solid #000;
   height: 50px;
 }
-.account-wrapper .tab-content #changebilling ul.date-select ul.dd-options li {
+.account-wrapper .tab-content #changebilling ul.date-select ul.dd-options li,
+.account-wrapper .tab-content #changeaddress ul.date-select ul.dd-options li {
   display: block;
   margin-right: 0;
 }
-.account-wrapper .tab-content #changebilling ul.country-select {
+.account-wrapper .tab-content #changebilling ul.country-select,
+.account-wrapper .tab-content #changeaddress ul.country-select {
   background: #fff;
   margin-bottom: 20px;
 }
-.account-wrapper .tab-content #changebilling ul.country-select li {
+.account-wrapper .tab-content #changebilling ul.country-select li,
+.account-wrapper .tab-content #changeaddress ul.country-select li {
   width: 100%;
 }
 .account-wrapper .tab-content #changebilling ul.country-select .dd-select,
-.account-wrapper .tab-content #changebilling ul.country-select .dd-container {
+.account-wrapper .tab-content #changeaddress ul.country-select .dd-select,
+.account-wrapper .tab-content #changebilling ul.country-select .dd-container,
+.account-wrapper .tab-content #changeaddress ul.country-select .dd-container {
   width: 100% !important;
 }
-.account-wrapper .tab-content #changebilling ul.country-select a.dd-selected label {
+.account-wrapper .tab-content #changebilling ul.country-select a.dd-selected label,
+.account-wrapper .tab-content #changeaddress ul.country-select a.dd-selected label {
   font: 16px 'Lato', sans-serif;
   font-weight: 400;
 }
-.account-wrapper .tab-content #changebilling ul.country-select .dd-select {
+.account-wrapper .tab-content #changebilling ul.country-select .dd-select,
+.account-wrapper .tab-content #changeaddress ul.country-select .dd-select {
   border: 1px solid #000;
   height: 50px;
 }
-.account-wrapper .tab-content #changebilling .details-button-block {
+.account-wrapper .tab-content #changebilling .details-button-block,
+.account-wrapper .tab-content #changeaddress .details-button-block {
   padding-top: 30px;
 }
 .col-md-1.actions {
@@ -4180,9 +4209,6 @@ h3.search-word strong {
 }
 #changeaddress .your-address h3 {
   margin: 38px 0 0 0;
-}
-#changeaddress .checking_list.-light .checking_item {
-  margin-bottom: 0;
 }
 #changeaddress ul.address_type,
 #changeaddress ul.gender {
