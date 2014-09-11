@@ -4375,6 +4375,9 @@ h3.search-word strong {
   color: #eb7070;
   font-weight: 300;
 }
+.login-page-wrapper {
+  border: 1px solid #d7dee4;
+}
 .col-md-6.login-already,
 .col-md-6.login-new {
   padding: 40px;
@@ -5300,6 +5303,48 @@ button.send-mbl,
   .bottom-part-header.container .search_wrapper {
     padding-top: 25px;
     width: 425px;
+  }
+  /*LOGIN PAGE*/
+  .col-md-12.login-page-wrapper {
+    border: none;
+    padding: 0;
+  }
+  .col-md-6.login-already,
+  .col-md-6.login-new {
+    border: none;
+    padding: 0 15px;
+    width: 100%;
+  }
+  .col-md-6.login-new {
+    margin-top: 50px;
+  }
+  .col-md-6.login-new .simple-btn {
+    float: right;
+  }
+  .col-md-6.login-new ul li {
+    width: 40%;
+    float: left;
+  }
+  .col-md-6.login-already .address,
+  .col-md-6.login-already .password {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+  }
+  .col-md-6.login-already .address {
+    padding-right: 10px;
+  }
+  .col-md-6.login-already .password {
+    padding-left: 10px;
+  }
+  .col-md-6.login-already .button-block {
+    width: 100%;
+  }
+  .col-md-6.login-already .simple-btn {
+    float: right;
+  }
+  .col-md-6.login-already .warning_hint a {
+    float: left;
   }
   /*HOME PAGE*/
   .arrow-title_wrapper h2.arrow-title {
