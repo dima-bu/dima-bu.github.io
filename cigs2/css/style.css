@@ -5129,6 +5129,15 @@ textarea:focus {
   color: #3c6086;
   cursor: pointer;
 }
+.col-md-12.error {
+  border: 1px solid;
+  margin: 20px 0;
+  padding: 20px;
+  background: #fef5f5;
+}
+.col-md-12.error strong {
+  display: block;
+}
 .error h5 {
   color: #dc4848;
   float: left;
