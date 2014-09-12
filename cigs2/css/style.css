@@ -6141,7 +6141,7 @@ button.send-mbl,
     display: block;
   }
   .login-page-wrapper-mbl h4 {
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -6152,18 +6152,19 @@ button.send-mbl,
   }
   .login-page-wrapper-mbl a.link-btn {
     text-align: center;
-    font-size: 26px;
+    font-size: 18px;
     padding: 25px;
   }
   .login-page-wrapper-mbl .warning_hint {
     margin-bottom: 20px;
   }
   .login-page-wrapper-mbl .warning_hint a {
-    font-size: 24px;
+    font-size: 18px;
     float: none;
   }
   /*HOME PAGE*/
-  .arrow-title_wrapper {
+  .arrow-title_wrapper,
+  .product-lineup {
     display: none;
   }
   .welcome_wrapper p {
@@ -6197,6 +6198,9 @@ button.send-mbl,
     float: none;
     margin: 0 auto;
     margin-bottom: 15px;
+  }
+  .main-content .slider-wrapper .row.banners .col-md-4 {
+    width: 50%;
   }
   .main-content .slider-wrapper .row.banners .col-md-8 h4 {
     top: 0;
