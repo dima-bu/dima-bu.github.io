@@ -2089,7 +2089,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -2210px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2370px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -2182,7 +2182,7 @@ h3.footer_title {
   width: 10px !important;
   display: inline-block;
   border: 0 none transparent !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -18px;
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
@@ -2425,7 +2425,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -2364px;
+  background-position: 0px -2524px;
   height: 57px;
   width: 58px;
 }
@@ -3468,6 +3468,7 @@ ul.date-select .dd-pointer-down {
   overflow: hidden;
   padding: 30px 40px;
   margin-top: 30px;
+  border: 1px solid #d7dee4;
 }
 .end-ordering-wrapper-block i.icon.trusted-shops {
   margin-right: 20px;
@@ -3475,6 +3476,7 @@ ul.date-select .dd-pointer-down {
 .end-ordering-wrapper-block span {
   font-size: 14px;
   color: #9090a0;
+  display: block;
 }
 .end-ordering-wrapper-block .simple-btn.-gray {
   margin-top: 10px;
@@ -5295,7 +5297,8 @@ button.search_submit.loupe-mbl,
 button.send-mbl,
 .desktop-mbl,
 .menu-home-mbl,
-.breadcrumb.breadcrumb-mbl {
+.breadcrumb.breadcrumb-mbl,
+.filter-block-wrapper-mbl {
   display: none;
 }
 /* responsive - TABLET*/
@@ -5798,19 +5801,27 @@ button.send-mbl,
     width: 50%;
     margin-bottom: 30px;
   }
+  .end-ordering-wrapper-block {
+    border: none;
+    border-top: 1px solid #d7dee4;
+    padding: 30px 0 0 0;
+  }
+  .end-ordering-wrapper-block .results {
+    width: 65%;
+  }
   /* END CHECKOUT*/
   /*WIKI_PAGE*/
   .sidebar .wiki-sidebar .col-md-12 {
-    width: 45%;
-    margin: 0 15px;
+    width: 48%;
+    margin: 0 2% 0 0;
     padding: 0;
   }
   #bewertung-select .dd-select,
   #bewertung-select .dd-container {
-    width: 345px !important;
+    width: 340px !important;
   }
-  .fb-box {
-    margin: 0;
+  .box {
+    margin: 0 0 40px 0;
   }
   .register-wrapper {
     margin-top: 0;
@@ -5820,6 +5831,29 @@ button.send-mbl,
     margin: 0 auto;
   }
   /*end WIKI_PAGE*/
+  /* SEARCH RESULTS PAGE*/
+  .sidebar.filter-block-wrapper-mbl {
+    display: block;
+    overflow: hidden;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-top: 1px solid #d7dee4;
+  }
+  .sidebar.filter-block-wrapper-mbl p.filter {
+    margin-top: 10px;
+  }
+  .sidebar.filter-block-wrapper-mbl .filterblock {
+    width: 33.3333%;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+  }
+  .sidebar.filter-block-wrapper-mbl .filterblock ul .col-md-12 {
+    width: 100%;
+  }
+  .sort {
+    clear: both;
+  }
+  /* end SEARCH RESULTS PAGE*/
   /*ACCOUNT-PAGES*/
   /*MyAccount*/
   #myaccount .col-md-6 {
