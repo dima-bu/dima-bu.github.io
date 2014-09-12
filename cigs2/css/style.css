@@ -5300,7 +5300,8 @@ button.send-mbl,
 .desktop-mbl,
 .menu-home-mbl,
 .breadcrumb.breadcrumb-mbl,
-.filter-block-wrapper-mbl {
+.filter-block-wrapper-mbl,
+.login-page-wrapper-mbl {
   display: none;
 }
 /* responsive - TABLET*/
@@ -5981,6 +5982,17 @@ button.send-mbl,
     padding: 5px 0;
     text-align: center;
   }
+  .header-top .cart-block-mbl .presence {
+    background: #f14646;
+    border-radius: 4px;
+    color: #FFFFFF;
+    line-height: 10px;
+    padding: 6px 8px;
+    position: absolute;
+    display: block;
+    top: 6px;
+    right: 6px;
+  }
   .header-top a {
     display: block;
     height: 100%;
@@ -6120,6 +6132,35 @@ button.send-mbl,
     background: url('../img/main-menu-arr.png') no-repeat;
     background-position: 50%;
   }
+  /*LOGIN PAGE*/
+  .col-md-12.login-page-wrapper {
+    display: none;
+  }
+  .login-page-wrapper-mbl {
+    display: block;
+  }
+  .login-page-wrapper-mbl h4 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .login-page-wrapper-mbl input.g_input,
+  .login-page-wrapper-mbl a.link-btn.simple-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .login-page-wrapper-mbl a.link-btn {
+    text-align: center;
+    font-size: 26px;
+    padding: 25px;
+  }
+  .login-page-wrapper-mbl .warning_hint {
+    margin-bottom: 20px;
+  }
+  .login-page-wrapper-mbl .warning_hint a {
+    font-size: 24px;
+    float: none;
+  }
   /*HOME PAGE*/
   .arrow-title_wrapper {
     display: none;
@@ -6201,10 +6242,5 @@ button.send-mbl,
   .welcome_wrapper.-starterkit,
   .sort {
     display: none;
-  }
-  /*LOGIN PAGE*/
-  .col-md-7.login-already,
-  .col-md-5.login-new {
-    width: 100%;
   }
 }
