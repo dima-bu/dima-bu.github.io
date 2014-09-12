@@ -5559,6 +5559,12 @@ button.send-mbl,
     font-size: 22px;
   }
   /* STARTERKITS */
+  .main-content.-starterkit .sort > .flr:last-child {
+    display: none;
+  }
+  .main-content.-starterkit .sort > .fll:first-child {
+    width: 100%;
+  }
   .main-content.-starterkit .product-set {
     margin-bottom: 30px;
   }
