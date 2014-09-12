@@ -5036,6 +5036,9 @@ h3.search-word strong {
 .col-md-offset-0 {
   margin-left: 0%;
 }
+body {
+  background: url(../img/body-bg.jpg) repeat;
+}
 /*Private exception*/
 .header-bottom .container,
 .main-menu .container {
@@ -5856,28 +5859,61 @@ button.send-mbl,
   /* end SEARCH RESULTS PAGE*/
   /*ACCOUNT-PAGES*/
   /*MyAccount*/
-  #myaccount .col-md-6 {
+  .account-wrapper.-blue-border {
+    border: none;
+    background: none;
+  }
+  .account-wrapper.-blue-border .account-tabs.col-md-3.nav.nav-tabs {
     width: 100%;
+    border: 1px solid #d7dee4;
+    border-left: none;
   }
-  #myaccount .resp-button-group-1 {
-    width: 60%;
-    padding: 0;
-    padding-left: 15px;
+  .account-wrapper.-blue-border .account-tabs.col-md-3.nav.nav-tabs li {
+    border: 1px solid #d7dee4;
+    border-top: none;
+    border-right: none;
+    width: 25%;
+    height: 44px;
+    margin-bottom: 0;
   }
-  #myaccount .resp-button-group-1 a:last-child {
-    margin-right: 0;
+  .account-wrapper.-blue-border .account-tabs.col-md-3.nav.nav-tabs li a {
+    height: 43px;
   }
-  #myaccount .resp-button-group-2 {
-    width: 40%;
-    padding: 0;
+  .account-wrapper.-blue-border .account-tabs.col-md-3.nav.nav-tabs li.active a {
+    width: 100%;
+    background-image: none;
+  }
+  .account-wrapper.-blue-border .account-tabs.col-md-3.nav.nav-tabs li:last-child {
+    border-right: 1px solid #d7dee4;
+    width: 25.2%;
+  }
+  .account-wrapper.-blue-border .tab-content {
+    width: 100%;
+    border: none;
+  }
+  .account-wrapper.-blue-border .tab-content .table-title-row.orders .col-md-3.title-frst.date {
+    width: 15%;
+  }
+  .account-wrapper.-blue-border .tab-content .table-title-row.orders .col-md-3.title-frst.date .quantity-input_icon {
+    right: 20%;
+  }
+  .account-wrapper.-blue-border .tab-content .col-md-1.actions {
     float: right;
-    text-align: right;
   }
-  .simple-btn.account-btn {
-    margin: 10px 15px 0px 0;
+  .account-wrapper.-blue-border .tab-content .my-order-block .date-of-ord {
+    width: 15%;
   }
-  .account-wrapper .tab-content #changebilling .col-md-6 {
-    width: 100%;
+  .account-wrapper.-blue-border .tab-content .my-order-block .col-md-2.dispatch-of-ord {
+    width: 25%;
+  }
+  .account-wrapper.-blue-border .tab-content .my-order-block .status-ord {
+    width: 35%;
+  }
+  .account-wrapper.-blue-border .tab-content .my-order-block a.simple-btn.action {
+    padding: 6px 10px;
+  }
+  .account-wrapper.-blue-border .tab-content .my-order-block .order-details {
+    margin-right: -15px;
   }
 }
 @media screen and (max-width: 640px) {
