@@ -6167,6 +6167,9 @@ button.send-mbl,
   .product-lineup {
     display: none;
   }
+  .welcome_wrapper {
+    margin-right: 15px;
+  }
   .welcome_wrapper p {
     padding: 0 20px;
   }
@@ -6201,6 +6204,9 @@ button.send-mbl,
   }
   .main-content .slider-wrapper .row.banners .col-md-4 {
     width: 50%;
+  }
+  .main-content .slider-wrapper .row.banners .col-md-4 .option-block {
+    margin: 0;
   }
   .main-content .slider-wrapper .row.banners .col-md-8 h4 {
     top: 0;
