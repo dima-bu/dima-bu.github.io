@@ -3483,11 +3483,21 @@ ul.date-select .dd-pointer-down {
   margin-top: 30px;
 }
 .end-ordering-wrapper-block .account-table .col-md-2.image {
-  padding-left: 0;
   width: 12%;
+}
+.end-ordering-wrapper-block .account-table .total {
+  text-align: right;
+}
+.end-ordering-wrapper-block .account-table .total .price {
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 25px;
 }
 .end-ordering-wrapper-block .account-table .my-order-confirmation {
   padding: 15px 0;
+}
+.end-ordering-wrapper-block .account-table .my-order-confirmation .col-md-2.image {
+  padding-left: 0;
 }
 .end-ordering-wrapper-block .account-table .my-order-confirmation .general-row h4 {
   margin-top: 15px;
@@ -3506,16 +3516,9 @@ ul.date-select .dd-pointer-down {
   float: none;
   margin-top: 20px;
 }
-.end-ordering-wrapper-block .account-table .my-order-confirmation .total {
-  text-align: right;
-}
-.end-ordering-wrapper-block .account-table .my-order-confirmation .total .price {
-  font-size: 18px;
-  font-weight: 900;
-  margin-top: 25px;
-}
 .end-ordering-wrapper-block .results {
   float: right;
+  width: 50%;
 }
 .end-ordering-wrapper-block .results .result-block {
   padding: 15px 35px;
