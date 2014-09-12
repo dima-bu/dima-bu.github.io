@@ -5960,7 +5960,7 @@ button.send-mbl,
   .header-top .header-col-3 {
     width: 15%;
     background-color: #314d6b;
-    padding-left: 0;
+    padding-left: 10px;
   }
   .header-top .logo-mbl,
   .header-top .login-block-mbl,
