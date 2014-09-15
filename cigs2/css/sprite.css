@@ -60,7 +60,7 @@
 }
 .breadcrumb_divider {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2370px;
+  background-position: 0px -2320px;
   width: 6px;
   height: 40px;
 }
@@ -78,13 +78,13 @@
 }
 .check-act {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1160px;
+  background-position: 0px -1088px;
   width: 26px;
   height: 26px;
 }
 .check {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1016px;
+  background-position: 0px -1160px;
   width: 26px;
   height: 26px;
 }
@@ -118,29 +118,29 @@
   width: 8px;
   height: 8px;
 }
-.email-18-sm {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1460px;
-  width: 30px;
-  height: 30px;
-}
 .email-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2220px;
+  background-position: 0px -1970px;
   width: 40px;
   height: 40px;
 }
-.facebook-18-sm {
+.email-24 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1540px;
+  background-position: 0px -1500px;
   width: 30px;
   height: 30px;
 }
 .facebook-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2120px;
+  background-position: 0px -2170px;
   width: 40px;
   height: 40px;
+}
+.facebook-24 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1380px;
+  width: 30px;
+  height: 30px;
 }
 .facebook {
   background-image: url(../img/sprite.png);
@@ -166,17 +166,17 @@
   width: 330px;
   height: 150px;
 }
-.google-18-sm {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1380px;
-  width: 30px;
-  height: 30px;
-}
 .google-18 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1970px;
+  background-position: 0px -2120px;
   width: 40px;
   height: 40px;
+}
+.google-24 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1460px;
+  width: 30px;
+  height: 30px;
 }
 .google-plus {
   background-image: url(../img/sprite.png);
@@ -342,7 +342,7 @@
 }
 .prev-arrow {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1088px;
+  background-position: 0px -1016px;
   width: 21px;
   height: 26px;
 }
@@ -492,21 +492,21 @@
 }
 .trusted {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2170px;
+  background-position: 0px -2220px;
   width: 41px;
   height: 40px;
-}
-.twitter-18-sm {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1500px;
-  width: 30px;
-  height: 30px;
 }
 .twitter-18 {
   background-image: url(../img/sprite.png);
   background-position: 0px -2420px;
   width: 40px;
   height: 40px;
+}
+.twitter-24 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1540px;
+  width: 30px;
+  height: 30px;
 }
 .twitter {
   background-image: url(../img/sprite.png);
@@ -540,7 +540,7 @@
 }
 .versandkostenfreie {
   background-image: url(../img/sprite.png);
-  background-position: 0px -2320px;
+  background-position: 0px -2370px;
   width: 41px;
   height: 40px;
 }

@@ -2089,7 +2089,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -2370px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2320px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -5301,7 +5301,8 @@ button.send-mbl,
 .menu-home-mbl,
 .breadcrumb.breadcrumb-mbl,
 .filter-block-wrapper-mbl,
-.login-page-wrapper-mbl {
+.login-page-wrapper-mbl,
+.product_header-tablet {
   display: none;
 }
 /* responsive - TABLET*/
@@ -6264,6 +6265,10 @@ button.send-mbl,
     width: 100%;
   }
   .sidebar.-starterkit .col-md-12 .option-block.mini {
-    width: ;
+    width: 55%;
+  }
+  /*PRODUCT PAGE - cartridge*/
+  .product_header-tablet {
+    display: block;
   }
 }
