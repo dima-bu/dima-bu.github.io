@@ -2121,7 +2121,6 @@ h3.footer_title {
   color: #abbdd0;
   margin: 0;
   line-height: 20px;
-  height: 20px;
 }
 .footer-col_content p.text_bold {
   font-size: 18px;
@@ -2201,7 +2200,7 @@ h3.footer_title {
 }
 .arrow-title_wrapper .title-arrow_left {
   background-image: url(../img/sprite.png);
-  background-position: -45px -1148px;
+  background-position: -45px -1378px;
 }
 h2.arrow-title {
   text-transform: uppercase;
