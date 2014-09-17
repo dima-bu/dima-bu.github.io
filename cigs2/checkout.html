@@ -235,6 +235,11 @@
             <div class="tab-content">
               <div id="your-cart" class="tab-pane fade active in">
                 <div class="row wrapper-tablet">
+                  <div class="title-mbl">
+                    <div class="col-md-12">
+                      <h4>Shopping Cart</h4>
+                    </div>
+                  </div>
                   <div class="row title mbl-hide">
                     <button class="simple-btn clear-btn continue-btn fll -wh-or"><span class="btn-title">continue Shopping</span></button>
                     <button class="simple-btn clear-btn block-rght -orange"><span class="btn-title">Proceed to Checkout</span><i class="icon right next-step-arr"></i></button>
@@ -259,7 +264,7 @@
                       <div class="col-md-1"></div>
                     </div>
                     <div class="row">
-                      <div class="product-in-cart col-md-12">
+                      <div class="product-in-cart col-md-12 mbl-hide">
                         <div class="col-md-2 product-set_img-wrapper"><img src="files/SC-pflaume.png" class="img-responsive"></div>
                         <div class="col-md-3 product-nm">
                           <h3 class="product-set_title">Pflaume Liquid (PG)</h3>
@@ -282,7 +287,7 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="product-in-cart col-md-12">
+                      <div class="product-in-cart col-md-12 mbl-hide">
                         <div class="col-md-2 product-set_img-wrapper"><img src="files/SC-Evod2.png" class="img-responsive"></div>
                         <div class="col-md-3 product-nm">
                           <h3 class="product-set_title">Evod 2 Starterset</h3>
@@ -360,19 +365,25 @@
                     </div>
                   </div>
                   <div class="row wrapper-tablet">
-                    <div class="col-md-6 amount">
+                    <div class="col-md-6 amount mbl-hide">
                       <div class="sub sum"><span class="txt">subtotal</span><span class="total"><span class="price">146,7<span>€</span></span></span></div>
                       <div class="grand sum"><span class="txt">grand total</span><span class="total"><span class="price">146,7<span>€</span></span></span></div>
                     </div>
                     <div class="row discount">
-                      <div class="col-md-6 code-field">
+                      <div class="col-md-12 discount-amount-mbl">
+                        <h3>discount code</h3>
+                        <input class="g_input block-lft -gray-border"><a class="link-btn simple-btn -gray-border"><i class="icon add_blue"></i></a>
+                        <div class="sub sum"><span class="txt">subtotal</span><span class="total"><span class="price">146,7<span>€</span></span></span></div>
+                        <div class="grand sum"><span class="txt">grand total</span><span class="total"><span class="price">146,7<span>€</span></span></span></div>
+                      </div>
+                      <div class="col-md-6 code-field mbl-hide">
                         <div class="row">
                           <div class="col-md-12">
-                            <h3>discount code</h3><span class="txt">Enter your discount code here if you have one:</span>
+                            <h3>discount code</h3><span class="txt mbl-hide">Enter your discount code here if you have one:</span>
                           </div>
                           <div class="col-md-12">
                             <input class="g_input block-lft -gray-border">
-                            <button class="simple-btn clear-btn -gray">Redeem</button>
+                            <button class="simple-btn clear-btn -gray mbl-hide">Redeem</button>
                           </div>
                         </div>
                       </div>
@@ -415,7 +426,7 @@
                     </h5>
                     <input class="g_input -black-border">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mbl-hide">
                     <h5>email address:
                       <label class="required">*</label>
                     </h5>
@@ -427,7 +438,7 @@
                     </h5>
                     <input class="g_input -black-border">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mbl-hide">
                     <h5>phone:
                       <label class="required">*</label>
                     </h5>
@@ -474,6 +485,20 @@
                     </ul>
                     <p class="hint">The purchase and use of our products must be at least 18 years old.</p>
                   </div>
+                  <div class="form-mbl">
+                    <div class="col-md-6">
+                      <h5>email address:
+                        <label class="required">*</label>
+                      </h5>
+                      <input class="g_input -black-border">
+                    </div>
+                    <div class="col-md-6">
+                      <h5>phone:
+                        <label class="required">*</label>
+                      </h5>
+                      <input class="g_input -black-border">
+                    </div>
+                  </div>
                   <div class="row wrapper-tablet">
                     <h3>Your<strong> Address</strong></h3>
                     <div class="col-md-6">
@@ -502,7 +527,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mbl-hide">
                       <ul class="checking_list clear-list -light -square differs_address">
                         <li class="checking_item">
                           <input id="order1" type="radio" name="differs_address" class="checking_input"><span class="checking_input-pseudo-wrapper"><span class="checking_input-pseudo"></span></span>
@@ -527,8 +552,16 @@
                         </li>
                       </ul>
                     </div>
+                    <div class="col-md-6 form-mbl">
+                      <ul class="checking_list clear-list -light -square differs_address">
+                        <li class="checking_item">
+                          <input id="order1" type="radio" name="differs_address" class="checking_input"><span class="checking_input-pseudo-wrapper"><span class="checking_input-pseudo"></span></span>
+                          <label for="order1" class="checking_label">The shipping address differs from the billing address</label>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="row wrapper-tablet">
+                  <div class="row wrapper-tablet mbl-hide">
                     <h3>Your alternative<strong> delivery address</strong></h3>
                     <div class="col-md-12">
                       <ul class="checking_list clear-list -light address_type">
@@ -631,7 +664,7 @@
                 </div>
                 <div class="row next-step wrapper-tablet">
                   <div class="col-md-12">
-                    <label class="required">* This is a required field</label>
+                    <label class="required mbl-hide">* This is a required field</label>
                     <button class="simple-btn clear-btn -orange -lg">next step ></button>
                   </div>
                 </div>
