@@ -60,14 +60,14 @@
 }
 .blog {
   background-image: url(../img/sprite.png);
-  background-position: 0px -4215px;
+  background-position: 0px -4210px;
   width: 410px;
   height: 200px;
 }
 .blog_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3575px;
-  width: 330px;
+  background-position: 0px -3890px;
+  width: 238px;
   height: 150px;
 }
 .bonus {
@@ -174,15 +174,15 @@
 }
 .fragen {
   background-image: url(../img/sprite.png);
-  background-position: 0px -4425px;
+  background-position: 0px -4420px;
   width: 410px;
   height: 200px;
 }
 .fragen_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3895px;
-  width: 330px;
-  height: 150px;
+  background-position: 0px -3575px;
+  width: 233px;
+  height: 147px;
 }
 .google-18 {
   background-image: url(../img/sprite.png);
@@ -222,7 +222,7 @@
 }
 .lineup-base-hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -4845px;
+  background-position: 0px -4840px;
   width: 236px;
   height: 206px;
 }
@@ -234,21 +234,21 @@
 }
 .lineup-base {
   background-image: url(../img/sprite.png);
-  background-position: 0px -5061px;
+  background-position: 0px -5056px;
   width: 236px;
   height: 206px;
 }
 .locator {
   background-image: url(../img/sprite.png);
-  background-position: 0px -4635px;
+  background-position: 0px -4630px;
   width: 410px;
   height: 200px;
 }
 .locator_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -3735px;
-  width: 330px;
-  height: 150px;
+  background-position: 0px -3732px;
+  width: 235px;
+  height: 148px;
 }
 .logo-paypal {
   background-image: url(../img/sprite.png);
@@ -372,8 +372,8 @@
 }
 .recycling_min {
   background-image: url(../img/sprite.png);
-  background-position: 0px -4055px;
-  width: 330px;
+  background-position: 0px -4050px;
+  width: 238px;
   height: 150px;
 }
 .reload-act {
