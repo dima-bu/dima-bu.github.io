@@ -2326,19 +2326,24 @@ h3.footer_title {
   clear: both;
   overflow: hidden;
 }
-.arrow-title_wrapper .arrow-wrap {
+.arrow-title_wrapper .arrow-wrap-left,
+.arrow-title_wrapper .arrow-wrap-right {
+  display: block;
+  height: 28px;
   width: 20%;
   float: left;
   overflow: hidden;
+}
+.arrow-title_wrapper .arrow-wrap-left {
+  background: url("../img/title-arrow_left.png") no-repeat -45px;
+}
+.arrow-title_wrapper .arrow-wrap-right {
+  background: url("../img/title-arrow_right.png") no-repeat;
 }
 .arrow-title_wrapper .title-wrap {
   text-align: center;
   width: 60%;
   float: left;
-}
-.arrow-title_wrapper .title-arrow_left {
-  background-image: url(../img/sprite.png);
-  background-position: -45px -1378px;
 }
 h2.arrow-title {
   text-transform: uppercase;
@@ -2650,46 +2655,52 @@ h2.arrow-title {
 }
 .product-lineup {
   margin-top: 10px;
-  margin-bottom: 50px;
   cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #d7dee4;
+  height: 325px;
+  text-align: center;
 }
-.product-lineup .lineup-base-hover,
-.product-lineup .lineup-base-sm,
-.product-lineup .lineup-base-hover-sm {
+.product-lineup .lineup-hover {
+  padding: 5px 15px 25px;
+  height: 100%;
+}
+.product-lineup .show-hover {
   display: none;
 }
 .product-lineup .product-lineup_img-wrapper {
   position: relative;
 }
-.product-lineup .product-lineup_img-wrapper img {
-  position: absolute;
-  bottom: -30px;
-}
-.product-lineup.lineup-startersets img {
-  bottom: -20px;
-  right: -5px;
-}
-.product-lineup.lineup-depots img {
-  right: -20px;
-}
 .product-lineup h3.product-lineup_title {
-  font-size: 32px;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 500;
   text-transform: capitalize;
   text-align: center;
   color: #2c4560;
+  bottom: 0;
+  position: absolute;
+  margin: 10px -15px 30px;
+  width: 83%;
 }
-.product-lineup:hover .lineup-base {
-  display: none;
-}
-.product-lineup:hover .lineup-base-hover {
-  display: block;
+.product-lineup:hover {
+  border-top: none;
+  border-bottom: none;
 }
 .product-lineup:hover h3.product-lineup_title {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 28px;
-  color: #ee9565;
+  display: none;
+}
+.product-lineup:hover .show-hover {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px 7px;
+  font-size: 12px;
+}
+.product-lineup:hover .lineup-hover {
+  border-top: 5px solid #4390cd;
+  border-bottom: 5px solid #4390cd;
+}
+.row.lineup {
+  margin-bottom: 50px;
 }
 .column.active .product_img_gallery_item {
   opacity: 1;
@@ -5563,16 +5574,11 @@ button.send-mbl,
     width: 100%;
   }
   .arrow-title_wrapper h2.arrow-title {
-    width: 71%;
     font-size: 28px;
+    width: auto;
   }
-  .arrow-title_wrapper .title-arrow_left {
-    background-position: -85px -1093px;
-    width: 140px;
-  }
-  .arrow-title_wrapper .title-arrow_right {
-    background-position: 0px -1053px;
-    width: 140px;
+  .arrow-title_wrapper .arrow-wrap-left {
+    background-position: -60px;
   }
   .product-set {
     position: relative;
@@ -5627,16 +5633,13 @@ button.send-mbl,
 @media screen and (max-width: 960px) and (min-width: 768px) {
   /*HOME PAGE*/
   .arrow-title_wrapper h2.arrow-title {
-    width: 69%;
-    font-size: 28px;
+    font-size: 24px;
   }
-  .arrow-title_wrapper .title-arrow_left {
-    background-position: -85px -1093px;
-    width: 140px;
+  .arrow-title_wrapper .arrow-wrap-left {
+    background-position: -75px;
   }
-  .arrow-title_wrapper .title-arrow_right {
-    background-position: 0px -1053px;
-    width: 140px;
+  .product-lineup {
+    height: 300px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -5695,40 +5698,19 @@ button.send-mbl,
   }
   /*HOME PAGE*/
   .arrow-title_wrapper .title-wrap {
-    width: 65%;
+    width: 60%;
   }
   .arrow-title_wrapper h2.arrow-title {
-    width: 100%;
-    font-size: 26px;
+    font-size: 22px;
   }
   .arrow-title_wrapper .arrow-wrap {
-    width: 17%;
+    width: 20%;
   }
-  .arrow-title_wrapper .title-arrow_left {
-    background-position: -150px -1170px;
+  .arrow-title_wrapper .arrow-wrap-left {
+    background-position: -110px;
   }
-  .arrow-title_wrapper .title-arrow_right {
-    background-position: 20px -1210px;
-  }
-  .product-lineup .lineup-base,
-  .product-lineup .lineup-base-hover {
-    display: none;
-  }
-  .product-lineup .lineup-base-sm {
-    display: block;
-  }
-  .product-lineup h3.product-lineup_title {
-    font-size: 22px;
-  }
-  .product-lineup:hover .lineup-base-sm,
-  .product-lineup:hover .lineup-base-hover {
-    display: none;
-  }
-  .product-lineup:hover .lineup-base-hover-sm {
-    display: block;
-  }
-  .product-lineup:hover h3.product-lineup_title {
-    font-size: 22px;
+  .product-lineup {
+    height: 220px;
   }
   /* STARTERKITS */
   .sort > .flr:last-child {
