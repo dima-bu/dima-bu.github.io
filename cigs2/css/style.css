@@ -2420,7 +2420,6 @@ h2.arrow-title {
   padding-left: 15px;
   font-size: 14px;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
-  width: 100%;
 }
 .option-block.mini h4 {
   font-size: 24px;
@@ -6452,10 +6451,12 @@ button.send-mbl,
   .main-content.-starterkit .col-md-4 {
     width: 100%;
   }
-  .sidebar .col-md-12 .option-block.mini {
-    width: 55%;
-    background-position-x: -20px;
-    background-repeat: no-repeat;
+  .sidebar.-starterkit .col-md-12 {
+    width: 50%;
+  }
+  .sidebar.-starterkit .col-md-12 .option-block.mini {
+    width: 90%;
+    margin: 10px;
   }
   /*PRODUCT PAGE - cartridge*/
   .product_header,
