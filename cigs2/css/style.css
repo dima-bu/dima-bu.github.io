@@ -6986,4 +6986,41 @@ button.send-mbl,
   .row.search-results .col-md-4 {
     width: 100%;
   }
+  /* ACCOUNT PAGES */
+  .account-wrapper.-blue-border {
+    padding: 0;
+  }
+  .account-wrapper.-blue-border ul.col-md-3.nav.nav-tabs.account-tabs {
+    border: none;
+    background: #fefefe;
+  }
+  .account-wrapper.-blue-border ul.col-md-3.nav.nav-tabs.account-tabs li {
+    width: 100%;
+    display: block;
+    position: relative;
+    text-transform: capitalize;
+    padding: 0;
+    background: #ffffff url('../img/main-menu-arr.png') no-repeat;
+    background-position: 95%;
+    border-bottom: 1px solid #d7deed;
+    border-right: none;
+    border-left: none;
+    float: none;
+    text-align: left;
+  }
+  .account-wrapper.-blue-border ul.col-md-3.nav.nav-tabs.account-tabs li:first-child.active {
+    border-top: 1px solid #d7deed;
+    border-bottom: 1px solid #d7deed;
+    background: #ffffff url('../img/main-menu-arr.png') no-repeat;
+  }
+  .account-wrapper.-blue-border ul.col-md-3.nav.nav-tabs.account-tabs li a {
+    color: #2c4560;
+    font-size: 16px;
+    font-weight: 500;
+    height: 42px;
+  }
+  .account-wrapper.-blue-border .nav > li > a:hover,
+  .account-wrapper.-blue-border .nav > li > a:focus {
+    background: #fafafa;
+  }
 }
