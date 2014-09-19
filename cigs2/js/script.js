@@ -54,6 +54,14 @@ $(document).ready(function() {
         width: 50
     });
 
+    $('.standart-select.-datum').ddslick({
+        width: 200
+    });
+
+    $('.standart-select.-autor').ddslick({
+        width: 200
+    });
+
 
     /*popups elements*/
 
