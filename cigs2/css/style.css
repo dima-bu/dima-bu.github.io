@@ -3344,17 +3344,24 @@ span.label {
   color: #9090a0;
   font-size: 16px;
 }
-#your-cart.tab-pane,
 #your-address.tab-pane,
 #check_order.tab-pane {
-  padding: 60px 90px;
+  padding: 40px 60px;
   background: #ffffff;
   border: 1px solid #d7dee4;
   border-top: none;
 }
-#your-cart.tab-pane.have-next-step,
 #your-address.tab-pane.have-next-step,
 #check_order.tab-pane.have-next-step {
+  padding-bottom: 0;
+}
+#your-cart.tab-pane {
+  padding: 40px 0;
+  background: #ffffff;
+  border: 1px solid #d7dee4;
+  border-top: none;
+}
+#your-cart.tab-pane.have-next-step {
   padding-bottom: 0;
 }
 .processed .col-md-6,
@@ -3595,7 +3602,7 @@ ul.address_type .checking_label {
 }
 .next-step {
   padding: 45px 60px 40px;
-  margin: 20px -90px 0;
+  margin: 20px -60px 0;
   position: relative;
   background: #fdfdfe;
   border-top: 1px solid #d7dee4;
@@ -3717,6 +3724,9 @@ ul.date-select .dd-pointer-down {
   margin-top: 40px;
   margin-bottom: 10px;
 }
+.shop-block {
+  padding: 10px 60px;
+}
 #your-cart .row.title {
   margin: 0;
 }
@@ -3738,6 +3748,7 @@ ul.date-select .dd-pointer-down {
 }
 .table-title-row {
   background: #ebf1f6;
+  overflow: hidden;
 }
 .table-title-row h3 {
   font-size: 14px;
@@ -3746,18 +3757,15 @@ ul.date-select .dd-pointer-down {
   color: #7c848c;
   margin: 10px 0;
 }
-.table-cart {
-  margin: 20px 0;
-  border: 1px solid #d7deed;
-}
-.table-cart .row:last-child .product-in-cart {
-  border-bottom: none;
+.col-md-12.table-cart {
+  margin: 20px 0 0 0;
+  padding: 10px 60px;
 }
 .product-in-cart {
   height: auto;
   overflow: hidden;
   padding: 15px 0;
-  border-bottom: 1px solid #e8ecf0;
+  border-top: 1px solid #e8ecf0;
   background: #fff;
 }
 .product-in-cart .product-set_img-wrapper {
@@ -3805,24 +3813,57 @@ ul.date-select .dd-pointer-down {
   font-size: 26px;
   margin-top: 30px;
 }
-.continue {
+.bonus-count_block {
+  padding: 20px 40px;
+  color: #9090a0;
+  font-size: 16px;
+  font-weight: 300;
+  background: #fdfdfe;
+  border-top: 1px solid #d7dee4;
+  border-bottom: 1px solid #d7dee4;
+}
+.bonus-count_block > div {
+  margin-bottom: 20px;
+}
+.bonus-count_block div.row {
+  margin-bottom: 0;
+}
+.bonus-count_block div.row .simple-btn {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+.bonus-count_block p {
+  margin-bottom: 0;
+}
+.bonus-count_block p.fll {
+  margin-right: 5px;
+}
+.bonus-count_block p.value {
+  color: #3c6086;
+}
+.col-md-12.continue {
   color: #9090a0;
   font-size: 16px;
   clear: both;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e8ecf0;
-  margin-bottom: 20px;
+  padding: 20px 40px;
+  overflow: hidden;
 }
-.continue .col-md-3,
-.continue .col-md-9 {
+.col-md-12.continue .col-md-3,
+.col-md-12.continue .col-md-9 {
   padding: 0;
 }
-.continue .block-lft,
-.continue .block-rght {
+.col-md-12.continue .block-lft,
+.col-md-12.continue .block-rght {
   margin: 0;
 }
-.continue .update_info {
+.col-md-12.continue .update_info {
   text-align: right;
+}
+.col-md-12.continue .col-md-3,
+.col-md-12.continue .col-md-9 {
+  border-bottom: 1px solid #e8ecf0;
+  padding-bottom: 30px;
 }
 .continue-btn {
   height: 48px;
@@ -3864,32 +3905,36 @@ ul.date-select .dd-pointer-down {
   font-size: 26px;
   float: right;
 }
-.row.discount {
+.row.discount.shop-block {
   clear: both;
+  padding: 10px;
 }
-.row.discount .code-field {
+.row.discount.shop-block .code-field {
   position: relative;
   bottom: 75px;
 }
-.row.discount h3 {
+.row.discount.shop-block h3 {
   font-size: 20px;
   color: #3b3d3f;
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 0;
 }
-.row.discount span.txt {
+.row.discount.shop-block span.txt {
   color: #9090a0;
 }
-.row.discount .g_input {
+.row.discount.shop-block .g_input {
   width: 65%;
 }
-.row.discount .simple-btn {
+.row.discount.shop-block .simple-btn {
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.row.discount.shop-block .col-md-6 {
+  padding: 0;
 }
 .tab-content .check-and-order-tab .col-md-3 {
   position: relative;
@@ -3917,7 +3962,7 @@ ul.date-select .dd-pointer-down {
 }
 .tab-content .check-and-order-tab ~ .next-step {
   padding: 30px 60px 30px;
-  margin: 50px -90px 0;
+  margin: 50px -60px 0;
 }
 .tab-content .check-and-order-tab ~ .next-step button.simple-btn.-lg {
   text-transform: capitalize;
