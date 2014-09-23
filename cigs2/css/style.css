@@ -4922,71 +4922,96 @@ h3.search-word strong {
 .col-md-6.login-new ul li {
   line-height: 27px;
 }
-.table-comparison .col-md-2 {
-  width: 20%;
-}
-.table-comparison .title-for-column {
-  background: #fdfdfe;
-  color: #9090a0;
-  text-transform: capitalize;
+table.table-comparison {
   border: 1px solid #d7dee4;
-}
-.table-comparison .title-for-column .line.col-title {
-  padding-bottom: 80px;
-}
-.table-comparison .title-for-column .line {
-  height: 41px;
-}
-.table-comparison .line.offset-image {
-  height: 225px;
-}
-.table-comparison .line.offset-price {
-  height: 145px;
-}
-.table-comparison .compare-block {
-  border: 1px solid #d7dee4;
-  border-left: none;
   text-align: center;
-  padding-bottom: 20px;
+  border-collapse: inherit;
+  border-spacing: 0;
 }
-.table-comparison .compare-block p {
+table.table-comparison td.title-for-column {
+  background: #fdfdfe;
+  text-align: left;
+}
+table.table-comparison td.title-for-column p {
+  color: #9090a0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+table.table-comparison tr.tr-button td {
+  padding: 0 15px;
+}
+table.table-comparison td {
+  padding: 0px 15px 10px;
+}
+table.table-comparison td p {
   color: #9090a0;
   font-size: 14px;
   font-weight: 300;
 }
-.table-comparison .image {
-  padding: 25px 0 20px;
+table.table-comparison td.-brdl {
+  border-left: 1px solid #d7dee4;
 }
-.table-comparison .title {
+table.table-comparison td.image-product {
+  padding-top: 20px;
+}
+table.table-comparison .part {
+  border-bottom: 1px solid #e5e5ef;
+}
+table.table-comparison p.title {
   color: #314d6b;
   font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
-  min-height: 50px;
-}
-.table-comparison .part {
-  border-bottom: 1px solid #e5e5ef;
-  padding: 10px 0;
-}
-.table-comparison .part p {
   margin: 0;
 }
-.table-comparison .tastes p {
+table.table-comparison .price p {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 20px;
   font-weight: 700;
 }
-.table-comparison .reviews a {
+table.table-comparison .tastes p {
+  font-weight: 700;
+}
+table.table-comparison td.reviews-store {
+  padding: 0 15px;
+}
+table.table-comparison td.reviews-store a {
   color: #e08d2d;
+  font-style: italic;
   cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  display: block;
+  position: relative;
 }
-.table-comparison .button-block {
-  margin-top: 20px;
+table.table-comparison td.reviews-store a i.icon {
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }
-.table-comparison .price.bottom {
-  padding: 10px 0;
+table.table-comparison .contact {
+  margin-bottom: 20px;
 }
-.table-comparison .contact p {
+table.table-comparison .contact p {
   margin: 0;
   font-size: 11px;
+}
+.content-block {
+  margin-top: 40px;
+}
+.content-block .row {
+  margin-bottom: 30px;
+}
+.content-block p.title {
+  color: #314d6b;
+  font-size: 18px;
+  font-weight: 700;
+}
+.content-block p {
+  color: #9090a0;
+  font-size: 16px;
+  font-weight: 300;
 }
 .quantity-input_wrapper {
   position: relative;
