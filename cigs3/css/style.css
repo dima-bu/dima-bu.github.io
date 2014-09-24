@@ -2817,7 +2817,7 @@ h2.arrow-title {
 a.dd-selected label {
   font: 18px 'Lato', sans-serif;
   font-weight: 600;
-  padding-top: 10px;
+  padding-top: 6px;
   color: #000000;
   display: block;
 }
@@ -3306,6 +3306,14 @@ span.label {
 .categories-block .menthol {
   background: #53b0c5;
 }
+.product_categories .categories-block a:hover,
+.product_categories .categories-block a.active {
+  cursor: default;
+}
+.product_categories .categories-block a:hover .category-arrow,
+.product_categories .categories-block a.active .category-arrow {
+  display: none;
+}
 .paginator {
   background-color: #fcfcfd;
   padding: 0 15px;
@@ -3396,7 +3404,7 @@ span.label {
 }
 .processed .g_input,
 .tab-style .g_input {
-  min-height: 50px;
+  min-height: 40px;
 }
 .processed h3,
 .tab-style h3 {
@@ -4183,6 +4191,7 @@ ul.date-select .dd-pointer-down {
 }
 .wiki-sidebar .col-md-12 .wiki-sort-block > ul {
   padding: 0 20px;
+  list-style: none outside none;
 }
 .wiki-sidebar .col-md-12 .wiki-sort-block ul.autor-select .dd-pointer-down,
 .wiki-sidebar .col-md-12 .wiki-sort-block ul.datum-select .dd-pointer-down {
@@ -4402,7 +4411,7 @@ h3.search-word strong {
 }
 .account-wrapper .tab-content #changebilling .g_input,
 .account-wrapper .tab-content #changeaddress .g_input {
-  min-height: 50px;
+  min-height: 40px;
 }
 .account-wrapper .tab-content #changebilling h3,
 .account-wrapper .tab-content #changeaddress h3 {
@@ -4470,7 +4479,7 @@ h3.search-word strong {
 .account-wrapper .tab-content #changebilling ul.date-select .dd-select,
 .account-wrapper .tab-content #changeaddress ul.date-select .dd-select {
   border: 1px solid #000;
-  height: 50px;
+  height: 40px;
 }
 .account-wrapper .tab-content #changebilling ul.date-select ul.dd-options li,
 .account-wrapper .tab-content #changeaddress ul.date-select ul.dd-options li {
@@ -4500,7 +4509,7 @@ h3.search-word strong {
 .account-wrapper .tab-content #changebilling ul.country-select .dd-select,
 .account-wrapper .tab-content #changeaddress ul.country-select .dd-select {
   border: 1px solid #000;
-  height: 50px;
+  height: 40px;
 }
 .account-wrapper .tab-content #changebilling .details-button-block,
 .account-wrapper .tab-content #changeaddress .details-button-block {
@@ -4629,6 +4638,9 @@ h3.search-word strong {
 .my-order-block.active .col-md-12.account-table.hide-block .order-details {
   overflow: hidden;
   margin-top: 15px;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .order-details .col-md-3 {
+  padding-right: 0;
 }
 .my-order-block.active .col-md-12.account-table.hide-block .order-details .btn-title {
   padding: 5px;
@@ -5452,10 +5464,14 @@ table.table-comparison .contact p {
 }
 .dd-option-image,
 .dd-selected-image {
-  margin-top: 4px;
+  margin-top: -1px;
 }
 .dd-options {
   max-height: 240px;
+}
+ul,
+ol {
+  list-style: none outside none;
 }
 /*Typography*/
 a:hover {
@@ -5716,7 +5732,8 @@ button.send-mbl,
 .product-in-cart-mbl,
 .title-mbl,
 .discount-amount-mbl,
-.form-mbl {
+.form-mbl,
+.welcome_text-mbl {
   display: none;
 }
 /* responsive - TABLET*/
@@ -6407,6 +6424,9 @@ button.send-mbl,
     display: block;
     height: 100%;
     cursor: pointer;
+  }
+  .header-top_container {
+    height: auto;
   }
   .header-bottom .container,
   .main-menu .container {
