@@ -3276,6 +3276,18 @@ span.label {
 .categories-block li:last-child {
   margin: 0;
 }
+@-moz-document url-prefix() {
+  .categories-block li {
+    list-style: none;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 1px;
+  }
+  .categories-block li:last-child {
+    margin: 0;
+  }
+}
 .categories-block .all {
   background: #3c6086;
 }
@@ -3570,7 +3582,7 @@ ul.date-select li .standart-select_wrapper {
 }
 ul.date-select .dd-select {
   border: 1px solid #000;
-  height: 50px;
+  height: 40px;
 }
 ul.date-select ul.dd-options li {
   display: block;
@@ -3601,7 +3613,7 @@ ul.country-select a.dd-selected label {
 }
 ul.country-select .dd-select {
   border: 1px solid #000;
-  height: 50px;
+  height: 40px;
 }
 ul.address_type {
   border-bottom: 1px solid #ccc;
@@ -4930,6 +4942,7 @@ h3.search-word strong {
   margin-top: 20px;
   color: #9090a0;
   font-weight: 300;
+  list-style: inherit;
 }
 .col-md-6.login-new ul li {
   line-height: 27px;
@@ -5903,6 +5916,20 @@ button.send-mbl,
   .tablet-hide {
     display: none;
   }
+  .main-menu .container {
+    padding: 0;
+  }
+  /*general forms*/
+  .quantity-input_icon.up_wrapper {
+    top: 0;
+  }
+  .quantity-input_icon.drop_wrapper {
+    bottom: 0;
+  }
+  ul.dd-options.dd-click-off-close {
+    width: 100% !important;
+  }
+  /*end general forms*/
   /*LOGIN PAGE*/
   .col-md-12.login-page-wrapper {
     border: none;
@@ -6138,6 +6165,17 @@ button.send-mbl,
     border: none;
     padding: 20px 0;
   }
+  @-moz-document url-prefix() {
+    .product_categories .categories-block li {
+      margin-right: 1px;
+    }
+    .product_categories .categories-block li:last-child {
+      margin: 0;
+    }
+  }
+  .product-data {
+    overflow: inherit;
+  }
   /* end PRODUCT-PAGE-A, PRODUCT-PAGE-B*/
   /*SHOPPING-CART*/
   .table-cart .col-md-2.title-frst,
@@ -6147,11 +6185,15 @@ button.send-mbl,
   .table-cart .col-md-3 {
     width: 40%;
   }
+  .continue-btn .btn-title {
+    padding-right: 0;
+  }
   .continue .simple-btn {
-    padding: 10px;
+    padding: 10px 5px;
+    height: 40px;
   }
   .continue .update_info {
-    width: 73%;
+    width: 79%;
     font-size: 14px;
   }
   .discount .col-md-8 {
@@ -6201,12 +6243,28 @@ button.send-mbl,
     position: relative;
     bottom: 35px;
   }
+  #your-cart .row.discount .code-field .col-md-12 {
+    padding-left: 5px;
+  }
   #your-cart .col-md-6.next-step-tablet {
     width: 100%;
-    margin-bottom: -30px;
-    padding: 0px 20px 10px;
-    border-top: 1px solid #ddd;
-    background: #f9fafc;
+  }
+  #your-cart .col-md-6.next-step-tablet .col-md-12 {
+    padding: 0;
+  }
+  .next-step {
+    background: #FFFFFF;
+    border: none;
+  }
+  .col-md-12.table-cart,
+  .shop-block,
+  .col-md-12.continue {
+    padding: 10px 0;
+  }
+  .bonus-count_block {
+    padding: 20px 15px;
+    margin: 0 -15px;
+    border: 1px solid #d7dee4;
   }
   #your-address.tab-pane.have-next-step {
     padding: 0;
@@ -6248,8 +6306,20 @@ button.send-mbl,
   #bewertung-select .dd-container {
     width: 340px !important;
   }
-  .box {
-    margin: 0 0 40px 0;
+  .wiki-sidebar .col-md-12 .wiki-sort-block {
+    padding-bottom: 10px;
+    overflow: hidden;
+  }
+  .wiki-sidebar .col-md-12 .wiki-sort-block .subscr-block {
+    padding: 0 15px 13px;
+    width: 50%;
+    float: left;
+  }
+  .wiki-sidebar .col-md-12.after-sort {
+    clear: both;
+  }
+  .wiki-sidebar .col-md-12 .box {
+    margin: 0 0 15px;
   }
   .register-wrapper {
     margin-top: 0;
@@ -6260,6 +6330,13 @@ button.send-mbl,
   }
   /*end WIKI_PAGE*/
   /* SEARCH RESULTS PAGE*/
+  .sort .dd-container,
+  .sort .dd-select {
+    width: auto !important;
+  }
+  .sort .dd-select {
+    padding-right: 30px;
+  }
   .sidebar.filter-block-wrapper-tablet {
     display: block;
     overflow: hidden;
@@ -6317,9 +6394,6 @@ button.send-mbl,
     border: none;
     padding: 0;
   }
-  .account-wrapper.-blue-border .tab-content .active {
-    margin: 0 -15px;
-  }
   .account-wrapper.-blue-border .tab-content .table-title-row.orders .col-md-3.title-frst.date {
     width: 15%;
   }
@@ -6341,9 +6415,6 @@ button.send-mbl,
   .account-wrapper.-blue-border .tab-content .my-order-block a.simple-btn.action {
     padding: 6px 10px;
   }
-  .account-wrapper.-blue-border .tab-content .my-order-block .order-details {
-    margin-right: -15px;
-  }
   .account-wrapper.-blue-border .tab-content #changebilling .col-md-6,
   .account-wrapper.-blue-border .tab-content #changeaddress .col-md-6 {
     width: 65%;
@@ -6352,6 +6423,19 @@ button.send-mbl,
   .account-wrapper.-blue-border .tab-content #changeaddress .details-button-block {
     display: none;
   }
+  .account-wrapper.-blue-border #myorders .account-table {
+    margin: 0 15px;
+  }
+  .account-wrapper.-blue-border #myorders .account-table.hide-block {
+    margin: 0;
+  }
+  /*MOST-POPULAR PAGE*/
+  @-moz-document url-prefix() {
+    .table-comparison img.img-responsive {
+      width: 100%;
+    }
+  }
+  /*end MOST-POPULAR page*/
 }
 @media screen and (max-width: 640px) {
   /*LAYOUT*/
