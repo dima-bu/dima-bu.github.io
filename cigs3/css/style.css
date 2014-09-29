@@ -2234,7 +2234,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -2343px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2685px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -2317,7 +2317,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -126px;
+  background: transparent url('../img/sprite.png') 0px -54px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2326,7 +2326,7 @@ h3.footer_title {
   width: 10px !important;
   display: inline-block;
   border: 0 none transparent !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -108px;
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
@@ -2575,7 +2575,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -2897px;
+  background-position: 0px -2939px;
   height: 57px;
   width: 58px;
 }
@@ -3868,6 +3868,27 @@ ul.date-select .dd-pointer-down {
 }
 .bonus-count_block p.value {
   color: #3c6086;
+}
+.bonus-count_block .progress {
+  overflow: visible;
+  height: 15px;
+  margin: 20px 0;
+  background-color: #eff0f6;
+  border-radius: 25px;
+  box-shadow: none;
+}
+.bonus-count_block .progress .bar {
+  display: block;
+  height: 100%;
+  background: #bbbed3;
+  border-radius: 25px;
+  position: relative;
+}
+.bonus-count_block .progress .bar .icon.bar-point {
+  position: absolute;
+  right: -15px;
+  top: -8px;
+  cursor: pointer;
 }
 .col-md-12.continue {
   color: #9090a0;
@@ -6308,12 +6329,14 @@ button.send-mbl,
   }
   .wiki-sidebar .col-md-12 .wiki-sort-block {
     padding-bottom: 10px;
-    overflow: hidden;
   }
   .wiki-sidebar .col-md-12 .wiki-sort-block .subscr-block {
     padding: 0 15px 13px;
     width: 50%;
     float: left;
+  }
+  .wiki-sidebar .col-md-12.wiki-subscribe .wiki-sort-block {
+    overflow: hidden;
   }
   .wiki-sidebar .col-md-12.after-sort {
     clear: both;
@@ -7161,6 +7184,25 @@ button.send-mbl,
   #your-address.tab-pane .row.wrapper-tablet.next-step .simple-btn .icon.next-step-arr {
     display: none;
   }
+  #your-cart .title-mbl {
+    border: none;
+  }
+  #your-cart .product-in-cart-mbl .col-md-12 {
+    padding: 0 15px;
+    border: none;
+  }
+  #your-cart .col-md-12.bonus-count_block-wrapper {
+    padding: 0;
+  }
+  #your-cart .col-md-12.bonus-count_block-wrapper .bonus-count_block {
+    border-right: none;
+    border-left: none;
+  }
+  #your-cart .col-md-12.continue .col-md-3,
+  #your-cart .col-md-12.continue .col-md-9 {
+    border-bottom: none;
+    padding-bottom: 10px;
+  }
   #your-address .col-md-6.first-line,
   #your-address .col-md-6 {
     width: 100%;
@@ -7259,9 +7301,31 @@ button.send-mbl,
   .comments_wrapper .bottom-part .simple-btn.-lg {
     width: 100%;
   }
+  .article-preview .article-bottom-block {
+    text-align: center;
+  }
+  .article-preview .article-bottom-block a.readmore {
+    float: none;
+    clear: both;
+    display: block;
+    margin-top: 5px;
+  }
+  .article-preview span.preview-komment-wrapper {
+    display: block;
+    overflow: hidden;
+    width: 280px;
+    margin: 0 auto;
+  }
   .sidebar .wiki-sidebar .col-md-12 {
     width: 100%;
+    margin: 0 0 15px;
+  }
+  .wiki-sidebar .col-md-12 .box {
     margin: 0;
+  }
+  .wiki-sort-block .dd-container,
+  .wiki-sort-block .dd-select {
+    width: 100% !important;
   }
   /*SEARCH-RESULTS PAGE*/
   h3.search-word {
