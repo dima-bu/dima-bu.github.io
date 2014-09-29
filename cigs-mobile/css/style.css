@@ -3797,57 +3797,55 @@ ul.date-select .dd-pointer-down {
   margin: 20px 0 0 0;
   padding: 10px 60px;
 }
-.product-in-cart {
+.product-in-cart-mbl {
   height: auto;
   overflow: hidden;
   padding: 15px 0;
   border-top: 1px solid #e8ecf0;
   background: #fff;
 }
-.product-in-cart .product-set_img-wrapper {
+.product-in-cart-mbl .product-set_img-wrapper {
   height: 100%;
   float: left;
-  padding: 0 30px 0 0;
+  padding: 0 20px 0 0;
 }
-.product-in-cart .product-set_img-wrapper .img-responsive {
+.product-in-cart-mbl .product-set_img-wrapper .img-responsive {
   height: auto;
-  border: 1px solid #d7dee4;
 }
-.product-in-cart .col-md-3.product-nm {
+.product-in-cart-mbl .product-nm {
   padding-left: 0;
 }
-.product-in-cart .col-md-3.product-nm .product-set_title {
+.product-in-cart-mbl .product-nm .product-set_title {
   text-transform: none;
   font-weight: 700;
 }
-.product-in-cart .col-md-3.product-nm h3 {
+.product-in-cart-mbl .product-nm h3 {
   font-size: 16px;
   color: #252536;
 }
-.product-in-cart .col-md-3.product-nm h4 {
+.product-in-cart-mbl .product-nm h4 {
   font-size: 14px;
   color: #aeaeb9;
 }
-.product-in-cart .col-md-3.product-nm .stars {
+.product-in-cart-mbl .product-nm .stars {
   clear: both;
   float: left;
   margin-right: 5px;
 }
-.product-in-cart .col-md-3.product-nm .review_count {
+.product-in-cart-mbl .product-nm .review_count {
   padding-top: 2px;
 }
-.product-in-cart .qty,
-.product-in-cart .delete-btn {
-  padding-top: 20px;
+.product-in-cart-mbl .data-qty-price .right-block {
+  float: right;
 }
-.product-in-cart .unit-price,
-.product-in-cart .total {
+.product-in-cart-mbl .unit-price,
+.product-in-cart-mbl .total {
   font-size: 26px;
 }
-.product-in-cart .unit-price .price,
-.product-in-cart .total .price {
+.product-in-cart-mbl .unit-price .price,
+.product-in-cart-mbl .total .price {
   font-size: 26px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .bonus-count_block {
   padding: 20px 40px;
@@ -3868,6 +3866,7 @@ ul.date-select .dd-pointer-down {
   text-transform: capitalize;
   font-size: 14px;
   font-weight: 500;
+  margin-top: 15px;
 }
 .bonus-count_block p {
   margin-bottom: 0;
@@ -6740,19 +6739,6 @@ footer.footer .footer_copyright .desktop-mbl button.simple-btn.clear-btn.desktop
   padding: 1px 5px;
 }
 /*Your cart*/
-.table-cart {
-  border: none;
-}
-.title-mbl {
-  display: block;
-  border-bottom: 1px solid #e8ecf0;
-  overflow: hidden;
-}
-.title-mbl h4 {
-  color: #484a4c;
-  text-transform: capitalize;
-  font-weight: 700;
-}
 .product-in-cart-mbl {
   display: block;
 }
@@ -6760,44 +6746,45 @@ footer.footer .footer_copyright .desktop-mbl button.simple-btn.clear-btn.desktop
   padding: 0;
   border-bottom: 1px solid #e8ecf0;
 }
-.product-in-cart-mbl .col-md-2.product-set_img-wrapper {
+.product-in-cart-mbl .product-set_img-wrapper {
   display: block;
 }
-.product-in-cart-mbl .col-md-2.product-set_img-wrapper .img-responsive {
+.product-in-cart-mbl .product-set_img-wrapper .img-responsive {
   border: none;
 }
-.product-in-cart-mbl .col-md-3.product-nm {
+.product-in-cart-mbl .product-nm {
   width: 83%;
   margin-bottom: 15px;
 }
-.product-in-cart-mbl .col-md-3.product-nm h4 {
+.product-in-cart-mbl .product-nm h4 {
   margin-bottom: 0;
 }
-.product-in-cart-mbl .col-md-2.qty {
+.product-in-cart-mbl .qty {
   text-transform: uppercase;
   font-weight: 700;
   color: #7c848c;
-  padding-left: 16.666%;
   padding-top: 0;
   overflow: hidden;
-  width: 70%;
-  clear: both;
 }
-.product-in-cart-mbl .col-md-2.qty p {
+.product-in-cart-mbl .qty p {
   float: left;
   margin-right: 15px;
   margin-top: 10px;
 }
-.product-in-cart-mbl .col-md-2.qty .quantity-input_wrapper {
+.product-in-cart-mbl .qty .quantity-input_wrapper {
   float: left;
 }
-.product-in-cart-mbl .product-in-cart .delete-btn {
+.product-in-cart-mbl .delete-btn {
   padding-top: 0;
+  float: right;
 }
-.product-in-cart-mbl .product-in-cart .delete-btn .simple-btn {
+.product-in-cart-mbl .delete-btn .simple-btn {
   padding: 0 15px;
 }
-.product-in-cart-mbl .product-in-cart .total .price {
+.product-in-cart-mbl .total {
+  float: left;
+}
+.product-in-cart-mbl .total .price {
   margin-top: 0;
 }
 .continue .col-md-3 {
