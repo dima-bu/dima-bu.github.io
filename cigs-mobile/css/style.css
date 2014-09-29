@@ -1993,6 +1993,14 @@ address {
 .login_link:hover {
   color: #ffffff;
 }
+.folo-login {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  overflow: hidden;
+  display: none;
+}
 .cart_wrapper {
   color: #ffffff;
   text-align: left;
@@ -4598,7 +4606,7 @@ h3.search-word strong {
 }
 .my-order-block .actions {
   clear: both;
-  line-height: 29px;
+  line-height: 28px;
 }
 .my-order-block a.simple-btn.action {
   width: 60px;
@@ -4621,6 +4629,12 @@ h3.search-word strong {
 }
 .my-order-block.active .col-md-12.account-table.hide-block {
   display: block;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order {
+  border-top: 1px solid #d7dee4;
+}
+.my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .product-set_img-wrapper {
+  float: left;
 }
 .my-order-block.active .col-md-12.account-table.hide-block .product-in-cart.drop-block.in-order .col-md-4.article-name {
   padding-left: 0;
@@ -6265,6 +6279,7 @@ p.hint {
 }
 .header-top .login-block-mbl {
   text-align: center;
+  padding-top: 5px;
 }
 .header-top .cart-block-mbl {
   padding: 5px 0;
