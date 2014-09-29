@@ -3415,6 +3415,13 @@ span.label {
   border: 1px solid #d7dee4;
   border-top: none;
 }
+#your-cart.tab-pane > h4 {
+  font-size: 24px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
 #your-cart.tab-pane.have-next-step {
   padding-bottom: 0;
 }
@@ -3447,11 +3454,9 @@ span.label {
 }
 .processed h3,
 .tab-style h3 {
-  font-size: 26px;
+  font-size: 24px;
   text-transform: capitalize;
   border-bottom: 1px solid #ccc;
-  margin-left: 15px;
-  margin-right: 15px;
   padding-bottom: 20px;
 }
 .processed h3 strong,
@@ -6060,19 +6065,16 @@ p.hint {
   margin: 0 -15px;
   border: 1px solid #d7dee4;
 }
-#your-address.tab-pane.have-next-step {
-  padding: 0;
-}
 #your-address .col-md-6 {
   width: 70%;
 }
 #your-address .col-md-6.first-line {
   width: 50%;
 }
-#your-address ul.date-select li {
+#your-address ul.date-select > li {
   margin-right: 6%;
 }
-#your-address ul.date-select li:last-child {
+#your-address ul.date-select > li:last-child {
   margin: 0;
 }
 .tab-content .check-and-order-tab .col-md-3,
