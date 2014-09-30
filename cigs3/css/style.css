@@ -2182,7 +2182,6 @@ address {
 }
 .main-menu_item {
   display: table-cell;
-  position: relative;
   text-transform: uppercase;
   text-align: center;
   border-right: 1px solid #3c6086;
@@ -2202,7 +2201,46 @@ address {
 }
 .main-menu_link:hover {
   color: #314d6b;
-  background-color: #f7f9fb;
+  background-color: #ffffff;
+}
+.submenu-starterkits.dropdown-menu {
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 0;
+  width: 100%;
+  box-shadow: none;
+  border: 1px solid #f7f9fb;
+  border-top: none;
+  display: block;
+}
+.submenu-starterkits.dropdown-menu .sub-main-menu {
+  padding: 20px 0px;
+  width: 100%;
+}
+.submenu-starterkits.dropdown-menu .sub-main-menu_item {
+  border-bottom: 1px solid #f7f9fb;
+}
+.submenu-starterkits.dropdown-menu .sub-main-menu_item:last-child {
+  border-bottom: none;
+}
+.submenu-starterkits.dropdown-menu .sub-main-menu_link {
+  padding: 0;
+  display: block;
+  cursor: pointer;
+}
+.submenu-starterkits.dropdown-menu .sub-main-menu_link h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #314d6b;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.submenu-starterkits.dropdown-menu .sub-main-menu_link p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #9090a0;
+  text-transform: none;
 }
 .breadcrumb {
   border-bottom: 1px solid #d7dee4;
