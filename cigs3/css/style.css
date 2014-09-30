@@ -2199,6 +2199,9 @@ address {
   display: inline-block;
   vertical-align: middle;
 }
+.main-menu_link:focus {
+  color: #e1ebf4;
+}
 .main-menu_link:hover {
   color: #314d6b;
   background-color: #ffffff;
@@ -2223,12 +2226,15 @@ address {
 .submenu-starterkits.dropdown-menu .sub-main-menu_item:last-child {
   border-bottom: none;
 }
-.submenu-starterkits.dropdown-menu .sub-main-menu_link {
+.submenu-starterkits.dropdown-menu a.sub-main-menu_link {
   padding: 0;
   display: block;
   cursor: pointer;
 }
-.submenu-starterkits.dropdown-menu .sub-main-menu_link h3 {
+.submenu-starterkits.dropdown-menu a.sub-main-menu_link:focus {
+  color: #e1ebf4;
+}
+.submenu-starterkits.dropdown-menu a.sub-main-menu_link h3 {
   font-size: 16px;
   font-weight: 300;
   color: #314d6b;
@@ -2236,7 +2242,7 @@ address {
   margin-bottom: 5px;
   text-transform: capitalize;
 }
-.submenu-starterkits.dropdown-menu .sub-main-menu_link p {
+.submenu-starterkits.dropdown-menu a.sub-main-menu_link p {
   font-size: 12px;
   font-weight: 300;
   color: #9090a0;
@@ -5546,7 +5552,8 @@ ol {
   list-style: none outside none;
 }
 /*Typography*/
-a:hover {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 i {
