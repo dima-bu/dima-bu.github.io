@@ -2272,7 +2272,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -2685px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2385px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -5120,9 +5120,10 @@ table.table-comparison .contact p {
 .recycle-content .stage h4 {
   max-width: 450px;
   margin: 10px auto 45px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   color: #484a4c;
+  line-height: 24px;
 }
 .recycle-content .stage h4:last-child {
   max-width: 600px;
@@ -5144,6 +5145,28 @@ table.table-comparison .contact p {
   position: absolute;
   left: 45%;
   top: -10px;
+}
+.recycle-content .location-block {
+  background: #f7f9fc;
+  border-top: 1px solid #d7dee4;
+  border-bottom: 1px solid #d7dee4;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+.recycle-content .location-block .location-text {
+  float: left;
+}
+.recycle-content .location-block .location-text p {
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+}
+.recycle-content .location-block .location-block-bg {
+  float: right;
+}
+.recycle-content .bottom-info-block {
+  margin: 30px auto 0;
+  width: 80%;
 }
 .quantity-input_wrapper {
   position: relative;
