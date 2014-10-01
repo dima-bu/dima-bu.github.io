@@ -1947,13 +1947,14 @@ address {
 /* POPUPS BLOCKS*/
 .login-block {
   display: none;
-  z-index: 10;
+  z-index: 2000;
   min-width: 300px;
 }
 .cart-block {
   left: -418px;
   width: 760px;
   display: none;
+  z-index: 2000;
 }
 .popup {
   background: #ffffff;
@@ -2036,15 +2037,8 @@ address {
   border-right: 13px solid transparent;
 }
 .popup.cart-block::before {
-  content: '';
-  position: absolute;
   right: 293px;
   top: -13px;
-  height: 0;
-  width: 0;
-  border-bottom: 13px solid #ffffff;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
 }
 /*drop-cart*/
 .cart-block .product-nm {
@@ -2214,6 +2208,7 @@ address {
   box-shadow: none;
   border: 1px solid #f7f9fb;
   border-top: none;
+  z-index: 1;
 }
 .submenu-starterkits.dropdown-menu .sub-main-menu {
   padding: 20px 0px;
