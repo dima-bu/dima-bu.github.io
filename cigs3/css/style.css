@@ -2214,7 +2214,6 @@ address {
   box-shadow: none;
   border: 1px solid #f7f9fb;
   border-top: none;
-  display: block;
 }
 .submenu-starterkits.dropdown-menu .sub-main-menu {
   padding: 20px 0px;
@@ -2251,7 +2250,7 @@ address {
 .breadcrumb {
   border-bottom: 1px solid #d7dee4;
   height: 40px;
-  margin: 10px 0 30px;
+  margin: 0 0 30px;
 }
 .breadcrumb a {
   color: #a8b4c0;
@@ -5103,6 +5102,54 @@ table.table-comparison .contact p {
   font-size: 16px;
   font-weight: 300;
 }
+.col-md-12.banner-recycle {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.recycle-content {
+  text-align: center;
+}
+.recycle-content .recycle-title {
+  padding-bottom: 30px;
+}
+.recycle-content .recycle-title h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #314d6b;
+}
+.recycle-content .recycle-title p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #9090a0;
+}
+.recycle-content .stage h4 {
+  max-width: 450px;
+  margin: 10px auto 45px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #484a4c;
+}
+.recycle-content .stage h4:last-child {
+  max-width: 600px;
+}
+.recycle-content .stage .divider {
+  border-top: 1px solid #d7dee4;
+  width: 55%;
+  margin: 0 auto 60px;
+  position: relative;
+}
+.recycle-content .stage .divider.first-stage {
+  width: 100%;
+}
+.recycle-content .stage .divider.first-stage img {
+  left: 47%;
+}
+.recycle-content .stage .divider img {
+  margin: 0 auto;
+  position: absolute;
+  left: 45%;
+  top: -10px;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
@@ -5763,28 +5810,39 @@ textarea:focus {
   color: #3c6086;
   cursor: pointer;
 }
-.col-md-12.error {
+.col-md-12.error-block {
   border: 1px solid;
   margin: 20px 0;
   padding: 20px;
   background: #fef5f5;
 }
-.col-md-12.error strong {
+.col-md-12.error-block strong {
   display: block;
 }
-.error h5 {
+.error-block h5 {
   color: #dc4848;
   float: left;
 }
-.error .-black-border,
-.error .-blue-border {
+.error-block .-black-border,
+.error-block .-blue-border {
   border: 1px solid #dc4848;
 }
-.error .error_hint {
+.error-block .error_hint {
   display: block;
 }
-.error .g_input {
+.error-block .g_input {
   background: #fef5f5;
+}
+.success-block h5 {
+  color: #4edc39;
+  float: left;
+}
+.success-block .-black-border,
+.success-block .-blue-border {
+  border: 1px solid #4edc39;
+}
+.success-block .g_input {
+  background: #e5fee0;
 }
 p.hint {
   margin: 0;
