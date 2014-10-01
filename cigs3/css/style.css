@@ -5168,6 +5168,39 @@ table.table-comparison .contact p {
   margin: 30px auto 0;
   width: 80%;
 }
+.col-md-12.bonus-banner {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.bonus-content .bonus-stage {
+  padding-top: 30px;
+}
+.bonus-content .bonus-stage h4 {
+  margin: 10px auto 45px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #484a4c;
+  line-height: 24px;
+  text-align: center;
+}
+.bonus-content .bonus-stage .divider {
+  border-top: 1px solid #d7dee4;
+  width: 100%;
+  margin: 30px auto 60px;
+  position: relative;
+}
+.bonus-content .bonus-stage .divider:first-child {
+  margin-top: 0;
+}
+.bonus-content .bonus-stage .divider img {
+  margin: 0 auto;
+  position: absolute;
+  left: 45%;
+  top: -10px;
+}
+.bonus-content .bonus-stage .bonus-graphic {
+  margin: 0 auto;
+}
 .quantity-input_wrapper {
   position: relative;
   width: 90px;
