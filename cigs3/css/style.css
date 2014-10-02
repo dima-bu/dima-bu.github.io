@@ -4455,6 +4455,9 @@ h3.search-word strong {
   color: #9090a0;
 }
 /* YOUR PERSONAL DETAILS */
+#myaccount .row.password .col-md-6 {
+  float: none;
+}
 .account-wrapper .tab-content #changebilling .col-md-6,
 .account-wrapper .tab-content #changeaddress .col-md-6 {
   min-height: 70px;
@@ -5275,6 +5278,7 @@ table.table-comparison .contact p {
 }
 .checking_list.-light .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
+  margin-top: 30%;
 }
 .checking_list.-light .checking_input:checked ~ .checking_label {
   font-weight: 900;
@@ -5334,6 +5338,7 @@ table.table-comparison .contact p {
 }
 .checking_list.-dark .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
+  margin-top: 30%;
 }
 .checking_list.-dark .checking_input:checked ~ .checking_label {
   font-weight: 900;
@@ -5416,6 +5421,7 @@ table.table-comparison .contact p {
 }
 .checking_item.-color .checking_input:checked ~ .checking_input-pseudo-wrapper .checking_input-pseudo .icon {
   display: inline-block;
+  margin-top: 30%;
 }
 .checking_item.-color .checking_input:checked ~ .checking_label {
   font-weight: 900;
