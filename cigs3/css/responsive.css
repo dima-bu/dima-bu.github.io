@@ -686,5 +686,8 @@
       width: 100%;
     }
   }
+  table.row.table-comparison tr td.-brdl:last-child{
+    display: none;
+  }
   /*end MOST-POPULAR page*/
 }
