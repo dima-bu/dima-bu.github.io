@@ -4227,6 +4227,9 @@ ul.date-select .dd-pointer-down {
 .box {
   margin-top: 30px;
 }
+.box img {
+  margin: 0 auto;
+}
 .wiki-sidebar {
   margin-right: -15px;
 }

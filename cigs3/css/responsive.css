@@ -152,6 +152,10 @@
   .product-lineup {
     height: 300px;
   }
+  /* MOST POPULAR PAGE*/
+  table.row.table-comparison tr td.-brdl:last-child{
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   /*layout*/
