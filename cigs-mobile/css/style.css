@@ -7227,3 +7227,50 @@ ul.filters-mobile.dropdown-menu {
 .account-wrapper.-blue-border .nav > li > a:focus {
   background: #fafafa;
 }
+/* responsive for 320px*/
+@media screen and (max-width: 480px) {
+  .main-content .row.banners .col-md-8 h4,
+  .main-content .row.banners .col-md-4 h4 {
+    margin: 40px 0 0 0px;
+  }
+  .product-in-cart-mbl .qty.fll {
+    clear: both;
+  }
+  .product-in-cart-mbl .data-qty-price .right-block {
+    margin-top: 5px;
+  }
+  .product-in-cart-mbl .product-nm {
+    width: 100%;
+  }
+  .row.discount .discount-amount-mbl input.g_input {
+    width: 85%;
+  }
+  .row.discount .discount-amount-mbl a.link-btn.simple-btn {
+    width: 10%;
+    padding: 6px 0px;
+  }
+  .end-ordering-wrapper-block .account-table .my-order-confirmation .col-md-2.total {
+    width: 40%;
+  }
+  .end-ordering-wrapper-block .account-table .my-order-confirmation .col-md-3 {
+    width: 60%;
+  }
+  .row.discount .discount-amount-mbl .grand.sum,
+  .row.discount .discount-amount-mbl .sub.sum {
+    font-size: 18px;
+  }
+  .tab-content .check-and-order-tab ~ .next-step ul.agreement.checking_list.-light .checking_item {
+    height: auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .product-in-cart-mbl .data-qty-price .right-block {
+    clear: both;
+    float: left;
+    margin-top: 15px;
+  }
+  .row.discount .discount-amount-mbl .grand.sum,
+  .row.discount .discount-amount-mbl .sub.sum {
+    font-size: 16px;
+  }
+}

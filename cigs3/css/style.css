@@ -2200,6 +2200,12 @@ address {
   color: #314d6b;
   background-color: #ffffff;
 }
+.main-menu_link span {
+  font-size: 12px;
+  display: block;
+  height: 30%;
+  margin-top: -7px;
+}
 .submenu-starterkits.dropdown-menu {
   margin: 0;
   padding: 0 10px;
