@@ -110,6 +110,11 @@
     width: 80%;
     margin: 100px 0 0 10px;
   }
+
+  .banners{
+    width: 775px;
+    margin: 0 auto;
+  }
   /*end HOME PAGE*/
   /*STARTER KITS*/
   .welcome_wrapper.-starterkit {
@@ -152,6 +157,7 @@
   .product-lineup {
     height: 300px;
   }
+
   /* MOST POPULAR PAGE*/
   table.row.table-comparison tr td.-brdl:last-child{
     display: none;
@@ -241,6 +247,18 @@
   .product-lineup {
     height: 220px;
   }
+  .banners{
+    width: 100%;
+    .col-md-8{
+      width: 65%;
+    }
+    .col-md-4{
+      width: 31.4%;
+    }
+    .col-md-4.bottom-row{
+      margin-right: 20px;
+    }
+}
   /* STARTERKITS */
   .sort > .flr:last-child {
     display: none;
