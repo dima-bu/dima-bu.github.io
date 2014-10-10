@@ -249,16 +249,17 @@
   }
   .banners{
     width: 100%;
-    .col-md-8{
-      width: 65%;
-    }
-    .col-md-4{
-      width: 31.4%;
-    }
-    .col-md-4.bottom-row{
-      margin-right: 20px;
-    }
-}
+  }
+  .banners .col-md-8{
+    width: 65%;
+  }
+  .banners .col-md-4{
+    width: 31.4%;
+  }
+  .banners .col-md-4.bottom-row{
+    margin-right: 20px;
+  }
+
   /* STARTERKITS */
   .sort > .flr:last-child {
     display: none;
