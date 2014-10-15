@@ -4232,20 +4232,23 @@ ul.date-select .dd-pointer-down {
 }
 .box {
   margin-top: 30px;
+  text-align: center;
 }
 .box img {
   margin: 0 auto;
 }
-.wiki-sidebar {
-  margin-right: -15px;
+.col-md-3.wiki-sidebar {
+  padding-right: 0px;
+  padding-left: 20px;
 }
-.wiki-sidebar .col-md-12 {
-  padding-right: 0;
-}
-.wiki-sidebar .col-md-12 .wiki-sort-block {
+.col-md-3.wiki-sidebar .wiki-sort-block {
+  margin-top: 30px;
   padding-bottom: 20px;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block .title {
+.col-md-3.wiki-sidebar .wiki-sort-block:first-child {
+  margin-top: 0;
+}
+.col-md-3.wiki-sidebar .wiki-sort-block .title {
   padding: 10px 20px;
   margin-bottom: 20px;
   background: #fcfdfe;
@@ -4254,14 +4257,14 @@ ul.date-select .dd-pointer-down {
   font-weight: 700;
   color: #484a4c;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block .subscr-block {
+.col-md-3.wiki-sidebar .wiki-sort-block .subscr-block {
   padding: 0 20px 5px;
   overflow: hidden;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block .subscr-block i.icon {
+.col-md-3.wiki-sidebar .wiki-sort-block .subscr-block i.icon {
   float: left;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block .subscr-block a {
+.col-md-3.wiki-sidebar .wiki-sort-block .subscr-block a {
   font-size: 16px;
   color: #e08d2d;
   cursor: pointer;
@@ -4269,20 +4272,20 @@ ul.date-select .dd-pointer-down {
   display: block;
   float: left;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block > ul {
-  padding: 0 20px;
+.col-md-3.wiki-sidebar .wiki-sort-block > ul {
+  padding: 0 15px;
   list-style: none outside none;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block ul.autor-select .dd-pointer-down,
-.wiki-sidebar .col-md-12 .wiki-sort-block ul.datum-select .dd-pointer-down {
+.col-md-3.wiki-sidebar .wiki-sort-block ul.autor-select .dd-pointer-down,
+.col-md-3.wiki-sidebar .wiki-sort-block ul.datum-select .dd-pointer-down {
   background: transparent url('../img/drop-blue.png') 0px 0px;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block a.dd-selected label {
+.col-md-3.wiki-sidebar .wiki-sort-block a.dd-selected label {
   font: 18px 'Lato', sans-serif;
   font-weight: 400;
   padding-top: 5px;
 }
-.wiki-sidebar .col-md-12 .wiki-sort-block p.publ {
+.col-md-3.wiki-sidebar .wiki-sort-block p.publ {
   color: #e08d2d;
   font-weight: 700;
 }
