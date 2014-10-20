@@ -2285,7 +2285,7 @@ span.sep {
 .footer {
   background-color: #314d6b;
   padding-top: 35px;
-  margin-top: 110px;
+  margin-top: 10px;
   color: #e7e7e9;
 }
 .footer_inner {
@@ -2461,6 +2461,9 @@ h2.arrow-title {
   font-size: 16px;
   color: #ffffff;
   overflow: hidden;
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 .option-block h4 {
   color: #ffffff;
@@ -2479,6 +2482,7 @@ h2.arrow-title {
   padding-left: 15px;
   font-size: 14px;
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
 }
 .option-block.mini h4 {
   font-size: 24px;
