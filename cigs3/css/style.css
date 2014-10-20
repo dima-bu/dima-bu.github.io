@@ -2620,6 +2620,7 @@ h2.arrow-title {
   border: 1px solid #ccc;
   position: relative;
   text-align: center;
+  min-height: 380px;
 }
 .product-set .ribbon {
   position: absolute;
@@ -2631,9 +2632,16 @@ h2.arrow-title {
   height: 57px;
   width: 58px;
 }
+.product-set.-sm > a {
+  display: table;
+  margin: 0 auto;
+  min-height: 65px;
+}
 .product-set.-sm .product-set_title {
   font-size: 20px;
-  height: 45px;
+  margin: 0 5px;
+  display: table-cell;
+  vertical-align: middle;
 }
 .product-set.-sm .product-set_subtitle {
   font-size: 12px;
