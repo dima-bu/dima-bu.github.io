@@ -2348,6 +2348,10 @@ h3.footer_title {
 .social_media_wrapper {
   position: absolute;
 }
+.footer_info img {
+  display: inline-block;
+  margin-right: 15px;
+}
 .dd-desc {
   display: none !important;
 }
