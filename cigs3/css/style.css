@@ -4253,6 +4253,9 @@ ul.date-select .dd-pointer-down {
   margin: 0 auto;
   width: 100%;
 }
+.box.fbiframe iframe {
+  height: 310px;
+}
 .col-md-3.wiki-sidebar {
   padding-right: 0px;
   padding-left: 20px;
