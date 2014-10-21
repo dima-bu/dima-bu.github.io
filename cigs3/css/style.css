@@ -2278,7 +2278,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -2385px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2658px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -2348,9 +2348,8 @@ h3.footer_title {
 .social_media_wrapper {
   position: absolute;
 }
-.footer_info img {
-  display: inline-block;
-  margin-right: 15px;
+.footer-col_content .footer_info i.icon {
+  margin-right: 10px;
 }
 .dd-desc {
   display: none !important;
@@ -2365,7 +2364,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -72px;
+  background: transparent url('../img/sprite.png') 0px -36px;
   display: inline-block;
   border: 0 none !important;
 }
@@ -2374,7 +2373,7 @@ h3.footer_title {
   width: 10px !important;
   display: inline-block;
   border: 0 none transparent !important;
-  background: transparent url('../img/sprite.png') 0px 0px;
+  background: transparent url('../img/sprite.png') 0px -108px;
 }
 .arrow-title_wrapper {
   margin-bottom: 30px;
@@ -2628,7 +2627,7 @@ h2.arrow-title {
   left: -1px;
 }
 .product-set.-sm .ribbon.icon {
-  background-position: 0px -2939px;
+  background-position: 0px -3012px;
   height: 57px;
   width: 58px;
 }
