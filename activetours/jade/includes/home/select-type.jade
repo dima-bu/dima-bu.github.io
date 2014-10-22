@@ -1,0 +1,212 @@
+- var waterarray = [{ name: 'Сёрфинг', id: 3}, { name: 'Кайтсёрфинг', id: 4 }, { name: 'Яхтинг', id: 5 }, { name: 'Дайвинг', id: 6 }, { name: ' Вейкбординг / водные лыжи ', id: 7 }, { name: ' Рафтинг ', id: 8 }, { name: ' Каякинг', id: 9 }, { name: ' Сплавы туристические ', id: 10 }, { name: ' Рыболовные туры ', id: 11 }  ]
+- var safariarray = [{ name: 'Африканское сафари', id: 12}, { name: 'На собачьих упряжках', id: 13 }, { name: 'На снегоходах' , id: 14}, { name: 'На квадроциклах', id: 15 } ]
+- var mountainarray = [{ name: 'Горные лыжи / сноубординг', id: 16}, { name: 'Восхождения' , id: 17}, { name: 'Скалолазание', id: 18 }, { name: 'Школы альпинизма', id: 19  }, { name: 'Треккинги' , id: 20 }, { name: 'Радиальные походы' , id: 21 }, { name: 'Спелеология' , id: 22 } ]
+- var learningarray = [{ name: 'Школа фотографии', id: 22}, { name: 'Школа йоги' , id: 23}, { name: 'Кулинарная школа' , id: 24}, { name: 'Школа альпинизма', id: 25 }, { name: 'Школа скалолазания' , id: 26} ]
+- var eventsarray = [{ name: 'Спортивные события', id: 27}, { name: 'Фестивали' , id: 28}, { name: 'Народные праздники' , id: 29} ]
+- var expeditionarray = [{ name: 'Этнографические', id: 30}, { name: 'Географические', id: 31 }, { name: 'Экологические' , id: 32} ]
+- var terraarray = [{ name: 'Автотуры', id: 33}, { name: 'Джип-туры', id: 34 }, { name: 'Туристические походы' , id: 35}, { name: 'Вело-туры' , id: 36}, { name: 'Лыжные походы/ ски-тур', id: 37 }, { name: 'Конные туры', id: 38 }  ]
+- var airarray = [{ name: 'Парашютные прыжки', id: 39}, { name: 'Полёты на парапланах', id: 40 }, { name: 'Полёты на дельтапланах' , id: 41}, { name: 'Полёты на самолётах', id: 42 }, { name: ' Полёты на воздушных шарах', id: 43 } ]
+- var nostandartarray = [{ name: 'Экологические туры', id: 44}, { name: 'Эзотерические туры' , id: 45}, { name: 'Йога туры' , id: 46}, { name: 'Историко-культурные туры', id: 47 }, { name: 'Паломничества' , id: 48} ]
+- var redletterarray = [{ name: 'Новогодние туры', id: 49}, { name: '23 фераля', id: 50 }, { name: '8 марта', id: 51 }, { name: 'Майские', id: 52 }, { name: '12 июня' , id: 53}, { name: '4 ноября', id: 54 } ]
+
+.select-type(style="display:none")
+  header.select-type-header
+    .row
+      .col-sm-9
+        h4 Выберите интересующий вид туризма:
+        h5 Можете выбрать несколько видов, просто кликая на них. Затем нажмите «Выбрать тур»
+      .col-sm-3.ta-r
+        .close-btn.js-close-select-type Закрыть <i class="icon close-icon"></i>
+  section.tour-list-wrapper.row
+    .col-sm-3
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.water
+            span.tour-list-text Вода
+        each type in waterarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.mountains
+            span.tour-list-text Горы
+        each type in mountainarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.safari
+            span.tour-list-text Сафари
+        each type in safariarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+    .col-sm-3
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.terra
+            span.tour-list-text Земля
+        each type in terraarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.expeditions
+            span.tour-list-text Экспедиции
+        each type in expeditionarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.learnings
+            span.tour-list-text Школы, обучение,  тренинги
+        each type in learningarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.events
+            span.tour-list-text Событийный туризм
+        each type in eventsarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+    .col-sm-3
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.air
+            span.tour-list-text Воздух
+        each type in airarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.no-standart
+            span.tour-list-text Нестандартные
+        each type in nostandartarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-type
+            span.tour-icon-wrapper
+              i.icon.red-letter
+            span.tour-list-text Праздничные туры
+        each type in redletterarray
+          li.tour-list-item
+            a.tour-list-link.js-type
+              span.tour-list-text(typeid="tour-#{type.id}")   #{type.name}
+
+    .col-sm-3
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.gastronomy
+            span.tour-list-text(typeid="tour-55") Гастро&shy;номические туры
+
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.excursions
+            span.tour-list-text(typeid="tour-56") Экскурсионные туры
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.autors
+            span.tour-list-text(typeid="tour-57") Авторские туры
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.weekend
+            span.tour-list-text(typeid="tour-58") Туры выходного дня
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.family
+            span.tour-list-text(typeid="tour-59") Семейный отдых с детими
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.comb
+            span.tour-list-text(typeid="tour-60") Комби&shy;нированные
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.space
+            span.tour-list-text(typeid="tour-61") Полеты в космос
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.adventure
+            span.tour-list-text(typeid="tour-62") Приключения
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-type
+            span.tour-icon-wrapper
+              i.icon.photo
+            span.tour-list-text(typeid="tour-63") Фото-туры
+
+  hr.select-type-hr
+  section.selected-tours
+    .row
+      .col-md-7.col-lg-8
+        span.selected-tours-title Вы выбрали:
+        span.selected-tours-list
+      .col-md-5.col-lg-4.ta-r
+        button.transparent-btn.-blue.js-clear-all-type.selected-tours-clear Сбросить все
+        button.simple-btn.-yellow.js-select-tours <i class="select-tours icon"></i> Выбрать туры

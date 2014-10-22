@@ -1,0 +1,11 @@
+.subscribe-wrapper
+   .suscribe-inner
+      h2.section-title.-whith-subtitle Подпишитесь на наши новости
+      h3.section-subtitle.-white через социальные сети и e-mail рассылку
+      div.ta-c.suscribe-text И будете в курсе скидок и самых лучших и горячих предложений на активный отдых!
+      form.row.suscribe-form
+        .col-lg-3.col-lg-offset-2.col-md-3.col-md-offset-1.col-sm-4
+          +shareblock(false, 'fll -md', 'vk_md', 'fb_md', 'tw_md', 'rss_md')
+        input.col-lg-4.col-md-4.col-sm-4.simple-input(placeholder="Ваша почта", type="email")
+        .col-lg-3.col-md-3.col-sm-4
+          button.simple-btn.-yellow.-more-sqr <i class="icon mail"></i> Подписаться

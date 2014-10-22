@@ -1,0 +1,12 @@
+mixin checkbox(type, id, cssclass)
+  div(class="checking_item  #{cssclass} checking_item-inline")
+    input.checking_input(type=type, id=id)
+    .checking_input-pseudo-wrapper
+      .checking_input-pseudo
+        i.white-check.icon
+
+mixin radio(type, name, cssclass, id)
+  div(class="checking_item  #{cssclass} checking_item-inline")
+    input.checking_input(type=type, name=name, id=id)
+    .checking_input-pseudo-wrapper
+      .checking_input-pseudo

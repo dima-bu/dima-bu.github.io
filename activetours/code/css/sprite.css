@@ -1,0 +1,420 @@
+.accreditation-md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -2017px;
+  width: 31px;
+  height: 49px;
+}
+.boat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1663px;
+  width: 30px;
+  height: 28px;
+}
+.calendar-sm {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1077px;
+  width: 20px;
+  height: 20px;
+}
+.checker-md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1909px;
+  width: 41px;
+  height: 43px;
+}
+.close-icon {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -532px;
+  width: 15px;
+  height: 15px;
+}
+.compas-md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1962px;
+  width: 45px;
+  height: 45px;
+}
+.data-arrow-left {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -295px;
+  width: 8px;
+  height: 13px;
+}
+.data-arrow-right {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -140px;
+  width: 7px;
+  height: 12px;
+}
+.earth {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1017px;
+  width: 20px;
+  height: 20px;
+}
+.logo-sm {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -206px;
+  width: 147px;
+  height: 12px;
+}
+.mail {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -341px;
+  width: 19px;
+  height: 13px;
+}
+.money {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1047px;
+  width: 20px;
+  height: 20px;
+}
+.africa {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1169px;
+  width: 17px;
+  height: 22px;
+}
+.antarctica {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -874px;
+  width: 16px;
+  height: 18px;
+}
+.arctica {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -902px;
+  width: 16px;
+  height: 18px;
+}
+.asia {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -930px;
+  width: 18px;
+  height: 19px;
+}
+.australia {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -119px;
+  width: 28px;
+  height: 11px;
+}
+.europe {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1628px;
+  width: 14px;
+  height: 25px;
+}
+.n-america {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1201px;
+  width: 16px;
+  height: 22px;
+}
+.russia {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1107px;
+  width: 18px;
+  height: 21px;
+}
+.s-america {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1138px;
+  width: 19px;
+  height: 21px;
+}
+.calendar-from {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1493px;
+  width: 22px;
+  height: 23px;
+}
+.calendar-hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1526px;
+  width: 22px;
+  height: 23px;
+}
+.calendar-to {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1361px;
+  width: 22px;
+  height: 23px;
+}
+.calendar {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1394px;
+  width: 22px;
+  height: 23px;
+}
+.globus {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1427px;
+  width: 20px;
+  height: 23px;
+}
+.minus-blue {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 10px;
+  height: 5px;
+}
+.plus-blue {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -318px;
+  width: 12px;
+  height: 13px;
+}
+.select-tours {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -632px;
+  width: 18px;
+  height: 16px;
+}
+.signpost {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1559px;
+  width: 20px;
+  height: 24px;
+}
+.weekend {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -658px;
+  width: 16px;
+  height: 16px;
+}
+.fb {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1297px;
+  width: 22px;
+  height: 22px;
+}
+.fb_md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1857px;
+  width: 42px;
+  height: 42px;
+}
+.rss {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1233px;
+  width: 22px;
+  height: 22px;
+}
+.rss_md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1701px;
+  width: 42px;
+  height: 42px;
+}
+.tw {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1265px;
+  width: 22px;
+  height: 22px;
+}
+.tw_md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1805px;
+  width: 42px;
+  height: 42px;
+}
+.vk {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1329px;
+  width: 22px;
+  height: 22px;
+}
+.vk_md {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1753px;
+  width: 42px;
+  height: 42px;
+}
+.activetours-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -582px;
+  width: 10px;
+  height: 15px;
+}
+.activetours {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -607px;
+  width: 10px;
+  height: 15px;
+}
+.avia-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -77px;
+  width: 19px;
+  height: 11px;
+}
+.avia {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -98px;
+  width: 19px;
+  height: 11px;
+}
+.beach-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -272px;
+  width: 13px;
+  height: 13px;
+}
+.beach {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -364px;
+  width: 13px;
+  height: 13px;
+}
+.cars-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -162px;
+  width: 13px;
+  height: 12px;
+}
+.hotels-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -35px;
+  width: 14px;
+  height: 11px;
+}
+.hotels {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -56px;
+  width: 14px;
+  height: 11px;
+}
+.insurance-active {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -228px;
+  width: 10px;
+  height: 12px;
+}
+.insurance {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -250px;
+  width: 10px;
+  height: 12px;
+}
+.adventure {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -507px;
+  width: 15px;
+  height: 15px;
+}
+.aerostat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1593px;
+  width: 18px;
+  height: 25px;
+}
+.air {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -818px;
+  width: 14px;
+  height: 18px;
+}
+.autors {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -557px;
+  width: 15px;
+  height: 15px;
+}
+.cars {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -184px;
+  width: 13px;
+  height: 12px;
+}
+.comb {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -791px;
+  width: 17px;
+  height: 17px;
+}
+.events {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -764px;
+  width: 17px;
+  height: 17px;
+}
+.excursions {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -15px;
+  width: 20px;
+  height: 10px;
+}
+.expeditions {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -435px;
+  width: 21px;
+  height: 14px;
+}
+.family {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -684px;
+  width: 21px;
+  height: 16px;
+}
+.gastronomy {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -737px;
+  width: 18px;
+  height: 17px;
+}
+.learnings {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -411px;
+  width: 22px;
+  height: 14px;
+}
+.mountains {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -483px;
+  width: 19px;
+  height: 14px;
+}
+.no-standart {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -710px;
+  width: 17px;
+  height: 17px;
+}
+.photo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -387px;
+  width: 18px;
+  height: 14px;
+}
+.red-letter {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -959px;
+  width: 13px;
+  height: 19px;
+}
+.safari {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -459px;
+  width: 24px;
+  height: 14px;
+}
+.space {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -988px;
+  width: 18px;
+  height: 19px;
+}
+.terra {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -846px;
+  width: 12px;
+  height: 18px;
+}
+.water {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1460px;
+  width: 23px;
+  height: 23px;
+}

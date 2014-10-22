@@ -1,0 +1,15 @@
+- var posts = [{title: '10 главных правил бережливого авто-путешественника', img: 'img/tour-preview-img-2.jpg', text: 'Автомобильное путешествие — это особый жанр. Как и в случае с билетами тут есть свои лайфхаки, которые позволят сэкономить на поездке.'}, {title: 'топ-20 самых необычных мест на Земле', img: 'img/tour-preview-img-1.jpg', text: 'Когда смотришь на эти фотографии, то кажется, как будто они с других планет. Не правда ли наша Земля невероятно прекрасна?'}, {title: 'Куба и ее автомобили', img: 'img/tour-preview-img-1.jpg', text: 'Автомобильное путешествие — это особый жанр.'}]
+
+
+  h2.subtitle последнее в блоге
+  .row.blog-preview-wrapper
+    each post in posts
+      .col-md-4.col-sm-4.col-xs-12.blog-preview-item
+        .blue-border
+          .blog-preview-img
+            a(href="#")
+              img.img-responsive(src="#{post.img}", alt="#{post.title}")
+          .blog-preview-body
+            h3.block-title #{post.title}
+            p.blog-preview-text #{post.text}
+            a.readmore(href="#") читать далее <span>→</span>

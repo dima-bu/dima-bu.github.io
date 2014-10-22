@@ -1,0 +1,37 @@
+- var tours = [{title: 'Рафтинг в карелии с медведями', img: 'img/tour-preview-img-1.jpg', imgguide: 'img/guide.jpg', guidename: 'Дмитрий Кольцов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.7 ',price: '35 000', duration: '7', typeicon: 'boat', data: '12 сентября - 25 октября', place: 'Россиия, Карелия'}, {title: 'Рафтинг по Амазонке', img: 'img/tour-preview-img-2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'boat', data: '12 августа - 23 октября', place: 'Перу, Амазонка'},{title: 'Рафтинг по Амазонке', img: 'img/tour-preview-img-2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'boat', data: '12 августа - 23 октября', place: 'Перу, Амазонка'},{title: 'Рафтинг по Амазонке', img: 'img/tour-preview-img-2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'boat', data: '12 августа - 23 октября', place: 'Перу, Амазонка'},{title: 'Трек к подножию Аннапурны', img: 'img/tour-preview-img-2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'boat', data: '12 августа - 23 октября', place: 'Перу, Амазонка'},{title: 'Увлекательны  рафтинг по горной алтайской реке Катунь бирюзовая', img: 'img/tour-preview-img-2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'boat', data: '12 августа - 23 октября', place: 'Россия, Алтай'}]
+
+
+h2.subtitle Популярные туры
+.row.tour-preview-wrapper
+   each tour in tours
+     .col-md-4.col-sm-6.col-xs-12.tour-preview-item
+      .blue-border.tour-preview
+        header.tour-preview-header
+          h3.block-title  #{tour.title}
+        .tour-preview-img
+          img(src="#{tour.img}")
+        .tour-preview-icons
+          .col-all-33p.fll
+            .round-bg.-md.-yellow.-with-icon.-top
+              i(class="icon #{tour.typeicon}")
+          .col-all-33p.fll.ta-c
+            .round-img.-profile-img
+              img.-top.-blue-border(src="#{tour.imgguide}")
+          .col-all-33p.fll
+            .round-bg.-md.-yellow.-top
+              span.count-day #{tour.duration}
+              span.days-text дней
+        .tour-preview-descr
+          h4.-name #{tour.guidename}
+          h5.-subname #{tour.guidesubtitle}
+          hr.light
+          ul.tour-preview-descr-list
+            li.tour-preview-descr-item
+              i.icon.earth
+              span.tour-preview-descr-item-text #{tour.place}
+            li.tour-preview-descr-item
+              i.icon.calendar-sm
+              span.tour-preview-descr-item-text #{tour.data}
+            li.tour-preview-descr-item
+              i.icon.money
+              span.tour-preview-descr-item-text #{tour.price} руб.

@@ -1,0 +1,12 @@
+mixin shareblock(title, classname, soc1, soc2, soc3, soc4)
+  div(class="#{classname} share-menu")
+    if title === true
+      .share-menu_caption Поделиться
+    a.share-menu_link(href="#")
+      i(class="#{soc1} icon")
+    a.share-menu_link(href="#")
+      i(class="#{soc2} icon")
+    a.share-menu_link(href="#")
+      i(class="#{soc3} icon")
+    a.share-menu_link(href="#")
+      i(class="#{soc4} icon")
