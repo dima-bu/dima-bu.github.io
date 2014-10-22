@@ -3969,8 +3969,10 @@ ul.date-select .dd-pointer-down {
 }
 .col-md-12.continue .col-md-3,
 .col-md-12.continue .col-md-9 {
-  border-bottom: 1px solid #e8ecf0;
   padding-bottom: 30px;
+}
+.col-md-12.continue .-blue-bottom-brd {
+  overflow: hidden;
 }
 .continue-btn {
   height: 48px;
