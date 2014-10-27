@@ -3713,7 +3713,6 @@ ul.date-select .dd-pointer-down {
 .end-ordering-title span.print a {
   color: #ee9565;
   font-style: italic;
-  cursor: pointer;
 }
 .end-ordering-wrapper-block {
   overflow: hidden;
@@ -5963,4 +5962,10 @@ button.send-mbl,
 .form-mbl,
 .welcome_text-mbl {
   display: none;
+}
+/* style for print */
+body header.header-top,
+body div.container.bottom-part-header,
+body footer.footer {
+  display: block !important;
 }
