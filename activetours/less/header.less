@@ -1,0 +1,110 @@
+.main-header {
+  background-color:  #67809f;
+  padding: 30px 0;
+  color:#fff;
+  margin-bottom: 0px;
+}
+
+.footer {
+    background-color:  #67809f;
+    padding: 10px 0;
+    color:#fff;
+    margin-bottom: 0px;
+  }
+
+
+.logo-caption {
+  font-size: 13px;
+  display: inline-block;
+  line-height: 14px;
+  margin-top: 5px;
+}
+
+.logo {
+  margin: 9px 17px 9px 0;
+
+}
+
+.share-menu {
+  margin-right: 40px;
+  font-size: 0;
+  line-height: 1;
+
+  &.-md {
+    margin-right: 0px;
+    .share-menu_link {
+      border: 0 none;
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      line-height: 44px;
+      background: linear-gradient(to bottom, #3b7fac 0%, #246895 100%);
+    }
+  }
+
+}
+
+.share-menu_link {
+  margin-top: 7px;
+  border-radius: 50% ;
+  border: 1px solid #fff;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+  &:hover {
+    border-color: #e5a247;
+  }
+}
+
+.share-menu_caption {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 14px;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-right: 10px;
+}
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- HEADER*/
+@media  screen and (max-width: @screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- HEADER -- END*/
+
+
+/*EXTRA SMALL -- xs -- HEADER*/
+@media screen and (max-width: @screen-xs-max) {
+
+
+}
+/*EXTRA SMALL -- xs -- HEADER END*/
+
+
+
+/*SMALL -- sm -- HEADER*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .share-menu_caption {
+    display: none;
+  }
+
+}
+/*SMALL -- sm -- HEADER -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- HEADER*/
+@media screen and (min-width: @screen-sm-max) {
+
+
+}
+/*LARGE and MEDIUM -- lg and md -- HEADER -- END*/

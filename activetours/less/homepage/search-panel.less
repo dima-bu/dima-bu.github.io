@@ -1,0 +1,154 @@
+
+.search-form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.search-panel {
+  margin-top:50px;
+}
+
+.search-panel_row {
+  margin-bottom: 28px;
+}
+
+.plus-minus {
+  display: inline-block;
+  margin-right:10px;
+}
+
+.plus-minus_inner  {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+
+  a {
+    display: block;
+    height: 22px;
+    width: 100%;
+    width: 22px;
+    cursor: pointer;
+    &:first-child {
+      padding-top: 3px;
+      height: 22px;
+    }
+  }
+  .icon {
+    padding: 0 3px;
+  }
+}
+
+
+/*grid*/
+
+.col-form-left {
+  width: 40%;
+  float: left;
+}
+
+.col-form-right {
+  width: 33%;
+  margin-left: 7%;
+  float: left;
+}
+
+.col-slider-left {
+  width: 16%;
+  float: left;
+}
+
+.col-slider-right {
+  width: 25%;
+  margin-left: 2%;
+  float: left;
+}
+
+.col-slider-center {
+  width: 38%;
+  margin-left: 1%;
+  float: left;
+  margin-top: 20px;
+}
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- FOOTER*/
+@media  screen and (max-width: @screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- FOOTER -- END*/
+
+
+/*EXTRA SMALL -- xs -- FOOTER*/
+@media screen and (max-width: @screen-xs-max) {
+
+
+}
+/*EXTRA SMALL -- xs -- FOOTER END*/
+
+
+
+/*SMALL -- sm -- FOOTER*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .col-form-left {
+    width: 45%;
+    float: left;
+  }
+
+  .col-form-right {
+    width: 39%;
+    margin-left: 7%;
+    float: left;
+  }
+
+
+  .col-slider-left {
+    width: 20%;
+    float: left;
+  }
+
+  .col-slider-center {
+    width: 40%;
+    margin-left: 1%;
+    float: left;
+    margin-top: 20px;
+  }
+
+  .col-slider-right {
+    width: 31%;
+    margin-left: 2%;
+    float: left;
+  }
+
+
+
+
+
+}
+/*SMALL -- sm -- FOOTER -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- FOOTER*/
+@media screen and (min-width: @screen-sm-max) {
+
+  .col-form-left {
+    width: 40%;
+    float: left;
+  }
+
+  .col-form-right {
+    width: 33%;
+    margin-left: 7%;
+    float: left;
+  }
+
+}
+/*LARGE and MEDIUM -- lg and md -- FOOTER -- END*/

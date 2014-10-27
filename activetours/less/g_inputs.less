@@ -1,0 +1,262 @@
+/*general form variables*/
+
+@form-border-width: 1px;
+@form-border-color: #bdc3c7;
+
+@form-outline-width: 0;
+@form-outline-color: transparent;
+
+@form-background-color: transparent;
+@form-background-text-color: #bdc3c7;
+
+@form-font-size: 18px;
+@form-line-height: 32px;
+@form-radius: 5px;
+
+
+/*input variables*/
+
+@input-border-width: @form-border-width;
+@input-border-color: @form-border-color;
+
+@input-outline-width: @form-outline-width;
+@input-outline-color: @form-outline-color;
+
+@input-background-color: @form-background-color;
+@input-background-text-color: @form-background-text-color;
+
+@input-font-size: @form-font-size;
+@input-line-height: @form-line-height;
+@input-radius: @form-radius;
+@input-padding-vertical: 4px;
+@input-padding-horizontal: 10px;
+
+
+
+
+.g_input {
+  background-color:  @input-background-color;
+  height: @input-line-height+(@input-padding-vertical*2)+(@input-border-width)*2;
+  line-height: @input-line-height;
+  padding: @input-padding-vertical @input-padding-horizontal;
+  color:  @input-background-text-color;
+  font-size: @input-font-size;
+  outline: @input-outline-width solid @input-outline-color;
+  border: @input-border-width solid  @input-border-color;
+  width: 100%;
+  border-radius: @form-radius;
+
+  &.picker__input {
+    &:hover {
+    outline:0 none;
+    border: 2px solid @yellow;
+    padding: (@input-padding-vertical - 1) (@input-padding-horizontal - 1);
+    cursor: pointer;
+    }
+  }
+
+  &.flex-height {
+    height: auto;
+    min-height:  @input-line-height+(@input-padding-vertical*2)+(@input-border-width)*2;
+    max-height: 73px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover{
+      outline:0 none;
+      border: 2px solid @yellow;
+      padding: (@input-padding-vertical - 1) (@input-padding-horizontal - 1);
+    }
+  }
+
+  &:focus {
+    outline:0 none;
+    border: 2px solid @yellow;
+    padding: (@input-padding-vertical - 1) (@input-padding-horizontal - 1);
+  }
+
+  &.-blue-border {
+    border: 1px solid #D7DEE4;
+  }
+
+  &.-black-border {
+    border: 1px solid #000;
+  }
+
+  &.picker__input--active {
+    border: 2px solid @yellow;
+    border-radius: @form-radius @form-radius 0 0 ;
+    border-bottom: 1px solid @yellow;
+    padding: 2px 9px 3px 9px;
+  }
+
+  &.-count {
+    text-align: center;
+    padding:@input-padding-vertical 0;
+    width: 40px;
+    display: inline-block;
+  }
+
+  &.-money-count {
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    margin-right: 5px;
+  }
+
+}
+
+.g_input-wrapper {
+  position: relative;
+  &.-calendar {
+    width: 120px;
+    display: inline-block;
+    cursor: pointer;
+    .g_input.-from {
+      background: transparent url('../img/calendar-from.png') 90% 50% no-repeat;
+    }
+    .g_input.-to {
+      background: transparent url('../img/calendar-to.png') 90% 50% no-repeat;
+    }
+    &:hover {
+      .g_input {
+        background: transparent url('../img/calendar-hover.png') 90% 50% no-repeat;
+      }
+    }
+
+  }
+
+  .icon-right {
+    position: absolute;
+    right: 14px;
+    top: 9px;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .icon-calendar  {
+    position: absolute;
+    right: 9px;
+    bottom: 9px;
+    z-index: 1001;
+  }
+
+}
+
+.globus:hover + .g_input  {
+  border: 2px solid @yellow;
+  padding: 4px 10px;
+  padding: (@input-padding-vertical - 1) (@input-padding-horizontal - 1);
+}
+
+/*placeholder*/
+
+@placeholder-color: #bdc3c7;
+@placeholder-style: normal;
+@placeholder-weight: 400;
+
+
+.g_input::-webkit-input-placeholder {
+  color:@placeholder-color;
+  font-style: @placeholder-style;
+  font-weight: @placeholder-weight;
+  font-size: @input-font-size;
+}
+
+.g_input:-moz-placeholder {
+  color: @placeholder-color;
+  font-style: @placeholder-style;
+  font-weight: @placeholder-weight;
+  font-size: @input-font-size;
+}
+
+.g_input::-moz-placeholder {
+  color: @placeholder-color;
+  font-style: @placeholder-style;
+  font-weight: @placeholder-weight;
+  font-size: @input-font-size;
+}
+
+ /*label*/
+
+@label-color:  #3b3d3f;
+@label-font-size: 14px;
+@label-height: 15px;
+
+.g_label {
+  color:  @label-color;
+  font-size: @label-font-size;
+  height: @label-height;
+  line-height: @label-height;
+  display: inline-block;
+}
+
+.required {
+  color:  #ed6464;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.g_filed {
+  font-size: 0;
+  &.-without-label {
+    padding-top: 25px;
+  }
+}
+
+/*textarea varibles*/
+
+@textarea-border-width: 1px;
+@textarea-border-color: @light-gray;
+
+@textarea-outline-width: @form-outline-width;
+@textarea-outline-color: @form-outline-color;
+
+@textarea-background-color: @form-background-color;
+@textarea-background-text-color: @form-background-text-color;
+
+@textarea-font-size: @form-font-size;
+@textarea-line-height: @form-line-height;
+@textarea-radius: @form-radius;
+
+@textarea-padding-vertical: 15px;
+@textarea-padding-horizontal: 20px;
+
+.g_textarea {
+  background-color:  @textarea-background-color;
+  outline: @textarea-outline-width solid @textarea-outline-color;
+  border: @textarea-border-width solid @textarea-border-color;
+  border-radius: @textarea-radius;
+  width: 100%;
+  line-height: @textarea-line-height;
+  padding: @textarea-padding-vertical @textarea-padding-horizontal;
+}
+
+
+.simple-input {
+  border-radius: 5px;
+  background-color:  #f7f7f7;
+  border:1px solid #8dadc4;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 20px;
+  font-size: 18px;
+  &:focus {
+    border:1px solid @yellow;
+    outline: 0 none;
+  }
+}
+
+.simple-input::-webkit-input-placeholder {
+  color:  #afb6ba;
+  font-size: 18px;;
+}
+
+.simple-input:-moz-placeholder {
+  color:  #afb6ba;
+  font-size: 18px;;
+}
+
+.simple-input::-moz-placeholder {
+  color:  #afb6ba;
+  font-size: 18px;;
+}
