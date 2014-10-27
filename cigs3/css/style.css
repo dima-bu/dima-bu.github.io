@@ -3710,9 +3710,10 @@ ul.date-select .dd-pointer-down {
   color: #9090a0;
   margin-right: 5px;
 }
-.end-ordering-title span.print {
+.end-ordering-title span.print a {
   color: #ee9565;
   font-style: italic;
+  cursor: pointer;
 }
 .end-ordering-wrapper-block {
   overflow: hidden;
