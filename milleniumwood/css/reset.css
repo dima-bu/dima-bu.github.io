@@ -1,0 +1,158 @@
+/*
+Title: Rest default browser styles
+Author: ilya@spacebox.ru
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+a {
+    text-decoration:none;
+    color:#230d04;
+}
+
+/* IE7] */
+input[type=submit],
+input[type=reset],
+input[type=button] {
+	filter:chroma(color=#000000);
+}
+/* IE7] */
+.submit:focus,
+.submit:active,
+.submit,
+input,
+button,
+input:focus,
+input:active,
+a:active,
+a:focus {
+   outline:  none;
+   ie-dummy: expression(this.hideFocus=true);
+}
+/* - TouchScreen] */
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-o-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-o-touch-callout: none;
+	touch-callout: none;
+}
+/* [/TouchScreen] */
+body {
+    overflow-y: scroll!important;
+    overflow-y: default;
+}
+*:first-child+html body{
+    overflow-y: default!important;
+}
+table {
+    border-collapse: collapse;
+}
+nav ul,
+nav ul li {
+	list-style-type: none;
+}
+th,
+td,
+textarea,
+select,
+input,
+input:active,
+input:focus,
+button:active,
+button:focus,
+button {
+	outline-style: none;
+	outline-width: 0px;
+}
+::-moz-focus-inner {
+	border: 0px;
+}
+input,
+button {
+	overflow: visible;
+}
+a:active,
+a:focus { 
+    border: none;
+    outline: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+    min-height: 1%;
+}
+blockquote,
+q {
+	quotes:none;
+}
+sup {
+	vertical-align: text-top;
+        font-size: 0.6em;
+}
+sub	{
+	vertical-align: text-bottom;
+}
+fieldset,
+a img,
+img {
+	border: 0px none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+/* IE7 */
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
