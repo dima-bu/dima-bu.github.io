@@ -27,6 +27,13 @@ h2 {
   }
   }
 
+  &.block-title {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+  }
+
 }
 
 h3 {
@@ -54,9 +61,8 @@ h3 {
 h4 {
 
   &.-name {
-    font-size: 14px;
+    font-size: 15px;
     color: @light-blue;
-    text-align: center;
     font-family: 'proxima-bold';
   }
 
@@ -74,7 +80,6 @@ h5 {
   margin: 0;
   &.-subname {
     color: @text-color;
-    text-align: center;
     margin-bottom:20px;
   }
 }
@@ -82,6 +87,11 @@ h5 {
 p {
   font-size: 14px;
   line-height: 20px;
+}
+
+p.md {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 a {
@@ -172,6 +182,11 @@ a.readmore {
   span {
     font-size: 16px;
   }
+}
+
+
+.inline-text {
+  display: inline-block;
 }
 
 /*form*/
@@ -368,6 +383,10 @@ a.readmore {
   border-radius: 10px;
 }
 
+.light-blue-border {
+  border-top: 1px solid @light-blue-opacity;
+}
+
 hr {
 
   .blue-bottom-border();
@@ -384,7 +403,7 @@ hr {
 
   &.light {
     margin: 0;
-    border-bottom: 1px solid rgba(37, 116, 169, 0.4);
+    border-bottom: 1px solid @light-blue-opacity
 
   }
 
@@ -433,12 +452,39 @@ hr {
   }
 }
 
+
+.almost-sqr-wrapper {
+  border-radius: 5px;
+  border: 1px solid @light-blue;
+  text-align: center;
+  display: inline-block;
+  &.-md {
+    width: 34px;
+    height: 34px;
+    line-height: 30px;
+    &.-left {
+      margin-right: 10px;
+    }
+  }
+  .icon {
+    vertical-align: middle;
+  }
+}
+
+.almost-sqr-left {
+  margin-top: 6px;
+  display: inline-block;
+}
+
+
 .round-bg {
   margin: 0 auto;
   border-radius: 50%;
   &.-yellow {
     background-color: @yellow;
   }
+
+
   &.-md {
     height: 56px;
     width: 56px;
@@ -458,54 +504,91 @@ hr {
     
     span.count-day {
       font-size: 20px;
-      line-height: 1;
-      font-family: 'chevin-bold';
-      display: inline-block;
-      width: 100%;
-      text-align: center;
       margin-top: 10px;
     }
     span.days-text {
       font-size: 10px;
-      line-height: 1;
-      font-family: 'chevin-bold';
-      display: inline-block;
-      text-transform: uppercase;
+
     }
   }
 
+}
+
+.count-day-wrapper {
+  font-style: normal;
+  font-size: 0;
+  text-align: center;
+}
+
+span.count-day {
+  font-size: 16px;
+  line-height: 1;
+  font-family: 'chevin-bold';
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+span.days-text {
+  font-size: 8px;
+  line-height: 1;
+  font-family: 'chevin-bold';
+  display: inline-block;
+  text-transform: uppercase;
 }
 
 .round-img {
   display: inline-block;
 
+  &.-sm {
+    img {
+      height: 50px;
+      width: 50px;
+      &.-blue-border {
+        .blue-border();
+        border-width: 1px;
+        border-radius: 50%
+      }
+    }
+
+    &.-left {
+      margin-right: 10px;
+    }
+    
+  }
+
+
   img {
     border-radius: 50%;
+    &.-blue-border {
+      .blue-border();
+      border-width: 2px;
+      border-radius: 50%
+    }
+
+
+
   }
 
   &.-profile-img {
 
     img {
-      height: 80px;
-     width: 80px;
+     height: 100px;
+     width: 100px;
 
       &.-top {
-        margin-top: -40px;
+        margin-top: -50px;
         position: relative;
         z-index: 1;
       }
 
-      &.-blue-border {
-        .blue-border();
-        border-width: 2px;
-        border-radius: 50%
-      }
+
 
    }
   }
-
-
 }
+
 
 /*groups*/
 

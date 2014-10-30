@@ -1,0 +1,121 @@
+
+
+.results-tour-item {
+  padding: 15px  15px 5px  15px;
+  margin-bottom: 40px;
+  .blue-border();
+  .block-title {
+    margin-top: 0;
+  }
+}
+
+.results-tour-item-row {
+  margin-bottom: 20px;
+}
+
+.results-tour-img {
+  .blue-border();
+}
+
+.results-tour-footer {
+  .light-blue-border;
+  .row();
+  padding: 15px;
+}
+
+
+.icon-text {
+  .media();
+  margin-top: 0;
+}
+
+.icon-text_icon {
+  .fll();
+  margin-right: 10px;
+}
+
+.icon-text_text {
+  .media-body();
+  line-height: 32px;
+  &.-md {
+    line-height: 40px;
+  }
+}
+
+.icon-text_text-inner {
+  &.-md {
+    line-height: 20px;
+  }
+  display: inline-block;
+  line-height: 16px;
+}
+
+
+.price-lg {
+  color:  @darker-blue;
+  font-size: 30px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.results-tour-footer {
+  .price-lg {
+    margin-right: 20px;
+  }
+
+  .simple-btn {
+    vertical-align: top;
+  }
+}
+
+//.guide-wrapper {
+//  display: inline-block;
+//}
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- RESULTS TOUR*/
+@media  screen and (max-width: @screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- RESULTS TOUR -- END*/
+
+
+/*EXTRA SMALL -- xs -- RESULTS TOUR*/
+@media screen and (max-width: @screen-xs-max) {
+
+  .results-tour-img {
+    margin-bottom: 20px;
+  }
+
+  .results-tour-type {
+    margin-bottom: 20px;
+  }
+  
+}
+/*EXTRA SMALL -- xs -- RESULTS TOUR END*/
+
+
+
+/*SMALL -- sm -- RESULTS TOUR*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+
+
+}
+/*SMALL -- sm -- RESULTS TOUR -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- RESULTS TOUR*/
+@media screen and (min-width: @screen-sm-max) {
+
+
+}
+/*LARGE and MEDIUM -- lg and md -- RESULTS TOUR -- END*/
