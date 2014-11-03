@@ -29,9 +29,9 @@ h2 {
 
   &.block-title {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 26px;
     text-transform: uppercase;
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
   }
 
 }
@@ -92,6 +92,13 @@ p {
 p.md {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 20px;
+  @media  screen and (max-width: @screen-md-max) {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
 }
 
 a {
@@ -319,6 +326,15 @@ a.readmore {
     line-height: 60px;
     border-radius: 30px;
   }
+
+  &.-md {
+    padding: 0px 20px;
+    font-size: 17px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 23px;
+  }
+
 
 }
 
@@ -558,6 +574,23 @@ span.days-text {
     
   }
 
+  &.-md {
+    img {
+      height: 80px;
+      width: 80px;
+      &.-blue-border {
+        .blue-border();
+        border-width: 1px;
+        border-radius: 50%
+      }
+    }
+
+    &.-left {
+      margin-right: 10px;
+    }
+
+  }
+
 
   img {
     border-radius: 50%;
@@ -607,8 +640,3 @@ fieldset {
     margin: 0 5px;
   }
 }
-
-
-
-
-

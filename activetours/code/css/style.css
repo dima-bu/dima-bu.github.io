@@ -1539,9 +1539,7 @@ address {
 .row:before,
 .row:after,
 .nav:before,
-.nav:after,
-.results-tour-footer:before,
-.results-tour-footer:after {
+.nav:after {
   content: " ";
   display: table;
 }
@@ -1550,8 +1548,7 @@ address {
 .container:after,
 .container-fluid:after,
 .row:after,
-.nav:after,
-.results-tour-footer:after {
+.nav:after {
   clear: both;
 }
 .center-block {
@@ -2883,26 +2880,61 @@ address {
 }
 /*LARGE and MEDIUM -- lg and md -- xxx -- END*/
 .results-tour-item {
-  padding: 15px  15px 5px  15px;
+  padding: 15px 15px 15px 15px;
   margin-bottom: 40px;
   border: 1px solid #2574a9;
   border-radius: 10px;
 }
+@media screen and (min-width: 1199px) {
+  .results-tour-item {
+    padding-bottom: 15px;
+  }
+}
 .results-tour-item .block-title {
   margin-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .results-tour-item .block-title {
+    margin-bottom: 15px;
+  }
+}
 .results-tour-item-row {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 .results-tour-img {
   border: 1px solid #2574a9;
   border-radius: 10px;
+  border-radius: 0;
 }
 .results-tour-footer {
   border-top: 1px solid rgba(37, 116, 169, 0.4);
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 15px;
+  padding-top: 15px;
+}
+.results-tour-footer:before,
+.results-tour-footer:after {
+  content: " ";
+  display: table;
+}
+.results-tour-footer:after {
+  clear: both;
+}
+.results-tour-footer:before,
+.results-tour-footer:after {
+  content: " ";
+  display: table;
+}
+.results-tour-footer:after {
+  clear: both;
+}
+@media screen and (min-width: 1199px) {
+  .results-tour-footer {
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .results-tour-info {
+    margin-bottom: 20px;
+  }
 }
 .icon-text {
   overflow: hidden;
@@ -2937,10 +2969,10 @@ address {
 }
 .price-lg {
   color: #67809f;
-  font-size: 30px;
+  font-size: 22px;
   /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
-  line-height: 40px;
+  line-height: 46px;
   display: inline-block;
 }
 .results-tour-footer .price-lg {
@@ -2948,6 +2980,23 @@ address {
 }
 .results-tour-footer .simple-btn {
   vertical-align: top;
+}
+.results-tour-footer.-sm {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 15px 15px 0 15px;
+  margin-top: 15px;
+}
+.guide-wrapper {
+  margin-top: 19px;
+}
+.results-tour-type {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 991px) {
+  .results-tour-type {
+    margin-bottom: 0;
+  }
 }
 /****************/
 /** RESPONSIVE **/
@@ -2995,9 +3044,9 @@ h2.section-title.-whith-subtitle {
 }
 h2.block-title {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
 }
 h3 {
   font-family: 'chevin-bold';
@@ -3047,6 +3096,14 @@ p {
 p.md {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  p.md {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
 }
 a {
   text-decoration: none;
@@ -3241,6 +3298,13 @@ a.readmore span {
   line-height: 60px;
   border-radius: 30px;
 }
+.simple-btn.-md {
+  padding: 0px 20px;
+  font-size: 17px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 23px;
+}
 .transparent-btn {
   border-radius: 5px;
   border: 2px solid transparent;
@@ -3427,6 +3491,19 @@ span.days-text {
   border-radius: 50%;
 }
 .round-img.-sm.-left {
+  margin-right: 10px;
+}
+.round-img.-md img {
+  height: 80px;
+  width: 80px;
+}
+.round-img.-md img.-blue-border {
+  border: 1px solid #2574a9;
+  border-radius: 10px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+.round-img.-md.-left {
   margin-right: 10px;
 }
 .round-img img {

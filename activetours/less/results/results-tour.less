@@ -1,26 +1,45 @@
 
 
 .results-tour-item {
-  padding: 15px  15px 5px  15px;
+  padding: 15px 15px 15px 15px;
   margin-bottom: 40px;
   .blue-border();
+
+  @media screen and (min-width: @screen-md-max) {
+    padding-bottom: 15px;
+  }
+
+
   .block-title {
     margin-top: 0;
+    @media screen and (max-width: @screen-md-max) {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .results-tour-item-row {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .results-tour-img {
   .blue-border();
+  border-radius: 0;
 }
 
 .results-tour-footer {
   .light-blue-border;
-  .row();
-  padding: 15px;
+  .clearfix();
+  padding-top: 15px;
+  @media screen and (min-width: @screen-md-max) {
+    padding-top: 20px;
+  }
+}
+
+.results-tour-info {
+  @media screen and (min-width: @screen-md-max) {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -53,9 +72,9 @@
 
 .price-lg {
   color:  @darker-blue;
-  font-size: 30px; /* Приближение из-за подстановки шрифтов */
+  font-size: 22px; /* Приближение из-за подстановки шрифтов */
   font-weight: 400;
-  line-height: 40px;
+  line-height: 46px;
   display: inline-block;
 }
 
@@ -67,11 +86,29 @@
   .simple-btn {
     vertical-align: top;
   }
+
+  &.-sm {
+    margin-left: -@grid-gutter-width/2;
+    margin-right: -@grid-gutter-width/2;
+    padding: 15px 15px 0 15px;
+    margin-top: 15px;
+  }
 }
 
-//.guide-wrapper {
-//  display: inline-block;
-//}
+
+.guide-wrapper {
+  margin-top: 19px;
+  
+}
+
+.results-tour-type {
+  margin-bottom: 10px;
+
+  @media  screen and (max-width: @screen-sm-max) {
+    margin-bottom: 0;
+  }
+
+}
 
 
 /****************/
