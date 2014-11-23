@@ -198,10 +198,13 @@ a {
   font-family: @font-family-heavy;
   border-radius: 11px 0 0 11px;
   background-color: #AABB9D;
-  padding: 0 7px;
+  padding: 0 7px 0 21px;
+  position: relative;
   &:before {
     .price-circle();
-    margin-right: 7px;
+    position: absolute;
+    top:7px;
+    left: 7px;
     content: ""
   }
 }
@@ -210,6 +213,7 @@ a {
   text-align: center;
   padding: 45px 0;
   padding: 4.5rem 0;
+
 }
 
 ul.footer-content_list {
@@ -232,6 +236,7 @@ ul.footer-content_list {
   font-weight: 400;
   padding: 18px;
   background-color: #000;
+  font-family: 'globersemibold', Helvetica, sans-serif;
 }
 
 .popup-bg {

@@ -118,6 +118,13 @@ module.exports = function(grunt) {
                 }
             }
         },
+        uglify: {
+            my_target: {
+                files: {
+                    'code/js/all.js': [ 'code/js/jquery-1.11.0.min.js', 'code/js/script.js']
+                }
+            }
+        },
         dataUri: {
             dist: {
                 // src file
@@ -157,5 +164,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-inline');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['less', 'jade',  'concat', 'dataUri', 'inline','watch']);
+    grunt.registerTask('default', ['less', 'jade', 'uglify', 'dataUri', 'inline']);
 };
