@@ -1,10 +1,5 @@
 
-document.createElement('header');
-document.createElement('nav');
-document.createElement('section');
-document.createElement('article');
-document.createElement('aside');
-document.createElement('footer');
+
 
 $(function(){
     var wrapper = $( ".g_file_wrapper" ),
@@ -45,6 +40,13 @@ $(function(){
 
 
 $( document ).ready(function() {
+
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
 
     $('.js-popup-open').on('click', function(){
         var job = $(this).parents('.vacancy-item').find('h3').text();
