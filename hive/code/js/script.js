@@ -1,3 +1,11 @@
+
+document.createElement('header');
+document.createElement('nav');
+document.createElement('section');
+document.createElement('article');
+document.createElement('aside');
+document.createElement('footer');
+
 $(function(){
     var wrapper = $( ".g_file_wrapper" ),
         inp = wrapper.find( ".g_file" ),
