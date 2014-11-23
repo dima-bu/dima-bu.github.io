@@ -1,0 +1,67 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+
+h1 {
+    text-align: center;
+    color:#333;
+}
+
+form {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.resultsDiv {
+    font-size: 0;
+}
+
+.imageResult a.pic img {
+    border: 1px solid #999;
+}
+
+
+
+.imageResult{
+    display: inline-block;
+	height:180px;
+	text-align:center;
+    width: 50%;
+    overflow:hidden;
+    margin-bottom: 60px;
+    vertical-align: top;
+}
+
+.imageResult img{ display:block;border:none;}
+.imageResult a.pic{
+
+	display:block;
+	margin:0 auto 15px;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+
+/* Кнопка _Показать еще_ */
+
+
+
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	border-bottom:1px dotted #97cae6;
+	color:#97cae6;
+}
+
+a:hover{
+	border-bottom:1px dashed transparent;
+}
+
+.clear{
+	clear:both;
+}
