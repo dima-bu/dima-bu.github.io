@@ -11,10 +11,10 @@ searchApp.controller('SearchListCtrl', function ($scope, $http) {
         ).success(function(data) {
                 $scope.images = data.responseData.results;
             });
-
+        $scope.count = 8;
     };
 
-    $scope.count = 8;
+//    $scope.count;
 
     $scope.loadMore = function() {
         console.log($scope.count)
