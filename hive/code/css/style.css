@@ -276,13 +276,13 @@ a:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   width: 100%;
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1150px;
+    width: 1170px;
   }
 }
 /*Typography*/

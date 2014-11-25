@@ -11,7 +11,10 @@ module.exports = function(grunt) {
                     optimization: 2                },
                 files: {
                     "code/css/style.css": "less/style.less"
-                }
+                },
+                sourceMap:true,
+                sourceMapFilename: 'code/css/main.min.css.map',
+                sourceMapRootpath: '/'
             }
         },
         watch: {
@@ -175,6 +178,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-data-uri');
     grunt.loadNpmTasks('grunt-inline');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-inline');
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['less', 'jade', 'uglify', 'autoprefixer', 'dataUri', 'inline', 'watch']);
 };
