@@ -175,7 +175,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-data-uri');
     grunt.loadNpmTasks('grunt-inline');
     grunt.loadNpmTasks('grunt-autoprefixer');
-
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    grunt.registerTask('default', ['less', 'jade', 'uglify', 'autoprefixer', 'dataUri', 'inline']);
+    grunt.registerTask('default', ['less', 'jade', 'uglify', 'autoprefixer', 'dataUri', 'inline', 'watch']);
 };
