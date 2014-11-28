@@ -5963,9 +5963,72 @@ button.send-mbl,
 .welcome_text-mbl {
   display: none;
 }
-/* style for print */
-body header.header-top,
-body div.container.bottom-part-header,
-body footer.footer {
-  display: block !important;
+/* style for print Checkout page*/
+@media print {
+  body header.header-top,
+  body div.container.bottom-part-header,
+  body footer.footer {
+    display: none !important;
+  }
+  i.icon.trusted-shops::after {
+    content: url('../../forsprites/trusted-shops.png') !important;
+  }
+  .my-order-confirmation .col-md-3 {
+    padding: 0;
+  }
+  .share-main-panel a .twitter-24::after {
+    content: url('../../forsprites/twitter-24.png') !important;
+    width: 30px;
+    height: 30px;
+  }
+  .share-main-panel a .facebook-24::after {
+    content: url('../../forsprites/facebook-24.png') !important;
+    width: 30px;
+    height: 30px;
+  }
+  .share-main-panel a .google-24::after {
+    content: url('../../forsprites/google-24.png') !important;
+    width: 30px;
+    height: 30px;
+  }
+  .share-main-panel a .email-24::after {
+    content: url('../../forsprites/email-24.png') !important;
+    width: 30px;
+    height: 30px;
+  }
+  a.simple-btn.-gray.link-btn {
+    background: #cdd8e4 !important;
+    -webkit-print-color-adjust: exact;
+    color: #FFFFFF;
+    padding: 7px;
+  }
+  .account-table .table-title-row {
+    background: #f4f7fa !important;
+    -webkit-print-color-adjust: exact;
+  }
+  .my-order-confirmation .col-md-2.image {
+    padding: 0px;
+    border: 1px solid #d7dee4;
+  }
+  .my-order-confirmation .col-md-2.image img {
+    border: none;
+    margin: 0;
+  }
+  #your-cart.tab-pane {
+    padding-bottom: 20px;
+  }
+  .product-in-cart .unit-price .price,
+  .product-in-cart .total .price {
+    font-size: 19px;
+  }
+  .end-ordering-wrapper-block {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  .end-ordering-wrapper-block .results {
+    width: 80%;
+  }
+  .end-ordering-wrapper-block .results .result-block {
+    padding: 15px;
+  }
 }
