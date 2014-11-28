@@ -44,25 +44,6 @@ $(document).ready(function() {
     });
 
 
-    /*price slider*/
-
-    $("#slider").noUiSlider({
-        start: [5000, 40000],
-        connect: true,
-        step: 1000,
-        range: {
-            'min': 000,
-            'max': 80000
-        },
-        format: wNumb({
-            decimals: 0
-        })
-    });
-
-    $('#slider').Link('lower').to($('#input-lower'));
-    $('#slider').Link('upper').to($('#input-upper'));
-
-
     /*region*/
 
     $('.js-region').on('click', function(){
@@ -227,6 +208,16 @@ $(document).ready(function() {
         $('.select-region').hide();
     });
 
+
+    $(document).click(function(event) {
+        if ($(event.target).closest(".search-form").length) return;
+        $('.select-region').hide();
+        $('.select-type').hide();
+        event.stopPropagation();
+    });
+
+
+
     $('.js-select-regions').on('click', function() {
         $('.js-open-select-region.g_input').find('.selected-regions-list').remove();
         $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
@@ -260,6 +251,18 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: ($(".search-form").offset().top-10)
         }, 400);
+    });
+
+    /*switch btn*/
+
+    $('.js-switch-btn').on('click', function() {
+        if ($(this).hasClass('active')) {
+        }
+        else {
+            $(this).parent().find('.js-switch-btn').removeClass('active');
+            $(this).addClass('active');
+        }
+
     });
 
 

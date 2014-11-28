@@ -1,0 +1,33 @@
+//// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+//@import "../bootstrap/less/mixins.less";
+//@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "grid.less";
+
+.font-size(@sizeValue) {
+  @remValue: (@sizeValue / 10);
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px";
+  font-size: ~"@{remValue}rem";
+}
+
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+  -moz-box-sizing: @boxmodel;
+  box-sizing: @boxmodel;
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+

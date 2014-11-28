@@ -1,0 +1,102 @@
+
+.sort-block-wrapper {
+  border-radius: 10px;
+  border: 1px solid #dee7ee;
+  background-color:  #f7f7f7;
+  margin: 50px 0;
+  .switch-buttons {
+    margin-right: 10px;
+  }
+}
+
+.sorter {
+  padding: 14px 0;
+}
+
+.sorter-title {
+  font-size: 16px;
+  display: inline-block;
+  padding: 11px 11px 11px 0;
+  vertical-align: top;
+}
+
+
+.switch-buttons {
+  font-size: 0;
+
+  display: inline-block;
+  &.-yellow {
+    border-radius: 5px;
+    border: 1px solid @yellow;
+    overflow: hidden;
+  }
+}
+
+.switch-btn {
+  .clear-btn();
+  padding: 7px 15px;
+  font-size: 16px;
+
+  &.-yellow {
+    &.active  {
+      background-color: @yellow;
+      &:hover {
+        background-color: @yellow;
+      }
+    }
+    &:hover {
+      background-color: lighten(@yellow, 20%);
+    }
+  }
+}
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- xxx*/
+@media  screen and (max-width: @screen-sm-max) {
+  .sorter-title {
+    padding: 5px 5px 5px 0;
+  }
+  .sort-block-wrapper {
+    .switch-buttons {
+      margin-right: 5px;
+    }
+  }
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- xxx -- END*/
+
+
+/*EXTRA SMALL -- xs -- xxx*/
+@media screen and (max-width: @screen-xs-max) {
+
+
+}
+/*EXTRA SMALL -- xs -- xxx END*/
+
+
+
+/*SMALL -- sm -- xxx*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+
+
+}
+/*SMALL -- sm -- xxx -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- xxx*/
+@media screen and (min-width: @screen-sm-max) {
+
+  .sort-block-wrapper {
+    .switch-buttons {
+      margin-right: 40px;
+    }
+  }
+
+}
+/*LARGE and MEDIUM -- lg and md -- xxx -- END*/

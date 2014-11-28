@@ -1,0 +1,182 @@
+/*
+Title: Rest default browser styles
+Author: ilya@spacebox.ru
+
+
+  @@@#MMBBBBBBM##@@@@@@@@###MMMBBBBM.  ;@@##MMBBBBBBBBM#@@@     ;@@##MMBBBBBB##@@@@###M9S;.                 
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,  r@@@@@@@@@@@@@@@@@@@     r@@@@@@@@@@@@@@@@@@@@@@@@@@@@5              
+      ;@@@@@@@S             :@@@@@@@.       ;@@@@@@@@r               r@@@@@@@         :M@@@@@@@#            
+        @@@@@@S               ,@@@@@          @@@@@@5                 X@@@@@@            #@@@@@@@           
+        @@@@@@X                 @@@@          @@@@@@i                 i@@@@@@             H@@@@@@@          
+        @@@@@@G                  @@@.         @@@@@@3                 2@@@@@@              @@@@@@@r         
+        @@@@@@G                  .@@.         @@@@@@9                 2@@@@@@              @@@@@@@3         
+        @@@@@@G                               @@@@@@9                 2@@@@@@              @@@@@@@s         
+        @@@@@@G            @@G                @@@@@@9                 2@@@@@@              @@@@@@@          
+        @@@@@@G           :@@A                @@@@@@9                 2@@@@@@             G@@@@@@i          
+        @@@@@@G           @@@X                @@@@@@9                 2@@@@@@            2@@@@@@r           
+        @@@@@@3         i@@@@2                @@@@@@9                 2@@@@@@          :@@@@@@3             
+        @@@@@@@@@@@@@@@@@@@@@2                @@@@@@9                 2@@@@@@      .;G@@@@@A:               
+        @@@@@@@@@@@@@@@@@@@@@2                @@@@@@9                 2@@@@@@@@@@@@@@@@@:                   
+        @@@@@@s         ,@@@@2                @@@@@@9                 2@@@@@@9ABB@@@@@@@A                   
+        @@@@@@S           @@@2                @@@@@@9                 2@@@@@#     :@@@@@@@;                 
+        @@@@@@3           .@@3                @@@@@@9                 2@@@@@@       @@@@@@@G                
+        @@@@@@G            @@A                @@@@@@9                 2@@@@@@        A@@@@@@@               
+        @@@@@@G             .                 @@@@@@9                 2@@@@@@         i@@@@@@@.             
+        @@@@@@G                               @@@@@@9                 2@@@@@@          :@@@@@@@;            
+        @@@@@@G                               @@@@@@9                 2@@@@@@            @@@@@@@h           
+        @@@@@@G                               @@@@@@9                 2@@@@@@             @@@@@@@@          
+        @@@@@@3                               @@@@@@X                 S@@@@@@              M@@@@@@@,        
+        @@@@@@@                               @@@@@@@                 A@@@@@@               &@@@@@@@A       
+     .;@@@@@@@@@2;.                        ,r@@@@@@@@@X;.          .:A@@@@@@@@r,             X@@@@@@@@@r,   
+ .@@@@@@@@@@@@@@@@@@@                  2@@@@@@@@@@@@@@@@@@@.    S@@@@@@@@@@@@@@@@@@:          i@@@@@@@@@@@@.
+  ir;:,.     ..,::;rr                  .sr;:,.     ..,::;ri     .s;;,.     ..,:;;ri                ..,,:;rS 
+
+
+*/
+
+
+@font-face {
+    font-family: 'calibrir';
+    src: url('../fonts/calibri.eot');
+    src: url('../fonts/calibri.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/calibri.ttf') format('truetype'),
+         url('../fonts/calibri.woff') format('woff'),
+         url('../fonts/calibri.svg#calibri') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'calibrib';
+	src: url('../fonts/calibrib.eot');
+	src: local('☺'), url('../fonts/calibrib.ttf') format('truetype'), url('../fonts/calibrib.woff') format('woff'),  url('../fonts/calibrib.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'calibrii';
+	src: url('../fonts/calibrii.eot');
+	src: local('☺'), url('../fonts/calibrii.ttf') format('truetype'), url('../fonts/calibrii.woff') format('woff'),  url('../fonts/calibrii.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'calibriz';
+	src: url('../fonts/calibriz.eot');
+	src: local('☺'), url('../fonts/calibriz.ttf') format('truetype'), url('../fonts/calibriz.woff') format('woff'),  url('../fonts/calibriz.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'pf_monumenta_proregular';
+    src: url('../fonts/pfmonumentapro-regular1.eot');
+    src: url('../fonts/pfmonumentapro-regular1.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/pfmonumentapro-regular1.ttf') format('truetype'),
+         url('../fonts/pfmonumentapro-regular1.woff') format('woff'),
+         url('../fonts/pfmonumentapro-regular1.svg#pf_monumenta_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	font-size: 15px;
+        color:#230d04;
+	line-height: 1.45;
+	font-family: "calibrir", "Courier New",  Arial, Verdana, Helvetica, sans-serif;
+/*	font-family: Tahoma, Geneva, sans-serif;  The Sans-serif family 	
+	font-family: "MS Sans Serif", Geneva, sans-serif;  The Sans-serif family 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;  The Sans-serif family 
+	font-family: Georgia, "Times New Roman", Times, Symbol, Webdings, Wingdings, serif;  The Serif family 
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;  The Serif family 
+	font-family: "MS Serif", "New York", serif;  The Serif family 
+	font-family: "Courier New", "Lucida Console", Courier, monospace;  The Monospace family 
+	font-family: "Comic Sans MS", cursive;*/
+}
+
+.quality-container ul li span,
+ h1,
+ h2,
+.product-item .price-title,
+.product-item .price span,
+.r-block th,
+.about-menu li a,
+.l-block h2,
+.slidetext-title
+{
+    font-family: "calibrib", "Courier New", Arial, Verdana, Helvetica, sans-serif; /* The Sans-serif family */
+        font-weight: normal;
+        font-style: normal;
+}
+
+.bottom-text {
+        font-family: "calibrii", "Courier New", Arial, Verdana, Helvetica, sans-serif; /* The Sans-serif family */
+        font-weight: normal;
+        font-style: normal;
+}
+
+.useful a, .production-title, .qualityimg-contaier .slideblock a {
+        font-family: "calibriz", "Courier New", Arial, Verdana, Helvetica, sans-serif; /* The Sans-serif family */
+        font-weight: normal;
+        font-style: normal;
+}
+
+p {
+    line-height: 17px;
+    margin-bottom: 7px;
+}
+
+th,
+td,
+textarea,
+select,
+input,
+button {
+	font-size: 1em;	
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    display: block;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    text-decoration: none;
+}
+h1, .h1 {
+    font-size: 27px;
+}
+h2, .h2 {
+    font-size: 21px;
+}
+h3, .h3 {
+    font-size: 17px;
+    line-height:1.176em;
+}
+h4, .h4 {
+    font-size: 15px;
+}
+h5, .h5 {
+    font-size: 14px;
+}
+h6, .h6 {
+    font-size: 13px;
+}
+
+ul {
+    padding: 0;
+}
+
+a:hover {
+	background-position: 0% 0%;
+	text-decoration: none;
+}

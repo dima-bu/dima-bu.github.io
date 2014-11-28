@@ -1,0 +1,53 @@
+- var tours = [{title: 'Рафтинг в карелии с медведями', img: 'files/result1.jpg', imgguide: 'img/guide.jpg', guidename: 'Дмитрий Кольцов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.7 ',price: '35 000', duration: '7', typeicon: 'mountains', data: '12 сентября - 25 октября', place: 'Россиия, Карелия', type: 'Вода', subtype: 'Рафтинг', descr: 'Карелия по праву считается одним из самых лучших мест России для сплава на байдарках, каяках, катамаранах, рафтинг-туров.  Разнообразие водных маршрутов.'}, {title: 'Рафтинг по Амазонке', img: 'files/result2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'hikking', data: '12 августа - 23 октября', place: 'Перу, Амазонка', type: 'Горы', subtype: 'Треккинг', descr: 'Амазонка – одна из самых легендарных и малоисследованных речных систем планеты. Хищные кайманы, несметные птичьи стаи и гордые индейские племена, и сегодня нежелающие менять свой исконный уклад жизни.'}, {title: 'Рафтинг по Амазонке', img: 'files/result3.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'water', data: '12 августа - 23 октября', place: 'Южная Америка, Амазонка', type: 'Горы', subtype: 'Треккинг', descr: 'Предлагаем посетить одно из культовых мест непальских Гималаев — базовый лагерь легендарного «восьмитысячника» — «Аннапурна-1».'},{title: 'Рафтинг по Амазонке', img: 'files/result2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'water', data: '12 августа - 23 октября', place: 'Перу, Амазонка', type: 'Горы', subtype: 'Треккинг', descr: 'Предлагаем посетить одно из культовых мест непальских Гималаев — базовый лагерь легендарного «восьмитысячника» — «Аннапурна-1».'},{title: 'Трек к подножию Аннапурны', img: 'files/result1.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'water', data: '12 августа - 23 октября', place: 'Перу, Амазонка', type: 'Горы', subtype: 'Треккинг', descr: 'Предлагаем посетить одно из культовых мест непальских Гималаев — базовый лагерь легендарного «восьмитысячника» — «Аннапурна-1».'},{title: 'Увлекательны  рафтинг по горной алтайской реке Катунь бирюзовая', img: 'files/result2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'water', data: '12 августа - 23 октября', place: 'Россия, Алтай', type: 'Горы', subtype: 'Треккинг', descr: 'Предлагаем посетить одно из культовых мест непальских Гималаев — базовый лагерь легендарного «восьмитысячника» — «Аннапурна-1».'}]
+
+
+    each tour in tours
+      .results-tour-item
+        .row.results-tour-item-row
+          .col-md-5.col-sm-6
+            img.img-responsive.results-tour-img(src="#{tour.img}")
+          .col-md-7.col-sm-6
+            h2.block-title #{tour.title}
+            p.md  #{tour.descr}
+            .row.results-tour-info
+              .col-md-6.col-sm-6.hidden-sm.hidden-xs
+                .media
+                  .round-img.-md.fll.-left
+                    img.img-responsive.-blue-border(src="#{tour.imgguide}")
+                  .guide-wrapper.media-body
+                     h4.-name #{tour.guidename}
+                     h5.-subname #{tour.guidesubtitle}
+              .col-md-6.col-sm-6
+                .results-tour-type.icon-text
+                  .almost-sqr-wrapper.-md.icon-text_icon
+                    i(class="icon #{tour.typeicon}")
+                  .icon-text_text
+                    span.icon-text_text-inner #{tour.type}, #{tour.subtype}
+              .col-md-6.col-sm-6
+                .results-tour-type.icon-text
+                  .almost-sqr-wrapper.-md.icon-text_icon
+                    i.icon.geo
+                  .icon-text_text
+                    span.icon-text_text-inner #{tour.place}
+
+            .results-tour-footer.hidden-sm.hidden-xs
+              .row
+                .icon-text.col-md-4.col-lg-5
+                  i.calendar-lg.count-day-wrapper.icon-text_icon
+                    span.count-day #{tour.duration}
+                    span.days-text  дней
+                  .icon-text_text.-md
+                    span.icon-text_text-inner.-md #{tour.data}
+                .col-md-8.ta-r.col-lg-7
+                  .price-lg 27 700 руб.
+                  button.simple-btn.-yellow.-md   Перейти к туру
+        .results-tour-footer.hidden-md.hidden-lg.-sm
+          .icon-text.pull-left
+            i.calendar-lg.count-day-wrapper.icon-text_icon
+              span.count-day #{tour.duration}
+              span.days-text  дней
+            .icon-text_text.-md
+              span.icon-text_text-inner.-md #{tour.data}
+          .pull-right
+            .price-lg 27 700 руб.
+            button.simple-btn.-yellow.-md Перейти к туру

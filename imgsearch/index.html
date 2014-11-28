@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="searchApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Поиск картинок </title>
+<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="ng-infinite-scroll.min.js"></script>
+<script src="app.js"></script>
+</head>
+
+<body >
+
+<div class="container" ng-controller="SearchListCtrl">
+
+
+    <h1>Поиск картинок</h1>
+
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <input type="text" ng-model="searchText" class="form-control"  placeholder="Enter img name">
+        </div>
+        <button type="submit" class="btn btn-default btn-success" ng-click='search()'>Find</button>
+    </form>
+
+    <div id="resultsDiv"  class="clearfix" infinite-scroll='loadMore()' >
+
+            <div ng-repeat="image in images" class="imageResult">
+                <a target="_blank" href={{image.unescapedUrl}} title={{image.titleNoFormatting}} class="pic" style="width:{{image.tbWidth}}px;height:{{image.tbHeight}}px;">
+                <img src={{image.tbUrl}} width={{image.tbWidth}} height={{image.tbHeight}} /></a>
+                <div class="clear"></div><a href="{{image.originalContextUrl}}" target="_blank">{{image.visibleUrl}}</a>
+            </div>
+    </div>
+
+    
+</div>
+
+</body>
+</html>
