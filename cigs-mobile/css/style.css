@@ -2329,7 +2329,7 @@ span.sep {
   margin-right: 10px;
   height: 40px;
   width: 5px;
-  background: transparent url('../img/sprite.png') 0px -2685px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2835px no-repeat;
   float: left;
   border-bottom: 1px solid #ddd;
 }
@@ -2435,7 +2435,7 @@ h3.footer_title {
 .dd-pointer-down {
   height: 8px !important;
   width: 10px !important;
-  background: transparent url('../img/sprite.png') 0px -54px;
+  background: transparent url('../img/sprite.png') 0px -126px;
   display: inline-block;
   border: 0 none !important;
 }
