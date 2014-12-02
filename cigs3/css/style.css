@@ -1863,6 +1863,9 @@ address {
   background-color: #314d6b;
   border-bottom: 1px solid #cad0dc;
 }
+.header-top div.header-col-1 {
+  padding: 0 10px 0 0;
+}
 .header-top_container {
   background-color: #314d6b;
   height: 59px;
