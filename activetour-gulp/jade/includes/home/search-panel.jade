@@ -1,0 +1,95 @@
+-var row = {panel: 'row search-panel_row', paneloffset: 'col-md-offset-2 col-sm-offset-1'}
+
+.simple-white-wrapper.search-form
+  include select-type
+  include select-region
+  .tabs-wrapper
+    ul.tabs
+      li.tabs-item.-item-1
+        a.tabs-link.active(href="#")
+          i.activetours.icon
+          span Активные туры
+      li.tabs-item.-item-2
+        a.tabs-link(href="#")
+          i.avia.icon
+          span Авиабилеты
+      li.tabs-item.-item-3
+        a.tabs-link(href="#")
+          i.hotels.icon
+          span Отели
+      li.tabs-item.-item-4
+        a.tabs-link(href="#")
+          i.cars.icon
+          span Прокат авто
+      li.tabs-item.-item-5
+        a.tabs-link(href="#")
+          i.insurance.icon
+          span Страховка
+      li.tabs-item.-item-6
+        a.tabs-link(href="#")
+          i.beach.icon
+          span Пляжный отдых
+  form.search-panel
+    div(class="#{row.panel}")
+      div(class="#{row.paneloffset}")
+          .col-form-left
+            label.label_lg Куда хотите поехать?
+            include ../general/where-input
+          .col-form-right
+            label.label_lg Чем займетесь?
+            include ../general/what-input
+    div(class="#{row.panel}")
+      div(class="#{row.paneloffset}")
+        .col-form-left
+          label.label_md Когда планируете отдых?
+          .clearfix
+            .pull-left
+              .label_md.-inline C
+              .g_input-wrapper.-calendar
+                input.g_input.-from.datepicker(type="data")
+                //i.icon.calendar-from.icon-calendar
+            .pull-right
+              .label_md.-inline По
+              .g_input-wrapper.-calendar
+                input.g_input.-to.datepicker(type="data")
+                //i.icon.calendar-to.icon-calendar
+        .col-form-right
+          .label_md На сколько хотите уехать?
+          div
+            label.label_md.-inline От
+            .plus-minus
+              input.g_input.-count(type="text", value="1")
+              .plus-minus_inner
+                a.js-plus-count
+                 i.icon.plus-blue
+                a.js-minus-count
+                  i.icon.minus-blue
+            label.label_md.-inline До
+            .plus-minus
+              input.g_input.-count(type="text", value="7")
+              .plus-minus_inner
+                a.js-plus-count
+                  i.icon.plus-blue
+                a.js-minus-count
+                  i.icon.minus-blue
+            .label_md.-inline.-last дней
+    div(class="#{row.panel}")
+      div(class="#{row.paneloffset}")
+        .label_md Сколько готовы потратить?
+        .col-slider-left
+          label.label_md.-inline От
+          input.g_input.-money-count#input-lower
+        .col-slider-center
+          #slider
+        .col-slider-right
+          label.label_md.-inline До
+          input.g_input.-money-count#input-upper
+          .label_md.-inline рублей
+    div(class="#{row.panel}")
+      div(class="#{row.paneloffset} ta-c col-md-8 col-sm-10 ")
+        .button-wrapper
+          button.simple-btn.-yellow.-lg <i class="signpost icon"></i> Подобрать тур
+          .button-check-wrapper
+            +checkbox('checkbox', 'alias', '-white-yellow')
+            label.label_sm.-inline(for="alias") Показать похожие
+

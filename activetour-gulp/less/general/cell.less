@@ -1,0 +1,202 @@
+
+.cells {
+
+  border-radius: 10px;
+  font-size: 0;
+
+  .cell {
+    display: inline-block;
+  }
+
+  &.-blue {
+    border: 2px solid @lighter-gray;
+    background-color: #f7f7f7;
+    .cell-date-item {
+      border-bottom: 1px solid rgba(189, 195, 199, 0.4);
+    }
+    .cell {
+      border-left: 2px solid rgba(189, 195, 199, 0.4);
+      &:first-child {
+        border-left: 0 none;
+      }
+    }
+  }
+
+  &.-yellow {
+    border: 2px solid @yellow;
+    .cell {
+      border-left: 2px solid @yellow;
+      &:first-child {
+        border-left: 0 none;
+      }
+    }
+  }
+
+  &.-date {
+    .cell {
+      font-size: 14px;
+      width: 20%;
+      text-align: center;
+      line-height: 1.2;
+      > div {
+        padding: 10px 0;
+      }
+    }
+  }
+
+  &.-type {
+
+    .cell {
+      text-align: center;
+      height: 120px;
+      vertical-align: top;
+
+    }
+
+    .cells-title {
+      margin-bottom: 10px;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+      h6 {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        line-height: 14px;
+      }
+
+      .cells-icons {
+        margin-bottom: 10px;
+      }
+
+    h6 {
+      text-transform: uppercase;
+    }
+
+  }
+
+}
+
+.cells {
+  &.num-2 {
+    .cell {
+      width: 50%;
+    }
+  }
+  &.num-3 {
+    .cell {
+      width: 33.33333%;
+    }
+  }
+  &.num-4 {
+    .cell {
+      width: 25%;
+    }
+  }
+  &.num-5 {
+    .cell {
+      width: 20%;
+    }
+  }
+  &.num-6 {
+    .cell {
+      width: 33.33333%;
+
+      &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+        border-bottom: 2px solid transparent;
+      }
+      &:nth-child(4) {
+        border-left: 0 none;
+      }
+      &-blue {
+        border-bottom-color: @lighter-gray;
+      }
+
+      &-yellow {
+        border-bottom-color: @yellow;
+      }
+    }
+  }
+
+  &.num-7 {
+    .cell {
+      width: 33.33333%;
+
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        border-bottom: 2px solid transparent;
+        width: 25%;
+      }
+      &:nth-child(5) {
+        border-left: 0 none;
+      }
+      &-blue {
+        border-bottom-color: @lighter-gray;
+      }
+
+      &-yellow {
+        border-bottom-color: @yellow;
+      }
+    }
+  }
+
+  &.num-8 {
+    .cell {
+      width: 25%;
+
+      &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+        border-bottom: 2px solid transparent;
+        width: 25%;
+      }
+
+      &:nth-child(5) {
+        border-left: 0 none;
+      }
+
+      &-blue {
+        border-bottom-color: @lighter-gray;
+      }
+
+      &-yellow {
+        border-bottom-color: @yellow;
+      }
+
+    }
+  }
+
+}
+
+.cells-icons .almost-sqr-wrapper {
+  margin: 0 3px;
+}
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+/*SMALL and EXTRA SMALL -- sm and xs -- CELL*/
+@media screen and (max-width: @screen-sm-max) {
+
+}
+
+/*SMALL and EXTRA SMALL -- sm and xs -- CELL -- END*/
+
+/*EXTRA SMALL -- xs -- CELL*/
+@media screen and (max-width: @screen-xs-max) {
+
+}
+
+/*EXTRA SMALL -- xs -- CELL END*/
+
+/*SMALL -- sm -- CELL*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+}
+
+/*SMALL -- sm -- CELL -- END*/
+
+/*LARGE and MEDIUM -- lg and md -- CELL*/
+@media screen and (min-width: @screen-sm-max) {
+
+}
+
+/*LARGE and MEDIUM -- lg and md -- CELL -- END*/

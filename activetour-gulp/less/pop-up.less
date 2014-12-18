@@ -1,0 +1,109 @@
+
+.pop-up_wrapper {
+  width: auto;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+
+}
+
+
+.pop-up_bg {
+  position: fixed;
+  background-color: rgba(113,145,173, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+
+}
+
+.pop-up {
+  position: fixed;
+  top: 4vh;
+  z-index: 2;
+  display: inline-block;
+  padding: 30px;
+  max-height: 92vh;
+  overflow-y: auto;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+  }
+
+
+}
+
+.pop-up_inner {
+  overflow-y: auto;
+  height: 100%;
+  form {
+    padding: 0 15px 0 0px;
+  }
+}
+
+
+.pop-up_btn {
+  padding: 20px 0 10px 0;
+  text-align: center;
+  .simple-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- POPUP*/
+@media  screen and (max-width: @screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- POPUP -- END*/
+
+
+/*EXTRA SMALL -- xs -- POPUP*/
+@media screen and (max-width: @screen-xs-max) {
+
+
+}
+/*EXTRA SMALL -- xs -- POPUP END*/
+
+
+
+/*SMALL -- sm -- POPUP*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .pop-up {
+    width: 700px;
+    left: 50%;
+    margin-left: -350px;
+  }
+
+}
+/*SMALL -- sm -- POPUP -- END*/
+
+
+///*LARGE and MEDIUM -- lg and md -- POPUP*/
+@media screen and (min-width: @screen-sm-max) {
+.pop-up {
+    width: 840px;
+    left: 50%;
+    margin-left: -420px;
+  }
+
+}
+/*LARGE and MEDIUM -- lg and md -- POPUP -- END*/

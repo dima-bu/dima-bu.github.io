@@ -1,0 +1,122 @@
+.tabs-wrapper {
+  padding: 0 30px;
+
+}
+
+.tabs {
+  .clear-list();
+  font-family: 'chevin-bold';
+  position: relative;
+  width: 100%;
+  .blue-bottom-border();
+  font-size: 0;
+  padding-bottom: 8px;
+}
+
+.tabs-item {
+  display: inline-block;
+  &.-item-1 {
+    width: 19.50%;
+  }
+  &.-item-2 {
+    width: 18.70%;
+  }
+  &.-item-3 {
+    width:12.30%;
+  }
+  &.-item-4 {
+    width: 16.9%;
+  }
+  &.-item-5 {
+    width: 14.40%;
+  }
+  &.-item-6 {
+    width: 18%;
+  }
+}
+
+.tabs-link {
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 14px;
+  color:  #2574a9;
+  line-height: 36px;
+  .icon {
+    margin-right: 5px;
+  }
+
+  .activetours {
+    margin-bottom: -1px;
+  }
+  
+  &.active, &:hover {
+    color:  #ebc012;
+    .avia {
+      .sprite(@avia-active);
+    }
+
+    .hotels {
+      .sprite(@hotels-active);
+    }
+
+    .cars {
+      .sprite(@cars-active);
+    }
+
+    .insurance {
+      .sprite(@insurance-active);
+    }
+
+    .beach {
+      .sprite(@beach-active);
+    }
+
+    .activetours {
+      .sprite(@activetours-active);
+    }
+
+  }
+}
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- TABS*/
+@media  screen and (max-width: @screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- TABS -- END*/
+
+
+/*EXTRA SMALL -- xs -- TABS*/
+@media screen and (max-width: @screen-xs-max) {
+
+
+}
+/*EXTRA SMALL -- xs -- TABS END*/
+
+
+
+/*SMALL -- sm -- TABS*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+  .tabs-link {
+    font-size:12px ;
+  }
+
+}
+/*SMALL -- sm -- TABS -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- TABS*/
+@media screen and (min-width: @screen-sm-max) {
+
+
+}
+/*LARGE and MEDIUM -- lg and md -- TABS -- END*/

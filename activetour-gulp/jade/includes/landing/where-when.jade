@@ -1,0 +1,43 @@
+-var dates = [{date: '16 ноября — 17 декабря', plases: '5 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}, {date: '16 ноября — 17 декабря', plases: '12 свободных мест'}]
+
+section.landing-section.where-when-section
+  .container
+    h2 ГДЕ И КОГДА
+    .cells.num-4.-yellow.-type
+      .cell
+          .cells-title Регион
+          .cells-icons
+            .almost-sqr-wrapper.-md
+              i.icon.geo
+          h6 Непал, Гималаи
+        .cell
+          .cells-title Вид туризма
+          .cells-icons
+            .almost-sqr-wrapper.-md
+              i.icon.hikking
+            .almost-sqr-wrapper.-md
+              i.icon.mountains
+          h6 Горы, Треккинг
+        .cell
+          .cells-title Сложность
+          .cells-icons
+            .almost-sqr-wrapper.-md
+              span.difficult 6/10
+          h6 Средняя
+        .cell
+          .cells-title Длительность тура
+          .cells-icons
+            i.calendar-lg.count-day-wrapper
+              span.count-day 7
+              span.days-text дней
+          h6 16 ноября — 17 декабря
+    h3 БЛИЖАЙШИЕ ЗАЕЗДЫ
+    .cells.-blue.-date.num-8
+        each date in dates
+          .cell.-date
+            .cell-date-item #{date.date}
+            .cell-date-position #{date.plases}
+
+
+
+

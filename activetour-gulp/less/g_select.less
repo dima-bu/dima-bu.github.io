@@ -1,0 +1,62 @@
+@select-border-color: #bdc3c7;
+//@select-background: #fff;
+@select-background-hover:#E3E7EA;
+@select-text-color: #a59e91;
+@select-border-radius: 3px;
+
+
+
+.ik_select_link {
+  &:extend(.g_input);
+  cursor: pointer;
+}
+
+.ik_select_link:after {
+  height: 10px;
+  width: 10px;
+  background: transparent url('@{img-path}/drop.png') 0px 0px no-repeat;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -11px;
+  content:""
+}
+
+.ik_select_link_focus {
+
+}
+
+.ik_select_list {
+  background-color: transparent !important ;
+  color: @select-text-color !important;
+
+}
+
+.ik_select_dropdown {
+  background: #fff !important;
+  border-radius: @select-border-radius;
+
+box-sizing:  content-box;
+overflow: hidden;
+}
+
+.ik_select_option.ik_select_hover {
+  background-color: @select-background-hover !important;
+}
+
+.ik_select_option {
+  &:extend(.g_input);
+  border: 0 none transparent !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid @select-border-color !important;
+  cursor: pointer;
+}
+
+.ik_select_list_inner ul {
+  &:extend(.clear-list);
+  border-left:  1px solid @select-border-color;
+  border-right: 1px solid @select-border-color;
+  border-radius: @select-border-radius;
+}

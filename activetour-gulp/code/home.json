@@ -1,0 +1,77 @@
+{
+    "tours": [
+        {
+            "title": "Рафтинг в карелии с медведями",
+            "img": "img/tour-preview-img-1.jpg",
+            "imgguide": "img/guide.jpg",
+            "guidename": "Дмитрий Кольцов ",
+            "guidesubtitle": "Гид-проводник. Рейтинг 4.7 ",
+            "price": "35 000",
+            "duration": "7",
+            "typeicon": "boat",
+            "data": "12 сентября - 25 октября",
+            "place": "Россиия, Карелия"
+        },
+        {
+            "title": "Рафтинг по Амазонке",
+            "img": "img/tour-preview-img-2.jpg",
+            "imgguide": "img/guide.jpg",
+            "guidename": "Михаил Копытов ",
+            "guidesubtitle": "Гид-проводник. Рейтинг 4.8 ",
+            "price": "65 000",
+            "duration": "14",
+            "typeicon": "boat",
+            "data": "12 августа - 23 октября",
+            "place": "Перу, Амазонка"
+        },
+        {
+            "title": "Рафтинг по Амазонке",
+            "img": "img/tour-preview-img-2.jpg",
+            "imgguide": "img/guide.jpg",
+            "guidename": "Михаил Копытов ",
+            "guidesubtitle": "Гид-проводник. Рейтинг 4.8 ",
+            "price": "65 000",
+            "duration": "14",
+            "typeicon": "boat",
+            "data": "12 августа - 23 октября",
+            "place": "Перу, Амазонка"
+        },
+        {
+            "title": "Рафтинг по Амазонке",
+            "img": "img/tour-preview-img-2.jpg",
+            "imgguide": "img/guide.jpg",
+            "guidename": "Михаил Копытов ",
+            "guidesubtitle": "Гид-проводник. Рейтинг 4.8 ",
+            "price": "65 000",
+            "duration": "14",
+            "typeicon": "boat",
+            "data": "12 августа - 23 октября",
+            "place": "Перу, Амазонка"
+        },
+        {
+            "title": "Трек к подножию Аннапурны",
+            "img": "img/tour-preview-img-2.jpg",
+            "imgguide": "img/guide.jpg",
+            "guidename": "Михаил Копытов ",
+            "guidesubtitle": "Гид-проводник. Рейтинг 4.8 ",
+            "price": "65 000",
+            "duration": "14",
+            "typeicon": "boat",
+            "data": "12 августа - 23 октября",
+            "place": "Перу, Амазонка"
+        },
+        {
+            "title": "Увлекательны  рафтинг по горной алтайской реке Катунь бирюзовая",
+            "img": "img/tour-preview-img-2.jpg",
+            "imgguide": "img/guide.jpg",
+            "guidename": "Михаил Копытов ",
+            "guidesubtitle": "Гид-проводник. Рейтинг 4.8 ",
+            "price": "65 000",
+            "duration": "14",
+            "typeicon": "boat",
+            "data": "12 августа - 23 октября",
+            "place": "Россия, Алтай"
+        }
+    ]
+
+}

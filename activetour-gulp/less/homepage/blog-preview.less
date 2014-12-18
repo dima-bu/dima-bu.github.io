@@ -1,0 +1,79 @@
+.blog-preview-wrapper {
+  margin-bottom: 40px;
+}
+
+
+.blog-preview-img img{
+  border-radius: 10px 10px 0  0;
+  border-bottom: 2px solid @dark-blue;
+}
+
+.blog-preview-body {
+  height: 210px;
+  padding: 0px 20px 10px 20px;
+  h3.block-title {
+    text-align: left;
+    padding-left: 0;
+  }
+  padding-bottom: 30px;
+}
+
+.blog-preview-body {
+  position: relative;
+  .readmore {
+    position: absolute;
+    bottom:13px;
+    right: 20px;
+
+  }
+}
+
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- BLOG PREVIEW*/
+@media  screen and (max-width: @screen-sm-max) {
+
+  .blog-preview-text {
+    display: none;
+  }
+
+  .blog-preview-body {
+    height: 170px;
+  }
+
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- BLOG PREVIEW -- END*/
+
+
+/*EXTRA SMALL -- xs -- BLOG PREVIEW*/
+@media screen and (max-width: @screen-xs-max) {
+
+
+}
+/*EXTRA SMALL -- xs -- BLOG PREVIEW END*/
+
+
+
+/*SMALL -- sm -- BLOG PREVIEW*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+
+
+}
+/*SMALL -- sm -- BLOG PREVIEW -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- BLOG PREVIEW*/
+@media screen and (min-width: @screen-sm-max) {
+
+
+}
+/*LARGE and MEDIUM -- lg and md -- BLOG PREVIEW -- END*/

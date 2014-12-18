@@ -1,0 +1,36 @@
+
+
+h2.subtitle Популярные туры
+.row.tour-preview-wrapper
+   each tour in tours
+     .col-md-4.col-sm-6.col-xs-12.tour-preview-item
+      .blue-border.tour-preview
+        header.tour-preview-header
+          h3.block-title  #{tour.title}
+        .tour-preview-img
+          img(src="#{tour.img}")
+        .tour-preview-icons
+          .col-all-33p.fll
+            .round-bg.-md.-yellow.-with-icon.-top
+              i(class="icon #{tour.typeicon}")
+          .col-all-33p.fll.ta-c
+            .round-img.-profile-img
+              img.-top.-blue-border(src="#{tour.imgguide}")
+          .col-all-33p.fll
+            .round-bg.-md.-yellow.-top
+              span.count-day #{tour.duration}
+              span.days-text дней
+        .tour-preview-descr
+          h4.-name #{tour.guidename}
+          h5.-subname #{tour.guidesubtitle}
+          hr.light
+          ul.tour-preview-descr-list
+            li.tour-preview-descr-item
+              i.icon.earth
+              span.tour-preview-descr-item-text #{tour.place}
+            li.tour-preview-descr-item
+              i.icon.calendar-sm
+              span.tour-preview-descr-item-text #{tour.data}
+            li.tour-preview-descr-item
+              i.icon.money
+              span.tour-preview-descr-item-text #{tour.price} руб.

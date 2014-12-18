@@ -1,0 +1,158 @@
+
+
+.results-tour-item {
+  padding: 15px 15px 15px 15px;
+  margin-bottom: 40px;
+  .blue-border();
+
+  @media screen and (min-width: @screen-md-max) {
+    padding-bottom: 15px;
+  }
+
+
+  .block-title {
+    margin-top: 0;
+    @media screen and (max-width: @screen-md-max) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.results-tour-item-row {
+  margin-bottom: 0px;
+}
+
+.results-tour-img {
+  .blue-border();
+  border-radius: 0;
+}
+
+.results-tour-footer {
+  .light-blue-border;
+  .clearfix();
+  padding-top: 15px;
+  @media screen and (min-width: @screen-md-max) {
+    padding-top: 20px;
+  }
+}
+
+.results-tour-info {
+  @media screen and (min-width: @screen-md-max) {
+    margin-bottom: 20px;
+  }
+}
+
+
+.icon-text {
+  .media();
+  margin-top: 0;
+}
+
+.icon-text_icon {
+  .fll();
+  margin-right: 10px;
+}
+
+.icon-text_text {
+  .media-body();
+  line-height: 32px;
+  &.-md {
+    line-height: 40px;
+  }
+}
+
+.icon-text_text-inner {
+  &.-md {
+    line-height: 20px;
+  }
+  display: inline-block;
+  line-height: 16px;
+}
+
+
+.price-lg {
+  color:  @darker-blue;
+  font-size: 22px; /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 46px;
+  display: inline-block;
+}
+
+.results-tour-footer {
+  .price-lg {
+    margin-right: 20px;
+  }
+
+  .simple-btn {
+    vertical-align: top;
+  }
+
+  &.-sm {
+    margin-left: -@grid-gutter-width/2;
+    margin-right: -@grid-gutter-width/2;
+    padding: 15px 15px 0 15px;
+    margin-top: 15px;
+  }
+}
+
+
+.guide-wrapper {
+  margin-top: 19px;
+  
+}
+
+.results-tour-type {
+  margin-bottom: 10px;
+
+  @media  screen and (max-width: @screen-sm-max) {
+    margin-bottom: 0;
+  }
+
+}
+
+
+/****************/
+/** RESPONSIVE **/
+/****************/
+
+
+
+/*SMALL and EXTRA SMALL -- sm and xs -- RESULTS TOUR*/
+@media  screen and (max-width: @screen-sm-max) {
+
+
+}
+/*SMALL and EXTRA SMALL -- sm and xs -- RESULTS TOUR -- END*/
+
+
+/*EXTRA SMALL -- xs -- RESULTS TOUR*/
+@media screen and (max-width: @screen-xs-max) {
+
+  .results-tour-img {
+    margin-bottom: 20px;
+  }
+
+  .results-tour-type {
+    margin-bottom: 20px;
+  }
+  
+}
+/*EXTRA SMALL -- xs -- RESULTS TOUR END*/
+
+
+
+/*SMALL -- sm -- RESULTS TOUR*/
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+
+
+
+}
+/*SMALL -- sm -- RESULTS TOUR -- END*/
+
+
+/*LARGE and MEDIUM -- lg and md -- RESULTS TOUR*/
+@media screen and (min-width: @screen-sm-max) {
+
+
+}
+/*LARGE and MEDIUM -- lg and md -- RESULTS TOUR -- END*/

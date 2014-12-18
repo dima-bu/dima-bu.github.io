@@ -1,0 +1,123 @@
+- var russia = [{ name: 'Карелия', id: 3}, { name: 'Алтай', id: 4 }, { name: 'Черное море', id: 5 }, { name: 'Камчатка', id: 6 }, { name: ' Байкал ', id: 7 }, { name: ' Крым ', id: 8 }  ]
+- var australia = [{ name: 'Филиппины', id: 9}, { name: 'Французская Полинезия', id: 10 }, { name: 'Новая Зеландия' , id: 11}, { name: 'Фиджи', id: 12 }, { name: 'Гавайи', id: 13 } ]
+- var europa = [{ name: 'Альпы', id: 14}, { name: 'Испания', id: 15 }, { name: 'Франция' , id: 16}, { name: 'Италия', id: 17 } ]
+- var asia = [{ name: 'Китай', id: 18}, { name: 'Индия', id: 19 }, { name: 'Таиланд' , id: 20}, { name: 'Индонезия', id: 21 }, { name: 'Бали', id: 22 }, { name: 'Япония', id: 23 }, { name: 'Япония', id: 24 } ]
+- var africa = [{ name: 'Египет', id: 25}, { name: 'Моррокко', id: 26 }, { name: 'Юар' , id: 27}, { name: 'Тунис', id: 28 }, { name: 'Килиманджаро', id: 29 } ]
+- var samerica = [{ name: 'Бразилия', id: 30}, { name: 'Перу', id: 31 }, { name: 'Эквадор' , id: 32}, { name: 'Аргентина', id: 33 }, { name: 'Чили', id: 34 } ]
+- var namerica = [{ name: 'Канада', id: 35}, { name: 'США', id: 36 }, { name: 'Мексика' , id: 37}, { name: 'Йосемиты', id: 38 } ]
+
+.select-region(style="display:none")
+  header.select-type-header
+    .row
+      .col-sm-9
+        h4 Выберите регионы, в которых вы хотите отдохнуть:
+        h5 Можете выбрать несколько регионов, просто кликая на них. Затем нажмите «Выбрать регион»
+      .col-sm-3.ta-r
+        .close-btn.js-close-select-region Закрыть <i class="icon close-icon"></i>
+  section.tour-list-wrapper.row
+    .col-sm-3
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.russia
+            span.tour-list-text Россия
+        each region in russia
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.australia
+            span.tour-list-text Австралия и Океания
+        each region in australia
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+    .col-sm-3
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.europe
+            span.tour-list-text Европа
+        each region in europa
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.asia
+            span.tour-list-text Азия
+        each region in asia
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+    .col-sm-3
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.africa
+            span.tour-list-text Африка
+        each region in africa
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.s-america
+            span.tour-list-text Южная Америка
+        each region in samerica
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+    .col-sm-3
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-all-region
+            span.tour-icon-wrapper
+              i.icon.n-america
+            span.tour-list-text Северная Америка
+        each region in namerica
+          li.tour-list-item
+            a.tour-list-link.js-region
+              span.tour-list-text(regionid="tour-#{region.id}")   #{region.name}
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-region
+            span.tour-icon-wrapper
+              i.icon.antarctica
+            span.tour-list-text(regionid="39") Антарктида
+
+      ul.tour-list
+        li.tour-list-item.-general.-icon
+          a.tour-list-link.js-region
+            span.tour-icon-wrapper
+              i.icon.arctica
+            span.tour-list-text(regionid="40") Арктика
+
+
+  hr.select-type-hr
+  section.selected-regions
+    .row
+      .col-md-7.col-lg-8
+        span.selected-tours-title Вы выбрали:
+        span.selected-regions-list
+      .col-md-5.col-lg-4.ta-r
+        button.transparent-btn.-blue.js-clear-all-region.selected-tours-clear Сбросить все
+        button.simple-btn.-yellow.js-select-regions <i class="select-tours icon"></i> Выбрать регион

@@ -1,0 +1,64 @@
+section.add-section.search-form
+  include ../home/select-region
+  include ../home/select-type
+  .allocated-block
+    h2.add-subtitle 1. Основная информация о туре
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Название тура
+    .col-md-9
+      input.g_input
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Главная картинка для тура
+    .col-md-3
+      input.g_input
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Цена
+    .col-md-3
+      input.g_input
+    .label_md-wrapper.col-md-3.count-changer
+      label.label_md.-simple.js-active(for="rub")
+        span рублей
+        input(type="radio", id="rub" name="countchanger")
+      label.label_md.-simple.hide(for="usd")
+        span долларов
+        input(type="radio",id="usd", name="countchanger")
+      label.label_md.-simple.hide(for="euro")
+        span евро
+        input(type="radio", id="euro", name="countchanger")
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Регион тура
+    .col-md-3
+      include ../general/where-input
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Вид тура
+    .col-md-3
+      include ../general/what-input
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Сложность
+    .col-md-4
+      select.g_select
+        option Сложность 1
+        option Сложность 2
+        option Сложность 3
+        option Сложность 4
+        option Сложность 5
+        option Сложность 6
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Выбрать гида
+    .col-md-4
+      select.g_select
+        option Кондрашев А.Б.
+        option Безпалапенковинковенко А.П.
+        option Бухал Д.Д.
+        option Титарев М.И.
+        option Селиванов А.Ф.
+     .col-md-3
+
+
