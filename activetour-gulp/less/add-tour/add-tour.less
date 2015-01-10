@@ -19,6 +19,53 @@
 }
 
 
+.info-item {
+  border-radius: 10px;
+  border: 1px solid @light-blue;
+  background-color:  #EEEEEE;
+  padding: 20px;
+  
+  .switch-buttons {
+    position: relative;
+    z-index: 1;
+  }
+
+  &.disabled {
+    .disabled-mask {
+      display: block;
+    }
+  }
+
+  .disabled-mask {
+    display: none;
+  }
+
+  .-crop-btn {
+    .media();
+
+    .almost-sqr-wrapper {
+      margin-right: 20px;
+    }
+
+    button {
+      font-size: 16px;
+      line-height: 20px;
+      min-height: 52px;
+    }
+  }
+  
+}
+
+.info-item_row {
+  margin-bottom: 20px;
+  .clearfix();
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+}
+
 
 
 

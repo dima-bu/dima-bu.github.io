@@ -11,8 +11,14 @@ section.add-section.search-form
   .form-row
     .label_md-wrapper.col-md-3
       label.label_md.-simple Главная картинка для тура
-    .col-md-3
-      input.g_input
+    .col-md-9
+      .g_file_wrapper
+        button.simple-btn.-more-sqr.-yellow.fll Выбрать
+        .col-md-8
+          .label_md-wrapper
+            label.label_md.-simple.g_file-text  Загрузить фото
+        input(id="userfile", type="file", name="userfile", class="g_file")
+      .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
   .form-row
     .label_md-wrapper.col-md-3
       label.label_md.-simple Цена
@@ -33,6 +39,17 @@ section.add-section.search-form
       label.label_md.-simple Регион тура
     .col-md-3
       include ../general/where-input
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Продолжетилеьность
+    .col-md-1
+      input.g_input
+    .label_md-wrapper.col-md-1
+      .label_md.-simple дней
+    .label_md-wrapper.col-md-1
+      label.label_md.-simple.ta-r C
+    .col-md-2
+      input.g_input
   .form-row
     .label_md-wrapper.col-md-3
       label.label_md.-simple Вид тура
@@ -60,5 +77,42 @@ section.add-section.search-form
         option Титарев М.И.
         option Селиванов А.Ф.
      .col-md-3
-
-
+       button.simple-btn.-more-sqr.-yellow.fll Добавить нового гида
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Количество мест в группе
+    .col-md-2
+      input.g_input
+  .allocated-block
+    h2.add-subtitle 2. Инфографика, характеризующая тур
+  .form-row
+    .col-md-3
+      .info-item
+        .info-item_row
+          input.g_input.-info-input(value="Формат тура")
+        .info-item_row.-crop-btn
+          .almost-sqr-wrapper.-lg.-mod-1.fll
+            i.hikking-md.icon
+          .media-body
+            button.simple-btn.-more-sqr.-blue Сменить иконку
+        .info-item_row
+          textarea.g_textarea.-info-input(rows="3")
+        .switch-buttons.-yellow
+          button.switch-btn.-yellow.active.js-switch-btn-item Вкл&nbsp;&nbsp;
+          button.switch-btn.-yellow.js-switch-btn-item Выкл
+        .disabled-mask
+    .col-md-3
+      .info-item
+        .info-item_row
+          input.g_input.-info-input(value="Проживание")
+        .info-item_row.-crop-btn
+          .almost-sqr-wrapper.-lg.-mod-1.fll
+            i.host-md.icon
+          .media-body
+            button.simple-btn.-more-sqr.-blue Сменить иконку
+        .info-item_row
+          textarea.g_textarea.-info-input(rows="3")
+        .switch-buttons.-yellow
+          button.switch-btn.-yellow.active.js-switch-btn-item Вкл&nbsp;&nbsp;
+          button.switch-btn.-yellow.js-switch-btn-item Выкл
+        .disabled-mask

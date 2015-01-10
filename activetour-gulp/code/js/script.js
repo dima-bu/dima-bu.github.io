@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    $('select.g_select').ikSelect({
-        autoWidth: false,
-        ddFullWidth: false,
-        equalWidths: true
-    });
-
 
     $('.datepicker').pickadate({
             close: 0
@@ -288,6 +282,19 @@ $(document).ready(function () {
 
     });
 
+    $('.js-switch-btn-item').on('click', function () {
+        if ($(this).hasClass('active')) {
+        }
+        else {
+            $(this).parent().find('.js-switch-btn-item').removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('.info-item').toggleClass('disabled');
+        }
+
+    });
+
+    /**/
+
 
     Math.max.apply(Math, $(".js-review-body").map(function(){
         $(".js-review-body").css("height", $(this).height());
@@ -447,6 +454,76 @@ $(document).ready(function () {
 
         }
     })
+
+
+    /*input file*/
+
+
+//        var a = $(".g_file_wrapper"), b = a.find(".g_file"), c = a.find("button"), d = a.find(".g_file-text");
+//
+//        c.focus(function () {
+//            b.focus()
+//        }), b.focus(function () {
+//            a.addClass("focus")
+//        }).blur(function () {
+//            a.removeClass("focus")
+//        });
+
+        var e = window.File && window.FileReader && window.FileList && window.Blob ? !0 : !1;
+            $('.g_file').change(function () {
+            var a = $(this).parents('.g_file_wrapper');
+            var c =  a.find("button");
+            var d =  a.find(".g_file-text");
+
+            a = e && $(this)[0].files[0] ? $(this)[0].files[0].name : $(this).val().replace("C:\\fakepath\\", ""), a.length && (d.is(":visible") ? (d.text(a), c.text("Выбрать")) : c.text(a), $("#go").removeAttr("disabled"))
+        }).change();
+
+    /*popup-select-icons*/
+
+    $('.js-change-icon').on('click', function(){
+        $('.popup-select-icons').show();
+        $(this).parents('.info-item').find('.almost-sqr-wrapper').addClass('tobe-changed');
+        return false;
+    });
+
+     $(document).click(function (event) {
+        if ($(event.target).closest(".popup-select-icons").length) return;
+        $('.popup-select-icons').hide();
+        event.stopPropagation();
+    });
+
+    $('.popup-select-icons .almost-sqr-wrapper').on('click', function(){
+        var Icon = $(this).children();
+        $('.tobe-changed').empty();
+        Icon.clone().appendTo('.tobe-changed');
+        $('.tobe-changed').removeClass('tobe-changed');
+        $('.popup-select-icons').hide();
+    });
+
+
+    /*add enter item*/
+
+    $('.js-add-item_btn').on('click', function(){
+        var AddItemWrapper = $(this).parents('.js-add-item_wrapper'),
+            AddItemInput = AddItemWrapper.find('.js-add-item_input'),
+            AddItemBox = AddItemWrapper.find('.js-add-item_box'),
+            AddItemValue = AddItemInput.val(),
+            AddItemArray = AddItemValue.split(',');
+
+        for(var i=0;i<AddItemArray.length;i++){
+            AddItemBox.append( '<label class="label_sm -inline"><div class="checking_item  -white-yellow checking_item-inline"><input type="checkbox" id="alias-'+i+'" class="checking_input"><div class="checking_input-pseudo-wrapper"><div class="checking_input-pseudo"><i class="white-check icon"></i></div> </div></div>'+AddItemArray[i]+'</label>');
+        }
+
+        AddItemInput.val('');
+
+    });
+
+    $('select.g_select').ikSelect({
+        autoWidth: false,
+        ddFullWidth: false,
+        equalWidths: true,
+        ddMaxHeight: 300
+    });
 
 
 });

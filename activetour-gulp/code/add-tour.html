@@ -12,8 +12,7 @@
   <body>
     <header class="main-header">
       <div class="container"><a href="home.html"><img src="img/logo.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo fll"></a>
-        <div class="logo-caption fll">Поиск и бронирование<br/> активных туров</div>
-        <button class="flr simple-btn -yellow">Добавить ваш тур</button>
+        <div class="logo-caption fll">Поиск и бронирование<br/> активных туров</div><a href="add-tour.html" class="flr simple-btn -yellow">Добавить ваш тур</a>
         <div class="flr share-menu">
           <div class="share-menu_caption">Поделиться</div><a href="#" class="share-menu_link"><i class="vk icon"></i></a><a href="#" class="share-menu_link"><i class="fb icon"></i></a><a href="#" class="share-menu_link"><i class="tw icon"></i></a><a href="#" class="share-menu_link"><i class="rss icon"></i></a>
         </div>
@@ -111,8 +110,8 @@
             <hr class="select-type-hr">
             <section class="selected-regions">
               <div class="row">
-                <div class="col-md-7 col-lg-8"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span></div>
-                <div class="col-md-5 col-lg-4 ta-r">
+                <div class="col-md-7 col-lg-7"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span></div>
+                <div class="col-md-5 col-lg-5 ta-r">
                   <button class="transparent-btn -blue js-clear-all-region selected-tours-clear">Сбросить все</button>
                   <button class="simple-btn -yellow js-select-regions"><i class="select-tours icon"></i> Выбрать регион</button>
                 </div>
@@ -277,27 +276,36 @@
             <div class="label_md-wrapper col-md-3">
               <label class="label_md -simple">Главная картинка для тура</label>
             </div>
-            <div class="col-md-3">
-              <input class="g_input">
+            <div class="col-md-9">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
             </div>
           </div>
           <div class="form-row">
             <div class="label_md-wrapper col-md-3">
               <label class="label_md -simple">Цена</label>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <input class="g_input">
             </div>
-            <div class="label_md-wrapper col-md-3 count-changer">
-              <label for="rub" class="label_md -simple js-active"><span>рублей</span>
-                <input type="radio" id="rub" name="countchanger">
+            <div class="label_md-wrapper col-md-2">
+              <label for="rub" class="label_md -simple"><span>рублей</span>
+                <!--input(type="radio", id="rub" name="countchanger")-->
               </label>
-              <label for="usd" class="label_md -simple hide"><span>долларов</span>
-                <input type="radio" id="usd" name="countchanger">
-              </label>
-              <label for="euro" class="label_md -simple hide"><span>евро</span>
-                <input type="radio" id="euro" name="countchanger">
-              </label>
+              <!--label.label_md.-simple.hide(for="usd")-->
+              <!--  span долларов-->
+              <!--  input(type="radio",id="usd", name="countchanger")-->
+              <!--label.label_md.-simple.hide(for="euro")-->
+              <!--  span евро-->
+              <!--  input(type="radio", id="euro", name="countchanger")-->
             </div>
           </div>
           <div class="form-row">
@@ -308,6 +316,23 @@
               <div class="g_input-wrapper"><i class="icon globus icon-right js-open-select-region"></i>
                 <div type="text" placeholder="Выберите регион из списка" class="g_input js-open-select-region flex-height"></div>
               </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Продолжительность</label>
+            </div>
+            <div class="col-md-1">
+              <input class="g_input">
+            </div>
+            <div class="label_md-wrapper col-md-1">
+              <div class="label_md -simple">дней</div>
+            </div>
+            <div class="label_md-wrapper col-md-1">
+              <label class="label_md -simple ta-r">C</label>
+            </div>
+            <div class="col-md-2">
+              <input class="g_input">
             </div>
           </div>
           <div class="form-row">
@@ -348,7 +373,863 @@
                 <option>Селиванов А.Ф.</option>
               </select>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-3">
+              <button class="simple-btn -more-sqr -yellow fll">Добавить нового гида</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Количество мест в группе</label>
+            </div>
+            <div class="col-md-2">
+              <input class="g_input">
+            </div>
+          </div>
+          <div style="display:none;" class="popup-select-icons">
+            <div class="almost-sqr-wrapper -lg -mod-1"><i class="hikking-md icon"></i></div>
+            <div class="almost-sqr-wrapper -lg -mod-1"><i class="eat-md icon"></i></div>
+            <div class="almost-sqr-wrapper -lg -mod-1"><i class="transport-md icon"></i></div>
+            <div class="almost-sqr-wrapper -lg -mod-1"><i class="safety-md icon"></i></div>
+            <div class="almost-sqr-wrapper -lg -mod-1"><i class="host-md icon"></i></div>
+            <div class="almost-sqr-wrapper -lg -mod-1"><i class="guide-md icon"></i></div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">1</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">2</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">3</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">4</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">5</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">6</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">7</span></div>
+            </div>
+            <div class="almost-sqr-wrapper -lg -mod-1">
+              <div class="round-bg -yellow -lg"><span class="count">8</span></div>
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">2. Инфографика, характеризующая тур</h2>
+          </div>
+          <div class="form-row info-item_wrapper">
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row">
+                  <input value="Формат тура" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="hikking-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row">
+                  <input value="Проживание" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="host-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row">
+                  <input value="Транспорт" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="transport-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row">
+                  <input value="Питание" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="eat-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row">
+                  <input value="Сопровождение" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="guide-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row">
+                  <input value="Безопасность" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="safety-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item disabled">
+                <div class="info-item_row">
+                  <input value="Безопасность" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="safety-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item disabled">
+                <div class="info-item_row">
+                  <input value="Безопасность" class="g_input -info-input">
+                </div>
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="safety-md icon"></i></div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="3" class="g_textarea -info-input"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">3. Основное описание тура</h2>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Картинка для описания №1</label>
+            </div>
+            <div class="col-md-9">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Заголовок для описания</label>
+            </div>
+            <div class="col-md-9">
+              <input class="g_input">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Текст описания</label>
+            </div>
+            <div class="col-md-9">
+              <textarea rows="5" class="g_textarea"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Картинка для описания №2</label>
+            </div>
+            <div class="col-md-9">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">2. Причины, чтобы поехать</h2>
+          </div>
+          <div class="form-row info-item_wrapper">
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">1</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md">Трек вокруг Аннапурны — один из популярнейших в мире треккинговых маршрутов.</textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">2</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md">Трек не требует специальной технической и физической подготовки.</textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">3</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md">Трек не требует специальной технической и физической подготовки.</textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">4</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md">На маршруте участников сопровождает опытный гид от Команды Приключений Альпиндустриия.</textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">5</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md">Во время трека вокруг предстоит увидеть буддийские ступы, монастыри, «говорящие камни» с мантрами.</textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">6</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item disabled">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">7</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-item disabled">
+                <div class="info-item_row -crop-btn">
+                  <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                    <div class="round-bg -yellow -lg"><span class="count">8</span></div>
+                  </div>
+                  <div class="media-body">
+                    <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                  </div>
+                </div>
+                <div class="info-item_row">
+                  <textarea rows="5" class="g_textarea -info-input -md"></textarea>
+                </div>
+                <div class="switch-buttons -yellow">
+                  <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                  <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                </div>
+                <div class="disabled-mask"></div>
+              </div>
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">5. Описание по дням</h2>
+          </div>
+          <div class="subsection-block">
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3">
+                <label class="label_md -simple">Картинка дня</label>
+              </div>
+              <div class="col-md-9">
+                <div class="g_file_wrapper">
+                  <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                  <div class="col-md-8">
+                    <div class="label_md-wrapper">
+                      <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    </div>
+                  </div>
+                  <input id="userfile" type="file" name="userfile" class="g_file">
+                </div>
+                <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="label_md-wrapper">
+                  <label class="label_md -simple">Описание дня</label>
+                </div>
+                <div class="day-wrapper">
+                  <div class="day-count">1</div>
+                  <div class="day-descr">день</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <textarea rows="6" class="g_textarea"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="subsection-block">
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3">
+                <label class="label_md -simple">Картинка дня</label>
+              </div>
+              <div class="col-md-9">
+                <div class="g_file_wrapper">
+                  <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                  <div class="col-md-8">
+                    <div class="label_md-wrapper">
+                      <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    </div>
+                  </div>
+                  <input id="userfile" type="file" name="userfile" class="g_file">
+                </div>
+                <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="label_md-wrapper">
+                  <label class="label_md -simple">Описание дня</label>
+                </div>
+                <div class="day-wrapper">
+                  <div class="day-count">2</div>
+                  <div class="day-descr">день</div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <textarea rows="6" class="g_textarea"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="add-more-center">
+            <button class="simple-btn -more-sqr -yellow"><span class="plus">+</span> Добавить день</button>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">6. Что входит и не входит в стоимость тура</h2>
+          </div>
+          <h3 class="subsection-block_title">В стоимость тура входит:</h3>
+          <div class="subsection-block js-add-item_wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="options-wrapper js-add-item_box">
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="alias" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Питание во время тура
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="host" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Проживание во время тура
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="med" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Медицинская страховка
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="visa" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Виза
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="guide" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Гид на время тура
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="more" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Еще что-то
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <input class="g_input js-add-item_input">
+              </div>
+              <div class="col-md-8">
+                <div class="media">
+                  <button class="simple-btn -more-sqr -yellow fll js-add-item_btn"><span class="plus">+</span> Добавить пункт</button>
+                  <div class="media-body std-line">
+                    <div class="g_file_adj">Можете добавить сразу несколько пунктов, написав их через запятую</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subsection-block_title">В стоимость тура НЕ входит:</h3>
+          <div class="subsection-block js-add-item_wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="options-wrapper js-add-item_box"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <input class="g_input js-add-item_input">
+              </div>
+              <div class="col-md-8">
+                <div class="media">
+                  <button class="simple-btn -more-sqr -yellow fll js-add-item_btn"><span class="plus">+</span> Добавить пункт</button>
+                  <div class="media-body std-line">
+                    <div class="g_file_adj">Можете добавить сразу несколько пунктов, написав их через запятую</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">7. Рекомендуемое снаряжение и необходимые документы</h2>
+          </div>
+          <h3 class="subsection-block_title">Рекомендуемое снаряжение:</h3>
+          <div class="subsection-block js-add-item_wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="options-wrapper js-add-item_box">
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="alias" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Рюкзал 80л
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="host" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Палатка
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="med" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Трекинговые палки
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="visa" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Спальник на -5
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="guide" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Гид на время тура
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="more" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Еще что-то
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <input class="g_input js-add-item_input">
+              </div>
+              <div class="col-md-8">
+                <div class="media">
+                  <button class="simple-btn -more-sqr -yellow fll js-add-item_btn"><span class="plus">+</span> Добавить пункт</button>
+                  <div class="media-body std-line">
+                    <div class="g_file_adj">Можете добавить сразу несколько пунктов, написав их через запятую</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="subsection-block_title">Необходимые документы:</h3>
+          <div class="subsection-block js-add-item_wrapper">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="options-wrapper js-add-item_box">
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="alias" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Российский паспорт
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="host" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Загранпаспорт сроком не менее 6 месяцев
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="alias" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Рюкзал 80л
+                  </label>
+                  <label class="label_sm -inline">
+                    <div class="checking_item  -white-yellow checking_item-inline">
+                      <input type="checkbox" id="host" class="checking_input"/>
+                      <div class="checking_input-pseudo-wrapper">
+                        <div class="checking_input-pseudo"><i class="white-check icon"></i></div>
+                      </div>
+                    </div>Медецинская страховка
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <input class="g_input js-add-item_input">
+              </div>
+              <div class="col-md-8">
+                <div class="media">
+                  <button class="simple-btn -more-sqr -yellow fll js-add-item_btn"><span class="plus">+</span> Добавить пункт</button>
+                  <div class="media-body std-line">
+                    <div class="g_file_adj">Можете добавить сразу несколько пунктов, написав их через запятую</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">8. Блок «Вы один из нас»</h2>
+          </div>
+          <ul class="simple-list -yellow">
+            <li>
+              <textarea placeholder="Напишите в этом разделе" class="g_textarea"></textarea>
+            </li>
+            <li>
+              <textarea placeholder="А в этом разделе напишите вот это и это" class="g_textarea"></textarea>
+            </li>
+            <li>
+              <textarea placeholder="А в этом разделе напишите вот это и это" class="g_textarea"></textarea>
+            </li>
+          </ul>
+          <div class="add-more-center">
+            <button class="simple-btn -more-sqr -yellow"><span class="plus">+</span> Добавить еще одно описание</button>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">9. Фото из прошлых путешествий</h2>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Фото №1</label>
+            </div>
+            <div class="col-md-9">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Фото №2</label>
+            </div>
+            <div class="col-md-9">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Фото №3</label>
+            </div>
+            <div class="col-md-9">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Ссылка на видео</label>
+            </div>
+            <div class="col-md-5">
+              <input placeholder="http://www.youtube.com/1LL4nfFJsAk" class="g_input">
+            </div>
+          </div>
+          <div class="allocated-block">
+            <h2 class="add-subtitle">10. Отзывы о путешествиях</h2>
+          </div>
+          <div class="subsection-block">
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3">
+                <label class="label_md -simple">Автор отзыва</label>
+              </div>
+              <div class="col-md-9">
+                <input placeholder="Константин Константинопольский, 34 года, жена, Москва" class="g_input">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3">
+                <label class="label_md -simple">Фото автора</label>
+              </div>
+              <div class="col-md-9">
+                <div class="g_file_wrapper">
+                  <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                  <div class="col-md-8">
+                    <div class="label_md-wrapper">
+                      <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    </div>
+                  </div>
+                  <input id="userfile" type="file" name="userfile" class="g_file">
+                </div>
+                <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="label_md-wrapper">
+                  <label class="label_md -simple">Текст отзыва</label>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <textarea rows="6" class="g_textarea"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="add-more-center">
+            <button class="simple-btn -more-sqr -yellow"><span class="plus">+</span> Добавить отзыв</button>
+          </div>
+          <div class="allocated-block -yellow">
+            <h2 class="add-subtitle ta-c">Ура, вы справились!</h2>
+            <p class="md ta-c">Рекомнедуем все тщательно проверить и можно опубликовывать ваш тур!</p>
+            <div class="buttons-center">
+              <button class="-more-sqr transparent-btn -lg -dark-blue"> Предварительный просмотр</button>
+              <button class="simple-btn -more-sqr -yellow -lg">Опубликовать тур</button>
+            </div>
           </div>
         </section>
       </div>
@@ -377,8 +1258,11 @@
         </div>
       </div>
     </footer>
-    <script src="js/all.js"></script>
+    <!--script(src="js/all.js")-->
     <!--script(src="js/carousel.js")-->
+    <script src="js/vendor/a-jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/b-picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.ikSelect.min.js"></script>
     <script src="js/script.js"></script>
