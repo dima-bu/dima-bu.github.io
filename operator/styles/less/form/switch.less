@@ -1,0 +1,142 @@
+.switch,
+.switch-label,
+.switch-slider {
+  width: 20rem;
+  height: 3rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+
+  &.-narrow {
+    width: 10rem;
+
+    .switch-label {
+      width: 10rem;
+    }
+    
+    .switch-slider {
+      width: 10rem;
+      span.switch-text {
+        width: 5rem;
+        &.-right {
+          left:5rem;
+          color: @text-color
+        }
+      }
+    }
+
+    .switch-slider-on {
+      left: 0;
+      width: 5rem;
+    }
+
+    .switch-slider-off:after {
+      width: 5rem;
+    }
+
+    .switch-check:checked + .switch-label .switch-slider-on {
+      width: 10rem;
+    }
+
+    .switch-check:checked + .switch-label .switch-slider-off {
+      width: 5rem;
+    }
+
+  }
+
+}
+
+.switch-check {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch-label,
+.switch-slider {
+  position: absolute;
+  top: 0;
+}
+
+.switch-label {
+  left: 0;
+  text-indent: -9999px;
+}
+
+.switch-slider {
+  border-radius: 4px;
+  background-color:  @gray-lightest;
+  box-shadow: 0px 1px 0px 0 #ffffff;
+  transition: width 0.2s linear;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  span.switch-text {
+    text-indent: 0;
+    position: absolute;
+    z-index: 3;
+    top: 0.8rem;
+    width: 10rem;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: color 0.2s linear;
+
+    &.-left {
+      left: 0px;
+      color:  #ffffff;
+    }
+
+    &.-right {
+      left:10rem;
+      color: @text-color
+    }
+
+  }
+
+}
+
+.switch-slider-on {
+  left: 0;
+  width: 10rem;
+}
+
+.switch-slider-off {
+  right: 0;
+}
+
+.switch-slider-off:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 4px;
+  background-color:  #2bd1f2;
+  box-shadow: 0px 1px 0px 0.00px #ffffff;
+  content: '';
+}
+
+.switch-label:active .switch-slider-off:after,
+.switch-check:focus + .switch-label .switch-slider-off:after {
+  background-color:  #2bd1f2;
+}
+
+.switch-check:checked + .switch-label .switch-slider-on {
+  width: 20rem;
+
+  span.switch-text {
+    &.-left {
+      color:  @text-color;
+    }
+    &.-right {
+      color: #ffffff;
+    }
+  }
+
+}
+
+.switch-check:checked + .switch-label .switch-slider-off {
+  width: 10rem;
+}

@@ -1,0 +1,311 @@
+/* Helper classes */
+
+.fll {
+  float: left;
+}
+
+.flr {
+  float: right;
+}
+
+.clear-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.link-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.disabled-mask {
+  background-color: #fff;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.checking_item-inline {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+hr {
+
+  &.-white-gray {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 0 none;
+    border-bottom: 1px solid #ffffff;
+    margin: 0;
+  }
+
+}
+
+.hide {
+  display: none;
+}
+
+
+/**/
+.-danger {
+  color: @orange-main;
+}
+
+/**/
+
+.tape-line {
+  background: transparent url('@{img-path}/tape.png') 0px 0px repeat-x;
+  height: 10px;
+}
+
+/*right-btn-wrapper*/
+
+.right-btn-wrapper {
+
+  button {
+    vertical-align: top;
+    float: right;
+  }
+
+}
+
+.right-btn-wrapper_crop {
+  width: 100%;
+  padding-left: 5rem;
+  margin-left: -5rem;
+  display: inline-block;
+  min-height: 4rem;
+}
+
+/*time-wrapper*/
+
+.right-time-wrapper {
+.clearfix;
+  button {
+    vertical-align: top;
+    float: right;
+  }
+
+  .s-input-time-wrapper {
+    float: right;
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+
+}
+
+.right-time-wrapper_crop {
+  width: 26rem;
+  float: left;
+  //display: inline-block;
+}
+/*left-switch-wrapper*/
+
+.left-switch-wrapper_crop {
+  width: 100%;
+  padding-right: 11rem;
+  margin-right: -11rem;
+  display: inline-block;
+}
+
+.left-switch-wrapper {
+  padding: 0 0px 0 10px;
+  overflow: hidden;
+  .switch {
+    vertical-align: top;
+    float: left;
+    margin-right: 1rem;
+  }
+}
+
+.icon-input-wrapper {
+  position: relative;
+  .search-sm {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+  }
+  
+  .s-input {
+    padding-left: 3rem;
+  }
+}
+
+
+/*img-profile*/
+
+.img-profile {
+  display: table-row;
+}
+
+.img-profile_caption {
+  color: #606c6e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  vertical-align: middle;
+}
+
+.img-profile_img {
+  float: left;
+  margin-right: 1rem;
+}
+
+.img-profile_phone {
+  font-size: 1.6rem;
+  font-family: @font-family-bold;
+  text-shadow: 0px 1px 0px #ffffff;
+
+}
+
+/*pin*/
+
+.pin_name {
+  font-size: 1.6rem;
+  font-family: @font-family-bold;
+  text-shadow: 0px 1px 0px #ffffff;
+  line-height: 1.8rem;
+}
+
+.pin_label {
+  font-size: 1.6rem;
+  text-shadow: 0px 1px 0px #ffffff;
+  line-height: 1.8rem;
+}
+
+.time-arrival {
+  font-family: @font-family-bold;
+  font-size: 1.6rem;
+  text-shadow: 0px 1px 0px #ffffff;
+  line-height: 1em;
+
+  &.-danger {
+    font-size: 1.1rem;
+    font-family: @font-family-black;
+    color: @orange-main;
+  }
+
+  &.-sm {
+    font-size: 1.1rem;
+  }
+
+}
+
+/*options*/
+
+.options_list {
+  .clear-list();
+  font-size: 0;
+  line-height: 1.8rem;
+}
+
+.options_item {
+  color: #464646;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: @font-family-bold;
+  background-color: @gray;
+  padding: 3px 5px;
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: 1rem;
+
+  span {
+    color: @pistachio;
+  }
+
+  i {
+    cursor: pointer;
+    vertical-align: top;
+    margin-left: 0.8rem;
+  }
+
+}
+
+/**/
+
+.media .round-wrapper {
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.round-wrapper {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  display: inline-block;
+
+
+  .round-inner {
+    display: table-cell;
+    height: 14px;
+    width: 14px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &.-green {
+    background-color: @green-main;
+  }
+
+  &.-orange {
+    background-color: @orange-main;
+  }
+
+}
+
+
+/**/
+
+.popup-general-wrapper {
+  background-color: #f8f9f3;
+  border-radius: 4px;
+  box-shadow: 3px 5px 14px 0px rgba(0, 0, 0, 0.22);
+  &.-std {
+    padding: 20px;
+  }
+}
+
+.rotate-45deg {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: transform 2s;
+}
+
+

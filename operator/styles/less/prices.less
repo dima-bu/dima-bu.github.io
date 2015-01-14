@@ -1,0 +1,122 @@
+.price {
+  font-family: @font-family-black;
+
+  .rub {
+    position: relative;
+    z-index: 1;
+    span {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  &.-lg {
+    font-size: 4rem;
+    line-height: 4rem;
+    height: 4.2rem;
+
+    .rub {
+      span {
+        bottom: 1.6rem;
+        right: 0.8rem;
+      }
+    }
+
+    &.-crop {
+      .rub {
+        span {
+          bottom: 2.1rem;
+        }
+      }
+    }
+
+
+  }
+
+  &.-md {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    .rub {
+      span {
+        bottom: 0.7rem;
+        right: 0.4rem;
+      }
+    }
+  }
+
+  .rub {
+    font-family: @font-family-light;
+  }
+
+  &.-pistachio {
+    color: @pistachio;
+    text-shadow: 0px 1px 0px #ffffff;
+  }
+
+  &.-blue {
+    color: @blue-main;
+    text-shadow: 0px 1px 0px #ffffff;
+  }
+
+  &.-gray {
+    color: #adaeaa;
+    text-shadow: 0px 1px 0px #ffffff;
+  }
+
+}
+
+/**/
+
+.price-label {
+  text-shadow: 0px 1px 0px #ffffff;
+
+  &.-md {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+
+}
+
+/**/
+
+.price-list {
+  .clear-list;
+  display: table-row;
+
+  li {
+    display: table-cell;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 1px solid #ffffff;
+    line-height: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    padding: 0 0.8rem;
+
+    &:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .price.-lg {
+      line-height: 3rem;
+      height: 3rem;
+    }
+
+    .price-label.-md {
+      margin-right: 1.0rem;
+      line-height: 1.5rem;
+    }
+
+    .price.-md {
+      line-height: 1.5rem;
+      height: 1.5rem;
+    }
+
+  }
+
+}

@@ -14,7 +14,6 @@
 @form-line-height: 30px;
 @form-radius: 6px;
 
-
 /*input variables*/
 
 @input-border-width: @form-border-width;
@@ -83,6 +82,21 @@
   font-size: @input-font-size;
 }
 
+
+.g_textarea {
+  background-color:  @input-background-color;
+  border-radius: @form-radius;
+  line-height: @form-line-height;
+  border: @form-border-width solid @form-border-color;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  padding: @input-padding-vertical @input-padding-horizontal;
+  font-size: @input-font-size;
+  outline: 0 none;
+}
+
 .g_file_wrapper {
   position: relative;
   height: 50px;
@@ -149,4 +163,12 @@
   height: 30px;
   background: transparent url('../img/file.png') 0 0 no-repeat;
   vertical-align: middle;
+}
+
+#content {
+  font-size: 14px;
+}
+
+progress ,#vacancy {
+  display: none;
 }

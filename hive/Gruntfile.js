@@ -6,21 +6,22 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    compress: false,
-                    yuicompress: false,
-                    optimization: 2                },
+                    compress: true,
+                    yuicompress: true,
+                    optimization: 2,
+                    sourceMap: true,
+                    sourceMapFilename: 'code/css/style.css.map',
+                    sourceMapRootpath: 'http://localhost:63342/dima-bu.github.io/hive/'
+                },
                 files: {
                     "code/css/style.css": "less/style.less"
-                },
-                sourceMap:true,
-                sourceMapFilename: 'code/css/main.min.css.map',
-                sourceMapRootpath: '/'
+                }
             }
         },
         watch: {
             scripts: {
                 files: ['less/*.less'],
-                tasks: ['less'],
+                tasks: ['less', 'autoprefixer', 'inline'],
                 options: {
                     nospawn: true,
                     livereload: true
@@ -33,7 +34,12 @@ module.exports = function(grunt) {
             sprite: {
                 files: "forsprites/*.png",
                 tasks: "sprite"
+            },
+            uglify: {
+                files: "code/js/*.*",
+                tasks: "uglify"
             }
+
         },
         concat: {
             dist: {
@@ -43,6 +49,7 @@ module.exports = function(grunt) {
                 dest: 'code/js/vendor/all.js'
             }
         },
+
         jade: {
             compile: {
                 options: {
@@ -50,7 +57,8 @@ module.exports = function(grunt) {
                         debug: true
                     },
                     client: false,
-                    pretty: false
+                    pretty: false,
+                    data: grunt.file.readJSON("data.json")
                 },
                 files:
                         [{
@@ -60,7 +68,6 @@ module.exports = function(grunt) {
                                 expand: true,
                                 ext: ".html"
                             }]
-
             }
         },
 
@@ -180,5 +187,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-inline');
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
+    //grunt.registerTask('default', ['less', 'jade', 'uglify', 'watch']);
     grunt.registerTask('default', ['less', 'jade', 'uglify', 'autoprefixer', 'dataUri', 'inline', 'watch']);
 };

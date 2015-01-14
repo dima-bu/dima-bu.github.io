@@ -1,0 +1,317 @@
+/*top-paginator*/
+
+.top-paginator {
+  .clear-list();
+  background-color: @gray-lightest;
+  font-size: 0;
+  li {
+    line-height: 3rem;
+    height: 3rem;
+    display: inline-block;
+    font-size: 12px;
+    text-shadow: 0px 1px 0px #ffffff;
+    width: 2.9rem;
+    text-align: center;
+    cursor: pointer;
+    &.active {
+      background-color: @blue-main;
+      border-radius: 3px;
+      color:#fff;
+    }
+  }
+}
+
+/*progressbar*/
+
+.progressbar-wrapper {
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-color:  rgba(0, 0, 0, 0.15);
+}
+
+.progressbar {
+  height: 3px;
+  width: 100%;
+}
+
+
+/**/
+
+.timer {
+
+  .bell-sm {
+    vertical-align: middle;
+  }
+
+  .sandglass-sm {
+    vertical-align: middle;
+  }
+
+  &.-bell-count {
+    position: relative;
+    span.count {
+      position: absolute;
+      left: 5px;
+      top: 3px;
+      font-size: 0.9rem;
+      color:#fff;
+    }
+  }
+
+}
+
+.timer-time {
+  font-size: 2rem;
+  font-family: @font-family-bold;
+  text-shadow: 0px 1px 0px #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  margin-left: 2px;
+
+  &.-only-count {
+    width: 38px;
+    display: inline-block;
+    text-align: right;
+  }
+
+}
+
+.timer-wrapper {
+
+  &.-green {
+
+    .timer-time {
+      color: @green-main;
+    }
+
+    .progressbar {
+      background-color: @green-main;
+    }
+
+  }
+
+  &.-alarm {
+
+    .timer-time {
+      color: @red-dark;
+    }
+
+    .progressbar {
+      background-color: @red-dark;
+    }
+
+  }
+
+  &.-waiting {
+
+    .timer-time {
+      color: @yellow-dark;
+    }
+
+    .progressbar {
+      background-color: @yellow-dark;
+    }
+
+  }
+
+}
+
+.timer-lg {
+  color: #bdc6c7;
+  font-size: 2.8rem;
+  font-family: @font-family-bold;
+  text-shadow: 0px 1px 0px #ffffff;
+  line-height: 2.2rem;
+  
+  span {
+    font-size: 1.8rem;
+    font-family: @font-family-base;
+  }
+}
+
+
+
+/*idle layout*/
+
+.header-panel {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+
+.main-panel {
+  border-radius: 2px;
+  width: 100%;
+  .column-1, .column-2, .column-3, .column-4, .column-5 {
+    float: left;
+  }
+
+  .column-1 {
+    width: 7%;
+  }
+
+  .column-2 {
+    width: 8%;
+  }
+
+  .column-3 {
+    width: 40%;
+  }
+
+  .column-4 {
+    width: 30%;
+  }
+
+  .column-5 {
+    width: 15%;
+    text-align: right;
+  }
+
+  .order-item:last-child {
+    border-radius: 0 0 2px 2px;
+  }
+
+}
+
+.main-panel_header {
+  border-radius: 2px;
+  background-color:  #edefea;
+  font-size: 1rem;
+  text-shadow: 0px 1px 0px #ffffff;
+  background-color: #edefea;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.8rem;
+  .clearfix();
+
+  .column-1 {
+    text-align: center;
+  }
+
+  &.-right {
+    background-color:  #f8f9f3;
+    font-size: 1.2rem;
+    
+  }
+
+}
+
+.right-panel {
+
+  border-radius: 2px;
+  background-color:  #f8f9f3;
+  section {
+    padding: 10px;
+    &.-white {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.right-panel_row {
+  background-color:  #f8f9f3;
+}
+
+
+
+.order-item {
+  padding: 0.8rem;
+  .clearfix();
+  background-color: #f8f9f3;
+
+  &.-alarm {
+    background-color: #ffeab9;
+  }
+
+  .column-1 {
+    text-align: center;
+  }
+
+}
+
+.status-icon_wrapper {
+  display: inline-block;
+  float: left;
+}
+
+.status-icon {
+  display: table-cell;
+  margin-top: 2px;
+  width: 2.5rem;
+  vertical-align: middle;
+  height: 28px;
+}
+
+.status-text-wrapper {
+//  display: inline-block;
+}
+
+.status-text-inner {
+  display: table-cell;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.status-text {
+  font-size: 1rem;
+  text-shadow: 0px 1px 0px #ffffff;
+
+  &.-normal {
+    color: @gray-text;
+  }
+
+  &.-alarm {
+    color: @red-dark;
+    font-family: @font-family-bold;
+  }
+
+  &.-standart {
+    color: @text-color;
+  }
+
+}
+
+/*callsign*/
+
+.callsign-wrapper_crop {
+  width: 100%;
+  padding-left: 7rem;
+  margin-left: -7rem;
+  display: inline-block;
+}
+
+.callsign {
+  width: 7rem;
+  float: right;
+  display: inline-block;
+  text-align: right;
+}
+
+.callsign-inner {
+  font-family: @font-family-bold;
+  text-shadow: 0px 1px 0px #ffffff;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+}
+
+/*statuses-list*/
+
+.statuses-list  {
+  .clear-list();
+  font-size: 1.2rem;
+  color:  rgba(96, 108, 110, 0.7);
+  text-shadow: 0px 1px 0px #ffffff;
+  
+  svg {
+    margin-right: 5px;
+  }
+  
+  span {
+    display: inline-block;
+    line-height: 1.4rem;
+    vertical-align: top;
+  }
+  
+}

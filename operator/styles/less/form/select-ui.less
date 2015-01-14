@@ -1,0 +1,343 @@
+
+
+.delivery-address {
+
+  .ui-select-bootstrap > .ui-select-choices {
+    max-height: 37rem;
+  }
+
+}
+
+.destination-address {
+
+  .ui-select-bootstrap > .ui-select-choices {
+    max-height: 20rem;
+    width: 86rem;
+  }
+
+  &.ui-select-container {
+    width: 37rem;
+    -webkit-transition: 0.3s;
+    &.open {
+//      width: 86rem;
+      z-index: 2;
+      -webkit-transition: 0.5s;
+    }
+  }
+
+}
+
+.destination-address {
+    position: relative;
+}
+
+
+
+.ui-select-container {
+
+  .s-input:focus {
+    border: none;
+  }
+
+  &.open {
+
+//        &:before {
+//          content: '';
+//          position: absolute;
+//          width: 99%;
+//          border-top: 2px solid #fff;
+//          z-index: 4;
+//          bottom: 1px;
+//          margin-left: 2px;
+//          margin-right: 2px;
+//          border-bottom: 1px solid rgba(0,0,0,0.05);
+//        }
+
+
+    .ui-select-choices {
+      border: 0.2rem solid @blue-main;
+      //border-top: 1px solid rgba(0,0,0,0.2);
+      border-top: none;
+
+    }
+
+    .s-input {
+      border: 0.2rem solid @blue-main;
+    }
+
+  }
+}
+
+.ui-select-choices {
+  position: absolute;
+  z-index: 3;
+  .clear-list;
+  background-color: #fff;
+  max-height: 36rem;
+  border-radius: 0 0 4px 4px;
+  top: 3.8rem;
+}
+
+.ui-select-container {
+  width: 100%;
+  position: relative;
+}
+
+.ui-select-choices-row {
+  .s-input;
+  height: auto;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  color: @text-color;
+}
+
+
+/*!
+ * ui-select
+ * http://github.com/angular-ui/ui-select
+ * Version: 0.8.2 - 2014-10-09T23:29:49.716Z
+ * License: MIT
+ */
+
+
+/* Style when highlighting a search. */
+.ui-select-highlight {
+  font-weight: bold;
+}
+
+.ui-select-offscreen {
+  clip: rect(0 0 0 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  outline: 0 !important;
+  left: 0px !important;
+  top: 0px !important;
+}
+
+/* Select2 theme */
+
+/* Mark invalid Select2 */
+.ng-dirty.ng-invalid > a.select2-choice {
+  border-color: #D44950;
+}
+
+.select2-result-single {
+  padding-left: 0;
+}
+
+/* Selectize theme */
+
+/* Helper class to show styles when focus */
+.selectize-input.selectize-focus{
+  border-color: #007FBB !important;
+}
+
+/* Fix input width for Selectize theme */
+.selectize-control > .selectize-input > input {
+  width: 100%;
+}
+
+/* Fix dropdown width for Selectize theme */
+.selectize-control > .selectize-dropdown {
+  width: 100%;
+}
+
+/* Mark invalid Selectize */
+.ng-dirty.ng-invalid > div.selectize-input {
+  border-color: #D44950;
+}
+
+
+/* Bootstrap theme */
+
+/* Helper class to show styles when focus */
+.btn-default-focus {
+  color: @text-color;
+  background-color: #EBEBEB;
+  border-color: #ADADAD;
+  text-decoration: none;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+
+/* Fix Bootstrap dropdown position when inside a input-group */
+.input-group > .ui-select-bootstrap.dropdown {
+  /* Instead of relative */
+  position: static;
+}
+
+.input-group > .ui-select-bootstrap > input.ui-select-search.form-control {
+  border-radius: 4px; /* FIXME hardcoded value :-/ */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ui-select-bootstrap > .ui-select-match {
+  /* Instead of center because of .btn */
+  text-align: left;
+}
+
+.ui-select-bootstrap > .ui-select-match > .caret {
+  position: absolute;
+  top: 45%;
+  right: 15px;
+}
+
+
+
+
+/* See Scrollable Menu with Bootstrap 3 http://stackoverflow.com/questions/19227496 */
+.ui-select-bootstrap > .ui-select-choices {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow-x: hidden;
+}
+
+.ui-select-multiple.ui-select-bootstrap {
+  height: auto;
+  padding: .3em;
+}
+
+.ui-select-multiple.ui-select-bootstrap input.ui-select-search {
+  background-color: transparent !important; /* To prevent double background when disabled */
+  border: none;
+  outline: none;
+  height: 1.666666em;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match .close {
+  font-size: 1.6em;
+  line-height: 0.75;
+}
+
+.ui-select-multiple.ui-select-bootstrap .ui-select-match-item{
+  outline: 0;
+}
+
+.ui-select-bootstrap .ui-select-choices-row>a {
+  display: block;
+  padding: 0px 10px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color:  @text-color;
+  white-space: nowrap;
+  line-height: 42px;
+}
+
+.ui-select-bootstrap .ui-select-choices-row>a:hover, .ui-select-bootstrap .ui-select-choices-row>a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #e9ebe6;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.active>a {
+  color: @text-color;
+  text-decoration: none;
+  outline: 0;
+  line-height: 42px;
+  background-color: #e9ebe6;
+}
+
+.ui-select-bootstrap .ui-select-choices-row.disabled>a,
+.ui-select-bootstrap .ui-select-choices-row.active.disabled>a {
+  color: @text-color;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+/* fix hide/show angular animation */
+.ui-select-match.ng-hide-add,
+.ui-select-search.ng-hide-add {
+  display: none !important;
+}
+
+/* Mark invalid Bootstrap */
+.ui-select-bootstrap.ng-dirty.ng-invalid > button.btn.ui-select-match {
+  border-color: #D44950;
+}
+
+
+.select-choices-list {
+  .clear-list();
+}
+
+
+.select-root {
+  position: relative;
+  &:focus {
+    outline: none;;
+  }
+}
+
+.select-choices-container {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 40px;
+}
+
+.select-choices-list {
+  .s-input;
+  height: auto;
+  border-radius: 0 0 4px 4px;
+  padding-left: 0;
+  padding-right: 0;
+  border: 0.2rem solid @blue-main;
+  border-top: none;
+  background-color: #ffffff;
+  color: @text-color;
+  width: 100%;
+}
+
+.select-choices-row {
+  padding-left: 10px ;
+  padding-right: 10px;
+  cursor: pointer;
+  &.active {
+    background-color: #EBEBEB;
+  }
+}
+
+.ui-select-search {
+  &.open {
+    //border-radius: 4px 4px 0 0;
+  }
+}
+
+.incoming-address {
+  .select-choices-list {
+    max-height: 42rem;
+    overflow-y: auto;
+  }
+}
+
+.destination-address {
+  width: 37rem;
+  -webkit-transition: 0.5s;
+
+  &.open {
+    width: 86rem;
+    z-index: 2;
+    -webkit-transition: 0.5s;
+  }
+
+  .select-choices-list {
+    max-height: 25rem;
+    overflow-y: auto;
+
+  }
+
+}

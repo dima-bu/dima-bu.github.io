@@ -1,0 +1,136 @@
+@select-border-color: @gray-lighten;
+@select-background-hover: lighten(#E3E7EA, 2%);
+@select-text-color: @orange-main;
+@select-border-radius: 4px;
+
+@select-sm-text: 1.5rem;
+
+
+.select-size {
+  height: 4.2rem;
+  line-height: 4rem;
+}
+
+.select-sm {
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  border-radius: 4px;
+}
+
+.select-font {
+  font-size: 2rem;
+  font-family: @font-family-light;
+}
+
+.ik_select_link {
+  .select-font();
+  background-color: #fefefe;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+
+  &.text-orange-link {
+    color: @orange-main;
+  }
+
+  &.text-pistachio-link {
+    color: @pistachio;
+  }
+
+  &.text-main-link {
+    color: @text-color;
+  }
+
+  &.-sm {
+    .select-sm;
+  }
+
+  &.-sm-text {
+    font-size: @select-sm-text;
+  }
+
+  &.-bold {
+    font-size: 1.4rem;
+    font-family: @font-family-bold;
+  }
+
+}
+
+.ik_select_link:after {
+  height: 10px;
+  width: 12px;
+  background: transparent url('@{img-path}/drop.png') 0px 0px no-repeat;
+  position: absolute;
+  top: 2.3rem;
+  right: 0.9rem;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -11px;
+  content: ""
+}
+
+.ik_select_link_focus {
+
+}
+
+.ik_select_list {
+  background-color: transparent !important;
+}
+
+.ik_select_dropdown {
+  background: #fff !important;
+  box-sizing: content-box;
+  overflow: hidden;
+
+  &.text-orange-dd {
+    color: @orange-main;
+  }
+
+  &.text-pistachio-dd {
+    color: @pistachio;
+  }
+
+  &.text-main-dd {
+    color: @text-color;
+  }
+
+  &.-sm-text {
+
+    .ik_select_option {
+      font-size: @select-sm-text;
+    }
+  }
+
+  &.-bold {
+    .ik_select_option {
+      font-size: 14px;
+      font-family: @font-family-bold;
+    }
+  }
+
+}
+
+.ik_select_option.ik_select_hover {
+  background-color: @select-background-hover !important;
+}
+
+.ik_select_option {
+  .select-sm();
+  .select-font();
+  border: 0 none transparent !important;
+  border-radius: 0 !important;
+  border-bottom: 1px solid @select-border-color !important;
+  cursor: pointer;
+}
+
+.ik_select_list_inner ul {
+  &:extend(.clear-list);
+  border-left: 1px solid @select-border-color;
+  border-right: 1px solid @select-border-color;
+  border-radius: @select-border-radius;
+}
+
+
+.status-select {
+  width: 13rem;
+}

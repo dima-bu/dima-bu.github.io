@@ -1,0 +1,67 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.arrow-white {
+  background-image: url(../img/sprite.png);
+  background-position: -72px -68px;
+  width: 11px;
+  height: 11px;
+}
+.calendar-white {
+  background-image: url(../img/sprite.png);
+  background-position: -70px 0px;
+  width: 15px;
+  height: 15px;
+}
+.check {
+  background-image: url(../img/sprite.png);
+  background-position: -40px 0px;
+  width: 20px;
+  height: 20px;
+}
+.close-sm {
+  background-image: url(../img/sprite.png);
+  background-position: -52px -68px;
+  width: 10px;
+  height: 12px;
+}
+.close {
+  background-image: url(../img/sprite.png);
+  background-position: -33px -40px;
+  width: 14px;
+  height: 16px;
+}
+.list-white {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -40px;
+  width: 23px;
+  height: 18px;
+}
+.logo {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -68px;
+  width: 42px;
+  height: 14px;
+}
+.plus-white {
+  background-image: url(../img/sprite.png);
+  background-position: -70px -25px;
+  width: 13px;
+  height: 13px;
+}
+.settings {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.two-way-arrows {
+  background-image: url(../img/sprite.png);
+  background-position: -70px -48px;
+  width: 11px;
+  height: 9px;
+}

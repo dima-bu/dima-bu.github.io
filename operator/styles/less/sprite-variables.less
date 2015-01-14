@@ -1,0 +1,146 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+@arrow-white-x: 72px;
+@arrow-white-y: 68px;
+@arrow-white-offset-x: -72px;
+@arrow-white-offset-y: -68px;
+@arrow-white-width: 11px;
+@arrow-white-height: 11px;
+@arrow-white-total-width: 85px;
+@arrow-white-total-height: 82px;
+@arrow-white-image: '../../img/sprite.png';
+@arrow-white: 72px 68px -72px -68px 11px 11px 85px 82px '../../img/sprite.png';
+@calendar-white-x: 70px;
+@calendar-white-y: 0px;
+@calendar-white-offset-x: -70px;
+@calendar-white-offset-y: 0px;
+@calendar-white-width: 15px;
+@calendar-white-height: 15px;
+@calendar-white-total-width: 85px;
+@calendar-white-total-height: 82px;
+@calendar-white-image: '../../img/sprite.png';
+@calendar-white: 70px 0px -70px 0px 15px 15px 85px 82px '../../img/sprite.png';
+@check-x: 40px;
+@check-y: 0px;
+@check-offset-x: -40px;
+@check-offset-y: 0px;
+@check-width: 20px;
+@check-height: 20px;
+@check-total-width: 85px;
+@check-total-height: 82px;
+@check-image: '../../img/sprite.png';
+@check: 40px 0px -40px 0px 20px 20px 85px 82px '../../img/sprite.png';
+@close-sm-x: 52px;
+@close-sm-y: 68px;
+@close-sm-offset-x: -52px;
+@close-sm-offset-y: -68px;
+@close-sm-width: 10px;
+@close-sm-height: 12px;
+@close-sm-total-width: 85px;
+@close-sm-total-height: 82px;
+@close-sm-image: '../../img/sprite.png';
+@close-sm: 52px 68px -52px -68px 10px 12px 85px 82px '../../img/sprite.png';
+@close-x: 33px;
+@close-y: 40px;
+@close-offset-x: -33px;
+@close-offset-y: -40px;
+@close-width: 14px;
+@close-height: 16px;
+@close-total-width: 85px;
+@close-total-height: 82px;
+@close-image: '../../img/sprite.png';
+@close: 33px 40px -33px -40px 14px 16px 85px 82px '../../img/sprite.png';
+@list-white-x: 0px;
+@list-white-y: 40px;
+@list-white-offset-x: 0px;
+@list-white-offset-y: -40px;
+@list-white-width: 23px;
+@list-white-height: 18px;
+@list-white-total-width: 85px;
+@list-white-total-height: 82px;
+@list-white-image: '../../img/sprite.png';
+@list-white: 0px 40px 0px -40px 23px 18px 85px 82px '../../img/sprite.png';
+@logo-x: 0px;
+@logo-y: 68px;
+@logo-offset-x: 0px;
+@logo-offset-y: -68px;
+@logo-width: 42px;
+@logo-height: 14px;
+@logo-total-width: 85px;
+@logo-total-height: 82px;
+@logo-image: '../../img/sprite.png';
+@logo: 0px 68px 0px -68px 42px 14px 85px 82px '../../img/sprite.png';
+@plus-white-x: 70px;
+@plus-white-y: 25px;
+@plus-white-offset-x: -70px;
+@plus-white-offset-y: -25px;
+@plus-white-width: 13px;
+@plus-white-height: 13px;
+@plus-white-total-width: 85px;
+@plus-white-total-height: 82px;
+@plus-white-image: '../../img/sprite.png';
+@plus-white: 70px 25px -70px -25px 13px 13px 85px 82px '../../img/sprite.png';
+@settings-x: 0px;
+@settings-y: 0px;
+@settings-offset-x: 0px;
+@settings-offset-y: 0px;
+@settings-width: 30px;
+@settings-height: 30px;
+@settings-total-width: 85px;
+@settings-total-height: 82px;
+@settings-image: '../../img/sprite.png';
+@settings: 0px 0px 0px 0px 30px 30px 85px 82px '../../img/sprite.png';
+@two-way-arrows-x: 70px;
+@two-way-arrows-y: 48px;
+@two-way-arrows-offset-x: -70px;
+@two-way-arrows-offset-y: -48px;
+@two-way-arrows-width: 11px;
+@two-way-arrows-height: 9px;
+@two-way-arrows-total-width: 85px;
+@two-way-arrows-total-height: 82px;
+@two-way-arrows-image: '../../img/sprite.png';
+@two-way-arrows: 70px 48px -70px -48px 11px 9px 85px 82px '../../img/sprite.png';
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: ~`"@{sprite}".split(', ')[4]`;
+}
+
+.sprite-height(@sprite) {
+  height: ~`"@{sprite}".split(', ')[5]`;
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: ~`"@{sprite}".split(', ')[2]`;
+  @sprite-offset-y: ~`"@{sprite}".split(', ')[3]`;
+  background-position: @sprite-offset-x  @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: ~`"@{sprite}".split(', ')[8].slice(1, -2)`;
+  background-image: url(@sprite-image);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}

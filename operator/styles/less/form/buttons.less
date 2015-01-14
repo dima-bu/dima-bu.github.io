@@ -1,0 +1,211 @@
+
+.sm-size {
+  height: 3rem;
+  line-height: 3rem;
+  &:focus {
+    line-height: 2.9rem;
+  }
+}
+
+.md-size {
+  height: 4.1rem;
+  line-height: 4rem;
+  &:focus {
+    line-height: 3.9rem;
+  }
+}
+
+.std-width {
+  width: 14rem;
+  vertical-align: top;
+}
+
+.orange-btn {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.09), inset 0px 1px 0px 0px @yellow-main;
+  background-color: @orange-main;
+  color: #ffffff;
+
+  &:hover {
+    background-color: lighten(@orange-main, 10%);
+  }
+
+
+
+}
+
+.blue-btn {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.09), inset 0px 1px 0px 0px #84fff5;
+  background-color: @blue-main;
+  color: #ffffff;
+  &:hover {
+    background-color: lighten(@blue-main, 10%);
+  }
+
+  &:focus {
+
+  }
+
+}
+
+.green-btn {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.09), inset 0px 1px 0px 0px #84fff5;
+  background-color: @brand-success;
+  color: #ffffff;
+  &:hover {
+    background-color: lighten(@brand-success, 10%);
+  }
+
+  &:focus {
+
+  }
+}
+
+.red-btn {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.09), inset 0px 1px 0px 0px #84fff5;
+  background-color: @red-main;
+  color: #ffffff;
+  &:hover {
+    background-color: lighten(@red-main, 10%);
+  }
+
+  &:focus {
+
+  }
+}
+
+.pistachio-btn {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.09), inset 0px 1px 0px 0px #fffc13;
+  background-color: @pistachio;
+  color: #ffffff;
+  &:hover {
+    background-color: lighten(@pistachio, 8%);
+  }
+}
+
+.gray-btn {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.09), inset 0px 1px 0px 0px @gray-lighter;
+  background-color: @gray-light;
+  color: #ffffff;
+  &:hover {
+    background-color: lighten(@gray-light, 8%);
+  }
+}
+
+/*Difficult Buttons*/
+
+.d-button {
+  border-radius: 4px;
+  display: table;
+  .std-width;
+
+  .d-button_inner {
+    vertical-align: middle;
+    span {
+      display: block;
+      font-size: 1.2rem;
+    }
+  }
+
+  &.-sm {
+    .sm-size;
+    span {
+      line-height: 1.2rem;
+    }
+  }
+
+  &.-md {
+    .md-size;
+  }
+
+  &.-orange {
+    .orange-btn;
+  }
+
+  &.-blue {
+    .blue-btn;
+
+  }
+
+  &.-red {
+    .red-btn;
+  }
+
+  &.-green {
+    .green-btn;
+  }
+
+  &.-pistachio {
+    .pistachio-btn;
+
+    span.dark {
+      color: #938718;
+      font-size: 1rem;
+      font-family: @font-family-black;
+    }
+
+  }
+
+}
+
+/*Simple Button*/
+
+.s-button {
+
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 1.2rem;
+
+  &.-std {
+    .std-width;
+    .md-size;
+    &:focus {
+      border: 1px solid rgba(0,0,0, 0.25);
+    }
+  }
+
+  &.-sq-md {
+    width: 4rem;
+    .md-size;
+  }
+
+  &.-sq-sm {
+    width: 4rem;
+    .sm-size;
+  }
+
+  &.-sq-sm-inl {
+    margin-top: 5px;
+    .sm-size;
+  }
+
+  &.-orange {
+    .orange-btn;
+  }
+
+  &.-blue {
+    .blue-btn;
+  }
+
+  &.-red {
+    .red-btn;
+  }
+
+  &.-green {
+    .green-btn;
+  }
+
+  &.-pistachio {
+    .pistachio-btn;
+  }
+
+  &.-gray {
+    .gray-btn;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align:middle;
+    float: right;
+  }
+
+}

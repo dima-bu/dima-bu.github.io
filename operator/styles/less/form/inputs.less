@@ -1,0 +1,202 @@
+/*s-label */
+
+.s-label {
+  text-shadow: 0px 1px 0px #ffffff;
+  font-family: @font-family-base;
+  font-size: 0.9rem;
+  color: #A5A5A3;
+
+  span {
+    color: @blue-light;
+    padding-left: 4px;
+  }
+
+  &.alert {
+    color: @red-main;
+    font-family: @font-family-bold;
+  }
+
+}
+
+/*main gray simple input*/
+
+@line-height_s-input: 3.8rem;
+@s-input-padding-vertical: 0rem;
+@s-input-padding-horizontal: 1rem;
+@s-input-border-width: 0.2rem;
+@s-input_line-height-narrow: 2.6rem;
+
+
+.s-input-colors {
+  background-color:  @gray;
+  box-shadow: 0px 1px 0px 0 #ffffff;
+  border: @s-input-border-width solid transparent;
+  outline: 0 none;
+}
+
+.s-input-text {
+  font-family: @font-family-bold;
+  text-shadow: 0px 1px 0px #ffffff;
+  color:  @text-color;
+  font-size: 2.2rem;
+  line-height: @line-height_s-input;
+}
+
+.s-input-focus {
+  outline: 0 none;
+  border: @s-input-border-width solid  @blue-main;
+  color: @text-color;
+  background-color: @almost-white;
+  box-shadow: 0px 1px 0px 0 transparent;
+}
+
+
+.s-input {
+    .s-input-colors;
+    .s-input-text;
+    height: @line-height_s-input+(@s-input-padding-vertical*2)+(@s-input-border-width)*2;
+    padding: @s-input-padding-vertical @s-input-padding-horizontal;
+    width: 100%;
+    border-radius: 4px;
+
+
+    &.-narrow {
+      line-height: @s-input_line-height-narrow;
+      height:@s-input_line-height-narrow+(@s-input-padding-vertical*2)+(@s-input-border-width)*2;
+      font-size: 1.6rem;
+      font-family: @font-family-base;
+    }
+  
+    &.-time {
+      width: 8rem;
+      position: relative;
+      padding: @s-input-padding-vertical 0.7rem;
+    }
+
+    &.-danger {
+      color:@orange-main;
+    }
+
+    &.-light {
+      background-color: @gray-lightest;
+    }
+
+    &:focus {
+      .s-input-focus();
+    }
+
+}
+
+/*e-input*/
+
+@line-height_e-input: 3rem;
+@padding-vertical_e-input: 0rem;
+@padding-horizontal_e-input: 1rem;
+@border-width_e-input: 0;
+@border-radius_e-input: 4px;
+
+.e-input {
+  height: @line-height_e-input;
+  line-height: @line-height_e-input;
+  padding: @padding-vertical_e-input @padding-horizontal_e-input;
+  border-radius: @border-radius_e-input;
+  background-color: #f1f2f2;
+  width: 100%;
+}
+
+
+/*placeholder*/
+
+.s-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  color: @gray-lighter;
+  font-size: 1.8rem;
+  font-family: @font-family-base;
+  line-height: 3.8rem;
+}
+
+.s-input::-webkit-input-placeholder {
+  .s-placeholder();
+}
+
+.s-input:-moz-placeholder {
+  .s-placeholder();
+}
+
+.s-input::-moz-placeholder {
+  .s-placeholder();
+}
+
+
+/*input-hint_wrapper*/
+
+.input-hint_wrapper {
+  position: relative;
+
+  .input-hint_list {
+    .clear-list;
+    .s-input-colors;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    border-radius: 0 4px;
+    margin-top: 1px;
+    padding: @s-input-padding-vertical @s-input-padding-horizontal;
+    li {
+      .s-input-text;
+      &:focus {
+        color: @red-main;
+      }
+    }
+  }
+
+}
+
+/*input-time-wrapper*/
+
+.s-input-time-wrapper {
+  position: relative;
+
+  .s-input_separator  {
+    font-style: normal;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 3.7rem;
+    z-index: 1;
+    .s-input-text;
+  }
+
+}
+
+/*s-textarea */
+
+.s-textarea {
+  .s-input-colors;
+  .s-input-text;
+  padding: @s-input-padding-vertical @s-input-padding-horizontal;
+  width: 100%;
+  min-height: @line-height_s-input+(@s-input-padding-vertical*2)+(@s-input-border-width)*2;
+  border-radius: 4px;
+  resize: none;
+
+  &:focus {
+    .s-input-focus();
+  }
+
+  &.-narrow-text {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    font-family: @font-family-base;
+    height:3.8rem;
+    padding-top: 3px;
+    &::-webkit-input-placeholder {
+      .s-placeholder;
+      line-height: 3.2rem;
+    }
+  }
+
+}
+
+
