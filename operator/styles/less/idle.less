@@ -180,6 +180,7 @@
   background-color:  #edefea;
   font-size: 1rem;
   text-shadow: 0px 1px 0px #ffffff;
+  box-shadow: inset 0px -1px 0 0px rgba(0, 0, 0, 0.05), inset 0px 1px 0 0px rgba(255, 255, 255, 0.5);
   background-color: #edefea;
   height: 2rem;
   line-height: 2rem;
@@ -193,7 +194,8 @@
   &.-right {
     background-color:  #f8f9f3;
     font-size: 1.2rem;
-    
+    box-shadow: inset 0px -1px 0 0px rgba(0, 0, 0, 0.05), inset 0px 1px 0 0px rgba(255, 255, 255, 1);
+
   }
 
 }
@@ -204,6 +206,7 @@
   background-color:  #f8f9f3;
   section {
     padding: 10px;
+    box-shadow: inset 0px -1px 0 0px rgba(0, 0, 0, 0.05), inset 0px 1px 0 0px rgba(255, 255, 255, 1);
     &.-white {
       background-color: #ffffff;
     }
@@ -220,10 +223,19 @@
   padding: 0.8rem;
   .clearfix();
   background-color: #f8f9f3;
+  box-shadow: inset 0px -1px 0 0px rgba(0, 0, 0, 0.05), inset 0px 1px 0 0px rgba(255, 255, 255, 1);
+
 
   &.-alarm {
     background-color: #ffeab9;
+    box-shadow: inset 0px -1px 0 0px rgba(0, 0, 0, 0.05), inset 0px 1px 0 0px rgba(255, 255, 255, 0.6);
   }
+
+  &.-active{
+    background-color: #ddeef0;
+    box-shadow: inset 0px -1px 0 0px rgba(0, 0, 0, 0.05), inset 0px 1px 0 0px rgba(255, 255, 255, 0.6);
+  }
+
 
   .column-1 {
     text-align: center;
@@ -268,7 +280,7 @@
   }
 
   &.-standart {
-    color: @text-color;
+
   }
 
 }
