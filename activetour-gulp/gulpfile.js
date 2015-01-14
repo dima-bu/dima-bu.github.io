@@ -22,7 +22,7 @@ gulp.task('less', function(){
 
 gulp.task('sprite', function () {
     var spriteData = gulp.src('forsprites/**/*.png').pipe(spritesmith({
-        imgName: './code/img/sprite.png',
+        imgName: '../img/sprite.png',
         cssName: 'sprite.css',
         padding: 10,
         'cssOpts': {
@@ -35,7 +35,7 @@ gulp.task('sprite', function () {
         }
     }));
     var spriteDataLess = gulp.src('forsprites/**/*.png').pipe(spritesmith({
-        imgName: './code/img/sprite.png',
+        imgName: '../img/sprite.png',
         cssName: 'sprite-variables.less',
         cssFormat: 'less',
         padding: 10

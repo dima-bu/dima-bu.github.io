@@ -1,0 +1,27 @@
+.allocated-block
+  h2.add-subtitle 10. Отзывы о путешествиях
+.subsection-block
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Автор отзыва
+    .col-md-9
+      input.g_input(placeholder="Константин Константинопольский, 34 года, жена, Москва")
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Фото автора
+    .col-md-9
+      .g_file_wrapper
+        button.simple-btn.-more-sqr.-yellow.fll Выбрать
+        .col-md-8
+          .label_md-wrapper
+            label.label_md.-simple.g_file-text  Загрузить фото
+        input(id="userfile", type="file", name="userfile", class="g_file")
+      .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
+  .row
+    .col-md-3
+      .label_md-wrapper
+        label.label_md.-simple Текст отзыва
+    .col-md-9
+      textarea.g_textarea(rows=6)
+.add-more-center
+  button.simple-btn.-more-sqr.-yellow <span class="plus">+</span> Добавить отзыв

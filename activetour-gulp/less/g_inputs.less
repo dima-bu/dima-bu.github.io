@@ -134,7 +134,7 @@
     position: absolute;
     right: 14px;
     top: 9px;
-    z-index: 1001;
+    z-index: 8;
     cursor: pointer;
   }
 
@@ -142,7 +142,7 @@
     position: absolute;
     right: 9px;
     bottom: 9px;
-    z-index: 1001;
+    z-index: 8;
   }
 
 }
@@ -229,6 +229,12 @@
 .g_textarea {
   .g_input();
   height: auto;
+  &.-md {
+    font-size: 16px;
+    line-height: 20px;
+    resize: none;
+  }
+
 }
 
 
@@ -267,7 +273,7 @@
 
 .g_file_wrapper {
   position: relative;
-  height: 38px;
+  height: 40px;
   width: 100%;
   cursor: pointer;
   overflow: hidden;
@@ -291,4 +297,5 @@
 .g_file_adj {
   font-size: 14px;
   color: @placeholder-color;
+  line-height: 20px;
 }

@@ -6,553 +6,553 @@ Icon classes can be used entirely standalone. They are named after their origina
 ```
 */
 .accreditation-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2845px;
   width: 31px;
   height: 49px;
 }
 .arrow-down {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1075px;
   width: 38px;
   height: 20px;
 }
 .arrow-left {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2974px;
   width: 34px;
   height: 60px;
 }
 .arrow-right {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2904px;
   width: 34px;
   height: 60px;
 }
 .arrow-top {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1105px;
   width: 38px;
   height: 20px;
 }
 .boat {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1883px;
   width: 30px;
   height: 28px;
 }
 .calendar-lg {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2268px;
   width: 36px;
   height: 39px;
 }
 .calendar-sm {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1195px;
   width: 20px;
   height: 20px;
 }
 .checker-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2679px;
   width: 41px;
   height: 43px;
 }
 .close-icon {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -507px;
   width: 15px;
   height: 15px;
 }
 .compas-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2732px;
   width: 45px;
   height: 45px;
 }
 .data-arrow-left {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -364px;
   width: 8px;
   height: 13px;
 }
 .data-arrow-right {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -140px;
   width: 7px;
   height: 12px;
 }
 .earth {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1225px;
   width: 20px;
   height: 20px;
 }
 .geo {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1045px;
   width: 19px;
   height: 20px;
 }
 .hikking {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -846px;
   width: 12px;
   height: 18px;
 }
 .counter {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2471px;
   width: 41px;
   height: 42px;
 }
 .eat-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2176px;
   width: 37px;
   height: 34px;
 }
 .guide-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2317px;
   width: 40px;
   height: 40px;
 }
 .hikking-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2627px;
   width: 27px;
   height: 42px;
 }
 .hit {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2047px;
   width: 141px;
   height: 33px;
 }
 .hit2 {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2090px;
   width: 141px;
   height: 33px;
 }
 .host-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1845px;
   width: 47px;
   height: 28px;
 }
 .man-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1961px;
   width: 23px;
   height: 33px;
 }
 .man-inactive {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2133px;
   width: 23px;
   height: 33px;
 }
 .man-yactive {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2004px;
   width: 23px;
   height: 33px;
 }
 .safety-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2220px;
   width: 28px;
   height: 38px;
 }
 .transport-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1921px;
   width: 43px;
   height: 30px;
 }
 .logo-sm {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -184px;
   width: 147px;
   height: 12px;
 }
 .mail {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -272px;
   width: 19px;
   height: 13px;
 }
 .money {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1165px;
   width: 20px;
   height: 20px;
 }
 .print {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1707px;
   width: 24px;
   height: 24px;
 }
 .africa {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1445px;
   width: 17px;
   height: 22px;
 }
 .antarctica {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -930px;
   width: 16px;
   height: 18px;
 }
 .arctica {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -818px;
   width: 16px;
   height: 18px;
 }
 .asia {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -987px;
   width: 18px;
   height: 19px;
 }
 .australia {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -56px;
   width: 28px;
   height: 11px;
 }
 .europe {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1775px;
   width: 14px;
   height: 25px;
 }
 .n-america {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1477px;
   width: 16px;
   height: 22px;
 }
 .russia {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1255px;
   width: 18px;
   height: 21px;
 }
 .s-america {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1286px;
   width: 19px;
   height: 21px;
 }
 .rukzak-md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2787px;
   width: 47px;
   height: 48px;
 }
 .rukzak {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1135px;
   width: 19px;
   height: 20px;
 }
 .calendar-from {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1674px;
   width: 22px;
   height: 23px;
 }
 .calendar-hover {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1542px;
   width: 22px;
   height: 23px;
 }
 .calendar-to {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1575px;
   width: 22px;
   height: 23px;
 }
 .calendar {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1509px;
   width: 22px;
   height: 23px;
 }
 .globus {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1641px;
   width: 20px;
   height: 23px;
 }
 .minus-blue {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 10px;
   height: 5px;
 }
 .plus-blue {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -295px;
   width: 12px;
   height: 13px;
 }
 .select-tours {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -658px;
   width: 18px;
   height: 16px;
 }
 .signpost {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1741px;
   width: 20px;
   height: 24px;
 }
 .weekend {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -684px;
   width: 16px;
   height: 16px;
 }
 .fb {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1413px;
   width: 22px;
   height: 22px;
 }
 .fb_md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2419px;
   width: 42px;
   height: 42px;
 }
 .rss {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1349px;
   width: 22px;
   height: 22px;
 }
 .rss_md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2367px;
   width: 42px;
   height: 42px;
 }
 .tw {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1317px;
   width: 22px;
   height: 22px;
 }
 .tw_md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2575px;
   width: 42px;
   height: 42px;
 }
 .vk {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1381px;
   width: 22px;
   height: 22px;
 }
 .vk_md {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -2523px;
   width: 42px;
   height: 42px;
 }
 .activetours-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -607px;
   width: 10px;
   height: 15px;
 }
 .activetours {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -582px;
   width: 10px;
   height: 15px;
 }
 .avia-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -98px;
   width: 19px;
   height: 11px;
 }
 .avia {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -77px;
   width: 19px;
   height: 11px;
 }
 .beach-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -318px;
   width: 13px;
   height: 13px;
 }
 .beach {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -341px;
   width: 13px;
   height: 13px;
 }
 .cars-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -162px;
   width: 13px;
   height: 12px;
 }
 .hotels-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -119px;
   width: 14px;
   height: 11px;
 }
 .hotels {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -35px;
   width: 14px;
   height: 11px;
 }
 .insurance-active {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -206px;
   width: 10px;
   height: 12px;
 }
 .insurance {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -228px;
   width: 10px;
   height: 12px;
 }
 .adventure {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -557px;
   width: 15px;
   height: 15px;
 }
 .aerostat {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1810px;
   width: 18px;
   height: 25px;
 }
 .air {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -902px;
   width: 14px;
   height: 18px;
 }
 .autors {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -532px;
   width: 15px;
   height: 15px;
 }
 .cars {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -250px;
   width: 13px;
   height: 12px;
 }
 .comb {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -737px;
   width: 17px;
   height: 17px;
 }
 .events {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -710px;
   width: 17px;
   height: 17px;
 }
 .excursions {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -15px;
   width: 20px;
   height: 10px;
 }
 .expeditions {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -387px;
   width: 21px;
   height: 14px;
 }
 .family {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -632px;
   width: 21px;
   height: 16px;
 }
 .gastronomy {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -791px;
   width: 18px;
   height: 17px;
 }
 .learnings {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -459px;
   width: 22px;
   height: 14px;
 }
 .mountains {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -435px;
   width: 19px;
   height: 14px;
 }
 .no-standart {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -764px;
   width: 17px;
   height: 17px;
 }
 .photo {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -483px;
   width: 18px;
   height: 14px;
 }
 .red-letter {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1016px;
   width: 13px;
   height: 19px;
 }
 .safari {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -411px;
   width: 24px;
   height: 14px;
 }
 .space {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -958px;
   width: 18px;
   height: 19px;
 }
 .terra {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -874px;
   width: 12px;
   height: 18px;
 }
 .water {
-  background-image: url(./code/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -1608px;
   width: 23px;
   height: 23px;

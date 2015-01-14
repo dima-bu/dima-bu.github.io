@@ -1,0 +1,32 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+    .container
+      h1.add-title Регистрация
+      section.add-section
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Электронная почта
+          .col-md-3
+            input.g_input
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Пароль
+          .col-md-3
+            input.g_input(type="password")
+        .form-row
+          .col-md-9.col-md-offset-3
+            .options-wrapper
+              label.label_sm.-inline
+                +radio('radio', 'host', '-white-yellow', 'usertype')
+                | Туристическое агенство
+              label.label_sm.-inline
+                +radio('radio', 'host', '-white-yellow', 'usertype')
+                | Частный гид
+        .form-row
+          .col-md-9.col-md-offset-3
+            button.simple-btn.-more-sqr.-yellow Зарегестрироваться

@@ -691,9 +691,23 @@ span.days-text {
   border-radius: 10px;
   border: 1px solid #dee7ee;
   background-color:  #f7f7f7;
+  &.-yellow {
+    background-color: transparent;
+    border: 2px solid @yellow;
+  }
 }
 
+.subsection-block {
+  border-radius: 10px;
+  border: 1px solid #7ba7ca;
+  padding: 30px 30px;
+  margin-bottom: 30px;
+}
 
+.subsection-block_title  {
+  font-weight: bold;
+  font-family: "proxima_reg", Helvetica, Arial, sans-serif;
+}
 
 
 /*groups*/
@@ -711,5 +725,35 @@ fieldset {
   text-align: center;
   button {
     margin: 0 5px;
+  }
+}
+
+/**/
+
+.add-more-center {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/**/
+
+.simple-list {
+  .clear-list();
+  li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 25px;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 8px;
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        left: 0;
+        background-color: @yellow;
+      }
   }
 }
