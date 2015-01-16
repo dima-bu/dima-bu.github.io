@@ -1,0 +1,132 @@
+include ../home/select-region
+include ../home/select-type
+.allocated-block
+  h2.add-subtitle 1. Основная информация о туре
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Название тура
+  .col-md-9
+    input.g_input(value="Треккинг к базовому лагерю Аннапурны-1")
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Подзаголовок тура
+  .col-md-9
+    input.g_input(value="Потрясающие туры ждут вас")
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Главная картинка для тура
+  .col-md-9
+    .img-preview
+      img(src="files/bg-landing-title_min.jpg")
+    .g_file_wrapper
+      button.simple-btn.-more-sqr.-yellow.fll Выбрать
+      .col-md-8
+        .label_md-wrapper
+          label.label_md.-simple.g_file-text  Загрузить другое фото
+      input(id="userfile", type="file", name="userfile", class="g_file")
+    .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Цена
+  .col-md-2
+    input.g_input(value="23 000")
+  .label_md-wrapper.col-md-2
+    label.label_md.-simple(for="rub")
+      span рублей
+      //input(type="radio", id="rub" name="countchanger")
+    //label.label_md.-simple.hide(for="usd")
+    //  span долларов
+    //  input(type="radio",id="usd", name="countchanger")
+    //label.label_md.-simple.hide(for="euro")
+    //  span евро
+    //  input(type="radio", id="euro", name="countchanger")
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Регион тура
+  .col-md-4
+    include ../general/where-input
+
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Вид тура
+  .col-md-4
+    include ../general/what-input
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Сложность
+  .col-md-4
+    select.g_select
+      option Сложность 1
+      option Сложность 2
+      option Сложность 3
+      option Сложность 4
+      option Сложность 5
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Выбрать гида
+  .col-md-4
+    select.g_select
+      option Кондрашев А.Б.
+      option Безпалапенковинковенко А.П.
+      option Бухал Д.Д.
+      option Титарев М.И.
+      option Селиванов А.Ф.
+   .col-md-3
+     button.simple-btn.-more-sqr.-yellow.fll Добавить нового гида
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Продолжительность
+  .col-md-4
+    .clearfix
+      .pull-left
+        .label_md.-inline C
+        .g_input-wrapper.-calendar
+          input.g_input.-from.datepicker(type="data", value="12.02.15")
+      .pull-right
+        .label_md.-inline По
+        .g_input-wrapper.-calendar
+          input.g_input.-to.datepicker(type="data", value="27.02.15")
+  .col-md-4
+    button.simple-btn.-more-sqr.-yellow.fll Добавить еще одну дату тура
+.form-row
+  .label_md-wrapper.col-md-3
+    label.label_md.-simple Количество мест в группе
+  .col-md-2
+    input.g_input
+.popup-select-icons(style="display:none;")
+  .almost-sqr-wrapper.-lg.-mod-1
+    i.hikking-md.icon
+  .almost-sqr-wrapper.-lg.-mod-1
+    i.eat-md.icon
+  .almost-sqr-wrapper.-lg.-mod-1
+    i.transport-md.icon
+  .almost-sqr-wrapper.-lg.-mod-1
+    i.safety-md.icon
+  .almost-sqr-wrapper.-lg.-mod-1
+    i.host-md.icon
+  .almost-sqr-wrapper.-lg.-mod-1
+    i.guide-md.icon
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 1
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 2
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 3
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 4
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 5
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 6
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 7
+  .almost-sqr-wrapper.-lg.-mod-1
+    .round-bg.-yellow.-lg
+      span.count 8

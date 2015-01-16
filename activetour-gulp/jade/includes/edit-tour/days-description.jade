@@ -1,0 +1,60 @@
+.allocated-block
+  h2.add-subtitle 5. Описание по дням
+.subsection-block
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Картинка дня
+    .col-md-9
+      .img-preview
+        img(src="files/day1.jpg")
+      .g_file_wrapper
+        button.simple-btn.-more-sqr.-yellow.fll Выбрать
+        .col-md-8
+          .label_md-wrapper
+            label.label_md.-simple.g_file-text  Загрузить фото
+        input(id="userfile", type="file", name="userfile", class="g_file")
+      .g_file_adj  Рекомендуемый размер фото: не менее 600x400, не более 1 Мб
+  .form-row
+    .col-md-3
+      .label_md-wrapper
+        label.label_md.-simple Заголок дня
+    .col-md-9
+      input.g_input(value="ПРИБЫТИЕ В КАТМАНДУ")
+  .row
+    .col-md-3
+      .label_md-wrapper
+        label.label_md.-simple Описание дня
+      .day-wrapper
+        .day-count 1
+        .day-descr день
+    .col-md-9
+      textarea.g_textarea(rows=6) Добро пожаловать в гималайскую страну Непал! Встреча с гидом в аэропорту Трибхуван, размещение в отеле 4* в Катманду. Экскурсия с гидом в Сваямбунатх - маленький городок из буддийских храмов, монастырей и индуистских религиозных сооружений. С вершины холма, где расположен Сваямбунатх, открывается великолепная панорама долины Катманду — красочной зеленой котловины, окруженной величественными горными вершинами. Остаток дня отдых в отеле и ужин в ресторане национальной кухни. Ночь в отеле 3*.
+.subsection-block
+  .form-row
+    .label_md-wrapper.col-md-3
+      label.label_md.-simple Картинка дня
+    .col-md-9
+      .g_file_wrapper
+        button.simple-btn.-more-sqr.-yellow.fll Выбрать
+        .col-md-8
+          .label_md-wrapper
+            label.label_md.-simple.g_file-text  Загрузить фото
+        input(id="userfile", type="file", name="userfile", class="g_file")
+      .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
+  .form-row
+    .col-md-3
+      .label_md-wrapper
+        label.label_md.-simple Заголок дня
+    .col-md-9
+      input.g_input
+  .row
+    .col-md-3
+      .label_md-wrapper
+        label.label_md.-simple Описание дня
+      .day-wrapper
+        .day-count 2
+        .day-descr день
+    .col-md-9
+      textarea.g_textarea(rows=6)
+.add-more-center
+  button.simple-btn.-more-sqr.-yellow <span class="plus">+</span> Добавить день

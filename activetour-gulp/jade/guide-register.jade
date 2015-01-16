@@ -1,0 +1,40 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+  .container
+      h1.add-title Регистрация гида
+      section.add-section
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Имя
+          .col-md-6
+            input.g_input
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Фото
+          .col-md-6
+            .g_file_wrapper
+              button.simple-btn.-more-sqr.-yellow.fll Выбрать
+              .col-md-8
+                .label_md-wrapper
+                  label.label_md.-simple.g_file-text  Загрузить фото
+              input(id="userfile", type="file", name="userfile", class="g_file")
+            .g_file_adj  Рекомендуемый размер фото: не менее 300x300, не более 1 Мб
+
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Контактный телефон
+          .col-md-3
+            input.g_input
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Описание гида
+          .col-md-9
+            textarea.g_textarea(rows=4)
+        .form-row
+          .col-md-9.col-md-offset-3
+            button.simple-btn.-more-sqr.-yellow Сохранить

@@ -1,0 +1,46 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+  .container
+      h1.add-title Личный кабинет агенства
+
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link.active(href="agency-person-page.html") Личные данныe агенства
+          .tabs-item
+            a.tabs-link(href="agency-my-tours.html") Мои туры
+          .tabs-item
+            a.tabs-link(href="agency-my-guides.html") Мои гиды
+
+      section.add-section
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Название агенства
+          .col-md-6
+            input.g_input(value="Туристическое агенство Альпиндустрия")
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Логотип
+          .col-md-6
+            .round-img.-md
+              img.img-responsive.-blue-border(src="img/guide.jpg")
+
+            .g_file_wrapper
+              button.simple-btn.-more-sqr.-yellow.fll Выбрать
+              .col-md-8
+                .label_md-wrapper
+                  label.label_md.-simple.g_file-text  Загрузить другой логотип
+              input(id="userfile", type="file", name="userfile", class="g_file")
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Описание агенства
+          .col-md-9
+            textarea.g_textarea(rows=4) Туристическое снаряжение и экипировка для экстремальных видов спорта. Форум, информация о соревнованиях. Представительства в регионах.
+        .form-row
+          .col-md-9.col-md-offset-3
+            button.simple-btn.-more-sqr.-yellow Сохранить

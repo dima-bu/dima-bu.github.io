@@ -1,0 +1,51 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+  .container
+      h1.add-title Мои гиды
+
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link(href="agency-person-page.html") Личные данныe агенства
+          .tabs-item
+            a.tabs-link(href="agency-my-tours.html") Мои туры
+          .tabs-item
+            a.tabs-link.active(href="agency-my-guides.html") Мои гиды
+
+      section.add-section
+
+        .form-row
+          .col-md-6
+            .media
+              .round-img.-md.fll.-left
+                img.img-responsive.-blue-border(src="img/guide.jpg")
+              .guide-wrapper.media-body
+                h4.-name Михаил Копытов
+                h5.-subname Гид-проводник. Рейтинг 4.8
+          .col-md-6
+            a.simple-btn.-yellow.-md(href="agency-guide-edit-page.html") Редактировать гида
+        .form-row
+          .col-md-6
+            .media
+              .round-img.-md.fll.-left
+                img.img-responsive.-blue-border(src="img/guide.jpg")
+              .guide-wrapper.media-body
+                h4.-name Михаил Копытов
+                h5.-subname Гид-проводник. Рейтинг 4.8
+          .col-md-6
+            a.simple-btn.-yellow.-md(href="agency-guide-edit-page.html") Редактировать гида
+        .form-row
+          .col-md-6
+            .media
+              .round-img.-md.fll.-left
+                img.img-responsive.-blue-border(src="img/guide.jpg")
+              .guide-wrapper.media-body
+                h4.-name Михаил Копытов
+                h5.-subname Гид-проводник. Рейтинг 4.8
+          .col-md-6
+            a.simple-btn.-yellow.-md(href="agency-guide-edit-page.html") Редактировать гида

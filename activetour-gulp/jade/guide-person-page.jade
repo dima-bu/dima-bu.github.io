@@ -1,0 +1,50 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+  .container
+      h1.add-title Личный кабинет
+      .allocated-block.-full
+          .tabs
+            .tabs-item
+              a.tabs-link.active(href="guide-person-page.html") Личные данныe
+            .tabs-item
+              a.tabs-link(href="guide-my-tours.html") Мои туры
+
+      section.add-section
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Имя
+          .col-md-6
+            input.g_input(value="Василий Иванов")
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Фото
+          .col-md-6
+            .round-img.-md
+              img.img-responsive.-blue-border(src="img/guide.jpg")
+
+            .g_file_wrapper
+              button.simple-btn.-more-sqr.-yellow.fll Выбрать
+              .col-md-8
+                .label_md-wrapper
+                  label.label_md.-simple.g_file-text  Загрузить другое фото
+              input(id="userfile", type="file", name="userfile", class="g_file")
+            .g_file_adj  Рекомендуемый размер фото: не менее 300x300, не более 1 Мб
+
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Контактный телефон
+          .col-md-3
+            input.g_input(value="89234535333")
+        .form-row
+          .label_md-wrapper.col-md-3
+            label.label_md.-simple Описание гида
+          .col-md-9
+            textarea.g_textarea(rows=4) Частный русскоязычный гид-переводчик Барселона, Испания.
+        .form-row
+          .col-md-9.col-md-offset-3
+            button.simple-btn.-more-sqr.-yellow Сохранить

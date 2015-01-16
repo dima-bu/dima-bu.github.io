@@ -20,14 +20,21 @@
     </header>
     <div class="main-content">
       <div class="container">
-        <h1 class="add-title">Регистрация агенства</h1>
+        <h1 class="add-title">Личный кабинет агенства</h1>
+        <div class="allocated-block -full">
+          <div class="tabs">
+            <div class="tabs-item"><a href="agency-person-page.html" class="tabs-link active">Личные данныe агенства</a></div>
+            <div class="tabs-item"><a href="agency-my-tours.html" class="tabs-link">Мои туры</a></div>
+            <div class="tabs-item"><a href="agency-my-guides.html" class="tabs-link">Мои гиды</a></div>
+          </div>
+        </div>
         <section class="add-section">
           <div class="form-row">
             <div class="label_md-wrapper col-md-3">
               <label class="label_md -simple">Название агенства</label>
             </div>
             <div class="col-md-6">
-              <input class="g_input">
+              <input value="Туристическое агенство Альпиндустрия" class="g_input">
             </div>
           </div>
           <div class="form-row">
@@ -35,76 +42,26 @@
               <label class="label_md -simple">Логотип</label>
             </div>
             <div class="col-md-6">
+              <div class="round-img -md"><img src="img/guide.jpg" class="img-responsive -blue-border"></div>
               <div class="g_file_wrapper">
                 <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
                 <div class="col-md-8">
                   <div class="label_md-wrapper">
-                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    <label class="label_md -simple g_file-text"> Загрузить другой логотип</label>
                   </div>
                 </div>
                 <input id="userfile" type="file" name="userfile" class="g_file">
               </div>
-              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 300x300, не более 1 Мб</div>
             </div>
           </div>
           <div class="form-row">
             <div class="label_md-wrapper col-md-3">
-              <label class="label_md -simple">Контактный телефон</label>
-            </div>
-            <div class="col-md-3">
-              <input class="g_input">
-            </div>
-          </div>
-          <div class="allocated-block -full">
-            <h2 class="add-subtitle">Гиды</h2>
-          </div>
-          <div class="form-row">
-            <div class="label_md-wrapper col-md-3">
-              <label class="label_md -simple">Имя</label>
-            </div>
-            <div class="col-md-3">
-              <input class="g_input">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="label_md-wrapper col-md-3">
-              <label class="label_md -simple">Фото</label>
-            </div>
-            <div class="col-md-6">
-              <div class="g_file_wrapper">
-                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
-                <div class="col-md-8">
-                  <div class="label_md-wrapper">
-                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
-                  </div>
-                </div>
-                <input id="userfile" type="file" name="userfile" class="g_file">
-              </div>
-              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 300x300, не более 1 Мб</div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="label_md-wrapper col-md-3">
-              <label class="label_md -simple">Описание</label>
+              <label class="label_md -simple">Описание агенства</label>
             </div>
             <div class="col-md-9">
-              <textarea rows="4" class="g_textarea"></textarea>
+              <textarea rows="4" class="g_textarea">Туристическое снаряжение и экипировка для экстремальных видов спорта. Форум, информация о соревнованиях. Представительства в регионах.</textarea>
             </div>
           </div>
-          <div class="form-row">
-            <div class="col-md-9 col-md-offset-3">
-              <button class="simple-btn -more-sqr -yellow">+ Добавить гида</button>
-            </div>
-          </div>
-          <!--.form-row-->
-          <!--  .col-md-9.col-md-offset-3-->
-          <!--    .options-wrapper-->
-          <!--      label.label_sm.-inline-->
-          <!--        +radio('radio', 'host', '-white-yellow', 'usertype')-->
-          <!--        | Туристическое агенство-->
-          <!--      label.label_sm.-inline-->
-          <!--        +radio('radio', 'host', '-white-yellow', 'usertype')-->
-          <!--        | Частный гид-->
           <div class="form-row">
             <div class="col-md-9 col-md-offset-3">
               <button class="simple-btn -more-sqr -yellow">Сохранить</button>

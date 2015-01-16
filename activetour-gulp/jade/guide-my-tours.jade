@@ -1,0 +1,18 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+  .container
+      h1.add-title Личный кабинет
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link(href="guide-person-page.html") Личные данныe
+          .tabs-item
+            a.tabs-link.active(href="guide-my-tours.html") Мои туры
+
+
+      include  includes/results/my-tours
