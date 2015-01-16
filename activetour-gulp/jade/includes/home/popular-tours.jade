@@ -6,9 +6,11 @@ h2.subtitle Популярные туры
      .col-md-4.col-sm-6.col-xs-12.tour-preview-item
       .blue-border.tour-preview
         header.tour-preview-header
-          h3.block-title  #{tour.title}
+          h3.block-title
+            a(href="landing.html") #{tour.title}
         .tour-preview-img
-          img(src="#{tour.img}")
+          a(href="landing.html")
+            img(src="#{tour.img}")
         .tour-preview-icons
           .col-all-33p.fll
             .round-bg.-md.-yellow.-with-icon.-top
