@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Регистрация</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sprite.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.nouislider.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container"><a href="home.html"><img src="img/logo.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo fll"></a>
+        <div class="logo-caption fll">Поиск и бронирование<br/> активных туров</div><a href="add-tour.html" class="flr simple-btn -yellow">Добавить ваш тур</a>
+        <div class="flr share-menu">
+          <div class="share-menu_caption">Поделиться</div><a href="#" class="share-menu_link"><i class="vk icon"></i></a><a href="#" class="share-menu_link"><i class="fb icon"></i></a><a href="#" class="share-menu_link"><i class="tw icon"></i></a><a href="#" class="share-menu_link"><i class="rss icon"></i></a>
+        </div>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="container">
+        <h1 class="add-title">Регистрация агенства</h1>
+        <section class="add-section">
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Название агенства</label>
+            </div>
+            <div class="col-md-6">
+              <input class="g_input">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Логотип</label>
+            </div>
+            <div class="col-md-6">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 300x300, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Контактный телефон</label>
+            </div>
+            <div class="col-md-3">
+              <input class="g_input">
+            </div>
+          </div>
+          <div class="allocated-block -full">
+            <h2 class="add-subtitle">Гиды</h2>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Имя</label>
+            </div>
+            <div class="col-md-3">
+              <input class="g_input">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Фото</label>
+            </div>
+            <div class="col-md-6">
+              <div class="g_file_wrapper">
+                <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                <div class="col-md-8">
+                  <div class="label_md-wrapper">
+                    <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                  </div>
+                </div>
+                <input id="userfile" type="file" name="userfile" class="g_file">
+              </div>
+              <div class="g_file_adj"> Рекомендуемый размер фото: не менее 300x300, не более 1 Мб</div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="label_md-wrapper col-md-3">
+              <label class="label_md -simple">Описание</label>
+            </div>
+            <div class="col-md-9">
+              <textarea rows="4" class="g_textarea"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-9 col-md-offset-3">
+              <button class="simple-btn -more-sqr -yellow">+ Добавить гида</button>
+            </div>
+          </div>
+          <!--.form-row-->
+          <!--  .col-md-9.col-md-offset-3-->
+          <!--    .options-wrapper-->
+          <!--      label.label_sm.-inline-->
+          <!--        +radio('radio', 'host', '-white-yellow', 'usertype')-->
+          <!--        | Туристическое агенство-->
+          <!--      label.label_sm.-inline-->
+          <!--        +radio('radio', 'host', '-white-yellow', 'usertype')-->
+          <!--        | Частный гид-->
+          <div class="form-row">
+            <div class="col-md-9 col-md-offset-3">
+              <button class="simple-btn -more-sqr -yellow">Сохранить</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer_inner">
+        <div class="row">
+          <div class="col-sm-3 logo-sm-wrapper"><i class="logo logo-sm"></i></div>
+          <div class="col-sm-9">
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a class="footer-menu-link">О нас</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">О проекте</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Блог</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Партнерам</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Партнерская программа</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Реклама на сайте</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a class="footer-menu-link">Гидам</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Помощь</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Договор</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--script(src="js/all.js")-->
+    <!--script(src="js/carousel.js")-->
+    <script src="js/vendor/a-jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/b-picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
+    <script src="js/vendor/z-ru_RU.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.ikSelect.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--script(src="js/bootstrap.min.js")-->
+  </body>
+</html>
