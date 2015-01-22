@@ -227,12 +227,12 @@ $(document).ready(function () {
     });
 
 
-    $(document).click(function (event) {
-        if ($(event.target).closest(".search-form").length) return;
-        $('.select-region').hide();
-        $('.select-type').hide();
-        event.stopPropagation();
-    });
+    //$(document).click(function (event) {
+    //    if ($(event.target).closest(".search-form").length) return;
+    //    $('.select-region').hide();
+    //    $('.select-type').hide();
+    //    event.stopPropagation();
+    //});
 
 
     $('.js-select-regions').on('click', function () {
@@ -255,6 +255,7 @@ $(document).ready(function () {
             $('body').find('span[typeid=' + id + ']').parent().removeClass('checked');
         });
     };
+
 
     /*scroll to top search panel*/
 

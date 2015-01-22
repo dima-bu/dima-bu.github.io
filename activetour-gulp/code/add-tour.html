@@ -26,8 +26,8 @@
             <header class="select-type-header">
               <div class="row">
                 <div class="col-sm-9">
-                  <h4>Выберите регионы, в которых вы хотите отдохнуть:</h4>
-                  <h5>Можете выбрать несколько регионов, просто кликая на них. Затем нажмите «Выбрать регион»</h5>
+                  <h4>Выберите регион, в котором будет проходить ваш тур:</h4>
+                  <h5>Если вашего подрегиона нет в списке - выберите регион, а подрегион внесите в поле "Добавить свой регион"</h5>
                 </div>
                 <div class="col-sm-3 ta-r">
                   <div class="close-btn js-close-select-region">Закрыть <i class="icon close-icon"></i></div>
@@ -110,8 +110,8 @@
             <hr class="select-type-hr">
             <section class="selected-regions">
               <div class="row">
-                <div class="col-md-7 col-lg-7"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span></div>
-                <div class="col-md-5 col-lg-5 ta-r">
+                <div class="col-md-6 col-lg-7"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span></div>
+                <div class="col-md-6 col-lg-5 ta-r">
                   <button class="transparent-btn -blue js-clear-all-region selected-tours-clear">Сбросить все</button>
                   <button class="simple-btn -yellow js-select-regions"><i class="select-tours icon"></i> Выбрать регион</button>
                 </div>
@@ -122,8 +122,8 @@
             <header class="select-type-header">
               <div class="row">
                 <div class="col-sm-9">
-                  <h4>Выберите интересующий вид туризма:</h4>
-                  <h5>Можете выбрать несколько видов, просто кликая на них. Затем нажмите «Выбрать тур»</h5>
+                  <h4>Выберите виды туризма, относящиеся к вашему туру:</h4>
+                  <h5>Можете выбрать несколько видов, просто кликая на них. Затем нажмите «Выбрать тур». Первый выбранный вид будет считаться основным.</h5>
                 </div>
                 <div class="col-sm-3 ta-r">
                   <div class="close-btn js-close-select-type">Закрыть <i class="icon close-icon"></i></div>
@@ -133,7 +133,7 @@
             <section class="tour-list-wrapper row">
               <div class="col-sm-3">
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon water"></i></span><span class="tour-list-text">Вода</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon water"></i></span><span class="tour-list-text">Вода</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-3" class="tour-list-text">  Сёрфинг</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-4" class="tour-list-text">  Кайтсёрфинг</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-5" class="tour-list-text">  Яхтинг</span></a></li>
@@ -145,7 +145,7 @@
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-11" class="tour-list-text">   Рыболовные туры </span></a></li>
                 </ul>
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon mountains"></i></span><span class="tour-list-text">Горы</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon mountains"></i></span><span class="tour-list-text">Горы</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-16" class="tour-list-text">  Горные лыжи / сноубординг</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-17" class="tour-list-text">  Восхождения</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-18" class="tour-list-text">  Скалолазание</span></a></li>
@@ -155,7 +155,7 @@
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-22" class="tour-list-text">  Спелеология</span></a></li>
                 </ul>
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon safari"></i></span><span class="tour-list-text">Сафари</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon safari"></i></span><span class="tour-list-text">Сафари</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-12" class="tour-list-text">  Африканское сафари</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-13" class="tour-list-text">  На собачьих упряжках</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-14" class="tour-list-text">  На снегоходах</span></a></li>
@@ -164,7 +164,7 @@
               </div>
               <div class="col-sm-3">
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon terra"></i></span><span class="tour-list-text">Земля</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon terra"></i></span><span class="tour-list-text">Земля</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-33" class="tour-list-text">  Автотуры</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-34" class="tour-list-text">  Джип-туры</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-35" class="tour-list-text">  Туристические походы</span></a></li>
@@ -173,13 +173,13 @@
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-38" class="tour-list-text">  Конные туры</span></a></li>
                 </ul>
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon expeditions"></i></span><span class="tour-list-text">Экспедиции</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon expeditions"></i></span><span class="tour-list-text">Экспедиции</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-30" class="tour-list-text">  Этнографические</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-31" class="tour-list-text">  Географические</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-32" class="tour-list-text">  Экологические</span></a></li>
                 </ul>
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon learnings"></i></span><span class="tour-list-text">Школы, обучение,  тренинги</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon learnings"></i></span><span class="tour-list-text">Школы, обучение,  тренинги</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-22" class="tour-list-text">  Школа фотографии</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-23" class="tour-list-text">  Школа йоги</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-24" class="tour-list-text">  Кулинарная школа</span></a></li>
@@ -187,7 +187,7 @@
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-26" class="tour-list-text">  Школа скалолазания</span></a></li>
                 </ul>
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon events"></i></span><span class="tour-list-text">Событийный туризм</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon events"></i></span><span class="tour-list-text">Событийный туризм</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-27" class="tour-list-text">  Спортивные события</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-28" class="tour-list-text">  Фестивали</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-29" class="tour-list-text">  Народные праздники</span></a></li>
@@ -195,7 +195,7 @@
               </div>
               <div class="col-sm-3">
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon air"></i></span><span class="tour-list-text">Воздух</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon air"></i></span><span class="tour-list-text">Воздух</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-39" class="tour-list-text">  Парашютные прыжки</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-40" class="tour-list-text">  Полёты на парапланах</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-41" class="tour-list-text">  Полёты на дельтапланах</span></a></li>
@@ -203,21 +203,12 @@
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-43" class="tour-list-text">   Полёты на воздушных шарах</span></a></li>
                 </ul>
                 <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon no-standart"></i></span><span class="tour-list-text">Нестандартные</span></a></li>
+                  <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon no-standart"></i></span><span class="tour-list-text">Нестандартные</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-44" class="tour-list-text">  Экологические туры</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-45" class="tour-list-text">  Эзотерические туры</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-46" class="tour-list-text">  Йога туры</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-47" class="tour-list-text">  Историко-культурные туры</span></a></li>
                   <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-48" class="tour-list-text">  Паломничества</span></a></li>
-                </ul>
-                <ul class="tour-list">
-                  <li class="tour-list-item -general -icon"><a class="tour-list-link js-all-type"><span class="tour-icon-wrapper"><i class="icon red-letter"></i></span><span class="tour-list-text">Праздничные туры</span></a></li>
-                  <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-49" class="tour-list-text">  Новогодние туры</span></a></li>
-                  <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-50" class="tour-list-text">  23 фераля</span></a></li>
-                  <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-51" class="tour-list-text">  8 марта</span></a></li>
-                  <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-52" class="tour-list-text">  Майские</span></a></li>
-                  <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-53" class="tour-list-text">  12 июня</span></a></li>
-                  <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-54" class="tour-list-text">  4 ноября</span></a></li>
                 </ul>
               </div>
               <div class="col-sm-3">
@@ -364,13 +355,13 @@
                 <option>Селиванов А.Ф.</option>
               </select>
             </div>
-            <div class="col-md-3"><a class="simple-btn -more-sqr -yellow fllf"><span class="plus">+</span> Добавить нового гида</a></div>
+            <div class="col-md-3"><a class="simple-btn -more-sqr -yellow fllf"><span class="plus">+</span> Добавить гида</a></div>
           </div>
           <div class="form-row">
             <div class="label_md-wrapper col-md-3">
               <label class="label_md -simple">Продолжительность</label>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5 col-lg-4">
               <div class="clearfix">
                 <div class="pull-left">
                   <div class="label_md -inline">C</div>

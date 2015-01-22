@@ -65,6 +65,7 @@
 
 .tour-list-text {
   border-bottom: 1px solid @gray-lighter;
+  color:#333;
 }
 
 .tour-list-link {
@@ -85,6 +86,16 @@
     color: @text-color;
     .tour-list-text {
       border-bottom: 1px solid transparent;
+    }
+  }
+
+  &.-not-clickable {
+    cursor: default;
+    &:hover {
+      border-color: transparent;
+      .tour-list-text {
+        color:#333;
+      }
     }
   }
   
