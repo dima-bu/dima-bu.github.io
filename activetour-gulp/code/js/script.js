@@ -82,6 +82,79 @@ $(document).ready(function () {
         DeleteItem();
     });
 
+    $('.js-one-region').on('click', function () {
+        var parentlist = $(this).parents('.tour-list');
+
+        //if (parentlist.find('.js-all-region').hasClass('checked')) {
+        //    allcheck = true;
+        //} else {
+        //    allcheck = false;
+        //}
+
+        //if ($(this).hasClass('checked')) {
+        //    thischeck = true;
+        //} else {
+        //    thischeck = false;
+        //}
+        //
+        //
+        //$(this).toggleClass('checked');
+        //parentlist.find('.js-all-region').removeClass('checked');
+        //
+        //
+        //var regiontext = $(this).find('.tour-list-text').text();
+        //var regionid = $(this).find('.tour-list-text').attr('regionid');
+        //
+        //if (thischeck === false) {
+        //    $('.selected-regions-list').append("<span id=" + regionid + ">" + regiontext + "<i class='small-del js-delete-item icon'>x</i></span>");
+        //} else {
+        //    $('.selected-regions-list').find('#' + regionid).remove();
+        //}
+        //
+
+        var parenttext = parentlist.find('.js-main-region').find('.tour-list-text').text();
+        var regiontext = $(this).find('.tour-list-text').text();
+        var regionid = $(this).find('.tour-list-text').attr('regionid');
+
+        var separator = ', ';
+
+        if ( parenttext == '') {
+            separator = '';
+        } ;
+
+
+        $('.selected-regions-list').empty();
+        $('.selected-regions-list').append("<span id=" + regionid + ">" + parenttext + separator + regiontext + "<i class='small-del js-delete-item icon'>x</i></span>");
+
+        $('.js-one-region').removeClass('checked');
+        $('.js-main-region').removeClass('checked');
+
+        $(this).addClass('checked');
+        $('.js-custom-region').hide();
+
+        DeleteItem();
+    });
+
+
+    $('.js-main-region').on('click', function () {
+        var mainregiontext = $(this).find('.tour-list-text').text();
+        var regionid = $(this).find('.tour-list-text').attr('regionid');
+
+        $('.selected-regions-list').empty();
+        $('.selected-regions-list').append("<span id=" + regionid + ">" + mainregiontext + "<i class='small-del js-delete-item icon'>x</i></span>");
+
+        $('.js-one-region').removeClass('checked');
+        $('.js-main-region').removeClass('checked');
+        $(this).addClass('checked');
+
+        $('.js-custom-region').show();
+
+        DeleteItem();
+
+
+    });
+
+
     $('.js-all-region').on('click', function () {
 
         var parentlist = $(this).parents('.tour-list');
@@ -201,12 +274,17 @@ $(document).ready(function () {
         $('.js-type').removeClass('checked');
         $('.js-all-type').removeClass('checked');
         $('.selected-tours-list span').remove();
+
     });
 
     $('.js-clear-all-region').on('click', function () {
         $('.js-region').removeClass('checked');
         $('.js-all-region').removeClass('checked');
+        $('.js-main-region').removeClass('checked');
+
         $('.selected-regions-list span').remove();
+        $('.js-custom-region').hide();
+        $('.js-custom-region').val('');
     });
 
 
@@ -236,6 +314,7 @@ $(document).ready(function () {
 
 
     $('.js-select-regions').on('click', function () {
+        var customval = $('.js-custom-region').val();
         $('.js-open-select-region.g_input').find('.selected-regions-list').remove();
         $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
         $('.select-region').hide();
