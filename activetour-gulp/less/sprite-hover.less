@@ -1,0 +1,39 @@
+.tabs-link {
+  &.active, &:hover {
+    .avia {
+      .sprite(@avia-active);
+    }
+
+    .hotels {
+      .sprite(@hotels-active);
+    }
+
+    .cars {
+      .sprite(@cars-active);
+    }
+
+    .insurance {
+      .sprite(@insurance-active);
+    }
+
+    .beach {
+      .sprite(@beach-active);
+    }
+
+    .activetours {
+      .sprite(@activetours-active);
+    }
+  }
+}
+
+.picker__nav--prev:before {
+  background: transparent url(@sprite-path) @data-arrow-left-offset-x @data-arrow-left-offset-y no-repeat ;
+  height: @data-arrow-left-height;
+  width: @data-arrow-left-width;
+}
+
+.picker__nav--next:before {
+  background: transparent url(@sprite-path) @data-arrow-right-offset-x @data-arrow-right-offset-y no-repeat ;
+  height: @data-arrow-right-height;
+  width: @data-arrow-right-width;
+}
