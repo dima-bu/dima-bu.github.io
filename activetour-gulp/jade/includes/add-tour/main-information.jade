@@ -3,32 +3,32 @@ include select-type
 .allocated-block
   h2.add-subtitle 1. Основная информация о туре
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Название тура
-  .col-md-9
+  .col-md-9.col-sm-9
     input.g_input
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Подзаголовок тура
-  .col-md-9
+  .col-md-9.col-sm-9
     input.g_input(placeholder="Потрясающие туры ждут вас")
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Главная картинка для тура
-  .col-md-9
+  .col-md-9.col-sm-9
     .g_file_wrapper
       button.simple-btn.-more-sqr.-yellow.fll Выбрать
-      .col-md-8
+      .col-md-8.col-sm-8
         .label_md-wrapper
           label.label_md.-simple.g_file-text  Загрузить фото
       input(id="userfile", type="file", name="userfile", class="g_file")
     .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Цена
-  .col-md-2
+  .col-md-2.col-sm-3
     input.g_input
-  .label_md-wrapper.col-md-2
+  .label_md-wrapper.col-md-2.col-sm-3
     label.label_md.-simple(for="rub")
       span рублей
       //input(type="radio", id="rub" name="countchanger")
@@ -39,20 +39,20 @@ include select-type
     //  span евро
     //  input(type="radio", id="euro", name="countchanger")
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Регион тура
-  .col-md-4
+  .col-md-4.col-sm-9
     include ../general/where-input
 
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Вид тура
-  .col-md-4
+  .col-md-4.col-sm-9
     include ../general/what-input
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Сложность
-  .col-md-4
+  .col-md-4.col-sm-4
     select.g_select
       option Сложность 1
       option Сложность 2
@@ -61,21 +61,21 @@ include select-type
       option Сложность 5
  hr
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Выбрать гида
-  .col-md-4
+  .col-md-4.col-sm-5
     select.g_select
       option Кондрашев А.Б.
       option Безпалапенковинковенко А.П.
       option Бухал Д.Д.
       option Титарев М.И.
       option Селиванов А.Ф.
-   .col-md-3
+   .col-md-3.col-sm-4
      a.simple-btn.-more-sqr.-yellow.fllf <span class="plus">+</span> Добавить гида
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Продолжительность
-  .col-md-5.col-lg-4
+  .col-lg-4.col-md-5.col-sm-6
     .clearfix
       .pull-left
         .label_md.-inline C
@@ -86,12 +86,12 @@ include select-type
         .g_input-wrapper.-calendar
           input.g_input.-to.datepicker(type="data")
 .form-row
-  .label_md-wrapper.col-md-3
+  .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Количество мест в группе
-  .col-md-2
+  .col-md-2.col-sm-3
     input.g_input
 .form-row
-  .col-md-4.col-md-offset-3
+  .col-md-4.col-md-offset-3.col-sm-4.col-sm-offset-3
     button.simple-btn.-more-sqr.-yellow.fll <span class="plus">+</span> Добавить еще одну дату тура
 
 .popup-select-icons(style="display:none;")
