@@ -314,9 +314,23 @@ $(document).ready(function () {
 
 
     $('.js-select-regions').on('click', function () {
+
         var customval = $('.js-custom-region').val();
+        console.log(customval);
+
         $('.js-open-select-region.g_input').find('.selected-regions-list').remove();
-        $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
+        if (customval!=='') {
+            //$('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
+
+            $('.selected-regions-list span').append(', '+ customval);
+
+            $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
+        } else {
+            $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
+
+        }
+
+
         $('.select-region').hide();
     });
 
@@ -332,6 +346,8 @@ $(document).ready(function () {
             var id = $(this).parent('span').attr('id');
             $('body').find('span[regionid=' + id + ']').parent().removeClass('checked');
             $('body').find('span[typeid=' + id + ']').parent().removeClass('checked');
+            $('.js-custom-region').val('');
+            $('.js-custom-region').hide();
         });
     };
 
