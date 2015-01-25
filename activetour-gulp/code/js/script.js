@@ -645,7 +645,7 @@ $(document).ready(function () {
 
     $('.to-reserve').on('click', function(){
         $('html, body').animate({
-            scrollTop: ($("#reserve-section").offset().top - 30)
+            scrollTop: ($("#reserve-section").offset().top - 20)
         }, 1000);
     });
 
