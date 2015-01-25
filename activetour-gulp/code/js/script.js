@@ -606,4 +606,48 @@ $(document).ready(function () {
     });
 
 
+    $('#to-about-tour').on('click', function(){
+        console.log('sdfsdf');
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+
+    $('#to-about-tour').on('click', function(){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+
+    $('#to-includes').on('click', function(){
+        $('html, body').animate({
+            scrollTop: ($("#includes").offset().top - 70)
+        }, 1000);
+    });
+
+    $('#to-photo').on('click', function(){
+        $('html, body').animate({
+            scrollTop: ($("#photo-section").offset().top - 20)
+        }, 1000);
+    });
+
+    $('#to-days').on('click', function(){
+        $('html, body').animate({
+            scrollTop: ($("#days-section").offset().top - 50)
+        }, 1000);
+    });
+
+    $('#to-reviews').on('click', function(){
+        $('html, body').animate({
+            scrollTop: ($("#reviews-section").offset().top - 50)
+        }, 1000);
+    });
+
+    $('.to-reserve').on('click', function(){
+        $('html, body').animate({
+            scrollTop: ($("#reserve-section").offset().top - 30)
+        }, 1000);
+    });
+
+
 });

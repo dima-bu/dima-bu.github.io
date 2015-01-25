@@ -16,7 +16,7 @@
     top:0;
     width: 100%;
     padding: 10px 0;
-    height: 70px;
+    height: 60px;
     overflow: hidden;
     .counter-wrapper {
       display: none;
@@ -24,17 +24,50 @@
     .logo-caption {
       display: none;
     }
+
+    img.logo-round {
+        height: 38px;
+        width: auto;
+    }
+
     .landing-menu {
       position: relative;
       width: auto;
       display: inline-block;
       float: left;
       bottom: inherit;
-      margin-top: 11px;
+      height: 38px;
+      line-height: 38px;
+      margin-bottom: 0;
     }
   }
 
 }
+
+.landing-menu {
+//  position: absolute;
+//  text-align: center;
+//  width: 100%;
+//  bottom: -40px;
+  ul {
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    a {
+      color:#fff;
+      cursor: pointer;
+      font-size: 13px;
+      &:hover  {
+        color: @yellow;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
 
 .footer {
     background-color:  #67809f;
@@ -149,14 +182,6 @@
 
 
 
-/*SMALL and EXTRA SMALL -- sm and xs -- HEADER*/
-@media  screen and (max-width: @screen-sm-max) {
-
-
-}
-/*SMALL and EXTRA SMALL -- sm and xs -- HEADER -- END*/
-
-
 /*EXTRA SMALL -- xs -- HEADER*/
 @media screen and (max-width: @screen-xs-max) {
 
@@ -177,9 +202,14 @@
 /*SMALL -- sm -- HEADER -- END*/
 
 
-/*LARGE and MEDIUM -- lg and md -- HEADER*/
-@media screen and (min-width: @screen-sm-max) {
 
+
+
+/*LARGE and MEDIUM -- lg and md -- HEADER*/
+@media screen and (min-width: @screen-md-max) {
+  .landing-menu li a {
+    font-size: 16px;
+  }
 
 }
 /*LARGE and MEDIUM -- lg and md -- HEADER -- END*/

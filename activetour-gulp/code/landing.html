@@ -11,20 +11,18 @@
   </head>
   <body>
     <header class="main-header -landing -fixed">
-      <div class="container"><a href="home.html"><img src="img/logo-sm.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="fll logo-round"></a>
-        <div class="logo-caption logo-caption-round fll">Поиск и бронирование<br/> активных туров</div>
-        <button class="flr simple-btn -yellow">Забронировать</button>
-        <button class="flr transparent-btn -md -white">Заказать звонок</button>
+      <div class="container"><a href="home.html" class="fll"><img src="img/logo-sm.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo-round"></a>
         <nav class="landing-menu">
           <ul>
-            <li><a>О ТУРЕ</a></li>
-            <li><a>ЧТО ВКЛЮЧЕНО</a></li>
-            <li><a>ФОТОГРАФИИ</a></li>
-            <li><a>ОТЗЫВЫ</a></li>
-            <li><a>ОПИСАНИЕ ПО ДНЯМ</a></li>
+            <li><a id="to-about-tour">О ТУРЕ</a></li>
+            <li><a id="to-includes">ЧТО ВКЛЮЧЕНО</a></li>
+            <li><a id="to-photo">ФОТОГРАФИИ</a></li>
+            <li><a id="to-days">ОПИСАНИЕ ПО ДНЯМ</a></li>
+            <li><a id="to-reviews">ОТЗЫВЫ</a></li>
           </ul>
         </nav>
-        <!--+shareblock(true, 'flr', 'vk', 'fb', 'tw', 'rss')-->
+        <button class="to-reserve flr simple-btn -yellow">Забронировать</button>
+        <button class="flr transparent-btn -md -white">Заказать звонок</button>
         <div class="flr counter-wrapper">
           <div class="counter-item"><i class="counter">12</i>
             <div class="subtitle">ДНЕЙ</div>
@@ -197,7 +195,7 @@
             </div>
           </div>
         </section>
-        <section class="landing-section">
+        <section id="days-section" class="landing-section">
           <div class="container">
             <h2 class="subtitle">Описание тура по дням</h2>
             <div class="day-item">
@@ -241,10 +239,10 @@
         <section class="landing-price landing-section">
           <div class="container">
             <h2>Стоимость тура от 42 000 руб.</h2>
-            <button class="simple-btn -yellow -lg"><i class="icon rukzak"></i> Забронировать тур</button>
+            <button class="to-reserve simple-btn -yellow -lg"><i class="icon rukzak"></i> Забронировать тур</button>
           </div>
         </section>
-        <section class="landing-section enter-section">
+        <section id="includes" class="landing-section enter-section">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
@@ -369,7 +367,7 @@
             </ul>
           </div>
         </section>
-        <section class="landing-section photo-section">
+        <section id="photo-section" class="landing-section photo-section">
           <div class="container">
             <h2>ФОТО ИЗ ПРОШЛЫХ ПУТЕШЕСТВИЙ</h2>
             <ul class="photolist">
@@ -383,7 +381,7 @@
             <div class="videoWrapper"><iframe width="960" height="720" src="//www.youtube.com/embed/J63mbqtzPhI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
           </div>
         </section>
-        <section class="landing-section reviews-section">
+        <section id="reviews-section" class="landing-section reviews-section">
           <div class="container">
             <h2> ОТЗЫВЫ О НАШИХ ПУТЕШЕСТВИЯХ</h2>
             <div id="js-reviews-carusel" class="reviews-wrapper carousel slide">
@@ -445,7 +443,7 @@
             </div>
           </div>
         </section>
-        <section style="background-image: url(files/bg-landing-title.jpg)" class="landing-section brone-section">
+        <section id="reserve-section" style="background-image: url(files/bg-landing-title.jpg)" class="landing-section brone-section">
           <div class="container">
             <div class="simple-grey-wrapper">
               <div class="row">
