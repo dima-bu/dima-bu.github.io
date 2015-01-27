@@ -3,6 +3,10 @@ include ../home/select-type
 .allocated-block
   h2.add-subtitle 1. Основная информация о туре
 .form-row
+  label.label_sm.-inline
+    +checkbox('checkbox', 'alias', '-white-yellow')
+    | Опубликовать тур
+.form-row
   .label_md-wrapper.col-md-3
     label.label_md.-simple Название тура
   .col-md-9

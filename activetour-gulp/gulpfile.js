@@ -12,9 +12,9 @@ var gulp = require('gulp'),
 
 gulp.task('less', function(){
     gulp.src('./less/style.less')
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(less())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('./code/css'))
         .pipe(gulp.dest('./code/css/'))
         .pipe(connect.reload());
@@ -65,6 +65,7 @@ gulp.task('jade', function() {
         }) )
         .pipe(gulp.dest('./code/'))
         .pipe(connect.reload());
+
 });
 
 
