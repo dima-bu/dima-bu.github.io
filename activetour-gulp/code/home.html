@@ -157,7 +157,9 @@
               <hr class="select-type-hr">
               <section class="selected-tours">
                 <div class="row">
-                  <div class="col-md-7 col-lg-8"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-tours-list"></span></div>
+                  <div class="col-md-7 col-lg-8"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-tours-list"></span>
+                    <!--input.selected-tours-list_hidden(type="hidden")-->
+                  </div>
                   <div class="col-md-5 col-lg-4 ta-r">
                     <button class="transparent-btn -blue js-clear-all-type selected-tours-clear">Сбросить все</button>
                     <button class="simple-btn -yellow js-select-tours"><i class="select-tours icon"></i> Выбрать туры</button>
@@ -253,7 +255,9 @@
               <hr class="select-type-hr">
               <section class="selected-regions">
                 <div class="row">
-                  <div class="col-md-6 col-lg-7"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span></div>
+                  <div class="col-md-6 col-lg-7"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span>
+                    <input style="display:none;" class="js-custom-region">
+                  </div>
                   <div class="col-md-6 col-lg-5 ta-r">
                     <button class="transparent-btn -blue js-clear-all-region selected-tours-clear">Сбросить все</button>
                     <button class="simple-btn -yellow js-select-regions"><i class="select-tours icon"></i> Выбрать регион</button>
@@ -278,12 +282,14 @@
                     <label class="label_lg">Чем займетесь?</label>
                     <div class="g_input-wrapper"><i class="icon aerostat icon-right js-open-select-type"></i>
                       <div type="text" class="g_input js-open-select-type flex-height"></div>
+                      <input type="hidden" class="open-select-type_hidden">
                     </div>
                   </div>
                   <div class="col-form-right">
                     <label class="label_lg">Куда хотите поехать?</label>
                     <div class="g_input-wrapper"><i class="icon globus icon-right js-open-select-region"></i>
                       <div type="text" placeholder="Выберите регион из списка" class="g_input js-open-select-region flex-height"></div>
+                      <input type="hidden" class="open-select-region_hidden">
                     </div>
                   </div>
                 </div>

@@ -316,26 +316,37 @@ $(document).ready(function () {
     $('.js-select-regions').on('click', function () {
 
         var customval = $('.js-custom-region').val();
-        console.log(customval);
 
         $('.js-open-select-region.g_input').find('.selected-regions-list').remove();
+
+        var currentVal='';
+        $('.selected-regions-list span').each(function (){
+            currentVal = currentVal +', ' + $(this).attr('id');
+        });
+
+
+
         if (customval!=='') {
-            //$('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
-
             $('.selected-regions-list span').append(', '+ customval);
-
             $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
+            currentVal = currentVal +', ' + customval;
         } else {
             $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
-
         }
-
-
+        $('.open-select-region_hidden').val(currentVal);
         $('.select-region').hide();
+
     });
 
     $('.js-select-tours').on('click', function () {
         $('.js-open-select-type.g_input').find('.selected-tours-list').remove();
+
+        var currentVal='';
+        $('.selected-tours-list span').each(function (){
+            currentVal = currentVal +', ' + $(this).attr('id');
+        });
+        $('.open-select-type_hidden').val(currentVal);
+
         $('.selected-tours-list').clone().appendTo('.js-open-select-type.g_input');
         $('.select-type').hide();
     });
@@ -663,6 +674,26 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: ($("#reserve-section").offset().top - 20)
         }, 1000);
+    });
+
+    $('.js-reg').on('click', function(){
+
+        $('.js-login-title').hide();
+        $('.js-reg-title').show();
+        $('.js-log-reg-buttons').hide();
+        $('.js-reg-options').show();
+    })
+
+    $('#agencytype').on('change', function(){
+        $('.js-agency-wrapper').show();
+        $('.js-guide-wrapper').hide();
+        $('.js-save-reg-btn').show();
+    });
+
+    $('#guidetype').on('change', function(){
+        $('.js-agency-wrapper').hide();
+        $('.js-guide-wrapper').show();
+        $('.js-save-reg-btn').show();
     });
 
 

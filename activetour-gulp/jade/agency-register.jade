@@ -24,12 +24,16 @@ block main-content
                   label.label_md.-simple.g_file-text  Загрузить фото
               input(id="userfile", type="file", name="userfile", class="g_file")
             .g_file_adj  Рекомендуемый размер фото: не менее 300x300, не более 1 Мб
-
         .form-row
           .label_md-wrapper.col-md-3.col-sm-4
             label.label_md.-simple Контактный телефон
           .col-md-9.col-sm-8
             input.g_input
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-4
+            label.label_md.-simple Описание турагенства
+          .col-md-9.col-sm-8
+            textarea.g_textarea(rows=4)
         .allocated-block.-full
           h2.add-subtitle Гиды
         .form-row
