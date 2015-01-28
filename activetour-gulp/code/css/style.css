@@ -1845,7 +1845,7 @@ The provided classes are intended to be used with the array-like variables
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
   background-image: url(../img/sprite.png);
-  background-position: 0px -77px;
+  background-position: 0px -119px;
   width: 14px;
   height: 11px;
 }
@@ -1859,31 +1859,31 @@ The provided classes are intended to be used with the array-like variables
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
   background-image: url(../img/sprite.png);
-  background-position: 0px -184px;
+  background-position: 0px -206px;
   width: 10px;
   height: 12px;
 }
 .tabs-link.active .beach,
 .tabs-link:hover .beach {
   background-image: url(../img/sprite.png);
-  background-position: 0px -272px;
+  background-position: 0px -318px;
   width: 13px;
   height: 13px;
 }
 .tabs-link.active .activetours,
 .tabs-link:hover .activetours {
   background-image: url(../img/sprite.png);
-  background-position: 0px -507px;
+  background-position: 0px -607px;
   width: 10px;
   height: 15px;
 }
 .picker__nav--prev:before {
-  background: transparent url('../img/sprite.png') 0px -318px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -364px no-repeat;
   height: 13px;
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -140px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -3177,6 +3177,17 @@ The provided classes are intended to be used with the array-like variables
   margin-bottom: 40px;
   border: 1px solid #2574a9;
   border-radius: 10px;
+  position: relative;
+}
+.results-tour-item .disabled-mask {
+  z-index: 1;
+}
+.results-tour-item.active .disabled-mask {
+  display: none;
+}
+.results-tour-item .simple-btn {
+  position: relative;
+  z-index: 2;
 }
 @media screen and (min-width: 1199px) {
   .results-tour-item {
@@ -3473,7 +3484,7 @@ The provided classes are intended to be used with the array-like variables
 }
 .equipment-header.open .arrow-down {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1045px;
+  background-position: 0px -1105px;
   width: 38px;
   height: 20px;
 }
@@ -3913,7 +3924,7 @@ h1.landing-title.hit-icon span:after {
   content: '';
   display: inline-block;
   background-image: url(../img/sprite.png);
-  background-position: 0px -1961px;
+  background-position: 0px -2047px;
   width: 141px;
   height: 33px;
   vertical-align: top;
@@ -3924,7 +3935,7 @@ h1.landing-title.hit2-icon span:after {
   content: '';
   display: inline-block;
   background-image: url(../img/sprite.png);
-  background-position: 0px -2047px;
+  background-position: 0px -2090px;
   width: 141px;
   height: 33px;
   vertical-align: top;

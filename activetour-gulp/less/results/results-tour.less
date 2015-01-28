@@ -4,6 +4,23 @@
   padding: 15px 15px 15px 15px;
   margin-bottom: 40px;
   .blue-border();
+  position: relative;
+
+  .disabled-mask {
+    z-index: 1;
+  }
+
+  &.active {
+    .disabled-mask {
+      display: none;
+    }
+  }
+
+  .simple-btn {
+    position: relative;
+    z-index: 2;
+
+  }
 
   @media screen and (min-width: @screen-md-max) {
     padding-bottom: 15px;

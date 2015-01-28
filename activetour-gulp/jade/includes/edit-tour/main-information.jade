@@ -1,11 +1,12 @@
 include ../home/select-region
 include ../home/select-type
+.form-row
+  .col-sm-12
+    label.label_sm.-inline.-public-label
+      +checkbox('checkbox', 'alias', '-white-yellow')
+      | Опубликовать тур
 .allocated-block
   h2.add-subtitle 1. Основная информация о туре
-.form-row
-  label.label_sm.-inline
-    +checkbox('checkbox', 'alias', '-white-yellow')
-    | Опубликовать тур
 .form-row
   .label_md-wrapper.col-md-3
     label.label_md.-simple Название тура
