@@ -1838,35 +1838,35 @@ The provided classes are intended to be used with the array-like variables
 .tabs-link.active .avia,
 .tabs-link:hover .avia {
   background-image: url(../img/sprite.png);
-  background-position: 0px -98px;
+  background-position: 0px -119px;
   width: 19px;
   height: 11px;
 }
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
   background-image: url(../img/sprite.png);
-  background-position: 0px -119px;
+  background-position: 0px -98px;
   width: 14px;
   height: 11px;
 }
 .tabs-link.active .cars,
 .tabs-link:hover .cars {
   background-image: url(../img/sprite.png);
-  background-position: 0px -162px;
+  background-position: 0px -140px;
   width: 13px;
   height: 12px;
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
   background-image: url(../img/sprite.png);
-  background-position: 0px -206px;
+  background-position: 0px -250px;
   width: 10px;
   height: 12px;
 }
 .tabs-link.active .beach,
 .tabs-link:hover .beach {
   background-image: url(../img/sprite.png);
-  background-position: 0px -318px;
+  background-position: 0px -272px;
   width: 13px;
   height: 13px;
 }
@@ -1878,12 +1878,12 @@ The provided classes are intended to be used with the array-like variables
   height: 15px;
 }
 .picker__nav--prev:before {
-  background: transparent url('../img/sprite.png') 0px -364px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -341px no-repeat;
   height: 13px;
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -140px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -2297,8 +2297,12 @@ The provided classes are intended to be used with the array-like variables
   margin-bottom: 0px;
   position: relative;
 }
-.main-header.-landing .transparent-btn {
-  margin-right: 20px;
+.main-header .transparent-btn {
+  margin-right: 10px;
+}
+.main-header img.logo-round {
+  height: 38px;
+  width: auto;
 }
 .main-header.-fixed {
   position: fixed;
@@ -2314,10 +2318,6 @@ The provided classes are intended to be used with the array-like variables
 }
 .main-header.-fixed .logo-caption {
   display: none;
-}
-.main-header.-fixed img.logo-round {
-  height: 38px;
-  width: auto;
 }
 .main-header.-fixed .landing-menu {
   position: relative;
@@ -2426,6 +2426,50 @@ The provided classes are intended to be used with the array-like variables
   font-style: normal;
   text-align: center;
   line-height: 42px;
+}
+.person-cabinet {
+  float: right;
+}
+.person-cabinet .round-img,
+.person-cabinet .round-wrapper {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.person-cabinet_name {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 14px;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-right: 10px;
+  color: #ebc012;
+  border-bottom: 1px dashed #ebc012;
+  position: relative;
+  cursor: pointer;
+}
+.person-cabinet_dropmenu {
+  min-width: 160px;
+  width: 100%;
+  background-color: #67809f;
+  position: absolute;
+  top: 38px;
+  z-index: 1;
+  left: -5px;
+  border-radius: 0 0 10px 10px;
+}
+.person-cabinet_dropmenu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+.person-cabinet_dropmenu-list a {
+  cursor: pointer;
+  color: #fff;
+  line-height: 20px;
+}
+.person-cabinet_dropmenu-list a:hover {
+  color: #ebc012;
 }
 /****************/
 /** RESPONSIVE **/
@@ -3484,7 +3528,7 @@ The provided classes are intended to be used with the array-like variables
 }
 .equipment-header.open .arrow-down {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1105px;
+  background-position: 0px -1135px;
   width: 38px;
   height: 20px;
 }
@@ -3924,7 +3968,7 @@ h1.landing-title.hit-icon span:after {
   content: '';
   display: inline-block;
   background-image: url(../img/sprite.png);
-  background-position: 0px -2047px;
+  background-position: 0px -2124px;
   width: 141px;
   height: 33px;
   vertical-align: top;
@@ -3935,7 +3979,7 @@ h1.landing-title.hit2-icon span:after {
   content: '';
   display: inline-block;
   background-image: url(../img/sprite.png);
-  background-position: 0px -2090px;
+  background-position: 0px -2081px;
   width: 141px;
   height: 33px;
   vertical-align: top;
@@ -4403,6 +4447,23 @@ span.days-text {
 .round-img {
   display: inline-block;
 }
+.round-img.-xs.-white-border {
+  border: 1px solid #fff;
+}
+.round-img.-xs .user {
+  vertical-align: top;
+  margin-top: 4px;
+}
+.round-img.-xs img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.round-img.-xs img.-blue-border {
+  border: 1px solid #2574a9;
+  border-radius: 10px;
+  border-width: 1px;
+}
 .round-img.-sm img {
   height: 50px;
   width: 50px;
@@ -4453,6 +4514,23 @@ span.days-text {
   margin-top: -50px;
   position: relative;
   z-index: 1;
+}
+.round-wrapper {
+  display: inline-block;
+}
+.round-wrapper.-white-border {
+  border: 1px solid #fff;
+}
+.round-wrapper.-xs {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: top;
+}
+.round-wrapper.-xs .user {
+  vertical-align: top;
+  margin-top: 4px;
 }
 .allocated-block {
   border-radius: 10px;
@@ -4628,6 +4706,7 @@ fieldset {
   outline: 0 none;
   padding: 12px 22px;
   border-radius: 26px;
+  cursor: pointer;
 }
 .transparent-btn.-md {
   height: 38px;
@@ -4635,6 +4714,15 @@ fieldset {
   border-radius: 19px;
   padding: 0 20px;
   border-width: 1px;
+}
+.transparent-btn.-md.-round {
+  padding: 0;
+  text-align: center;
+  width: 38px;
+}
+.transparent-btn.-md.-round .icon {
+  vertical-align: top;
+  margin-top: 7px;
 }
 .transparent-btn.-lg {
   height: 60px;

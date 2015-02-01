@@ -4,10 +4,14 @@
   color:#fff;
   margin-bottom: 0px;
   position: relative;
-  &.-landing {
-    .transparent-btn {
-      margin-right: 20px;
-    }
+
+  .transparent-btn {
+      margin-right: 10px;
+  }
+
+  img.logo-round {
+    height: 38px;
+    width: auto;
   }
 
   &.-fixed {
@@ -25,10 +29,7 @@
       display: none;
     }
 
-    img.logo-round {
-        height: 38px;
-        width: auto;
-    }
+
 
     .landing-menu {
       position: relative;
@@ -166,6 +167,56 @@
   text-align: center;
   line-height:@counter-height;
 }
+
+.person-cabinet {
+  float: right;
+  .round-img, .round-wrapper {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+
+.person-cabinet_name {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 14px;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-right: 10px;
+  color: #ebc012;
+  border-bottom: 1px dashed #ebc012;
+  position: relative;
+  cursor: pointer;
+}
+
+.person-cabinet_dropmenu {
+  min-width:160px;
+  width: 100%;
+  background-color: #67809f;
+  position:absolute;
+  top: 38px;
+  z-index: 1;
+  left: -5px;
+  border-radius: 0 0 10px 10px;
+
+}
+
+.person-cabinet_dropmenu-list {
+  .clear-list();
+  padding: 0 10px 10px 10px;
+  
+  
+  a {
+    cursor: pointer;
+    color: #fff;
+    line-height:20px;
+    &:hover {
+      color: #ebc012;
+    }
+  }
+}
+
 
 /****************/
 /** RESPONSIVE **/

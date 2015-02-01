@@ -1,7 +1,33 @@
 header.main-header
-  .container
-    a(href="home.html")
+  .container(style="position: relative;")
+    a.fll(href="home.html").hidden-xs.hidden-sm
       img.logo.fll(src="img/logo.png",alt="Active tours - Активные туры", title="Active tours - Активные туры")
-    .logo-caption.fll Поиск и бронирование<br/> активных туров
-    a.flr.simple-btn.-yellow(href="add-tour.html") Добавить ваш тур
+    a.fll(href="home.html").visible-xs-inline-block.visible-sm-inline-block
+      img.logo-round(src="img/logo-sm.png",alt="Active tours - Активные туры", title="Active tours - Активные туры")
+    .logo-caption.fll.hidden-xs Поиск и бронирование<br/> активных туров
+
+    a.flr.simple-btn.-yellow(href="add-tour.html") Добавить тур
+    //a.flr.transparent-btn.-md.-white(href="register.html") Войти
+    .person-cabinet
+      .round-img.-xs.js-cabinet-toggle(style="display:none;")
+        img(src="img/goat.jpg")
+      .round-wrapper.-xs.-white-border.js-cabinet-toggle
+        i.user.icon
+      .person-cabinet_name.js-cabinet-toggle  Константинопольский К.
+        .person-cabinet_dropmenu.js-cabinet(style="display: none;")
+          ul.person-cabinet_dropmenu-list
+            li
+              a Личный кабинет
+            li
+              a Мои туры
+            li
+              a Мои гиды
+            li
+              a Сменить пароль
+            li
+              a Выйти
+
     +shareblock(true, 'flr', 'vk', 'fb', 'tw', 'rss')
+
+
+

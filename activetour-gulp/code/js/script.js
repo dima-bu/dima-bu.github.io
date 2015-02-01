@@ -696,5 +696,9 @@ $(document).ready(function () {
         $('.js-save-reg-btn').show();
     });
 
+    $('.js-cabinet-toggle').on('click', function(){
+        $('.js-cabinet').toggle();
+    });
+
 
 });

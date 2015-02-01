@@ -95,13 +95,24 @@
   outline: 0 none;
   padding: 12px 22px;
   border-radius: 26px;
-
+  cursor: pointer;
   &.-md {
     height: 38px;
     line-height: 36px;
     border-radius: 19px;
     padding: 0 20px;
     border-width: 1px;
+    
+    &.-round {
+      padding: 0;
+      text-align: center;
+      width: 38px;
+      .icon {
+        vertical-align: top;
+        margin-top:7px;
+      }
+    }
+
   }
 
   &.-lg {
