@@ -1838,28 +1838,28 @@ The provided classes are intended to be used with the array-like variables
 .tabs-link.active .avia,
 .tabs-link:hover .avia {
   background-image: url(../img/sprite.png);
-  background-position: 0px -119px;
+  background-position: 0px -98px;
   width: 19px;
   height: 11px;
 }
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
   background-image: url(../img/sprite.png);
-  background-position: 0px -98px;
+  background-position: 0px -77px;
   width: 14px;
   height: 11px;
 }
 .tabs-link.active .cars,
 .tabs-link:hover .cars {
   background-image: url(../img/sprite.png);
-  background-position: 0px -140px;
+  background-position: 0px -162px;
   width: 13px;
   height: 12px;
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
   background-image: url(../img/sprite.png);
-  background-position: 0px -250px;
+  background-position: 0px -184px;
   width: 10px;
   height: 12px;
 }
@@ -1878,14 +1878,32 @@ The provided classes are intended to be used with the array-like variables
   height: 15px;
 }
 .picker__nav--prev:before {
-  background: transparent url('../img/sprite.png') 0px -341px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -318px no-repeat;
   height: 13px;
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
   height: 12px;
   width: 7px;
+}
+html {
+  height: 100%;
+}
+body {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.main-wrapper {
+  padding-bottom: 100px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
 .search-form-wrapper-bg {
   background-position: 50% 0;
@@ -1915,9 +1933,6 @@ The provided classes are intended to be used with the array-like variables
 }
 .col-all-33p {
   width: 33.3333%;
-}
-.main-content {
-  min-height: 600px;
 }
 /*general form variables*/
 /*input variables*/
@@ -3528,7 +3543,7 @@ The provided classes are intended to be used with the array-like variables
 }
 .equipment-header.open .arrow-down {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1135px;
+  background-position: 0px -1075px;
   width: 38px;
   height: 20px;
 }
