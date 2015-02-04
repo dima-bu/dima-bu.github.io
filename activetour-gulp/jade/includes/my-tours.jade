@@ -4,6 +4,8 @@
     each tour in tours
       div(class="results-tour-item #{tour.publicclass} ")
         .disabled-mask
+        button.simple-btn.-yellow.-md.public-btn Опубликовать
+        button.simple-btn.-yellow.-md.unpublic-btn Снять с публикации
         //.switch-buttons.-yellow
         //  button.switch-btn.-yellow.active.js-switch-btn Опубликовать
         //  button.switch-btn.-yellow.js-switch-btn Не публиковать
@@ -45,7 +47,7 @@
                     span.icon-text_text-inner.-md #{tour.data}
                 .col-md-8.ta-r.col-lg-7
                   .price-lg 27 700 руб.
-                  a.simple-btn.-yellow.-md(href="edit-tour.html")   Редактировать тур
+                  a.simple-btn.-yellow.-md.edit-btn(href="edit-tour.html")   Редактировать тур
         .results-tour-footer.hidden-md.hidden-lg.-sm
           .icon-text.pull-left
             i.calendar-lg.count-day-wrapper.icon-text_icon
@@ -55,4 +57,4 @@
               span.icon-text_text-inner.-md #{tour.data}
           .pull-right
             .price-lg 27 700 руб.
-            a.simple-btn.-yellow.-md(href="edit-tour.html") Редактировать тур
+            a.simple-btn.-yellow.-md.edit-btn(href="edit-tour.html") Редактировать тур
