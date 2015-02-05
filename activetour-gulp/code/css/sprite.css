@@ -13,7 +13,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .arrow-down {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1135px;
+  background-position: 0px -1165px;
   width: 38px;
   height: 20px;
 }
@@ -31,7 +31,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .arrow-top {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1075px;
+  background-position: 0px -1135px;
   width: 38px;
   height: 20px;
 }
@@ -49,7 +49,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .calendar-sm {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1195px;
+  background-position: 0px -1225px;
   width: 20px;
   height: 20px;
 }
@@ -61,7 +61,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .close-icon {
   background-image: url(../img/sprite.png);
-  background-position: 0px -557px;
+  background-position: 0px -582px;
   width: 15px;
   height: 15px;
 }
@@ -73,25 +73,25 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .data-arrow-left {
   background-image: url(../img/sprite.png);
-  background-position: 0px -318px;
+  background-position: 0px -341px;
   width: 8px;
   height: 13px;
 }
 .data-arrow-right {
   background-image: url(../img/sprite.png);
-  background-position: 0px -206px;
+  background-position: 0px -162px;
   width: 7px;
   height: 12px;
 }
 .earth {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1165px;
+  background-position: 0px -1195px;
   width: 20px;
   height: 20px;
 }
 .geo {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1225px;
+  background-position: 0px -1045px;
   width: 19px;
   height: 20px;
 }
@@ -175,13 +175,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .logo-sm {
   background-image: url(../img/sprite.png);
-  background-position: 0px -250px;
+  background-position: 0px -206px;
   width: 147px;
   height: 12px;
 }
 .mail {
   background-image: url(../img/sprite.png);
-  background-position: 0px -364px;
+  background-position: 0px -318px;
   width: 19px;
   height: 13px;
 }
@@ -199,7 +199,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .africa {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1349px;
+  background-position: 0px -1477px;
   width: 17px;
   height: 22px;
 }
@@ -223,13 +223,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .australia {
   background-image: url(../img/sprite.png);
-  background-position: 0px -56px;
+  background-position: 0px -77px;
   width: 28px;
   height: 11px;
 }
 .europe {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1844px;
+  background-position: 0px -1809px;
   width: 14px;
   height: 25px;
 }
@@ -241,13 +241,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .russia {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1286px;
+  background-position: 0px -1255px;
   width: 18px;
   height: 21px;
 }
 .s-america {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1255px;
+  background-position: 0px -1286px;
   width: 19px;
   height: 21px;
 }
@@ -259,25 +259,25 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .rukzak {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1045px;
+  background-position: 0px -1075px;
   width: 19px;
   height: 20px;
 }
 .calendar-from {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1674px;
+  background-position: 0px -1542px;
   width: 22px;
   height: 23px;
 }
 .calendar-hover {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1608px;
+  background-position: 0px -1575px;
   width: 22px;
   height: 23px;
 }
 .calendar-to {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1542px;
+  background-position: 0px -1509px;
   width: 22px;
   height: 23px;
 }
@@ -289,7 +289,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .globus {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1509px;
+  background-position: 0px -1674px;
   width: 20px;
   height: 23px;
 }
@@ -301,7 +301,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .plus-blue {
   background-image: url(../img/sprite.png);
-  background-position: 0px -341px;
+  background-position: 0px -364px;
   width: 12px;
   height: 13px;
 }
@@ -319,7 +319,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .weekend {
   background-image: url(../img/sprite.png);
-  background-position: 0px -684px;
+  background-position: 0px -658px;
   width: 16px;
   height: 16px;
 }
@@ -337,7 +337,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .rss {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1477px;
+  background-position: 0px -1445px;
   width: 22px;
   height: 22px;
 }
@@ -349,7 +349,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .tw {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1413px;
+  background-position: 0px -1349px;
   width: 22px;
   height: 22px;
 }
@@ -361,7 +361,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .vk {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1445px;
+  background-position: 0px -1413px;
   width: 22px;
   height: 22px;
 }
@@ -379,19 +379,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .activetours {
   background-image: url(../img/sprite.png);
-  background-position: 0px -582px;
+  background-position: 0px -507px;
   width: 10px;
   height: 15px;
 }
 .avia-active {
   background-image: url(../img/sprite.png);
-  background-position: 0px -98px;
+  background-position: 0px -119px;
   width: 19px;
   height: 11px;
 }
 .avia {
   background-image: url(../img/sprite.png);
-  background-position: 0px -119px;
+  background-position: 0px -35px;
   width: 19px;
   height: 11px;
 }
@@ -409,43 +409,43 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .cars-active {
   background-image: url(../img/sprite.png);
-  background-position: 0px -162px;
+  background-position: 0px -140px;
   width: 13px;
   height: 12px;
 }
 .hotels-active {
   background-image: url(../img/sprite.png);
-  background-position: 0px -77px;
+  background-position: 0px -98px;
   width: 14px;
   height: 11px;
 }
 .hotels {
   background-image: url(../img/sprite.png);
-  background-position: 0px -35px;
+  background-position: 0px -56px;
   width: 14px;
   height: 11px;
 }
 .insurance-active {
   background-image: url(../img/sprite.png);
-  background-position: 0px -184px;
+  background-position: 0px -250px;
   width: 10px;
   height: 12px;
 }
 .insurance {
   background-image: url(../img/sprite.png);
-  background-position: 0px -140px;
+  background-position: 0px -228px;
   width: 10px;
   height: 12px;
 }
 .adventure {
   background-image: url(../img/sprite.png);
-  background-position: 0px -532px;
+  background-position: 0px -557px;
   width: 15px;
   height: 15px;
 }
 .aerostat {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1809px;
+  background-position: 0px -1844px;
   width: 18px;
   height: 25px;
 }
@@ -457,25 +457,25 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .autors {
   background-image: url(../img/sprite.png);
-  background-position: 0px -507px;
+  background-position: 0px -532px;
   width: 15px;
   height: 15px;
 }
 .cars {
   background-image: url(../img/sprite.png);
-  background-position: 0px -228px;
+  background-position: 0px -184px;
   width: 13px;
   height: 12px;
 }
 .comb {
   background-image: url(../img/sprite.png);
-  background-position: 0px -791px;
+  background-position: 0px -710px;
   width: 17px;
   height: 17px;
 }
 .events {
   background-image: url(../img/sprite.png);
-  background-position: 0px -710px;
+  background-position: 0px -791px;
   width: 17px;
   height: 17px;
 }
@@ -493,13 +493,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .family {
   background-image: url(../img/sprite.png);
-  background-position: 0px -658px;
+  background-position: 0px -684px;
   width: 21px;
   height: 16px;
 }
 .gastronomy {
   background-image: url(../img/sprite.png);
-  background-position: 0px -737px;
+  background-position: 0px -764px;
   width: 18px;
   height: 17px;
 }
@@ -511,19 +511,19 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .mountains {
   background-image: url(../img/sprite.png);
-  background-position: 0px -411px;
+  background-position: 0px -435px;
   width: 19px;
   height: 14px;
 }
 .no-standart {
   background-image: url(../img/sprite.png);
-  background-position: 0px -764px;
+  background-position: 0px -737px;
   width: 17px;
   height: 17px;
 }
 .photo {
   background-image: url(../img/sprite.png);
-  background-position: 0px -435px;
+  background-position: 0px -411px;
   width: 18px;
   height: 14px;
 }
@@ -553,7 +553,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .water {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1575px;
+  background-position: 0px -1608px;
   width: 23px;
   height: 23px;
 }

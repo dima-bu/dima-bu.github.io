@@ -10,16 +10,43 @@
     z-index: 1;
   }
 
+  .public-btn, .unpublic-btn {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+  }
+  
+  .public-btn {
+    display: inline-block;
+  }
+
+  .unpublic-btn {
+    display: none;
+  }
+
+
+
   &.active {
+
     .disabled-mask {
       display: none;
     }
+
+    .public-btn {
+      display: none;
+    }
+
+    .unpublic-btn {
+    display: inline-block;
+    }
+
+
   }
 
-  .simple-btn {
+  .edit-btn {
     position: relative;
     z-index: 2;
-
   }
 
   @media screen and (min-width: @screen-md-max) {
