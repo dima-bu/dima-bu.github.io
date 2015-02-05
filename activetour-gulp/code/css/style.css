@@ -4695,6 +4695,13 @@ fieldset {
   background: linear-gradient(to bottom, #f8c44e 0%, #e2ae37 100%);
   box-shadow: inset 0px 2px 1px 0px #e2ae37;
 }
+.simple-btn.-alert {
+  color: #fff;
+  background-color: #EF5350;
+}
+.simple-btn.-alert:hover {
+  background-color: #F44336;
+}
 .simple-btn.-blue {
   background-color: #108bbf;
   color: #ffffff;
