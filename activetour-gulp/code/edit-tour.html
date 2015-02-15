@@ -357,7 +357,7 @@
               <div class="col-md-4">
                 <div class="g_input-wrapper"><i class="icon globus icon-right js-open-select-region"></i>
                   <div type="text" placeholder="Выберите регион из списка" class="g_input js-open-select-region flex-height"></div>
-                  <input type="hidden" class="open-select-region_hidden">
+                  <input name="tour[region_id]" type="hidden" class="open-select-region_hidden">
                 </div>
               </div>
             </div>
@@ -368,7 +368,7 @@
               <div class="col-md-4">
                 <div class="g_input-wrapper"><i class="icon aerostat icon-right js-open-select-type"></i>
                   <div type="text" class="g_input js-open-select-type flex-height"></div>
-                  <input type="hidden" class="open-select-type_hidden">
+                  <input name="tour[activity_ids]" type="hidden" class="open-select-type_hidden">
                 </div>
               </div>
             </div>
@@ -1363,6 +1363,8 @@
     <script src="js/vendor/z-ru_RU.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.ikSelect.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_ru.js"></script>
     <script src="js/script.js"></script>
     <!--script(src="js/bootstrap.min.js")-->
   </body>

@@ -7,6 +7,10 @@ $(document).ready(function () {
     );
 
 
+    var addStatus=false;
+
+
+
     /*days count*/
 
     $('.g_input.-count').on('focus', function () {
@@ -321,7 +325,12 @@ $(document).ready(function () {
 
         var currentVal='';
         $('.selected-regions-list span').each(function (){
-            currentVal = currentVal +', ' + $(this).attr('id');
+            if (currentVal=='') {
+                currentVal = $(this).attr('id');
+            } else {
+                currentVal = currentVal +',' + $(this).attr('id');
+            }
+
         });
 
 
@@ -329,7 +338,11 @@ $(document).ready(function () {
         if (customval!=='') {
             $('.selected-regions-list span').append(', '+ customval);
             $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
-            currentVal = currentVal +', ' + customval;
+            if (currentVal=='') {
+                currentVal = $(this).attr('id');
+            } else {
+                currentVal = currentVal +',' + $(this).attr('id');
+            }
         } else {
             $('.selected-regions-list').clone().appendTo('.js-open-select-region.g_input');
         }
@@ -343,7 +356,11 @@ $(document).ready(function () {
 
         var currentVal='';
         $('.selected-tours-list span').each(function (){
-            currentVal = currentVal +', ' + $(this).attr('id');
+            if (currentVal=='') {
+                currentVal = $(this).attr('id');
+            } else {
+                currentVal = currentVal +',' + $(this).attr('id');
+            }
         });
         $('.open-select-type_hidden').val(currentVal);
 
@@ -670,10 +687,12 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    $('.to-reserve').on('click', function(){
+    $('.to-reserve').on('click', function(e){
+
         $('html, body').animate({
             scrollTop: ($("#reserve-section").offset().top - 20)
         }, 1000);
+        e.preventDefault();
     });
 
     $('.js-reg').on('click', function(){
@@ -699,6 +718,70 @@ $(document).ready(function () {
     $('.js-cabinet-toggle').on('click', function(){
         $('.js-cabinet').toggle();
     });
+
+    $('.js-print-page').on('click', function(){
+            window.print() ;
+    });
+
+
+    $("#new_tour").validate({
+        ignore: "input[type='text']:hidden",
+        errorPlacement: function(error, element) {
+            if (element.attr("type") == "file")
+            {
+                error.appendTo(element.parent().parent());
+                //error.insertAfter(".g_file_wrapper");
+            }
+            else
+            {
+                error.insertAfter(element);
+            }
+        },
+        rules: {
+
+            'tour[title]': {
+                required: true
+            },
+
+            'tour[main_picture]': {
+                required: true
+            },
+
+            'tour[price]': {
+                    required: true,
+                    number: true
+            },
+
+            'tour[region_id]': {
+                required: true
+            },
+
+            'tour[activity_ids]': {
+                required: true
+            },
+
+            'tour[description]': {
+                required: true
+            },
+
+            'tour[description_image_1]': {
+                required: true
+            },
+
+            'tour[description_image_2]': {
+                required: true
+            },
+
+            'tour[description_title]': {
+                required: true
+            }
+        }
+
+   });
+
+
+
+
 
 
 });

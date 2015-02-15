@@ -38,7 +38,7 @@
       <div class="main-content">
         <div class="container">
           <h1 class="add-title">Добовление тура</h1>
-          <section class="add-section search-form">
+          <form id="new_tour" name="new_tour" class="add-section search-form">
             <div style="display:none" class="select-region">
               <header class="select-type-header">
                 <div class="row">
@@ -276,12 +276,12 @@
             <div class="allocated-block">
               <h2 class="add-subtitle">1. Основная информация о туре</h2>
             </div>
-            <div class="form-row">
+            <div id="tourtitle" class="form-row">
               <div class="label_md-wrapper col-md-3 col-sm-3">
                 <label class="label_md -simple">Название тура</label>
               </div>
               <div class="col-md-9 col-sm-9">
-                <input class="g_input">
+                <input name="tour[title]" class="g_input">
               </div>
             </div>
             <div class="form-row">
@@ -304,7 +304,7 @@
                       <label class="label_md -simple g_file-text"> Загрузить фото</label>
                     </div>
                   </div>
-                  <input id="userfile" type="file" name="userfile" class="g_file">
+                  <input id="userfile" type="file" name="tour[main_picture]" class="g_file">
                 </div>
                 <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
               </div>
@@ -314,7 +314,7 @@
                 <label class="label_md -simple">Цена</label>
               </div>
               <div class="col-md-2 col-sm-3">
-                <input class="g_input">
+                <input name="tour[price]" class="g_input">
               </div>
               <div class="label_md-wrapper col-md-2 col-sm-3">
                 <label for="rub" class="label_md -simple"><span>рублей</span>
@@ -335,7 +335,7 @@
               <div class="col-md-4 col-sm-9">
                 <div class="g_input-wrapper"><i class="icon globus icon-right js-open-select-region"></i>
                   <div type="text" placeholder="Выберите регион из списка" class="g_input js-open-select-region flex-height"></div>
-                  <input type="hidden" class="open-select-region_hidden">
+                  <input name="tour[region_id]" type="hidden" class="open-select-region_hidden">
                 </div>
               </div>
             </div>
@@ -346,7 +346,7 @@
               <div class="col-md-4 col-sm-9">
                 <div class="g_input-wrapper"><i class="icon aerostat icon-right js-open-select-type"></i>
                   <div type="text" class="g_input js-open-select-type flex-height"></div>
-                  <input type="hidden" class="open-select-type_hidden">
+                  <input name="tour[activity_ids]" type="hidden" class="open-select-type_hidden">
                 </div>
               </div>
             </div>
@@ -370,7 +370,7 @@
                 <label class="label_md -simple">Выбрать гида</label>
               </div>
               <div class="col-md-4 col-sm-5">
-                <select class="g_select">
+                <select name="guideselect" class="g_select">
                   <option>Кондрашев А.Б.</option>
                   <option>Безпалапенковинковенко А.П.</option>
                   <option>Бухал Д.Д.</option>
@@ -380,7 +380,7 @@
               </div>
               <div class="col-md-3 col-sm-4"><a class="simple-btn -more-sqr -yellow fllf"><span class="plus">+</span> Добавить гида</a></div>
             </div>
-            <div class="form-row">
+            <div id="data-section" class="form-row">
               <div class="label_md-wrapper col-md-3 col-sm-3">
                 <label class="label_md -simple">Продолжительность</label>
               </div>
@@ -389,16 +389,17 @@
                   <div class="pull-left">
                     <div class="label_md -inline">C</div>
                     <div class="g_input-wrapper -calendar">
-                      <input type="data" class="g_input -from datepicker">
+                      <input type="data" name="datafrom" class="g_input -from datepicker">
                     </div>
                   </div>
                   <div class="pull-right">
                     <div class="label_md -inline">По</div>
                     <div class="g_input-wrapper -calendar">
-                      <input type="data" class="g_input -to datepicker">
+                      <input type="data" name="datato" class="g_input -to datepicker">
                     </div>
                   </div>
                 </div>
+                <label style="display:none;" class="error js-data-error">Поля дат не заполнены</label>
               </div>
             </div>
             <div class="form-row">
@@ -406,7 +407,7 @@
                 <label class="label_md -simple">Количество мест в группе</label>
               </div>
               <div class="col-md-2 col-sm-3">
-                <input class="g_input">
+                <input name="places" class="g_input">
               </div>
             </div>
             <div class="form-row">
@@ -634,7 +635,7 @@
                       <label class="label_md -simple g_file-text"> Загрузить фото</label>
                     </div>
                   </div>
-                  <input id="userfile" type="file" name="userfile" class="g_file">
+                  <input id="picdescrone" type="file" name="tour[description_image_1]" class="g_file">
                 </div>
                 <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
               </div>
@@ -644,7 +645,7 @@
                 <label class="label_md -simple">Заголовок для описания</label>
               </div>
               <div class="col-md-9 col-sm-9">
-                <input class="g_input">
+                <input name="tour[description_title]" class="g_input">
               </div>
             </div>
             <div class="form-row">
@@ -652,7 +653,7 @@
                 <label class="label_md -simple">Текст описания</label>
               </div>
               <div class="col-md-9 col-sm-9">
-                <textarea rows="5" class="g_textarea"></textarea>
+                <textarea rows="5" name="tour[description]" class="g_textarea"></textarea>
               </div>
             </div>
             <div class="form-row">
@@ -667,7 +668,7 @@
                       <label class="label_md -simple g_file-text"> Загрузить фото</label>
                     </div>
                   </div>
-                  <input id="userfile" type="file" name="userfile" class="g_file">
+                  <input id="picdescrtwo" type="file" name="tour[description_image_2]" class="g_file">
                 </div>
                 <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
               </div>
@@ -1275,11 +1276,11 @@
               <h2 class="add-subtitle ta-c">Ура, вы справились!</h2>
               <p class="md ta-c">Рекомнедуем все тщательно проверить и можно опубликовывать ваш тур!</p>
               <div class="buttons-center">
-                <button class="-more-sqr transparent-btn -lg -dark-blue"> Предварительный просмотр</button>
+                <button type="submit" class="-more-sqr transparent-btn -lg -dark-blue js-prescreen"> Предварительный просмотр</button>
                 <button class="simple-btn -more-sqr -yellow -lg">Опубликовать тур</button>
               </div>
             </div>
-          </section>
+          </form>
         </div>
       </div>
     </div>
@@ -1315,6 +1316,8 @@
     <script src="js/vendor/z-ru_RU.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.ikSelect.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_ru.js"></script>
     <script src="js/script.js"></script>
     <!--script(src="js/bootstrap.min.js")-->
   </body>

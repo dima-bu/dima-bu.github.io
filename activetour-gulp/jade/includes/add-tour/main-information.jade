@@ -2,11 +2,11 @@ include select-region
 include select-type
 .allocated-block
   h2.add-subtitle 1. Основная информация о туре
-.form-row
+.form-row#tourtitle
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Название тура
   .col-md-9.col-sm-9
-    input.g_input
+    input.g_input(name="tour[title]")
 .form-row
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Подзаголовок тура
@@ -21,13 +21,13 @@ include select-type
       .col-md-8.col-sm-8
         .label_md-wrapper
           label.label_md.-simple.g_file-text  Загрузить фото
-      input(id="userfile", type="file", name="userfile", class="g_file")
+      input(id="userfile", type="file", name="tour[main_picture]", class="g_file")
     .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
 .form-row
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Цена
   .col-md-2.col-sm-3
-    input.g_input
+    input.g_input(name="tour[price]")
   .label_md-wrapper.col-md-2.col-sm-3
     label.label_md.-simple(for="rub")
       span рублей
@@ -64,7 +64,7 @@ include select-type
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Выбрать гида
   .col-md-4.col-sm-5
-    select.g_select
+    select.g_select(name="guideselect")
       option Кондрашев А.Б.
       option Безпалапенковинковенко А.П.
       option Бухал Д.Д.
@@ -72,7 +72,7 @@ include select-type
       option Селиванов А.Ф.
    .col-md-3.col-sm-4
      a.simple-btn.-more-sqr.-yellow.fllf <span class="plus">+</span> Добавить гида
-.form-row
+.form-row#data-section
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Продолжительность
   .col-lg-4.col-md-5.col-sm-6
@@ -80,16 +80,17 @@ include select-type
       .pull-left
         .label_md.-inline C
         .g_input-wrapper.-calendar
-          input.g_input.-from.datepicker(type="data")
+          input.g_input.-from.datepicker(type="data" name="datafrom")
       .pull-right
         .label_md.-inline По
         .g_input-wrapper.-calendar
-          input.g_input.-to.datepicker(type="data")
+          input.g_input.-to.datepicker(type="data" name="datato")
+    label.error.js-data-error(style="display:none;") Поля дат не заполнены
 .form-row
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Количество мест в группе
   .col-md-2.col-sm-3
-    input.g_input
+    input.g_input(name="places")
 .form-row
   .col-md-4.col-md-offset-3.col-sm-4.col-sm-offset-3
     button.simple-btn.-more-sqr.-yellow.fll <span class="plus">+</span> Добавить еще одну дату тура
