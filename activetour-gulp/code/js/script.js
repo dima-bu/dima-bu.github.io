@@ -724,7 +724,7 @@ $(document).ready(function () {
     });
 
 
-    $("#new_tour").validate({
+   $("#new_tour").validate({
         ignore: "input[type='text']:hidden",
         errorPlacement: function(error, element) {
             if (element.attr("type") == "file")
@@ -778,10 +778,6 @@ $(document).ready(function () {
         }
 
    });
-
-
-
-
 
 
 });
