@@ -775,6 +775,12 @@ $(document).ready(function () {
             'tour[description_title]': {
                 required: true
             }
+        },
+        messages: {
+            'tour[price]': 'Не заполнена цена',
+            'tour[title]': 'У тура должно быть название',
+            'tour[region_id]': 'Выберите регион в котором будет проходить тур',
+            'tour[activity_ids]': 'Выберите один или несколько видов активности'
         }
 
    });

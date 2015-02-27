@@ -204,7 +204,9 @@
     box-shadow: none;
     border-radius: 10px 10px 0 0;
     .arrow-down {
-      .sprite(@arrow-top);
+      background: transparent url(@sprite-path)  @arrow-top-offset-x @arrow-top-offset-y no-repeat ;
+      height: @arrow-top-height;
+      width: @arrow-top-width;
     }
   }
 

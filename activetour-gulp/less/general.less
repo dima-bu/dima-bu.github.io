@@ -26,7 +26,9 @@ h1 {
       span:after {
         content: '';
         display: inline-block;
-        .sprite(@hit);
+        background: transparent url(@sprite-path)  @hit-offset-x @hit-offset-y no-repeat ;
+        height: @hit-height;
+        width: @hit-width;
         vertical-align: top;
         margin-left: -23px;
         margin-top: 11px;
@@ -37,7 +39,9 @@ h1 {
       span:after {
         content: '';
         display: inline-block;
-        .sprite(@hit2);
+        background: transparent url(@sprite-path)  @hit2-offset-x @hit2-offset-y no-repeat ;
+        height: @hit2-height;
+        width: @hit2-width;
         vertical-align: top;
         margin-left: -23px;
         margin-top: 11px;

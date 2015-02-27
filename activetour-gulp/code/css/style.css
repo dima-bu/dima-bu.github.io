@@ -1825,65 +1825,49 @@ LESS variables are information about icon's compiled state, stored under its ori
 The large array-like variables contain all information about a single icon
 @icon-home: x y offset_x offset_y width height total_width total_height image_path;
 */
-/*
-The provided classes are intended to be used with the array-like variables
-
-.icon-home {
-  .sprite-width(@icon-home);
-}
-.icon-email {
-  .sprite(@icon-email);
-}
-*/
 .tabs-link.active .avia,
 .tabs-link:hover .avia {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -119px;
-  width: 19px;
+  background: transparent url('../img/sprite.png') 0px -119px no-repeat;
   height: 11px;
+  width: 19px;
 }
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -98px;
-  width: 14px;
+  background: transparent url('../img/sprite.png') 0px -77px no-repeat;
   height: 11px;
+  width: 14px;
 }
 .tabs-link.active .cars,
 .tabs-link:hover .cars {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -140px;
-  width: 13px;
+  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
   height: 12px;
+  width: 13px;
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -250px;
-  width: 10px;
+  background: transparent url('../img/sprite.png') 0px -184px no-repeat;
   height: 12px;
+  width: 10px;
 }
 .tabs-link.active .beach,
 .tabs-link:hover .beach {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -272px;
-  width: 13px;
+  background: transparent url('../img/sprite.png') 0px -318px no-repeat;
   height: 13px;
+  width: 13px;
 }
 .tabs-link.active .activetours,
 .tabs-link:hover .activetours {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -607px;
-  width: 10px;
+  background: transparent url('../img/sprite.png') 0px -607px no-repeat;
   height: 15px;
+  width: 10px;
 }
 .picker__nav--prev:before {
-  background: transparent url('../img/sprite.png') 0px -341px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -295px no-repeat;
   height: 13px;
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -140px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -3561,10 +3545,9 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 .equipment-header.open .arrow-down {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1135px;
-  width: 38px;
+  background: transparent url('../img/sprite.png') 0px -1195px no-repeat;
   height: 20px;
+  width: 38px;
 }
 .equipment-header .rukzak-md {
   position: absolute;
@@ -4026,10 +4009,9 @@ h1.landing-title {
 h1.landing-title.hit-icon span:after {
   content: '';
   display: inline-block;
-  background-image: url(../img/sprite.png);
-  background-position: 0px -2124px;
-  width: 141px;
+  background: transparent url('../img/sprite.png') 0px -2124px no-repeat;
   height: 33px;
+  width: 141px;
   vertical-align: top;
   margin-left: -23px;
   margin-top: 11px;
@@ -4037,10 +4019,9 @@ h1.landing-title.hit-icon span:after {
 h1.landing-title.hit2-icon span:after {
   content: '';
   display: inline-block;
-  background-image: url(../img/sprite.png);
-  background-position: 0px -2081px;
-  width: 141px;
+  background: transparent url('../img/sprite.png') 0px -2081px no-repeat;
   height: 33px;
+  width: 141px;
   vertical-align: top;
   margin-left: -23px;
   margin-top: 11px;

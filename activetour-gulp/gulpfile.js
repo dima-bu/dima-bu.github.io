@@ -35,10 +35,15 @@ gulp.task('sprite', function () {
         }
     }));
     var spriteDataLess = gulp.src('forsprites/**/*.png').pipe(spritesmith({
-        imgName: '../img/sprite.png',
+        imgName: '@{img-path}',
+        // For Ruby
+        //imgName: '../img/sprite.png',
         cssName: 'sprite-variables.less',
         cssFormat: 'less',
-        padding: 10
+        padding: 10,
+        'cssOpts': {
+            'functions': false
+        }
     }));
     spriteData.pipe(gulp.dest('./code/css'));
     spriteDataLess.pipe(gulp.dest('less/general'));
