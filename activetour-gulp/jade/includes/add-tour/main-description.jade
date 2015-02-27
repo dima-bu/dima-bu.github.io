@@ -13,14 +13,15 @@
     .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
 .form-row
   .label_md-wrapper.col-md-3.col-sm-3
-    label.label_md.-simple Заголовок для описания
+    label.label_md.-simple Заголовок для описания №1
   .col-md-9.col-sm-9
     input.g_input(name="tour[description_title]")
 .form-row
   .label_md-wrapper.col-md-3.col-sm-3
-    label.label_md.-simple Текст описания
+    label.label_md.-simple Текст описания №1
   .col-md-9.col-sm-9
     textarea.g_textarea(rows=5 name="tour[description]")
+hr
 .form-row
   .label_md-wrapper.col-md-3.col-sm-3
     label.label_md.-simple Картинка для описания №2
@@ -32,3 +33,8 @@
           label.label_md.-simple.g_file-text  Загрузить фото
       input(id="picdescrtwo", type="file", name="tour[description_image_2]", class="g_file")
     .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
+.form-row
+  .label_md-wrapper.col-md-3.col-sm-3
+    label.label_md.-simple Текст описания №2
+  .col-md-9.col-sm-9
+    textarea.g_textarea(rows=5 name="tour[description]")

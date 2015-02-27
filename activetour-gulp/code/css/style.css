@@ -3181,6 +3181,15 @@ footer {
   outline: 0 none;
   padding: 7px 15px;
   font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+}
+.switch-btn:hover {
+  color: #333333;
+}
+.switch-btn:active {
+  text-decoration: none;
 }
 .switch-btn.-yellow.active {
   background-color: #f7cf2f;
@@ -3314,7 +3323,7 @@ footer {
 .icon-text > .pull-right {
   margin-left: 10px;
 }
-.icon-text button {
+.icon-text .simple-btn {
   margin-right: 20px;
 }
 .icon-text_icon {
@@ -3828,7 +3837,7 @@ ul.photolist li img {
 .info-item .-crop-btn > .pull-right {
   margin-left: 10px;
 }
-.info-item .-crop-btn button {
+.info-item .-crop-btn .simple-btn {
   margin-right: 20px;
 }
 .info-item .-crop-btn .almost-sqr-wrapper {
@@ -3906,7 +3915,7 @@ ul.photolist li img {
 .popup-select-icons .-crop-btn > .pull-right {
   margin-left: 10px;
 }
-.popup-select-icons .-crop-btn button {
+.popup-select-icons .-crop-btn .simple-btn {
   margin-right: 20px;
 }
 .popup-select-icons .-crop-btn .almost-sqr-wrapper {
@@ -3982,7 +3991,7 @@ ul.photolist li img {
   display: inline-block;
   line-height: 20px;
 }
-.media button {
+.media .simple-btn {
   margin-right: 20px;
 }
 /*Typography*/
@@ -4680,6 +4689,7 @@ fieldset {
   outline: 0 none;
   padding: 0 20px;
   display: inline-block;
+  cursor: pointer;
 }
 .simple-btn.-yellow {
   color: #2c3e50;
@@ -4721,6 +4731,11 @@ fieldset {
 .simple-btn.-transparent {
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+.simple-btn.-transparent.-blue {
+  background-color: transparent;
+  border: 2px solid #108bbf;
+  color: #108bbf;
 }
 .simple-btn:disabled:after {
   border-radius: 4px;
