@@ -1,0 +1,47 @@
+extends ./layout.jade
+
+block title
+  title Регистрация
+
+
+block main-content
+  .container
+      h1.add-title Личный кабинет
+
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link(href="user-orders.html") Мои заявки
+          .tabs-item
+            a.tabs-link.active(href="user-person-page.html") Личные данныe
+          .tabs-item
+            a.tabs-link(href="user-favorite-tours.html") Избранные туры
+          .tabs-item
+            a.tabs-link(href="user-change-pass.html") Сменить пароль
+      section.add-section
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-4
+            label.label_md.-simple ФИО
+          .col-md-9.col-sm-8
+            input.g_input(value="Арнацкий Игорь Владимирович")
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-4
+            label.label_md.-simple Логотип
+          .col-md-6.col-sm-6
+            .round-img.-md
+              img.img-responsive.-blue-border(src="img/guide.jpg")
+
+            .g_file_wrapper
+              button.simple-btn.-more-sqr.-yellow.fll Выбрать
+              .col-md-8.col-sm-8
+                .label_md-wrapper
+                  label.label_md.-simple.g_file-text  Загрузить другой логотип
+              input(id="userfile", type="file", name="userfile", class="g_file")
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-4
+            label.label_md.-simple Телефон
+          .col-md-6.col-sm-8
+            input.g_input(value="89234535333")
+        .form-row
+          .col-md-9.col-md-offset-3.col-sm-8.col-sm-offset-4
+            button.simple-btn.-more-sqr.-yellow Сохранить

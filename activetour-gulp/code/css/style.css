@@ -1827,13 +1827,13 @@ The large array-like variables contain all information about a single icon
 */
 .tabs-link.active .avia,
 .tabs-link:hover .avia {
-  background: transparent url('../img/sprite.png') 0px -119px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -56px no-repeat;
   height: 11px;
   width: 19px;
 }
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
-  background: transparent url('../img/sprite.png') 0px -77px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -98px no-repeat;
   height: 11px;
   width: 14px;
 }
@@ -1845,7 +1845,7 @@ The large array-like variables contain all information about a single icon
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
-  background: transparent url('../img/sprite.png') 0px -184px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
   height: 12px;
   width: 10px;
 }
@@ -1862,12 +1862,12 @@ The large array-like variables contain all information about a single icon
   width: 10px;
 }
 .picker__nav--prev:before {
-  background: transparent url('../img/sprite.png') 0px -295px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -341px no-repeat;
   height: 13px;
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -140px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -228px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -3554,7 +3554,7 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 .equipment-header.open .arrow-down {
-  background: transparent url('../img/sprite.png') 0px -1195px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1306px no-repeat;
   height: 20px;
   width: 38px;
 }
@@ -4018,7 +4018,7 @@ h1.landing-title {
 h1.landing-title.hit-icon span:after {
   content: '';
   display: inline-block;
-  background: transparent url('../img/sprite.png') 0px -2124px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2278px no-repeat;
   height: 33px;
   width: 141px;
   vertical-align: top;
@@ -4028,7 +4028,7 @@ h1.landing-title.hit-icon span:after {
 h1.landing-title.hit2-icon span:after {
   content: '';
   display: inline-block;
-  background: transparent url('../img/sprite.png') 0px -2081px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2192px no-repeat;
   height: 33px;
   width: 141px;
   vertical-align: top;
