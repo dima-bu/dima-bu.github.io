@@ -46,47 +46,70 @@
               <div class="tabs-item"><a href="user-change-pass.html" class="tabs-link">Сменить пароль</a></div>
             </div>
           </div>
-          <section class="add-section">
-            <div class="form-row">
+          <div class="results-tour-item">
+            <div class="row">
               <div class="col-md-2 col-sm-3">
-                <h4>Фото тура</h4>
+                <h3 style="margin-bottom: 10px;margin-top:0px;">Заявка № 4536</h3>
+                <h5 style="color:#333;">30.08.2015</h5>
               </div>
-              <div class="col-md-3 col-sm-4">
-                <h4>Название тура</h4>
+              <div class="col-md-4 col-sm-4">
+                <h3 style="margin-bottom: 10px;margin-top:0px;">Cтатус: заявка принята</h3>
               </div>
-              <div class="col-md-3 col-sm-5">
-                <h4>Статус заявки</h4>
+              <div class="col-md-6 col-sm-5 ta-r"><a style="margin-right: 10px;" class="simple-btn -more-sqr -alert">Отменить заявку</a><a class="simple-btn -more-sqr -yellow">Редактировать</a></div>
+            </div>
+            <div style="margin-bottom: 10px;" class="row">
+              <div class="col-md-2 col-sm-3"><img src="files/result1.jpg" class="img-responsive results-tour-img"></div>
+              <div class="col-md-10 col-sm-9">
+                <h3 style="margit-top: 10px;">КОЧЕВАЯ АЗИЯ, ЭТНОГРАФИЧЕСКАЯ ЭКСПЕДИЦИЯ</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="icon-text"><i class="calendar-lg count-day-wrapper icon-text_icon"><span class="count-day">6</span><span class="days-text">дней</span></i>
+                      <h6 class="icon-text_text -md">16 НОЯБРЯ — 17 ДЕКАБРЯ</h6>
+                    </div>
+                  </div>
+                  <div class="col-md-6 ta-r">
+                    <div class="price-lg">€1400 <small>  ~ 84,9 тыс. руб. </small></div>
+                  </div>
+                </div>
               </div>
+              <div class="col-md-4 col-sm-4"></div>
             </div>
-          </section>
-          <div class="form-row">
-            <div class="col-md-2 col-sm-3"><img src="files/result1.jpg" class="img-responsive results-tour-img"></div>
-            <div class="col-md-3 col-sm-4">
-              <h3>Рафтинг в карелии с медведями</h3>
-              <h5>12 сентября - 25 октября</h5>
-            </div>
-            <div class="col-md-3 col-sm-5">
-              <h3 class="status-wait">Ожидает подтверждения</h3>
-            </div>
-            <div style="padding-top: 11px" class="col-md-3 col-sm-5">
-              <button disabled="disabled" class="simple-btn -yellow">Оплатить</button>
-              <button class="simple-btn -yellow">Написать менеджеру тура</button>
+            <div class="row">
+              <div class="col-md-7 col-sm-7">
+                <div class="label_md-wrapper fll">
+                  <div class="label_md -simple">Количество человек:</div>
+                </div>
+                <div style="margin-left: 20px;" class="mans-wrapper fll"><i class="man-inactive icon const man-yactive"></i></div>
+              </div>
+              <div class="col-md-5 col-sm-5 ta-r"><a href="brone-and-sale.html" class="simple-btn -yellow -lg"><i class="icon rukzak"></i> Оплатить заявку</a></div>
             </div>
           </div>
-          <div class="form-row">
-            <div class="col-md-2 col-sm-3"><img src="files/result2.jpg" class="img-responsive results-tour-img"></div>
-            <div class="col-md-3 col-sm-4">
-              <h3>Рафтинг по Амазонке</h3>
-              <h5>12 августа - 23 октября</h5>
-            </div>
-            <div class="col-md-3 col-sm-5">
-              <h3 class="status-on">Заявка подтверждена</h3>
-            </div>
-            <div style="padding-top: 11px" class="col-md-3 col-sm-5">
-              <button class="simple-btn -yellow">Оплатить</button>
-              <button class="simple-btn -yellow">Написать менеджеру тура</button>
-            </div>
-          </div>
+          <!--section.add-section-->
+          <!--  .form-row-->
+          <!--    .col-md-2.col-sm-3-->
+          <!--      h4 Фото тура-->
+          <!--    .col-md-3.col-sm-4-->
+          <!--      h4 Название тура-->
+          <!--    .col-md-3.col-sm-5-->
+          <!--      h4 Статус заявки-->
+          <!---->
+          <!---->
+          <!--each order in orders-->
+          <!--  .form-row-->
+          <!--    .col-md-2.col-sm-3-->
+          <!--      img.img-responsive.results-tour-img(src="#{order.img}")-->
+          <!--    .col-md-6.col-sm-4-->
+          <!--      h3 #{order.title}-->
+          <!--      h5 #{order.data}-->
+          <!--    .col-md-3.col-sm-5()-->
+          <!--      h3(class="#{order.statusclass}") #{order.status}-->
+          <!--    .col-md-3.col-sm-5(style="padding-top: 11px")-->
+          <!--        if order.statusid-->
+          <!--          button.simple-btn.-yellow Оплатить-->
+          <!--          button.simple-btn.-yellow Написать менеджеру тура-->
+          <!--        else-->
+          <!--          button.simple-btn.-yellow(disabled='disabled') Оплатить-->
+          <!--          button.simple-btn.-yellow Написать менеджеру тура-->
         </div>
       </div>
     </div>

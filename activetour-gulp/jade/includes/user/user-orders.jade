@@ -1,27 +1,62 @@
-- var orders = [{title: 'Рафтинг в карелии с медведями', status: 'Ожидает подтверждения', statusclass: 'status-wait', statusid: 0,  img: 'files/result1.jpg', imgguide: 'img/guide.jpg', guidename: 'Дмитрий Кольцов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.7 ',price: '35 000', duration: '7', typeicon: 'mountains', data: '12 сентября - 25 октября', place: 'Россиия, Карелия', type: 'Вода', subtype: 'Рафтинг', descr: 'Карелия по праву считается одним из самых лучших мест России для сплава на байдарках, каяках, катамаранах, рафтинг-туров.  Разнообразие водных маршрутов.' , publicclass: ''}, {title: 'Рафтинг по Амазонке',  status: 'Заявка подтверждена', statusid: 1, statusclass: 'status-on', img: 'files/result2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'hikking', data: '12 августа - 23 октября', place: 'Перу, Амазонка', type: 'Горы', subtype: 'Треккинг', descr: 'Амазонка – одна из самых легендарных и малоисследованных речных систем планеты. Хищные кайманы, несметные птичьи стаи и гордые индейские племена, и сегодня нежелающие менять свой исконный уклад жизни.', publicclass: 'active'}]
-  section.add-section
-    .form-row
-      .col-md-2.col-sm-3
-        h4 Фото тура
-      .col-md-3.col-sm-4
-        h4 Название тура
-      .col-md-3.col-sm-5
-        h4 Статус заявки
+.results-tour-item
+  .row
+    .col-md-2.col-sm-3
+      h3(style="margin-bottom: 10px;margin-top:0px;") Заявка № 4536
+      h5(style="color:#333;") 30.08.2015
+    .col-md-4.col-sm-4
+      h3(style="margin-bottom: 10px;margin-top:0px;") Cтатус: заявка принята
+    .col-md-6.col-sm-5.ta-r
+      a.simple-btn.-more-sqr.-alert(style="margin-right: 10px;") Отменить заявку
+      a.simple-btn.-more-sqr.-yellow Редактировать
+  .row(style="margin-bottom: 10px;")
+    .col-md-2.col-sm-3
+      img.img-responsive.results-tour-img(src="files/result1.jpg")
+    .col-md-10.col-sm-9
+      h3(style="margit-top: 10px;") КОЧЕВАЯ АЗИЯ, ЭТНОГРАФИЧЕСКАЯ ЭКСПЕДИЦИЯ
+      .row
+        .col-md-6
+          div.icon-text
+            <i class="calendar-lg count-day-wrapper icon-text_icon"><span class="count-day">6</span><span class="days-text">дней</span></i>
+            h6.icon-text_text.-md 16 НОЯБРЯ — 17 ДЕКАБРЯ
+        .col-md-6.ta-r
+          .price-lg €1400 <small>  ~ 84,9 тыс. руб. </small>
+    .col-md-4.col-sm-4
 
 
-  each order in orders
-    .form-row
-      .col-md-2.col-sm-3
-        img.img-responsive.results-tour-img(src="#{order.img}")
-      .col-md-3.col-sm-4
-        h3 #{order.title}
-        h5 #{order.data}
-      .col-md-3.col-sm-5()
-        h3(class="#{order.statusclass}") #{order.status}
-      .col-md-3.col-sm-5(style="padding-top: 11px")
-          if order.statusid
-            button.simple-btn.-yellow Оплатить
-            button.simple-btn.-yellow Написать менеджеру тура
-          else
-            button.simple-btn.-yellow(disabled='disabled') Оплатить
-            button.simple-btn.-yellow Написать менеджеру тура
+  .row
+    .col-md-7.col-sm-7
+      .label_md-wrapper.fll
+       .label_md.-simple Количество человек:
+      .mans-wrapper.fll(style="margin-left: 20px;")
+        i.man-inactive.icon.const.man-yactive
+    .col-md-5.col-sm-5.ta-r
+       <a href="brone-and-sale.html" class="simple-btn -yellow -lg"><i class="icon rukzak"></i> Оплатить заявку</a>
+
+
+//- var orders = [{title: 'Рафтинг в карелии с медведями', status: 'Ожидает подтверждения', statusclass: 'status-wait', statusid: 0,  img: 'files/result1.jpg', imgguide: 'img/guide.jpg', guidename: 'Дмитрий Кольцов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.7 ',price: '35 000', duration: '7', typeicon: 'mountains', data: '12 сентября - 25 октября', place: 'Россиия, Карелия', type: 'Вода', subtype: 'Рафтинг', descr: 'Карелия по праву считается одним из самых лучших мест России для сплава на байдарках, каяках, катамаранах, рафтинг-туров.  Разнообразие водных маршрутов.' , publicclass: ''}, {title: 'Рафтинг по Амазонке',  status: 'Заявка подтверждена', statusid: 1, statusclass: 'status-on', img: 'files/result2.jpg', imgguide: 'img/guide.jpg', guidename: 'Михаил Копытов ', guidesubtitle: 'Гид-проводник. Рейтинг 4.8 ',price: '65 000', duration: '14', typeicon: 'hikking', data: '12 августа - 23 октября', place: 'Перу, Амазонка', type: 'Горы', subtype: 'Треккинг', descr: 'Амазонка – одна из самых легендарных и малоисследованных речных систем планеты. Хищные кайманы, несметные птичьи стаи и гордые индейские племена, и сегодня нежелающие менять свой исконный уклад жизни.', publicclass: 'active'}]
+//section.add-section
+//  .form-row
+//    .col-md-2.col-sm-3
+//      h4 Фото тура
+//    .col-md-3.col-sm-4
+//      h4 Название тура
+//    .col-md-3.col-sm-5
+//      h4 Статус заявки
+//
+//
+//each order in orders
+//  .form-row
+//    .col-md-2.col-sm-3
+//      img.img-responsive.results-tour-img(src="#{order.img}")
+//    .col-md-6.col-sm-4
+//      h3 #{order.title}
+//      h5 #{order.data}
+//    .col-md-3.col-sm-5()
+//      h3(class="#{order.statusclass}") #{order.status}
+//    .col-md-3.col-sm-5(style="padding-top: 11px")
+//        if order.statusid
+//          button.simple-btn.-yellow Оплатить
+//          button.simple-btn.-yellow Написать менеджеру тура
+//        else
+//          button.simple-btn.-yellow(disabled='disabled') Оплатить
+//          button.simple-btn.-yellow Написать менеджеру тура
