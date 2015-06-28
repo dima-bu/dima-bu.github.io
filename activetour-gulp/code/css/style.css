@@ -1839,19 +1839,19 @@ The large array-like variables contain all information about a single icon
 }
 .tabs-link.active .cars,
 .tabs-link:hover .cars {
-  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -184px no-repeat;
   height: 12px;
   width: 13px;
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
-  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -228px no-repeat;
   height: 12px;
   width: 10px;
 }
 .tabs-link.active .beach,
 .tabs-link:hover .beach {
-  background: transparent url('../img/sprite.png') 0px -318px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -295px no-repeat;
   height: 13px;
   width: 13px;
 }
@@ -1867,7 +1867,7 @@ The large array-like variables contain all information about a single icon
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -228px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -250px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -4028,7 +4028,7 @@ h1.landing-title.hit-icon span:after {
 h1.landing-title.hit2-icon span:after {
   content: '';
   display: inline-block;
-  background: transparent url('../img/sprite.png') 0px -2192px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2106px no-repeat;
   height: 33px;
   width: 141px;
   vertical-align: top;
