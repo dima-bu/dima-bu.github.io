@@ -4668,10 +4668,16 @@ fieldset {
   margin-right: 10px;
 }
 .error {
-  color: #EF5350;
+  color: #ef5350;
 }
 .open-select-region_hidden {
   display: none;
+}
+.status-on {
+  color: #5cb85c;
+}
+.status-wait {
+  color: #f7cf2f;
 }
 /*SMALL and EXTRA SMALL -- sm and xs*/
 @media screen and (max-width: 991px) {

@@ -1,20 +1,19 @@
-extends ./layout.jade
+extends  ./layout.jade
 
 block title
   title Регистрация
 
-
 block main-content
   .container
-    h1.add-title Мои туры
+    h1.add-title Мои заявки
     .allocated-block.-full
       .tabs
         .tabs-item
-          a.tabs-link(href="user-order-page.html") Мои заявки
+          a.tabs-link.active(href="user-order-page.html") Мои заявки
         .tabs-item
           a.tabs-link(href="user-person-page.html") Личные данныe
         .tabs-item
-          a.tabs-link.active(href="user-favorite-tours.html") Избранные туры
+          a.tabs-link(href="user-favorite-tours.html") Избранные туры
         .tabs-item
           a.tabs-link(href="user-change-pass.html") Сменить пароль
-    include  includes/my-tours
+    include  includes/user/user-orders

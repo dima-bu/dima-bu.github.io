@@ -1,0 +1,64 @@
+extends ./layout.jade
+
+block title
+  title Купить или забронировать путешествие
+
+block main-content
+  .container
+    h1.add-title Вы можете купить или забронировать тур
+    h2(style="margin-bottom: 40px;") Активный тур в Боровое, Казахстан, с элементами скалолазания в компании профессиональных путешественников команды "Миклухо.Трэвэл"
+    form
+      .form-row
+        .label_lg.col-md-3.col-sm-3  Введите Ваше имя
+        .col-md-6
+          input.g_input(type="text")
+      .form-row
+        .label_lg.col-md-3.col-sm-3  Введите Ваш телефон
+        .col-md-6
+          input.g_input(type="text")
+      .form-row
+        .label_lg.col-md-3.col-sm-3  Введите Ваш E-mail
+        .col-md-6
+          input.g_input(type="text")
+      .form-row
+        .label_lg.col-md-3.col-sm-3  Выберите дату
+        .col-md-6
+          select.g_select
+            option 11 января - 23 января 2015
+            option 8 марта - 20 марта 2015
+      .form-row
+        .label_lg.col-md-4.col-sm-3  Укажите количество человек
+        .col-md-6
+          .mans-wrapper
+            i.man-inactive.icon.js-man
+            i.man-inactive.icon.js-man
+            i.man-inactive.icon.js-man
+            i.man-inactive.icon.js-man
+      .form-row
+        .label_lg.col-md-3.col-sm-3  Укажите сумму оплаты
+        .col-md-3
+          select.g_select
+            option 8700 рублей (100%)
+            option 4350 рублей (50%)
+            option Забронировать (бесплатно)
+            option Другая сумма
+        .col-md-2
+          input.g_input(type="text" placeholder="Введите сумму")
+        .col-md-2.label_md-wrapper
+          .label_md.-simple рублей
+
+      .form-row
+        .col-md-5.col-md-offset-3
+          button.simple-btn.-yellow.-lg(style="width: 180px;") Далее
+      .row
+        .col-md-7.col-md-offset-3
+          p.light-text Нажимая «Далее» я даю согласие на обработку персональных данных и соглашаюсь с <a href="/agreement">политикой конфиденциальности</a>
+      .form-row.-inline
+        .col-md-7.col-md-offset-3
+          .button-check-wrapper-form
+            .checking_item.-white-yellow.checking_item-inline
+              input(type="checkbox" id="adve" checked="checked" value="1" class="checking_input" name="booking[subscribe]")
+              .checking_input-pseudo-wrapper
+                .checking_input-pseudo
+                  i.white-check.icon
+            label.label_sm Я согласен на получение рекламной информации от "Миклухо.трэвел"
