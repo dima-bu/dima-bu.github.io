@@ -1827,31 +1827,31 @@ The large array-like variables contain all information about a single icon
 */
 .tabs-link.active .avia,
 .tabs-link:hover .avia {
-  background: transparent url('../img/sprite.png') 0px -35px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -56px no-repeat;
   height: 11px;
   width: 19px;
 }
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
-  background: transparent url('../img/sprite.png') 0px -77px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -98px no-repeat;
   height: 11px;
   width: 14px;
 }
 .tabs-link.active .cars,
 .tabs-link:hover .cars {
-  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
   height: 12px;
   width: 13px;
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
-  background: transparent url('../img/sprite.png') 0px -228px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
   height: 12px;
   width: 10px;
 }
 .tabs-link.active .beach,
 .tabs-link:hover .beach {
-  background: transparent url('../img/sprite.png') 0px -272px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -318px no-repeat;
   height: 13px;
   width: 13px;
 }
@@ -1867,7 +1867,7 @@ The large array-like variables contain all information about a single icon
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -228px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -3554,7 +3554,7 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 .equipment-header.open .arrow-down {
-  background: transparent url('../img/sprite.png') 0px -1156px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1306px no-repeat;
   height: 20px;
   width: 38px;
 }

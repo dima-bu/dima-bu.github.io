@@ -17,7 +17,7 @@ gulp.task('less', function(){
         //.pipe(sourcemaps.write())
         .pipe(gulp.dest('./code/css'))
         .pipe(gulp.dest('./code/css/'))
-        .pipe(connect.reload());
+        //.pipe(connect.reload());
 });
 
 gulp.task('sprite', function () {
@@ -69,7 +69,7 @@ gulp.task('jade', function() {
             data: JSON.parse ( fs.readFileSync('code/home.json', { encoding: 'utf8' } ))
         }) )
         .pipe(gulp.dest('./code/'))
-        .pipe(connect.reload());
+        //.pipe(connect.reload());
 
 });
 
@@ -88,4 +88,4 @@ gulp.task('watch', function(){
     gulp.watch(['forsprites/*.**', 'forsprites/**/*.**'], ['sprite'])
 });
 
-gulp.task('default', [ 'jade', 'sprite', 'watch']);
+gulp.task('default', [ 'jade', 'watch']);

@@ -5,50 +5,64 @@ block title
 
 
 block main-content
+  include  includes/add-brone-popup
   .container
-      h1.add-title Заявки на туры
+    h1.add-title Заявки на туры
 
-      .allocated-block.-full
-        .tabs
-          .tabs-item
-            a.tabs-link(href="agency-person-page.html") Личные данныe агенства
-          .tabs-item
-            a.tabs-link(href="agency-orders-page.html") Заявки на туры
-          .tabs-item
-            a.tabs-link(href="agency-my-tours.html") Мои туры
-          .tabs-item
-            a.tabs-link.active(href="agency-my-guides.html") Мои гиды
-          .tabs-item
-            a.tabs-link(href="change-pass.html") Сменить пароль
-      section.add-section
+    .allocated-block.-full
+      .tabs
+        .tabs-item
+          a.tabs-link.active(href="agency-orders-page.html") Заявки на туры
+        .tabs-item
+          a.tabs-link(href="agency-person-page.html") Личные данныe агенства
+        .tabs-item
+          a.tabs-link(href="agency-my-tours.html") Мои туры
+        .tabs-item
+          a.tabs-link(href="agency-my-guides.html") Мои гиды
+        .tabs-item
+          a.tabs-link(href="change-pass.html") Сменить пароль
 
-        .form-row
-          .col-md-6.col-sm-6
-            .media
-              .round-img.-md.fll.-left
-                img.img-responsive.-blue-border(src="img/guide.jpg")
-              .guide-wrapper.media-body
-                h4.-name Михаил Копытов
-                h5.-subname Гид-проводник. Рейтинг 4.8
-          .col-md-6.col-sm-6.ta-r
-            a.simple-btn.-yellow.-md(href="agency-guide-edit-page.html") Редактировать гида
-        .form-row
-          .col-md-6.col-sm-6
-            .media
-              .round-img.-md.fll.-left
-                img.img-responsive.-blue-border(src="img/guide.jpg")
-              .guide-wrapper.media-body
-                h4.-name Михаил Копытов
-                h5.-subname Гид-проводник. Рейтинг 4.8
-          .col-md-6.col-sm-6.ta-r
-            a.simple-btn.-yellow.-md(href="agency-guide-edit-page.html") Редактировать гида
-        .form-row
-          .col-md-6.col-sm-6
-            .media
-              .round-img.-md.fll.-left
-                img.img-responsive.-blue-border(src="img/guide.jpg")
-              .guide-wrapper.media-body
-                h4.-name Михаил Копытов
-                h5.-subname Гид-проводник. Рейтинг 4.8
-          .col-md-6.col-sm-6.ta-r
-            a.simple-btn.-yellow.-md(href="agency-guide-edit-page.html") Редактировать гида
+    div.ta-r(style="margin-bottom: 20px;")
+      <a href="#" class="simple-btn -yellow -lg"> Добавить заявку вручную</a>
+    .results-tour-item
+      .row
+        .col-md-2.col-sm-3
+          h3(style="margin-bottom: 10px;margin-top:0px;") Заявка № 4536
+          h5(style="color:#333;") 30.08.2015
+        .col-md-4.col-sm-4
+          h3(style="margin-bottom: 10px;margin-top:0px;") Cтатус: заявка принята
+        .col-md-6.col-sm-5.ta-r
+          a.simple-btn.-more-sqr.-alert(style="margin-right: 10px;") Отменить заявку
+          //a.simple-btn.-more-sqr.-yellow Написать менеджеру
+      .row(style="margin-bottom: 10px;")
+        .col-md-2.col-sm-3
+          img.img-responsive.results-tour-img(src="files/result1.jpg")
+        .col-md-10.col-sm-9
+          h3(style="margit-top: 10px;") КОЧЕВАЯ АЗИЯ, ЭТНОГРАФИЧЕСКАЯ ЭКСПЕДИЦИЯ
+          .row
+            .col-md-6
+              div.icon-text
+                <i class="calendar-lg count-day-wrapper icon-text_icon"><span class="count-day">6</span><span class="days-text">дней</span></i>
+                h6.icon-text_text.-md 16 НОЯБРЯ — 17 ДЕКАБРЯ
+            .col-md-6.ta-r
+              .price-lg €1400 <small>  ~ 84,9 тыс. руб. </small>
+        .col-md-4.col-sm-4
+
+
+      .row
+        .col-md-6.col-sm-6
+          .label_md-wrapper.fll
+            .label_md.-simple <b>ФИО</b>: Арнацкий Игорь Александрович
+        .col-md-6.col-sm-6
+          .label_md-wrapper.fll
+            .label_md.-simple <b>Е-mail</b>: 22april@rambler.ru
+
+      .row
+        .col-md-6.col-sm-6
+          .label_md-wrapper.fll
+            .label_md.-simple <b>Количество человек</b>:
+          .mans-wrapper.fll(style="margin-left: 20px;")
+            i.man-inactive.icon.const.man-yactive
+        .col-md-6.col-sm-6
+          .label_md-wrapper.fll
+            .label_md.-simple <b>Телефон</b>: 89236863723
