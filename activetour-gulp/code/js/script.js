@@ -10,6 +10,24 @@ $(document).ready(function () {
     var addStatus=false;
 
 
+    /*show all dates*/
+
+
+
+    $('.js-show-all-dates').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).parents('.results-tour-footer').find('.js-all-dates').toggle();
+    });
+
+    $('body').on('click', function (event) {
+        if ($(event.target).closest('.open-dates').length) return;
+        $('.open-dates').hide();
+        event.stopPropagation();
+    })
+
+
+
 
     /*days count*/
 

@@ -24,6 +24,7 @@
                     i(class="icon #{tour.typeicon}")
                   .icon-text_text
                     span.icon-text_text-inner #{tour.type}, #{tour.subtype}
+                    span все даты
               .col-md-6.col-sm-6.col-xs-6
                 .results-tour-type.icon-text
                   .almost-sqr-wrapper.-md.icon-text_icon
@@ -31,14 +32,38 @@
                   .icon-text_text
                     span.icon-text_text-inner #{tour.place}
 
-            .results-tour-footer.hidden-sm.hidden-xs
+            .results-tour-footer.hidden-sm.hidden-xs(style="position:relative;")
               .row
+                .open-dates.js-all-dates(style="display: none;")
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item 3 июля - 10 июля
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item 12 сентября - 14 октября
+                  .open-dates_item #{tour.data}
+                  .open-dates_item 1 августа - 4 сентября
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item 12 сентября - 14 октября
+                  .open-dates_item #{tour.data}
+                  .open-dates_item 1 августа - 4 сентября
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
+                  .open-dates_item #{tour.data}
                 .icon-text.col-md-4.col-lg-5
                   i.calendar-lg.count-day-wrapper.icon-text_icon
                     span.count-day #{tour.duration}
                     span.days-text  дней
-                  .icon-text_text.-md
+                  .icon-text_text.-md(style="line-height: 20px;")
                     span.icon-text_text-inner.-md #{tour.data}
+                    span.open-date-link.js-show-all-dates(href="#" style="") показать все даты
                 .col-md-8.ta-r.col-lg-7
                   .price-lg 27 700 руб.
                   button.simple-btn.-yellow.-md   Перейти к туру
