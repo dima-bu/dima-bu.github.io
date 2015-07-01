@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Add tour title11</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sprite.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.nouislider.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="main-header">
+        <div style="position: relative;" class="container"><a href="home.html" class="fll hidden-xs hidden-sm"><img src="img/logo.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo fll"></a><a href="home.html" class="fll visible-xs-inline-block visible-sm-inline-block"><img src="img/logo-sm.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo-round"></a>
+          <div class="logo-caption fll hidden-xs">Поиск и бронирование<br/> активных туров</div><a href="add-tour.html" class="flr simple-btn -yellow">Добавить тур</a>
+          <!--a.flr.transparent-btn.-md.-white(href="register.html") Войти-->
+          <div class="person-cabinet">
+            <div style="display:none;" class="round-img -xs js-cabinet-toggle"><img src="img/goat.jpg"></div>
+            <div class="round-wrapper -xs -white-border js-cabinet-toggle"><i class="user icon"></i></div>
+            <div class="person-cabinet_name js-cabinet-toggle"> Константинопольский К.
+              <div style="display: none;" class="person-cabinet_dropmenu js-cabinet">
+                <ul class="person-cabinet_dropmenu-list">
+                  <li><a href="agency-person-page.html">Личный кабинет</a></li>
+                  <li><a href="agency-my-tours.html">Мои туры</a></li>
+                  <li><a href="agency-my-guides.html">Мои гиды</a></li>
+                  <li><a href="change-pass.html">Сменить пароль</a></li>
+                  <li><a>Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flr share-menu">
+            <div class="share-menu_caption">Поделиться</div><a href="#" class="share-menu_link"><i class="vk icon"></i></a><a href="#" class="share-menu_link"><i class="fb icon"></i></a><a href="#" class="share-menu_link"><i class="tw icon"></i></a><a href="#" class="share-menu_link"><i class="rss icon"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="container">
+          <h1 class="add-title">Добовление тура</h1>
+          <div class="allocated-block -full">
+            <div class="tabs">
+              <div class="tabs-item"><a href="add-tour_step1.html" class="tabs-link active">Основная информация</a></div>
+              <div class="tabs-item"><a href="add-tour_step2.html" class="tabs-link">Даты</a></div>
+              <div class="tabs-item"><a href="add-tour_step3.html" class="tabs-link">Инфографика о туре</a></div>
+              <div class="tabs-item"><a href="add-tour_step4.html" class="tabs-link">Описание по дням</a></div>
+              <div class="tabs-item"><a href="add-tour_step5.html" class="tabs-link">Что входит, снаряжение, документы</a></div>
+              <div class="tabs-item"><a href="add-tour_step6.html" class="tabs-link">Фотографии, видео</a></div>
+              <div class="tabs-item"><a href="add-tour_step7.html" class="tabs-link">Отзывы, FAQ</a></div>
+            </div>
+          </div>
+          <form id="new_tour" name="new_tour" class="add-section search-form">
+            <div style="display:none" class="select-region">
+              <header class="select-type-header">
+                <div class="row">
+                  <div class="col-sm-9">
+                    <h4>Выберите регион, в котором будет проходить ваш тур:</h4>
+                    <h5>Если вашего подрегиона нет в списке - выберите регион, а подрегион внесите в поле "Добавить свой регион"</h5>
+                  </div>
+                  <div class="col-sm-3 ta-r">
+                    <div class="close-btn js-close-select-region">Закрыть <i class="icon close-icon"></i></div>
+                  </div>
+                </div>
+              </header>
+              <section class="tour-list-wrapper row">
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon russia"></i></span><span regionid="101" class="tour-list-text">Россия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-3" class="tour-list-text">  Карелия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-4" class="tour-list-text">  Алтай</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-5" class="tour-list-text">  Черное море</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-6" class="tour-list-text">  Камчатка</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-7" class="tour-list-text">   Байкал </span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-8" class="tour-list-text">   Крым </span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon australia"></i></span><span regionid="102" class="tour-list-text">Австралия и Океания</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-9" class="tour-list-text">  Филиппины</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-10" class="tour-list-text">  Французская Полинезия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-11" class="tour-list-text">  Новая Зеландия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-12" class="tour-list-text">  Фиджи</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-13" class="tour-list-text">  Гавайи</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon europe"></i></span><span regionid="103" class="tour-list-text">Европа</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-14" class="tour-list-text">  Альпы</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-15" class="tour-list-text">  Испания</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-16" class="tour-list-text">  Франция</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-17" class="tour-list-text">  Италия</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon asia"></i></span><span regionid="104" class="tour-list-text">Азия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-18" class="tour-list-text">  Китай</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-19" class="tour-list-text">  Индия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-20" class="tour-list-text">  Таиланд</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-21" class="tour-list-text">  Индонезия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-22" class="tour-list-text">  Бали</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-23" class="tour-list-text">  Япония</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon africa"></i></span><span regionid="105" class="tour-list-text">Африка</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-25" class="tour-list-text">  Египет</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-26" class="tour-list-text">  Моррокко</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-27" class="tour-list-text">  Юар</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-28" class="tour-list-text">  Тунис</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-29" class="tour-list-text">  Килиманджаро</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon s-america"></i></span><span regionid="106" class="tour-list-text">Южная Америка</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-30" class="tour-list-text">  Бразилия</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-31" class="tour-list-text">  Перу</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-32" class="tour-list-text">  Эквадор</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-33" class="tour-list-text">  Аргентина</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-34" class="tour-list-text">  Чили</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-main-region"><span class="tour-icon-wrapper"><i class="icon n-america"></i></span><span regionid="107" class="tour-list-text">Северная Америка</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-35" class="tour-list-text">  Канада</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-36" class="tour-list-text">  США</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-37" class="tour-list-text">  Мексика</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-one-region"><span regionid="tour-38" class="tour-list-text">  Йосемиты</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-one-region"><span class="tour-icon-wrapper"><i class="icon antarctica"></i></span><span regionid="39" class="tour-list-text">Антарктида</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-one-region"><span class="tour-icon-wrapper"><i class="icon arctica"></i></span><span regionid="40" class="tour-list-text">Арктика</span></a></li>
+                  </ul>
+                </div>
+              </section>
+              <hr class="select-type-hr">
+              <section class="selected-regions">
+                <div class="row">
+                  <div class="col-md-6 col-lg-7">
+                    <div><span class="selected-tours-title">Вы выбрали:</span><span class="selected-regions-list"></span></div>
+                    <div>
+                      <input placeholder="Укажате подрегион, если его нет в списке" style="display: none;" class="g_input js-custom-region">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5 ta-r">
+                    <button class="transparent-btn -blue js-clear-all-region selected-tours-clear">Сбросить все</button>
+                    <button class="simple-btn -yellow js-select-regions"><i class="select-tours icon"></i> Выбрать регион</button>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div style="display:none" class="select-type">
+              <header class="select-type-header">
+                <div class="row">
+                  <div class="col-sm-9">
+                    <h4>Выберите виды туризма, относящиеся к вашему туру:</h4>
+                    <h5>Можете выбрать несколько видов, просто кликая на них. Затем нажмите «Выбрать тур». Первый выбранный вид будет считаться основным.</h5>
+                  </div>
+                  <div class="col-sm-3 ta-r">
+                    <div class="close-btn js-close-select-type">Закрыть <i class="icon close-icon"></i></div>
+                  </div>
+                </div>
+              </header>
+              <section class="tour-list-wrapper row">
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon water"></i></span><span class="tour-list-text">Вода</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-3" class="tour-list-text">  Сёрфинг</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-4" class="tour-list-text">  Кайтсёрфинг</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-5" class="tour-list-text">  Яхтинг</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-6" class="tour-list-text">  Дайвинг</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-7" class="tour-list-text">   Вейкбординг / водные лыжи </span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-8" class="tour-list-text">   Рафтинг </span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-9" class="tour-list-text">   Каякинг</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-10" class="tour-list-text">   Сплавы туристические </span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-11" class="tour-list-text">   Рыболовные туры </span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon mountains"></i></span><span class="tour-list-text">Горы</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-16" class="tour-list-text">  Горные лыжи / сноубординг</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-17" class="tour-list-text">  Восхождения</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-18" class="tour-list-text">  Скалолазание</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-19" class="tour-list-text">  Школы альпинизма</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-20" class="tour-list-text">  Треккинги</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-21" class="tour-list-text">  Радиальные походы</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-22" class="tour-list-text">  Спелеология</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon safari"></i></span><span class="tour-list-text">Сафари</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-12" class="tour-list-text">  Африканское сафари</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-13" class="tour-list-text">  На собачьих упряжках</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-14" class="tour-list-text">  На снегоходах</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-15" class="tour-list-text">  На квадроциклах</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon terra"></i></span><span class="tour-list-text">Земля</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-33" class="tour-list-text">  Автотуры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-34" class="tour-list-text">  Джип-туры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-35" class="tour-list-text">  Туристические походы</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-36" class="tour-list-text">  Вело-туры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-37" class="tour-list-text">  Лыжные походы/ ски-тур</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-38" class="tour-list-text">  Конные туры</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon expeditions"></i></span><span class="tour-list-text">Экспедиции</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-30" class="tour-list-text">  Этнографические</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-31" class="tour-list-text">  Географические</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-32" class="tour-list-text">  Экологические</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon learnings"></i></span><span class="tour-list-text">Школы, обучение,  тренинги</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-22" class="tour-list-text">  Школа фотографии</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-23" class="tour-list-text">  Школа йоги</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-24" class="tour-list-text">  Кулинарная школа</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-25" class="tour-list-text">  Школа альпинизма</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-26" class="tour-list-text">  Школа скалолазания</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon events"></i></span><span class="tour-list-text">Событийный туризм</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-27" class="tour-list-text">  Спортивные события</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-28" class="tour-list-text">  Фестивали</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-29" class="tour-list-text">  Народные праздники</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon air"></i></span><span class="tour-list-text">Воздух</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-39" class="tour-list-text">  Парашютные прыжки</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-40" class="tour-list-text">  Полёты на парапланах</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-41" class="tour-list-text">  Полёты на дельтапланах</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-42" class="tour-list-text">  Полёты на самолётах</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-43" class="tour-list-text">   Полёты на воздушных шарах</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link -not-clickable"><span class="tour-icon-wrapper"><i class="icon no-standart"></i></span><span class="tour-list-text">Нестандартные</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-44" class="tour-list-text">  Экологические туры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-45" class="tour-list-text">  Эзотерические туры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-46" class="tour-list-text">  Йога туры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-47" class="tour-list-text">  Историко-культурные туры</span></a></li>
+                    <li class="tour-list-item"><a class="tour-list-link js-type"><span typeid="tour-48" class="tour-list-text">  Паломничества</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon gastronomy"></i></span><span typeid="tour-55" class="tour-list-text">Гастро&shy;номические туры</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon excursions"></i></span><span typeid="tour-56" class="tour-list-text">Экскурсионные туры</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon autors"></i></span><span typeid="tour-57" class="tour-list-text">Авторские туры</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon weekend"></i></span><span typeid="tour-58" class="tour-list-text">Туры выходного дня</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon family"></i></span><span typeid="tour-59" class="tour-list-text">Семейный отдых с детими</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon comb"></i></span><span typeid="tour-60" class="tour-list-text">Комби&shy;нированные</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon space"></i></span><span typeid="tour-61" class="tour-list-text">Полеты в космос</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon adventure"></i></span><span typeid="tour-62" class="tour-list-text">Приключения</span></a></li>
+                  </ul>
+                  <ul class="tour-list">
+                    <li class="tour-list-item -general -icon"><a class="tour-list-link js-type"><span class="tour-icon-wrapper"><i class="icon photo"></i></span><span typeid="tour-63" class="tour-list-text">Фото-туры</span></a></li>
+                  </ul>
+                </div>
+              </section>
+              <hr class="select-type-hr">
+              <section class="selected-tours">
+                <div class="row">
+                  <div class="col-md-7 col-lg-8"><span class="selected-tours-title">Вы выбрали:</span><span class="selected-tours-list"></span></div>
+                  <div class="col-md-5 col-lg-4 ta-r">
+                    <button class="transparent-btn -blue js-clear-all-type selected-tours-clear">Сбросить все</button>
+                    <button class="simple-btn -yellow js-select-tours"><i class="select-tours icon"></i> Выбрать туры</button>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="tourtitle" class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Название тура</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <input name="tour[title]" class="g_input">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Подзаголовок тура</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <input placeholder="Потрясающие туры ждут вас" class="g_input">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Главная картинка для тура</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <div class="g_file_wrapper">
+                  <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="label_md-wrapper">
+                      <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    </div>
+                  </div>
+                  <input id="userfile" type="file" name="tour[main_picture]" class="g_file">
+                </div>
+                <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Цена</label>
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <input name="tour[price]" class="g_input">
+              </div>
+              <div class="label_md-wrapper col-md-2 col-sm-3">
+                <label for="rub" class="label_md -simple"><span>рублей</span>
+                  <!--input(type="radio", id="rub" name="countchanger")-->
+                </label>
+                <!--label.label_md.-simple.hide(for="usd")-->
+                <!--  span долларов-->
+                <!--  input(type="radio",id="usd", name="countchanger")-->
+                <!--label.label_md.-simple.hide(for="euro")-->
+                <!--  span евро-->
+                <!--  input(type="radio", id="euro", name="countchanger")-->
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Регион тура</label>
+              </div>
+              <div class="col-md-4 col-sm-9">
+                <div class="g_input-wrapper"><i class="icon globus icon-right js-open-select-region"></i>
+                  <div type="text" placeholder="Выберите регион из списка" class="g_input js-open-select-region flex-height"></div>
+                  <input name="tour[region_id]" type="hidden" class="open-select-region_hidden">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Вид тура</label>
+              </div>
+              <div class="col-md-4 col-sm-9">
+                <div class="g_input-wrapper"><i class="icon aerostat icon-right js-open-select-type"></i>
+                  <div type="text" class="g_input js-open-select-type flex-height"></div>
+                  <input name="tour[activity_ids]" type="hidden" class="open-select-type_hidden">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Сложность</label>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <select class="g_select">
+                  <option>Сложность 1</option>
+                  <option>Сложность 2</option>
+                  <option>Сложность 3</option>
+                  <option>Сложность 4</option>
+                  <option>Сложность 5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Картинка для описания №1</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <div class="g_file_wrapper">
+                  <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="label_md-wrapper">
+                      <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    </div>
+                  </div>
+                  <input id="picdescrone" type="file" name="tour[description_image_1]" class="g_file">
+                </div>
+                <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Заголовок для описания №1</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <input name="tour[description_title]" class="g_input">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Текст описания №1</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <textarea rows="5" name="tour[description]" class="g_textarea"></textarea>
+              </div>
+            </div>
+            <hr>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Картинка для описания №2</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <div class="g_file_wrapper">
+                  <button class="simple-btn -more-sqr -yellow fll">Выбрать</button>
+                  <div class="col-md-8 col-sm-8">
+                    <div class="label_md-wrapper">
+                      <label class="label_md -simple g_file-text"> Загрузить фото</label>
+                    </div>
+                  </div>
+                  <input id="picdescrtwo" type="file" name="tour[description_image_2]" class="g_file">
+                </div>
+                <div class="g_file_adj"> Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб</div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="label_md-wrapper col-md-3 col-sm-3">
+                <label class="label_md -simple">Текст описания №2</label>
+              </div>
+              <div class="col-md-9 col-sm-9">
+                <textarea rows="5" name="tour[description]" class="g_textarea"></textarea>
+              </div>
+            </div>
+            <div class="allocated-block -yellow">
+              <h2 class="add-subtitle ta-c">Поздравляем, первый шаг он трудный самый!</h2>
+              <div class="buttons-center">
+                <button type="submit" class="-more-sqr transparent-btn -lg -dark-blue js-prescreen">Продолжить заполнение</button>
+                <!--button.simple-btn.-more-sqr.-yellow.-lg Продолжить заполнение-->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer_inner">
+        <div class="row">
+          <div class="col-sm-3 logo-sm-wrapper"><i class="logo logo-sm"></i></div>
+          <div class="col-sm-9">
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a class="footer-menu-link">О нас</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">О проекте</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Блог</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Партнерам</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Партнерская программа</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Реклама на сайте</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a class="footer-menu-link">Гидам</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Помощь</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Договор</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--script(src="js/all.js")-->
+    <!--script(src="js/carousel.js")-->
+    <script src="js/vendor/a-jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/b-picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
+    <script src="js/vendor/z-ru_RU.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.ikSelect.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_ru.js"></script>
+    <script src="js/script.js"></script>
+    <!--script(src="js/bootstrap.min.js")-->
+  </body>
+</html>

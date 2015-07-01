@@ -1,0 +1,35 @@
+extends ./layout.jade
+
+block title
+  title Add tour title11
+
+
+block main-content
+    .container
+      h1.add-title Добовление тура
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link(href="add-tour_step1.html") Основная информация
+          .tabs-item
+            a.tabs-link(href="add-tour_step2.html") Даты
+          .tabs-item
+            a.tabs-link(href="add-tour_step3.html") Инфографика о туре
+          .tabs-item
+            a.tabs-link(href="add-tour_step4.html") Описание по дням
+          .tabs-item
+            a.tabs-link.active(href="add-tour_step5.html") Что входит, снаряжение, документы
+          .tabs-item
+            a.tabs-link(href="add-tour_step6.html") Фотографии, видео
+          .tabs-item
+            a.tabs-link(href="add-tour_step7.html") Отзывы, FAQ
+
+      form.add-section.search-form
+        include  includes/add-tour/enter
+        include  includes/add-tour/gear
+        .allocated-block.-yellow
+          h2.add-subtitle.ta-c Отлично, теперь мы знаем, что нужно взять с собой!
+          p.md.ta-c Дальше очень важный раздел - фотографии, визуальная составляющая нашего тура, каждый должен захотеть поехать в такой замечательный тур!
+          .buttons-center
+            button.-more-sqr.transparent-btn.-lg.-dark-blue.js-prescreen  Хочу загружать красивые фотографии!
+            button.simple-btn.-more-sqr.-yellow.-lg Сохранить тур

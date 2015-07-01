@@ -4703,6 +4703,63 @@ fieldset {
   width: 50%;
   font-size: 13px;
 }
+/*accordion*/
+.accordion-section {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #2574a9;
+  padding: 0px;
+}
+.accordion-section-content {
+  padding: 20px;
+  display: none;
+}
+.accordion-section-content p {
+  font-size: 16px;
+}
+.accordion-section-title {
+  font-family: 'chevin-bold';
+  font-size: 18px;
+  font-weight: normal;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+.accordion-section-title i {
+  position: absolute;
+  right: 40px;
+}
+.accordion-section-title.active {
+  border-bottom: 2px solid #2574a9;
+  background-color: #a8c7dd;
+}
+.accordion-section-title.active:hover {
+  border-radius: 10px 10px 0 0;
+}
+.accordion-section-title:hover {
+  background-color: #a8c7dd;
+  border-radius: 10px;
+}
+.accordion-section-title:hover,
+.accordion-section-title:focus,
+.accordion-section-title:active {
+  text-decoration: none;
+  color: inherit;
+}
+.accordion,
+.accordion * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.accordion {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
 /*SMALL and EXTRA SMALL -- sm and xs*/
 @media screen and (max-width: 991px) {
   h1.landing-title {

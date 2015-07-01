@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Add tour title11</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/sprite.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.nouislider.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header class="main-header">
+        <div style="position: relative;" class="container"><a href="home.html" class="fll hidden-xs hidden-sm"><img src="img/logo.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo fll"></a><a href="home.html" class="fll visible-xs-inline-block visible-sm-inline-block"><img src="img/logo-sm.png" alt="Active tours - Активные туры" title="Active tours - Активные туры" class="logo-round"></a>
+          <div class="logo-caption fll hidden-xs">Поиск и бронирование<br/> активных туров</div><a href="add-tour.html" class="flr simple-btn -yellow">Добавить тур</a>
+          <!--a.flr.transparent-btn.-md.-white(href="register.html") Войти-->
+          <div class="person-cabinet">
+            <div style="display:none;" class="round-img -xs js-cabinet-toggle"><img src="img/goat.jpg"></div>
+            <div class="round-wrapper -xs -white-border js-cabinet-toggle"><i class="user icon"></i></div>
+            <div class="person-cabinet_name js-cabinet-toggle"> Константинопольский К.
+              <div style="display: none;" class="person-cabinet_dropmenu js-cabinet">
+                <ul class="person-cabinet_dropmenu-list">
+                  <li><a href="agency-person-page.html">Личный кабинет</a></li>
+                  <li><a href="agency-my-tours.html">Мои туры</a></li>
+                  <li><a href="agency-my-guides.html">Мои гиды</a></li>
+                  <li><a href="change-pass.html">Сменить пароль</a></li>
+                  <li><a>Выйти</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flr share-menu">
+            <div class="share-menu_caption">Поделиться</div><a href="#" class="share-menu_link"><i class="vk icon"></i></a><a href="#" class="share-menu_link"><i class="fb icon"></i></a><a href="#" class="share-menu_link"><i class="tw icon"></i></a><a href="#" class="share-menu_link"><i class="rss icon"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="container">
+          <h1 class="add-title">Добовление тура</h1>
+          <div class="allocated-block -full">
+            <div class="tabs">
+              <div class="tabs-item"><a href="add-tour_step1.html" class="tabs-link">Основная информация</a></div>
+              <div class="tabs-item"><a href="add-tour_step2.html" class="tabs-link">Даты</a></div>
+              <div class="tabs-item"><a href="add-tour_step3.html" class="tabs-link active">Инфографика о туре</a></div>
+              <div class="tabs-item"><a href="add-tour_step4.html" class="tabs-link">Описание по дням</a></div>
+              <div class="tabs-item"><a href="add-tour_step5.html" class="tabs-link">Что входит, снаряжение, документы</a></div>
+              <div class="tabs-item"><a href="add-tour_step6.html" class="tabs-link">Фотографии, видео</a></div>
+              <div class="tabs-item"><a href="add-tour_step7.html" class="tabs-link">Отзывы, FAQ</a></div>
+            </div>
+          </div>
+          <form class="add-section search-form">
+            <div class="allocated-block">
+              <h2 class="add-subtitle">Инфографика, характеризующая тур</h2>
+            </div>
+            <div class="form-row info-item_wrapper">
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row">
+                    <input value="Формат тура" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="hikking-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row">
+                    <input value="Проживание" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="host-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row">
+                    <input value="Транспорт" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="transport-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row">
+                    <input value="Питание" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="eat-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row">
+                    <input value="Сопровождение" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="guide-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row">
+                    <input value="Безопасность" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="safety-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item disabled">
+                  <div class="info-item_row">
+                    <input value="Безопасность" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="safety-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item disabled">
+                  <div class="info-item_row">
+                    <input value="Безопасность" class="g_input -info-input">
+                  </div>
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll"><i class="safety-md icon"></i></div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="3" class="g_textarea -info-input"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+            </div>
+            <div class="allocated-block">
+              <h2 class="add-subtitle">Причины, чтобы поехать</h2>
+            </div>
+            <div class="form-row info-item_wrapper">
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">1</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md">Трек вокруг Аннапурны — один из популярнейших в мире треккинговых маршрутов.</textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">2</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md">Трек не требует специальной технической и физической подготовки.</textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">3</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md">Трек не требует специальной технической и физической подготовки.</textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">4</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md">На маршруте участников сопровождает опытный гид от Команды Приключений Альпиндустриия.</textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">5</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md">Во время трека вокруг предстоит увидеть буддийские ступы, монастыри, «говорящие камни» с мантрами.</textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">6</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow active js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item disabled">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">7</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="info-item disabled">
+                  <div class="info-item_row -crop-btn">
+                    <div class="almost-sqr-wrapper -lg -mod-1 fll">
+                      <div class="round-bg -yellow -lg"><span class="count">8</span></div>
+                    </div>
+                    <div class="media-body">
+                      <button class="simple-btn -more-sqr -blue js-change-icon">Сменить иконку</button>
+                    </div>
+                  </div>
+                  <div class="info-item_row">
+                    <textarea rows="5" class="g_textarea -info-input -md"></textarea>
+                  </div>
+                  <div class="switch-buttons -yellow">
+                    <button class="switch-btn -yellow js-switch-btn-item">Вкл&nbsp;&nbsp;</button>
+                    <button class="switch-btn -yellow active js-switch-btn-item">Выкл</button>
+                  </div>
+                  <div class="disabled-mask"></div>
+                </div>
+              </div>
+            </div>
+            <div class="allocated-block -yellow">
+              <h2 class="add-subtitle ta-c">Инфографика о туре - это важно, здесь пользователь подчерпнет основную информацию!</h2>
+              <p class="md ta-c">Можете остановиться на этом шаге, но что за тур без детальной информации по дням!</p>
+              <div class="buttons-center">
+                <button type="submit" class="-more-sqr transparent-btn -lg -dark-blue js-prescreen"> Вперед к детальной информации</button>
+                <button class="simple-btn -more-sqr -yellow -lg">Сохранить тур</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer_inner">
+        <div class="row">
+          <div class="col-sm-3 logo-sm-wrapper"><i class="logo logo-sm"></i></div>
+          <div class="col-sm-9">
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a class="footer-menu-link">О нас</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">О проекте</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Блог</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a href="#" class="footer-menu-link">Партнерам</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Партнерская программа</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Реклама на сайте</a></li>
+            </ul>
+            <ul class="footer-menu">
+              <li class="footer-menu-item"><a class="footer-menu-link">Гидам</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Помощь</a></li>
+              <li class="footer-menu-link"><a class="footer-menu-link">Договор</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--script(src="js/all.js")-->
+    <!--script(src="js/carousel.js")-->
+    <script src="js/vendor/a-jquery-1.11.0.min.js"></script>
+    <script src="js/vendor/b-picker.js"></script>
+    <script src="js/vendor/picker.date.js"></script>
+    <script src="js/vendor/z-ru_RU.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.ikSelect.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_ru.js"></script>
+    <script src="js/script.js"></script>
+    <!--script(src="js/bootstrap.min.js")-->
+  </body>
+</html>

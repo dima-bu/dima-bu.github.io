@@ -887,6 +887,72 @@ fieldset {
   font-size: 13px;
 }
 
+/*accordion*/
+
+.accordion-section {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #2574a9;
+  padding: 0px;
+}
+
+.accordion-section-content {
+  padding: 20px;
+  display:none;
+  p {
+    font-size: 16px;
+  }
+
+}
+
+.accordion-section-title {
+  font-family: 'chevin-bold';
+  font-size: 18px;
+  font-weight: normal;
+  color: inherit;
+  text-transform: uppercase;
+  padding: 20px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  
+  i {
+    position: absolute;
+    right: 40px;
+  }
+  
+  &.active {
+    border-bottom: 2px solid #2574a9;
+    background-color: #a8c7dd;
+    &:hover {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  &:hover {
+    background-color: #a8c7dd;
+    border-radius: 10px;
+  }
+
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      color: inherit;
+    }
+}
+
+
+.accordion, .accordion * {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.accordion {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
 
 
 /*SMALL and EXTRA SMALL -- sm and xs*/

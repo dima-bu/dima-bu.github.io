@@ -1,0 +1,91 @@
+extends ./layout.jade
+
+block title
+  title Add tour title11
+
+
+block main-content
+    .container
+      h1.add-title Добовление тура
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link.active(href="add-tour_step1.html") Основная информация
+          .tabs-item
+            a.tabs-link(href="add-tour_step2.html") Даты
+          .tabs-item
+            a.tabs-link(href="add-tour_step3.html") Инфографика о туре
+          .tabs-item
+            a.tabs-link(href="add-tour_step4.html") Описание по дням
+          .tabs-item
+            a.tabs-link(href="add-tour_step5.html") Что входит, снаряжение, документы
+          .tabs-item
+            a.tabs-link(href="add-tour_step6.html") Фотографии, видео
+          .tabs-item
+            a.tabs-link(href="add-tour_step7.html") Отзывы, FAQ
+
+      form.add-section.search-form#new_tour(name="new_tour")
+        include includes/add-tour/select-region
+        include includes/add-tour/select-type
+        .form-row#tourtitle
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Название тура
+          .col-md-9.col-sm-9
+            input.g_input(name="tour[title]")
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Подзаголовок тура
+          .col-md-9.col-sm-9
+            input.g_input(placeholder="Потрясающие туры ждут вас")
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Главная картинка для тура
+          .col-md-9.col-sm-9
+            .g_file_wrapper
+              button.simple-btn.-more-sqr.-yellow.fll Выбрать
+              .col-md-8.col-sm-8
+                .label_md-wrapper
+                  label.label_md.-simple.g_file-text  Загрузить фото
+              input(id="userfile", type="file", name="tour[main_picture]", class="g_file")
+            .g_file_adj  Рекомендуемый размер фото: не менее 1920x1200, не более 1 Мб
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Цена
+          .col-md-2.col-sm-3
+            input.g_input(name="tour[price]")
+          .label_md-wrapper.col-md-2.col-sm-3
+            label.label_md.-simple(for="rub")
+              span рублей
+              //input(type="radio", id="rub" name="countchanger")
+            //label.label_md.-simple.hide(for="usd")
+            //  span долларов
+            //  input(type="radio",id="usd", name="countchanger")
+            //label.label_md.-simple.hide(for="euro")
+            //  span евро
+            //  input(type="radio", id="euro", name="countchanger")
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Регион тура
+          .col-md-4.col-sm-9
+            include includes/general/where-input
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Вид тура
+          .col-md-4.col-sm-9
+            include includes/general/what-input
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Сложность
+          .col-md-4.col-sm-4
+            select.g_select
+              option Сложность 1
+              option Сложность 2
+              option Сложность 3
+              option Сложность 4
+              option Сложность 5
+        include  includes/add-tour/main-description
+        .allocated-block.-yellow
+          h2.add-subtitle.ta-c Поздравляем, первый шаг он трудный самый!
+          .buttons-center
+            button.-more-sqr.transparent-btn.-lg.-dark-blue.js-prescreen(type="submit") Продолжить заполнение
+            //button.simple-btn.-more-sqr.-yellow.-lg Продолжить заполнение

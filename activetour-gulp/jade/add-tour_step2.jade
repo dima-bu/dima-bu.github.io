@@ -1,0 +1,68 @@
+extends ./layout.jade
+
+block title
+  title Add tour title11
+
+
+block main-content
+    .container
+      h1.add-title Добовление тура
+      .allocated-block.-full
+        .tabs
+          .tabs-item
+            a.tabs-link(href="add-tour_step1.html") Основная информация
+          .tabs-item
+            a.tabs-link.active(href="add-tour_step2.html") Даты
+          .tabs-item
+            a.tabs-link(href="add-tour_step3.html") Инфографика о туре
+          .tabs-item
+            a.tabs-link(href="add-tour_step4.html") Описание по дням
+          .tabs-item
+            a.tabs-link(href="add-tour_step5.html") Что входит, снаряжение, документы
+          .tabs-item
+            a.tabs-link(href="add-tour_step6.html") Фотографии, видео
+          .tabs-item
+            a.tabs-link(href="add-tour_step7.html") Отзывы, FAQ
+
+      form.add-section.search-form
+        .form-row#data-section
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Продолжительность
+          .col-lg-4.col-md-5.col-sm-6
+            .clearfix
+              .pull-left
+                .label_md.-inline C
+                .g_input-wrapper.-calendar
+                  input.g_input.-from.datepicker(type="data" name="datafrom")
+              .pull-right
+                .label_md.-inline По
+                .g_input-wrapper.-calendar
+                  input.g_input.-to.datepicker(type="data" name="datato")
+            label.error.js-data-error(style="display:none;") Поля дат не заполнены
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Выбрать гида
+          .col-md-4.col-sm-5
+            select.g_select(name="guideselect")
+              option Кондрашев А.Б.
+              option Безпалапенковинковенко А.П.
+              option Бухал Д.Д.
+              option Титарев М.И.
+              option Селиванов А.Ф.
+          .col-md-3.col-sm-4
+            a.simple-btn.-more-sqr.-yellow.fllf <span class="plus">+</span> Добавить гида
+
+        .form-row
+          .label_md-wrapper.col-md-3.col-sm-3
+            label.label_md.-simple Количество мест в группе
+          .col-md-2.col-sm-3
+            input.g_input(name="places")
+        .form-row
+          .col-md-4.col-md-offset-3.col-sm-4.col-sm-offset-3
+            button.simple-btn.-more-sqr.-yellow.fll <span class="plus">+</span> Добавить еще одну дату тура
+        .allocated-block.-yellow
+          h2.add-subtitle.ta-c Поздравляем, вы заполнили все обязательные поля, теперь тур можно сохранить!
+          p.md.ta-c А можно и дальше продолжить заполнение тура, будет бомба, мы обещаем!
+          .buttons-center
+            button.-more-sqr.transparent-btn.-lg.-dark-blue.js-prescreen(type="submit")  Продолжить заполнение
+            button.simple-btn.-more-sqr.-yellow.-lg Сохранить тур
