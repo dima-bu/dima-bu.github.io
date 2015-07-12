@@ -12,8 +12,6 @@ $(document).ready(function () {
 
     /*show all dates*/
 
-
-
     $('.js-show-all-dates').on('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -21,15 +19,22 @@ $(document).ready(function () {
     });
 
     $('body').on('click', function (event) {
-        if ($(event.target).closest('.open-dates').length) return;
-        $('.open-dates').hide();
-        event.stopPropagation();
-    })
+        if ($(event.target).closest('.open-dates').length) {
+            return false;
+            event.stopPropagation();
+        } else {
+            $('.open-dates').hide();
+        }
+
+
+    });
 
     function close_accordion_section() {
         $('.accordion .accordion-section-title').removeClass('active');
         $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
     }
+
+    /*accordion*/
 
     $('.accordion-section-title').click(function(e) {
         // Grab current anchor value
@@ -48,6 +53,7 @@ $(document).ready(function () {
 
         e.preventDefault();
     });
+
 
     /*days count*/
 

@@ -13,13 +13,13 @@ body {
 h1 {
   font-family: 'chevin-bold';
   &.landing-title {
-    font-family: @font-family-base;
-    font-size: 64px;
+    font-family: 'chevin-bold';
+    font-size: 54px;
     color: @yellow;
     font-weight: 600;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.34);
     text-align: center;
-    margin-top: 75px;
+    margin-top: 30px;
     height: 140px;
 
     &.hit-icon {
@@ -397,7 +397,14 @@ a.readmore {
   background-color: #f7f7f7;
   border: 1px solid #dee7ee;
   border-radius: 10px;
+
+  &.-opacity {
+    background-color: rgba(247, 247, 247, 0.7);
+  }
+
+
 }
+
 
 
 
@@ -857,7 +864,7 @@ fieldset {
   color: @yellow;
 }
 
-
+/*open-date*/
 
 .open-date-link {
   display: inline-block;
@@ -885,6 +892,7 @@ fieldset {
   display: inline-block;
   width: 50%;
   font-size: 13px;
+  padding: 3px;
 }
 
 /*accordion*/
@@ -953,6 +961,68 @@ fieldset {
   margin-bottom: 30px;
 }
 
+
+.title-logo {
+  color: #f7cf2f;
+  float: left;
+  font-size: 30px;
+  margin: 0 10px 0 0;
+  background: -webkit-linear-gradient(#f7cf2f, #dfb617);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+img.logo-round {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-left: 1px;
+  padding-bottom: 3px;
+  background-color: #f7cf2f;
+}
+
+.form-narrow {
+
+  width: 600px;
+
+ &.-left {
+   position: absolute;
+   top: 200px;
+   right: 20px;
+
+ }
+
+}
+
+
+.brone-section-xs {
+  padding: 30px 0;
+
+  .g_input {
+    background-color: #fff;
+  }
+}
+
+h2.landing-subtitle {
+  font-family: "proxima_reg", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  text-shadow: 1px 3px 3px rgba(0,0,0,0.22);
+}
+
+h2.landing-subtitle.-bottom {
+  bottom: 0;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.72157) 0%, transparent 100%, transparent 100%, transparent 100%);
+}
 
 
 /*SMALL and EXTRA SMALL -- sm and xs*/

@@ -1827,25 +1827,25 @@ The large array-like variables contain all information about a single icon
 */
 .tabs-link.active .avia,
 .tabs-link:hover .avia {
-  background: transparent url('../img/sprite.png') 0px -56px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -98px no-repeat;
   height: 11px;
   width: 19px;
 }
 .tabs-link.active .hotels,
 .tabs-link:hover .hotels {
-  background: transparent url('../img/sprite.png') 0px -98px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -35px no-repeat;
   height: 11px;
   width: 14px;
 }
 .tabs-link.active .cars,
 .tabs-link:hover .cars {
-  background: transparent url('../img/sprite.png') 0px -162px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -184px no-repeat;
   height: 12px;
   width: 13px;
 }
 .tabs-link.active .insurance,
 .tabs-link:hover .insurance {
-  background: transparent url('../img/sprite.png') 0px -206px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -250px no-repeat;
   height: 12px;
   width: 10px;
 }
@@ -1857,17 +1857,17 @@ The large array-like variables contain all information about a single icon
 }
 .tabs-link.active .activetours,
 .tabs-link:hover .activetours {
-  background: transparent url('../img/sprite.png') 0px -607px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -532px no-repeat;
   height: 15px;
   width: 10px;
 }
 .picker__nav--prev:before {
-  background: transparent url('../img/sprite.png') 0px -341px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -272px no-repeat;
   height: 13px;
   width: 8px;
 }
 .picker__nav--next:before {
-  background: transparent url('../img/sprite.png') 0px -228px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -140px no-repeat;
   height: 12px;
   width: 7px;
 }
@@ -3431,10 +3431,11 @@ footer {
 }
 .landing-bg-section {
   height: 720px;
-  line-height: 495px;
   background-repeat: no-repeat;
-  background-position: 50% -1px;
+  background-position: 50% 50%;
   margin-bottom: 20px;
+  box-shadow: inset -1px -209px 140px 0px rgba(0, 0, 0, 0.38);
+  position: relative;
 }
 .landing-main-description {
   margin-bottom: 0;
@@ -3473,6 +3474,9 @@ footer {
   text-align: center;
   margin-bottom: 5px;
   margin-bottom: 15px;
+}
+.round-item-label.-md-size {
+  font-size: 20px;
 }
 .round-item-value {
   font-size: 14px;
@@ -3554,7 +3558,7 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 .equipment-header.open .arrow-down {
-  background: transparent url('../img/sprite.png') 0px -1306px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -1336px no-repeat;
   height: 20px;
   width: 38px;
 }
@@ -4006,19 +4010,19 @@ h1 {
   font-family: 'chevin-bold';
 }
 h1.landing-title {
-  font-family: "proxima_reg", Helvetica, Arial, sans-serif;
-  font-size: 64px;
+  font-family: 'chevin-bold';
+  font-size: 54px;
   color: #f7cf2f;
   font-weight: 600;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.34);
   text-align: center;
-  margin-top: 75px;
+  margin-top: 30px;
   height: 140px;
 }
 h1.landing-title.hit-icon span:after {
   content: '';
   display: inline-block;
-  background: transparent url('../img/sprite.png') 0px -2278px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2389px no-repeat;
   height: 33px;
   width: 141px;
   vertical-align: top;
@@ -4028,7 +4032,7 @@ h1.landing-title.hit-icon span:after {
 h1.landing-title.hit2-icon span:after {
   content: '';
   display: inline-block;
-  background: transparent url('../img/sprite.png') 0px -2192px no-repeat;
+  background: transparent url('../img/sprite.png') 0px -2346px no-repeat;
   height: 33px;
   width: 141px;
   vertical-align: top;
@@ -4317,6 +4321,9 @@ a.readmore span {
   background-color: #f7f7f7;
   border: 1px solid #dee7ee;
   border-radius: 10px;
+}
+.simple-grey-wrapper.-opacity {
+  background-color: rgba(247, 247, 247, 0.7);
 }
 .g_gray-border {
   border: 1px solid #ccc;
@@ -4679,6 +4686,7 @@ fieldset {
 .status-wait {
   color: #f7cf2f;
 }
+/*open-date*/
 .open-date-link {
   display: inline-block;
   color: #7ba7ca;
@@ -4702,6 +4710,7 @@ fieldset {
   display: inline-block;
   width: 50%;
   font-size: 13px;
+  padding: 3px;
 }
 /*accordion*/
 .accordion-section {
@@ -4759,6 +4768,56 @@ fieldset {
 .accordion {
   overflow: hidden;
   margin-bottom: 30px;
+}
+.title-logo {
+  color: #f7cf2f;
+  float: left;
+  font-size: 30px;
+  margin: 0 10px 0 0;
+  background: -webkit-linear-gradient(#f7cf2f, #dfb617);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+img.logo-round {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-left: 1px;
+  padding-bottom: 3px;
+  background-color: #f7cf2f;
+}
+.form-narrow {
+  width: 600px;
+}
+.form-narrow.-left {
+  position: absolute;
+  top: 200px;
+  right: 20px;
+}
+.brone-section-xs {
+  padding: 30px 0;
+}
+.brone-section-xs .g_input {
+  background-color: #fff;
+}
+h2.landing-subtitle {
+  font-family: "proxima_reg", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 40px;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.22);
+}
+h2.landing-subtitle.-bottom {
+  bottom: 0;
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.72157) 0%, transparent 100%, transparent 100%, transparent 100%);
 }
 /*SMALL and EXTRA SMALL -- sm and xs*/
 @media screen and (max-width: 991px) {

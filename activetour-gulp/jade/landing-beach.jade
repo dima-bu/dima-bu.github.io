@@ -1,0 +1,66 @@
+extends ./layout.jade
+
+block header
+  header.main-header
+    .container(style="position: relative;")
+      img.fll.logo-round(src="files/mikluho-logo.png", alt="Mikluho logo")
+      a.fll(href="home.html").hidden-xs.hidden-sm
+        h2.title-logo MIKLUHO.TRAVEL
+      //.logo-caption.fll.hidden-xs Поиск и бронирование<br/> активных туров
+
+      a.flr.simple-btn.-yellow(href="add-tour.html" style="margin-left: 10px;") Позвонить нам
+      a.flr.transparent-btn.-md.-white Забронировать тур
+
+
+block title
+  title Home title
+
+block footer-script
+  include includes/footer-script-home
+
+block main-content
+  section.landing-bg-section(style="background-image: url(files/43.jpg); margin-bottom: 0")
+    .container(style="position: relative; height: 100%;")
+      h1.landing-title
+        span Египет из Омска 2015, туры и отдых в Египте, цены на путевки в Египет из Омска
+
+      form.simple-grey-wrapper.form-narrow.-left.-opacity.brone-section-xs(style="line-height: 1.3;")
+        .row
+          .col-md-10.col-md-offset-1.brone-section_inner
+            .form-row.-inline
+              label.label_lg.col-md-4 Имя
+              .col-md-8
+                input.g_input(type="text")
+            .form-row.-inline
+              label.label_lg.col-md-4 Телефон
+              .col-md-8
+                input.g_input(type="text")
+            .form-row.-inline
+              label.label_lg.col-md-4 E-mail
+              .col-md-8
+                input.g_input(type="text")
+            .col-md-8.col-md-offset-4
+              button.simple-btn.-yellow.-lg <i class="icon rukzak"></i> Забронировать туp
+
+    h2.landing-subtitle.-bottom
+      .container В то время как в Омске дождь, слякоть и морозы, в Египте наступает самое лучшее время отдыха.
+  section.landing-bg-section.landing-section.landing-main-description(style="background-image: url(files/326.jpg);margin-bottom: 0")
+    h2.subtitle(style="margin: 0 0 40px 0;") МЫ ПРЕДЛАГАЕМ СЛЕДУЮЩИЕ УСЛУГИ
+    .container
+      .row
+        .col-md-2.icons-descr-block_column
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.worlddoc
+          .round-item-label.-md-size Виза
+        .col-md-2.icons-descr-block_column
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.safety-md
+          .round-item-label.-md-size Страховка
+        .col-md-2.icons-descr-block_column
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.plane
+          .round-item-label.-md-size Поиск авиабилетов для путешествия
+        .col-md-2.icons-descr-block_column
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.hotel
+          .round-item-label.-md-size Подбор лучщих отелей
