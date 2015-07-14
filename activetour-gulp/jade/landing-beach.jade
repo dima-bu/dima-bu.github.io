@@ -6,10 +6,13 @@ block header
       img.fll.logo-round(src="files/mikluho-logo.png", alt="Mikluho logo")
       a.fll(href="home.html").hidden-xs.hidden-sm
         h2.title-logo MIKLUHO.TRAVEL
-      //.logo-caption.fll.hidden-xs Поиск и бронирование<br/> активных туров
-
       a.flr.simple-btn.-yellow(href="add-tour.html" style="margin-left: 10px;") Позвонить нам
       a.flr.transparent-btn.-md.-white Забронировать тур
+      .flr.share-menu
+        .logo-caption.fll(style="margin-right: 10px; margin-top: 12px;") Подписывайся!
+        a(href="https://vk.com/Mikluho.Travel" target="_blank" class="share-menu_link") <i class="vk icon"></i>
+        a(href="https://www.facebook.com/Mikluho.Travel" target="_blank" class="share-menu_link") <i class="fb icon"></i>
+        a(href="https://twitter.com/MikluhoTravel" target="_blank" class="share-menu_link") <i class="tw icon"></i>
 
 
 block title
@@ -19,48 +22,82 @@ block footer-script
   include includes/footer-script-home
 
 block main-content
-  section.landing-bg-section(style="background-image: url(files/43.jpg); margin-bottom: 0")
+  section.landing-bg-section.-full-height(style="background-image: url(files/43.jpg); margin-bottom: 0")
     .container(style="position: relative; height: 100%;")
-      h1.landing-title
+      h1.landing-title.-short-type
         span Египет из Омска 2015, туры и отдых в Египте, цены на путевки в Египет из Омска
 
       form.simple-grey-wrapper.form-narrow.-left.-opacity.brone-section-xs(style="line-height: 1.3;")
         .row
-          .col-md-10.col-md-offset-1.brone-section_inner
+          .col-lg-10.col-lg-offset-1.col-md-12.col-xs-12.col-sm-12.brone-section_inner
             .form-row.-inline
-              label.label_lg.col-md-4 Имя
+              .col-md-12.col-xs-12.col-sm-12
+                h2.brone-title Отправьте заявку и наши трэвэл эксперты проконсультируют Вас!
+            .form-row.-inline
+              label.label_lg.col-md-4.col-xs-4.col-sm-12 Имя
               .col-md-8
                 input.g_input(type="text")
             .form-row.-inline
-              label.label_lg.col-md-4 Телефон
+              label.label_lg.col-md-4.col-xs-4.col-sm-12 Телефон
               .col-md-8
                 input.g_input(type="text")
             .form-row.-inline
-              label.label_lg.col-md-4 E-mail
+              label.label_lg.col-md-4.col-xs-4.col-sm-12 E-mail
               .col-md-8
                 input.g_input(type="text")
-            .col-md-8.col-md-offset-4
-              button.simple-btn.-yellow.-lg <i class="icon rukzak"></i> Забронировать туp
+            .col-md-8.col-md-offset-4.col-xs-12.col-sm-12
+              button.simple-btn.-yellow.-lg <i class="icon rukzak"></i> Отправить заявку!
 
-    h2.landing-subtitle.-bottom
-      .container В то время как в Омске дождь, слякоть и морозы, в Египте наступает самое лучшее время отдыха.
-  section.landing-bg-section.landing-section.landing-main-description(style="background-image: url(files/326.jpg);margin-bottom: 0")
-    h2.subtitle(style="margin: 0 0 40px 0;") МЫ ПРЕДЛАГАЕМ СЛЕДУЮЩИЕ УСЛУГИ
+      p.lg.second-landing-text
+        span Оставьте заявку на консультацию <br/>
+        span нашего трэвэл эксперта <br/>
+        span прямо сейчас и получите <br/>
+        span дисконтную карту туристической  <br/>
+        span компании Mikluho.Travel <br/>
+        span абсолютно бесплатно! <br/>
+
+    h2.landing-subtitle.-bottom.-short-type В то время как в Омске дождь, слякоть и морозы, в Египте наступает самое лучшее время отдыха.
+  section.landing-bg-section.landing-section.landing-main-description.-full-height(style="background-image: url(files/326.jpg);margin-bottom: 0;")
+    h2.subtitle.-short-type(style="margin: 0 0 40px 0;") ТАК ЖЕ МЫ ОКАЗЫВАЕМ СЛЕДУЮЩИЕ УСЛУГИ
     .container
       .row
-        .col-md-2.icons-descr-block_column
+        .col-sm-4.icons-descr-block_column.-mb
           .round-bg.-yellow.-lg.-with-icon
-            .icon.worlddoc
-          .round-item-label.-md-size Виза
-        .col-md-2.icons-descr-block_column
+            .icon.charterpng
+          .round-item-label.-md-size Персональный подбор тура
+
+        .col-sm-4.icons-descr-block_column.-mb
           .round-bg.-yellow.-lg.-with-icon
             .icon.safety-md
-          .round-item-label.-md-size Страховка
-        .col-md-2.icons-descr-block_column
+          .round-item-label.-md-size Страхование путешествующих
+
+        .col-sm-4.icons-descr-block_column.-mb
           .round-bg.-yellow.-lg.-with-icon
-            .icon.plane
-          .round-item-label.-md-size Поиск авиабилетов для путешествия
-        .col-md-2.icons-descr-block_column
+            .icon.worlddoc
+          .round-item-label.-md-size Оформление виз и загранпаспортов
+
+        .col-sm-4.icons-descr-block_column.-mb
           .round-bg.-yellow.-lg.-with-icon
             .icon.hotel
-          .round-item-label.-md-size Подбор лучщих отелей
+          .round-item-label.-md-size Бронирование отелей
+
+        .col-sm-4.icons-descr-block_column.-mb
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.plane
+          .round-item-label.-md-size Заказ ЖД и Авиа Билетов
+
+        .col-sm-4.icons-descr-block_column.-mb
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.transport-md
+          .round-item-label.-md-size Бронирование авто, яхт, вилл
+
+      .row
+
+        .col-md-4.col-md-offset-4.icons-descr-block_column.-mb
+          .round-bg.-yellow.-lg.-with-icon
+            .icon.restaurant
+          .round-item-label.-md-size Персональная организация туров премиум класса
+      .row
+        .col-md-12.ta-c
+          .simple-btn.-yellow.-lg Оставить заявку!
+

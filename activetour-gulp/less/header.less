@@ -218,6 +218,10 @@
 }
 
 
+.landing-bg-section.-full-height {
+  height: calc(~"100vh - 100px");
+}
+
 /****************/
 /** RESPONSIVE **/
 /****************/
@@ -225,6 +229,11 @@
 
 /*SMALL and EXTRA SMALL -- sm and xs -- HEADER*/
 @media  screen and (max-height: @screen-sm-height) {
+
+  .landing-bg-section.-full-height {
+    height: calc(~"100vh - 60px");
+  }
+
   .main-header {
     padding: 10px 0;
   }
