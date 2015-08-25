@@ -121,6 +121,19 @@ p {
 
 .photo-img {
     margin-right: 20px;
+    margin-top: 20px;
+    -webkit-box-shadow: -4px 6px 8px 0px rgba(50, 50, 50, 0.26);
+    -moz-box-shadow:    -4px 6px 8px 0px rgba(50, 50, 50, 0.26);
+    box-shadow:         -4px 6px 8px 0px rgba(50, 50, 50, 0.26);
+}
+
+.tumb-img {
+    -webkit-box-shadow: -4px 6px 8px 0px rgba(50, 50, 50, 0.26);
+    -moz-box-shadow:    -4px 6px 8px 0px rgba(50, 50, 50, 0.26);
+    box-shadow:         -4px 6px 8px 0px rgba(50, 50, 50, 0.26);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .fll {
