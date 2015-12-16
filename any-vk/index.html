@@ -20,6 +20,7 @@
                 }
             });
 
+
             VK.Api.call('users.get', {uids: id, fields: 'sex, photo_big'}, function(r) {
                 if(r.response) {
                     debugger;
