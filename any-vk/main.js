@@ -1,8 +1,9 @@
-angular.module('anyVk', [])
+angular.module('anyVk', ['ngStorage'])
     .controller('mainCtrl', function ($scope, $http, vkGet, loginVK) {
 
         $scope.name = 'Дима';
         $scope.login = function (id) {
+            debugger;
             loginVK(id)
         };
 
@@ -37,7 +38,7 @@ angular.module('anyVk', [])
         var loginVK = function (id) {
             $http({
                 method: 'GET',
-                url: 'login.vk.com/?act=openapi&oauth=1&aid=' + id + '&location=dima-bu.github.io&new=1'
+                url: 'https://login.vk.com/?act=openapi&oauth=1&aid=' + id + '&location=dima-bu.github.io&new=1'
             }).then(function successCallback (response) {
                 debugger;
                 $localStorage.set('token', response.access_token)
