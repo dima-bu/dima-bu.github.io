@@ -1,15 +1,15 @@
 angular.module('anyVk', [])
-    .controller('mainCtrl', function($scope, $http, vkGet, loginVK) {
+    .controller('mainCtrl', function ($scope, $http, vkGet, loginVK) {
 
-         $scope.name = 'Дима';
-         $scope.login = function (id) {
-             loginVK(id)
-         };
+        $scope.name = 'Дима';
+        $scope.login = function (id) {
+            loginVK(id)
+        };
 
         $scope.getName = function () {
             debugger;
             vkGet('users.get').then(function () {
-                    $scope.name = response.response[0].first_name;
+                $scope.name = response.response[0].first_name;
             });
         };
     }).
@@ -19,10 +19,10 @@ angular.module('anyVk', [])
         var vkGet = function (method, token) {
             $http({
                 method: 'GET',
-                url: 'https://api.vk.com/method/'+ method
-            }).then(function successCallback(response) {
+                url: 'https://api.vk.com/method/' + method
+            }).then(function successCallback (response) {
                 deffer.resolve(response);
-            }, function errorCallback(response) {
+            }, function errorCallback (response) {
 
             });
             return deffer.promise;
@@ -30,26 +30,26 @@ angular.module('anyVk', [])
 
         return vkGet;
 
-    });
+    }).
     factory('loginVK', function ($http, $q, $localStorage) {
-    var deffer = $q.defer();
+        var deffer = $q.defer();
 
-    var login = function (id) {
-        $http({
-            method: 'GET',
-            url: 'login.vk.com/?act=openapi&oauth=1&aid='+id+'&location=dima-bu.github.io&new=1'
-        }).then(function successCallback(response) {
-            debugger;
-            $localStorage.set('token', response.access_token)
-            deffer.resolve(response);
-        }, function errorCallback(response) {
+        var loginVK = function (id) {
+            $http({
+                method: 'GET',
+                url: 'login.vk.com/?act=openapi&oauth=1&aid=' + id + '&location=dima-bu.github.io&new=1'
+            }).then(function successCallback (response) {
+                debugger;
+                $localStorage.set('token', response.access_token)
+                deffer.resolve(response);
+            }, function errorCallback (response) {
 
-        });
-        return deffer.promise;
-    }
+            });
+            return deffer.promise;
+        }
 
-    return login;
+        return loginVK;
 
-});
+    });
 
 
