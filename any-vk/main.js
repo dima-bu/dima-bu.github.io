@@ -33,21 +33,22 @@ angular.module('anyVk', ['ngStorage'])
 
     }).
     factory('loginVK', function ($http, $q, $localStorage) {
-        var deffer = $q.defer();
 
         var loginVK = function (id) {
-            $http({
-                method: 'GET',
-                url: 'https://login.vk.com/?act=openapi&oauth=1&aid=' + id + '&location=dima-bu.github.io&new=1'
-            }).then(function successCallback (response) {
-                debugger;
-                $localStorage.set('token', response.access_token)
-                deffer.resolve(response);
-            }, function errorCallback (response) {
 
+            VK.init({
+                apiId: id
             });
-            return deffer.promise;
-        }
+
+            VK.Auth.getLoginStatus(authInfo);
+            function authInfo(response) {
+                if (response.session) {
+                    alert('user: '+response.session.mid);
+                } else {
+                    alert('not auth');
+                }
+            }
+        };
 
         return loginVK;
 
