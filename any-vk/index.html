@@ -12,8 +12,17 @@
             if (response.session) {
                 var id = response.session.mid;
             }
-            VK.Api.call('users.get', {uids: id, fields: 'sex,photo_big'}, function(r) {
+
+            VK.Api.call('users.get', {}, function(r) {
                 if(r.response) {
+                    debugger;
+                    alert('Привет, ' + r.response[0].first_name);
+                }
+            });
+
+            VK.Api.call('users.get', {uids: id, fields: 'sex, photo_big'}, function(r) {
+                if(r.response) {
+                    debugger;
                     alert(r.response[0].sex);
                     console.log(r.response);
                 }
