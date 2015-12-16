@@ -1,83 +1,59 @@
 angular.module('anyVk', ['ngStorage'])
-    .controller('mainCtrl', function ($scope, $http, vkGet, loginVK, loginVK2) {
+    .controller('mainCtrl', function ($scope, $http, vkGet) {
 
         $scope.name = 'Дима';
-        $scope.login = function (id, secret, url) {
-            debugger;
-            loginVK(id, secret, url);
-        };
-        $scope.login2 = function (id, secret, url) {
-            debugger;
-            loginVK2();
-        };
 
         $scope.getName = function () {
-            debugger;
-            vkGet('users.get').then(function () {
-                $scope.name = response.response[0].first_name;
+            vkGet('users.get', {user_ids: 6492}).then(function (response) {
+                debugger
+                $scope.name = response[0].first_name;
             });
         };
+
+        $scope.showMe = function () {
+            vkGet('users.get', {user_ids: $scope.currentUser.id, fields: 'photo_400_orig, contacts'}).then(function (response) {
+                $scope.currentUser.photo_400_orig = response[0].photo_400_orig;
+                $scope.name = response[0].first_name;
+            });
+        };
+
+
+        $scope.showFriends = function () {
+            debugger;
+            vkGet('friends.get', {user_id: $scope.currentUser.id, fields: 'photo_50'}).then(function (response) {
+                debugger;
+                $scope.friends = response
+            });
+        };
+
+        
+        $scope.login = function () {
+            VK.Auth.login($scope.authInfo, 16);
+        };
+
+        $scope.authInfo = function (response) {
+                if (response.session) {
+                    $scope.currentUser = response.session.user;
+                } else {
+
+                }
+        }
+        
     }).
     factory('vkGet', function ($http, $q) {
         var deffer = $q.defer();
 
-        var vkGet = function (method, token) {
-            //var sid = $localStorage.get('sid');
-            debugger;
-            $http({
-                method: 'GET',
-                url: 'https://api.vk.com/method/' + method
-            }).then(function successCallback (response) {
-                deffer.resolve(response);
-            }, function errorCallback (response) {
-
+        var vkGet = function (method, params) {
+            VK.Api.call(method, params, function(r) {
+                if(r.response) {
+                    deffer.resolve(r.response);
+                }
             });
             return deffer.promise;
         }
 
         return vkGet;
 
-    }).
-    factory('loginVK', function ($http, $q, $localStorage) {
-        var deffer = $q.defer();
-
-        var loginVK = function (id, secret, url ) {
-            debugger;
-            $http({
-                method: 'GET',
-                url: 'https://oauth.vk.com/access_token?client_id=?display=popup?response_type=token?' + id+'&client_secret='+secret+'&redirect_uri='+url
-            }).then(function successCallback (response) {
-                debugger;
-                deffer.resolve(response);
-            }, function errorCallback (response) {
-
-            });
-            return deffer.promise;
-
-        };
-
-        return loginVK;
-
-    }).factory('loginVK2', function ($http, $q, $localStorage) {
-        var deffer = $q.defer();
-
-        var loginVK = function () {
-            debugger;
-            $http({
-                method: 'GET',
-                url: 'https://oauth.vk.com/authorize?client_id=1&display=page&redirect_uri=http://http://dima-bu.github.io/any-vk/&scope=friends&response_type=token&v=5.41'
-            }).then(function successCallback (response) {
-                debugger;
-                deffer.resolve(response);
-            }, function errorCallback (response) {
-
-            });
-            return deffer.promise;
-
-        };
-
-        return loginVK;
-
-    });
+    })
 
 
