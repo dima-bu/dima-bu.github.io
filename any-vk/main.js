@@ -8,10 +8,10 @@ angular.module('anyVk', [])
 
         $scope.getName = function () {
             debugger;
-            vkGet('users.get').then(
-                $scope.name = response.response[0].first_name;
-            )
-        }
+            vkGet('users.get').then(function () {
+                    $scope.name = response.response[0].first_name;
+            });
+        };
     }).
     factory('vkGet', function ($http, $q) {
         var deffer = $q.defer();
