@@ -2,7 +2,7 @@ angular.module('anyVk', ['ngStorage'])
     .controller('mainCtrl', function ($scope, $http, vkGet, loginVK) {
 
         $scope.name = 'Дима';
-        $scope.login = function (id) {
+        $scope.login = function (id, secret, url) {
             debugger;
             loginVK(id, secret, url)
         };
