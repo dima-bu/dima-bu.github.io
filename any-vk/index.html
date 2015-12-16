@@ -4,38 +4,44 @@
     <meta charset="UTF-8">
     <title></title>
     <script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
     <script language="javascript">
+
         VK.init({
             apiId: 5063919
         });
-        function getit(response) {
-            if (response.session) {
-                var id = response.session.mid;
-            }
+//
+//        function getit(response) {
+//            if (response.session) {
+//                var id = response.session.mid;
+//            }
+//
+//            VK.Api.call('users.get', {}, function(r) {
+//                if(r.response) {
+//                    debugger;
+//                    alert('Привет, ' + r.response[0].first_name);
+//                }
+//            });
+//
+//
+//            VK.Api.call('users.get', {uids: id, fields: 'sex, photo_big'}, function(r) {
+//                if(r.response) {
+//                    debugger;
+//                    alert(r.response[0].sex);
+//                    console.log(r.response);
+//                }
+//            });
+//        }
 
-            VK.Api.call('users.get', {}, function(r) {
-                if(r.response) {
-                    debugger;
-                    alert('Привет, ' + r.response[0].first_name);
-                }
-            });
-
-
-            VK.Api.call('users.get', {uids: id, fields: 'sex, photo_big'}, function(r) {
-                if(r.response) {
-                    debugger;
-                    alert(r.response[0].sex);
-                    console.log(r.response);
-                }
-            });
-        }
         VK.UI.button('login_button');
     </script>
 </head>
-<body>
-
-<button id="login_button" onclick="VK.Auth.login(getit);">LOGIN</button>
-
-
+<body ng-app="anyVk">
+<div ng-controller="mainCtrl">
+    <button id="login_button" ng-click="login()">LOGIN</button>
+    <button ng-click="getName()">GET NAME</button>
+    <div>{{name}}</div>
+</div>
 </body>
 </html>
