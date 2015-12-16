@@ -4,7 +4,7 @@ angular.module('anyVk', ['ngStorage'])
         $scope.name = 'Дима';
         $scope.login = function (id) {
             debugger;
-            loginVK(id)
+            loginVK(id, secret, url)
         };
 
         $scope.getName = function () {
@@ -18,6 +18,8 @@ angular.module('anyVk', ['ngStorage'])
         var deffer = $q.defer();
 
         var vkGet = function (method, token) {
+            //var sid = $localStorage.get('sid');
+            debugger;
             $http({
                 method: 'GET',
                 url: 'https://api.vk.com/method/' + method
@@ -33,21 +35,21 @@ angular.module('anyVk', ['ngStorage'])
 
     }).
     factory('loginVK', function ($http, $q, $localStorage) {
+        var deffer = $q.defer();
 
-        var loginVK = function (id) {
+        var loginVK = function (id, secret, url ) {
+            debugger;
+            $http({
+                method: 'GET',
+                url: 'https://oauth.vk.com/access_token?client_id=' + id+'&client_secret='+secret+'&redirect_uri='+url
+            }).then(function successCallback (response) {
+                debugger;
+                deffer.resolve(response);
+            }, function errorCallback (response) {
 
-            VK.init({
-                apiId: id
             });
+            return deffer.promise;
 
-            VK.Auth.getLoginStatus(authInfo);
-            function authInfo(response) {
-                if (response.session) {
-                    alert('user: '+response.session.mid);
-                } else {
-                    alert('not auth');
-                }
-            }
         };
 
         return loginVK;
