@@ -34,12 +34,13 @@
 //            });
 //        }
 
-        VK.UI.button('login_button');
+        //VK.UI.button('login_button');
     </script>
 </head>
 <body ng-app="anyVk">
 <div ng-controller="mainCtrl">
-    <button id="login_button" ng-click="login()">LOGIN</button>
+    <button ng-click="login()">LOGIN</button>
+    <button ng-click="getName()">GET NAME</button>
     <button ng-click="getName()">GET NAME</button>
     <div>{{name}}</div>
 </div>
