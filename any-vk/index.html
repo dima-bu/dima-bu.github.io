@@ -5,13 +5,14 @@
     <title></title>
     <script src="http://vkontakte.ru/js/api/openapi.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
     <script src="main.js" type="text/javascript"></script>
     <script language="javascript">
 
-        VK.init({
-            apiId: 5063919
-        });
-//
+//        VK.init({
+//            apiId: 5063919
+//        });
+////
 //        function getit(response) {
 //            if (response.session) {
 //                var id = response.session.mid;
@@ -39,7 +40,7 @@
 </head>
 <body ng-app="anyVk">
 <div ng-controller="mainCtrl">
-    <button ng-click="login()">LOGIN</button>
+    <button ng-click="login('5063919')">LOGIN</button>
     <button ng-click="getName()">GET NAME</button>
     <button ng-click="getName()">GET NAME</button>
     <div>{{name}}</div>

@@ -1,9 +1,9 @@
 angular.module('anyVk', [])
-    .controller('mainCtrl', function($scope, $http, vkGet) {
+    .controller('mainCtrl', function($scope, $http, vkGet, loginVK) {
 
          $scope.name = 'Дима';
-         $scope.login = function () {
-             VK.Auth.login();
+         $scope.login = function (id) {
+             loginVK(id)
          };
 
         $scope.getName = function () {
@@ -31,5 +31,25 @@ angular.module('anyVk', [])
         return vkGet;
 
     });
+    factory('loginVK', function ($http, $q, $localStorage) {
+    var deffer = $q.defer();
+
+    var login = function (id) {
+        $http({
+            method: 'GET',
+            url: 'login.vk.com/?act=openapi&oauth=1&aid='+id+'&location=dima-bu.github.io&new=1'
+        }).then(function successCallback(response) {
+            debugger;
+            $localStorage.set('token', response.access_token)
+            deffer.resolve(response);
+        }, function errorCallback(response) {
+
+        });
+        return deffer.promise;
+    }
+
+    return login;
+
+});
 
 
