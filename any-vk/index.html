@@ -15,17 +15,16 @@
 </head>
 <body ng-app="anyVk">
 <div ng-controller="mainCtrl">
-    <button ng-click="getName()">GET NAME</button>
     <button ng-click="showMe()">SHOW ME</button>
     <button ng-click="login()">LOGIN</button>
     <button ng-click="showFriends()">SHOW FRIENDS</button>
     <div>Имя: {{currentUser.first_name}}</div>
-    <div>Фамилия: {{currentUser.last_name}}</div>
-    <img src="{{currentUser.photo_400_orig}}" alt=""/>
+    <div>Фамилия: {{currentUser.last_name}} </div>
+    <div>{{currentUser.photo_400_orig}}</div>
     <div><h2>Друзья</h2></div>
     <ul>
         <li ng-repeat="friend in friends">
-            <img src="{{friend.photo_50}}" alt=""/>
+            <div>{{friend.photo_50}}"</div>
             <div>Имя: {{friend.first_name}}</div>
             <div>Фамилия: {{friend.last_name}}</div>
             <div>ОНЛАЙН: <span ng-show="friend.online">ДА</span></div>
