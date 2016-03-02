@@ -1,0 +1,50 @@
+doctype html
+html(class="no-js")
+  include includes/head
+  body
+    include includes/header
+    header.logo-header
+      .container
+        a.logo(href="index.html")
+    header.title-header
+      .container
+        .title-header_inner
+            h1 ДОБРО ПОЖАЛОВАТЬ <br/> В НАШ МЕГАСЕКРЕТНЫЙ ПРОЕКТ
+            p.title-descr О чем наш проект, мы пока рассказать не можем.<br/> Совершенно секретная разработка на борту плавучего ресторана и все такое.<br/> Ах да, мы расположены в Омске.
+
+    section.main-contenet
+      .container
+        h2 А ЕСЛИ ВЫ ПОХОЖИ НА КОГО-ТО ИЗ ПЕРЕЧИСЛЕННЫХ НИЖЕ, ВЫ НАМ ОЧЕНЬ НУЖНЫ
+        ul.vacancy-list
+
+    section.footer-content
+      .container
+        h2 МЫ ПРЕДЛАГАЕМ:
+        ul.footer-content_list
+          li опцион (доля в проекте)
+          li официальное трудоустройство
+          li индивидуальный график работы
+          li хорошая заработная плата по результатам собеседования
+
+    footer.footer
+      .container Copyright © 2014 HIVE Development
+
+
+    .popup-wrapper(style="display: none;")
+      form.popup(enctype="multipart/form-data", action="resume_recieve_form.php", method="POST", onsubmit="return sendForm(this, ge('content'))")
+        #content
+          .popup-title Заявка на вакансию
+          h3 Front-end/javascript developer
+          input.g_input#name(placeholder="Ваше имя", name="name", type="text")
+          .g_file_wrapper
+            .g_file-btn
+              i.file
+            .g_file-text Прикрепить файл
+            input.g_file#userfile(type="file", name="userfile")
+          input.g_input#vacancy(name="role", value="", hidden="")
+          progress( class="pBar", min="0", max="100", value="0") 0% complete
+          #status
+          button.simple-btn#go( type="submit", disabled="disabled", name="go", onclick="sendForm()" ) ОТПРАВИТЬ РЕЗЮМЕ
+          a.close-btn.js-popup-close
+      .popup-bg
+    include includes/footer-script
