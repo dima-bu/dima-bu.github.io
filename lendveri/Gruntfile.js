@@ -1,43 +1,34 @@
+'use strict';
+
+var multiline = require('multiline');
+
 module.exports = function(grunt) {
+
+    var sassOptions = {
+        loadPath: ['scss'],
+        precision: 6,
+        sourcemap: 'auto',
+        style: 'expanded',
+        trace: true,
+        bundleExec: true
+    };
 
     // 1. Вся настройка находится здесь
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        //less: {
-        //    development: {
-        //        options: {
-        //            compress: true,
-        //            yuicompress: true,
-        //            optimization: 2,
-        //            sourceMap: true,
-        //            sourceMapFilename: 'code/css/style.css.map',
-        //            sourceMapRootpath: 'http://localhost:63342/dima-bu.github.io/hive/'
-        //        },
-        //        files: {
-        //            "code/css/style.css": "less/style.less"
-        //        }
-        //    }
-        //},
+
         watch: {
-            scripts: {
-                files: ['less/*.less'],
-                tasks: ['less', 'autoprefixer', 'inline'],
-                options: {
-                    nospawn: true,
-                    livereload: true
-                }
+            sass: {
+                files: "sass/*.scss",
+                tasks: "sass"
             },
             jade: {
                 files: "**/*.jade",
                 tasks: "jade"
             },
             sprite: {
-                files: "forsprites/*.png",
-                tasks: "sprite"
-            },
-            uglify: {
-                files: "code/js/*.*",
-                tasks: "uglify"
+                files: "svgs/*.*",
+                tasks: "svgstore"
             }
 
         },
@@ -49,15 +40,44 @@ module.exports = function(grunt) {
                 dest: 'code/js/vendor/all.js'
             }
         },
-        grunticon: {
-            myIcons: {
-                files: [{
-                    expand: true,
-                    cwd: 'svgs/',
-                    src: ['*.svg', '*.png'],
-                    dest: "code/svg"
-                }],
+        svgstore: {
+            options: {
+                prefix : 'icon-', // This will prefix each ID
+                svg: { // will add and overide the the default xmlns="http://www.w3.org/2000/svg" attribute to the resulting SVG
+                    viewBox : '0 0 100 100',
+                    xmlns: 'http://www.w3.org/2000/svg'
+                }
+            },
+
+            default:{
                 options: {
+                    includedemo : multiline.stripIndent(function(){/*
+
+                     {{{svg}}}
+
+                     */})
+                },
+                files: {
+                    './jade/svg/svg-sprite.svg': ['./svgs/*.svg']
+                }
+            }
+        },
+
+        copy: {
+            main: {
+                files: [
+                    { expand: true, src: ['./img/**'], dest: 'code/'},
+                    { expand: true, src: ['./fonts/**'], dest: 'code/'},
+                    { expand: true, cwd: './bootstrap/dist/css/', src: ['**'], dest: 'code/css'},
+                ]
+            }
+        },
+
+        sass: {
+            core: {
+                options: sassOptions,
+                files: {
+                    './code/css/bootstrap.css': './bootstrap/scss/bootstrap.scss'
                 }
             }
         },
@@ -69,7 +89,7 @@ module.exports = function(grunt) {
                         debug: true
                     },
                     client: false,
-                    pretty: false,
+                    pretty: true,
                     //data: grunt.file.readJSON("data.json")
                 },
                 files:
@@ -99,9 +119,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-inline');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-grunticon');
+    grunt.loadNpmTasks('grunt-svgstore');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     //grunt.registerTask('default', ['less', 'jade', 'uglify', 'watch']);
-    grunt.registerTask('default', ['jade', 'watch']);
+    grunt.registerTask('default', ['jade', 'sass', 'watch']);
 };
