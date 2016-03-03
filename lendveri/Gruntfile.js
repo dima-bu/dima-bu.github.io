@@ -58,7 +58,7 @@ module.exports = function(grunt) {
                      */})
                 },
                 files: {
-                    './jade/svg/svg-sprite.svg': ['./svgs/*.svg']
+                    './jade/includes/svg/svg-sprite.svg': ['./svgs/*.svg']
                 }
             }
         },
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
             core: {
                 options: sassOptions,
                 files: {
-                    './code/css/bootstrap.css': './bootstrap/scss/bootstrap.scss'
+                    './code/css/style.css': './sass/style.scss'
                 }
             }
         },
@@ -89,17 +89,16 @@ module.exports = function(grunt) {
                         debug: true
                     },
                     client: false,
-                    pretty: true,
+                    pretty: true
                     //data: grunt.file.readJSON("data.json")
                 },
-                files:
-                        [{
-                                cwd: "jade",
-                                src: "*.jade",
-                                dest: "code",
-                                expand: true,
-                                ext: ".html"
-                            }]
+                files: [{
+                         cwd: "jade",
+                         src: "*.jade",
+                         dest: "code",
+                         expand: true,
+                         ext: ".html"
+                }]
             }
         }
 
@@ -123,6 +122,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
-    //grunt.registerTask('default', ['less', 'jade', 'uglify', 'watch']);
     grunt.registerTask('default', ['jade', 'sass', 'watch']);
 };
