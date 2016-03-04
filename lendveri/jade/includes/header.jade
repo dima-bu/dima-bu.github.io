@@ -6,8 +6,80 @@ header
           .header_text Акция <span class="header_text-indent">«Установка Бесплатно»</span> продлена до 29 февраля
           .header_subtext Распространяется на двери Гранит
         button.btn.btn-transparent.btn-md.header_btn Подробнее
-  .header_botton
-  .container
-    .col-sm-12
-      button.btn.btn-icons.btn-lg
-        span Петербург
+  .header_bottom
+    .container
+      .row.header_bottom-contacts.hidden-md-down
+        .col-sm-12
+            a.btn.btn-icons.btn-lg_mod
+              +svg('pin', 'map-sm -before')
+              span Петербург
+            .btn-select(style="display: none;")
+              a.btn.btn-icons.btn-lg_mod.active
+                +svg('pin', 'map-sm -before')
+                span Петербург
+              ul.btn-select_list
+                li.btn-select_item Москва
+                li.btn-select_item Новосибирск
+                li.btn-select_item Омск
+            .header_phone 8 (812) 309-71-55
+            .feedback-menu
+              .feedback-menu_item
+                a.feedback-menu_link Обратный звонок
+              .feedback-menu_item
+                a.feedback-menu_link Бесплатный замер
+            .work-time Пн - Вс, 9:00 — 21:00
+      .row
+        .col-xl-8.col-lg-9
+          nav.navbar.navbar-main.bg-faded
+            button.navbar-toggler.hidden-lg-up.collapsed(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
+            +svg('logo', 'logo-normal navbar-brand')
+            a.btn.btn-icons.btn-lg_mod.flr.hidden-lg-up(style="margin-bottom: 14px;")
+              +svg('pin', 'map-sm -before')
+              span Петербург
+            ul.nav.navbar-nav.hidden-md-down
+              li.nav-item
+                a.nav-link.active Главная
+              li.nav-item
+                a.nav-link Входные двери
+              li.nav-item
+                a.nav-link Межкомнатные двери
+
+            .collapse.navbar-toggleable-xs.hidden-lg-up.nav-mobile_wrapper(id="navbar-header" style="height:0;")
+              ul.nav.nav-mobile
+                li.nav-mobile_item
+                  a.nav-mobile_link.active Входные
+                li.nav-mobile_item
+                  a.nav-mobile_link Межкомнатные
+                li.nav-mobile_item
+                  a.nav-mobile_link.active Оплата и доставка
+
+              ul.nav.nav-mobile
+                li.nav-item
+                  a.nav-mobile_link Оплата и доставка
+                li.nav-item
+                  a.nav-mobile_link Ответы на вопросы
+                li.nav-item
+                  a.nav-mobile_link Кредит и рассрочка
+                li.nav-item
+                  a.nav-mobile_link Акции
+                li.nav-item
+                  a.nav-mobile_link Гарантия
+                li.nav-item
+                  a.nav-mobile_link Отзывы
+                li.nav-item
+                  a.nav-mobile_link О компании
+                li.nav-item
+                  a.nav-mobile_link Правовая информаци
+
+            button.btn.btn-success.btn-lg.btn-full.hidden-lg-up Позвонить <span class="small-btn-text">8 (812) 309-71-55</span>
+            .feedback-menu_xs.hidden-lg-up
+              .fll
+                a.link-sm Обратный звонок
+              .flr
+                a.link-sm Бесплатный замер
+        .col-xl-4.col-lg-3
+          .search-wrapper
+            .input-group
+              input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
+              a.input-group-addon
+                +svg('search', 'search-sm')

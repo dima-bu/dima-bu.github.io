@@ -1,4 +1,26 @@
+.g-icon {
+  display: inline-block;
+}
+
 .map-sm {
-  width: 20px;
-  height: 40px;
+  width: 14px;
+  height: 20px;
+}
+
+.logo-normal {
+  width: 166px;
+  height: 34px;
+}
+
+.search-sm {
+  width: 16px;
+  height: 18px;
+}
+
+@include media-breakpoint-down(md) {
+  .logo-normal {
+    width: 94px;
+    height: 19px;
+    margin: 11px 0;
+  }
 }

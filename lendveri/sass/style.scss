@@ -19,17 +19,17 @@
 @import "../bootstrap/scss/code";
 @import "../bootstrap/scss/grid";
 //@import "tables";
-@import "../bootstrap/scss/forms";
+@import "forms";
 
 
 // Components
-//@import "animation";
-//@import "dropdown";
-//@import "button-group";
-//@import "input-group";
-//@import "custom-forms";
+@import "../bootstrap/scss/animation";
+@import "../bootstrap/scss/dropdown";
+@import "../bootstrap/scss/button-group";
+@import "input-group";
+@import "../bootstrap/scss/custom-forms";
 @import "../bootstrap/scss/nav";
-@import "../bootstrap/scss/navbar";
+@import "navbar";
 //@import "card";
 //@import "breadcrumb";
 //@import "pagination";
@@ -39,8 +39,8 @@
 //@import "alert";
 //@import "progress";
 //@import "media";
-//@import "list-group";
-//@import "responsive-embed";
+@import "../bootstrap/scss/list-group";
+@import "../bootstrap/scss/responsive-embed";
 //@import "close";
 
 // Components w/ JavaScript
@@ -54,10 +54,9 @@
 @import "../bootstrap/scss/utilities-background";
 @import "../bootstrap/scss/utilities-spacing";
 @import "../bootstrap/scss/utilities-responsive";
-
+@import "helpers";
 // Users
 @import "header";
 @import "svg-icons";
 
-//@import "buttons";
 @import "buttons";

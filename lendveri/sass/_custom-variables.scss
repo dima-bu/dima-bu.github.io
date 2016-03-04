@@ -46,6 +46,13 @@ $red-dark: #c82e00;
 $black-main: #060606;
 $gray-main:  #d9d9d9;
 $gray-normal:  #a0a1a2;
+$gray-strong: #808080;
+$gray-indent: #dedede;
+
+$green-main: #79c152;;
+$green-light: #89db5c;
+$green-dark: #69a847;
+
 
 // Options
 //
@@ -101,7 +108,7 @@ $body-color:                 $gray-dark !default;
 //
 // Style anchor elements.
 
-$link-color:                 $brand-primary !default;
+$link-color:                 $red-main !default;
 $link-decoration:            none !default;
 $link-hover-color:           darken($link-color, 15%) !default;
 $link-hover-decoration:      underline !default;
@@ -134,7 +141,7 @@ $container-max-widths: (
         sm: 576px,
         md: 720px,
         lg: 940px,
-        xl: 1140px
+        xl: 1180px
 ) !default;
 
 

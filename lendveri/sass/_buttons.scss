@@ -152,14 +152,46 @@ fieldset[disabled] a.btn {
   line-height: 1;
 }
 
+.btn-full {
+  width: 100%;
+}
 
 .btn-lg {
+  padding: 12px 8px 10px 8px;
+  border-radius: $border-radius;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.btn-lg_mod {
   padding: 9px 8px 6px 8px;
   border-radius: $border-radius;
   font-size: 18px;
   line-height: 1;
 }
 
+.btn-success {
+  border: 0 none;
+  background-color: $green-main;
+  color: #fff;
+
+  &:hover{
+    background-color:$green-light;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $green-dark;
+  }
+
+
+
+
+}
+
+span.small-btn-text {
+  font-size: 12px;
+}
 
 .btn-transparent {
   border: 1px solid $red-main;
@@ -187,9 +219,22 @@ fieldset[disabled] a.btn {
   background-color: transparent;
   color: $red-main;
 
-  &:hover{
+  .g-icon {
+    fill: $red-main;
+    vertical-align: middle;
+    
+    &.-before {
+      margin-right: 6px;
+    }
+    
+  }
+
+  &:hover, &.active{
     background-color:$red-main;
     color: #fff;
+    svg {
+      fill: #fff;
+    }
   }
 
   &:focus,
