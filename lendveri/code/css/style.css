@@ -4153,6 +4153,52 @@ a.bg-danger:focus, a.bg-danger:hover {
     margin: 11px 0;
   }
 }
+.youtube-sm {
+  width: 28px;
+  height: 34px;
+}
+
+.youtube-icon {
+  fill: #A4A4A4;
+}
+.youtube-icon:hover {
+  fill: #cd201f;
+}
+
+.twitter-sm {
+  width: 33px;
+  height: 27px;
+}
+
+.twitter-icon {
+  fill: #A4A4A4;
+}
+.twitter-icon:hover {
+  fill: #55acee;
+}
+
+.vk-sm {
+  width: 33px;
+  height: 33px;
+}
+
+.vk-icon {
+  fill: #A4A4A4;
+}
+.vk-icon:hover {
+  fill: #45668e;
+}
+
+.visa-sm {
+  width: 47px;
+  height: 15px;
+}
+
+.mastercard-sm {
+  width: 91px;
+  height: 16px;
+}
+
 .btn {
   display: inline-block;
   font-family: "beausanspro-semibold", Helvetica, Arial, sans-serif;
