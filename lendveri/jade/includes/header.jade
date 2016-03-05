@@ -29,22 +29,35 @@ header
                 a.feedback-menu_link Бесплатный замер
             .work-time Пн - Вс, 9:00 — 21:00
       .row
-        .col-xl-8.col-lg-9
+        .col-xl-2.col-lg-3
           nav.navbar.navbar-main.bg-faded
             button.navbar-toggler.hidden-lg-up.collapsed(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
             +svg('logo', 'logo-normal navbar-brand')
             a.btn.btn-icons.btn-lg_mod.flr.hidden-lg-up(style="margin-bottom: 14px;")
               +svg('pin', 'map-sm -before')
               span Петербург
-            ul.nav.navbar-nav.hidden-md-down
-              li.nav-item
-                a.nav-link.active Главная
-              li.nav-item
-                a.nav-link Входные двери
-              li.nav-item
-                a.nav-link Межкомнатные двери
 
-            .collapse.navbar-toggleable-xs.hidden-lg-up.nav-mobile_wrapper(id="navbar-header" style="height:0;")
+        .col-xl-10.col-lg-9
+          .row.collapse.navbar-toggleable-xs(id="navbar-header" style="height:0;")
+
+            .col-xl-6.col-lg-8
+              nav.navbar.navbar-main.bg-faded
+                ul.nav.navbar-nav
+                  li.nav-item
+                    a.nav-link.active Главная
+                  li.nav-item
+                    a.nav-link Входные двери
+                  li.nav-item
+                    a.nav-link Межкомнатные двери
+
+            .col-xl-6.col-lg-4
+              .search-wrapper
+                .input-group
+                  input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
+                  a.input-group-addon
+                    +svg('search', 'search-sm')
+
+            //.collapse.navbar-toggleable-xs.hidden-lg-up.nav-mobile_wrapper(id="navbar-header" )
               ul.nav.nav-mobile
                 li.nav-mobile_item
                   a.nav-mobile_link.active Входные
@@ -70,16 +83,11 @@ header
                   a.nav-mobile_link О компании
                 li.nav-item
                   a.nav-mobile_link Правовая информаци
-
-            button.btn.btn-success.btn-lg.btn-full.hidden-lg-up Позвонить <span class="small-btn-text">8 (812) 309-71-55</span>
-            .feedback-menu_xs.hidden-lg-up
-              .fll
-                a.link-sm Обратный звонок
-              .flr
-                a.link-sm Бесплатный замер
-        .col-xl-4.col-lg-3
-          .search-wrapper
-            .input-group
-              input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
-              a.input-group-addon
-                +svg('search', 'search-sm')
+      .row
+        .col-xs-12
+          button.btn.btn-success.btn-lg.btn-full.hidden-lg-up Позвонить <span class="small-btn-text">8 (812) 309-71-55</span>
+          .feedback-menu_xs.hidden-lg-up
+            .fll
+              a.link-sm Обратный звонок
+            .flr
+              a.link-sm Бесплатный замер

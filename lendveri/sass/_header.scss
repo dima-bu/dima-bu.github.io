@@ -1,9 +1,4 @@
 
-@mixin clear-menu(){
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 .svg-block {
   svg:not(:root) {
@@ -148,4 +143,10 @@
   &:hover {
     color: $red-dark;
   }
+}
+
+
+
+#navbar-header {
+  float: none;
 }

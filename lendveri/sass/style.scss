@@ -6,7 +6,7 @@
 @import "font";
 // Core variables and mixins
 @import "custom-variables";
-@import "../bootstrap/scss/mixins";
+@import "mixins";
 
 // Reset and dependencies
 @import "../bootstrap/scss/normalize";
@@ -57,6 +57,7 @@
 @import "helpers";
 // Users
 @import "header";
+@import "footer";
 @import "svg-icons";
 
 @import "buttons";

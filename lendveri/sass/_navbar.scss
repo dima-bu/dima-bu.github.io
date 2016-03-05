@@ -277,6 +277,40 @@
   .navbar-divider {
     background-color: rgba(255,255,255,.075);
   }
+
+
+  @include media-breakpoint-down(xl) {
+
+    .navbar-nav {
+
+      .nav-item + .nav-item {
+        margin-left: 20px;
+      }
+
+    }
+
+  }
+
+  @include media-breakpoint-down(md) {
+    .nav-item {
+      float: none;
+    }
+
+    .navbar-nav {
+      clear: both;
+      overflow: hidden;
+
+      .nav-item + .nav-item {
+        margin: 0;
+      }
+
+    }
+
+  }
+
+
+  
+  
 }
 
 .nav-mobile_wrapper {
@@ -307,4 +341,8 @@
     background-color: #dedede;
   }
 
+}
+
+#navbar-header {
+  overflow: hidden;
 }

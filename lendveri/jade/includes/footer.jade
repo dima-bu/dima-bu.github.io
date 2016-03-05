@@ -1,7 +1,7 @@
 footer.footer
   .container
     .row
-      .col-md-3
+      .col-md-12.col-lg-3
         ul.footer-menu
           li.footer-menu_item
             a.footer-menu_link Акции
@@ -15,7 +15,7 @@ footer.footer
             a.footer-menu_link Гарантия
           li.footer-menu_item
             a.footer-menu_link Отзывы
-      .col-md-3
+      .col-md-12.col-lg-3
         ul.footer-menu
           li.footer-menu_item
             a.footer-menu_link О компании
@@ -23,7 +23,7 @@ footer.footer
             a.footer-menu_link Правовая информация
           li.footer-menu_item
             a.footer-menu_link  Адреса магазинов
-      .col-md-3
+      .col-md-12.col-lg-3
         h5.footer-title Принимаем к оплате:
         ul.soc-menu
           li.soc-menu_item
@@ -33,21 +33,23 @@ footer.footer
             a.soc-menu_link
               +svg('master-card', 'mastercard-sm')
 
-      .col-md-3
+      .col-md-12.col-lg-3
         h5.footer-title Лендвери в сетях:
         ul.soc-menu
+          li.soc-menu_item
+            a.soc-menu_link
+              +svg('twitter', 'twitter-sm twitter-icon')
           li.soc-menu_item
             a.soc-menu_link
               +svg('youtube', 'youtube-sm youtube-icon')
           li.soc-menu_item
             a.soc-menu_link
               +svg('vk', 'vk-sm vk-icon')
-          //li.soc-menu_item
-            a.soc-menu_link
-              +svg('twitter', 'twitter-sm twitter-icon')
-        button.btn.btn-transparent.btn-md.header_btn Обратная связь
+
+        .feedback-btn_wrapper
+          button.btn.btn-transparent.btn-md_mod Обратная связь
 
   .container
     .row
       .col-md-12
-        .copyright © 2010-2016 Лендвери. Сделано с любовью в <a href="http://www.booqva.com/ru/">Booqva</a>
+        .copyright © 2010-2016 Лендвери. <span>Сделано с любовью в <a href="http://www.booqva.com/ru/">Booqva</a></span>
