@@ -5,3 +5,47 @@
 .flr {
   float: right;
 }
+
+.ta-r {
+  text-align: right;
+}
+
+.round-main {
+  background-color: #000;
+  fill: $red-main;
+  color: $red-main;
+}
+
+.round-md {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 26px;
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.round-lg_crop {
+  width: 103px;
+  height: 103px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.g-tag {
+  display: inline-block;
+  border-radius: 5px 0 0 5px;
+  color:#fff;
+  padding: 17px 12px 13px 12px;
+  font-size: 14px;
+
+  &.-new {
+    background-color: $green-main;
+  }
+}

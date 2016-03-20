@@ -130,7 +130,7 @@
     }
   }
   &-md {
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(lg)  {
       display: block !important;
     }
   }

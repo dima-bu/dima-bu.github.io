@@ -1,0 +1,73 @@
+.product-item_img {
+  margin-bottom: 20px;
+}
+
+.product-item_title {
+  color:  #808080;
+  font-size: 14px;
+  margin-bottom: 30px;
+  strong {
+    color:  #010101;
+    font-family: $font-family-semibold;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}
+
+.product-item_prices {
+  margin-bottom: 20px;
+}
+
+.product-item_old-price {
+  font-size: 14px;
+  font-family: $font-family-semibold;
+  color:#000000;
+  text-decoration: line-through;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1.44;
+}
+
+.product-item_price {
+  font-size: 24px;
+  font-family: $font-family-semibold;
+  color:#000000;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1;
+}
+
+.product-item_services {
+  font-size: 0;
+  margin-bottom: 20px;
+  .service-icon, .product-item_service_price {
+    margin-right: 5px;
+  }
+}
+
+.product-item_service_price {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #808080;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.product-item_availability {
+  line-height: 50px;
+}
+.product-item_in-stock {
+  color:  #58a72d;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: bottom;
+
+  .g-icon {
+    vertical-align: middle;
+  }
+
+  span {
+    margin-left: 6px;
+  }
+}

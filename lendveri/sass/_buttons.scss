@@ -134,6 +134,21 @@ fieldset[disabled] a.btn {
   }
 }
 
+.btn-std {
+  border: 0 none;
+  background-color: $red-main;
+  color: #fff;
+
+  &:hover{
+    background-color: $red-dark;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #000000;
+  }
+}
+
 
 //
 // Button Sizes
@@ -177,6 +192,13 @@ fieldset[disabled] a.btn {
   line-height: 1;
 }
 
+.btn-lg_mod {
+  padding: 17px 20px 13px 20px;
+  border-radius: $border-radius;
+  font-size: 16px;
+  line-height: 1;
+}
+
 .btn-success {
   border: 0 none;
   background-color: $green-main;
@@ -191,10 +213,9 @@ fieldset[disabled] a.btn {
     background-color: $green-dark;
   }
 
-
-
-
 }
+
+
 
 span.small-btn-text {
   font-size: 12px;

@@ -1,0 +1,29 @@
+.info-main_block {
+  margin-bottom: 40px;
+}
+
+.round-info-main {
+  margin-right: 7px
+}
+
+h4.info-main_title  {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: $red-main;
+}
+
+p.info-main_descr {
+  color: #000;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+
+  @include media-breakpoint-between(lg, lg) {
+    display: none;
+  }
+
+}
+
+.round-info-elem {
+  margin-bottom: 30px;
+}
