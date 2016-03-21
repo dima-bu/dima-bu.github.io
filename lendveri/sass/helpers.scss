@@ -10,6 +10,10 @@
   text-align: right;
 }
 
+.ta-c {
+  text-align: center;
+}
+
 .round-main {
   background-color: #000;
   fill: $red-main;
@@ -42,10 +46,65 @@
   display: inline-block;
   border-radius: 5px 0 0 5px;
   color:#fff;
-  padding: 17px 12px 13px 12px;
+  padding: 17px 20px 13px 20px;
   font-size: 14px;
+  position: relative;
 
   &.-new {
     background-color: $green-main;
+
+    &::before {
+      border-color: transparent;
+      border-left-color:  #808080;
+      border-top-color:  #808080;
+    }
+
+    &::after {
+      border-color: transparent;
+      border-left-color:  #808080;
+      border-bottom-color:  #808080;
+    }
+
   }
+
+  &.-hit {
+    background-color: #3b3a3a;
+    padding: 17px 14px 13px 14px;
+
+    &::before {
+      border-color: transparent;
+      border-left-color:  #000000;
+      border-top-color:  #000000;
+    }
+
+    &::after {
+      border-color: transparent;
+      border-left-color:  #000000;
+      border-bottom-color: #000000;
+    }
+
+  }
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0px;
+    border: 2px solid transparent;
+    border-left: 5px solid #808080;
+    border-top: 2px solid #808080;
+    bottom:-4px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #808080;
+    border-left: 5px solid #808080;
+    top:-4px;
+  }
+
+
 }

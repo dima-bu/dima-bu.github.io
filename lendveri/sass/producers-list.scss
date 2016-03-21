@@ -1,0 +1,17 @@
+.producers-list  {
+  @include clear-menu();
+  text-align: center;
+  font-size: 0;
+  padding: 25px 0;
+  margin-bottom: 50px;
+}
+
+.producers-list_item {
+  display: inline-block;
+  margin:0 37.5px ;
+}
+
+.producers-list_link {
+  display: inline-block;
+  cursor: pointer;
+}

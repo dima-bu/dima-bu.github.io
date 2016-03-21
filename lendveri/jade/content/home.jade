@@ -4,10 +4,50 @@
       include ../includes/banner
     .col-xl-3.col-lg-4.clearfix
       img.img-fluid.flr(src="img/standart-banner.jpg")
+
   include  ../includes/info-main
-  include  ../includes/article-preview
+
+  .row
+    .col-xl-12
+      h2.ta-c.-block-title
+        +svg('flame', 'flame-md')
+        span Горячая десятка входных дверей
+
   .row.products-list_block
     .col-xl-3
       include  ../includes/product-item
     .col-xl-3
+      include  ../includes/product-item_mod
+    .col-xl-3
+      include  ../includes/product-item_mod
+    .col-xl-3
       include  ../includes/product-item
+
+  // Статья
+  include  ../includes/article-preview
+
+  .row.products-list_block
+    .col-xl-3
+      include  ../includes/product-item
+    .col-xl-3
+      include  ../includes/product-item_mod
+    .col-xl-3
+      include  ../includes/product-item_mod
+    .col-xl-3
+      include  ../includes/product-item
+
+  // Статья
+  include  ../includes/article-preview_mod
+
+  .row.products-list_block
+    .col-xl-3
+      include  ../includes/product-item
+    .col-xl-3
+      include  ../includes/product-item_mod
+    .col-xl-6
+      .arcticle-preview_block--lg
+        .arcticle-preview_title-lg Все двери здесь
+        p Вся линейка дверей Гранит, Кондор от модели номер 1 до икс пятой, двери Зенит. Все свеженькие, только что с завода.
+        button.btn.btn-transparent.btn-lg_mod.fll Смотреть
+
+  include  ../includes/producers-list

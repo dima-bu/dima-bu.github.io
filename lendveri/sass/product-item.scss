@@ -1,3 +1,19 @@
+.products-list_block {
+  margin-bottom: 30px;
+}
+
+.product-item {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+
+  .g-tag {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+  }
+}
+
 .product-item_img {
   margin-bottom: 20px;
 }
@@ -35,6 +51,11 @@
   display: inline-block;
   vertical-align: bottom;
   line-height: 1;
+
+  &.-indent {
+    color: $red-main;
+  }
+
 }
 
 .product-item_services {
@@ -53,21 +74,34 @@
   vertical-align: top;
 }
 
-.product-item_availability {
-  line-height: 50px;
+.product-item_availability_wrapper {
+  line-height: 46px;
+  width: 50%;
+  text-align: center;
 }
-.product-item_in-stock {
-  color:  #58a72d;
+
+.product-item_availability {
   font-size: 14px;
   line-height: 1;
   display: inline-block;
   vertical-align: bottom;
+  color:  #808080;
+
+  &.-custom {
+    color:  #808080;
+  }
+
+  &.-in-stock{
+    color: $green-main;
+
+    span {
+      margin-left: 6px;
+    }
+  }
 
   .g-icon {
     vertical-align: middle;
   }
 
-  span {
-    margin-left: 6px;
-  }
+
 }

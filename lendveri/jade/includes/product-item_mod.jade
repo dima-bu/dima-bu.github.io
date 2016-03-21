@@ -1,19 +1,18 @@
 .product-item
-  .g-tag.-new Новинка
-  img.product-item_img(src="img/product-img-1.jpg")
+  .g-tag.-hit Хит продаж
+  img.product-item_img(src="img/product-img-2.jpg")
   .product-item_title
-    strong Гранит М2 Венге
+    strong Гранит М2 Люкс
     span Дверь металлическая с одной МДФ-панелью
   .product-item_prices
-    .product-item_old-price 16 300.-
-    .product-item_price 18 300.-
+    .product-item_old-price 18 300.-
+    .product-item_price.-indent 18 300.-
   .product-item_services
     +svg('delivery', 'delivery-sm service-icon')
     +svg('installation', 'installation-sm service-icon')
-    .product-item_service_price 3 500.-
+    .product-item_service_price Бесплатно
   .product-item_buttons.clearfix
     button.btn.btn-transparent.btn-lg_mod.fll Заказать
     .flr.product-item_availability_wrapper
-      .product-item_availability.-in-stock
-        +svg('check', 'check-sm')
-        span В наличии
+      .product-item_availability Под заказ
+

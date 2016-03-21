@@ -35,6 +35,7 @@ h3.carousel-caption_title {
 
 .carousel-caption_descr {
   font-size: 22px;
+  color: #ffffff;
 
   @include media-breakpoint-down(md) {
     font-size: 18px;

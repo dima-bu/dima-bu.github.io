@@ -27,6 +27,15 @@ h6 { font-size: $font-size-h6; }
   font-size: $font-size-h2;
   font-family: $font-family-semibold;
   color: #000000;
+
+  .g-icon {
+    margin-right: 10px;
+  }
+  
+  &.-block-title {
+    margin-bottom: 30px;
+  }
+  
 }
 
 .h3 { font-size: $font-size-h3; }

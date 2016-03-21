@@ -1,5 +1,5 @@
 .info-main_block {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .round-info-main {
@@ -26,4 +26,11 @@ p.info-main_descr {
 
 .round-info-elem {
   margin-bottom: 30px;
+  padding: 17px;
+  background-color: #ffffff;
+  min-height: 112px;
+
+  @include media-breakpoint-between(lg, lg) {
+    min-height: auto;
+  }
 }
