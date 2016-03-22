@@ -56,7 +56,6 @@ h3.carousel-caption_title {
 
 .carousel-indicators {
   bottom: -5px;
-
   @include media-breakpoint-down(md) {
    bottom: -56px;
   }
@@ -70,6 +69,11 @@ h3.carousel-caption_title {
     margin-right: 5px;
     margin-top: 3px;
     margin-bottom: 2px;
+    border-radius: 50%;
+
+    @include media-breakpoint-down(md) {
+      background-color:  #808080;
+    }
   }
 
   .active {

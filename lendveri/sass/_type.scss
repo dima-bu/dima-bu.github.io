@@ -28,6 +28,7 @@ h6 { font-size: $font-size-h6; }
   font-family: $font-family-semibold;
   color: #000000;
 
+
   .g-icon {
     margin-right: 10px;
   }
@@ -35,7 +36,22 @@ h6 { font-size: $font-size-h6; }
   &.-block-title {
     margin-bottom: 30px;
   }
-  
+
+  &.-indent {
+    font-family: $font-family-bold;
+    color: $red-main;
+  }
+
+
+  @include media-breakpoint-down(xs){
+    font-size: 18px;
+
+    &.-block-title {
+      margin-bottom: 20px;
+    }
+
+  }
+
 }
 
 .h3 { font-size: $font-size-h3; }

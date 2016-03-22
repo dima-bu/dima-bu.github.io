@@ -10,13 +10,15 @@ header
     .container
       .row.header_bottom-contacts.hidden-md-down
         .col-sm-12
-            a.btn.btn-icons.btn-lg_mod
+            a.btn.btn-icons.btn-lg_map.js-show-city-list
               +svg('pin', 'map-sm -before')
               span Петербург
-            .btn-select(style="display: none;")
-              a.btn.btn-icons.btn-lg_mod.active
+              +svg('arrow-bottom', 'arrow-bottom-sm')
+            div#city-list.btn-select(style="display: none;")
+              a.btn.btn-icons.btn-lg_map.active.js-show-city-list
                 +svg('pin', 'map-sm -before')
                 span Петербург
+                +svg('arrow-bottom', 'arrow-bottom-sm')
               ul.btn-select_list
                 li.btn-select_item Москва
                 li.btn-select_item Новосибирск
@@ -33,7 +35,7 @@ header
           nav.navbar.navbar-main
             button.navbar-toggler.hidden-lg-up.collapsed(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
             +svg('logo', 'logo-normal navbar-brand')
-            a.btn.btn-icons.btn-lg_mod.flr.hidden-lg-up(style="margin-bottom: 14px;")
+            a.btn.btn-icons.btn-lg_map.flr.hidden-lg-up(style="margin-bottom: 14px;" data-toggle="modal" data-target="#selectCities")
               +svg('pin', 'map-sm -before')
               span Петербург
 

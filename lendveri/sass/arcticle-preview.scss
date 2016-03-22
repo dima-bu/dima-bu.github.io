@@ -24,19 +24,34 @@
 
 .arcticle-preview_block--lg {
   padding: 50px 100px 50px 50px;
-  height: 435px;
   position: relative;
   background: rgba(255, 255, 255, 0.6) url('#{$img-path}door.png') no-repeat 80% 100%;
+
+  @include media-breakpoint-up(xs){
+    height: 435px;
+  }
 
   button {
     position: absolute;
     bottom: 50px;
   }
 
+  @include media-breakpoint-down(xs){
+    padding: 20px 60px 20px 20px;
+    background-image: none;
+    button {
+      position: static;
+      bottom: 0;
+    }
+    
+  }
+
 }
 
 .arcticle-preview_title-lg {
   font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 30px;
   color:  #010101;
 
 }

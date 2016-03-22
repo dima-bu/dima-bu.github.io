@@ -171,6 +171,14 @@ fieldset[disabled] a.btn {
   width: 100%;
 }
 
+
+.btn-lg_map {
+  font-size: 18px;
+  line-height: 1;
+  border-radius: $border-radius;
+  padding: 12px 12px 10px 12px;
+}
+
 .btn-lg {
   padding: 12px 8px 10px 8px;
   border-radius: $border-radius;

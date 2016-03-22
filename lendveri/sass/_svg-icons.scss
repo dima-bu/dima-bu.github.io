@@ -7,6 +7,13 @@
   height: 20px;
 }
 
+.map-icon {
+
+  &.-indent {
+    fill: $red-main;
+  }
+}
+
 .logo-normal {
   width: 166px;
   height: 34px;
@@ -122,4 +129,19 @@
 .flame-md {
   width: 40px;
   height: 46px;
+}
+
+.wreath-md {
+  width: 188px;
+  height: 137px;
+}
+
+.cup-md {
+  width: 80px;
+  height: 80px;
+}
+
+.arrow-bottom-sm {
+  width: 12px;
+  height: 8px;
 }

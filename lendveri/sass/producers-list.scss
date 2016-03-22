@@ -4,23 +4,28 @@
   font-size: 0;
   padding: 25px 0;
   margin-bottom: 50px;
-}
 
-.producers-list_item {
-  display: inline-block;
-  margin:10px 37.5px ;
+  @include media-breakpoint-down(xs){
+    padding: 5px 0;
+    margin-bottom: 30px;
+  }
+
 }
 
 .producers-list_link {
   display: inline-block;
   cursor: pointer;
+  margin:10px 37.5px ;
+  vertical-align: middle;
 
-  img {
-    @include media-breakpoint-down(xs) {
-      width: 75%;
-      height: auto;
+  @include media-breakpoint-down(xs){
+    margin: 10px auto;
+    width: auto;
+
+    img {
+      width: 65%;
+      margin: 0 auto;
     }
   }
-
 
 }

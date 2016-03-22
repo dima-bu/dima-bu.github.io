@@ -61,7 +61,7 @@
   font-size: 18px;
   font-family: $font-family-semibold;
   vertical-align: top;
-  margin: 8px 10px 0px 10px;
+  margin: 12px 10px 0px 10px;
 }
 
 .feedback-menu_xs {
@@ -74,7 +74,7 @@
   @include clear-menu();
   @include clearfix();
   vertical-align: top;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .feedback-menu_item {
@@ -104,7 +104,7 @@
   line-height: 1;
   vertical-align: top;
   margin-left: 15px;
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .search-wrapper {
@@ -121,12 +121,12 @@
 .btn-select {
   display: inline-block;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px;
   background-color: #ffffff;
   position: absolute;
   z-index: 2;
   left: 0;
-  top: -22px;
+  top: -15px;
 
   .btn-icons {
     margin-bottom: 10px;
@@ -138,14 +138,17 @@
 }
 
 .btn-select_item {
+  display: block;
   font-size: 18px;
   font-family: $font-family-semibold;
   color: $red-main;
-  padding: 5px 20px;
+  padding: 5px 0px;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     color: $red-dark;
+    text-decoration: none;
   }
 }
 
