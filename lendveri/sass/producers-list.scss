@@ -8,10 +8,19 @@
 
 .producers-list_item {
   display: inline-block;
-  margin:0 37.5px ;
+  margin:10px 37.5px ;
 }
 
 .producers-list_link {
   display: inline-block;
   cursor: pointer;
+
+  img {
+    @include media-breakpoint-down(xs) {
+      width: 75%;
+      height: auto;
+    }
+  }
+
+
 }

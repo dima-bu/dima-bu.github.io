@@ -1,0 +1,14 @@
+.arcticle-preview_carusel.clearfix
+  .row
+    .col-md-11
+      #carousel-articles.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+          li(data-target="#carousel-articles" data-slide-to="0" class="active")
+          li(data-target="#carousel-articles" data-slide-to="1" )
+        .carousel-inner(role="listbox")
+          .carousel-item.active
+            include article-preview
+          .carousel-item
+            include article-preview_mod
+    .col-md-1
+      .corner-article

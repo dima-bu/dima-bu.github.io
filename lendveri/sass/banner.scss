@@ -1,3 +1,13 @@
+.banners-block {
+  margin-bottom: 30px;
+}
+
+#carousel-home {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 50px;
+  }
+}
+
 .carousel-caption {
   color:#fff;
   top: 85px;
@@ -48,7 +58,7 @@ h3.carousel-caption_title {
   bottom: -5px;
 
   @include media-breakpoint-down(md) {
-    display: none;
+   bottom: -56px;
   }
 
   li {
@@ -83,8 +93,4 @@ h3.carousel-caption_title {
     background-size: cover; 
   }
 
-}
-
-.banners-block {
-  margin-bottom: 30px;
 }
