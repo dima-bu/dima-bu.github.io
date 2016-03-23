@@ -17,6 +17,7 @@
 .logo-normal {
   width: 166px;
   height: 34px;
+  margin-right: 40px;
 }
 
 .search-sm {
@@ -105,11 +106,22 @@
 .superman-lg {
   width: 103px;
   height: 103px;
+
+  @include media-breakpoint-down(md){
+    width: 66px;
+    height: 66px;
+  }
+  
 }
 
 .profi-lg {
   width: 103px;
   height: 103px;
+
+  @include media-breakpoint-down(md){
+    width: 66px;
+    height: 66px;
+  }
 }
 
 .service-icon {

@@ -39,6 +39,11 @@
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
+
+  @include media-breakpoint-down(md){
+    width: 66px;
+    height: 66px;
+  }
 }
 
 
@@ -119,4 +124,31 @@
     padding-right: 2px;
   }
 
+}
+
+.clear-btn {
+  background-color: transparent;
+  border: 0 none;
+  outline: 0 none;
+
+  &:hover, &:focus, &:active {
+    background-color: transparent;
+    border: 0 none;
+    outline: 0 none;
+  }
+
+}
+
+
+.media-middle_up--md {
+  @include media-breakpoint-up(lg){
+    vertical-align: middle;
+  }
+}
+
+.btn-wrapper {
+
+  &.-right {
+    text-align: right;
+  }
 }

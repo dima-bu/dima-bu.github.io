@@ -1,34 +1,40 @@
 .row-xs.info-main_block
-  .col-lg-3.col-md-6
-    .media.round-info-elem
-      .media-left.media-middle
-        .round-main.round-md.fll.round-info-main
-         +svg('delivery', 'delivery-md')
-      .media-body.media-middle
-        h4.info-main_title Бесплатная доставка
-        p.info-main_descr За 1 день при заказе с установкой
-  .col-lg-3.col-md-6
-    .media.round-info-elem
-      .media-left.media-middle
-        .round-main.round-md.fll.round-info-main
-          span 10
-      .media-body.media-middle
-        h4.info-main_title Гарантия 10 лет
-        p.info-main_descr Гарантийное обслуживание
-  .col-lg-3.col-md-6
-    .media.round-info-elem
-      .media-left.media-middle
-        .round-main.round-md.fll.round-info-main
-          +svg('quality', 'quality-md')
-      .media-body.media-middle
-        h4.info-main_title Качество
-        p.info-main_descr Оригинальная продукция и честные характеристики
-
-  .col-lg-3.col-md-6
-    .media.round-info-elem
-      .media-left.media-middle
-        .round-main.round-md.fll.round-info-main
-          +svg('rouble', 'rouble-md')
-      .media-body.media-middle
-        h4.info-main_title Лучшая цена
-        p.info-main_descr На оригинальные двери и фурнитуру
+  #carousel-info.carousel.slide.-with-indicator(data-ride="carousel")
+    ol.carousel-indicators
+      li(data-target="#carousel-info" data-slide-to="0" class="active")
+      li(data-target="#carousel-info" data-slide-to="1" )
+      li(data-target="#carousel-info" data-slide-to="2" )
+      li(data-target="#carousel-info" data-slide-to="3" )
+    .carousel-inner(role="listbox")
+      .col-lg-3.col-md-6.carousel-item.active
+        .media.round-info-elem
+          .media-left.media-middle
+            .round-main.round-md.fll.round-info-main
+             +svg('delivery', 'delivery-md')
+          .media-body.media-middle
+            h4.info-main_title Бесплатная доставка
+            p.info-main_descr За 1 день при заказе с установкой
+      .col-lg-3.col-md-6.carousel-item
+        .media.round-info-elem
+          .media-left.media-middle
+            .round-main.round-md.fll.round-info-main
+              span 10
+          .media-body.media-middle
+            h4.info-main_title Гарантия 10 лет
+            p.info-main_descr Гарантийное обслуживание
+      .col-lg-3.col-md-6.carousel-item
+        .media.round-info-elem
+          .media-left.media-middle
+            .round-main.round-md.fll.round-info-main
+              +svg('quality', 'quality-md')
+          .media-body.media-middle
+            h4.info-main_title Качество
+            p.info-main_descr Оригинальная продукция и честные характеристики
+      .col-lg-3.col-md-6.carousel-item
+        .media.round-info-elem
+          .media-left.media-middle
+            .round-main.round-md.fll.round-info-main
+              +svg('rouble', 'rouble-md')
+          .media-body.media-middle
+            h4.info-main_title Лучшая цена
+            p.info-main_descr На оригинальные двери и фурнитуру

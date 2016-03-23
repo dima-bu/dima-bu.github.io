@@ -385,6 +385,7 @@ $zindex-modal-bg:          1040 !default;
 $zindex-modal:             1050 !default;
 
 
+
 // Navbar
 
 $navbar-border-radius:              $border-radius !default;
@@ -560,7 +561,7 @@ $modal-title-padding:         15px !default;
 $modal-title-line-height:     $line-height !default;
 
 $modal-content-bg:                             #fff !default;
-$modal-content-border-color:                   rgba(0,0,0,.2) !default;
+$modal-content-border-color:                   transparent !default;
 
 $modal-backdrop-bg:           #000 !default;
 $modal-backdrop-opacity:      .5 !default;

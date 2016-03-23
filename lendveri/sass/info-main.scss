@@ -1,6 +1,6 @@
-.info-main_block {
-  margin-bottom: 10px;
-}
+//.info-main_block {
+//  margin-bottom: 40px;
+//}
 
 .round-info-main {
   margin-right: 7px
@@ -32,5 +32,61 @@ p.info-main_descr {
 
   @include media-breakpoint-between(lg, lg) {
     min-height: auto;
+  }
+}
+
+#carousel-info {
+
+
+  @include media-breakpoint-up(md){
+    .carousel-indicators {
+      display: none;
+    }
+
+    .carousel-inner > .carousel-item {
+      display: block !important;
+      transform: none !important;
+      transition: none !important;
+      position: static !important;
+      left: inherit !important;
+      transform: none !important;
+      width: 25% ;
+      float: left !important;
+
+      &.next,
+      &.active.right {
+        left: inherit !important;
+        transform: none !important;
+      }
+      &.prev,
+      &.active.left {
+        left: inherit;
+        transform: none !important;
+      }
+      &.next.left,
+      &.prev.right,
+      &.active {
+        left: inherit;
+        transform: none !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-between(md, md) {
+    .carousel-inner > .carousel-item {
+      width: 50% ;
+    }
+  }
+
+
+}
+
+#carousel-info.carousel.-with-indicator {
+  margin-bottom: 40px;
+}
+
+@include media-breakpoint-down(sm){
+  .carousel.-with-indicator {
+    margin-bottom: 50px;
   }
 }

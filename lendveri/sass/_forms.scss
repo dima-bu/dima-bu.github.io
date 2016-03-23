@@ -59,6 +59,14 @@
   &:disabled {
     cursor: $cursor-disabled;
   }
+
+
+  &.-md-size {
+    padding: 11px $input-padding-x 10px $input-padding-x;
+    font-size: 22px;
+    line-height: 20px;
+  }
+
 }
 
 

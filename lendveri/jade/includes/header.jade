@@ -26,7 +26,7 @@ header
             .header_phone 8 (812) 309-71-55
             .feedback-menu
               .feedback-menu_item
-                a.feedback-menu_link Обратный звонок
+                a.feedback-menu_link(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
               .feedback-menu_item
                 a.feedback-menu_link Бесплатный замер
             .work-time Пн - Вс, 9:00 — 21:00
@@ -56,8 +56,9 @@ header
               .search-wrapper
                 .input-group
                   input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
-                  a.input-group-addon
-                    +svg('search', 'search-sm')
+                  div.input-group-addon
+                    button.clear-btn
+                      +svg('search', 'search-sm')
 
             //.collapse.navbar-toggleable-xs.hidden-lg-up.nav-mobile_wrapper(id="navbar-header" )
               ul.nav.nav-mobile
@@ -90,6 +91,6 @@ header
           button.btn.btn-success.btn-lg.btn-full.hidden-lg-up Позвонить <span class="small-btn-text">8 (812) 309-71-55</span>
           .feedback-menu_xs.hidden-lg-up
             .fll
-              a.link-sm Обратный звонок
+              a.link-sm(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
             .flr
               a.link-sm Бесплатный замер

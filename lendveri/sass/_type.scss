@@ -27,7 +27,7 @@ h6 { font-size: $font-size-h6; }
   font-size: $font-size-h2;
   font-family: $font-family-semibold;
   color: #000000;
-
+  margin-bottom: 5px;
 
   .g-icon {
     margin-right: 10px;
@@ -43,7 +43,7 @@ h6 { font-size: $font-size-h6; }
   }
 
 
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(md){
     font-size: 18px;
 
     &.-block-title {

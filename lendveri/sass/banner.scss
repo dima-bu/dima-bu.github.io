@@ -2,12 +2,6 @@
   margin-bottom: 30px;
 }
 
-#carousel-home {
-  @include media-breakpoint-down(md) {
-    margin-bottom: 50px;
-  }
-}
-
 .carousel-caption {
   color:#fff;
   top: 85px;
@@ -56,6 +50,18 @@ h3.carousel-caption_title {
 
 .carousel-indicators {
   bottom: -5px;
+
+
+  &.-invert {
+    li {
+      background-color:  #808080;
+    }
+
+    .active {
+      background-color: $carousel-indicator-active-bg;
+    }
+  }
+
   @include media-breakpoint-down(md) {
    bottom: -56px;
   }
@@ -97,4 +103,12 @@ h3.carousel-caption_title {
     background-size: cover; 
   }
 
+}
+
+
+
+@include media-breakpoint-down(md){
+  #carousel-home.carousel.-with-indicator {
+    margin-bottom: 50px;
+  }
 }

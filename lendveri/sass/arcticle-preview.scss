@@ -1,11 +1,63 @@
-.arcticle-preview_carusel {
-  margin-bottom: 30px;
-  background-color: #ffffff;
+.arcticle-preview_carusel_inner {
+  position: relative;
+  padding: 35px 100px 0px 0;
 
+  .carousel {
+    padding-bottom: 30px;
+  }
+
+  @include media-breakpoint-down(md){
+    padding: 25px 40px 0px 0;
+  }
+
+  .corner-article {
+    position: absolute;
+    top:0;
+    right:0
+  }
 }
 
 .arcticle-preview_block {
   min-height: 240px;
+}
+
+
+
+.arcticle-preview_title {
+  margin-bottom: 20px;
+}
+
+.arcticle-preview_content {
+
+  @include media-breakpoint-down(md){
+    height: 205px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+  }
+
+}
+
+//.arcticle-preview_descr {
+//
+//  @include media-breakpoint-down(md){
+//    max-height: 160px;
+//    overflow: hidden;
+//    text-overflow: ellipsis;
+//  }
+//}
+
+
+
+.arcticle-preview_carusel {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+
+  @include media-breakpoint-down(md){
+    margin-bottom: 70px;
+  }
+
+
 }
 
  .arcticle-preview_carusel .col-md-11{
@@ -13,14 +65,44 @@
 }
 
 .corner-article {
-  background: transparent url('#{$img-path}corner-article.png') no-repeat 100% 0;
-  min-height: 60px
+  border: 20px solid transparent;
+  border-bottom: 20px solid #cccccc;
+  border-left: 20px solid #cccccc;
+  display: inline-block;
+  background-color: $body-bg;
+
+  @include media-breakpoint-between(md, md){
+    border: 15px solid transparent;
+    border-bottom: 15px solid #cccccc;
+    border-left: 15px solid #cccccc;
+  }
+
+  @include media-breakpoint-down(xs){
+    border: 11px solid transparent;
+    border-bottom: 11px solid #cccccc;
+    border-left: 11px solid #cccccc;
+  }
+
+
+  //background: transparent url('#{$img-path}corner-article.png') no-repeat 100% 0;
+  //min-height: 60px
 }
 
-.round-article-preview  { 
+.round-article-preview  {
   background-color: $red-main;
   margin: 20px 50px 20px 70px;
+
+  @include media-breakpoint-between(lg, lg){
+    margin: 20px 30px 20px 40px;
+  }
+
+  @include media-breakpoint-down(md){
+    margin: 0px 5px 20px 15px;
+  }
+
 }
+
+
 
 .arcticle-preview_block--lg {
   padding: 50px 100px 50px 50px;
@@ -53,5 +135,4 @@
   line-height: 1.1;
   margin-bottom: 30px;
   color:  #010101;
-
 }

@@ -1,6 +1,16 @@
 
 .modal-content {
-  padding: 30px 0;
+  border-radius: 0;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.38);
+
+  &.-md-sm-padding {
+    padding: 35px 0 15px 0;
+  }
+
+  &.-md-padding {
+    padding: 25px;
+  }
+
 }
 
 .modal-content .close {
@@ -15,4 +25,28 @@
   color: $gray-strong;
   font-family: $font-family-light;
   text-decoration: none;
+}
+
+
+.modal_md-size {
+  .modal-dialog {
+    max-width: 470px;
+  }
+}
+
+
+.modal_select-city {
+
+  .btn-select_list {
+    margin-top: 45px;
+  }
+
+  .modal-dialog {
+    max-width: 300px;
+  }
+
+}
+
+.modal-title  {
+  margin-bottom: 20px;
 }

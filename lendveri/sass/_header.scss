@@ -157,3 +157,10 @@
 #navbar-header {
   float: none;
 }
+
+
+@include media-breakpoint-down(sm){
+  .carousel.-with-indicator {
+    margin-bottom: 50px;
+  }
+}
