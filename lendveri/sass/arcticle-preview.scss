@@ -6,6 +6,10 @@
     padding-bottom: 30px;
   }
 
+  .carousel-indicators {
+    padding-left: 30px;
+  }
+
   @include media-breakpoint-down(md){
     padding: 25px 40px 0px 0;
   }

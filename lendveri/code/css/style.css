@@ -288,7 +288,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: #dddddd;
+  background-color: #ECEBEB;
 }
 
 [tabindex="-1"]:focus {
@@ -665,7 +665,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: #dddddd;
+  background-color: #ECEBEB;
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: all .2s ease-in-out;
@@ -2838,7 +2838,7 @@ input[type="checkbox"].disabled {
 .nav-tabs .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover {
   color: #55595c;
-  background-color: #dddddd;
+  background-color: #ECEBEB;
   border-color: #ddd #ddd transparent;
 }
 
@@ -4926,6 +4926,9 @@ p.info-main_descr {
 .arcticle-preview_carusel_inner .carousel {
   padding-bottom: 30px;
 }
+.arcticle-preview_carusel_inner .carousel-indicators {
+  padding-left: 30px;
+}
 @media (max-width: 991px) {
   .arcticle-preview_carusel_inner {
     padding: 25px 40px 0px 0;
@@ -4973,7 +4976,7 @@ p.info-main_descr {
   border-bottom: 20px solid #cccccc;
   border-left: 20px solid #cccccc;
   display: inline-block;
-  background-color: #dddddd;
+  background-color: #ECEBEB;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .corner-article {
@@ -5478,14 +5481,9 @@ h5.footer-title {
 .modal-content .close {
   position: absolute;
   top: 15px;
-  right: 10px;
+  right: 15px;
   cursor: pointer;
   display: inline-block;
-  font-size: 48px;
-  height: 30px;
-  line-height: 30px;
-  color: #808080;
-  font-family: "beausanspro-light", Helvetica, Arial, sans-serif;
   text-decoration: none;
 }
 
@@ -5662,6 +5660,11 @@ h5.footer-title {
 .arrow-bottom-sm {
   width: 12px;
   height: 8px;
+}
+
+.close-md {
+  width: 24px;
+  height: 24px;
 }
 
 .btn {
