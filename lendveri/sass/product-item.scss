@@ -14,16 +14,24 @@
     right: -5px;
     top: 22px;
   }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 0;
+  }
 }
 
 .product-item_img {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
+}
+
+.product-item_img-wrapper {
+  height: 157px;
 }
 
 .product-item_title {
   color:  #808080;
   font-size: 14px;
-  margin-bottom: 30px;
+  height: 75px;
   strong {
     color:  #010101;
     font-family: $font-family-semibold;
@@ -106,4 +114,85 @@
   }
 
 
+}
+
+#carousel-products-list {
+
+
+  @include media-breakpoint-up(md){
+    .carousel-indicators {
+      display: none;
+    }
+
+    .carousel-inner > .carousel-item {
+      display: block !important;
+      transform: none !important;
+      transition: none !important;
+      position: static !important;
+      left: inherit !important;
+      transform: none !important;
+      float: left !important;
+
+      @include media-breakpoint-between(xl, xl) {
+        &.col-xl-3 {
+          width: 25%;
+        }
+      }
+
+      @include media-breakpoint-between(lg, lg) {
+        &.col-lg-4 {
+          width: 33.3333%;
+        }
+      }
+
+      @include media-breakpoint-between(md, md) {
+        &.col-md-6 {
+          width: 50%;
+        }
+      }
+
+      &.next,
+      &.active.right {
+        left: inherit !important;
+        transform: none !important;
+      }
+      &.prev,
+      &.active.left {
+        left: inherit;
+        transform: none !important;
+      }
+      &.next.left,
+      &.prev.right,
+      &.active {
+        left: inherit;
+        transform: none !important;
+      }
+    }
+  }
+
+  @include media-breakpoint-between(md, md) {
+    .carousel-inner > .carousel-item {
+      width: 50% ;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 60px;
+  }
+  
+  
+}
+
+.arcticle-preview_block--lg_custom-down-sm {
+  @include media-breakpoint-down(md) {
+    display: none;
+    @include clearfix();
+  }
+}
+
+.arcticle-preview_block--lg_custom-up-sm {
+  @include media-breakpoint-up(lg) {
+    display: none;
+    @include clearfix();
+  }
 }

@@ -3,7 +3,8 @@
     .col-xl-9.col-lg-8
       include ../includes/banner
     .col-xl-3.col-lg-4.clearfix
-      img.img-fluid.flr(src="img/standart-banner.jpg")
+      .img-banner_wrapper
+        img.img-fluid.flr.img-banner(src="img/standart-banner.jpg")
 
   include  ../includes/info-main
 
@@ -13,32 +14,7 @@
         +svg('flame', 'flame-md')
         span Горячая десятка входных дверей
 
-  .row.products-list_block
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item_mod
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item_mod
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item_mod
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item_mod
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item
-    .col-xl-3.col-lg-4.col-md-6
-      include  ../includes/product-item_mod
-    .col-xl-6.col-lg-8.col-md-12
-      .arcticle-preview_block--lg
-        .arcticle-preview_title-lg Все двери здесь
-        p Вся линейка дверей Гранит, Кондор от модели номер 1 до икс пятой, двери Зенит. Все свеженькие, только что с завода.
-        button.btn.btn-transparent.btn-lg_mod.fll Смотреть
+  include ../includes/products-list_hot
 
   // Карусель статей
   include  ../includes/artlcles-carusel

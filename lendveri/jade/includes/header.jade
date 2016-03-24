@@ -18,7 +18,7 @@ header
               a.btn.btn-icons.btn-lg_map.active.js-show-city-list
                 +svg('pin', 'map-sm -before')
                 span Петербург
-                +svg('arrow-bottom', 'arrow-bottom-sm')
+                +svg('arrow-top', 'arrow-bottom-sm')
               ul.btn-select_list
                 li.btn-select_item Москва
                 li.btn-select_item Новосибирск
@@ -28,7 +28,7 @@ header
               .feedback-menu_item
                 a.feedback-menu_link(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
               .feedback-menu_item
-                a.feedback-menu_link Бесплатный замер
+                a.feedback-menu_link(data-toggle="modal" data-target="#freeSample") Бесплатный замер
             .work-time Пн - Вс, 9:00 — 21:00
       .row
         .col-xl-2.col-lg-3
@@ -40,7 +40,7 @@ header
               span Петербург
 
         .col-xl-10.col-lg-9
-          .row.collapse.navbar-toggleable-xs(id="navbar-header")
+          .row.collapse.navbar-toggleable-xs(id="navbar-header" style="height: 0")
 
             .col-xl-6.col-lg-8
               nav.navbar.navbar-main
@@ -59,33 +59,6 @@ header
                   div.input-group-addon
                     button.clear-btn
                       +svg('search', 'search-sm')
-
-            //.collapse.navbar-toggleable-xs.hidden-lg-up.nav-mobile_wrapper(id="navbar-header" )
-              ul.nav.nav-mobile
-                li.nav-mobile_item
-                  a.nav-mobile_link.active Входные
-                li.nav-mobile_item
-                  a.nav-mobile_link Межкомнатные
-                li.nav-mobile_item
-                  a.nav-mobile_link.active Оплата и доставка
-
-              ul.nav.nav-mobile
-                li.nav-item
-                  a.nav-mobile_link Оплата и доставка
-                li.nav-item
-                  a.nav-mobile_link Ответы на вопросы
-                li.nav-item
-                  a.nav-mobile_link Кредит и рассрочка
-                li.nav-item
-                  a.nav-mobile_link Акции
-                li.nav-item
-                  a.nav-mobile_link Гарантия
-                li.nav-item
-                  a.nav-mobile_link Отзывы
-                li.nav-item
-                  a.nav-mobile_link О компании
-                li.nav-item
-                  a.nav-mobile_link Правовая информаци
       .row
         .col-xs-12
           button.btn.btn-success.btn-lg.btn-full.hidden-lg-up Позвонить <span class="small-btn-text">8 (812) 309-71-55</span>
@@ -93,4 +66,4 @@ header
             .fll
               a.link-sm(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
             .flr
-              a.link-sm Бесплатный замер
+              a.link-sm(data-toggle="modal" data-target="#freeSample") Бесплатный замер
