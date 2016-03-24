@@ -5667,6 +5667,14 @@ h5.footer-title {
   height: 24px;
 }
 
+.close-icon {
+  fill: #bfbfbf;
+}
+
+.close:active .close-icon, .close:focus .close-icon {
+  fill: #000000;
+}
+
 .btn {
   display: inline-block;
   font-family: "beausanspro-semibold", Helvetica, Arial, sans-serif;

@@ -3,7 +3,7 @@
 <svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
 <g>
-	<polygon id="XMLID_2_" fill-rule="evenodd" fill="#BFBFBF" points="24,22.4 13.6,12 24,1.6 22.4,0 12,10.4 1.6,0 0,1.6 10.4,12
+	<polygon id="XMLID_2_" fill-rule="evenodd" points="24,22.4 13.6,12 24,1.6 22.4,0 12,10.4 1.6,0 0,1.6 10.4,12
 		0,22.4 1.6,24 12,13.6 22.4,24 	"/>
 </g>
 </svg>

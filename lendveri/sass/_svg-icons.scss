@@ -162,3 +162,18 @@
   width: 24px;
   height: 24px;
 }
+
+
+.close-icon {
+  fill: #bfbfbf;
+}
+
+.close  {
+
+  &:active, &:focus  {
+
+    .close-icon {
+      fill: #000000;
+    }
+  }
+}
