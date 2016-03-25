@@ -177,3 +177,73 @@
     }
   }
 }
+
+.print-sm {
+  width: 18px;
+  height: 16px;
+}
+
+.print-icon {
+  fill: #a5a5a5;
+}
+
+.s-vk-sm {
+  width: 22px;
+  height: 21px;
+}
+
+.s-vk-icon {
+  fill: #d9d9d9;
+
+  &:hover {
+    fill: #45668e;
+  }
+}
+
+.ok-sm {
+  width: 22px;
+  height: 21px;
+}
+
+.ok-icon {
+  fill: #d9d9d9;
+
+  &:hover {
+    fill: #eb722e;
+  }
+}
+
+.fb-sm {
+  width: 22px;
+  height: 21px;
+}
+
+.fb-icon {
+  fill: #d9d9d9;
+
+  &:hover {
+    fill: #3B5998;
+  }
+}
+
+.star-sm {
+  width: 22px;
+  height: 20px;
+}
+
+.star-icon {
+  fill: #a5a5a5;
+
+  &.-active {
+    fill: $red-main;
+  }
+}
+
+.colors-sm {
+  width: 18px;
+  height: 23px
+}
+
+.colors-icon {
+  fill: #a5a5a5;
+}

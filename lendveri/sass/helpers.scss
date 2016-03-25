@@ -72,6 +72,19 @@
 
   }
 
+  &.-new-clear {
+    background-color: $green-main;
+    padding: 17px 29px 13px 29px;
+
+    &::before {
+      border: 0 none;
+    }
+
+    &::after {
+      border: 0 none;
+    }
+  }
+
   &.-hit {
     background-color: #3b3a3a;
     padding: 17px 14px 13px 14px;
@@ -87,7 +100,6 @@
       border-left-color:  #000000;
       border-bottom-color: #000000;
     }
-
   }
 
 
@@ -109,6 +121,20 @@
     border-bottom: 2px solid #808080;
     border-left: 5px solid #808080;
     top:-4px;
+  }
+}
+
+.g-tag-split {
+  font-size: 0;
+
+  .g-tag:last-child {
+    border-radius: 0;
+  }
+
+  @include media-breakpoint-down(lg){
+    .g-tag:last-child {
+      border-radius: 5px 0 0 5px;
+    }
   }
 
 
@@ -161,4 +187,32 @@
     margin: 0 auto;
 
   }
+}
+
+.info-link {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #808080;
+  line-height: 18px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    border-color: $red-main;
+    background-color: $red-main;
+  }
+}
+
+.link-underscore {
+  border-bottom: 1px dashed $red-main;
+  font-size: 14px;
+  line-height: 1;
+  color: $red-main;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
 }

@@ -1,0 +1,52 @@
+.container
+  include ../includes/breadcrambs
+  h1 Йошкар-Ола Триумф Квадро Зеркало (Венге - Беленый дуб)
+  .product-page_row
+    .product-page_left
+    .product-page_right
+      .row
+        .col-md-7.product_print-block
+          +svg('print', 'print-sm print-icon')
+          span.product_print-title Распечатать
+        .col-md-5.product_share-block
+          span.product_share-title Поделиться:
+          a.product_share-link
+            +svg('s-vk', 's-vk-sm s-vk-icon product_share-icon')
+          a.product_share-link
+            +svg('ok', 'ok-sm ok-icon product_share-icon')
+          a.product_share-link
+            +svg('fb', 'fb-sm fb-icon product_share-icon')
+
+      .row
+        .col-md-7.clearfix.feedback-block
+          .art-block.fll Арт. 303
+          .fll
+            .stars-block
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon')
+            .small 23 Отзыва
+        .col-md-5.clearfix
+          .g-tag-split.flr
+            .g-tag.-new-clear.hidden-lg-down Новинка
+            .g-tag.-hit Хит продаж
+      .row
+        .col-md-12.product_availability-page
+          .product-item_availability.-in-stock
+            +svg('check', 'check-sm')
+            span На складе в Санкт-Петербурге, установка с 9 февраля
+      .row
+        .col-md-7.product_prices
+          div
+            .product-item_old-price 31 500.-
+            .info-link ?
+          .product_price-lg.-indent 27 900.-
+        .col-md-5.product-colors
+          +svg('colors', 'colors-sm colors-icon')
+          .link-underscore Есть другие цвета
+
+
+
+

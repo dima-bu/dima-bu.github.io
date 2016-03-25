@@ -1,19 +1,19 @@
 include ../mixins/svg
 doctype html
 html(class="no-js")
-  include ../includes/head
+  include ../includes/general/head
 
   body
     .svg-block
       include ../includes/svg/svg-sprite-demo.html
-    include ../includes/header
-    include ../includes/main-menu
+    include ../includes/general/header
+    include ../includes/general/main-menu
     .main-content
       block main-content
-    include ../includes/footer
-    include  ../includes/modal-feedback-call
-    include  ../includes/modal-free-sample
-    include  ../includes/modal-cities
+    include ../includes/general/footer
+    include  ../includes/modals/modal-feedback-call
+    include  ../includes/modals/modal-free-sample
+    include  ../includes/modals/modal-cities
 
     block footer-script
-      include ../includes/footer-script
+      include ../includes/general/footer-script
