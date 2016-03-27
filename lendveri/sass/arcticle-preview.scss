@@ -7,7 +7,14 @@
   }
 
   .carousel-indicators {
-    padding-left: 30px;
+    padding-left: 100px;
+
+
+    @include media-breakpoint-between(xs, md){
+      padding-left: 40px;
+    }
+
+
   }
 
   @include media-breakpoint-down(md){
@@ -115,11 +122,10 @@
 
   @include media-breakpoint-up(lg){
 
-    height: 440px;
-
+    height: 404px;
     button {
       position: absolute;
-      bottom: 50px;
+      bottom: 20px;
     }
   }
 

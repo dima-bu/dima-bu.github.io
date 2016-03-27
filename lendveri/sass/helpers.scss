@@ -27,6 +27,10 @@
   line-height: 60px;
   text-align: center;
   font-size: 26px;
+  
+  &.-text {
+    line-height: 66px;
+  }
 
   svg {
     vertical-align: middle;

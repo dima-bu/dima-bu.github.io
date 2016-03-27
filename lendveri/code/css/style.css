@@ -4472,6 +4472,9 @@ a.bg-danger:focus, a.bg-danger:hover {
   text-align: center;
   font-size: 26px;
 }
+.round-md.-text {
+  line-height: 66px;
+}
 .round-md svg {
   vertical-align: middle;
 }
@@ -5595,6 +5598,7 @@ h3.carousel-caption_title {
   font-weight: normal;
   margin: 0 0 10px 0;
   line-height: 1;
+  color: #ffffff;
 }
 @media (max-width: 991px) {
   h3.carousel-caption_title {
@@ -5756,7 +5760,12 @@ p.info-main_descr {
   padding-bottom: 30px;
 }
 .arcticle-preview_carusel_inner .carousel-indicators {
-  padding-left: 30px;
+  padding-left: 100px;
+}
+@media (max-width: 991px) {
+  .arcticle-preview_carusel_inner .carousel-indicators {
+    padding-left: 40px;
+  }
 }
 @media (max-width: 991px) {
   .arcticle-preview_carusel_inner {
@@ -5846,11 +5855,11 @@ p.info-main_descr {
 }
 @media (min-width: 992px) {
   .arcticle-preview_block--lg {
-    height: 440px;
+    height: 404px;
   }
   .arcticle-preview_block--lg button {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -5883,7 +5892,7 @@ p.info-main_descr {
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 30px;
-  min-height: 440px;
+  min-height: 404px;
 }
 .product-item .g-tag {
   position: absolute;
@@ -5898,12 +5907,14 @@ p.info-main_descr {
 
 .product-item_img-wrapper {
   height: 157px;
+  display: block;
 }
 
 .product-item_title {
   color: #808080;
   font-size: 14px;
   height: 75px;
+  display: block;
 }
 .product-item_title strong {
   color: #010101;

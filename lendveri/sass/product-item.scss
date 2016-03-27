@@ -7,7 +7,7 @@
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 30px;
-  min-height: 440px;
+  min-height: 404px;
 
   .g-tag {
     position: absolute;
@@ -26,12 +26,14 @@
 
 .product-item_img-wrapper {
   height: 157px;
+  display: block;
 }
 
 .product-item_title {
   color:  #808080;
   font-size: 14px;
   height: 75px;
+  display: block;
   strong {
     color:  #010101;
     font-family: $font-family-semibold;
