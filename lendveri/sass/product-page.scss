@@ -1,6 +1,9 @@
 .product-page_row {
   @include clearfix;
+}
 
+.product-title {
+  margin-bottom: 30px;
 }
 
 .product-page_left {
@@ -49,9 +52,6 @@
   margin-right: 12px;
 }
 
-//
-
-
 .feedback-block {
   margin-bottom: 45px;
   
@@ -85,15 +85,27 @@
 }
 
 .product_prices {
-
+  margin-bottom: 12px;
 }
 
 .product_price-lg {
   font-size: 48px;
-  color: #000;
+  line-height: 1;
+  color: #000000;
 
   &.-indent {
     color: $red-main;
+  }
+}
+
+
+.product_prices_old-price-wrapper {
+  line-height: 30px;
+
+
+
+  .product-item_old-price {
+    margin-right: 5px;
   }
 }
 
@@ -104,15 +116,59 @@
 
 
 .product-colors {
-
-  line-height: 20px;
+  font-size: 0;
+  margin-top: 30px;
 
   .colors-icon {
     margin-right: 8px;
   }
 
-  
   .link-underscore {
+    vertical-align: top;
+    margin-top: 6px;
+  }
+}
+
+.product_button-block {
+  margin-bottom: 55px;
+  
+  @include  clearfix();
+  .btn {
+    float: left;
+    margin-right: 30px;
+  }
+}
+
+.product_button-secondary {
+  margin-top: 4px;
+}
+
+.credit-block-text {
+  line-height: 30px;
+  margin-bottom: 50px;
+
+  .link-underscore, .product-item_old-price {
+    display: inline-block;
     vertical-align: middle;
   }
+
+  .link-underscore {
+    margin-left: 10px;
+  }
+
+  .credit-block-text-beetween {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px 0 7px;
+  }
+}
+
+.product-descr-block {
+  margin-bottom: 120px;
+}
+
+.product-descr {
+  max-height: 460px;
+  overflow: hidden;
+  margin-bottom: 70px;
 }

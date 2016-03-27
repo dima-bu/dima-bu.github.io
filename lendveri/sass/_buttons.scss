@@ -207,6 +207,16 @@ fieldset[disabled] a.btn {
   line-height: 1;
 }
 
+.btn-xl {
+  padding: 18px 23px 16px 23px;
+  font-size: 22px;
+  font-family: $font-family-semibold;
+  line-height: 1;
+  border-radius: $border-radius;
+}
+
+
+
 .btn-success {
   border: 0 none;
   background-color: $green-main;
@@ -228,6 +238,25 @@ fieldset[disabled] a.btn {
 span.small-btn-text {
   font-size: 12px;
 }
+
+
+.btn-std {
+  border: 0 none;
+  outline: 0 none;
+  background-color: $red-main;
+  color: #ffffff;
+
+  &:hover{
+    background-color:$red-dark;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #000000;
+  }
+
+}
+
 
 .btn-transparent {
   border: 1px solid $red-main;

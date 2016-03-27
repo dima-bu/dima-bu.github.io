@@ -98,6 +98,11 @@
   height: 25px;
 }
 
+.quality-sm {
+  width: 19px;
+  height: 21px;
+}
+
 .rouble-md {
   width: 17px;
   height: 22px;
@@ -246,4 +251,56 @@
 
 .colors-icon {
   fill: #a5a5a5;
+}
+
+.compare-sm {
+  width: 18px;
+  height: 16px;
+}
+
+.compare-icon {
+  fill: #a5a5a5;
+}
+
+.bookmark-sm {
+  width: 10px;
+  height: 12px;
+}
+
+.bookmark-icon {
+  fill: #a5a5a5;
+}
+
+
+.thief-md {
+  width: 58px;
+  height: 58px;
+}
+
+.thief-lg {
+  width: 89px;
+  height: 89px;
+}
+
+.rsb-sm {
+  width: 148px;
+  height: 28px;
+}
+
+.rsb-icon_wrapper {
+  display: block;
+  @include media-breakpoint-down(lg){
+    width: 28px;
+    height: 28px;
+    overflow: hidden;
+  }
+}
+
+.rsb-icon {
+  fill: #a5a5a5;
+  vertical-align: top;
+
+  &:hover {
+    fill: #61553F;
+  }
 }

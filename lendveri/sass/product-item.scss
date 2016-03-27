@@ -42,6 +42,10 @@
 
 .product-item_prices {
   margin-bottom: 20px;
+
+  .product-item_old-price {
+    vertical-align: bottom;
+  }
 }
 
 .product-item_old-price {
@@ -50,8 +54,25 @@
   color:#000000;
   text-decoration: line-through;
   display: inline-block;
-  vertical-align: bottom;
   line-height: 1.44;
+
+
+  &.-no-through {
+    text-decoration: none;
+  }
+
+  &.-md {
+    font-size: 18px;
+  }
+
+  &.-sm-md {
+    font-size: 16px;
+  }
+
+  &.-indent {
+
+  }
+
 }
 
 .product-item_price {
@@ -116,7 +137,7 @@
 
 }
 
-#carousel-products-list {
+#carousel-products-list, #carousel-products-similar {
 
 
   @include media-breakpoint-up(md){

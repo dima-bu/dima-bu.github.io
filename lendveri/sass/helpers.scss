@@ -33,6 +33,20 @@
   }
 }
 
+.round-sm {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  line-height: 48px;
+  text-align: center;
+  font-size: 20px;
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+
 .round-lg_crop {
   width: 103px;
   height: 103px;
@@ -182,10 +196,31 @@
 .img-banner_wrapper {
   text-align: center;
   background-color: $red-main;
+  display: block;
+
+  @include media-breakpoint-down(md){
+    display: none;
+  }
+
   img {
     float: none;
     margin: 0 auto;
+  }
+}
 
+
+.img-banner_wrapper_xs {
+  text-align: center;
+  background-color: $red-main;
+  display: block;
+
+  img {
+    float: none;
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(lg){
+    display: none;
   }
 }
 
@@ -215,4 +250,162 @@
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
+
+
+  &.-lg {
+    font-size: 22px;
+    font-family: $font-family-semibold;
+  }
+  
+  &.-multi-line {
+    line-height: 22px;
+    border-bottom: 0 none;
+
+    span {
+      border-bottom: 1px dashed $red-main;
+      display: inline-block;
+      line-height: 1;
+      margin: 3px 0;
+    }
+  }
+  
+}
+
+//.g-icon-text_wrapper
+
+.g-icon-text_wrapper {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;overflow: hidden;
+  zoom: 1;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.-sm-size {
+
+    .g-icon-text_icon {
+      text-align: right;
+      width: 25px;
+    }
+
+    .g-icon-text_icon-inner {
+      margin-right: 7px;
+    }
+
+    .g-icon-text_text {
+      font-size: 14px;
+    }
+  }
+}
+
+.g-icon-text_icon {
+  display: table-cell;
+  overflow: hidden;
+  zoom: 1;
+  vertical-align: top;
+
+  &.-xs-right {
+    padding-right: 7px;
+  }
+
+  .g-icon {
+    vertical-align: middle;
+  }
+  
+}
+
+.g-icon-text_icon-inner {
+  vertical-align: middle;
+}
+
+
+.g-icon-text_text {
+  display: table-cell;
+
+
+  &.-middle {
+    vertical-align: middle;
+  }
+
+  &.-light {
+    color:  #a5a5a5;
+  }
+}
+
+.media-body-diff {
+  font-size: 0;
+
+  .product_prices_old-price-wrapper {
+    line-height: 1.2;
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+
+  p {
+    display: inline-block;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .info-main_title {
+    margin: 0;
+    display: inline-block;
+    line-height: 18px;
+  }
+
+  .product-item_old-price {
+    line-height: 18px;
+  }
+  
+ .info-link {
+   margin-left: 7px;
+ }
+
+}
+
+.text-section {
+  margin-bottom: 45px;
+}
+
+.g-tabs {
+  margin-bottom: 50px;
+}
+
+a.g-tab {
+
+  margin-right: 40px;
+  
+  &.active {
+    border-bottom-color: transparent;
+    color: #000000;
+  }
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+}
+
+
+.img-icon_wrapper {
+  text-align: center;
+  padding: 50px 0;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.img-icon_wrapper-inner {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+}
+
+.img-icon_icon {
+  position: absolute;
+  bottom: -50px;
+  right: 10px
 }
