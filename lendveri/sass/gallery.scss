@@ -9,12 +9,15 @@
   height:  400px;
   margin-bottom: 35px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
 
   @include media-breakpoint-between(md,lg){
     height:  300px;
   }
 
+  @include media-breakpoint-down(xs){
+    height:  280px;
+  }
 }
 
 .simplegallery .gallery-content img {
@@ -24,6 +27,10 @@
 
   @include media-breakpoint-between(md,lg){
     height:  300px;
+  }
+
+  @include media-breakpoint-down(xs){
+    height:  280px;
   }
 }
 

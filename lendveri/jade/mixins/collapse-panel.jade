@@ -1,0 +1,5 @@
+mixin collapse-panel(mainId, headingId, bodyId, headingTitle, bodytext)
+   .panel.panel-default
+      .panel-heading(role="tab" id="#{headingId}")
+         a(data-toggle="collapse" data-parent="#{mainId}" href="#{bodyId}" aria-expanded="true" aria-controls="#{bodyId}")= headingTitle
+      .panel-collapse.collapse.in(id="#{bodyId}" role="tabpanel" aria-labelledby="#{headingId}")= bodytext

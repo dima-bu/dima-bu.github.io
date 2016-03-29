@@ -9,12 +9,45 @@
 .product-page_left {
   float: left;
   width: 48.6%;
-  padding: 90px 100px;
+  padding: 10px 20px 90px 100px;
+
+  @include media-breakpoint-down(md){
+    width: 100%;
+    float: none;
+    padding: 10px 60px 90px 60px;
+    .simplegallery .gallery-content {
+      text-align: center;
+    }
+
+    .simplegallery .thumbnail {
+      text-align: center;
+      .thumb {
+        display: inline-block;
+        float: none;
+      }
+
+    }
+
+  }
+
+  @include media-breakpoint-down(xs){
+    padding: 10px 10px 90px 10px;
+  }
 }
 
 .product-page_right {
   float: right;
   width: 51.4%;
+
+  @include media-breakpoint-up(lg){
+    margin-bottom: 60px;
+  }
+
+  @include media-breakpoint-down(md){
+    width: 100%;
+    float: none;
+    margin-bottom: 30px;
+  }
 }
 
 .product_print-block {
@@ -82,6 +115,11 @@
   padding: 18px 40px 18px 22px;
   font-size: 14px;
   line-height: 1;
+
+  @include media-breakpoint-down(md){
+    padding: 10px 15px 10px 9px;
+    font-size: 12px;
+  }
 }
 
 .product_prices {
@@ -133,14 +171,31 @@
   margin-bottom: 55px;
   
   @include  clearfix();
-  .btn {
-    float: left;
-    margin-right: 30px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
+
+    .btn {
+      float: left;
+      margin-right: 30px;
+      float: none;
+      width: 100%;
+      margin-bottom: 15px;
+    }
   }
 }
 
 .product_button-secondary {
   margin-top: 4px;
+
+  @include media-breakpoint-down(md){
+  @include clearfix;
+
+    .g-icon-text_wrapper {
+      float: left;
+      width: 50%;
+      
+    }
+  }
 }
 
 .credit-block-text {
@@ -154,12 +209,31 @@
 
   .link-underscore {
     margin-left: 10px;
+    margin-right: 7px;
   }
 
   .credit-block-text-beetween {
     display: inline-block;
     vertical-align: middle;
-    margin: 0 2px 0 7px;
+    margin: 0 2px 0 0px;
+  }
+
+  @include media-breakpoint-down(md){
+    .link-underscore {
+      margin-left: 0px;
+    }
+  }
+
+}
+
+
+.credit-block-icon {
+  @include media-breakpoint-down(md){
+    @include  clearfix;
+    
+    .rsb-icon_wrapper {
+      float: right;
+    }
   }
 }
 
@@ -171,4 +245,19 @@
   max-height: 460px;
   overflow: hidden;
   margin-bottom: 70px;
+}
+
+.product-round_elem {
+  @include media-breakpoint-down(xs){
+    width: 300px;
+    float: none;
+    margin-bottom: 15px;
+  }
+}
+
+.product-horizon-block {
+
+  @include media-breakpoint-down(md){
+    margin-bottom: 40px;
+  }
 }

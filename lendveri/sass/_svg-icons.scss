@@ -141,7 +141,16 @@
 .check-sm {
   width: 12px;
   height: 11px;
+  fill: #59A72E;
 }
+
+.check-icon {
+  &.-def {
+    fill: $gray-strong;
+  }
+}
+
+
 
 .flame-md {
   width: 40px;
@@ -161,6 +170,19 @@
 .arrow-bottom-sm {
   width: 12px;
   height: 8px;
+}
+
+.arrow-bottom-icon {
+
+  &.-def {
+    fill: $gray-strong;
+  }
+}
+
+.arrow-top-icon {
+  &.-def {
+    fill: $gray-strong;
+  }
 }
 
 .close-md {
@@ -234,6 +256,11 @@
 .star-sm {
   width: 22px;
   height: 20px;
+
+  @include media-breakpoint-down(md) {
+    width: 15px;
+    height: 14px;
+  }
 }
 
 .star-icon {

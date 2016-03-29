@@ -1,0 +1,23 @@
+.aside-menu {
+  background-color: #ffffff;
+}
+
+.aside-menu_list {
+  @include clear-menu;
+}
+
+.aside-menu_item {
+
+}
+
+.aside-menu_link {
+  display: block;
+  padding: 0 30px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #000000;
+  cursor: pointer;
+  &.active {
+    background-color:  #dedede;
+  }
+}

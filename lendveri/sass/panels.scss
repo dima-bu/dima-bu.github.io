@@ -1,0 +1,29 @@
+.panel-heading {
+  font-size: 0;
+}
+
+.panel-heading a {
+  padding: 25px;
+  color: $gray-strong;
+  display: block;
+  font-size:  14px;
+
+  &:hover {
+    color: $gray-strong;
+  }
+  
+  .g-icon {
+    margin-right: 10px;
+  }
+
+
+  &.collapsed {
+    .arrow-top-icon {
+      -moz-transform: rotate(180deg); /* Для Firefox */
+      -ms-transform: rotate(180deg); /* Для IE */
+      -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(180deg); /* Для Opera */
+      transform: rotate(180deg);
+    }
+  }
+}

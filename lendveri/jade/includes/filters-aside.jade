@@ -1,0 +1,32 @@
+.filters-aside_wrapper
+  .checking_group_column
+    +checkbox('checkbox', 'std0', '-std')
+    label.checking_label-inline(for="std0") В наличии
+  #accordion(data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample")
+    .panel.panel-default
+      .panel-heading(role="tab" id="headingOne")
+        a(data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+          +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
+          span Цена
+      #collapseOne.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne")
+        #slider-price
+        .row.slider-price_wrapper
+          .col-xs-6
+            span.slider-price_label От
+            span.slider-price#slider-price-lower
+          .col-xs-6
+            span.slider-price_label До
+            span.slider-price#slider-price-upper
+    .panel.panel-default
+      .panel-heading(role="tab" id="headingTwo")
+        a.panel-heading_link(data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo")
+          +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
+          span Фабрика
+      #collapseTwo.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingTwo")
+        .checking_group_column
+          +radio('radio', 'fabric', '-std-radio', 'std22')
+          label.checking_label-inline(for="std22") В наличии
+        .checking_group_column
+          +radio('radio', 'fabric', '-std-radio', 'std111')
+          label.checking_label-inline(for="std111") Под заказ
+

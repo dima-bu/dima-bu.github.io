@@ -114,6 +114,30 @@
 }
 
 
+.col-lg-4 .arcticle-preview_block--lg {
+  @include media-breakpoint-between(lg, lg){
+    padding: 50px 60px 20px 20px;
+    .arcticle-preview_title-lg {
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+  }
+
+
+}
+
+.col-md-6 .arcticle-preview_block--lg {
+  @include media-breakpoint-between(md, md){
+    height: 404px;
+
+    button {
+      position: absolute;
+      bottom: 20px;
+    }
+
+  }
+}
+
 
 .arcticle-preview_block--lg {
   padding: 50px 100px 50px 50px;

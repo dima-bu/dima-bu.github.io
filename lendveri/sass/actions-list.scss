@@ -1,0 +1,32 @@
+.actions-list-wrapper {
+  background-color: #ffffff;
+  padding: 30px;
+
+  @include media-breakpoint-down(md) {
+    padding: 20px;
+  }
+
+
+  h1 {
+    margin-bottom: 25px;
+  }
+}
+
+
+.actions-list {
+
+}
+
+.actions-item {
+  margin-bottom: 35px;
+}
+
+.actions-title {
+  margin-bottom: 20px;
+}
+
+.actions-date {
+  color:  #808080;
+  font-size: 14px;
+  margin-bottom: 5px;
+}

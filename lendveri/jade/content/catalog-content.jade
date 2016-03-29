@@ -1,0 +1,26 @@
+.container
+   .row
+      .col-xl-9
+         .row
+            .col-xl-4
+               h1 Входные двери
+            .col-xl-8.ta-r
+               include ../includes/filters-panel
+      .col-xl-3
+         include ../includes/filters-aside
+   .row
+      .col-xl-12.hidden-md-down
+         include ../includes/aside-menu
+      .col-xl-5.col-lg-8
+         .actions-list-wrapper
+
+            include ../includes/actions-list
+      .col-xl-3.hidden-lg-down
+         include ../includes/aside-banner
+   .row
+      .col-xs-12
+         h2.ta-c.-block-title
+            +svg('flame', 'flame-md')
+            span Горячая пятерка дверей, покупаемых в кредит
+   include ../includes/products-list_similar
+

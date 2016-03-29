@@ -14,16 +14,36 @@ $(document).ready(function() {
         gallthumb: '.thumb'
     });
 
-    //var gallery = new $.ThumbnailGallery($('#gallery'), {
-    //    thumbImages: 'img/thumbs/thumb',
-    //    smallImages: 'img/large/image',
-    //    largeImages: 'img/large/image',
-    //    count: 3,
-    //    thumbImageType: 'jpg',
-    //    imageType: 'jpg',
-    //    breakpoint: 970,
-    //    shadowStrength: 1
-    //});
+    var sliderPrice = document.getElementById('slider-price'),
+        lowerValue = document.getElementById('slider-price-lower'),
+        upperValue = document.getElementById('slider-price-upper');
+
+    noUiSlider.create(sliderPrice, {
+        start: [500, 100000],
+        connect: true,
+        step: 10,
+        range: {
+            'min': 000,
+            'max': 100000
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+
+    sliderPrice.noUiSlider.on('update', function ( values, handle ) {
+        if ( !handle ) {
+            lowerValue.innerHTML = values[handle];
+        } else {
+            upperValue.innerHTML = values[handle];
+        }
+    });
+
+
+    //$('#slider-price').Link('lower').to($('#slider-price-lower'));
+    //$('#slider-price').Link('upper').to($('#slider-price-upper'));
+
+
 
 
 });
