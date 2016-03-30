@@ -39,11 +39,28 @@ $(document).ready(function() {
         }
     });
 
+    $("#accordion").collapse({
+        query: 'div h3',
+        show: function() {
+            // The context of 'this' is applied to
+            // the collapsed details in a jQuery wrapper
+            this.slideDown(100);
+        },
+        hide: function() {
+            this.slideUp(100);
+        },
+        accordion: true,
+        persist: true
+    });
 
-    //$('#slider-price').Link('lower').to($('#slider-price-lower'));
-    //$('#slider-price').Link('upper').to($('#slider-price-upper'));
+    $('#show-aside-filter').click(function (e) {
+        $('#filters-aside').addClass('open');
+        e.preventDefault();
+    });
 
-
-
+    $('#hide-aside-filter').click(function (e) {
+        $('#filters-aside').removeClass('open');
+        e.preventDefault();
+    });
 
 });

@@ -118,7 +118,6 @@ $checking-inner-radius: 5px;
     $checking-wrapper-border-color_checked: #5eaee3;
     /*variables for gray version END*/
 
-
     @include checking_item($checking-wrapper-size);
 
     .checking_input-pseudo-wrapper {
@@ -139,30 +138,34 @@ $checking-inner-radius: 5px;
 
     vertical-align: top;
     /*variables for gray version START*/
+    $checking-wrapper-size-radio: 14px;
+    $checking-wrapper-radius:7px;
 
-    $checking-wrapper-radius:11px;
-    $checking-inner-radius:10px;
-    $checking-inner-size: 10px;
-    $checking-wrapper-color:#ffffff;
-    $checking-wrapper-color_checked:#5eaee3;
+    $checking-inner-radius: 2px;
+    $checking-inner-size: 4px;
 
-    $checking-inner-color:#ffffff;
-    $checking-inner-color_checked:#ffffff;
+    $checking-wrapper-color: #ffffff;
+    $checking-wrapper-color_checked: #ffffff;
+
+    $checking-inner-color: #ffffff;
+    $checking-inner-color_checked: #bfbfbf;
 
 
-    $checking-wrapper-border-color:  #E7E7E7;
-    $checking-wrapper-border-color_checked: #5eaee3;
+    $checking-wrapper-border-color:  #bfbfbf;
+    $checking-wrapper-border-color_checked: #bfbfbf;
+
+    $checking-wrapper-border-size-radio: 2px;
     /*variables for gray version END*/
 
 
-    @include checking_item($checking-wrapper-size);
+    @include checking_item($checking-wrapper-size-radio);
 
     .checking_input-pseudo-wrapper {
-      @include checking_input-pseudo-wrapper($checking-wrapper-color, $checking-wrapper-border-color, $checking-wrapper-size, $checking-wrapper-border-size, $checking-wrapper-radius);
+      @include checking_input-pseudo-wrapper($checking-wrapper-color, $checking-wrapper-border-color, $checking-wrapper-size-radio, $checking-wrapper-border-size-radio, $checking-wrapper-radius);
     }
 
     .checking_input {
-      @include checking_input($checking-wrapper-size, $checking-inner-color_checked, $checking-wrapper-color_checked, $checking-wrapper-border-color_checked);
+      @include checking_input($checking-wrapper-size-radio, $checking-inner-color_checked, $checking-wrapper-color_checked, $checking-wrapper-border-color_checked);
     }
 
     .checking_input-pseudo {
@@ -188,8 +191,14 @@ $checking-inner-radius: 5px;
 .checking_label-inline {
   display: inline-block;
   margin-bottom: 0;
-  margin-right: 20px;
+  margin-right: 10px;
   cursor: pointer;
   vertical-align: top;
   line-height: 25px;
+  color: #000;
+
+
+  &.-radio  {
+    line-height: 18px;
+  }
 }

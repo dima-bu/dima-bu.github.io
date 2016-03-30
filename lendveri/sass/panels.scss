@@ -1,9 +1,21 @@
 .panel-heading {
   font-size: 0;
+  margin-bottom: 0;
+
+  &.open {
+    .arrow-top-icon {
+      -moz-transform: rotate(180deg); /* Для Firefox */
+      -ms-transform: rotate(180deg); /* Для IE */
+      -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+      -o-transform: rotate(180deg); /* Для Opera */
+      transform: rotate(180deg);
+    }
+  }
+
 }
 
 .panel-heading a {
-  padding: 25px;
+  padding: 20px 25px;
   color: $gray-strong;
   display: block;
   font-size:  14px;
@@ -16,14 +28,14 @@
     margin-right: 10px;
   }
 
+}
 
-  &.collapsed {
-    .arrow-top-icon {
-      -moz-transform: rotate(180deg); /* Для Firefox */
-      -ms-transform: rotate(180deg); /* Для IE */
-      -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
-      -o-transform: rotate(180deg); /* Для Opera */
-      transform: rotate(180deg);
-    }
-  }
+.panel-body {
+  position: relative;
+  padding: 10px 25px;
+  margin-bottom: 2px;
+}
+
+.panel-heading, .panel-body {
+  background-color: #ffffff;
 }

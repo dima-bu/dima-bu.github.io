@@ -7,6 +7,6 @@ mixin checkbox(type, id, checkboxclass)
 
 mixin radio(type, name, cssclass, id)
   div(class="checking_item  #{cssclass} checking_item-inline")
-    input.checking_input(type=type, name=name, value=id)
+    input.checking_input(type=type, name=name, value=id id=id)
     .checking_input-pseudo-wrapper
       .checking_input-pseudo

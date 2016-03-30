@@ -261,3 +261,22 @@
     margin-bottom: 40px;
   }
 }
+
+.product-teaser {
+  padding: 25px 25px 25px 40px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+h2.product-teaser_title {
+  font-size: 30px;
+  font-family: $font-family-semibold;
+  margin: 5px  0 20px 0;
+}
+
+.product-teaser_descr {
+  max-height: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

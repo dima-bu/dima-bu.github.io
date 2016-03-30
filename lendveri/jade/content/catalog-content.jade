@@ -1,26 +1,19 @@
 .container
    .row
-      .col-xl-9
+      .col-xl-9.col-lg-8
          .row
-            .col-xl-4
+            .col-xl-4.col-lg-4.col-xs-7
                h1 Входные двери
-            .col-xl-8.ta-r
-               include ../includes/filters-panel
-      .col-xl-3
+            .col-xl-8.col-lg-8.col-xs-5.ta-r
+               button.btn.btn-transparent.btn-md_mod.hidden-lg-up#show-aside-filter
+                  span Фильтр
+                  +svg('arrow-left', 'arrow-right-icon arrow-right-sm -bright')
+               .hidden-md-down
+                  include ../includes/filters-panel
+         include ../includes/products-list_catalog
+         include ../includes/product-teaser
+         include ../includes/products-list_catalog
+         button.btn.btn-transparent.btn-lg_mod.btn-full Показать ещё
+         include ../includes/paginator
+      .col-xl-3.col-lg-4
          include ../includes/filters-aside
-   .row
-      .col-xl-12.hidden-md-down
-         include ../includes/aside-menu
-      .col-xl-5.col-lg-8
-         .actions-list-wrapper
-
-            include ../includes/actions-list
-      .col-xl-3.hidden-lg-down
-         include ../includes/aside-banner
-   .row
-      .col-xs-12
-         h2.ta-c.-block-title
-            +svg('flame', 'flame-md')
-            span Горячая пятерка дверей, покупаемых в кредит
-   include ../includes/products-list_similar
-

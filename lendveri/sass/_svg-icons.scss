@@ -331,3 +331,14 @@
     fill: #61553F;
   }
 }
+.arrow-right-sm {
+  width: 8px;
+  height: 12px;
+}
+
+.arrow-right-icon {
+
+  &.-bright {
+    fill: $red-main;
+  }
+}

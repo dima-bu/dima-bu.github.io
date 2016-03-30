@@ -1,4 +1,42 @@
-.filters-aside_wrapper {
+.filters-aside_top {
   background-color: #ffffff;
   padding: 20px;
+}
+
+.filters-aside_wrapper {
+  @include media-breakpoint-down(md){
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    top: 172px;
+    padding: 20px;
+    right: -100%;
+    -webkit-transition: right 300ms ease-out 0s;
+    -moz-transition: right 300ms ease-out 0s;
+    -o-transition: right 300ms ease-out 0s;
+    transition: right 300ms ease-out 0s;
+
+    &.open {
+      right: 0;
+    }
+  }
+}
+
+.filters-aside_radio-list {
+
+  .checking_group_column {
+
+  }
+
+  .checking_item {
+    padding-top: 5px;
+  }
+
+  .checking_label-inline {
+    padding-top: 5px;
+  }
+}
+
+.filters-aside_accordion {
+  margin-bottom: 15px;
 }
