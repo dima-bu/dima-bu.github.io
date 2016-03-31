@@ -1,0 +1,24 @@
+.container
+   .row
+      .col-xl-3.col-lg-4.hidden-md-down
+         include ../includes/aside-menu
+      .col-xl-6.col-lg-8
+         .secondary-content-wrapper
+            h1.-page-title Кредит/рассрочка за 5 минут
+            p Мы работаем с банком «Русский стандарт» — это выгодные тарифы и обширная сеть филиалов.
+            a.rsb-md-wrapper
+               +svg('rsb', 'rsb-md rsb-icon')
+            include ../includes/credit-descr
+            p Сумма первого платежа и  порядок выплат согласовывается вами во время телефоннго разговора с сотрудником банка.
+            .h1 Как это работает?
+            //include ../includes/actions-list
+      .col-xl-3.hidden-lg-down
+         include ../includes/aside-banner_mod
+         include ../includes/product-item
+   .row
+      .col-xs-12
+         h2.ta-c.-block-title
+            +svg('flame', 'flame-md')
+            span Горячая пятерка дверей, покупаемых в кредит
+   include ../includes/products-list_similar
+
