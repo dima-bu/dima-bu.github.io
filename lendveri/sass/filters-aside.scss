@@ -1,14 +1,33 @@
 .filters-aside_top {
   background-color: #ffffff;
   padding: 20px;
+  margin-bottom: 2px;
 }
 
+// For each breakpoint, define the maximum width of the container in a media query
+@mixin make-container-max-widths2($max-widths: $container-max-widths) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint) {
+      max-width: $container-max-width;
+      margin-right: -($container-max-width/2);
+    }
+  }
+}
+
+
+
 .filters-aside_wrapper {
+
+
+
+
   @include media-breakpoint-down(md){
     position: fixed;
     width: 100%;
     background-color: #ffffff;
     top: 172px;
+    top: 0;
+    height: 100vh;
     padding: 20px;
     right: -100%;
     -webkit-transition: right 300ms ease-out 0s;
@@ -16,10 +35,22 @@
     -o-transition: right 300ms ease-out 0s;
     transition: right 300ms ease-out 0s;
 
+
+    @include make-container-max-widths2();
+
+    &.open {
+      right: 50%;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  @include media-breakpoint-down(xs){
     &.open {
       right: 0;
     }
   }
+
+
 }
 
 .filters-aside_radio-list {

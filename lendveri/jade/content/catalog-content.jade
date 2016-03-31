@@ -1,13 +1,13 @@
 .container
    .row
       .col-xl-9.col-lg-8
-         .row
+         .row.catalog-header
             .col-xl-4.col-lg-4.col-xs-7
                h1 Входные двери
             .col-xl-8.col-lg-8.col-xs-5.ta-r
                button.btn.btn-transparent.btn-md_mod.hidden-lg-up#show-aside-filter
                   span Фильтр
-                  +svg('arrow-left', 'arrow-right-icon arrow-right-sm -bright')
+                  +svg('arrow-right', 'arrow-right-icon arrow-right-sm -bright')
                .hidden-md-down
                   include ../includes/filters-panel
          include ../includes/products-list_catalog

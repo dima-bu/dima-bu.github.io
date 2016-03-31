@@ -1,8 +1,9 @@
 .panel-heading {
   font-size: 0;
-  margin-bottom: 0;
+  margin-bottom: 2px;
 
   &.open {
+    margin-bottom: 0;
     .arrow-top-icon {
       -moz-transform: rotate(180deg); /* Для Firefox */
       -ms-transform: rotate(180deg); /* Для IE */

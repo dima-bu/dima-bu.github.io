@@ -63,4 +63,9 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('#js-print').click(function () {
+        debugger;
+        window.print() ;
+    });
+
 });

@@ -9,10 +9,11 @@ html(class="no-js")
   body
     .svg-block
       include ../includes/svg/svg-sprite-demo.html
-    include ../includes/general/header
-    include ../includes/general/main-menu
-    .main-content
-      block main-content
+    .main-wrapper
+      include ../includes/general/header
+      include ../includes/general/main-menu
+      .main-content
+        block main-content
     include ../includes/general/footer
     include  ../includes/modals/modal-feedback-call
     include  ../includes/modals/modal-free-sample

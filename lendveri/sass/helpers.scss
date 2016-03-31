@@ -148,6 +148,11 @@
   .g-tag:last-child {
     border-radius: 0;
   }
+  
+  &.-right {
+    margin-right: -27px;
+  }
+  
 
   @include media-breakpoint-down(lg){
     .g-tag:last-child {

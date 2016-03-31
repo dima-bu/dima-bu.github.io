@@ -129,6 +129,7 @@
 .col-md-6 .arcticle-preview_block--lg {
   @include media-breakpoint-between(md, md){
     height: 404px;
+    margin: 4px 0;
 
     button {
       position: absolute;
@@ -147,6 +148,7 @@
   @include media-breakpoint-up(lg){
 
     height: 404px;
+    margin: 4px 0;
     button {
       position: absolute;
       bottom: 20px;

@@ -1,15 +1,19 @@
 .product-page_row {
   @include clearfix;
+  background-color: #ffffff;
+  padding: 30px 10px 30px 40px;
+  margin-bottom: 60px;
 }
 
 .product-title {
   margin-bottom: 30px;
+
 }
 
 .product-page_left {
   float: left;
-  width: 48.6%;
-  padding: 10px 20px 90px 100px;
+  width: 47.6%;
+  padding: 10px 20px 20px 60px;
 
   @include media-breakpoint-down(md){
     width: 100%;
@@ -37,10 +41,10 @@
 
 .product-page_right {
   float: right;
-  width: 51.4%;
+  width: 52.4%;
 
   @include media-breakpoint-up(lg){
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
   }
 
   @include media-breakpoint-down(md){
@@ -52,6 +56,7 @@
 
 .product_print-block {
   margin-bottom: 18px;
+  cursor: pointer;
 
   .print-icon {
     margin-right: 8px;
@@ -83,6 +88,11 @@
 
 .product_share-title {
   margin-right: 12px;
+
+  @include media-breakpoint-down(lg){
+    margin-right: 9px;
+  }
+
 }
 
 .feedback-block {
@@ -171,11 +181,16 @@
   margin-bottom: 55px;
   
   @include  clearfix();
+
+  .btn {
+    float: left;
+    margin-right: 30px;
+  }
+
   @include media-breakpoint-down(md) {
     margin-bottom: 20px;
-
+    margin-bottom: 15px;
     .btn {
-      float: left;
       margin-right: 30px;
       float: none;
       width: 100%;
@@ -238,7 +253,7 @@
 }
 
 .product-descr-block {
-  margin-bottom: 120px;
+  //margin-bottom: 120px;
 }
 
 .product-descr {
@@ -256,16 +271,41 @@
 }
 
 .product-horizon-block {
-
   @include media-breakpoint-down(md){
     margin-bottom: 40px;
   }
 }
 
+.product-page_descr {
+  background-color: #ffffff;
+  padding: 40px 40px;
+  margin-bottom: 35px;
+}
+
+
+
+
+
+
 .product-teaser {
   padding: 25px 25px 25px 40px;
   background-color: #ffffff;
   margin-bottom: 40px;
+  position: relative;
+  
+  @include media-breakpoint-down(md){
+    padding: 20px 20px 90px 20px;
+
+    .col-xl-6, .col-lg-7, .col-lg-5 {
+      position: static;
+    }
+
+    button {
+      position: absolute;
+      left: 20px ;
+      bottom: 20px;
+    }
+  }
 }
 
 h2.product-teaser_title {

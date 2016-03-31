@@ -261,12 +261,23 @@ span.small-btn-text {
 .btn-transparent {
   border: 1px solid $red-main;
   background-color: transparent;
-
   color: $red-main;
+  
+  span {
+    padding: 0 4px;
+  }
+
+  .g-icon.arrow-right-icons {
+    vertical-align: middle;
+  }
 
   &:hover{
     background-color:$red-main;
     color: #fff;
+
+    .g-icon {
+      fill: #fff;
+    }
   }
 
   &:focus,
@@ -274,6 +285,11 @@ span.small-btn-text {
     border-color: $red-dark;
     background-color: $red-dark;
     outline: 0 none;
+    color: #ffffff;
+
+    .g-icon {
+      fill: #fff;
+    }
   }
 
 }

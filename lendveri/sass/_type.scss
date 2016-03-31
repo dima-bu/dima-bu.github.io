@@ -38,6 +38,17 @@ h1,.h1 {
     font-size: 22px;
   }
 
+  &.-extra {
+    font-size: 48px;
+    font-family: $font-family-semibold;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 36px;
+    }
+
+  }
+  
+  
 
 }
 
