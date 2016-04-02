@@ -4,13 +4,13 @@ footer.footer
       .col-md-12.col-lg-3
         ul.footer-menu
           li.footer-menu_item
-            a.footer-menu_link Акции
+            a.footer-menu_link(href="actions.html") Акции
           li.footer-menu_item
             a.footer-menu_link Новости и статьи
           li.footer-menu_item
             a.footer-menu_link Ответы на вопросы
           li.footer-menu_item
-            a.footer-menu_link Кредит и рассрочка
+            a.footer-menu_link(href="credit.html") Кредит и рассрочка
           li.footer-menu_item
             a.footer-menu_link Гарантия
           li.footer-menu_item
@@ -37,17 +37,17 @@ footer.footer
         h5.footer-title Лендвери в сетях:
         ul.soc-menu
           li.soc-menu_item
-            a.soc-menu_link
+            a.soc-menu_link(href="https://twitter.com/lendveri")
               +svg('twitter', 'twitter-sm twitter-icon')
           li.soc-menu_item
-            a.soc-menu_link
+            a.soc-menu_link(href="http://www.youtube.com/user/lendveri")
               +svg('youtube', 'youtube-sm youtube-icon')
           li.soc-menu_item
-            a.soc-menu_link
+            a.soc-menu_link(href="https://vk.com/lendveri")
               +svg('vk', 'vk-sm vk-icon')
 
         .feedback-btn_wrapper
-          button.btn.btn-transparent.btn-md_mod Обратная связь
+          a.btn.btn-transparent.btn-md_mod(data-toggle="modal" data-target="#feedbackModal") Обратная связь
 
   .container
     .row

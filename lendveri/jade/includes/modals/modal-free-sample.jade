@@ -1,12 +1,18 @@
 .modal.modal_md-size.fade(id="freeSample" tabindex="-2" role="dialog" aria-hidden="true")
   .modal-dialog(role="document")
     .modal-content.-md-padding
-      h2.modal-title Бесплатный замер
-      p Номер вашего телефона
-      .form-group
-        input.form-control.js-phone-mask.-md-size(type="text")
-      .btn-wrapper.-right
-        button.btn.btn-transparent.btn-lg_mod Вызвать
+      div#js-phone-form
+        h2.modal-title Бесплатный замер
+        p Номер вашего телефона
+        .form-group
+          input.form-control.js-phone-mask.-md-size(type="text")
+        .btn-wrapper.-right
+          button.btn.btn-transparent.btn-lg_mod#js-send-phone Вызвать
+      div.ta-c#js-thank-you(style="display: none;")
+        .round-lg_crop.-modal
+          +svg('profi', 'profi-lg')
+        h2.modal-title Спасибо!
+        p В ближайшее время наши менеджеры свяжутся с вами
       a(type="button" class="close" data-dismiss="modal" aria-label="Close")
         +svg('close', 'close-md close-icon')
 

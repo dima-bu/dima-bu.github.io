@@ -458,3 +458,24 @@ input[type="checkbox"] {
     }
   }
 }
+
+option {
+  height: 30px;
+  line-height: 30px;
+  min-height: 30px;
+  padding: 4px 2px 4px;
+}
+
+.form-control-lg {
+  color:  #060606;
+  font-size: 22px;
+  text-align: left;
+}
+
+.form-label {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 15px;
+  display: block;
+}

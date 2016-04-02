@@ -29,6 +29,17 @@
   }
 }
 
+.modal_lg-size {
+
+
+
+  .modal-dialog {
+    width: 90%;
+  }
+
+
+}
+
 
 .modal_select-city {
 
@@ -48,4 +59,50 @@
 
 .modal-dialog {
   margin: 10px auto;
+}
+
+
+.product-modal_left {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  @include media-breakpoint-down(md){
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+    .thumbnail-vertical {
+      margin-bottom: 20px;
+      float: none;
+      @include  clearfix;
+    }
+
+    .product-modal_left_product-descr {
+      float: none;
+      margin-left: 0;
+    }
+
+    .thumb {
+      float: left;
+    }
+  }
+}
+
+.product-modal_left_product-descr {
+  width: 200px;
+  margin-left: 20px;
+  float: left;
+
+  .product-item_prices, .product-item_services {
+    margin-bottom: 5px;
+  }
+
+  .product-item_availability {
+    margin-bottom: 20px;
+  }
+
+}
+
+.thumbnail-vertical {
+
 }

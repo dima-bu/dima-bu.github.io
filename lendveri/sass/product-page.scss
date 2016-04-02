@@ -112,6 +112,10 @@
 .stars-block {
   font-size: 0;
 
+  &.-review {
+    margin-bottom: 15px;
+  }
+
   .star-icon {
     margin-right: 3px;
 
@@ -320,3 +324,11 @@ h2.product-teaser_title {
   text-overflow: ellipsis;
 }
 
+.question-elem {
+  margin-bottom: 20px;
+
+  &.-answer {
+    padding-left: 60px;
+  }
+
+}

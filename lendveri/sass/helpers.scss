@@ -57,6 +57,11 @@
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
+  
+  &.-modal {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 
   @include media-breakpoint-down(md){
     width: 66px;
@@ -150,7 +155,7 @@
   }
   
   &.-right {
-    margin-right: -27px;
+    margin-right: -17px;
   }
   
 
@@ -229,7 +234,8 @@
   text-align: center;
   background-color: $red-main;
   display: block;
-
+  margin-bottom: 30px;
+  
   &.-def {
     background-color: transparent;
   }
@@ -517,3 +523,12 @@ a.g-tab {
     background-color: $red-main;
   }
 }
+
+.center-img {
+  display: block;
+  img {
+    margin: 0 auto;d:b
+  };
+}
+
+

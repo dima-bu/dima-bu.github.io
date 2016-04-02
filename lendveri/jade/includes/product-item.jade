@@ -1,17 +1,14 @@
 .product-item
   .g-tag.-new Новинка
-  a.product-item_img-wrapper(href="#")
+  a.product-item_img-wrapper(data-toggle="modal" data-target="#modalProduct")
     img.product-item_img(src="img/product-img-1.jpg")
-  a.product-item_title(href="#")
+  a.product-item_title(href="product.html")
     strong Гранит М2 Венге
     span Дверь металлическая с одной МДФ-панелью
   .product-item_prices
     .product-item_old-price 16 300.-
     .product-item_price 18 300.-
-  .product-item_services
-    +svg('delivery', 'delivery-sm service-icon')
-    +svg('installation', 'installation-sm service-icon')
-    .product-item_service_price 3 500.-
+  include product-item_service
   .product-item_buttons.clearfix
     button.btn.btn-transparent.btn-lg_mod.fll Заказать
     .flr.product-item_availability_wrapper

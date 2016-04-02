@@ -24,7 +24,7 @@ h6 { font-size: $font-size-h6; }
 h1,.h1 {
 
   color: #000000;
-  font-family: $font-family-regular;
+  font-family: $font-family-semibold;
 
   @include media-breakpoint-up(lg) {
     font-size: 30px;
@@ -68,6 +68,10 @@ h1,.h1 {
   
   &.-block-title {
     margin-bottom: 30px;
+  }
+
+  &.-block-title-sm {
+    margin-bottom: 20px;
   }
 
   &.-indent {

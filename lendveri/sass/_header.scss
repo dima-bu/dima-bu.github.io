@@ -10,11 +10,16 @@
 //  position: relative;
 //}
 .main-wrapper {
-  min-height: calc(100vh - 350px);
+  @include media-breakpoint-up(lg) {
+    min-height: calc(100vh - 350px);
+  }
 }
 
 footer {
-  height: 350px;
+  @include media-breakpoint-up(lg){
+    height: 350px;
+  }
+
 }
 
 .svg-block {
