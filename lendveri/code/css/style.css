@@ -288,7 +288,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: #cccccc;
+  background-color: #ECEBEB;
 }
 
 [tabindex="-1"]:focus {
@@ -710,7 +710,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: #cccccc;
+  background-color: #ECEBEB;
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: all .2s ease-in-out;
@@ -2906,7 +2906,7 @@ option {
 .nav-tabs .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover {
   color: #55595c;
-  background-color: #cccccc;
+  background-color: #ECEBEB;
   border-color: #ddd #ddd transparent;
 }
 
@@ -4751,6 +4751,14 @@ a.bg-danger:focus, a.bg-danger:hover {
   cursor: pointer;
   display: inline-block;
 }
+.link-underscore.-link {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+.link-underscore.-link:hover {
+  color: #ee673e;
+  border-bottom-color: #ee673e;
+}
 .link-underscore.-lg {
   font-size: 22px;
   font-family: "beausanspro-semibold", Helvetica, Arial, sans-serif;
@@ -4942,6 +4950,7 @@ a.g-tab:last-child {
 
 .center-img {
   display: block;
+  background-color: #ffffff;
 }
 .center-img img {
   margin: 0 auto;
@@ -6595,7 +6604,7 @@ p.info-main_descr {
   border-bottom: 20px solid #cccccc;
   border-left: 20px solid #cccccc;
   display: inline-block;
-  background-color: #cccccc;
+  background-color: #ECEBEB;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .corner-article {
@@ -6792,7 +6801,7 @@ p.info-main_descr {
 .product-item_availability_wrapper {
   line-height: 46px;
   width: 50%;
-  text-align: center;
+  text-align: right;
 }
 
 .product-item_availability {
@@ -7082,6 +7091,11 @@ p.partners-list_item-descr strong {
   display: table;
   clear: both;
 }
+@media (max-width: 991px) {
+  .product-page_row {
+    padding: 20px 15px 20px 15px;
+  }
+}
 
 .product-title {
   margin-bottom: 30px;
@@ -7311,6 +7325,30 @@ p.partners-list_item-descr strong {
   }
 }
 
+@media (min-width: 992px) {
+  .product-descr-block.row {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+@media (min-width: 992px) {
+  .product-descr-block .col-xl-5 {
+    padding-left: 40px;
+    padding-top: 20px;
+  }
+}
+.product-descr-block .col-xl-7 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: #f3f3f3;
+}
+@media (min-width: 992px) {
+  .product-descr-block .col-xl-7 {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
 .product-descr {
   max-height: 460px;
   overflow: hidden;
@@ -7333,8 +7371,23 @@ p.partners-list_item-descr strong {
 
 .product-page_descr {
   background-color: #ffffff;
-  padding: 40px 40px;
   margin-bottom: 35px;
+}
+@media (min-width: 992px) {
+  .product-page_descr {
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 1219px) {
+  .product-page_descr {
+    padding: 40px 40px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .product-page_descr {
+    padding: 20px 13px 0px 13px;
+  }
 }
 
 .product-teaser {
@@ -7374,6 +7427,9 @@ h2.product-teaser_title {
 }
 .question-elem.-answer {
   padding-left: 60px;
+}
+.question-elem.-answer h2 {
+  margin-left: -23px;
 }
 
 .catalog-header {
@@ -7444,8 +7500,11 @@ h2.product-teaser_title {
 
 .filters-aside_top {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 15px 20px;
   margin-bottom: 2px;
+}
+.filters-aside_top .checking_group_column {
+  margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
@@ -7519,9 +7578,20 @@ h2.product-teaser_title {
 .secondary-content-wrapper.-clear-margin {
   margin-bottom: 0;
 }
+.secondary-content-wrapper.-clear-pad {
+  padding: 0;
+}
+
+.secondary-content-wrapper_inner {
+  padding: 30px 20px;
+}
+.secondary-content-wrapper_inner.-gray {
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+}
 
 .numbers-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .number-lg {
@@ -7639,8 +7709,6 @@ h2.product-teaser_title {
 }
 
 .passport-wrapper {
-  margin-bottom: 20px;
-  padding: 20px 0 40px 0;
   margin-top: 0;
 }
 .passport-wrapper p {
@@ -8143,11 +8211,11 @@ h5.footer-title {
 }
 
 .rsb-icon {
-  fill: #a5a5a5;
+  fill: #cccccc;
   vertical-align: top;
 }
 .rsb-icon:hover {
-  fill: #61553F;
+  fill: #a5a5a5;
 }
 
 .arrow-right-sm {
@@ -8162,6 +8230,15 @@ h5.footer-title {
 .passport-md {
   width: 61px;
   height: 84px;
+}
+
+.reply-icon {
+  width: 13px;
+  height: 10px;
+}
+
+.reply-sm {
+  fill: #A5A5A5;
 }
 
 .simplegallery {
@@ -8191,7 +8268,6 @@ h5.footer-title {
 
 .gallery-content img {
   height: 400px;
-  border: 1px solid #9c9c9c;
   max-width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1219px) {

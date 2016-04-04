@@ -76,7 +76,7 @@
           .product_price-lg.-indent 27 900.-
         .col-md-5.product-colors.hidden-md-down
           +svg('colors', 'colors-sm colors-icon')
-          .link-underscore Есть другие цвета
+          a.link-underscore.-link Есть другие цвета
       .row
         .col-xl-7.col-lg-8.col-md-12.product_button-block
           button.btn.btn-xl.btn-std  Заказать
@@ -96,7 +96,7 @@
             .g-icon-text_icon.-xs-right.hidden-lg-down
               +svg('thief', 'thief-md')
             .g-icon-text_text.-middle
-              .link-underscore.-multi-line
+              a.link-underscore.-multi-line(href="#descr-content-hor")
                span Горизонт
                br
                span безопасности
@@ -127,7 +127,7 @@
                 h4.info-main_title Бесплатно
                 .info-link ?
               p Замер, доставка и установка
-  .product-page_descr
+  .product-page_descr#descr-content-hor(name="descr-content-hor")
     .row
       .col-md-12
         .g-tabs
@@ -137,11 +137,11 @@
           a.g-tab.link-underscore.-lg.js-show-tab(data-tablink="quest") Вопросы и ответы (7)
     .product-tab_content#descr-content
       include ../includes/product-tabs/tab-descr
-    .product-tab_content#quest-content
+    .product-tab_content#quest-content(style="display: none;")
       include ../includes/product-tabs/tab-questions
-    .product-tab_content#reviews-content
+    .product-tab_content#reviews-content(style="display: none;")
       include ../includes/product-tabs/tab-reviews
-    .product-tab_content#characteristics-content
+    .product-tab_content#characteristics-content(style="display: none;")
       h2.-block-title Характеристики
       p Характеристики
   h2.ta-c.-block-title Похожие двери

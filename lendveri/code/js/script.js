@@ -69,7 +69,7 @@ $(document).ready(function() {
             this.slideUp(100);
         },
         accordion: true,
-        persist: true
+        persist: false
     });
 
 
@@ -87,7 +87,6 @@ $(document).ready(function() {
 
     // печать страницы
     $('#js-print').click(function () {
-        debugger;
         window.print() ;
     });
 
@@ -101,7 +100,6 @@ $(document).ready(function() {
 
     // табы на странице продукта
     $('.js-show-tab').click(function (e) {
-        debugger;
         $('.js-show-tab').removeClass('active');
         $(this).addClass('active');
 

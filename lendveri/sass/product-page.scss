@@ -3,6 +3,11 @@
   background-color: #ffffff;
   padding: 30px 10px 30px 40px;
   margin-bottom: 60px;
+
+  @include media-breakpoint-down(md) {
+    padding: 20px 15px 20px 15px;
+  }
+
 }
 
 .product-title {
@@ -14,7 +19,7 @@
   float: left;
   width: 47.6%;
   padding: 10px 20px 20px 60px;
-
+  
   @include media-breakpoint-down(md){
     width: 100%;
     float: none;
@@ -257,7 +262,41 @@
 }
 
 .product-descr-block {
-  //margin-bottom: 120px;
+
+&.row {
+ // margin-left: -40px;
+  //margin-right: -40px;
+
+  @include media-breakpoint-up(lg){
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+  }
+
+  .col-xl-5 {
+
+    @include media-breakpoint-up(lg){
+      padding-left: 40px;
+      padding-top: 20px;
+    }
+
+  }
+
+  .col-xl-7 {
+
+
+    @include media-breakpoint-up(lg){
+      padding-right: 40px;
+      padding-left: 40px;
+
+    }
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color:  #f3f3f3;
+    
+  }
+
 }
 
 .product-descr {
@@ -282,8 +321,21 @@
 
 .product-page_descr {
   background-color: #ffffff;
-  padding: 40px 40px;
   margin-bottom: 35px;
+
+  @include media-breakpoint-up(lg){
+    padding: 40px 40px;
+  }
+  
+  @include media-breakpoint-down(lg){
+    padding: 40px 40px;
+    padding-bottom: 0;
+  }
+
+  @include media-breakpoint-down(md){
+    padding: 20px 13px 0px 13px;
+  }
+  
 }
 
 
@@ -328,6 +380,9 @@ h2.product-teaser_title {
   margin-bottom: 20px;
 
   &.-answer {
+    h2 {
+      margin-left: -23px;
+    }
     padding-left: 60px;
   }
 

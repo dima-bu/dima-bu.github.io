@@ -293,6 +293,15 @@
   cursor: pointer;
   display: inline-block;
 
+  &.-link {
+    color: #000000;
+    border-bottom-color: #000000;
+
+    &:hover {
+      color: $red-main;
+      border-bottom-color: $red-main;
+    }
+  }
 
   &.-lg {
     font-size: 22px;
@@ -526,6 +535,7 @@ a.g-tab {
 
 .center-img {
   display: block;
+  background-color: #ffffff;
   img {
     margin: 0 auto;d:b
   };

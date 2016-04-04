@@ -25,7 +25,7 @@
 
 .gallery-content img {
   height:  400px;
-  border: 1px solid #9c9c9c;
+  //border: 1px solid #9c9c9c;
   max-width: 100%;
 
   @include media-breakpoint-between(md,lg){

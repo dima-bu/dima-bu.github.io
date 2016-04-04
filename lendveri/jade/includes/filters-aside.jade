@@ -9,8 +9,8 @@
     .checking_group_column
       +checkbox('checkbox', 'std0', '-std')
       label.checking_label-inline(for="std0") В наличии
-  #accordion.filters-aside_accordion(data-collapse="accordion" )
-    h3.panel-heading
+  #accordion.filters-aside_accordion(data-collapse="persist" )
+    h3.panel-heading.open
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
       span Цена
     div.panel-body
@@ -22,7 +22,7 @@
         .col-xs-6
           span.slider-price_label До
           span.slider-price#slider-price-upper
-    h3.panel-heading.clearfix
+    h3.panel-heading.clearfix.open
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
       span Фабрика
       .info-link.flr ?
@@ -46,7 +46,7 @@
       .checking_group_column
         +radio('radio', 'fabric', '-std-radio', 'velveg')
         label.checking_label-inline.-radio(for="velveg" name="fabric") Valverg (7)
-    h3.panel-heading
+    h3.panel-heading.open
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
       span Листы стали
     div.panel-body

@@ -34,7 +34,8 @@ header
         .col-xl-2.col-lg-3
           nav.navbar.navbar-main
             button.navbar-toggler.hidden-lg-up.collapsed(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
-            +svg('logo', 'logo-normal navbar-brand')
+            a.navbar-brand(href="index.html")
+              +svg('logo', 'logo-normal')
             a.btn.btn-icons.btn-lg_map.flr.hidden-lg-up(style="margin-bottom: 14px;" data-toggle="modal" data-target="#selectCities")
               +svg('pin', 'map-sm -before')
               span Петербург

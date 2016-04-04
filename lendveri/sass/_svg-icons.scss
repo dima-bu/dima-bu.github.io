@@ -336,11 +336,11 @@
 }
 
 .rsb-icon {
-  fill: #a5a5a5;
+  fill: #cccccc;
   vertical-align: top;
 
   &:hover {
-    fill: #61553F;
+    fill:  #a5a5a5;
   }
 }
 .arrow-right-sm {
@@ -358,4 +358,13 @@
 .passport-md {
   width: 61px;
   height: 84px;
+}
+
+.reply-icon {
+  width: 13px;
+  height: 10px;
+}
+
+.reply-sm {
+  fill:#A5A5A5;
 }
