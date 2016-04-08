@@ -51,7 +51,7 @@ h3.carousel-caption_title {
 
 .carousel-indicators {
   bottom: -5px;
-
+  font-size: 0;
 
   &.-invert {
     li {
@@ -73,23 +73,27 @@ h3.carousel-caption_title {
   li {
     background-color:  rgba(255, 255, 255, 0.7);
     border: none;
-    width: 9px;
-    height: 9px;
+    width: 10px;
+    height: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 3px;
+    margin-top: 2px;
     margin-bottom: 2px;
     border-radius: 50%;
+    vertical-align: top;
 
     @include media-breakpoint-down(md) {
       background-color:  #808080;
     }
+
   }
 
   .active {
     background-color: $carousel-indicator-active-bg;
     width: 14px;
     height: 14px;
+    margin: 0 3px;
+    vertical-align: top;
   }
 }
 

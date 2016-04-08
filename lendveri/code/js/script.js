@@ -49,10 +49,8 @@ $(document).ready(function() {
 
         sliderPrice.noUiSlider.on('update', function ( values, handle ) {
             if ( !handle ) {
-                debugger;
                 lowerValue.value = values[handle];
             } else {
-                debugger;
                 upperValue.value = values[handle];
             }
         });
