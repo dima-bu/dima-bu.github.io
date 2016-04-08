@@ -154,8 +154,12 @@ $lineHeight: 4px;
 }
 .slider-price_label {
   color: $gray-strong;
+  margin-right: 7px;
 }
 
 .slider-price {
-  padding-left: 20px;
+  //padding-left: 20px;
+  display: inline-block;
+  padding: 9px 5px;
+  width: 70px;
 }

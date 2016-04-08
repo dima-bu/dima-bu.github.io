@@ -49,13 +49,25 @@ $(document).ready(function() {
 
         sliderPrice.noUiSlider.on('update', function ( values, handle ) {
             if ( !handle ) {
-                lowerValue.innerHTML = values[handle];
+                debugger;
+                lowerValue.value = values[handle];
             } else {
-                upperValue.innerHTML = values[handle];
+                debugger;
+                upperValue.value = values[handle];
             }
         });
 
+        lowerValue.addEventListener('input', function(e){
+            sliderPrice.noUiSlider.set([e.target.value, null]);
+        });
+
+        upperValue.addEventListener('input', function(e){
+            sliderPrice.noUiSlider.set([null, e.target.value]);
+        });
+
+
     }
+
 
     // аккордион в сайдбаре фильтра на страницке каталога
     $("#accordion").collapse({

@@ -1,6 +1,6 @@
 .product-page_row {
   @include clearfix;
-  background-color: #ffffff;
+  background-color: $product-page_row-bg;
   padding: 30px 10px 30px 40px;
   margin-bottom: 60px;
 
@@ -101,7 +101,7 @@
 }
 
 .feedback-block {
-  margin-bottom: 45px;
+  margin-bottom: 0px;
   
   
   
@@ -187,7 +187,7 @@
 }
 
 .product_button-block {
-  margin-bottom: 55px;
+  //margin-bottom: 55px;
   
   @include  clearfix();
 
@@ -224,7 +224,7 @@
 
 .credit-block-text {
   line-height: 30px;
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
 
   .link-underscore, .product-item_old-price {
     display: inline-block;
