@@ -7113,6 +7113,11 @@ p.partners-list_item-descr strong {
 .product-title {
   margin-bottom: 30px;
 }
+@media (max-width: 991px) {
+  .product-title {
+    margin-top: 10px;
+  }
+}
 
 .product-page_left {
   float: left;

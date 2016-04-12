@@ -12,7 +12,9 @@
 
 .product-title {
   margin-bottom: 30px;
-
+  @include media-breakpoint-down(md){
+    margin-top: 10px;
+  }
 }
 
 .product-page_left {
