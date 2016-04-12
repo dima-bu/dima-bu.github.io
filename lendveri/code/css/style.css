@@ -8259,6 +8259,11 @@ h5.footer-title {
   fill: #A5A5A5;
 }
 
+.zoom-in-md {
+  height: 27px;
+  width: 27px;
+}
+
 .simplegallery {
   margin: 0 auto;
   overflow: hidden;
@@ -8306,6 +8311,12 @@ h5.footer-title {
   max-width: 700px;
   background-color: transparent;
   text-align: center;
+}
+.gallery-wrapper .zoom-in-md {
+  position: absolute;
+  right: 50%;
+  bottom: 20%;
+  z-index: 1;
 }
 @media (min-width: 768px) and (max-width: 1219px) {
   .gallery-wrapper {
