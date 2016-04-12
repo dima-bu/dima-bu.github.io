@@ -814,7 +814,7 @@ pre code {
 }
 @media (min-width: 1220px) {
   .container {
-    max-width: 1200px;
+    max-width: 1196px;
   }
 }
 
@@ -7217,14 +7217,18 @@ p.partners-list_item-descr strong {
 }
 
 .art-block {
-  padding: 18px 40px 18px 22px;
+  padding: 20px 20px 16px 20px;
   font-size: 14px;
   line-height: 1;
+  background-color: #f3f3f3;
+  margin-right: 20px;
+  border-radius: 5px;
 }
 @media (max-width: 991px) {
   .art-block {
-    padding: 10px 15px 10px 9px;
+    padding: 11px 9px 9px 9px;
     font-size: 12px;
+    margin-right: 6px;
   }
 }
 
@@ -7552,8 +7556,8 @@ h2.product-teaser_title {
 }
 @media (max-width: 991px) and (min-width: 1220px) {
   .filters-aside_wrapper {
-    max-width: 1200px;
-    margin-right: -600px;
+    max-width: 1196px;
+    margin-right: -598px;
   }
 }
 @media (max-width: 991px) {
@@ -8351,6 +8355,11 @@ h5.footer-title {
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+.gallery-link_zoom {
+  display: inline-block;
+  cursor: crosshair;
 }
 
 /*# sourceMappingURL=style.css.map */

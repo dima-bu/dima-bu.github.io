@@ -131,13 +131,18 @@
 }
 
 .art-block {
-  padding: 18px 40px 18px 22px;
+  padding: 20px 20px 16px 20px;
   font-size: 14px;
   line-height: 1;
+  background-color:  #f3f3f3;
+  margin-right: 20px;
+  border-radius: 5px;
+
 
   @include media-breakpoint-down(md){
-    padding: 10px 15px 10px 9px;
+    padding: 11px 9px 9px 9px;
     font-size: 12px;
+    margin-right: 6px;
   }
 }
 
@@ -385,5 +390,9 @@ h2.product-teaser_title {
     }
     padding-left: 60px;
   }
+
+}
+
+.gallery-link_zoom {
 
 }

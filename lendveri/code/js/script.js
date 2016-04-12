@@ -133,4 +133,6 @@ $(document).ready(function() {
     });
 
 
+    $('.js-zoom').zoom({ touch: true});
+
 });

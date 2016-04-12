@@ -4,9 +4,12 @@
 
 
       .gallery-content.gallery-wrapper
-        img.image_1(src="img/product--lg-img-1.jpg")
-        img.image_2(src="img/product--lg-img-2.jpg")
-        img.image_3(src="img/product--lg-img-3.jpg")
+        a.js-zoom.gallery-link_zoom(data-zoom="img/product--lg-img-4.jpg")
+          img.image_1(src="img/product--lg-img-4.jpg")
+        a.js-zoom.gallery-link_zoom(data-zoom="img/product--lg-img-4.jpg")
+          img.image_2(src="img/product--lg-img-2.jpg")
+        a.js-zoom.gallery-link_zoom(data-zoom="img/product--lg-img-4.jpg")
+          img.image_3(src="img/product--lg-img-3.jpg")
       a(type="button" class="close" data-dismiss="modal" aria-label="Close")
         +svg('close', 'close-md close-icon')
 
