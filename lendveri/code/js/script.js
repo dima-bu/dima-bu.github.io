@@ -136,7 +136,7 @@ $(document).ready(function() {
     $(".carousel").swiperight(function() {
         $(this).parent().carousel('prev');
     });
-    $("#myCarousel").swipeleft(function() {
+    $(".carousel").swipeleft(function() {
         $(this).parent().carousel('next');
     });
 
