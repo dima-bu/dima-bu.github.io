@@ -6100,9 +6100,6 @@ p.info-main_descr {
   }
 }
 
-#carousel-info {
-  max-height: 120px;
-}
 @media (min-width: 768px) {
   #carousel-info .carousel-indicators {
     display: none;

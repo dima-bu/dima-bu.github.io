@@ -134,14 +134,12 @@ $(document).ready(function() {
 
 
     $(".carousel").swiperight(function() {
-        $(this).parent().carousel('prev');
+        $(this).carousel('prev');
     });
+
     $(".carousel").swipeleft(function() {
-        $(this).parent().carousel('next');
+        $(this).carousel('next');
     });
-
-
-
 
     $('.js-zoom').zoom({ touch: true});
 
