@@ -7141,7 +7141,10 @@ p.partners-list_item-descr strong {
   .product-page_left {
     width: 100%;
     float: none;
-    padding: 10px 60px 90px 60px;
+    padding: 10px 60px 0px 60px;
+  }
+  .product-page_left .gallery-content {
+    margin-bottom: 20px;
   }
   .product-page_left .simplegallery .gallery-content {
     text-align: center;
@@ -7156,7 +7159,7 @@ p.partners-list_item-descr strong {
 }
 @media (max-width: 543px) {
   .product-page_left {
-    padding: 10px 10px 90px 10px;
+    padding: 10px 10px 0px 10px;
   }
 }
 
