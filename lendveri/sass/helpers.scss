@@ -295,11 +295,11 @@
 
   &.-link {
     color: #000000;
-    border-bottom-color: #000000;
+    border-bottom: none;
 
     &:hover {
       color: $red-main;
-      border-bottom-color: $red-main;
+      border-bottom: none;
     }
   }
 
@@ -537,13 +537,15 @@ a.g-tab {
   display: block;
   background-color: #ffffff;
   img {
-    margin: 0 auto;d:b
+    margin: 0 auto;
   };
 }
 
 hr.normal {
-  margin: 30px -14px;
+  margin: 30px -10px 30px 0px;
   border: 0;
-  border-top: 1px solid #cbcbcb;
-
+  border-top: 1px solid #eeeded;
+  @include media-breakpoint-down(md){
+    margin: 20px -15px;
+  }
 }
