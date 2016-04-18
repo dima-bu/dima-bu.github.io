@@ -2,6 +2,14 @@
   font-size: 0;
   margin-bottom: 2px;
 
+  @include media-breakpoint-down(md){
+    margin-bottom: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: 1px solid $body-bg;
+  }
+
+
   &.open {
     margin-bottom: 0;
     .arrow-top-icon {
@@ -20,6 +28,10 @@
   color: $gray-strong;
   display: block;
   font-size:  14px;
+
+  @include media-breakpoint-down(md){
+    padding: 20px 45px;
+  }
 
   &:hover {
     color: $gray-strong;

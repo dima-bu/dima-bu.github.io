@@ -22,22 +22,36 @@
 
 .filters-aside_wrapper {
 
+  .btn-full {
+    margin-top: 15px;;
+  }
 
 
+  .checking_group_column {
 
+    @include media-breakpoint-down(sm){
+      width: 100%;
+    }
+  }
+  
   @include media-breakpoint-down(md){
     position: fixed;
     width: 100%;
+    z-index: 2;
     background-color: #ffffff;
     top: 172px;
     top: 0;
     height: 100vh;
+    overflow: auto;
     padding: 20px;
     right: -100%;
     -webkit-transition: right 300ms ease-out 0s;
     -moz-transition: right 300ms ease-out 0s;
     -o-transition: right 300ms ease-out 0s;
     transition: right 300ms ease-out 0s;
+
+
+    
 
 
     @include make-container-max-widths2();
@@ -53,8 +67,7 @@
       right: 0;
     }
   }
-
-
+  
 }
 
 .filters-aside_radio-list {
@@ -73,5 +86,5 @@
 }
 
 .filters-aside_accordion {
-  margin-bottom: 15px;
+
 }

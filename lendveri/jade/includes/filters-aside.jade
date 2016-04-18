@@ -5,10 +5,12 @@
       span В каталог
 
     include ../includes/filters-panel
+  hr.aside
   .filters-aside_top
     .checking_group_column
       +checkbox('checkbox', 'std0', '-std')
       label.checking_label-inline(for="std0") В наличии
+
   #accordion.filters-aside_accordion(data-collapse="persist" )
     h3.panel-heading.open
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
@@ -24,6 +26,7 @@
           span.slider-price_label До
           input.form-control.slider-price#slider-price-upper
           //span.slider-price#slider-price-upper
+
     h3.panel-heading.clearfix.open
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
       span Фабрика
@@ -53,5 +56,7 @@
       span Листы стали
     div.panel-body
       p Листы стали
+
+  hr.aside
   button.btn-full.btn-transparent.btn-md_mod Сбросить
 

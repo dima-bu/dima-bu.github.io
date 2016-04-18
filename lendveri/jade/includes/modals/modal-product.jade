@@ -1,37 +1,33 @@
 .modal.modal_lg-size.fade(id="modalProduct" tabindex="-2" role="dialog" aria-hidden="true")
   .modal-dialog(role="document")
-    .modal-content.-md-padding#gallery-modal-product
+    .modal-content#gallery-modal-product
 
       .gallery-content.gallery-wrapper
-        +svg('zoom_in', 'zoom-in-md')
-        a.js-zoom.gallery-link_zoom(data-zoom="img/product--lg-img-4.jpg")
           img.image_1(src="img/product--lg-img-4.jpg")
-        a.js-zoom.gallery-link_zoom(data-zoom="img/product--lg-img-4.jpg")
           img.image_2(src="img/product--lg-img-2.jpg")
-        a.js-zoom.gallery-link_zoom(data-zoom="img/product--lg-img-4.jpg")
           img.image_3(src="img/product--lg-img-3.jpg")
       a(type="button" class="close" data-dismiss="modal" aria-label="Close")
         +svg('close', 'close-md close-icon')
 
-      .product-modal_left.clearfix
-        .thumbnail.thumbnail-vertical.fll
-          .thumb.active
-            a(rel="1")
-              img#thumb_1.img-fluid(src="img/product-img-1.jpg")
-          .thumb
-            a(rel="2")
-              img#thumb_2.img-fluid(src="img/product-img-2.jpg")
-          .thumb
-            a(rel="3")
-              img#thumb_3.img-fluid(src="img/product-img-3.jpg")
-        .product-modal_left_product-descr
-          .product-item_title
-            strong Гранит М2 Люкс
-            span Дверь металлическая с одной МДФ-панелью
-          .product-item_prices
-            .product-item_price 18 300.-
-          include ../product-item_service
-          .product-item_availability.-in-stock
-            +svg('check', 'check-sm')
-            span В наличии
-          button.btn.btn-transparent.btn-lg_mod Заказать
+    .product-modal_left.clearfix
+      .thumbnail.thumbnail-vertical.fll
+        .thumb.active
+          a(rel="1")
+            img#thumb_1.img-fluid(src="img/product-img-1.jpg")
+        .thumb
+          a(rel="2")
+            img#thumb_2.img-fluid(src="img/product-img-2.jpg")
+        .thumb
+          a(rel="3")
+            img#thumb_3.img-fluid(src="img/product-img-3.jpg")
+      .product-modal_left_product-descr
+        .product-item_title
+          strong Гранит М2 Люкс
+          span Дверь металлическая с одной МДФ-панелью
+        .product-item_prices
+          .product-item_price 18 300.-
+        include ../product-item_service
+        .product-item_availability.-in-stock
+          +svg('check', 'check-sm')
+          span В наличии
+        button.btn.btn-transparent.btn-lg_mod Заказать
