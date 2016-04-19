@@ -86,11 +86,13 @@ $(document).ready(function() {
     // выезжающее меню на странице каталога в мобильной версии
     $('#show-aside-filter').click(function (e) {
         $('#filters-aside').addClass('open');
+        $('body').addClass('overflow');
         e.preventDefault();
     });
 
     $('#hide-aside-filter').click(function (e) {
         $('#filters-aside').removeClass('open');
+        $('body').removeClass('overflow');
         e.preventDefault();
     });
 

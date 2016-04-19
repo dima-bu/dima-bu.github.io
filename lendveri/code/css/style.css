@@ -5755,6 +5755,10 @@ input[type="button"].btn-block {
   line-height: 18px;
 }
 
+body.overflow {
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
   .main-wrapper {
     min-height: calc(100vh - 350px);
@@ -6158,6 +6162,10 @@ p.info-main_descr {
     margin-bottom: 50px;
   }
 }
+body.overflow {
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
   .main-wrapper {
     min-height: calc(100vh - 350px);
