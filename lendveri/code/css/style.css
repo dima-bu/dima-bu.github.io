@@ -5761,7 +5761,8 @@ body.overflow {
   position: relative;
 }
 body.overflow .main-content > .container > .row > .col-xl-9 {
-  display: none;
+  overflow: hidden;
+  height: auto;
 }
 
 @media (min-width: 992px) {
@@ -6173,7 +6174,8 @@ body.overflow {
   position: relative;
 }
 body.overflow .main-content > .container > .row > .col-xl-9 {
-  display: none;
+  overflow: hidden;
+  height: auto;
 }
 
 @media (min-width: 992px) {
@@ -7585,6 +7587,11 @@ h2.product-teaser_title {
   margin-bottom: 0;
 }
 
+.filters-aside_wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .filters-aside_wrapper .btn-full {
   margin-top: 15px;
 }
