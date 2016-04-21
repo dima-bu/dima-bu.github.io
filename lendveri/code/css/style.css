@@ -5757,6 +5757,7 @@ input[type="button"].btn-block {
 
 body.overflow {
   overflow: hidden;
+  max-height: 100vh;
 }
 
 @media (min-width: 992px) {
@@ -6164,6 +6165,7 @@ p.info-main_descr {
 }
 body.overflow {
   overflow: hidden;
+  max-height: 100vh;
 }
 
 @media (min-width: 992px) {
