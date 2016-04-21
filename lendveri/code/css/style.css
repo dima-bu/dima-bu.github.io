@@ -5758,6 +5758,7 @@ input[type="button"].btn-block {
 body.overflow {
   overflow: hidden;
   height: auto;
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -6166,6 +6167,7 @@ p.info-main_descr {
 body.overflow {
   overflow: hidden;
   height: auto;
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -7591,9 +7593,7 @@ h2.product-teaser_title {
     width: 100%;
     z-index: 2;
     background-color: #ffffff;
-    top: 172px;
-    top: 0;
-    bottom: 0;
+    bottom: 0 !important;
     min-height: 100%;
     overflow: auto;
     padding: 20px;
