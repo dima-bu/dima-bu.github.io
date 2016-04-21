@@ -7594,7 +7594,7 @@ h2.product-teaser_title {
     z-index: 2;
     background-color: #ffffff;
     bottom: 0 !important;
-    min-height: 100%;
+    min-height: 100vh;
     overflow: auto;
     padding: 20px;
     right: -100%;
