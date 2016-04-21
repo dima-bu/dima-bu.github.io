@@ -7593,7 +7593,7 @@ h2.product-teaser_title {
     background-color: #ffffff;
     top: 172px;
     top: 0;
-    height: 100vh;
+    min-height: 100%;
     overflow: auto;
     padding: 20px;
     right: -100%;
