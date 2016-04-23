@@ -135,6 +135,21 @@ $(document).ready(function() {
     //});
 
 
+    $('#modalProduct').on('shown.bs.modal', function (e) {
+        var rel = $("#gallery .thumb.active a").attr('rel'),
+            eq = rel - 1;
+        $('#modalProduct .thumb:eq('+  eq + ')').addClass('active');
+    });
+
+    $('#modalProduct').on('hidden.bs.modal', function (e) {
+        var rel1 = $("#modalProduct .thumb.active a").attr('rel'),
+            eq1 = rel1 - 1;
+
+        $('#gallery .thumb:eq('+  eq1 + ')').addClass('active');
+    });
+
+
+
     $(".carousel").swiperight(function() {
         $(this).carousel('prev');
     });
