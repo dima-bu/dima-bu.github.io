@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>React Webpack Babel App</title>
+    <meta charset="UTF-8">
+    <title>React Time Input</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        .s-input {
+            background-color: rgba(96, 108, 110, 0.15);
+            height: 40px;
+            line-height: 20px;
+            padding: 10px 10px;
+            color: #606c6e;
+            font-size: 16px;
+            outline: 0 solid transparent;
+            border: 0 solid transparent;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .s-input.-time {
+            font-size: 16px;
+            letter-spacing: -0.4px;
+            line-height: 20px;
+            padding: 10px 18px;
+            width: 80px;
+        }
+
+    </style>
 </head>
 <body>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>TimeInput</h1>
-		</div>
-		<div id="myApp"></div>
-	</div>
-	<script src="./index.js" type="text/javascript"></script>
+    <h1>React Time Input</h1>
+    <div id="myApp"></div>
+    <script src="./index.js" type="text/javascript"></script>
 </body>
 </html>
