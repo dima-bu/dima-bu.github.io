@@ -40,21 +40,22 @@
   font-size: 14px;
   height: 75px;
   display: block;
+
   strong {
     color:  #010101;
     font-family: $font-family-semibold;
     font-size: 16px;
     margin-right: 5px;
   }
-
-  &:hover {
-    color:  #808080;
-    strong {
-      color: $red-main;
-    }
-  }
-
 }
+
+a.product-item_title:hover {
+  color:  #808080;
+  strong {
+    color: $red-main;
+  }
+}
+
 
 .product-item_prices {
   margin-bottom: 20px;

@@ -234,11 +234,13 @@
   text-align: center;
   background-color: $red-main;
   display: block;
-  margin-bottom: 30px;
-  
+
+
   &.-def {
     background-color: transparent;
+    margin-bottom: 30px;
   }
+
 
   @include media-breakpoint-down(md){
     display: none;
@@ -475,6 +477,10 @@ a.g-tab {
 
 .filters-panel {
   font-size: 0;
+
+  @include media-breakpoint-down(md){
+    margin-bottom: 20px;
+  }
 }
 
 .filters-link {
@@ -536,9 +542,22 @@ a.g-tab {
 .center-img {
   display: block;
   background-color: #ffffff;
+
   img {
     margin: 0 auto;
   };
+}
+
+hr.aside {
+  border-top: 1px solid $body-bg;
+  display: none;
+
+  @include media-breakpoint-down(md){
+    margin: 0px -20px;
+    display: block;
+
+
+  }
 }
 
 hr.normal {

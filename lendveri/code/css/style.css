@@ -4695,10 +4695,10 @@ a.bg-danger:focus, a.bg-danger:hover {
   text-align: center;
   background-color: #ee673e;
   display: block;
-  margin-bottom: 30px;
 }
 .img-banner_wrapper.-def {
   background-color: transparent;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   .img-banner_wrapper {
@@ -7149,7 +7149,7 @@ p.partners-list_item-descr strong {
 .product-page_row {
   background-color: #ffffff;
   padding: 30px 10px 30px 40px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .product-page_row::after {
   content: "";

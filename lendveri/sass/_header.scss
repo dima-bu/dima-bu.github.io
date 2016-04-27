@@ -9,6 +9,20 @@
 //  min-height: 100%;
 //  position: relative;
 //}
+
+body.overflow {
+  overflow: hidden;
+  height: auto;
+  position: relative;
+
+
+  .main-content>.container>.row > .col-xl-9 {
+    overflow: hidden;
+  }
+}
+
+
+
 .main-wrapper {
   @include media-breakpoint-up(lg) {
     min-height: calc(100vh - 350px);

@@ -21,6 +21,8 @@
 
 
 .filters-aside_wrapper {
+  @include clearfix();
+
 
   .btn-full {
     margin-top: 15px;;
@@ -35,13 +37,14 @@
   }
   
   @include media-breakpoint-down(md){
+
     position: fixed;
     width: 100%;
     z-index: 2;
     background-color: #ffffff;
-    top: 172px;
+    bottom: 0;
     top: 0;
-    height: 100vh;
+    min-height: 100vh;
     overflow: auto;
     padding: 20px;
     right: -100%;
@@ -49,6 +52,9 @@
     -moz-transition: right 300ms ease-out 0s;
     -o-transition: right 300ms ease-out 0s;
     transition: right 300ms ease-out 0s;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    perspective: 1000;
 
 
     
