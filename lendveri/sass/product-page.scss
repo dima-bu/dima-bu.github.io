@@ -371,6 +371,7 @@
   
   @include media-breakpoint-down(md){
     padding: 20px 20px 90px 20px;
+    margin-bottom: 30px;
 
     .col-xl-6, .col-lg-7, .col-lg-5 {
       position: static;
