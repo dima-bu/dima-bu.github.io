@@ -3528,8 +3528,8 @@ button.list-group-item-danger.active:hover {
   -webkit-overflow-scrolling: touch;
 }
 .modal.fade .modal-dialog {
-  transition: none;
   transform: none;
+  transition: opacity .2s ease-out;
 }
 .modal.in .modal-dialog {
   transform: none;
@@ -6603,7 +6603,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .slider-price {
   display: inline-block;
   padding: 9px 5px;
-  width: 70px;
+  width: 65px;
 }
 
 .arcticle-preview_carusel_inner {
