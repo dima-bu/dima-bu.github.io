@@ -3173,17 +3173,15 @@ option {
 .navbar-main .navbar-nav .nav-item + .nav-item {
   margin-left: 20px;
 }
-@media (max-width: 991px) {
-  .navbar-main .nav-item {
-    float: none;
-  }
-  .navbar-main .navbar-nav {
-    clear: both;
-    overflow: hidden;
-  }
-  .navbar-main .navbar-nav .nav-item + .nav-item {
-    margin: 0;
-  }
+.navbar-main .nav-item {
+  float: none;
+}
+.navbar-main .navbar-nav {
+  clear: both;
+  overflow: hidden;
+}
+.navbar-main .navbar-nav .nav-item + .nav-item {
+  margin: 0;
 }
 
 .nav-mobile_wrapper {
@@ -5939,11 +5937,6 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 #navbar-header {
   float: none;
 }
-@media (min-width: 992px) {
-  #navbar-header {
-    height: auto !important;
-  }
-}
 
 @media (max-width: 899px) {
   .carousel.-with-indicator {
@@ -6350,11 +6343,6 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 
 #navbar-header {
   float: none;
-}
-@media (min-width: 992px) {
-  #navbar-header {
-    height: auto !important;
-  }
 }
 
 @media (max-width: 899px) {
@@ -8050,8 +8038,8 @@ h5.footer-title {
 }
 
 .logo-normal {
-  width: 166px;
-  height: 34px;
+  width: 94px;
+  height: 19px;
   margin-right: 40px;
 }
 
@@ -8060,7 +8048,7 @@ h5.footer-title {
   height: 18px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1219px) {
   .logo-normal {
     width: 94px;
     height: 19px;

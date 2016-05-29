@@ -158,6 +158,6 @@ $(document).ready(function() {
         $(this).carousel('next');
     });
 
-    $('.js-zoom').zoom({ touch: true});
+    //$('.js-zoom').zoom({ touch: true});
 
 });
