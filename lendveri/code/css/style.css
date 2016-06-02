@@ -6026,7 +6026,7 @@ h3.carousel-caption_title {
 .carousel-indicators.-invert li {
   background-color: #808080;
 }
-.carousel-indicators.-invert .active {
+.carousel-indicators.-invert .active, .carousel-indicators.-invert .slick-active {
   background-color: rgba(238, 103, 62, 0.7);
 }
 @media (max-width: 991px) {
@@ -6049,12 +6049,15 @@ h3.carousel-caption_title {
   border-radius: 50%;
   vertical-align: top;
 }
+.carousel-indicators li button {
+  display: none;
+}
 @media (max-width: 991px) {
   .carousel-indicators li {
     background-color: #808080;
   }
 }
-.carousel-indicators .active {
+.carousel-indicators .active, .carousel-indicators .slick-active {
   background-color: rgba(238, 103, 62, 0.7);
   width: 14px;
   height: 14px;
@@ -6160,6 +6163,65 @@ p.info-main_descr {
     margin-bottom: 50px;
   }
 }
+.carousel-item.slick-slide {
+  position: relative;
+}
+
+.single-item .slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  opacity: 0.8;
+  background-color: transparent;
+  outline: 0 none;
+  border: 0 none;
+  display: block !important;
+  z-index: 1;
+  font-size: 0;
+}
+.single-item .slick-arrow:hover, .single-item .slick-arrow:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+.single-item .slick-prev {
+  left: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+}
+.single-item .slick-next {
+  right: 0;
+  left: auto;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev:before {
+  content: '\2039';
+}
+
+.slick-next:before {
+  content: '\203a';
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 32px;
+  line-height: 1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body.overflow {
   overflow: hidden;
   height: auto;

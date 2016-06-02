@@ -158,6 +158,11 @@ $(document).ready(function() {
         $(this).carousel('next');
     });
 
+    $('.single-item').slick({
+        dots: true,
+        dotsClass: 'carousel-indicators'
+    });
+
     //$('.js-zoom').zoom({ touch: true});
 
 });

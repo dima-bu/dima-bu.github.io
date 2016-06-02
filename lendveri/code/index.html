@@ -6,6 +6,7 @@
     <meta name="robots" content="all">
     <link rel=icon href="/favicon.png" sizes="16x16" type="image/png">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <title>Home title</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -144,29 +145,48 @@
         <div class="container">
           <div class="row banners-block">
             <div class="col-xl-9 col-lg-8">
-              <div id="carousel-home" data-ride="carousel" class="carousel slide -with-indicator">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-home" data-slide-to="1"></li>
-                </ol>
-                <div role="listbox" class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="carousel-img"><img src="img/img-1.jpg" width="870" height="411"></div>
-                    <div class="carousel-caption">
-                      <h3 class="carousel-caption_title">Тёплые<br/> двери</h3>
-                      <p class="carousel-caption_descr"> В загородный дом</p>
-                      <button class="btn btn-lg_mod btn-std">Смотреть</button>
-                    </div>
+              <!--#carousel-home.slide.-with-indicator()-->
+              <!--  ol.carousel-indicators-->
+              <!--    li(data-target="#carousel-home" data-slide-to="0" class="active")-->
+              <!--    li(data-target="#carousel-home" data-slide-to="1" )-->
+              <!--  .carousel-inner.single-item( data-slick='{"slidesToShow": 1, "slidesToScroll": 1}')-->
+              <!--    .carousel-item.active-->
+              <!--      .carousel-img-->
+              <!--        img(src="img/img-1.jpg" width=870 height=411)-->
+              <!--      .carousel-caption-->
+              <!--        h3.carousel-caption_title Тёплые<br/> двери-->
+              <!--        p.carousel-caption_descr  В загородный дом-->
+              <!--        button.btn.btn-lg_mod.btn-std Смотреть-->
+              <!--    .carousel-item-->
+              <!--      .carousel-img-->
+              <!--        img(src="img/img-2.jpg" width=870 height=411)-->
+              <!--      .carousel-caption-->
+              <!--        h3.carousel-caption_title Гранит М2-->
+              <!--        p.carousel-caption_descr  Хит продаж среди <br/> входных дверей-->
+              <!--        button.btn.btn-lg_mod.btn-std Смотреть-->
+              <!--  a.left.carousel-control(href="#carousel-home" role="button" data-slide="prev")-->
+              <!--    span(class="icon-prev" aria-hidden="true")-->
+              <!--    span(class="sr-only")-->
+              <!--  a(class="right carousel-control" href="#carousel-home" role="button" data-slide="next")-->
+              <!--    span(class="icon-next" aria-hidden="true")-->
+              <!--    span(class="sr-only")-->
+              <div class="single-item">
+                <div class="carousel-item">
+                  <div class="carousel-img"><img src="img/img-1.jpg" width="870" height="411"></div>
+                  <div class="carousel-caption">
+                    <h3 class="carousel-caption_title">Тёплые<br/> двери</h3>
+                    <p class="carousel-caption_descr"> В загородный дом</p>
+                    <button class="btn btn-lg_mod btn-std">Смотреть</button>
                   </div>
-                  <div class="carousel-item">
-                    <div class="carousel-img"><img src="img/img-2.jpg" width="870" height="411"></div>
-                    <div class="carousel-caption">
-                      <h3 class="carousel-caption_title">Гранит М2</h3>
-                      <p class="carousel-caption_descr"> Хит продаж среди <br/> входных дверей</p>
-                      <button class="btn btn-lg_mod btn-std">Смотреть</button>
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-img"><img src="img/img-2.jpg" width="870" height="411"></div>
+                  <div class="carousel-caption">
+                    <h3 class="carousel-caption_title">Гранит М2</h3>
+                    <p class="carousel-caption_descr"> Хит продаж среди <br/> входных дверей</p>
+                    <button class="btn btn-lg_mod btn-std">Смотреть</button>
                   </div>
-                </div><a href="#carousel-home" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="icon-prev"></span><span class="sr-only"></span></a><a href="#carousel-home" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="icon-next"></span><span class="sr-only"></span></a>
+                </div>
               </div>
             </div>
             <div class="col-xl-3 col-lg-4 clearfix"><a href="" class="img-banner_wrapper"><img src="img/standart-banner.jpg" class="img-fluid flr img-banner"></a><a href="" class="img-banner_wrapper_xs"><img src="img/standart-banner_xs.jpg" class="img-fluid flr img-banner"></a></div>
@@ -798,6 +818,7 @@
     </div>
     <!--script(src="js/jquery.min.js")-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
