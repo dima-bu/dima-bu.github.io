@@ -23,6 +23,7 @@
     </div>
     <div class="main-wrapper">
       <header>
+        <!-- верхняя шапка, убрать на-->
         <div class="header_top hidden-md-down">
           <div class="container">
             <div class="col-sm-12">
@@ -36,7 +37,7 @@
         </div>
         <div class="header_bottom">
           <div class="container">
-            <div style="display:none" class="row header_bottom-contacts hidden-md-down">
+            <div class="row header_bottom-contacts hidden-md-down">
               <div class="col-sm-12"><a class="btn btn-icons btn-lg_map js-show-city-list">
                   <svg class="map-sm -before g-icon">
                     <use xlink:href="#icon-pin"></use>
@@ -66,58 +67,97 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xl-12 col-lg-12">
+              <div class="col-xl-2 col-lg-3">
                 <nav class="navbar navbar-main">
-                  <button type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" class="navbar-toggler collapsed">☰</button><a href="index.html" class="navbar-brand">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" class="navbar-toggler collapsed hidden-lg-up">☰</button><a href="index.html" class="navbar-brand">
                     <svg class="logo-normal g-icon">
                       <use xlink:href="#icon-logo"></use>
-                    </svg></a><a data-toggle="modal" data-target="#selectCities" class="btn btn-icons btn-lg_map flr">
+                    </svg></a><a data-toggle="modal" data-target="#selectCities" class="btn btn-icons btn-lg_map flr hidden-lg-up">
                     <svg class="map-sm -before g-icon">
                       <use xlink:href="#icon-pin"></use>
                     </svg><span>Петербург</span></a>
                 </nav>
               </div>
-            </div>
-            <div id="navbar-header" style="height: 0" class="collapse navbar-toggleable-xl">
-              <div class="row">
-                <div class="col-xl-12 col-lg-12">
-                  <nav class="navbar navbar-main">
-                    <ul class="nav navbar-nav">
-                      <li class="nav-item"><a href="catalog.html" class="nav-link">Входные двери</a></li>
-                      <li class="nav-item"><a class="nav-link">Межкомнатные двери</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-              <div class="row hidden-lg-up">
-                <div class="col-xl-12 col-lg-12">
-                  <div class="search-wrapper">
-                    <div class="input-group">
-                      <input type="text" id="exampleInputAmount" placeholder="Введите название или артикул" class="form-control">
-                      <div class="input-group-addon">
-                        <button class="clear-btn">
-                          <svg class="search-sm g-icon">
-                            <use xlink:href="#icon-search"></use>
-                          </svg>
-                        </button>
+              <div class="col-xl-10 col-lg-9">
+                <div id="navbar-header" style="height: 0" class="row collapse navbar-toggleable-xs">
+                  <div class="col-xl-11 col-lg-10">
+                    <nav class="navbar navbar-main">
+                      <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="catalog.html" class="nav-link">Входные двери</a></li>
+                        <li class="nav-item"><a class="nav-link">Межкомнатные двери</a></li>
+                        <li class="nav-item"><a class="nav-link">Оплата</a></li>
+                        <li class="nav-item"><a class="nav-link">Доставка</a></li>
+                      </ul>
+                    </nav>
+                    <div class="search-wrapper hidden-md-up">
+                      <div class="input-group">
+                        <input type="text" placeholder="Введите название или артикул" class="form-control">
+                        <div class="input-group-addon">
+                          <button class="clear-btn">
+                            <svg class="search-sm g-icon">
+                              <use xlink:href="#icon-search"></use>
+                            </svg>
+                          </button>
+                        </div>
                       </div>
+                    </div>
+                    <div id="search-input" style="display: none;" class="search-wrapper -search-overlay">
+                      <div class="input-group">
+                        <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control">
+                        <svg class="search-sm g-icon">
+                          <use xlink:href="#icon-search"></use>
+                        </svg>
+                        <!--div.input-group-addon
+                        button.clear-btn
+                          +svg('search', 'search-sm')
+                        -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-1 col-lg-2 hidden-md-down">
+                    <div class="search-wrapper -only-btn ta-r">
+                      <button id="search-btn" class="btn btn-md_sq btn-std">
+                        <svg class="search-sm g-icon">
+                          <use xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row hidden-md-down">
-              <div class="col-sm-9 col-md-8 col-xl-6">
+            <!--div.collapse.navbar-toggleable-sm(id="navbar-header" style="height: 0")
+            .row
+              .col-xl-12.col-lg-12
+                nav.navbar.navbar-main
+                  ul.nav.navbar-nav
+                    li.nav-item
+                      a.nav-link(href="catalog.html") Входные двери
+                    li.nav-item
+                      a.nav-link Межкомнатные двери
+                      
+            .row
+              .col-xl-12.col-lg-12
+                .search-wrapper
+                  .input-group
+                    input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
+                    div.input-group-addon
+                      button.clear-btn
+                        +svg('search', 'search-sm')
+                        
+            -->
+            <div class="row hidden-sm-down hidden-lg-up">
+              <div class="col-sm-10 col-md-8 col-xl-6">
                 <div class="header_phone">8 (812) 309-71-55</div>
                 <div class="feedback-menu">
                   <div class="feedback-menu_item"><a data-toggle="modal" data-target="#feedbackCall" class="feedback-menu_link">Обратный звонок</a></div>
                   <div class="feedback-menu_item"><a data-toggle="modal" data-target="#freeSample" class="feedback-menu_link">Бесплатный замер</a></div>
                 </div>
               </div>
-              <div class="col-sm-3 col-md-4 col-xl-6">
+              <div class="col-sm-2 col-md-4 col-xl-6">
                 <div class="search-wrapper">
                   <div class="input-group">
-                    <input type="text" id="exampleInputAmount" placeholder="Введите название или артикул" class="form-control">
+                    <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control">
                     <div class="input-group-addon">
                       <button class="clear-btn">
                         <svg class="search-sm g-icon">
@@ -129,7 +169,7 @@
                 </div>
               </div>
             </div>
-            <div class="row hidden-lg-up">
+            <div class="row hidden-md-up">
               <div class="col-xs-12">
                 <button class="btn btn-success btn-lg btn-full">Позвонить <span class="small-btn-text">8 (812) 309-71-55</span></button>
                 <div class="feedback-menu_xs">
@@ -170,7 +210,7 @@
               <!--  a(class="right carousel-control" href="#carousel-home" role="button" data-slide="next")-->
               <!--    span(class="icon-next" aria-hidden="true")-->
               <!--    span(class="sr-only")-->
-              <div class="single-item">
+              <div id="carousel-home" class="single-item">
                 <div class="carousel-item">
                   <div class="carousel-img"><img src="img/img-1.jpg" width="870" height="411"></div>
                   <div class="carousel-caption">

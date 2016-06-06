@@ -160,7 +160,29 @@ $(document).ready(function() {
 
     $('.single-item').slick({
         dots: true,
-        dotsClass: 'carousel-indicators'
+        dotsClass: 'carousel-indicators',
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+
+
+    $('#search-btn').click(function(e) {
+        $('#search-input').show();
+        $('#search-btn').hide();
+        $('#inputSearch').focus();
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(event) {
+        if(!$(event.target).closest('#search-input').length &&
+            !$(event.target).is('#search-input')) {
+
+            if($('#search-input').is(":visible")) {
+                $('#search-input').hide();
+                $('#search-btn').show();
+            }
+        }
     });
 
     //$('.js-zoom').zoom({ touch: true});
