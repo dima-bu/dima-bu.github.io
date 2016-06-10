@@ -103,6 +103,10 @@ footer {
   font-family: $font-family-semibold;
   vertical-align: top;
   margin: 12px 10px 0px 10px;
+
+  @include media-breakpoint-down(md){
+    margin: 12px 10px 0px 0px;
+  }
 }
 
 .feedback-menu_xs {
@@ -123,6 +127,14 @@ footer {
   border-right: 1px solid #DDDDDD;
   padding: 0 16px;
   line-height: 1;
+
+  @include media-breakpoint-down(md){
+    padding: 0 12px;
+    &:last-child{
+      border-right: none;
+      padding: 0 0px 0 12px;
+    }
+  }
 }
 
 .feedback-menu_link {
@@ -150,6 +162,45 @@ footer {
 
 .search-wrapper {
   padding: 10px 0;
+
+  &.-menu {
+    //@include media-breakpoint-down(md){
+    //  padding:0 15px;
+    //  margin-bottom: 15px;
+    //}
+  }
+
+  &.-search-overlay {
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    width: 100%;
+
+    .input-group {
+      width: 100%;
+    }
+    
+    .search-sm {
+      position: absolute;
+      top: 9px;
+      left: 8px;
+      fill: #808080 !important;
+      z-index: 4;
+    }
+
+    .form-control {
+      padding-left: 30px;
+    }
+  }
+
+
+  &.-only-btn {
+    padding: 6px 0 10px 0;
+  }
+
+  @include media-breakpoint-down(md){
+    padding: 6px 0 10px 0;
+  }
 }
 
 .link-sm {
@@ -206,5 +257,11 @@ footer {
 @include media-breakpoint-down(sm){
   .carousel.-with-indicator {
     margin-bottom: 50px;
+  }
+}
+
+.fll-lg-up {
+  @include media-breakpoint-up(md){
+    float: left;
   }
 }

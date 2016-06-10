@@ -1,4 +1,6 @@
 header
+
+  // верхняя шапка, убрать на
   .header_top.hidden-md-down
     .container
       .col-sm-12
@@ -6,6 +8,7 @@ header
           .header_text Акция <span class="header_text-indent">«Установка Бесплатно»</span> продлена до 29 февраля
           .header_subtext Распространяется на двери Гранит
         button.btn.btn-transparent.btn-md.header_btn Подробнее
+
   .header_bottom
     .container
       .row.header_bottom-contacts.hidden-md-down
@@ -30,38 +33,92 @@ header
               .feedback-menu_item
                 a.feedback-menu_link(data-toggle="modal" data-target="#freeSample") Бесплатный замер
             .work-time Пн - Вс, 9:00 — 21:00
-      .row
-        .col-xl-2.col-lg-3
-          nav.navbar.navbar-main
-            button.navbar-toggler.hidden-lg-up.collapsed(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
+      div
+        .fll-lg-up
+          nav.navbar.navbar-main.-xs
+            button.navbar-toggler.collapsed.hidden-lg-up(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
             a.navbar-brand(href="index.html")
               +svg('logo', 'logo-normal')
-            a.btn.btn-icons.btn-lg_map.flr.hidden-lg-up(style="margin-bottom: 14px;" data-toggle="modal" data-target="#selectCities")
+            a.btn.btn-icons.btn-lg_map.flr.hidden-lg-up(data-toggle="modal" data-target="#selectCities")
               +svg('pin', 'map-sm -before')
               span Петербург
 
-        .col-xl-10.col-lg-9
+        div
           .row.collapse.navbar-toggleable-xs(id="navbar-header" style="height: 0")
-
-            .col-xl-6.col-lg-8
+            .col-xl-11.col-lg-10
               nav.navbar.navbar-main
                 ul.nav.navbar-nav
                   li.nav-item
-                    a.nav-link(href="catalog.html") Входные двери
+                    a.nav-link(href="catalog.html") Входные
                   li.nav-item
-                    a.nav-link Межкомнатные двери
+                    a.nav-link Межкомнатные
+                  li.nav-item
+                    a.nav-link Оплата
+                  li.nav-item
+                    a.nav-link Доставка
 
-            .col-xl-6.col-lg-4
-              .search-wrapper
+              .search-wrapper.-menu.hidden-md-up
                 .input-group
-                  input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
+                  input(type="text" class="form-control"  placeholder="Введите название или артикул")
                   div.input-group-addon
                     button.clear-btn
                       +svg('search', 'search-sm')
-      .row
+              .search-wrapper.-search-overlay#search-input(style="display: none;")
+                .input-group
+                  input(type="text" class="form-control" id="inputSearch" placeholder="Введите название или артикул")
+                  +svg('search', 'search-sm')
+                  //div.input-group-addon
+                    button.clear-btn
+                      +svg('search', 'search-sm')
+            .col-xl-1.col-lg-2.hidden-md-down
+              .search-wrapper.-only-btn.ta-r
+                button.btn.btn-md_sq.btn-std#search-btn
+                  +svg('search', 'search-sm')
+
+
+
+
+      //div.collapse.navbar-toggleable-sm(id="navbar-header" style="height: 0")
+        .row
+          .col-xl-12.col-lg-12
+            nav.navbar.navbar-main
+              ul.nav.navbar-nav
+                li.nav-item
+                  a.nav-link(href="catalog.html") Входные двери
+                li.nav-item
+                  a.nav-link Межкомнатные двери
+
+        .row
+          .col-xl-12.col-lg-12
+            .search-wrapper
+              .input-group
+                input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
+                div.input-group-addon
+                  button.clear-btn
+                    +svg('search', 'search-sm')
+
+      .row.hidden-sm-down.hidden-lg-up
+        .col-sm-10.col-md-8.col-xl-6
+          .header_phone 8 (812) 309-71-55
+          .feedback-menu
+            .feedback-menu_item
+              a.feedback-menu_link(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
+            .feedback-menu_item
+              a.feedback-menu_link(data-toggle="modal" data-target="#freeSample") Бесплатный замер
+        .col-sm-2.col-md-4.col-xl-6
+          .search-wrapper
+            .input-group
+              input(type="text" class="form-control" id="inputSearch" placeholder="Введите название или артикул")
+              div.input-group-addon
+                button.clear-btn
+                  +svg('search', 'search-sm')
+
+      .row.hidden-md-up
         .col-xs-12
-          button.btn.btn-success.btn-lg.btn-full.hidden-lg-up Позвонить <span class="small-btn-text">8 (812) 309-71-55</span>
-          .feedback-menu_xs.hidden-lg-up
+          a.btn.btn-success.btn-lg.btn-full(href="tel:+78123097155")
+            +svg('phone', 'phone-sm')
+            span(style="margin-left: 10px") 8 (812) 309-71-55 <span class="small-btn-text"></span>
+          .feedback-menu_xs
             .fll
               a.link-sm(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
             .flr
