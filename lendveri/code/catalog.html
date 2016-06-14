@@ -78,7 +78,20 @@
                     </svg><span>Петербург</span></a>
                 </nav>
               </div>
-              <div>
+              <div style="position: relative;">
+                <div id="search-input" style="display: none;" class="search-wrapper -search-overlay">
+                  <div class="input-group">
+                    <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control -search">
+                    <svg class="search-sm g-icon">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  </div>
+                  <div id="search-result" style="display: block;" class="search-result">
+                    <div class="search-result_item"><span>Гран</span>итный замок</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                  </div>
+                </div>
                 <div id="navbar-header" style="height: 0" class="row collapse navbar-toggleable-xs">
                   <div class="col-xl-11 col-lg-10">
                     <nav class="navbar navbar-main">
@@ -89,7 +102,7 @@
                         <li class="nav-item"><a class="nav-link">Доставка</a></li>
                       </ul>
                     </nav>
-                    <div class="search-wrapper -menu hidden-md-up">
+                    <div style="position: relative;" class="search-wrapper -menu hidden-md-up">
                       <div class="input-group">
                         <input type="text" placeholder="Введите название или артикул" class="form-control">
                         <div class="input-group-addon">
@@ -100,13 +113,12 @@
                           </button>
                         </div>
                       </div>
-                    </div>
-                    <div id="search-input" style="display: none;" class="search-wrapper -search-overlay">
-                      <div class="input-group">
-                        <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control">
-                        <svg class="search-sm g-icon">
-                          <use xlink:href="#icon-search"></use>
-                        </svg>
+                      <div style="display: block; position: absolute; z-index: 1; width:100%;" class="search-result -xs">
+                        <div class="search-result_item"><span>Гран</span>итный замок</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234342</div>
                         <!--div.input-group-addon
                         button.clear-btn
                           +svg('search', 'search-sm')
@@ -155,9 +167,9 @@
                 </div>
               </div>
               <div class="col-sm-2 col-md-4 col-xl-6">
-                <div class="search-wrapper">
+                <div style="position:relative;" class="search-wrapper">
                   <div class="input-group">
-                    <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control">
+                    <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control ">
                     <div class="input-group-addon">
                       <button class="clear-btn">
                         <svg class="search-sm g-icon">
@@ -165,6 +177,11 @@
                         </svg>
                       </button>
                     </div>
+                  </div>
+                  <div id="search-result" style="display: block; position: absolute; z-index: 1;width: 200%; right: 0;" class="search-result">
+                    <div class="search-result_item"><span>Гран</span>итный замок</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234342</div>
                   </div>
                 </div>
               </div>

@@ -158,11 +158,83 @@ $(document).ready(function() {
         $(this).carousel('next');
     });
 
-    $('.single-item').slick({
+    $('#carousel-home').slick({
         dots: true,
         dotsClass: 'carousel-indicators',
         autoplay: true,
         autoplaySpeed: 5000
+    });
+
+
+    $('#carousel-info').slick({
+        responsive: [{
+            breakpoint: 2400,
+            settings: {
+                slidesToShow: 4,
+                arrows: false
+            }
+
+        }, {
+
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'carousel-indicators',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            }
+
+        }]
+    });
+
+
+    $('#carousel-products-list').slick({
+        responsive: [{
+            breakpoint: 2400,
+            settings: 'unslick'
+        }, {
+
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'carousel-indicators',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            }
+
+        }]
+    });
+
+    $('#carousel-products-similar').slick({
+        responsive: [{
+            breakpoint: 2400,
+            settings: 'unslick'
+        }, {
+
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'carousel-indicators',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            }
+
+        }]
+    });
+
+
+    $('#carousel-articles').slick({
+        dots: true,
+        dotsClass: 'carousel-indicators',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false
     });
 
 
