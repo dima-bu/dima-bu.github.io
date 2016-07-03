@@ -7015,7 +7015,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 }
 .product-item .g-tag {
   position: absolute;
-  right: -5px;
+  right: -7px;
   top: 22px;
 }
 @media (max-width: 899px) {

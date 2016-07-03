@@ -274,6 +274,16 @@ $(document).ready(function() {
         }
     });
 
+    $('#inputSearch').on('input', function(val) {
+        if (this.value.length) {
+            $('#search-result').show();
+        } else {
+            $('#search-result').hide();
+        }
+    });
+
+
+
 
     //$('.js-zoom').zoom({ touch: true});
 

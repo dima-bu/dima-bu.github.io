@@ -78,7 +78,20 @@
                     </svg><span>Петербург</span></a>
                 </nav>
               </div>
-              <div>
+              <div style="position: relative;">
+                <div id="search-input" style="display: none;" class="search-wrapper -search-overlay">
+                  <div class="input-group">
+                    <input type="text" id="inputSearch" placeholder="Введите название или артикул 1200" class="form-control -search">
+                    <svg class="search-sm g-icon">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  </div>
+                  <div id="search-result" style="display: none;" class="search-result">
+                    <div class="search-result_item"><span>Гран</span>итный замок</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                  </div>
+                </div>
                 <div id="navbar-header" style="height: 0" class="row collapse navbar-toggleable-xs">
                   <div class="col-xl-11 col-lg-10">
                     <nav class="navbar navbar-main">
@@ -91,7 +104,7 @@
                     </nav>
                     <div style="position: relative;" class="search-wrapper -menu hidden-md-up">
                       <div class="input-group">
-                        <input type="text" id="InputSearchXS" placeholder="Введите название или артикул" class="form-control">
+                        <input type="text" id="InputSearchXS" placeholder="Введите название или артикул 420" class="form-control">
                         <div class="input-group-addon">
                           <button class="clear-btn">
                             <svg class="search-sm g-icon">
@@ -156,7 +169,7 @@
               <div class="col-sm-2 col-md-4 col-xl-6">
                 <div style="position:relative;" class="search-wrapper">
                   <div class="input-group">
-                    <input type="text" id="inputSearch" placeholder="Введите название или артикул11" class="form-control ">
+                    <input type="text" id="inputSearchSM" placeholder="Введите название или артикул" class="form-control ">
                     <div class="input-group-addon">
                       <button class="clear-btn">
                         <svg class="search-sm g-icon">
@@ -165,7 +178,7 @@
                       </button>
                     </div>
                   </div>
-                  <div id="search-result" style="display: block; position: absolute; z-index: 1;width: 200%; right: 0;" class="search-result">
+                  <div id="inputSearchSMWrapper" style="display: none; position: absolute; z-index: 1;width: 200%; right: 0;" class="search-result">
                     <div class="search-result_item"><span>Гран</span>итный замок</div>
                     <div class="search-result_item"><span>Гран</span>итный замок234324</div>
                     <div class="search-result_item"><span>Гран</span>итный замок234342</div>
