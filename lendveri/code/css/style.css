@@ -5938,7 +5938,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   position: absolute;
   z-index: 1;
   top: -4px;
-  width: calc(100% - 200px);
+  width: calc(100% - 175px);
   left: 175px;
 }
 .search-wrapper.-search-overlay .input-group {
@@ -6081,9 +6081,11 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 
 .carousel-caption {
   color: #fff;
-  top: 85px;
-  left: 75px;
+  top: 40%;
+  bottom: 50%;
+  left: auto;
   right: auto;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .carousel-caption {
@@ -6094,7 +6096,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   .carousel-caption {
     left: 0;
     right: 0;
-    top: 20px;
+    top: 30%;
   }
 }
 
@@ -6485,7 +6487,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   position: absolute;
   z-index: 1;
   top: -4px;
-  width: calc(100% - 200px);
+  width: calc(100% - 175px);
   left: 175px;
 }
 .search-wrapper.-search-overlay .input-group {

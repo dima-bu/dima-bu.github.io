@@ -257,6 +257,24 @@ $(document).ready(function() {
         }
     });
 
+    $('#InputSearchXS').on('input', function (val) {
+       if (this.value.length) {
+           $('#InputSearchXSWrapper').show();
+       } else {
+           $('#InputSearchXSWrapper').hide();
+       }
+
+    });
+
+    $('#inputSearchSM').on('input', function(val) {
+        if (this.value.length) {
+            $('#inputSearchSMWrapper').show();
+        } else {
+            $('#inputSearchSMWrapper').hide();
+        }
+    });
+
+
     //$('.js-zoom').zoom({ touch: true});
 
 });

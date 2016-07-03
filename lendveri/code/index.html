@@ -78,20 +78,7 @@
                     </svg><span>Петербург</span></a>
                 </nav>
               </div>
-              <div style="position: relative;">
-                <div id="search-input" style="display: none;" class="search-wrapper -search-overlay">
-                  <div class="input-group">
-                    <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control -search">
-                    <svg class="search-sm g-icon">
-                      <use xlink:href="#icon-search"></use>
-                    </svg>
-                  </div>
-                  <div id="search-result" style="display: block;" class="search-result">
-                    <div class="search-result_item"><span>Гран</span>итный замок</div>
-                    <div class="search-result_item"><span>Гран</span>итный замок234324</div>
-                    <div class="search-result_item"><span>Гран</span>итный замок234342</div>
-                  </div>
-                </div>
+              <div>
                 <div id="navbar-header" style="height: 0" class="row collapse navbar-toggleable-xs">
                   <div class="col-xl-11 col-lg-10">
                     <nav class="navbar navbar-main">
@@ -104,7 +91,7 @@
                     </nav>
                     <div style="position: relative;" class="search-wrapper -menu hidden-md-up">
                       <div class="input-group">
-                        <input type="text" placeholder="Введите название или артикул" class="form-control">
+                        <input type="text" id="InputSearchXS" placeholder="Введите название или артикул" class="form-control">
                         <div class="input-group-addon">
                           <button class="clear-btn">
                             <svg class="search-sm g-icon">
@@ -113,7 +100,7 @@
                           </button>
                         </div>
                       </div>
-                      <div style="display: block; position: absolute; z-index: 1; width:100%;" class="search-result -xs">
+                      <div id="InputSearchXSWrapper" style="display: none; position: absolute; z-index: 1; width:100%;" class="search-result -xs">
                         <div class="search-result_item"><span>Гран</span>итный замок</div>
                         <div class="search-result_item"><span>Гран</span>итный замок234324</div>
                         <div class="search-result_item"><span>Гран</span>итный замок234342</div>
@@ -169,7 +156,7 @@
               <div class="col-sm-2 col-md-4 col-xl-6">
                 <div style="position:relative;" class="search-wrapper">
                   <div class="input-group">
-                    <input type="text" id="inputSearch" placeholder="Введите название или артикул" class="form-control ">
+                    <input type="text" id="inputSearch" placeholder="Введите название или артикул11" class="form-control ">
                     <div class="input-group-addon">
                       <button class="clear-btn">
                         <svg class="search-sm g-icon">
@@ -233,9 +220,9 @@
                 <div class="carousel-item">
                   <div class="carousel-img"><img src="img/img-1.jpg" width="870" height="411"></div>
                   <div class="carousel-caption">
-                    <h3 class="carousel-caption_title">Тёплые<br/> двери</h3>
+                    <h3 class="carousel-caption_title">Тёплые двери</h3>
                     <p class="carousel-caption_descr"> В загородный дом</p>
-                    <button class="btn btn-lg_mod btn-std">Смотреть</button>
+                    <!--button.btn.btn-lg_mod.btn-std Смотреть-->
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -243,7 +230,7 @@
                   <div class="carousel-caption">
                     <h3 class="carousel-caption_title">Гранит М2</h3>
                     <p class="carousel-caption_descr"> Хит продаж среди <br/> входных дверей</p>
-                    <button class="btn btn-lg_mod btn-std">Смотреть</button>
+                    <!--button.btn.btn-lg_mod.btn-std Смотреть-->
                   </div>
                 </div>
               </div>
