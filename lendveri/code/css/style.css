@@ -6221,6 +6221,7 @@ p.info-main_descr {
 }
 
 .round-info-elem {
+  display: block;
   margin-bottom: 4px;
   padding: 17px;
   background-color: #ffffff;
@@ -7522,6 +7523,15 @@ p.partners-list_item-descr strong {
   margin-right: 0;
 }
 
+.stars-block_top {
+  margin-bottom: 20px;
+}
+
+.stars-block_count {
+  line-height: 25px;
+  margin-left: 10px;
+}
+
 .art-block {
   padding: 20px 20px 16px 20px;
   font-size: 14px;
@@ -7564,7 +7574,12 @@ p.partners-list_item-descr strong {
 
 .product-colors {
   font-size: 0;
-  margin-top: 30px;
+  margin-top: 4px;
+}
+@media (max-width: 899px) {
+  .product-colors {
+    margin-top: 20px;
+  }
 }
 .product-colors .colors-icon {
   margin-right: 8px;
@@ -7572,6 +7587,44 @@ p.partners-list_item-descr strong {
 .product-colors .link-underscore {
   vertical-align: top;
   margin-top: 6px;
+}
+
+.product-colors_title {
+  margin-bottom: 4px;
+}
+
+.colors-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.colors-list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.colors-list_item {
+  float: left;
+  margin: 0 8px 8px 0;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+.colors-list_item.active {
+  border: 1px solid #ee673e;
+}
+
+.colors-list_img {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.product_prices_btn-wrapper {
+  padding-top: 10px;
 }
 
 .product_button-block::after {

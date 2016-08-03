@@ -1,10 +1,10 @@
 .arcticle-preview_carusel.clearfix
   .arcticle-preview_carusel_inner
-    #carousel-articles.carousel.slide(data-ride="carousel")
-      ol.carousel-indicators.-invert
-        li(data-target="#carousel-articles" data-slide-to="0" class="active")
-        li(data-target="#carousel-articles" data-slide-to="1" )
-      .carousel-inner(role="listbox")
+    #carousel-articles
+        //ol.carousel-indicators.-invert
+          li(data-target="#carousel-articles" data-slide-to="0" class="active")
+          li(data-target="#carousel-articles" data-slide-to="1" )
+          //.carousel-inner(role="listbox")
         .carousel-item.active
           include article-preview
         .carousel-item

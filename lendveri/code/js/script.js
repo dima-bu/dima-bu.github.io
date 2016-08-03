@@ -282,7 +282,10 @@ $(document).ready(function() {
         }
     });
 
-
+    $('#js-product-colors .colors-list_item').on('click', function() {
+        $('#js-product-colors .colors-list_item').removeClass('active');
+        $(this).addClass('active')
+    });
 
 
     //$('.js-zoom').zoom({ touch: true});

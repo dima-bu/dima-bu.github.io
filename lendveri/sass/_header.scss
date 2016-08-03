@@ -174,7 +174,9 @@ footer {
     position: absolute;
     z-index: 1;
     top: -4px;
-    width: 100%;
+    width: calc(100% - 175px);
+    left: 175px;
+
 
     .input-group {
       width: 100%;
@@ -200,6 +202,31 @@ footer {
 
   @include media-breakpoint-down(md){
     padding: 6px 0 10px 0;
+  }
+}
+
+.search-result {
+  padding: 0 20px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+
+  &.-xs {
+    bottom: 53px;
+    .search-result_item {
+      padding: 10px 0;
+    }
+  }
+}
+
+.search-result_item {
+  color:  #808080;
+  font-size: 16px;
+  padding: 20px 0;
+
+  span {
+    color:  #000000;
+    font-family: $font-family-semibold;
+
   }
 }
 
@@ -248,6 +275,7 @@ footer {
 
 #navbar-header {
   float: none;
+  //overflow: visible;
   @include media-breakpoint-up(lg){
     height: auto !important;
   }
@@ -261,7 +289,11 @@ footer {
 }
 
 .fll-lg-up {
-  @include media-breakpoint-up(md){
+  @include media-breakpoint-up(lg){
     float: left;
   }
+}
+
+#navbar-header .col-xl-1.col-lg-2 {
+  padding-right: 0;
 }

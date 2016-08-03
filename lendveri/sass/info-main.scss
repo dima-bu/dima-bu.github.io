@@ -25,6 +25,7 @@ p.info-main_descr {
 }
 
 .round-info-elem {
+  display: block;
   margin-bottom: 4px;
   padding: 17px;
   background-color: #ffffff;
@@ -37,8 +38,9 @@ p.info-main_descr {
 
 #carousel-info {
 
-
   @include media-breakpoint-up(md){
+
+
     .carousel-indicators {
       display: none;
     }
@@ -81,12 +83,12 @@ p.info-main_descr {
 
 }
 
-#carousel-info.carousel.-with-indicator {
+#carousel-info.slick-slider.-with-indicator {
   margin-bottom: 40px;
 }
 
 @include media-breakpoint-down(sm){
-  .carousel.-with-indicator {
+  .slick-slider.-with-indicator {
     margin-bottom: 50px;
   }
 }
@@ -95,7 +97,7 @@ p.info-main_descr {
   position: relative;
 }
 
-.single-item {
+.slick-slider {
 
   .slick-arrow {
     position: absolute;

@@ -4,10 +4,11 @@
 
 .carousel-caption {
   color:#fff;
-  top: 85px;
-  left: 75px;
+  top: 40%;
+  bottom: 50%;
+  left: auto;
   right: auto;
-
+  width: 100%;
 
   @include media-breakpoint-up(lg) {
     text-shadow:  none;
@@ -16,7 +17,7 @@
   @include media-breakpoint-down(md) {
     left: 0;
     right: 0;
-    top:20px;
+    top: 30%;
   }
 
 }
@@ -124,7 +125,7 @@ h3.carousel-caption_title {
     margin-bottom: 50px;
   }
 
- .single-item .slick-arrow {
+ .slick-slider .slick-arrow {
    display: none !important;
  }
 }

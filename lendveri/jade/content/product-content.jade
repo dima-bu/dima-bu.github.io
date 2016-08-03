@@ -4,6 +4,7 @@
     .row.row-xs-xs.hidden-lg-up
       .col-md-7.col-xs-7.clearfix.feedback-block
         .art-block.fll Арт. 303
+
         .fll
           .stars-block
             +svg('star', 'star-sm star-icon -active')
@@ -37,10 +38,18 @@
     .product-page_right
       .row.hidden-md-down
         .col-md-7
-          .product_print-block#js-print
+          .clearifx
+            .stars-block.fll.stars-block_top
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon')
+            .small.fll.stars-block_count 23 Отзыва
+          //.product_print-block#js-print
             +svg('print', 'print-sm print-icon')
             span.product_print-title Распечатать
-        .col-md-5.product_share-block
+        .col-md-5.product_share-block.ta-r
           span.product_share-title Поделиться:
           a.product_share-link(href='#')
             +svg('s-vk', 's-vk-sm s-vk-icon product_share-icon')
@@ -52,7 +61,16 @@
       .row.row-xs-xs.hidden-md-down
         .col-md-7.col-xs-7.clearfix.feedback-block
           .art-block.fll Арт. 303
-          .fll
+          .product-horizon-block.fll
+            .g-icon-text_wrapper
+              .g-icon-text_icon.-xs-right.hidden-lg-down
+                +svg('thief', 'thief-md')
+              .g-icon-text_text.-middle
+                a.link-underscore.-multi-line(href="#descr-content-hor")
+                  span Горизонт
+                  br
+                  span безопасности
+          //.fll
             .stars-block
               +svg('star', 'star-sm star-icon -active')
               +svg('star', 'star-sm star-icon -active')
@@ -71,15 +89,32 @@
             +svg('check', 'check-sm')
             span На складе в Санкт-Петербурге, установка с 9 февраля
       .row
-        .col-md-7.product_prices
+        .col-xl-5.col-md-7.product_prices
           .product_prices_old-price-wrapper
             .product-item_old-price.-md 31 500.-
             .info-link ?
           .product_price-lg.-indent 27 900.-
-        .col-md-5.product-colors.hidden-md-down
-          +svg('colors', 'colors-sm colors-icon')
-          a.link-underscore.-link Есть другие цвета
-      .row
+          .product_prices_btn-wrapper
+            button.btn.btn-xl.btn-std  Заказать
+        .col-xl-7.col-md-5.product-colors
+          p.product-colors_title Варианты цветов
+          ul.colors-list#js-product-colors
+            li.colors-list_item.active#color-1
+              img.colors-list_img(src="img/color-1.png")
+            li.colors-list_item#color-2
+              img.colors-list_img(src="img/color-2.png")
+            li.colors-list_item#color-3
+              img.colors-list_img(src="img/color-3.png")
+            li.colors-list_item#color-4
+              img.colors-list_img(src="img/color-1.png")
+            li.colors-list_item#color-5
+              img.colors-list_img(src="img/color-2.png")
+            li.colors-list_item#color-6
+              img.colors-list_img(src="img/color-3.png")
+
+          //+svg('colors', 'colors-sm colors-icon')
+          //a.link-underscore.-link Есть другие цвета
+      //.row
         .col-xl-7.col-lg-8.col-md-12.product_button-block
           button.btn.btn-xl.btn-std  Заказать
           .product_button-secondary

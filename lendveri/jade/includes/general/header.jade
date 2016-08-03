@@ -34,6 +34,7 @@ header
                 a.feedback-menu_link(data-toggle="modal" data-target="#freeSample") Бесплатный замер
             .work-time Пн - Вс, 9:00 — 21:00
       div
+
         .fll-lg-up
           nav.navbar.navbar-main.-xs
             button.navbar-toggler.collapsed.hidden-lg-up(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
@@ -43,7 +44,22 @@ header
               +svg('pin', 'map-sm -before')
               span Петербург
 
-        div
+        div(style="position: relative;")
+          .search-wrapper.-search-overlay#search-input(style="display: none;")
+            .input-group
+              input(type="text" class="form-control -search" id="inputSearch" placeholder="Введите название или артикул 1200")
+              +svg('search', 'search-sm')
+            .search-result#search-result(style='display: none;')
+              .search-result_item
+                span Гран
+                | итный замок
+              .search-result_item
+                span Гран
+                | итный замок234324
+              .search-result_item
+                span Гран
+                | итный замок234342
+
           .row.collapse.navbar-toggleable-xs(id="navbar-header" style="height: 0")
             .col-xl-11.col-lg-10
               nav.navbar.navbar-main
@@ -57,16 +73,29 @@ header
                   li.nav-item
                     a.nav-link Доставка
 
-              .search-wrapper.-menu.hidden-md-up
+              .search-wrapper.-menu.hidden-md-up(style="position: relative;")
                 .input-group
-                  input(type="text" class="form-control"  placeholder="Введите название или артикул")
+                  input(type="text" class="form-control" id="InputSearchXS" placeholder="Введите название или артикул 420")
                   div.input-group-addon
                     button.clear-btn
                       +svg('search', 'search-sm')
-              .search-wrapper.-search-overlay#search-input(style="display: none;")
-                .input-group
-                  input(type="text" class="form-control" id="inputSearch" placeholder="Введите название или артикул")
-                  +svg('search', 'search-sm')
+                .search-result.-xs#InputSearchXSWrapper(style='display: none; position: absolute; z-index: 1; width:100%;')
+                  .search-result_item
+                    span Гран
+                    | итный замок
+                  .search-result_item
+                    span Гран
+                    | итный замок234324
+                  .search-result_item
+                    span Гран
+                    | итный замок234342
+                  .search-result_item
+                    span Гран
+                    | итный замок234342
+                  .search-result_item
+                    span Гран
+                    | итный замок234342
+
                   //div.input-group-addon
                     button.clear-btn
                       +svg('search', 'search-sm')
@@ -74,6 +103,7 @@ header
               .search-wrapper.-only-btn.ta-r
                 button.btn.btn-md_sq.btn-std#search-btn
                   +svg('search', 'search-sm')
+
 
 
 
@@ -106,12 +136,22 @@ header
             .feedback-menu_item
               a.feedback-menu_link(data-toggle="modal" data-target="#freeSample") Бесплатный замер
         .col-sm-2.col-md-4.col-xl-6
-          .search-wrapper
+          .search-wrapper(style="position:relative;")
             .input-group
-              input(type="text" class="form-control" id="inputSearch" placeholder="Введите название или артикул")
+              input(type="text" class="form-control " id="inputSearchSM" placeholder="Введите название или артикул")
               div.input-group-addon
                 button.clear-btn
                   +svg('search', 'search-sm')
+            .search-result#inputSearchSMWrapper(style='display: none; position: absolute; z-index: 1;width: 200%; right: 0;')
+              .search-result_item
+                span Гран
+                | итный замок
+              .search-result_item
+                span Гран
+                | итный замок234324
+              .search-result_item
+                span Гран
+                | итный замок234342
 
       .row.hidden-md-up
         .col-xs-12
