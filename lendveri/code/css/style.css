@@ -4985,6 +4985,11 @@ hr.normal {
     margin: 20px -15px;
   }
 }
+@media (max-width: 899px) {
+  hr.normal {
+    margin: 15px -15px;
+  }
+}
 
 a {
   transition: color 70ms linear 0s;
@@ -7402,6 +7407,11 @@ p.partners-list_item-descr strong {
     padding: 20px 15px 20px 15px;
   }
 }
+@media (max-width: 899px) {
+  .product-page_row {
+    margin-bottom: 0px;
+  }
+}
 
 .product-title {
   margin-bottom: 30px;
@@ -7458,6 +7468,11 @@ p.partners-list_item-descr strong {
     width: 100%;
     float: none;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 899px) {
+  .product-page_right {
+    margin-bottom: 0px;
   }
 }
 

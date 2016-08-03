@@ -8,6 +8,11 @@
     padding: 20px 15px 20px 15px;
   }
 
+
+  @include media-breakpoint-down(sm){
+    margin-bottom: 0px;
+  }
+
 }
 
 .product-title {
@@ -70,6 +75,11 @@
     float: none;
     margin-bottom: 30px;
   }
+  @include media-breakpoint-down(sm){
+    margin-bottom: 0px;
+  }
+
+
 }
 
 .product_print-block {

@@ -567,4 +567,9 @@ hr.normal {
   @include media-breakpoint-down(md){
     margin: 20px -15px;
   }
+
+  @include media-breakpoint-down(sm){
+    margin: 15px -15px;
+  }
+
 }
