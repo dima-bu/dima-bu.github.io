@@ -4684,12 +4684,11 @@ a.bg-danger:focus, a.bg-danger:hover {
   outline: 0 none;
 }
 
-@media (min-width: 992px) {
-  .media-middle_up--md {
+/*.media-middle_up--md {
+  @include media-breakpoint-up(lg){
     vertical-align: middle;
   }
-}
-
+}*/
 .btn-wrapper.-right {
   text-align: right;
 }
@@ -6929,7 +6928,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 
 .round-article-preview {
   background-color: #ee673e;
-  margin: 20px 50px 20px 70px;
+  margin: 8px 50px 20px 70px;
 }
 @media (min-width: 992px) and (max-width: 1219px) {
   .round-article-preview {
@@ -6939,7 +6938,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 
 @media (max-width: 991px) {
   .round-article-preview {
-    margin: 0px 5px 20px 15px;
+    margin: 0 5px 20px 15px;
   }
 }
 
