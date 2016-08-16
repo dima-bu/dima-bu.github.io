@@ -482,4 +482,9 @@ option {
   color: #000000;
   margin-bottom: 15px;
   display: block;
+
+  &.-less-indent {
+    margin-bottom: 8px;
+    padding-top: 5px;
+  }
 }

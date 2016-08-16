@@ -566,7 +566,7 @@ h3.-block-title, .h3.-block-title {
   font-weight: normal;
 }
 .h4.-block-title, h4.-block-title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .h5 {
@@ -2219,6 +2219,10 @@ option {
   color: #000000;
   margin-bottom: 15px;
   display: block;
+}
+.form-label.-less-indent {
+  margin-bottom: 8px;
+  padding-top: 5px;
 }
 
 .fade {
@@ -4692,6 +4696,9 @@ a.bg-danger:focus, a.bg-danger:hover {
 .btn-wrapper.-right {
   text-align: right;
 }
+.btn-wrapper.-top-indent {
+  padding-top: 1rem;
+}
 
 .img-banner_wrapper {
   text-align: center;
@@ -6659,7 +6666,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 
 .paginator {
   text-align: center;
-  padding: 50px;
+  padding: 35px;
 }
 
 .paginator-link {
