@@ -203,6 +203,26 @@ mark,
   }
 }
 
+//
+// Dotted lines
+//
+
+.dots {
+  border-bottom: dotted 1px black;
+  width: 100%;
+  height: 16px;
+  margin: 0 5px;
+}
+
+.dots-name {
+  white-space: nowrap;
+}
+
+.dotted-line {
+  display:flex;
+  justify-content: space-between;
+}
+
 // Horizontal description lists w/ grid classes
 .dl-horizontal {
   margin-right: -$grid-gutter-width;
