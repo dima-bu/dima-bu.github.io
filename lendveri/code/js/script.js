@@ -293,6 +293,10 @@ $(document).ready(function() {
         $(this).addClass('active')
     });
 
+    $('#js-feedback').on('click', function () {
+        $('#feedbackThankYou').modal('show')
+    });
+
 
     //$('.js-zoom').zoom({ touch: true});
 

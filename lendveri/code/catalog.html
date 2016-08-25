@@ -754,7 +754,7 @@
       </div>
     </footer>
     <!--include  ../includes/modals/modal-feedback-call-->
-    <div id="feedbackCall" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size fade">
+    <div id="feedbackThankYou" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size fade">
       <div role="document" class="modal-dialog">
         <div class="modal-content -md-padding">
           <div class="ta-c">
@@ -764,7 +764,7 @@
               </svg>
             </div>
             <h2 class="modal-title">Спасибо!</h2>
-            <p>В ближайшее время наши менеджеры свяжутся с вами</p>
+            <p>Ваше сообщение №4353 успешно доставлено</p>
           </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
             <svg class="close-md close-icon g-icon">
               <use xlink:href="#icon-close"></use>
@@ -821,27 +821,28 @@
         <div class="modal-content -md-padding">
           <div>
             <h2 class="modal-title">Обратная связь</h2>
-            <label class="form-label">Хочу отправить</label>
+            <label class="form-label -less-indent">Хочу отправить</label>
             <div class="form-group">
               <select class="form-control form-control-lg">
                 <option>Благодарность</option>
                 <option>Жалобу</option>
+                <option>Письмо директору</option>
               </select>
             </div>
-            <label class="form-label">Представьтесь, пожалуйста</label>
+            <label class="form-label -less-indent">Представьтесь, пожалуйста</label>
             <div class="form-group">
               <input type="text" class="form-control">
             </div>
-            <label for="phone" class="form-label">Номер вашего телефона</label>
+            <label for="phone" class="form-label -less-indent">Номер вашего телефона</label>
             <div class="form-group">
               <input type="text" id="phone" class="form-control js-phone-mask -md-size">
             </div>
-            <label for="textM" class="form-label"> Сообщение</label>
+            <label for="textM" class="form-label -less-indent"> Сообщение</label>
             <div class="form-group">
               <textarea rows="5" id="textM" class="form-control"></textarea>
             </div>
             <div class="btn-wrapper -right">
-              <button class="btn btn-transparent btn-lg_mod">Вызвать</button>
+              <button id="js-feedback" data-dismiss="modal" class="btn btn-transparent btn-lg_mod">Вызвать</button>
             </div>
           </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
             <svg class="close-md close-icon g-icon">
