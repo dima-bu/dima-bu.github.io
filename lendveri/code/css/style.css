@@ -288,7 +288,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: #eeeded;
+  background-color: #cccccc;
 }
 
 [tabindex="-1"]:focus {
@@ -726,7 +726,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: #eeeded;
+  background-color: #cccccc;
   border: 1px solid #ddd;
   border-radius: 5px;
   transition: all .2s ease-in-out;
@@ -1914,7 +1914,7 @@ pre code {
   font-size: 14px;
   line-height: 20px;
   color: #000000;
-  background-color: #f3f3f3;
+  background-color: #dddddd;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -2237,8 +2237,8 @@ option {
   display: block;
 }
 .form-label.-less-indent {
-  margin-bottom: 8px;
-  padding-top: 5px;
+  margin-bottom: 15px;
+  padding-top: 14px;
 }
 
 .fade {
@@ -2929,7 +2929,7 @@ option {
 .nav-tabs .nav-item.open .nav-link:focus,
 .nav-tabs .nav-item.open .nav-link:hover {
   color: #55595c;
-  background-color: #eeeded;
+  background-color: #cccccc;
   border-color: #ddd #ddd transparent;
 }
 
@@ -4991,7 +4991,7 @@ a.g-tab:last-child {
 }
 
 hr.aside {
-  border-top: 1px solid #eeeded;
+  border-top: 1px solid #cccccc;
   display: none;
 }
 @media (max-width: 991px) {
@@ -6638,7 +6638,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
     margin-bottom: 0px;
     margin-left: -20px;
     margin-right: -20px;
-    border-top: 1px solid #eeeded;
+    border-top: 1px solid #cccccc;
   }
 }
 .panel-heading.open {
@@ -6935,7 +6935,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   border-bottom: 20px solid #cccccc;
   border-left: 20px solid #cccccc;
   display: inline-block;
-  background-color: #eeeded;
+  background-color: #cccccc;
 }
 @media (min-width: 900px) and (max-width: 991px) {
   .corner-article {
@@ -7459,6 +7459,23 @@ p.partners-list_item-descr strong {
   width: 47.6%;
   padding: 10px 20px 20px 60px;
 }
+.product-page_left .thumb {
+  display: inline-block;
+  float: none;
+}
+.product-page_left .thumb.hide {
+  display: none;
+}
+.product-page_left .more-block {
+  margin: 0 5px 0 0;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  display: inline-block;
+  color: #cd3e12;
+  cursor: pointer;
+  text-align: center;
+}
 @media (max-width: 991px) {
   .product-page_left {
     width: 100%;
@@ -7577,7 +7594,7 @@ p.partners-list_item-descr strong {
   padding: 20px 20px 16px 20px;
   font-size: 14px;
   line-height: 1;
-  background-color: #f3f3f3;
+  background-color: #dddddd;
   margin-right: 20px;
   border-radius: 5px;
 }
@@ -7753,7 +7770,7 @@ p.partners-list_item-descr strong {
 .product-descr-block .col-xl-7 {
   padding-top: 20px;
   padding-bottom: 30px;
-  background-color: #f3f3f3;
+  background-color: #dddddd;
 }
 @media (min-width: 992px) {
   .product-descr-block .col-xl-7 {

@@ -26,6 +26,12 @@ $(document).ready(function() {
     });
 
 
+    $('#more-block').click(function () {
+        $('.product-page_left .thumb').removeClass('hide');
+        $(this).hide();
+    });
+
+
     // выбор ценового диапозона
 
     var sliderPrice = document.getElementById('slider-price'),
