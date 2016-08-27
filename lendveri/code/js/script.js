@@ -297,6 +297,11 @@ $(document).ready(function() {
         $('#feedbackThankYou').modal('show')
     });
 
+    $('#js-show-thankyou').on('click', function () {
+        $('#feedbackThankYou').modal('show')
+    });
+
+
 
     //$('.js-zoom').zoom({ touch: true});
 

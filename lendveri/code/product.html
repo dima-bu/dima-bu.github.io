@@ -338,7 +338,7 @@
                   </div>
                   <div class="product_price-lg -indent">27 900.-</div>
                   <div class="product_prices_btn-wrapper">
-                    <button class="btn btn-xl btn-std"> Заказать</button>
+                    <button data-toggle="modal" data-target="#modalOrder" class="btn btn-xl btn-std"> Заказать</button>
                   </div>
                 </div>
                 <div class="col-xl-7 col-md-5 product-colors">
@@ -980,6 +980,34 @@
             </div>
             <div class="btn-wrapper -right">
               <button id="js-feedback" data-dismiss="modal" class="btn btn-transparent btn-lg_mod">Вызвать</button>
+            </div>
+          </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <svg class="close-md close-icon g-icon">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div id="modalOrder" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content -md-padding">
+          <div>
+            <h2 class="modal-title">Заказ</h2>
+            <div class="row">
+              <div class="col-xs-8">
+                <div class="product-item_title -modal"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></div>
+              </div>
+              <div class="col-xs-4">
+                <div class="product-item_price">18 300.-</div>
+              </div>
+            </div>
+            <p class="-xs">Доставка, установка — <strong>бесплатно</strong>, оплата - <strong>наличными после установки</strong>, Вызов замерщика в черте города - <strong>бесплатно</strong>.</p>
+            <label for="phone2" class="form-label -less-indent">Номер вашего телефона</label>
+            <div class="form-group">
+              <input type="text" id="phone2" class="form-control js-phone-mask -md-size">
+            </div>
+            <div class="btn-wrapper clearfix">
+              <p class="fll">Мы перезвоним вам в ближайшее время</p><a href="thank-you.html" class="btn btn-transparent btn-lg_mod flr">Заказать</a>
             </div>
           </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
             <svg class="close-md close-icon g-icon">
