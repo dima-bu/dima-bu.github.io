@@ -5977,15 +5977,29 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   position: absolute;
   z-index: 1;
   top: -4px;
-  width: calc(100% - 175px);
-  left: 175px;
+  width: calc(100% - 194px);
+  left: 194px;
 }
 .search-wrapper.-search-overlay .input-group {
   width: 100%;
 }
+.search-wrapper.-search-overlay .input-group .form-control {
+  border-radius: 5px;
+}
+.search-wrapper.-search-overlay .close-search {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 11px;
+  display: block;
+  z-index: 4;
+}
+.search-wrapper.-search-overlay .close-search:hover .close-icon {
+  fill: #000000;
+}
 .search-wrapper.-search-overlay .search-sm {
   position: absolute;
-  top: 9px;
+  top: 11px;
   left: 8px;
   fill: #808080 !important;
   z-index: 4;
@@ -6017,7 +6031,10 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-result_item {
   color: #808080;
   font-size: 16px;
-  padding: 20px 0;
+  padding: 17px 0;
+}
+.search-result_item:hover {
+  background-color: #f3f3f3;
 }
 .search-result_item span {
   color: #000000;
@@ -6069,6 +6086,11 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 @media (min-width: 992px) {
   #navbar-header {
     height: auto !important;
+  }
+}
+@media (max-width: 991px) {
+  #navbar-header .search-wrapper .input-group-addon {
+    border: none;
   }
 }
 
@@ -6527,15 +6549,29 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   position: absolute;
   z-index: 1;
   top: -4px;
-  width: calc(100% - 175px);
-  left: 175px;
+  width: calc(100% - 194px);
+  left: 194px;
 }
 .search-wrapper.-search-overlay .input-group {
   width: 100%;
 }
+.search-wrapper.-search-overlay .input-group .form-control {
+  border-radius: 5px;
+}
+.search-wrapper.-search-overlay .close-search {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 11px;
+  display: block;
+  z-index: 4;
+}
+.search-wrapper.-search-overlay .close-search:hover .close-icon {
+  fill: #000000;
+}
 .search-wrapper.-search-overlay .search-sm {
   position: absolute;
-  top: 9px;
+  top: 11px;
   left: 8px;
   fill: #808080 !important;
   z-index: 4;
@@ -6567,7 +6603,10 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-result_item {
   color: #808080;
   font-size: 16px;
-  padding: 20px 0;
+  padding: 17px 0;
+}
+.search-result_item:hover {
+  background-color: #f3f3f3;
 }
 .search-result_item span {
   color: #000000;
@@ -6619,6 +6658,11 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 @media (min-width: 992px) {
   #navbar-header {
     height: auto !important;
+  }
+}
+@media (max-width: 991px) {
+  #navbar-header .search-wrapper .input-group-addon {
+    border: none;
   }
 }
 
