@@ -312,6 +312,18 @@ $(document).ready(function() {
     });
 
 
+    $('#js-show-thankyou').on('click', function () {
+        $('#feedbackThankYou').modal('show')
+    });
+
+
+
+    $('#js-show-more').on('click', function () {
+        $('#modalProduct').modal('show')
+    });
+
+
+
 
     //$('.js-zoom').zoom({ touch: true});
 

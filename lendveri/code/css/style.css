@@ -5989,8 +5989,8 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay .close-search {
   position: absolute;
   cursor: pointer;
-  top: 8px;
-  right: 11px;
+  top: 12px;
+  right: 12px;
   display: block;
   z-index: 4;
 }
@@ -6561,8 +6561,8 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay .close-search {
   position: absolute;
   cursor: pointer;
-  top: 8px;
-  right: 11px;
+  top: 12px;
+  right: 12px;
   display: block;
   z-index: 4;
 }
@@ -8613,6 +8613,11 @@ h5.footer-title {
 .close-md {
   width: 24px;
   height: 24px;
+}
+
+.close-sm {
+  width: 18px;
+  height: 18px;
 }
 
 .close-icon {
