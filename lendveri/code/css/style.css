@@ -7918,6 +7918,33 @@ h2.product-teaser_title {
   margin-left: -23px;
 }
 
+.detail-img-title {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+@media (max-width: 1219px) {
+  .detail-img-title {
+    margin-left: 0px;
+  }
+}
+
+.detail-img-wrapper {
+  text-align: right;
+  margin-top: 50px;
+}
+.detail-img-wrapper img {
+  margin-left: 40px;
+}
+@media (max-width: 1219px) {
+  .detail-img-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .detail-img-wrapper img {
+    margin: 0 auto;
+  }
+}
+
 .catalog-header {
   margin-bottom: 30px;
 }

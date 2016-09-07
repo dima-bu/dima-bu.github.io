@@ -485,3 +485,31 @@ h2.product-teaser_title {
   }
 
 }
+
+.detail-img-title {
+  margin-top: 30px;
+  margin-left: 40px;
+
+  @include media-breakpoint-down(lg){
+    margin-left: 0px;
+  }
+}
+
+.detail-img-wrapper {
+  text-align: right;
+  margin-top: 50px;
+
+  img {
+    margin-left: 40px;
+  }
+
+  @include media-breakpoint-down(lg){
+    text-align: center;
+    padding-bottom: 20px;
+
+    img {
+      margin: 0 auto;
+    }
+
+  }
+}
