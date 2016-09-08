@@ -7527,9 +7527,12 @@ p.partners-list_item-descr strong {
   height: 68px;
   line-height: 68px;
   display: inline-block;
-  color: #cd3e12;
+  color: #ee673e;
   cursor: pointer;
   text-align: center;
+}
+.product-page_left .more-block:hover {
+  color: #c82e00;
 }
 @media (max-width: 991px) {
   .product-page_left {
