@@ -597,6 +597,9 @@ p.-xs {
   color: #808080;
   margin-bottom: 0;
 }
+p.-xs.-std {
+  color: #000000;
+}
 p.-xs strong {
   color: #373a3c;
 }

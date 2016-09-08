@@ -136,6 +136,10 @@ p {
     color: #808080;
     margin-bottom: 0;
 
+    &.-std {
+      color: #000000;
+    }
+
     strong {
       color: #373a3c;
     }
