@@ -322,7 +322,20 @@ $(document).ready(function() {
         $('#modalProduct').modal('show')
     });
 
+    $('#js-show-producers').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('#js-producers').toggle()
+    });
 
+    $(document).click(function(event) {
+        if(!$(event.target).closest('#js-producers').length)
+             {
+            if($('#js-producers').is(":visible")) {
+                $('#js-producers').hide();
+            }
+        }
+    });
 
 
     //$('.js-zoom').zoom({ touch: true});

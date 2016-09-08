@@ -481,7 +481,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.25rem;
+  font-size: 14px;
 }
 
 h6 {
@@ -570,7 +570,9 @@ h3.-block-title, .h3.-block-title {
 }
 
 .h5 {
-  font-size: 1.25rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .h6 {
@@ -587,6 +589,7 @@ p {
   line-height: 22px;
   color: #000000;
   margin-bottom: 15px;
+  font-family: "beausanspro-reg", Helvetica, Arial, sans-serif;
 }
 p.-sm {
   font-size: 14px;
@@ -3673,6 +3676,16 @@ button.list-group-item-danger.active:hover {
     width: 900px;
   }
 }
+.simple-popup {
+  width: 400px;
+  padding: 25px;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
+  right: 25px;
+  top: 55px;
+}
+
 .carousel {
   position: relative;
 }

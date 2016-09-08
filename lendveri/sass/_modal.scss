@@ -147,3 +147,14 @@
 @include media-breakpoint-up(md) {
   .modal-lg { width: $modal-lg; }
 }
+
+
+.simple-popup {
+  width: 400px;
+  padding: 25px;
+  z-index: 2;
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
+  right: 25px;
+  top: 55px;
+}
