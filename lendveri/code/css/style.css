@@ -3685,6 +3685,12 @@ button.list-group-item-danger.active:hover {
   right: 25px;
   top: 55px;
 }
+@media (max-width: 899px) {
+  .simple-popup {
+    left: 10px;
+    right: inherit;
+  }
+}
 
 .carousel {
   position: relative;
@@ -4793,6 +4799,9 @@ a.bg-danger:focus, a.bg-danger:hover {
   color: #ffffff;
   border-color: #ee673e;
   background-color: #ee673e;
+}
+.info-link.-ml {
+  margin-left: 5px;
 }
 
 .link-underscore {
@@ -7804,7 +7813,7 @@ p.partners-list_item-descr strong {
   vertical-align: middle;
 }
 .credit-block-text .link-underscore {
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 7px;
 }
 .credit-block-text .credit-block-text-beetween {

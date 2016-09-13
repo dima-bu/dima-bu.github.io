@@ -316,8 +316,6 @@ $(document).ready(function() {
         $('#feedbackThankYou').modal('show')
     });
 
-
-
     $('#js-show-more').on('click', function () {
         $('#modalProduct').modal('show')
     });
@@ -328,13 +326,29 @@ $(document).ready(function() {
         $('#js-producers').toggle()
     });
 
+    $('#js-show-credit-descr').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('#js-credit-descr').toggle()
+    });
+
+
     $(document).click(function(event) {
+
         if(!$(event.target).closest('#js-producers').length)
              {
             if($('#js-producers').is(":visible")) {
                 $('#js-producers').hide();
             }
         }
+
+        if(!$(event.target).closest('#js-credit-descr').length)
+        {
+            if($('#js-credit-descr').is(":visible")) {
+                $('#js-credit-descr').hide();
+            }
+        }
+
     });
 
 

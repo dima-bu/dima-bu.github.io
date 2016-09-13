@@ -157,4 +157,10 @@
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
   right: 25px;
   top: 55px;
+
+  @include media-breakpoint-down(sm) {
+    left: 10px;
+    right: inherit;
+  }
+
 }
