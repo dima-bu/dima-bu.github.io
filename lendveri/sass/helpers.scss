@@ -41,6 +41,20 @@
   }
 }
 
+
+.round-xmd-crop {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  overflow: hidden;
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
 .round-sm {
   width: 48px;
   height: 48px;
@@ -446,6 +460,30 @@
 
 .g-tabs, .item-bottom-indent {
   margin-bottom: 30px;
+
+
+  &.-md {
+    margin-bottom: 10px;
+    font-size: 16px;
+
+    a.g-tab {
+      margin-right: 40px;
+      margin-bottom: 10px;
+
+      @extend .link-underscore;
+
+      &.active {
+        border-bottom-color: transparent;
+        color: #000000;
+        font-family: $font-family-semibold;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+    }
+  }
 }
 
 a.g-tab {
@@ -567,8 +605,6 @@ hr.aside {
   @include media-breakpoint-down(md){
     margin: 0px -20px;
     display: block;
-
-
   }
 }
 
@@ -584,4 +620,79 @@ hr.normal {
     margin: 15px -15px;
   }
 
+}
+
+hr.space {
+  margin-bottom:  30px;
+  border: none;
+  display: block;
+
+  &.-md {
+    margin-bottom:  20px;
+  }
+
+}
+
+.stripped-list {
+  padding-bottom: 30px;
+  background-color:  #ffffff;
+  
+  &.-mb {
+    margin-bottom: 40px;
+  }
+}
+
+.stripped-item {
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  padding: 0 25px;
+
+  &:nth-child(even) {
+
+  }
+
+  &:nth-child(odd) {
+    background-color:  #f8f8f8;
+  }
+}
+
+.aside-section {
+  padding: 30px;
+  background-color: #ffffff;
+  position: relative;
+
+  .corner-article {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  h4 {
+    color: #000000;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+  
+}
+
+
+.simple-list {
+
+  &.-no-margin {
+    margin-bottom: 0;
+  }
+
+  font-size: 14px;
+  line-height: 22px;
+  font-family: $font-family-regular;
+  @include clear-menu();
+  margin-bottom: 30px;
+  
+
+  li {
+    height: 20px;
+  }
 }

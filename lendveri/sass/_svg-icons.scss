@@ -130,6 +130,17 @@
   }
 }
 
+.profi-md {
+  width: 72px;
+  height: 72px;
+
+  @include media-breakpoint-down(md){
+    width: 46px;
+    height: 46px;
+  }
+}
+
+
 .service-icon {
   fill:#d3d3d3;
 }

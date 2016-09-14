@@ -123,6 +123,7 @@ $(document).ready(function() {
 
         var prefix = e.target.dataset.tablink;
         $('.product-tab_content').hide();
+        $('.js-tab_content').hide();
         $('#'+prefix+ '-content').show();
     });
 
