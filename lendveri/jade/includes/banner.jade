@@ -1,25 +1,41 @@
-#carousel-home.carousel.slide.-with-indicator(data-ride="carousel")
-  ol.carousel-indicators
-    li(data-target="#carousel-home" data-slide-to="0" class="active")
-    li(data-target="#carousel-home" data-slide-to="1" )
-  .carousel-inner(role="listbox")
-    .carousel-item.active
-      .carousel-img
-        img(src="img/img-1.jpg" width=870 height=411)
-      .carousel-caption
-        h3.carousel-caption_title Тёплые<br/> двери
-        p.carousel-caption_descr  В загородный дом
-        button.btn.btn-lg_mod.btn-std Смотреть
-    .carousel-item
-      .carousel-img
-        img(src="img/img-2.jpg" width=870 height=411)
-      .carousel-caption
-        h3.carousel-caption_title Гранит М2
-        p.carousel-caption_descr  Хит продаж среди <br/> входных дверей
-        button.btn.btn-lg_mod.btn-std Смотреть
-  a.left.carousel-control(href="#carousel-home" role="button" data-slide="prev")
-    span(class="icon-prev" aria-hidden="true")
-    span(class="sr-only")
-  a(class="right carousel-control" href="#carousel-home" role="button" data-slide="next")
-    span(class="icon-next" aria-hidden="true")
-    span(class="sr-only")
+//#carousel-home.slide.-with-indicator()
+//  ol.carousel-indicators
+//    li(data-target="#carousel-home" data-slide-to="0" class="active")
+//    li(data-target="#carousel-home" data-slide-to="1" )
+//  .carousel-inner.single-item( data-slick='{"slidesToShow": 1, "slidesToScroll": 1}')
+//    .carousel-item.active
+//      .carousel-img
+//        img(src="img/img-1.jpg" width=870 height=411)
+//      .carousel-caption
+//        h3.carousel-caption_title Тёплые<br/> двери
+//        p.carousel-caption_descr  В загородный дом
+//        button.btn.btn-lg_mod.btn-std Смотреть
+//    .carousel-item
+//      .carousel-img
+//        img(src="img/img-2.jpg" width=870 height=411)
+//      .carousel-caption
+//        h3.carousel-caption_title Гранит М2
+//        p.carousel-caption_descr  Хит продаж среди <br/> входных дверей
+//        button.btn.btn-lg_mod.btn-std Смотреть
+//  a.left.carousel-control(href="#carousel-home" role="button" data-slide="prev")
+//    span(class="icon-prev" aria-hidden="true")
+//    span(class="sr-only")
+//  a(class="right carousel-control" href="#carousel-home" role="button" data-slide="next")
+//    span(class="icon-next" aria-hidden="true")
+//    span(class="sr-only")
+
+.single-item#carousel-home
+  .carousel-item
+    .carousel-img
+      img(src="img/img-1.jpg" width=870 height=411)
+    .carousel-caption
+      h3.carousel-caption_title Тёплые двери
+      p.carousel-caption_descr  В загородный дом
+      //button.btn.btn-lg_mod.btn-std Смотреть
+  .carousel-item
+    .carousel-img
+      img(src="img/img-2.jpg" width=870 height=411)
+    .carousel-caption
+      h3.carousel-caption_title Гранит М2
+      p.carousel-caption_descr  Хит продаж среди <br/> входных дверей
+      //button.btn.btn-lg_mod.btn-std Смотреть

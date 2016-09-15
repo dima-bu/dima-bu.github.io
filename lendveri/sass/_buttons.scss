@@ -2,6 +2,14 @@
 // Base styles
 //
 
+a {
+  transition: color 70ms linear 0s;
+  -webkit-transition: color 70ms linear 0s;
+  -moz-transition: color 70ms linear 0s;
+  -o-transition: color 70ms linear 0s;
+}
+
+
 .btn {
   display: inline-block;
   font-family: $font-family-semibold;
@@ -11,8 +19,11 @@
   cursor: pointer;
   user-select: none;
   border: $input-btn-border-width solid transparent;
+  transition: all 70ms linear 0s;
+  -webkit-transition: all 70ms linear 0s;
+  -moz-transition: all 70ms linear 0s;
+  -o-transition: all 70ms linear 0s;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
-  @include transition(all .2s ease-in-out);
 
   &,
   &:active,
@@ -139,6 +150,11 @@ fieldset[disabled] a.btn {
   background-color: $red-main;
   color: #fff;
 
+
+  .g-icon {
+    fill: #ffffff;
+  }
+
   &:hover{
     background-color: $red-dark;
   }
@@ -195,6 +211,13 @@ fieldset[disabled] a.btn {
 
 .btn-md_mod {
   padding: 17px 12px 13px 12px;
+  border-radius: $border-radius;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.btn-md_sq {
+  padding: 12px 12px 6px 12px;
   border-radius: $border-radius;
   font-size: 16px;
   line-height: 1;

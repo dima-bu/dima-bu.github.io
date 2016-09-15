@@ -18,7 +18,7 @@
 
   .g-tag {
     position: absolute;
-    right: -5px;
+    right: -7px;
     top: 22px;
   }
 
@@ -48,6 +48,10 @@
     font-family: $font-family-semibold;
     font-size: 16px;
     margin-right: 5px;
+  }
+  
+  &.-modal{
+    height: 55px;
   }
 }
 
@@ -261,4 +265,3 @@ a.product-item_title:hover {
     @include clearfix();
   }
 }
-

@@ -4,6 +4,7 @@
     .row.row-xs-xs.hidden-lg-up
       .col-md-7.col-xs-7.clearfix.feedback-block
         .art-block.fll Арт. 303
+
         .fll
           .stars-block
             +svg('star', 'star-sm star-icon -active')
@@ -24,6 +25,10 @@
           img.image_1(src="img/product--lg-img-4.jpg")
           img.image_2(src="img/product--lg-img-2.jpg")
           img.image_3(src="img/product--lg-img-3.jpg")
+          img.image_4(src="img/product--lg-img-2.jpg")
+          img.image_5(src="img/product--lg-img-4.jpg")
+          img.image_6(src="img/product--lg-img-2.jpg")
+          img.image_7(src="img/product--lg-img-3.jpg")
         .thumbnail.clearfix
           .thumb.active
             a(rel="1")
@@ -34,13 +39,35 @@
           .thumb
             a(rel="3")
               img#thumb_3.img-fluid(src="img/product-img-3.jpg")
+          .thumb
+            a(rel="4")
+              img#thumb_1.img-fluid(src="img/product-img-1.jpg")
+          .thumb.hide
+            a(rel="5")
+              img#thumb_2.img-fluid(src="img/product-img-2.jpg")
+          .thumb.hide
+            a(rel="6")
+              img#thumb_3.img-fluid(src="img/product-img-3.jpg")
+          .thumb.hide
+            a(rel="7")
+              img#thumb_3.img-fluid(src="img/product-img-3.jpg")
+          .more-block.fll#js-show-more  Еще 4
+
     .product-page_right
       .row.hidden-md-down
         .col-md-7
-          .product_print-block#js-print
+          .clearifx
+            .stars-block.fll.stars-block_top
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon -active')
+              +svg('star', 'star-sm star-icon')
+            .small.fll.stars-block_count 23 Отзыва
+          //.product_print-block#js-print
             +svg('print', 'print-sm print-icon')
             span.product_print-title Распечатать
-        .col-md-5.product_share-block
+        .col-md-5.product_share-block.ta-r
           span.product_share-title Поделиться:
           a.product_share-link(href='#')
             +svg('s-vk', 's-vk-sm s-vk-icon product_share-icon')
@@ -52,7 +79,16 @@
       .row.row-xs-xs.hidden-md-down
         .col-md-7.col-xs-7.clearfix.feedback-block
           .art-block.fll Арт. 303
-          .fll
+          .product-horizon-block.fll
+            .g-icon-text_wrapper
+              .g-icon-text_icon.-xs-right.hidden-lg-down
+                +svg('thief', 'thief-md')
+              .g-icon-text_text.-middle
+                a.link-underscore.-multi-line(href="#descr-content-hor")
+                  span Горизонт
+                  br
+                  span безопасности
+          //.fll
             .stars-block
               +svg('star', 'star-sm star-icon -active')
               +svg('star', 'star-sm star-icon -active')
@@ -71,15 +107,32 @@
             +svg('check', 'check-sm')
             span На складе в Санкт-Петербурге, установка с 9 февраля
       .row
-        .col-md-7.product_prices
+        .col-xl-5.col-md-7.product_prices
           .product_prices_old-price-wrapper
             .product-item_old-price.-md 31 500.-
             .info-link ?
           .product_price-lg.-indent 27 900.-
-        .col-md-5.product-colors.hidden-md-down
-          +svg('colors', 'colors-sm colors-icon')
-          a.link-underscore.-link Есть другие цвета
-      .row
+          .product_prices_btn-wrapper
+            button.btn.btn-xl.btn-std(data-toggle="modal" data-target="#modalOrder")  Заказать
+        .col-xl-7.col-md-5.product-colors
+          p.product-colors_title Варианты цветов
+          ul.colors-list#js-product-colors
+            li.colors-list_item.active#color-1
+              img.colors-list_img(src="img/color-1.png")
+            li.colors-list_item#color-2
+              img.colors-list_img(src="img/color-2.png")
+            li.colors-list_item#color-3
+              img.colors-list_img(src="img/color-3.png")
+            li.colors-list_item#color-4
+              img.colors-list_img(src="img/color-1.png")
+            li.colors-list_item#color-5
+              img.colors-list_img(src="img/color-2.png")
+            li.colors-list_item#color-6
+              img.colors-list_img(src="img/color-3.png")
+
+          //+svg('colors', 'colors-sm colors-icon')
+          //a.link-underscore.-link Есть другие цвета
+      //.row
         .col-xl-7.col-lg-8.col-md-12.product_button-block
           button.btn.btn-xl.btn-std  Заказать
           .product_button-secondary
@@ -104,11 +157,19 @@
                span безопасности
       hr.normal
       .row.credit-block
-        .col-xl-7.col-lg-9.col-xs-9.credit-block-text
-          a.link-underscore Купить в кредит/рассрочку
+        .col-xl-8.col-lg-9.col-xs-9.credit-block-text
+          a.link-underscore(data-toggle="modal" data-target="#modalCredit") Купить в кредит/рассрочку
           span.credit-block-text-beetween за
           .product-item_old-price.-md.-no-through  1 990.-/мес
-        .col-xl-5.col-lg-3.col-xs-3.credit-block-icon
+          .info-link.-ml#js-show-credit-descr ?
+          .simple-popup#js-credit-descr(style="position: absolute; display: none;right: 20px;")
+            .h5 Покупка в кредит
+            p.-xs.-std Указана стоимость без учета доставки в область и/или заказа дополнительных работ. Точная стоимость фиксируется при приезде замерщика (бесплатно).
+            p
+            p.-xs.-std Решение о предоставлении рассрочки/кредита принимается банком в течении 15 минут.
+            p
+            p.-xs.-std Наши специалисты свяжутся с вами сразу после получения ответа от банка.
+        .col-xl-4.col-lg-3.col-xs-3.credit-block-icon
           a.rsb-icon_wrapper(href="http://www.rsb.ru/")
             +svg('rsb', 'rsb-sm rsb-icon')
       hr.normal
@@ -146,7 +207,52 @@
     .product-tab_content#reviews-content(style="display: none;")
       include ../includes/product-tabs/tab-reviews
     .product-tab_content#characteristics-content(style="display: none;")
-      h2.-block-title Характеристики
-      p Характеристики
+      .row
+        .col-xl-6.col-md-12
+          p Неизменный лидер продаж. Дверь с зеркалом. 2 листа стали толщиной по 2 мм. С внешней стороны — МДФ цвета «Венге», с внутренней — цвета «Беленый дуб». Замок Гардиан 25.14. Цвет фурнитуры: Серебро/Хром. Антивандальное покрытие. Противосъемные штыри.
+          h4.-block-title.bold Технические характеристики
+          .dotted-line
+            p.dots-name Фабрика
+            .dots
+            p.dots-name Лендвери
+          .dotted-line
+            p.dots-name Материал
+            .dots
+            p.dots-name МДФ
+          .dotted-line
+            p.dots-name Стекло
+            .dots
+            p.dots-name Есть, двойное
+          .dotted-line
+            p.dots-name Цвет
+            .dots
+            p.dots-name Фисташковый
+          .dotted-line
+            p.dots-name Толщина
+            .dots
+            p.dots-name 35 мм
+          .dotted-line
+            p.dots-name Ширина х Высота
+            .dots
+            p.dots-name 800 х 2030 мм
+          p.ta-r 850 х 2050 мм
+          p.ta-r 880 х 2070 мм
+          p.ta-r 880 х 2100 мм
+          p.ta-r 950 х 2070 мм
+          p.ta-r 950 х 2100 мм
+          p.ta-r 990 х 2070 мм
+          p.ta-r 990 х 2100 мм
+          .dotted-line
+            p.dots-name Ширина наличника
+            .dots
+            p.dots-name 50 мм с каждой стороны
+          .dotted-line
+            p.dots-name Вес
+            .dots
+            p.dots-name 5 кг
+        .col-xl-6.col-md-12
+          h4.-block-title.bold.detail-img-title Схема двери
+          div.ta-r.detail-img-wrapper
+            img.img-fluid(src="img/details.png")
   h2.ta-c.-block-title Похожие двери
   include ../includes/products-list_similar

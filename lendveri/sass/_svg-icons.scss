@@ -17,7 +17,6 @@
 .logo-normal {
   width: 166px;
   height: 34px;
-  margin-right: 40px;
 }
 
 .search-sm {
@@ -131,6 +130,17 @@
   }
 }
 
+.profi-md {
+  width: 72px;
+  height: 72px;
+
+  @include media-breakpoint-down(md){
+    width: 46px;
+    height: 46px;
+  }
+}
+
+
 .service-icon {
   fill:#d3d3d3;
 }
@@ -190,6 +200,11 @@
 .close-md {
   width: 24px;
   height: 24px;
+}
+
+.close-sm {
+  width: 18px;
+  height: 18px;
 }
 
 
@@ -372,4 +387,9 @@
 .zoom-in-md {
   height: 27px;
   width: 27px;
+}
+ 
+.phone-sm {
+  width: 13px;
+  height: 13px;
 }

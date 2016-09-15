@@ -26,6 +26,12 @@ $(document).ready(function() {
     });
 
 
+    $('#more-block').click(function () {
+        $('.product-page_left .thumb').removeClass('hide');
+        $(this).hide();
+    });
+
+
     // выбор ценового диапозона
 
     var sliderPrice = document.getElementById('slider-price'),
@@ -117,6 +123,7 @@ $(document).ready(function() {
 
         var prefix = e.target.dataset.tablink;
         $('.product-tab_content').hide();
+        $('.js-tab_content').hide();
         $('#'+prefix+ '-content').show();
     });
 
@@ -158,10 +165,193 @@ $(document).ready(function() {
         $(this).carousel('next');
     });
 
-    $('.single-item').slick({
+    $('#carousel-home').slick({
         dots: true,
-        dotsClass: 'carousel-indicators'
+        dotsClass: 'carousel-indicators',
+        autoplay: true,
+        autoplaySpeed: 5000
     });
+
+
+    $('#carousel-info').slick({
+        responsive: [{
+            breakpoint: 2400,
+            settings: {
+                slidesToShow: 4,
+                arrows: false
+            }
+
+        }, {
+
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'carousel-indicators',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            }
+
+        }]
+    });
+
+
+    $('#carousel-products-list').slick({
+        responsive: [{
+            breakpoint: 2400,
+            settings: 'unslick'
+        }, {
+
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'carousel-indicators',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            }
+
+        }]
+    });
+
+    $('#carousel-products-similar').slick({
+        responsive: [{
+            breakpoint: 2400,
+            settings: 'unslick'
+        }, {
+
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                dotsClass: 'carousel-indicators',
+                autoplay: true,
+                autoplaySpeed: 5000,
+                arrows: false
+            }
+
+        }]
+    });
+
+
+    $('#carousel-articles').slick({
+        dots: true,
+        dotsClass: 'carousel-indicators',
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false
+    });
+
+
+    $('#search-btn').click(function(e) {
+        $('#search-input').show();
+        $('#search-btn').hide();
+        $('#inputSearch').focus();
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(event) {
+        if(!$(event.target).closest('#search-input').length &&
+            !$(event.target).is('#search-input')) {
+
+            if($('#search-input').is(":visible")) {
+                $('#search-input').hide();
+                $('#search-btn').show();
+            }
+        }
+    });
+
+
+    $('#js-close-search').click(function(e) {
+        //$('#search-input').hide();
+        $('#search-input').hide();
+        $('#search-btn').show();
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+
+    $('#InputSearchXS').on('input', function (val) {
+       if (this.value.length) {
+           $('#InputSearchXSWrapper').show();
+       } else {
+           $('#InputSearchXSWrapper').hide();
+       }
+
+    });
+
+    $('#inputSearchSM').on('input', function(val) {
+        if (this.value.length) {
+            $('#inputSearchSMWrapper').show();
+        } else {
+            $('#inputSearchSMWrapper').hide();
+        }
+    });
+
+    $('#inputSearch').on('input', function(val) {
+        if (this.value.length) {
+            $('#search-result').show();
+        } else {
+            $('#search-result').hide();
+        }
+    });
+
+    $('#js-product-colors .colors-list_item').on('click', function() {
+        $('#js-product-colors .colors-list_item').removeClass('active');
+        $(this).addClass('active')
+    });
+
+    $('#js-feedback').on('click', function () {
+        $('#feedbackThankYou').modal('show')
+    });
+
+    $('#js-show-thankyou').on('click', function () {
+        $('#feedbackThankYou').modal('show')
+    });
+
+
+    $('#js-show-thankyou').on('click', function () {
+        $('#feedbackThankYou').modal('show')
+    });
+
+    $('#js-show-more').on('click', function () {
+        $('#modalProduct').modal('show')
+    });
+
+    $('#js-show-producers').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('#js-producers').toggle()
+    });
+
+    $('#js-show-credit-descr').on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('#js-credit-descr').toggle()
+    });
+
+
+    $(document).click(function(event) {
+
+        if(!$(event.target).closest('#js-producers').length)
+             {
+            if($('#js-producers').is(":visible")) {
+                $('#js-producers').hide();
+            }
+        }
+
+        if(!$(event.target).closest('#js-credit-descr').length)
+        {
+            if($('#js-credit-descr').is(":visible")) {
+                $('#js-credit-descr').hide();
+            }
+        }
+
+    });
+
 
     //$('.js-zoom').zoom({ touch: true});
 

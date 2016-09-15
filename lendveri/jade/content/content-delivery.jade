@@ -1,0 +1,102 @@
+.container
+   .breadcrambs_list
+      a.breadcrambs_link(href="index.html") Главная
+      a.breadcrambs_link.active(href="delivery.html") Доставка
+   .row
+      .col-xl-3.col-lg-4.hidden-md-down
+         include ../includes/aside-menu
+      .col-xl-6.col-lg-8
+         .secondary-content-wrapper.-clear-margin
+            h1.-page-title Доставка
+            h2.-block-title-sm Как заказать?
+            p Заказ можно сделать по телефону 8 812 309-13-74 или на этом сайте. Вы также можете заказать дверь в выставочном центре. В день заказа с вами свяжется замерщик и договорится о удобном для вас времени замера. При заказе двери, замер осуществляется бесплатно.
+            hr.space
+            h2.-block-title-sm Доставка и установка
+            p Доставка и установка осуществляются на следующий день после замера. Акция: доставка + установка — 3000.- бесплатно, до 30.04.2016. Указаные цены действительны на территории льготной доставки. При заказе двери в область, к стоимости прибавляется 30р./км от территории льготной доставки.
+            h2.-block-title-sm Территория льготной доставки
+            .g-tabs.-md
+               a.g-tab.active.js-show-tab(data-tablink="spb-delivery") Санкт-Петербург
+               a.g-tab.js-show-tab(data-tablink="msk-delivery") Москва
+               a.g-tab.js-show-tab(data-tablink="nsk-delivery") Новосибирск
+            p Двери в наличии.  Доставка и установка на следующий день после замера. Оплата после установки. Доставка в выделенной области – бесплатно, доставка за пределы выделенной области – 30р./км
+         a.center-img(href="#")
+            img.img-fluid.js-tab_content#spb-delivery-content(src="img/delivery-spb.jpg")
+            img.img-fluid.js-tab_content#msk-delivery-content(src="img/delivery-spb.jpg" style="display: none;")
+            img.img-fluid.js-tab_content#nsk-delivery-content(src="img/delivery-spb.jpg" style="display: none;")
+         .secondary-content-wrapper.-clear-margin
+            h2.-block-title-md Предварительный расчет стоимости доставки
+         .stripped-list
+            .stripped-item
+               .row
+                  .col-xs-6 Бугры
+                  .col-xs-6 60.-
+            .stripped-item
+               .row
+                  .col-xs-6 Волосово
+                  .col-xs-6 2 100.-
+            .stripped-item
+               .row
+                  .col-xs-6 Гатчина
+                  .col-xs-6 240.-
+            .stripped-item
+               .row
+                  .col-xs-6 Зеленогорск
+                  .col-xs-6 050.-
+            .stripped-item
+               .row
+                  .col-xs-6 Кингисепп
+                  .col-xs-6 000.-
+            .stripped-item
+               .row
+                  .col-xs-6 Кириши
+                  .col-xs-6 2 800.-
+
+         .secondary-content-wrapper.-clear-margin
+            h2.-block-title-md Стоимость дополнительных работ
+            p Подъем двери при отсутствии или неработающем грузовом лифте
+         .stripped-list
+            .stripped-item
+               .row
+                  .col-xs-6 Гранит Т1
+                  .col-xs-6 100.- / этаж
+            .stripped-item
+               .row
+                  .col-xs-6 Гранит Т2
+                  .col-xs-6 100.- / этаж
+            .stripped-item
+               .row
+                  .col-xs-6 Гранит Т3
+                  .col-xs-6 100.- / этаж
+         .secondary-content-wrapper.-clear-margin
+            h2.-block-title-md Увеличение проема
+         .stripped-list
+            .stripped-item
+               .row
+                  .col-xs-6 По ширине
+                  .col-xs-6 1000.- / одна сторона
+            .stripped-item
+               .row
+                  .col-xs-6 По высоте
+                  .col-xs-6 600.- / одна сторона
+
+         .secondary-content-wrapper.-clear-margin
+            h2.-block-title-md Стоимость демонтажа старой двери
+         .stripped-list.-mb
+            .stripped-item
+               .row
+                  .col-xs-6 Двери ПВХ в новостройках
+                  .col-xs-6 Бесплатно
+            .stripped-item
+               .row
+                  .col-xs-6 Деревянная дверь
+                  .col-xs-6 300.-
+
+      .col-xl-3.hidden-lg-down
+         include ../includes/aside-banner
+         hr.space
+         include ../includes/client-memo
+   .row
+      .col-xs-12
+         h2.ta-c.-block-title
+            span Недавно просмотренные
+   include ../includes/products-list_similar

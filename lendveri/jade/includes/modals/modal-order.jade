@@ -1,0 +1,22 @@
+.modal.modal_md-size(id="modalOrder" tabindex="-2" role="dialog" aria-hidden="true")
+  .modal-dialog(role="document")
+    .modal-content.-md-padding
+      div
+        h2.modal-title Заказ
+        .row
+          .col-xs-8
+            .product-item_title.-modal
+              strong Гранит М2 Венге
+              span Дверь металлическая с одной МДФ-панелью
+          .col-xs-4
+            .product-item_price 18 300.-
+        p.-xs Доставка, установка — <strong>бесплатно</strong>, оплата - <strong>наличными после установки</strong>, Вызов замерщика в черте города - <strong>бесплатно</strong>.
+        label.form-label.-less-indent(for="phone2") Номер вашего телефона
+        .form-group
+          input.form-control.js-phone-mask.-md-size(type="text" id="phone2")
+        .btn-wrapper.clearfix
+          p.fll Мы перезвоним вам в ближайшее время
+          a.btn.btn-transparent.btn-lg_mod.flr(href="thank-you.html") Заказать
+      a(type="button" class="close" data-dismiss="modal" aria-label="Close")
+        +svg('close', 'close-md close-icon')
+

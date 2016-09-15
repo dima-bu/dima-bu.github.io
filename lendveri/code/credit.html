@@ -23,6 +23,7 @@
     </div>
     <div class="main-wrapper">
       <header>
+        <!-- верхняя шапка, убрать на-->
         <div class="header_top hidden-md-down">
           <div class="container">
             <div class="col-sm-12">
@@ -36,7 +37,7 @@
         </div>
         <div class="header_bottom">
           <div class="container">
-            <div style="display:none" class="row header_bottom-contacts hidden-md-down">
+            <div class="row header_bottom-contacts hidden-md-down">
               <div class="col-sm-12"><a class="btn btn-icons btn-lg_map js-show-city-list">
                   <svg class="map-sm -before g-icon">
                     <use xlink:href="#icon-pin"></use>
@@ -65,61 +66,72 @@
                 <div class="work-time">Пн - Вс, 9:00 — 21:00</div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xl-12 col-lg-12">
-                <nav class="navbar navbar-main">
-                  <button type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" class="navbar-toggler collapsed">☰</button><a href="index.html" class="navbar-brand">
+            <div>
+              <div class="fll-lg-up">
+                <nav class="navbar navbar-main -xs">
+                  <button type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" class="navbar-toggler collapsed hidden-lg-up">☰</button><a href="index.html" class="navbar-brand">
                     <svg class="logo-normal g-icon">
                       <use xlink:href="#icon-logo"></use>
-                    </svg></a><a data-toggle="modal" data-target="#selectCities" class="btn btn-icons btn-lg_map flr">
+                    </svg></a><a data-toggle="modal" data-target="#selectCities" class="btn btn-icons btn-lg_map flr hidden-lg-up">
                     <svg class="map-sm -before g-icon">
                       <use xlink:href="#icon-pin"></use>
                     </svg><span>Петербург</span></a>
                 </nav>
               </div>
-            </div>
-            <div id="navbar-header" style="height: 0" class="collapse navbar-toggleable-xl">
-              <div class="row">
-                <div class="col-xl-12 col-lg-12">
-                  <nav class="navbar navbar-main">
-                    <ul class="nav navbar-nav">
-                      <li class="nav-item"><a href="catalog.html" class="nav-link">Входные двери</a></li>
-                      <li class="nav-item"><a class="nav-link">Межкомнатные двери</a></li>
-                    </ul>
-                  </nav>
+              <div style="position: relative;">
+                <div id="search-input" style="display: none;" class="search-wrapper -search-overlay">
+                  <div class="input-group">
+                    <input type="text" id="inputSearch" placeholder="Введите название или артикул 1200" class="form-control -search">
+                    <svg class="search-sm g-icon">
+                      <use xlink:href="#icon-search"></use>
+                    </svg><a id="js-close-search" class="close-search">
+                      <svg class="close-icon close-sm g-icon">
+                        <use xlink:href="#icon-close"></use>
+                      </svg></a>
+                  </div>
+                  <div id="search-result" style="display: none;" class="search-result">
+                    <div class="search-result_item"><span>Гран</span>итный замок</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                  </div>
                 </div>
-              </div>
-              <div class="row hidden-lg-up">
-                <div class="col-xl-12 col-lg-12">
-                  <div class="search-wrapper">
-                    <div class="input-group">
-                      <input type="text" id="exampleInputAmount" placeholder="Введите название или артикул" class="form-control">
-                      <div class="input-group-addon">
-                        <button class="clear-btn">
-                          <svg class="search-sm g-icon">
-                            <use xlink:href="#icon-search"></use>
-                          </svg>
-                        </button>
+                <div id="navbar-header" style="height: 0" class="row collapse navbar-toggleable-xs">
+                  <div class="col-xl-11 col-lg-10">
+                    <nav class="navbar navbar-main">
+                      <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="catalog.html" class="nav-link">Входные</a></li>
+                        <li class="nav-item"><a href="catalog.html" class="nav-link">Межкомнатные</a></li>
+                        <li class="nav-item"><a class="nav-link">Оплата</a></li>
+                        <li class="nav-item"><a href="delivery.html" class="nav-link">Доставка</a></li>
+                      </ul>
+                    </nav>
+                    <div style="position: relative;" class="search-wrapper -menu hidden-md-up">
+                      <div class="input-group">
+                        <input type="text" id="InputSearchXS" placeholder="Введите название или артикул 420" class="form-control">
+                        <div class="input-group-addon">
+                          <button class="clear-btn">
+                            <svg class="search-sm g-icon">
+                              <use xlink:href="#icon-search"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div id="InputSearchXSWrapper" style="display: none; position: absolute; z-index: 1; width:100%;" class="search-result -xs">
+                        <div class="search-result_item"><span>Гран</span>итный замок</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                        <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                        <!--div.input-group-addon
+                        button.clear-btn
+                          +svg('search', 'search-sm')
+                        -->
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="row hidden-md-down">
-              <div class="col-sm-9 col-md-8 col-xl-6">
-                <div class="header_phone">8 (812) 309-71-55</div>
-                <div class="feedback-menu">
-                  <div class="feedback-menu_item"><a data-toggle="modal" data-target="#feedbackCall" class="feedback-menu_link">Обратный звонок</a></div>
-                  <div class="feedback-menu_item"><a data-toggle="modal" data-target="#freeSample" class="feedback-menu_link">Бесплатный замер</a></div>
-                </div>
-              </div>
-              <div class="col-sm-3 col-md-4 col-xl-6">
-                <div class="search-wrapper">
-                  <div class="input-group">
-                    <input type="text" id="exampleInputAmount" placeholder="Введите название или артикул" class="form-control">
-                    <div class="input-group-addon">
-                      <button class="clear-btn">
+                  <div class="col-xl-1 col-lg-2 hidden-md-down">
+                    <div class="search-wrapper -only-btn ta-r">
+                      <button id="search-btn" class="btn btn-md_sq btn-std">
                         <svg class="search-sm g-icon">
                           <use xlink:href="#icon-search"></use>
                         </svg>
@@ -129,9 +141,59 @@
                 </div>
               </div>
             </div>
-            <div class="row hidden-lg-up">
-              <div class="col-xs-12">
-                <button class="btn btn-success btn-lg btn-full">Позвонить <span class="small-btn-text">8 (812) 309-71-55</span></button>
+            <!--div.collapse.navbar-toggleable-sm(id="navbar-header" style="height: 0")
+            .row
+              .col-xl-12.col-lg-12
+                nav.navbar.navbar-main
+                  ul.nav.navbar-nav
+                    li.nav-item
+                      a.nav-link(href="catalog.html") Входные двери
+                    li.nav-item
+                      a.nav-link Межкомнатные двери
+                      
+            .row
+              .col-xl-12.col-lg-12
+                .search-wrapper
+                  .input-group
+                    input(type="text" class="form-control" id="exampleInputAmount" placeholder="Введите название или артикул")
+                    div.input-group-addon
+                      button.clear-btn
+                        +svg('search', 'search-sm')
+                        
+            -->
+            <div class="row hidden-sm-down hidden-lg-up">
+              <div class="col-sm-10 col-md-8 col-xl-6">
+                <div class="header_phone">8 (812) 309-71-55</div>
+                <div class="feedback-menu">
+                  <div class="feedback-menu_item"><a data-toggle="modal" data-target="#feedbackCall" class="feedback-menu_link">Обратный звонок</a></div>
+                  <div class="feedback-menu_item"><a data-toggle="modal" data-target="#freeSample" class="feedback-menu_link">Бесплатный замер</a></div>
+                </div>
+              </div>
+              <div class="col-sm-2 col-md-4 col-xl-6">
+                <div style="position:relative;" class="search-wrapper">
+                  <div class="input-group">
+                    <input type="text" id="inputSearchSM" placeholder="Введите название или артикул" class="form-control ">
+                    <div class="input-group-addon">
+                      <button class="clear-btn">
+                        <svg class="search-sm g-icon">
+                          <use xlink:href="#icon-search"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="inputSearchSMWrapper" style="display: none; position: absolute; z-index: 1;width: 200%; right: 0;" class="search-result">
+                    <div class="search-result_item"><span>Гран</span>итный замок</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234324</div>
+                    <div class="search-result_item"><span>Гран</span>итный замок234342</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row hidden-md-up">
+              <div class="col-xs-12"><a href="tel:+78123097155" class="btn btn-success btn-lg btn-full">
+                  <svg class="phone-sm g-icon">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg><span style="margin-left: 10px">8 (812) 309-71-55 <span class="small-btn-text"></span></span></a>
                 <div class="feedback-menu_xs">
                   <div class="fll"><a data-toggle="modal" data-target="#feedbackCall" class="link-sm">Обратный звонок</a></div>
                   <div class="flr"><a data-toggle="modal" data-target="#freeSample" class="link-sm">Бесплатный замер</a></div>
@@ -143,11 +205,12 @@
       </header>
       <div class="main-content">
         <div class="container">
+          <div class="breadcrambs_list"><a href="index.html" class="breadcrambs_link">Главная</a><a href="credit.html" class="breadcrambs_link active">Кредит</a></div>
           <div class="row">
             <div class="col-xl-3 col-lg-4 hidden-md-down">
               <section class="aside-menu">
                 <ul class="aside-menu_list">
-                  <li class="aside-menu_item"><a class="aside-menu_link">Оплата и доставка</a></li>
+                  <li class="aside-menu_item"><a href="delivery.html" class="aside-menu_link">Оплата и доставка</a></li>
                   <li class="aside-menu_item"><a class="aside-menu_link">Адреса магазинов</a></li>
                   <li class="aside-menu_item"><a class="aside-menu_link active">Ответы на вопросы</a></li>
                   <li class="aside-menu_item"><a class="aside-menu_link">Кредит и рассрочка</a></li>
@@ -339,153 +402,152 @@
             </div>
           </div>
           <div class="row products-list_block">
-            <div id="carousel-products-similar" data-ride="carousel" class="carousel slide -with-indicator">
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-products-similar" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-products-similar" data-slide-to="1"></li>
-                <li data-target="#carousel-products-similar" data-slide-to="2"></li>
-                <li data-target="#carousel-products-similar" data-slide-to="3"></li>
-                <li data-target="#carousel-products-similar" data-slide-to="4"></li>
-              </ol>
-              <div role="listbox" class="carousel-inner">
-                <div class="col-xl-3 col-lg-4 col-md-6 carousel-item active">
-                  <div class="product-item">
-                    <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
-                    <div class="product-item_prices">
-                      <div class="product-item_old-price">16 300.-</div>
-                      <div class="product-item_price">18 300.-</div>
-                    </div>
-                    <div class="product-item_services">
-                      <svg class="delivery-sm service-icon g-icon">
-                        <use xlink:href="#icon-delivery"></use>
-                      </svg>
-                      <svg class="installation-sm service-icon g-icon">
-                        <use xlink:href="#icon-installation"></use>
-                      </svg>
-                      <div class="product-item_service_price">3 500.-</div>
-                    </div>
-                    <div class="product-item_buttons clearfix">
-                      <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
-                      <div class="flr product-item_availability_wrapper">
-                        <div class="product-item_availability -in-stock">
-                          <svg class="check-sm g-icon">
-                            <use xlink:href="#icon-check"></use>
-                          </svg><span>В наличии</span>
-                        </div>
+            <div id="carousel-products-similar" class="-with-indicator">
+              <!--ol.carousel-indicators
+              li(data-target="#carousel-products-similar" data-slide-to="0" class="active")
+              li(data-target="#carousel-products-similar" data-slide-to="1" )
+              li(data-target="#carousel-products-similar" data-slide-to="2" )
+              li(data-target="#carousel-products-similar" data-slide-to="3" )
+              li(data-target="#carousel-products-similar" data-slide-to="4" )
+              .carousel-inner(role="listbox")
+              -->
+              <div class="col-xl-3 col-lg-4 col-md-6 carousel-item active">
+                <div class="product-item">
+                  <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
+                  <div class="product-item_prices">
+                    <div class="product-item_old-price">16 300.-</div>
+                    <div class="product-item_price">18 300.-</div>
+                  </div>
+                  <div class="product-item_services">
+                    <svg class="delivery-sm service-icon g-icon">
+                      <use xlink:href="#icon-delivery"></use>
+                    </svg>
+                    <svg class="installation-sm service-icon g-icon">
+                      <use xlink:href="#icon-installation"></use>
+                    </svg>
+                    <div class="product-item_service_price">3 500.-</div>
+                  </div>
+                  <div class="product-item_buttons clearfix">
+                    <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
+                    <div class="flr product-item_availability_wrapper">
+                      <div class="product-item_availability -in-stock">
+                        <svg class="check-sm g-icon">
+                          <use xlink:href="#icon-check"></use>
+                        </svg><span>В наличии</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
-                  <div class="product-item">
-                    <div class="g-tag -hit">Хит продаж</div><a href="product.html" class="product-item_img-wrapper"><img src="img/product-img-2.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Люкс</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
-                    <div class="product-item_prices">
-                      <div class="product-item_old-price">18 300.-</div>
-                      <div class="product-item_price -indent">18 300.-</div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
+                <div class="product-item">
+                  <div class="g-tag -hit">Хит продаж</div><a href="product.html" class="product-item_img-wrapper"><img src="img/product-img-2.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Люкс</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
+                  <div class="product-item_prices">
+                    <div class="product-item_old-price">18 300.-</div>
+                    <div class="product-item_price -indent">18 300.-</div>
+                  </div>
+                  <div class="product-item_services">
+                    <svg class="delivery-sm service-icon g-icon">
+                      <use xlink:href="#icon-delivery"></use>
+                    </svg>
+                    <svg class="installation-sm service-icon g-icon">
+                      <use xlink:href="#icon-installation"></use>
+                    </svg>
+                    <div class="product-item_service_price">Бесплатно</div>
+                  </div>
+                  <div class="product-item_buttons clearfix">
+                    <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
+                    <div class="flr product-item_availability_wrapper">
+                      <div class="product-item_availability">Под заказ</div>
                     </div>
-                    <div class="product-item_services">
-                      <svg class="delivery-sm service-icon g-icon">
-                        <use xlink:href="#icon-delivery"></use>
-                      </svg>
-                      <svg class="installation-sm service-icon g-icon">
-                        <use xlink:href="#icon-installation"></use>
-                      </svg>
-                      <div class="product-item_service_price">Бесплатно</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
+                <div class="product-item">
+                  <div class="g-tag -hit">Хит продаж</div><a href="product.html" class="product-item_img-wrapper"><img src="img/product-img-2.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Люкс</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
+                  <div class="product-item_prices">
+                    <div class="product-item_old-price">18 300.-</div>
+                    <div class="product-item_price -indent">18 300.-</div>
+                  </div>
+                  <div class="product-item_services">
+                    <svg class="delivery-sm service-icon g-icon">
+                      <use xlink:href="#icon-delivery"></use>
+                    </svg>
+                    <svg class="installation-sm service-icon g-icon">
+                      <use xlink:href="#icon-installation"></use>
+                    </svg>
+                    <div class="product-item_service_price">Бесплатно</div>
+                  </div>
+                  <div class="product-item_buttons clearfix">
+                    <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
+                    <div class="flr product-item_availability_wrapper">
+                      <div class="product-item_availability">Под заказ</div>
                     </div>
-                    <div class="product-item_buttons clearfix">
-                      <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
-                      <div class="flr product-item_availability_wrapper">
-                        <div class="product-item_availability">Под заказ</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
+                <div class="product-item">
+                  <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
+                  <div class="product-item_prices">
+                    <div class="product-item_old-price">16 300.-</div>
+                    <div class="product-item_price">18 300.-</div>
+                  </div>
+                  <div class="product-item_services">
+                    <svg class="delivery-sm service-icon g-icon">
+                      <use xlink:href="#icon-delivery"></use>
+                    </svg>
+                    <svg class="installation-sm service-icon g-icon">
+                      <use xlink:href="#icon-installation"></use>
+                    </svg>
+                    <div class="product-item_service_price">3 500.-</div>
+                  </div>
+                  <div class="product-item_buttons clearfix">
+                    <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
+                    <div class="flr product-item_availability_wrapper">
+                      <div class="product-item_availability -in-stock">
+                        <svg class="check-sm g-icon">
+                          <use xlink:href="#icon-check"></use>
+                        </svg><span>В наличии</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
-                  <div class="product-item">
-                    <div class="g-tag -hit">Хит продаж</div><a href="product.html" class="product-item_img-wrapper"><img src="img/product-img-2.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Люкс</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
-                    <div class="product-item_prices">
-                      <div class="product-item_old-price">18 300.-</div>
-                      <div class="product-item_price -indent">18 300.-</div>
-                    </div>
-                    <div class="product-item_services">
-                      <svg class="delivery-sm service-icon g-icon">
-                        <use xlink:href="#icon-delivery"></use>
-                      </svg>
-                      <svg class="installation-sm service-icon g-icon">
-                        <use xlink:href="#icon-installation"></use>
-                      </svg>
-                      <div class="product-item_service_price">Бесплатно</div>
-                    </div>
-                    <div class="product-item_buttons clearfix">
-                      <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
-                      <div class="flr product-item_availability_wrapper">
-                        <div class="product-item_availability">Под заказ</div>
+              </div>
+              <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
+                <div class="product-item">
+                  <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
+                  <div class="product-item_prices">
+                    <div class="product-item_old-price">16 300.-</div>
+                    <div class="product-item_price">18 300.-</div>
+                  </div>
+                  <div class="product-item_services">
+                    <svg class="delivery-sm service-icon g-icon">
+                      <use xlink:href="#icon-delivery"></use>
+                    </svg>
+                    <svg class="installation-sm service-icon g-icon">
+                      <use xlink:href="#icon-installation"></use>
+                    </svg>
+                    <div class="product-item_service_price">3 500.-</div>
+                  </div>
+                  <div class="product-item_buttons clearfix">
+                    <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
+                    <div class="flr product-item_availability_wrapper">
+                      <div class="product-item_availability -in-stock">
+                        <svg class="check-sm g-icon">
+                          <use xlink:href="#icon-check"></use>
+                        </svg><span>В наличии</span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
-                  <div class="product-item">
-                    <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
-                    <div class="product-item_prices">
-                      <div class="product-item_old-price">16 300.-</div>
-                      <div class="product-item_price">18 300.-</div>
-                    </div>
-                    <div class="product-item_services">
-                      <svg class="delivery-sm service-icon g-icon">
-                        <use xlink:href="#icon-delivery"></use>
-                      </svg>
-                      <svg class="installation-sm service-icon g-icon">
-                        <use xlink:href="#icon-installation"></use>
-                      </svg>
-                      <div class="product-item_service_price">3 500.-</div>
-                    </div>
-                    <div class="product-item_buttons clearfix">
-                      <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
-                      <div class="flr product-item_availability_wrapper">
-                        <div class="product-item_availability -in-stock">
-                          <svg class="check-sm g-icon">
-                            <use xlink:href="#icon-check"></use>
-                          </svg><span>В наличии</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 carousel-item">
-                  <div class="product-item">
-                    <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
-                    <div class="product-item_prices">
-                      <div class="product-item_old-price">16 300.-</div>
-                      <div class="product-item_price">18 300.-</div>
-                    </div>
-                    <div class="product-item_services">
-                      <svg class="delivery-sm service-icon g-icon">
-                        <use xlink:href="#icon-delivery"></use>
-                      </svg>
-                      <svg class="installation-sm service-icon g-icon">
-                        <use xlink:href="#icon-installation"></use>
-                      </svg>
-                      <div class="product-item_service_price">3 500.-</div>
-                    </div>
-                    <div class="product-item_buttons clearfix">
-                      <button class="btn btn-transparent btn-lg_mod fll">Заказать</button>
-                      <div class="flr product-item_availability_wrapper">
-                        <div class="product-item_availability -in-stock">
-                          <svg class="check-sm g-icon">
-                            <use xlink:href="#icon-check"></use>
-                          </svg><span>В наличии</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-9 col-lg-4 col-md-6 arcticle-preview_block--lg_custom-down-md">
-                  <div class="arcticle-preview_block--lg clearfix">
-                    <div class="arcticle-preview_title-lg">Все двери здесь</div>
-                    <p>Вся линейка дверей Гранит, Кондор от модели номер 1 до икс пятой, двери Зенит. Все свеженькие, только что с завода.</p>
-                    <button class="btn btn-transparent btn-lg_mod fll">Смотреть</button>
-                  </div>
+              </div>
+              <div class="col-xl-9 col-lg-4 col-md-6 arcticle-preview_block--lg_custom-down-md">
+                <div class="arcticle-preview_block--lg clearfix">
+                  <div class="arcticle-preview_title-lg">Все двери здесь</div>
+                  <p>Вся линейка дверей Гранит, Кондор от модели номер 1 до икс пятой, двери Зенит. Все свеженькие, только что с завода.</p>
+                  <button class="btn btn-transparent btn-lg_mod fll">Смотреть</button>
                 </div>
               </div>
             </div>
@@ -505,7 +567,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 col-lg-3">
+          <div class="col-xs-12 col-lg-4">
             <ul class="footer-menu">
               <li class="footer-menu_item"><a href="actions.html" class="footer-menu_link">Акции</a></li>
               <li class="footer-menu_item"><a class="footer-menu_link">Новости и статьи</a></li>
@@ -515,27 +577,34 @@
               <li class="footer-menu_item"><a class="footer-menu_link">Отзывы</a></li>
             </ul>
           </div>
-          <div class="col-md-12 col-lg-3">
+          <div class="col-xs-12 col-lg-4">
             <ul class="footer-menu">
               <li class="footer-menu_item"><a class="footer-menu_link">О компании</a></li>
               <li class="footer-menu_item"><a class="footer-menu_link">Правовая информация</a></li>
-              <li class="footer-menu_item"><a class="footer-menu_link"> Адреса магазинов</a></li>
+              <li class="footer-menu_item item-bottom-indent"><a class="footer-menu_link"> Адреса магазинов</a></li>
+              <h5 class="footer-title">Принимаем к оплате:</h5>
+              <ul class="soc-menu">
+                <li class="soc-menu_item"><a class="soc-menu_link">
+                    <svg class="visa-sm g-icon">
+                      <use xlink:href="#icon-visa"></use>
+                    </svg></a></li>
+                <li class="soc-menu_item"><a class="soc-menu_link">
+                    <svg class="mastercard-sm g-icon">
+                      <use xlink:href="#icon-master-card"></use>
+                    </svg></a></li>
+              </ul>
             </ul>
           </div>
-          <div class="col-md-12 col-lg-3">
-            <h5 class="footer-title">Принимаем к оплате:</h5>
-            <ul class="soc-menu">
-              <li class="soc-menu_item"><a class="soc-menu_link">
-                  <svg class="visa-sm g-icon">
-                    <use xlink:href="#icon-visa"></use>
-                  </svg></a></li>
-              <li class="soc-menu_item"><a class="soc-menu_link">
-                  <svg class="mastercard-sm g-icon">
-                    <use xlink:href="#icon-master-card"></use>
-                  </svg></a></li>
-            </ul>
-          </div>
-          <div class="col-md-12 col-lg-3">
+          <!--.col-xs-12.col-lg-3-->
+          <!--  h5.footer-title Принимаем к оплате:-->
+          <!--  ul.soc-menu-->
+          <!--    li.soc-menu_item-->
+          <!--      a.soc-menu_link-->
+          <!--        +svg('visa', 'visa-sm')-->
+          <!--    li.soc-menu_item-->
+          <!--      a.soc-menu_link-->
+          <!--        +svg('master-card', 'mastercard-sm')-->
+          <div class="col-xs-12 col-lg-4">
             <h5 class="footer-title">Лендвери в сетях:</h5>
             <ul class="soc-menu">
               <li class="soc-menu_item"><a href="https://twitter.com/lendveri" class="soc-menu_link">
@@ -564,7 +633,7 @@
       </div>
     </footer>
     <!--include  ../includes/modals/modal-feedback-call-->
-    <div id="feedbackCall" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size fade">
+    <div id="feedbackThankYou" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size fade">
       <div role="document" class="modal-dialog">
         <div class="modal-content -md-padding">
           <div class="ta-c">
@@ -574,7 +643,7 @@
               </svg>
             </div>
             <h2 class="modal-title">Спасибо!</h2>
-            <p>В ближайшее время наши менеджеры свяжутся с вами</p>
+            <p>Ваше сообщение №4353 успешно доставлено</p>
           </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
             <svg class="close-md close-icon g-icon">
               <use xlink:href="#icon-close"></use>
@@ -631,28 +700,99 @@
         <div class="modal-content -md-padding">
           <div>
             <h2 class="modal-title">Обратная связь</h2>
-            <label class="form-label">Хочу отправить</label>
+            <label class="form-label -less-indent">Хочу отправить</label>
             <div class="form-group">
               <select class="form-control form-control-lg">
                 <option>Благодарность</option>
                 <option>Жалобу</option>
+                <option>Письмо директору</option>
               </select>
             </div>
-            <label class="form-label">Представьтесь, пожалуйста</label>
+            <label class="form-label -less-indent">Представьтесь, пожалуйста</label>
             <div class="form-group">
               <input type="text" class="form-control">
             </div>
-            <label for="phone" class="form-label">Номер вашего телефона</label>
+            <label for="phone" class="form-label -less-indent">Номер вашего телефона</label>
             <div class="form-group">
               <input type="text" id="phone" class="form-control js-phone-mask -md-size">
             </div>
-            <label for="textM" class="form-label"> Сообщение</label>
+            <label for="textM" class="form-label -less-indent"> Сообщение</label>
             <div class="form-group">
               <textarea rows="5" id="textM" class="form-control"></textarea>
             </div>
             <div class="btn-wrapper -right">
-              <button class="btn btn-transparent btn-lg_mod">Вызвать</button>
+              <button id="js-feedback" data-dismiss="modal" class="btn btn-transparent btn-lg_mod">Вызвать</button>
             </div>
+          </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <svg class="close-md close-icon g-icon">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div id="modalOrder" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content -md-padding">
+          <div>
+            <h2 class="modal-title">Заказ</h2>
+            <div class="row">
+              <div class="col-xs-8">
+                <div class="product-item_title -modal"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></div>
+              </div>
+              <div class="col-xs-4">
+                <div class="product-item_price">18 300.-</div>
+              </div>
+            </div>
+            <p class="-xs">Доставка, установка — <strong>бесплатно</strong>, оплата - <strong>наличными после установки</strong>, Вызов замерщика в черте города - <strong>бесплатно</strong>.</p>
+            <label for="phone2" class="form-label -less-indent">Номер вашего телефона</label>
+            <div class="form-group">
+              <input type="text" id="phone2" class="form-control js-phone-mask -md-size">
+            </div>
+            <div class="btn-wrapper clearfix">
+              <p class="fll">Мы перезвоним вам в ближайшее время</p><a href="thank-you.html" class="btn btn-transparent btn-lg_mod flr">Заказать</a>
+            </div>
+          </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
+            <svg class="close-md close-icon g-icon">
+              <use xlink:href="#icon-close"></use>
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div id="modalCredit" tabindex="-2" role="dialog" aria-hidden="true" class="modal modal_md-size">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content -md-padding">
+          <div>
+            <h2 class="modal-title">Покупка в кредит/рассрочку</h2>
+            <div class="row">
+              <div class="col-xs-8">
+                <div class="product-item_title -modal"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></div>
+              </div>
+              <div class="col-xs-4">
+                <div class="product-item_price">18 300.-</div>
+              </div>
+            </div>
+            <p class="-xs">Доставка, установка — <strong>бесплатно</strong>, оплата - <strong>наличными после установки</strong>, Вызов замерщика в черте города - <strong>бесплатно</strong>.</p>
+            <label class="form-label -less-indent">Фамилия</label>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+            <label class="form-label -less-indent">Имя</label>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+            <label class="form-label -less-indent">Отчетство</label>
+            <div class="form-group">
+              <input type="text" class="form-control">
+            </div>
+            <label for="phone2" class="form-label -less-indent">Номер вашего телефона</label>
+            <div class="form-group">
+              <input type="text" id="phone2" class="form-control js-phone-mask -md-size">
+            </div>
+            <div class="btn-wrapper clearfix"><a href="thank-you_mod.html" class="btn btn-transparent btn-lg_mod flr">Отправить заявку</a></div>
+            <p></p>
+            <p class="-xs -std">Указана стоимость без учета доставки в область и/или заказа дополнительных работ. Точная стоимость фиксируется при приезде замерщика (бесплатно).</p>
+            <p class="-xs -std">Решение о предоставлении рассрочки/кредита принимается банком в течении 15 минут.</p>
+            <p class="-xs -std">Наши специалисты свяжутся с вами сразу после получения ответа от банка.</p>
           </div><a type="button" data-dismiss="modal" aria-label="Close" class="close">
             <svg class="close-md close-icon g-icon">
               <use xlink:href="#icon-close"></use>

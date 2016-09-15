@@ -1,7 +1,7 @@
 footer.footer
   .container
     .row
-      .col-md-12.col-lg-3
+      .col-xs-12.col-lg-4
         ul.footer-menu
           li.footer-menu_item
             a.footer-menu_link(href="actions.html") Акции
@@ -15,25 +15,34 @@ footer.footer
             a.footer-menu_link Гарантия
           li.footer-menu_item
             a.footer-menu_link Отзывы
-      .col-md-12.col-lg-3
+      .col-xs-12.col-lg-4
         ul.footer-menu
           li.footer-menu_item
             a.footer-menu_link О компании
           li.footer-menu_item
             a.footer-menu_link Правовая информация
-          li.footer-menu_item
+          li.footer-menu_item.item-bottom-indent
             a.footer-menu_link  Адреса магазинов
-      .col-md-12.col-lg-3
-        h5.footer-title Принимаем к оплате:
-        ul.soc-menu
-          li.soc-menu_item
-            a.soc-menu_link
-              +svg('visa', 'visa-sm')
-          li.soc-menu_item
-            a.soc-menu_link
-              +svg('master-card', 'mastercard-sm')
+          h5.footer-title Принимаем к оплате:
+          ul.soc-menu
+            li.soc-menu_item
+              a.soc-menu_link
+                +svg('visa', 'visa-sm')
+            li.soc-menu_item
+              a.soc-menu_link
+                +svg('master-card', 'mastercard-sm')
 
-      .col-md-12.col-lg-3
+      //.col-xs-12.col-lg-3
+      //  h5.footer-title Принимаем к оплате:
+      //  ul.soc-menu
+      //    li.soc-menu_item
+      //      a.soc-menu_link
+      //        +svg('visa', 'visa-sm')
+      //    li.soc-menu_item
+      //      a.soc-menu_link
+      //        +svg('master-card', 'mastercard-sm')
+
+      .col-xs-12.col-lg-4
         h5.footer-title Лендвери в сетях:
         ul.soc-menu
           li.soc-menu_item

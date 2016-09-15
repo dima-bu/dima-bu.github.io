@@ -103,6 +103,10 @@ footer {
   font-family: $font-family-semibold;
   vertical-align: top;
   margin: 12px 10px 0px 10px;
+
+  @include media-breakpoint-down(md){
+    margin: 12px 10px 0px 0px;
+  }
 }
 
 .feedback-menu_xs {
@@ -123,6 +127,14 @@ footer {
   border-right: 1px solid #DDDDDD;
   padding: 0 16px;
   line-height: 1;
+
+  @include media-breakpoint-down(md){
+    padding: 0 12px;
+    &:last-child{
+      border-right: none;
+      padding: 0 0px 0 12px;
+    }
+  }
 }
 
 .feedback-menu_link {
@@ -150,6 +162,95 @@ footer {
 
 .search-wrapper {
   padding: 10px 0;
+
+  &.-menu {
+    //@include media-breakpoint-down(md){
+    //  padding:0 15px;
+    //  margin-bottom: 15px;
+    //}
+  }
+
+  &.-search-overlay {
+    position: absolute;
+    z-index: 1;
+    top: -4px;
+    width: calc(100% - 194px);
+    left: 194px;
+
+    .input-group {
+      width: 100%;
+
+      .form-control {
+        border-radius: 5px;
+      }
+    }
+
+    .close-search {
+      position: absolute;
+      cursor: pointer;
+      top: 12px;
+      right: 12px;
+      display: block;
+      z-index: 4;
+
+      &:hover {
+        .close-icon {
+          fill: #000000;
+        }
+
+      }
+    }
+
+    .search-sm {
+      position: absolute;
+      top: 11px;
+      left: 8px;
+      fill: #808080 !important;
+      z-index: 4;
+    }
+
+    .form-control {
+      padding-left: 30px;
+    }
+  }
+
+
+  &.-only-btn {
+    padding: 6px 0 10px 0;
+  }
+
+  @include media-breakpoint-down(md){
+    padding: 6px 0 10px 0;
+  }
+}
+
+.search-result {
+  padding: 0 20px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+
+  &.-xs {
+    bottom: 53px;
+    .search-result_item {
+      padding: 10px 0;
+    }
+  }
+}
+
+.search-result_item {
+  color:  #808080;
+  font-size: 16px;
+  padding: 17px 0;
+
+  &:hover {
+    background-color: #f3f3f3;
+  }
+
+  span {
+    color:  #000000;
+    font-family: $font-family-semibold;
+
+  }
 }
 
 .link-sm {
@@ -197,8 +298,15 @@ footer {
 
 #navbar-header {
   float: none;
+  //overflow: visible;
   @include media-breakpoint-up(lg){
     height: auto !important;
+  }
+
+  @include media-breakpoint-down(md){
+    .search-wrapper .input-group-addon {
+     border: none;
+    }
   }
 }
 
@@ -207,4 +315,14 @@ footer {
   .carousel.-with-indicator {
     margin-bottom: 50px;
   }
+}
+
+.fll-lg-up {
+  @include media-breakpoint-up(lg){
+    float: left;
+  }
+}
+
+#navbar-header .col-xl-1.col-lg-2 {
+  padding-right: 0;
 }

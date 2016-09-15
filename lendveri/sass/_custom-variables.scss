@@ -100,9 +100,10 @@ $border-width:               1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    #eeeded; //#cccccc; //  !default;
+$body-bg:                    #cccccc; //eeeded  !default;
 $body-color:                 $gray-dark !default;
 $product-page_row-bg:        #ffffff;
+$grayform: #dddddd; //#f3f3f3
 
 // Links
 //
@@ -141,7 +142,7 @@ $container-max-widths: (
         sm: 576px,
         md: 720px,
         lg: 960px,
-        xl: 1196px
+        xl: 1194px
 ) !default;
 
 
@@ -182,7 +183,7 @@ $font-size-h1:               30px !default;
 $font-size-h2:               22px;
 $font-size-h3:               18px !default;
 $font-size-h4:               16px;
-$font-size-h5:               1.25rem !default;
+$font-size-h5:               14px !default;
 $font-size-h6:               1rem !default;
 
 $display1-size:               6rem !default;

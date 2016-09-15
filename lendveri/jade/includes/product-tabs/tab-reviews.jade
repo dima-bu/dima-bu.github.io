@@ -21,19 +21,28 @@
          p Я сам в ремонте работаю, поэтому знаю, что не только от двери зависит, как она простоит, ног и того, как ее установили. Многие сейчас делают как попало. Когда дверь купили, я сам при установке присутствовал. Думаю, начнут как попало делать, я скажу, установлю сам. На удивление ребята профессионалы оказались. Дверь на сварку поставили, на глубоко вбитые анкера. Ничего не косо, не провисает, зазоров нет. Монтажникам уважение.
          .g-date 15.10.2014
       form
-         h3.-block-title Новый отзыв
+         h4.-block-title Новый отзыв
          .form-group
-            label.form-label Номер заказа
+            label.form-label.-less-indent Номер заказа
             input.form-control.form-control-lg(type="text" value="234234")
          .form-group
-            label.form-label Номер вашего телефона
+            label.form-label.-less-indent Номер вашего телефона
             .row
                .col-sm-6
                   input.form-control.form-control-lg.js-phone-mask(type="text")
                .col-sm-6
                   p *Не публикуется
          .form-group
+            label.form-label.-less-indent Оценка:
+            .stars-block.-review
+               +svg('star', 'star-sm star-icon -active')
+               +svg('star', 'star-sm star-icon -active')
+               +svg('star', 'star-sm star-icon -active')
+               +svg('star', 'star-sm star-icon -active')
+               +svg('star', 'star-sm star-icon')
+         .form-group
+            label.form-label.-less-indent Сообщение
             textarea.form-control(rows="6")
          .form-group
-            .btn-wrapper.-right
+            .btn-wrapper.-right.-top-indent
                button.btn.btn-transparent.btn-lg_mod Отправить

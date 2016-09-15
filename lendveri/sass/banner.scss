@@ -4,10 +4,11 @@
 
 .carousel-caption {
   color:#fff;
-  top: 85px;
-  left: 75px;
+  top: 40%;
+  bottom: 50%;
+  left: auto;
   right: auto;
-
+  width: 100%;
 
   @include media-breakpoint-up(lg) {
     text-shadow:  none;
@@ -16,7 +17,7 @@
   @include media-breakpoint-down(md) {
     left: 0;
     right: 0;
-    top:20px;
+    top: 30%;
   }
 
 }
@@ -58,7 +59,7 @@ h3.carousel-caption_title {
       background-color:  #808080;
     }
 
-    .active {
+    .active, .slick-active {
       background-color: $carousel-indicator-active-bg;
     }
   }
@@ -82,13 +83,17 @@ h3.carousel-caption_title {
     border-radius: 50%;
     vertical-align: top;
 
+    button {
+      display: none;
+    }
+
     @include media-breakpoint-down(md) {
       background-color:  #808080;
     }
 
   }
 
-  .active {
+  .active, .slick-active {
     background-color: $carousel-indicator-active-bg;
     width: 14px;
     height: 14px;
@@ -116,7 +121,11 @@ h3.carousel-caption_title {
 
 
 @include media-breakpoint-down(md){
-  #carousel-home.carousel.-with-indicator {
+  #carousel-home {
     margin-bottom: 50px;
   }
+
+ .slick-slider .slick-arrow {
+   display: none !important;
+ }
 }

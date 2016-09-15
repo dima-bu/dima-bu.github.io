@@ -233,7 +233,11 @@
 
 .navbar-main {
 
-  padding: 0.5rem 0;
+  &.-xs {
+    //padding: 0.5rem 15px 0.5rem 15px;
+  }
+
+  padding: 0.5rem 0px;
 
   //.navbar-brand {
   //  color: #000000;
@@ -305,8 +309,6 @@
 
   }
 
-
-  
   
 }
 

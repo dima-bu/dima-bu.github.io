@@ -101,14 +101,14 @@
 
 .round-article-preview  {
   background-color: $red-main;
-  margin: 20px 50px 20px 70px;
+  margin: 8px 50px 20px 70px;
 
   @include media-breakpoint-between(lg, lg){
     margin: 20px 30px 20px 40px;
   }
 
   @include media-breakpoint-down(md){
-    margin: 0px 5px 20px 15px;
+    margin: 0 5px 20px 15px;
   }
 
 }

@@ -27,10 +27,13 @@
           input.form-control.slider-price#slider-price-upper
           //span.slider-price#slider-price-upper
 
-    h3.panel-heading.clearfix.open
+    h3.panel-heading.clearfix.open(style='position:relative;')
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')
       span Фабрика
-      .info-link.flr ?
+      .info-link.flr#js-show-producers ?
+      .simple-popup#js-producers(style='position:absolute; display:none;')
+        .h5 Производители дверей
+        p.-xs.-std Неизменный лидер продаж. Дверь с зеркалом. 2 листа стали толщиной по 2 мм. С внешней стороны — МДФ цвета «Венге», с внутренней — цвета «Беленый дуб». Замок Гардиан 25.14. Цвет фурнитуры: Серебро/Хром. Антивандальное покрытие. Противосъемные штыри.
     div.panel-body.filters-aside_radio-list
       .checking_group_column
         +radio('radio', 'fabric', '-std-radio', 'std22')

@@ -8,6 +8,11 @@
     padding: 20px 15px 20px 15px;
   }
 
+
+  @include media-breakpoint-down(sm){
+    margin-bottom: 0px;
+  }
+
 }
 
 .product-title {
@@ -27,6 +32,30 @@
   float: left;
   width: 47.6%;
   padding: 10px 20px 20px 60px;
+
+
+  .thumb {
+    display: inline-block;
+    float: none;
+    &.hide {
+      display: none;
+    }
+  }
+
+  .more-block {
+    margin: 0 5px 0 0;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    display: inline-block;
+    color: #ee673e;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      color: #c82e00;
+    }
+
+  }
   
   @include media-breakpoint-down(md){
     width: 100%;
@@ -43,6 +72,7 @@
 
     .simplegallery .thumbnail {
       text-align: center;
+
       .thumb {
         display: inline-block;
         float: none;
@@ -70,6 +100,11 @@
     float: none;
     margin-bottom: 30px;
   }
+  @include media-breakpoint-down(sm){
+    margin-bottom: 0px;
+  }
+
+
 }
 
 .product_print-block {
@@ -115,9 +150,7 @@
 
 .feedback-block {
   margin-bottom: 0px;
-  
-  
-  
+
   .stars-block {
     margin: 3px 0 4px 0;
   }
@@ -143,11 +176,22 @@
   }
 }
 
+.stars-block_top {
+  margin-bottom: 20px;
+}
+
+.stars-block_count {
+  line-height: 25px;
+  margin-left: 10px;
+  
+  
+}
+
 .art-block {
   padding: 20px 20px 16px 20px;
   font-size: 14px;
   line-height: 1;
-  background-color:  #f3f3f3;
+  background-color:  $grayform;
   margin-right: 20px;
   border-radius: 5px;
 
@@ -192,7 +236,12 @@
 
 .product-colors {
   font-size: 0;
-  margin-top: 30px;
+  margin-top: 4px;
+
+  @include media-breakpoint-down(sm){
+    margin-top: 20px;
+  }
+
 
   .colors-icon {
     margin-right: 8px;
@@ -202,6 +251,38 @@
     vertical-align: top;
     margin-top: 6px;
   }
+}
+
+.product-colors_title {
+  margin-bottom: 4px;
+}
+
+.colors-list {
+  @include clear-menu();
+  @include clearfix();
+}
+
+.colors-list_item {
+  float: left;
+  margin: 0 8px 8px 0;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  &.active {
+    border: 1px solid $red-main;
+  }
+}
+
+.colors-list_img {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.product_prices_btn-wrapper {
+  padding-top: 10px;
 }
 
 .product_button-block {
@@ -252,7 +333,7 @@
   }
 
   .link-underscore {
-    margin-left: 10px;
+    margin-left: 0px;
     margin-right: 7px;
   }
 
@@ -313,7 +394,7 @@
 
     padding-top: 20px;
     padding-bottom: 30px;
-    background-color:  #f3f3f3;
+    background-color:  $grayform;
     
   }
 
@@ -407,4 +488,32 @@ h2.product-teaser_title {
     padding-left: 60px;
   }
 
+}
+
+.detail-img-title {
+  margin-top: 30px;
+  margin-left: 40px;
+
+  @include media-breakpoint-down(lg){
+    margin-left: 0px;
+  }
+}
+
+.detail-img-wrapper {
+  text-align: right;
+  margin-top: 50px;
+
+  img {
+    margin-left: 40px;
+  }
+
+  @include media-breakpoint-down(lg){
+    text-align: center;
+    padding-bottom: 20px;
+
+    img {
+      margin: 0 auto;
+    }
+
+  }
 }
