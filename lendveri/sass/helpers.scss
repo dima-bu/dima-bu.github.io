@@ -643,10 +643,10 @@ hr.space {
 }
 
 .stripped-item {
-  height: 38px;
-  line-height: 38px;
-  font-size: 14px;
-  padding: 0 25px;
+  //height: 22px;
+  line-height: 22px;
+  font-size: 0px;
+  padding: 8px 25px;
 
   &:nth-child(even) {
 
@@ -656,6 +656,15 @@ hr.space {
     background-color:  #f8f8f8;
   }
 }
+
+.stripped-col {
+  display: inline-block;
+  width: 50%;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+
 
 .aside-section {
   padding: 30px;
@@ -690,9 +699,9 @@ hr.space {
   font-family: $font-family-regular;
   @include clear-menu();
   margin-bottom: 30px;
-  
 
   li {
     height: 20px;
   }
 }
+
