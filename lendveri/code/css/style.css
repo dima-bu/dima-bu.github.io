@@ -5139,12 +5139,16 @@ hr.space.-md {
   padding: 0;
   list-style: none;
   margin-bottom: 30px;
+  color: #000000;
 }
 .simple-list.-no-margin {
   margin-bottom: 0;
 }
+.simple-list.-indent {
+  padding-left: 20px;
+}
 .simple-list li {
-  height: 20px;
+  line-height: 22px;
 }
 
 a {

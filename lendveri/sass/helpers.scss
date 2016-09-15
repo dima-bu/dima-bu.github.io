@@ -699,9 +699,14 @@ hr.space {
   font-family: $font-family-regular;
   @include clear-menu();
   margin-bottom: 30px;
+  color: #000000;
+  
+  &.-indent {
+    padding-left: 20px;
+  }
 
   li {
-    height: 20px;
+    line-height: 22px;
   }
 }
 
