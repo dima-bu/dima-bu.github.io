@@ -1,0 +1,34 @@
+.container
+   .breadcrambs_list
+      a.breadcrambs_link(href="index.html") Главная
+      a.breadcrambs_link.active(href="payment.html") Оплата
+   .row
+      .col-xl-3.col-lg-4.hidden-md-down
+         include ../includes/aside-menu
+      .col-xl-6.col-lg-8
+         .secondary-content-wrapper.-normal.-sm-bottom-padding.-clear-margin
+            h1.-page-title Оплата
+         .img-banner_wrapper
+            img.img-fluid(src="img/payment_desc.png")
+         .img-banner_wrapper_xs
+            img.img-fluid(src="img/payment_mobile.png")
+         .secondary-content-wrapper.-normal
+            h2.-block-title-md Оплата, документы
+            p Оплата наличным расчетом и банковским картами производится после установки. Выдается следующий пакет документов:
+
+            ul.simple-list.-indent
+               li • Чек
+               li • Паспорт двери с синей печатью
+               li • Договор-подряд с датой установки и номером бригады монтажников
+               li • Акт приема выполненных работ
+            p Оплата до установки производится при покупке двери в рассрочку/кредит и при безналичном расчете.
+
+
+
+      .col-xl-3.hidden-lg-down
+         include ../includes/aside-banner
+   .row
+      .col-xs-12
+         h2.ta-c.-block-title
+            span Недавно просмотренные
+   include ../includes/products-list_similar
