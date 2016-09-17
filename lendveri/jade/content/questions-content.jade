@@ -1,0 +1,28 @@
+.container
+   .breadcrambs_list
+      a.breadcrambs_link(href="index.html") Главная
+      a.breadcrambs_link.active(href="questions.html") Ответы на вопросы
+   .row
+      .col-xl-3.col-lg-4.hidden-md-down
+         include ../includes/aside-menu
+      .col-xl-6.col-lg-8
+         .secondary-content-wrapper.-normal
+            h1.-page-title Ответы на вопросы
+            .g-tabs.-md
+               a.g-tab.active.js-show-tab(data-tablink="q-popular") Самые популярные вопросы
+               a.g-tab.js-show-tab(data-tablink="q-all") Все
+            .js-tab_content#q-popular-content
+               include ../includes/product-tabs/tab-questions_mod
+            .js-tab_content#q-all-content(style="display:none;")
+               include ../includes/product-tabs/tab-questions_mod
+               include ../includes/product-tabs/tab-questions_mod
+            include ../includes/paginator
+            include ../includes/product-tabs/tab-questions_form
+      .col-xl-3.hidden-lg-down
+         include ../includes/aside-banner
+   .row
+      .col-xs-12
+         h2.ta-c.-block-title
+            +svg('flame', 'flame-md')
+            span Горячая пятерка дверей, покупаемых в кредит
+   include ../includes/products-list_similar
