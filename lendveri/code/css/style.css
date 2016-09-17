@@ -5182,6 +5182,22 @@ hr.space.-md {
   }
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 52.05%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 a {
   transition: color 70ms linear 0s;
   -webkit-transition: color 70ms linear 0s;
@@ -8282,11 +8298,11 @@ h2.product-teaser_title {
 }
 
 .secondary-content-wrapper_inner {
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 .secondary-content-wrapper_inner.-gray {
   background-color: #f8f8f8;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 
 .numbers-wrapper {
