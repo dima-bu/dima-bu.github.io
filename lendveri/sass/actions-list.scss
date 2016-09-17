@@ -3,6 +3,10 @@
   padding: 30px;
   margin-bottom: 30px;
 
+  &.clear-margin {
+    margin-bottom: 0px;
+  }
+
   @include media-breakpoint-down(md) {
     padding: 20px;
   }
@@ -20,6 +24,10 @@
 
 .actions-item {
   margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .actions-title {

@@ -8134,6 +8134,9 @@ h2.product-teaser_title {
   padding: 30px;
   margin-bottom: 30px;
 }
+.actions-list-wrapper.clear-margin {
+  margin-bottom: 0px;
+}
 @media (max-width: 991px) {
   .actions-list-wrapper {
     padding: 20px;
@@ -8145,6 +8148,9 @@ h2.product-teaser_title {
 
 .actions-item {
   margin-bottom: 35px;
+}
+.actions-item:last-child {
+  margin-bottom: 0;
 }
 
 .actions-title {
