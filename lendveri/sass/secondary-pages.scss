@@ -2,6 +2,10 @@
   padding: 20px 20px;
   background-color: #ffffff;
   margin-bottom: 40px;
+
+  &.-normal {
+    padding: 30px 30px;
+  }
   
   &.-clear-margin {
     margin-bottom: 0;
@@ -10,7 +14,14 @@
   &.-clear-pad {
     padding: 0;
   }
+  
+  &.-sm-bottom-padding {
+    padding-bottom: 10px;
+
+  }
+
 }
+
 
 .secondary-content-wrapper_inner {
   padding: 30px 20px;

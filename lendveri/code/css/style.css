@@ -5082,16 +5082,17 @@ hr.normal {
 }
 
 hr.space {
-  margin-bottom: 30px;
+  margin: 0px;
   border: none;
   display: block;
+  height: 30px;
 }
 hr.space.-md {
-  margin-bottom: 20px;
+  height: 20px;
 }
 
 .stripped-list {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color: #ffffff;
 }
 .stripped-list.-mb {
@@ -5101,7 +5102,7 @@ hr.space.-md {
 .stripped-item {
   line-height: 22px;
   font-size: 0px;
-  padding: 8px 25px;
+  padding: 8px 30px;
 }
 .stripped-item:nth-child(odd) {
   background-color: #f8f8f8;
@@ -5152,6 +5153,7 @@ hr.space.-md {
 }
 
 .yandex-map {
+  min-height: 292px;
   background-color: #ffffff;
 }
 .yandex-map .ymaps-2-1-41-controls-pane, .yandex-map .gotoymaps {
@@ -8266,11 +8268,17 @@ h2.product-teaser_title {
   background-color: #ffffff;
   margin-bottom: 40px;
 }
+.secondary-content-wrapper.-normal {
+  padding: 30px 30px;
+}
 .secondary-content-wrapper.-clear-margin {
   margin-bottom: 0;
 }
 .secondary-content-wrapper.-clear-pad {
   padding: 0;
+}
+.secondary-content-wrapper.-sm-bottom-padding {
+  padding-bottom: 10px;
 }
 
 .secondary-content-wrapper_inner {

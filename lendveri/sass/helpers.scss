@@ -623,18 +623,19 @@ hr.normal {
 }
 
 hr.space {
-  margin-bottom:  30px;
+  margin:  0px;
   border: none;
   display: block;
+  height: 30px;
 
   &.-md {
-    margin-bottom:  20px;
+    height: 20px;
   }
 
 }
 
 .stripped-list {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background-color:  #ffffff;
   
   &.-mb {
@@ -646,7 +647,7 @@ hr.space {
   //height: 22px;
   line-height: 22px;
   font-size: 0px;
-  padding: 8px 25px;
+  padding: 8px 30px;
 
   &:nth-child(even) {
 
@@ -712,6 +713,7 @@ hr.space {
 
 
 .yandex-map {
+  min-height: 292px;
   background-color: #ffffff;
 
   .ymaps-2-1-41-controls-pane, .gotoymaps {
