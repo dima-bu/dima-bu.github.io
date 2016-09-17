@@ -5151,6 +5151,35 @@ hr.space.-md {
   line-height: 22px;
 }
 
+.yandex-map {
+  background-color: #ffffff;
+}
+.yandex-map .ymaps-2-1-41-controls-pane, .yandex-map .gotoymaps {
+  display: none;
+}
+
+.photo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 10px;
+}
+
+.photo-list_item {
+  width: 50%;
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+}
+@media (max-width: 799px) {
+  .photo-list_item {
+    width: 100%;
+  }
+}
+
 a {
   transition: color 70ms linear 0s;
   -webkit-transition: color 70ms linear 0s;
@@ -8227,7 +8256,7 @@ h2.product-teaser_title {
 }
 
 .secondary-content-wrapper {
-  padding: 20px;
+  padding: 20px 20px;
   background-color: #ffffff;
   margin-bottom: 40px;
 }

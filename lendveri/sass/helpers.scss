@@ -710,3 +710,31 @@ hr.space {
   }
 }
 
+
+.yandex-map {
+  background-color: #ffffff;
+
+  .ymaps-2-1-41-controls-pane, .gotoymaps {
+    display: none;
+  }
+}
+
+.photo-list {
+  @include clear-menu();
+  font-size: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 10px;
+}
+
+.photo-list_item {
+  width: 50%;
+  display: inline-block;
+  padding: 15px;
+  text-align: center;
+
+
+  @include media-breakpoint-down(xs){
+    width: 100%;
+  }
+}
