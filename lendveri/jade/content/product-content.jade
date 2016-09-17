@@ -205,7 +205,10 @@
     .product-tab_content#quest-content(style="display: none;")
       include ../includes/product-tabs/tab-questions
     .product-tab_content#reviews-content(style="display: none;")
-      include ../includes/product-tabs/tab-reviews
+      .row
+        .col-md-9
+          include ../includes/product-tabs/tab-reviews
+          include ../includes/product-tabs/tab-reviews_form
     .product-tab_content#characteristics-content(style="display: none;")
       .row
         .col-xl-6.col-md-12
