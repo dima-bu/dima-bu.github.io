@@ -5198,6 +5198,16 @@ hr.space.-md {
   height: 100%;
 }
 
+.reply-wrapper {
+  padding-left: 25px;
+  position: relative;
+}
+.reply-wrapper .reply-icon {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+
 a {
   transition: color 70ms linear 0s;
   -webkit-transition: color 70ms linear 0s;
@@ -8092,6 +8102,9 @@ h2.product-teaser_title {
 }
 .question-elem.-answer h2 {
   margin-left: -23px;
+}
+.question-elem.-questions {
+  margin-bottom: 10px;
 }
 
 .detail-img-title {
