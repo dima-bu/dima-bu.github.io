@@ -20,6 +20,16 @@
   @include media-breakpoint-down(xs){
     height:  280px;
   }
+
+  @include media-breakpoint-between(sm,md){
+    height:  380px;
+  }
+
+  @media (max-width: 800px) and (min-width: 500px) {
+    height:  380px;
+  }
+
+
 }
 
 
@@ -35,6 +45,17 @@
   @include media-breakpoint-down(xs){
     height:  280px;
   }
+
+  @include media-breakpoint-between(sm, md){
+    height:  380px;
+  }
+
+  @media (max-width: 800px) and (min-width: 500px) {
+    height:  380px;
+  }
+
+
+
 }
 
 
@@ -103,11 +124,6 @@
   }
 }
 
-.thumbnail-vertical {
-  .thumb {
-
-  }
-}
 
 .gallery-link_zoom {
   display: inline-block;

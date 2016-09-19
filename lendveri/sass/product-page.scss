@@ -38,7 +38,7 @@
     display: inline-block;
     float: none;
     &.hide {
-      display: none;
+      display: none !important;
     }
   }
 
@@ -51,7 +51,12 @@
     color: #ee673e;
     cursor: pointer;
     text-align: center;
-    &:hover {
+    @include media-breakpoint-down(md) {
+      float: none;
+      vertical-align: top;
+    }
+
+      &:hover {
       color: #c82e00;
     }
 
