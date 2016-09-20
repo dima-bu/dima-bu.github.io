@@ -222,7 +222,22 @@
                   </div>
                 </div>
               </div>
-              <div class="row products-list_block">
+              <div style="display: none;" class="js-paginator preloader-container">
+                <div class="preloader-wrapper active">
+                  <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row products-list_block js-product-list">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                   <div class="product-item">
                     <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
@@ -380,7 +395,7 @@
                   </div>
                 </div>
               </div>
-              <div class="product-teaser">
+              <div class="product-teaser js-product-list">
                 <div class="row">
                   <div class="col-xl-6 col-lg-5">
                     <h2 class="product-teaser_title">Гранит М3</h2>
@@ -390,7 +405,7 @@
                   <div class="col-xl-6 col-lg-7 ta-r"><img src="img/product-teaser-img-1.jpg" class="img-fluid"></div>
                 </div>
               </div>
-              <div class="row products-list_block">
+              <div class="row products-list_block js-product-list">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                   <div class="product-item">
                     <div class="g-tag -new">Новинка</div><a class="product-item_img-wrappe"><img src="img/product-img-1.jpg" class="product-item_img"></a><a href="product.html" class="product-item_title"><strong>Гранит М2 Венге</strong><span>Дверь металлическая с одной МДФ-панелью</span></a>
@@ -565,7 +580,7 @@
                 <div class="filters-aside_top">
                   <div class="checking_group_column">
                     <div class="checking_item  -std checking_item-inline">
-                      <input type="checkbox" id="std0" class="checking_input"/>
+                      <input type="checkbox" id="js-has-products" class="checking_input"/>
                       <div class="checking_input-pseudo-wrapper">
                         <div class="checking_input-pseudo">
                           <svg class="check-sm check-icon -def g-icon">
@@ -574,7 +589,7 @@
                         </div>
                       </div>
                     </div>
-                    <label for="std0" class="checking_label-inline">В наличии</label>
+                    <label for="js-has-products" class="checking_label-inline">В наличии</label>
                   </div>
                 </div>
                 <div id="accordion" data-collapse="persist" class="filters-aside_accordion">

@@ -8,9 +8,8 @@
   hr.aside
   .filters-aside_top
     .checking_group_column
-      +checkbox('checkbox', 'std0', '-std')
-      label.checking_label-inline(for="std0") В наличии
-
+      +checkbox('checkbox', 'js-has-products', '-std')
+      label.checking_label-inline(for="js-has-products") В наличии
   #accordion.filters-aside_accordion(data-collapse="persist" )
     h3.panel-heading.open
       +svg('arrow-top', 'arrow-bottom-sm arrow-top-icon -def g-icon')

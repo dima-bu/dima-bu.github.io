@@ -354,6 +354,20 @@ $(document).ready(function() {
     });
 
 
+
+    $('#js-has-products').on('click', function (e) {
+        $('.js-paginator').show();
+        $('.js-product-list').hide();
+
+        setTimeout(function(){
+            $('.js-paginator').hide();
+            $('.js-product-list').show();
+        }, 1000)
+
+
+    });
+
+
     //$('.js-zoom').zoom({ touch: true});
 
 });

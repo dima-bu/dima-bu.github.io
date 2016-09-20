@@ -9167,6 +9167,12 @@ h5.footer-title {
   display: inline-block;
 }
 
+.preloader-container {
+  text-align: center;
+  height: 500px;
+  padding-top: 100px;
+}
+
 .preloader-wrapper {
   display: inline-block;
   position: relative;
