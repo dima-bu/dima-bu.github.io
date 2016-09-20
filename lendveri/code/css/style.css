@@ -539,6 +539,9 @@ h1.-page-title, .h1.-page-title {
 .h2.-block-title-sm, h2.-block-title-sm {
   margin-bottom: 20px;
 }
+.h2.-block-title-xs, h2.-block-title-xs {
+  margin-bottom: 10px;
+}
 .h2.-indent, h2.-indent {
   font-family: "beausanspro-bold", Helvetica, Arial, sans-serif;
   color: #ee673e;
@@ -7819,7 +7822,7 @@ p.partners-list_item-descr strong {
   font-size: 0;
 }
 .stars-block.-review {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .stars-block .star-icon {
   margin-right: 3px;
@@ -8103,13 +8106,21 @@ h2.product-teaser_title {
 .question-elem {
   margin-bottom: 20px;
 }
+.question-elem.-review {
+  margin-bottom: 30px;
+}
 .question-elem.-answer {
   padding-left: 60px;
+  margin-bottom: 30px;
 }
 .question-elem.-answer h2 {
   margin-left: -23px;
 }
 .question-elem.-questions {
+  margin-bottom: 10px;
+}
+
+.question-elem_body {
   margin-bottom: 10px;
 }
 

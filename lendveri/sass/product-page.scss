@@ -169,7 +169,7 @@
   font-size: 0;
 
   &.-review {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .star-icon {
@@ -486,17 +486,26 @@ h2.product-teaser_title {
 .question-elem {
   margin-bottom: 20px;
 
+  &.-review {
+    margin-bottom: 30px;
+  }
+
   &.-answer {
     h2 {
       margin-left: -23px;
     }
     padding-left: 60px;
+    margin-bottom: 30px;
   }
 
   &.-questions {
     margin-bottom: 10px;
   }
 
+}
+
+.question-elem_body {
+  margin-bottom: 10px;
 }
 
 .detail-img-title {

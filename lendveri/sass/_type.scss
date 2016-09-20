@@ -78,6 +78,10 @@ h1,.h1 {
     margin-bottom: 20px;
   }
 
+  &.-block-title-xs {
+    margin-bottom: 10px;
+  }
+
   &.-indent {
     font-family: $font-family-bold;
     color: $red-main;
