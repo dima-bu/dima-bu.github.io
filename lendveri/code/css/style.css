@@ -2035,9 +2035,22 @@ pre code {
   line-height: 1.333333;
   border-radius: 0.3rem;
 }
+@media (max-width: 799px) {
+  .form-control-lg, .input-group-lg > .form-control,
+  .input-group-lg > .input-group-addon,
+  .input-group-lg > .input-group-btn > .btn {
+    padding: 0.35rem 1.25rem;
+    padding: 0.35rem 1.25rem;
+  }
+}
 
 .form-group {
   margin-bottom: 1rem;
+}
+@media (max-width: 799px) {
+  .form-group {
+    margin-bottom: 0;
+  }
 }
 
 .radio,
@@ -2259,6 +2272,25 @@ option {
 .form-label.-less-indent {
   margin-bottom: 15px;
   padding-top: 14px;
+}
+.form-label.-no-margin {
+  margin-bottom: 0px;
+}
+@media (max-width: 799px) {
+  .form-label {
+    line-height: 16px;
+  }
+  .form-label.-less-indent {
+    margin-bottom: 14px;
+    padding-top: 21px;
+  }
+}
+
+.no-publish {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 0;
+  padding-top: 8px;
 }
 
 .fade {
@@ -8938,6 +8970,11 @@ h5.footer-title {
     width: 15px;
     height: 14px;
   }
+}
+
+.star-md {
+  width: 22px;
+  height: 20px;
 }
 
 .star-icon {

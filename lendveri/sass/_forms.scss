@@ -169,6 +169,14 @@
   font-size: $font-size-lg;
   line-height: $line-height-lg;
   @include border-radius($input-border-radius-lg);
+
+
+  @include media-breakpoint-down(xs){
+    padding: 0.35rem 1.25rem;
+    padding: 0.35rem 1.25rem;
+  }
+
+
 }
 
 
@@ -179,6 +187,9 @@
 
 .form-group {
   margin-bottom: $form-group-margin-bottom;
+  @include media-breakpoint-down(xs){
+    margin-bottom: 0;
+  }
 }
 
 
@@ -484,8 +495,35 @@ option {
   margin-bottom: 15px;
   display: block;
 
+
+
+
   &.-less-indent {
     margin-bottom: 15px;
     padding-top: 14px;
   }
+
+  &.-no-margin {
+    margin-bottom: 0px;
+  }
+
+  @include media-breakpoint-down(xs){
+
+    &.-less-indent {
+      margin-bottom: 14px;
+      padding-top: 21px;
+    }
+
+    line-height: 16px;
+  }
+
+
+
+}
+
+.no-publish {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 0;
+  padding-top: 8px;
 }

@@ -1,12 +1,12 @@
 form
-   h4.-block-title Новый отзыв
+   h2 Новый отзыв
    .form-group
       label.form-label.-less-indent Номер заказа
       .row
          .col-sm-8
             input.form-control.form-control-lg(type="text" value="234234")
          .col-sm-4
-            p *Не публикуется
+            p.no-publish *Не публикуется
 
    .form-group
       label.form-label.-less-indent Имя
@@ -20,15 +20,15 @@ form
          .col-sm-8
             input.form-control.form-control-lg.js-phone-mask(type="text")
          .col-sm-4
-            p *Не публикуется
+            p.no-publish *Не публикуется
    .form-group
-      label.form-label.-less-indent Оценка:
+      label.form-label.-less-indent.-no-margin Оценка:
       .stars-block.-review
-         +svg('star', 'star-sm star-icon -active')
-         +svg('star', 'star-sm star-icon -active')
-         +svg('star', 'star-sm star-icon -active')
-         +svg('star', 'star-sm star-icon -active')
-         +svg('star', 'star-sm star-icon')
+         +svg('star', 'star-md star-icon -active')
+         +svg('star', 'star-md star-icon -active')
+         +svg('star', 'star-md star-icon -active')
+         +svg('star', 'star-md star-icon -active')
+         +svg('star', 'star-md star-icon')
    .form-group
       label.form-label.-less-indent Сообщение
       textarea.form-control(rows="6")

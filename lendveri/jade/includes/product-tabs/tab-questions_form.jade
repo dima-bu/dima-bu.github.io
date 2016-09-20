@@ -1,15 +1,16 @@
 form
    .form-group
-      label.form-label Имя
+      label.form-label.-less-indent Имя
       input.form-control.form-control-lg(type="text")
    .form-group
-      label.form-label Номер вашего телефона
+      label.form-label.-less-indent Номер вашего телефона
       .row
          .col-sm-6
             input.form-control.form-control-lg.js-phone-mask(type="text")
          .col-sm-6
-            p *Не публикуется
+            p.no-publish *Не публикуется
    .form-group
+      label.form-label.-less-indent Вопрос
       textarea.form-control(rows="6")
    .form-group
       .btn-wrapper.-right
