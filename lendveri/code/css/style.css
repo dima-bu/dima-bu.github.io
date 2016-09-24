@@ -8701,6 +8701,11 @@ h5.footer-title {
     display: none;
   }
 }
+.product-modal_left .thumbnail-vertical {
+  height: 94vh;
+  overflow-y: auto;
+  padding-right: 30px;
+}
 
 .product-modal_left_product-descr {
   width: 200px;

@@ -134,6 +134,14 @@
     //  float: left;
     //}
   }
+
+  .thumbnail-vertical {
+    height: 94vh;
+    overflow-y: auto;
+    padding-right: 30px;
+  }
+
+
 }
 
 .product-modal_left_product-descr {
