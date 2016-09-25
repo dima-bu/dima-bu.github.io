@@ -260,6 +260,10 @@
       cursor: pointer;
       font-family: $font-family-semibold;
 
+      @include media-breakpoint-only(md) {
+        font-size: 16px;
+      }
+
       @include hover-focus {
         color: $red-main;
       }
@@ -292,7 +296,7 @@
 
   }
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     .nav-item {
       float: none;
     }

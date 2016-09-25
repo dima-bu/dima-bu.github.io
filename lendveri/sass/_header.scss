@@ -104,9 +104,15 @@ footer {
   vertical-align: top;
   margin: 12px 10px 0px 10px;
 
+
   @include media-breakpoint-down(md){
     margin: 12px 10px 0px 0px;
   }
+
+  @include media-breakpoint-only(md) {
+    margin-left: 20px;
+  }
+
 }
 
 .feedback-menu_xs {
@@ -177,6 +183,12 @@ footer {
     width: calc(100% - 194px);
     left: 194px;
 
+    @include media-breakpoint-only(md) {
+      top: 0px;
+      width: 100%;
+      left: 0;
+    }
+
     .input-group {
       width: 100%;
 
@@ -217,6 +229,10 @@ footer {
 
   &.-only-btn {
     padding: 6px 0 10px 0;
+
+    @include media-breakpoint-only(md) {
+      padding: 6px 15px 10px 0;
+    }
   }
 
   @include media-breakpoint-down(md){
@@ -299,7 +315,7 @@ footer {
 #navbar-header {
   float: none;
   //overflow: visible;
-  @include media-breakpoint-up(lg){
+  @include media-breakpoint-up(md){
     height: auto !important;
   }
 
@@ -319,6 +335,12 @@ footer {
 
 .fll-lg-up {
   @include media-breakpoint-up(lg){
+    float: left;
+  }
+}
+
+.fll-md-up {
+  @include media-breakpoint-up(md){
     float: left;
   }
 }

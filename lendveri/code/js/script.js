@@ -204,7 +204,7 @@ $(document).ready(function() {
             settings: 'unslick'
         }, {
 
-            breakpoint: 991,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 dots: true,

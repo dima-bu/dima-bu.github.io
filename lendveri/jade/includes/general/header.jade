@@ -1,17 +1,16 @@
 header
 
-  // верхняя шапка, убрать на
-  .header_top.hidden-md-down
+  .header_top.hidden-sm-down
     .container
       .col-sm-12
         .header_text-wrapper
           .header_text Акция <span class="header_text-indent">«Установка Бесплатно»</span> продлена до 29 февраля
           .header_subtext Распространяется на двери Гранит
-        button.btn.btn-transparent.btn-md.header_btn Подробнее
+        button.btn.btn-transparent.btn-md.header_btn.hidden-md-down Подробнее
 
   .header_bottom
     .container
-      .row.header_bottom-contacts.hidden-md-down
+      .row.header_bottom-contacts.hidden-sm-down
         .col-sm-12
             a.btn.btn-icons.btn-lg_map.js-show-city-list
               +svg('pin', 'map-sm -before')
@@ -32,15 +31,15 @@ header
                 a.feedback-menu_link(data-toggle="modal" data-target="#feedbackCall") Обратный звонок
               .feedback-menu_item
                 a.feedback-menu_link(data-toggle="modal" data-target="#freeSample") Бесплатный замер
-            .work-time Пн - Вс, 9:00 — 21:00
+            .work-time.hidden-md-down Пн - Вс, 9:00 — 21:00
       div
 
-        .fll-lg-up
+        .fll-md-up
           nav.navbar.navbar-main.-xs
-            button.navbar-toggler.collapsed.hidden-lg-up(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
+            button.navbar-toggler.collapsed.hidden-md-up(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
             a.navbar-brand(href="index.html")
               +svg('logo', 'logo-normal')
-            a.btn.btn-icons.btn-lg_map.flr.hidden-lg-up(data-toggle="modal" data-target="#selectCities")
+            a.btn.btn-icons.btn-lg_map.flr.hidden-md-up(data-toggle="modal" data-target="#selectCities")
               +svg('pin', 'map-sm -before')
               span Петербург
 
@@ -63,7 +62,7 @@ header
                 | итный замок234342
 
           .row.collapse.navbar-toggleable-xs(id="navbar-header" style="height: 0")
-            .col-xl-11.col-lg-10
+            .col-xl-11.col-lg-10.col-md-10
               nav.navbar.navbar-main
                 ul.nav.navbar-nav
                   li.nav-item
@@ -101,7 +100,7 @@ header
                   //div.input-group-addon
                     button.clear-btn
                       +svg('search', 'search-sm')
-            .col-xl-1.col-lg-2.hidden-md-down
+            .col-xl-1.col-lg-2.col-md-2.hidden-sm-down
               .search-wrapper.-only-btn.ta-r
                 button.btn.btn-md_sq.btn-std#search-btn
                   +svg('search', 'search-sm')
@@ -129,7 +128,7 @@ header
                   button.clear-btn
                     +svg('search', 'search-sm')
 
-      .row.hidden-sm-down.hidden-lg-up
+      .row.hidden-sm-down.hidden-lg-up(style="display: none;")
         .col-sm-10.col-md-8.col-xl-6
           .header_phone 8 (812) 309-71-55
           .feedback-menu

@@ -17,7 +17,7 @@
 
   }
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(sm){
     padding: 25px 40px 0px 0;
   }
 
@@ -40,7 +40,7 @@
 
 .arcticle-preview_content {
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(sm){
     height: 205px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -64,7 +64,7 @@
   margin-bottom: 30px;
   background-color: #ffffff;
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(sm){
     margin-bottom: 70px;
   }
 
@@ -101,13 +101,13 @@
 
 .round-article-preview  {
   background-color: $red-main;
-  margin: 8px 50px 20px 70px;
+  margin: 0px 40px 20px 60px;
 
-  @include media-breakpoint-between(lg, lg){
-    margin: 20px 30px 20px 40px;
+  @include media-breakpoint-between(md, lg){
+    margin: 0px 40px 20px 60px;
   }
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(sm){
     margin: 0 5px 20px 15px;
   }
 
