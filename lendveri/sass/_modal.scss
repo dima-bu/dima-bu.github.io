@@ -158,16 +158,17 @@
   right: 25px;
   top: 55px;
 
-  //&:after {
-  //  content: '';
-  //  position: absolute;
-  //  border: 20px solid transparent;
-  //  border-bottom: 20px solid #ffffff;
-  //  top: -40px;
-  //  right: 50%;
-  //  margin-right: -10px;
-  //  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
- // }
+  &:after {
+    content: '▼';
+    position: absolute;
+    color: #ffffff;
+    transform: rotate(180deg);
+    top: -25px;
+    right: 30px;
+    margin-right: -10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    font-size: 40px;
+  }
 
   @include media-breakpoint-down(sm) {
     left: 10px;
