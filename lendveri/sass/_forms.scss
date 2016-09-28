@@ -66,6 +66,13 @@
     font-size: 22px;
     line-height: 20px;
   }
+
+  &.-md-text {
+    font-size: 22px;
+    line-height: 20px;
+    padding: 6px $input-padding-x 5px $input-padding-x;
+  }
+
   
   &.-search {
     font-size: 16px;

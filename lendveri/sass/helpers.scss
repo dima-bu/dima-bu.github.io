@@ -250,6 +250,13 @@
   &.-top-indent {
     padding-top: 1rem;
   }
+
+  &.-top-indent-xs {
+    @include media-breakpoint-down(md){
+      padding-top: 1rem;
+    }
+  }
+
 }
 
 .img-banner_wrapper {
