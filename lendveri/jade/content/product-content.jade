@@ -161,14 +161,17 @@
           a.link-underscore(data-toggle="modal" data-target="#modalCredit") Купить в кредит/рассрочку
           span.credit-block-text-beetween за
           .product-item_old-price.-md.-no-through  1 990.-/мес
-          .info-link.-ml#js-show-credit-descr ?
-          .simple-popup#js-credit-descr(style="position: absolute; display: none;right: -8px;top: 46px;")
-            .h5 Покупка в кредит
-            p.-xs.-std Указана стоимость без учета доставки в область и/или заказа дополнительных работ. Точная стоимость фиксируется при приезде замерщика (бесплатно).
-            p
-            p.-xs.-std Решение о предоставлении рассрочки/кредита принимается банком в течении 15 минут.
-            p
-            p.-xs.-std Наши специалисты свяжутся с вами сразу после получения ответа от банка.
+          .info-link_wrapper
+            .info-link.-ml#js-show-credit-descr ?
+            .simple-popup_wrapper(style="position: absolute; display: none;right: -8px;top: 46px;")
+              .simple-popup#js-credit-descr
+                .h5 Покупка в кредит
+                p.-xs.-std Указана стоимость без учета доставки в область и/или заказа дополнительных работ. Точная стоимость фиксируется при приезде замерщика (бесплатно).
+                p
+                p.-xs.-std Решение о предоставлении рассрочки/кредита принимается банком в течении 15 минут.
+                p
+                p.-xs.-std Наши специалисты свяжутся с вами сразу после получения ответа от банка.
+              .simple-popup_corner
         .col-xl-4.col-lg-3.col-xs-3.credit-block-icon
           a.rsb-icon_wrapper(href="http://www.rsb.ru/")
             +svg('rsb', 'rsb-sm rsb-icon')

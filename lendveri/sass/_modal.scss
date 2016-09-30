@@ -176,3 +176,17 @@
   }
 
 }
+
+.simple-popup_corner   {
+  &:after {
+    content: '▼';
+    position: absolute;
+    color: #ffffff;
+    transform: rotate(180deg);
+    top: -25px;
+    right: 30px;
+    margin-right: -10px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+    font-size: 40px;
+  }
+}
