@@ -3734,7 +3734,26 @@ button.list-group-item-danger.active:hover {
   right: 25px;
   top: 55px;
 }
-.simple-popup:after {
+@media (max-width: 767px) {
+  .simple-popup {
+    left: 10px;
+    right: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .simple-popup_wrapper {
+    left: 10px;
+    right: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .simple-popup_corner {
+    display: none;
+  }
+}
+.simple-popup_corner:after {
   content: '▼';
   position: absolute;
   color: #ffffff;
@@ -3742,14 +3761,8 @@ button.list-group-item-danger.active:hover {
   top: -25px;
   right: 30px;
   margin-right: -10px;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
   font-size: 40px;
-}
-@media (max-width: 767px) {
-  .simple-popup {
-    left: 10px;
-    right: inherit;
-  }
 }
 
 .carousel {
@@ -4859,6 +4872,13 @@ a.bg-danger:focus, a.bg-danger:hover {
   .img-banner_wrapper_xs {
     display: none;
   }
+}
+
+.info-link_wrapper {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
 }
 
 .info-link {
