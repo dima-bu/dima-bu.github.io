@@ -179,7 +179,7 @@
 
 .simple-popup_wrapper {
   @include media-breakpoint-down(sm) {
-    left: 10px;
+    left: -110px;
     right: inherit;
   }
 }
