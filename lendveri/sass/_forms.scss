@@ -196,6 +196,10 @@
   margin-bottom: $form-group-margin-bottom;
   @include media-breakpoint-down(xs){
     margin-bottom: 0;
+
+    &.-mb {
+      margin-bottom: $form-group-margin-bottom;
+    }
   }
 }
 

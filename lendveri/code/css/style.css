@@ -2056,6 +2056,9 @@ pre code {
   .form-group {
     margin-bottom: 0;
   }
+  .form-group.-mb {
+    margin-bottom: 1rem;
+  }
 }
 
 .radio,
@@ -7268,6 +7271,9 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   .arcticle-preview_carusel_inner {
     padding: 25px 40px 0px 0;
   }
+  .arcticle-preview_carusel_inner .btn {
+    margin-bottom: 20px;
+  }
 }
 .arcticle-preview_carusel_inner .corner-article {
   position: absolute;
@@ -7451,7 +7457,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   margin-right: 5px;
 }
 .product-item_title.-modal {
-  height: 55px;
+  height: auto;
 }
 
 a.product-item_title:hover {
@@ -7496,6 +7502,11 @@ a.product-item_title:hover strong {
 }
 .product-item_price.-indent {
   color: #ee673e;
+}
+@media (max-width: 599px) {
+  .product-item_price.-xs {
+    font-size: 20px;
+  }
 }
 
 .product-item_services {
