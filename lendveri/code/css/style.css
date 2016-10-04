@@ -3731,20 +3731,18 @@ button.list-group-item-danger.active:hover {
   z-index: 2;
   background-color: #fff;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
-  right: 25px;
-  top: 55px;
 }
 @media (max-width: 767px) {
   .simple-popup {
-    left: 10px;
-    right: inherit;
+    width: 320px;
   }
 }
 
 @media (max-width: 767px) {
   .simple-popup_wrapper {
     left: 10px;
-    right: inherit;
+    right: inherit !important;
+    top: 65px !important;
   }
 }
 
@@ -4879,6 +4877,11 @@ a.bg-danger:focus, a.bg-danger:hover {
   display: inline-block;
   width: 18px;
   height: 18px;
+}
+@media (max-width: 767px) {
+  .info-link_wrapper {
+    position: static;
+  }
 }
 
 .info-link {

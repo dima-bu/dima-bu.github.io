@@ -155,8 +155,8 @@
   z-index: 2;
   background-color: #fff;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.35);
-  right: 25px;
-  top: 55px;
+  //right: 25px;
+  //top: 55px;
 
   //&:after {
   //  content: '▼';
@@ -171,20 +171,23 @@
   //}
 
   @include media-breakpoint-down(sm) {
-    left: 10px;
-    right: inherit;
+    width: 320px;
+  ///  left: 10px;
+  //  right: inherit;
   }
 
 }
 
 .simple-popup_wrapper {
+
   @include media-breakpoint-down(sm) {
-    left: -110px;
-    right: inherit;
+    left: 10px;
+    right: inherit !important;
+    top: 65px !important;
   }
 }
 
-.simple-popup_corner   {
+.simple-popup_corner {
   @include media-breakpoint-down(sm) {
     display: none;
   }
