@@ -1946,6 +1946,7 @@ pre code {
   color: #000000;
   background-color: #dddddd;
   background-image: none;
+  box-shadow: none;
   border: 1px solid transparent;
   border-radius: 5px;
 }
@@ -6271,7 +6272,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay {
   position: absolute;
   z-index: 1;
-  top: 4px;
+  bottom: 10px;
   width: calc(100% - 194px);
   left: 194px;
   padding: 0px;
@@ -6880,7 +6881,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay {
   position: absolute;
   z-index: 1;
-  top: 4px;
+  bottom: 10px;
   width: calc(100% - 194px);
   left: 194px;
   padding: 0px;

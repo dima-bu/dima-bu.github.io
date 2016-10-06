@@ -179,7 +179,8 @@ footer {
   &.-search-overlay {
     position: absolute;
     z-index: 1;
-    top: 4px;
+    //top: 4px;
+    bottom: 10px;
     width: calc(100% - 194px);
     left: 194px;
     padding: 0px;
