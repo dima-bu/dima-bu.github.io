@@ -37,7 +37,7 @@ header
         .fll-md-up
           nav.navbar.navbar-main.-xs
             button.navbar-toggler.collapsed.hidden-md-up(type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false") ☰
-            a.navbar-brand(href="index.html")
+            a.navbar-brand.hidden-md-up(href="index.html")
               +svg('logo', 'logo-normal')
             a.btn.btn-icons.btn-lg_map.flr.hidden-md-up(data-toggle="modal" data-target="#selectCities")
               +svg('pin', 'map-sm -before')
@@ -63,7 +63,10 @@ header
 
           .row.collapse.navbar-toggleable-xs(id="navbar-header" style="height: 0")
             .col-xl-11.col-lg-10.col-md-10
-              nav.navbar.navbar-main
+
+              a.navbar-brand.-md(href="index.html")
+                +svg('logo', 'logo-normal')
+              nav.navbar.navbar-main.fll-xs-up
                 ul.nav.navbar-nav
                   li.nav-item
                     a.nav-link(href="catalog.html") Входные

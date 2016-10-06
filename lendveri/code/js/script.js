@@ -170,7 +170,9 @@ $(document).ready(function() {
         dots: true,
         dotsClass: 'carousel-indicators',
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 5000,
+        prevArrow: '<button type="button" class="slick-prev"></button>',
+        nextArrow: '<button type="button" class="slick-next"></button>'
     });
 
 

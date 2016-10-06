@@ -345,6 +345,14 @@ footer {
   }
 }
 
-#navbar-header .col-xl-1.col-lg-2 {
-  padding-right: 0;
+.fll-xs-up {
+  float: left;
+
+  @include media-breakpoint-down(sm){
+    float: none;
+  }
 }
+
+//#navbar-header .col-xl-1.col-lg-2 {
+//  padding-right: 0;
+//}

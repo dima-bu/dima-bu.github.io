@@ -679,10 +679,20 @@ mark,
 .dots-name {
   white-space: nowrap;
 }
+@media (max-width: 767px) {
+  .dots-name {
+    font-size: 12px;
+  }
+}
 
 .dotted-line {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .dotted-line .dots {
+    display: none;
+  }
 }
 
 .dl-horizontal {
@@ -3104,6 +3114,15 @@ option {
   padding-bottom: .0;
   margin-right: 1rem;
   font-size: 1.25rem;
+}
+.navbar-brand.-md {
+  padding: 0.5rem 0px 6px 0px;
+  margin-right: 2rem;
+}
+@media (max-width: 767px) {
+  .navbar-brand.-md {
+    display: none;
+  }
 }
 .navbar-brand:focus, .navbar-brand:hover {
   text-decoration: none;
@@ -6401,8 +6420,13 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   }
 }
 
-#navbar-header .col-xl-1.col-lg-2 {
-  padding-right: 0;
+.fll-xs-up {
+  float: left;
+}
+@media (max-width: 767px) {
+  .fll-xs-up {
+    float: none;
+  }
 }
 
 .breadcrambs_list {
@@ -7004,8 +7028,13 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   }
 }
 
-#navbar-header .col-xl-1.col-lg-2 {
-  padding-right: 0;
+.fll-xs-up {
+  float: left;
+}
+@media (max-width: 767px) {
+  .fll-xs-up {
+    float: none;
+  }
 }
 
 .panel-heading {
