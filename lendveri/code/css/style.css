@@ -6271,9 +6271,10 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay {
   position: absolute;
   z-index: 1;
-  top: -4px;
+  top: 4px;
   width: calc(100% - 194px);
   left: 194px;
+  padding: 0px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .search-wrapper.-search-overlay {
@@ -6315,7 +6316,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .search-wrapper.-only-btn {
-    padding: 6px 15px 10px 0;
+    padding: 6px 0px 10px 0;
   }
 }
 
@@ -6879,9 +6880,10 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay {
   position: absolute;
   z-index: 1;
-  top: -4px;
+  top: 4px;
   width: calc(100% - 194px);
   left: 194px;
+  padding: 0px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .search-wrapper.-search-overlay {
@@ -6923,7 +6925,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .search-wrapper.-only-btn {
-    padding: 6px 15px 10px 0;
+    padding: 6px 0px 10px 0;
   }
 }
 
