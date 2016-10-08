@@ -5336,12 +5336,14 @@ a {
   -webkit-transition: all 70ms linear 0s;
   -moz-transition: all 70ms linear 0s;
   -o-transition: all 70ms linear 0s;
+  outline: 0 none;
   padding: 0.375rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 5px;
 }
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: 0 none;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -5354,9 +5356,10 @@ a {
 }
 .btn:active, .btn.active {
   background-image: none;
-  outline: 0;
+  outline: 0 none;
 }
 .btn.disabled, .btn:disabled {
+  outline: 0 none;
   cursor: not-allowed;
   opacity: .65;
 }
@@ -5848,12 +5851,14 @@ span.small-btn-text {
 }
 .btn-std:focus, .btn-std:active {
   background-color: #000000;
+  outline: 0 none;
 }
 
 .btn-transparent {
   border: 1px solid #ee673e;
   background-color: transparent;
   color: #ee673e;
+  outline: 0 none;
 }
 .btn-transparent span {
   padding: 0 4px;
@@ -5864,6 +5869,7 @@ span.small-btn-text {
 .btn-transparent:hover {
   background-color: #ee673e;
   color: #fff;
+  outline: 0 none;
 }
 .btn-transparent:hover .g-icon {
   fill: #fff;
@@ -5893,6 +5899,7 @@ span.small-btn-text {
 .btn-icons:hover, .btn-icons.active {
   background-color: #ee673e;
   color: #fff;
+  outline: 0 none;
 }
 .btn-icons:hover svg, .btn-icons.active svg {
   fill: #fff;

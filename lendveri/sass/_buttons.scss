@@ -23,6 +23,7 @@ a {
   -webkit-transition: all 70ms linear 0s;
   -moz-transition: all 70ms linear 0s;
   -o-transition: all 70ms linear 0s;
+  outline: 0 none;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $line-height, $btn-border-radius);
 
   &,
@@ -30,26 +31,30 @@ a {
   &.active {
     &:focus,
     &.focus {
+      outline: 0 none;
       @include tab-focus();
     }
   }
 
   @include hover-focus {
     text-decoration: none;
+    outline: 0 none;
   }
   &.focus {
     text-decoration: none;
+    outline: 0 none;
   }
 
   &:active,
   &.active {
     background-image: none;
-    outline: 0;
+    outline: 0 none;
     @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
   }
 
   &.disabled,
   &:disabled {
+    outline: 0 none;
     cursor: $cursor-disabled;
     opacity: .65;
     @include box-shadow(none);
@@ -276,6 +281,7 @@ span.small-btn-text {
   &:focus,
   &:active {
     background-color: #000000;
+    outline: 0 none;
   }
 
 }
@@ -285,6 +291,7 @@ span.small-btn-text {
   border: 1px solid $red-main;
   background-color: transparent;
   color: $red-main;
+  outline: 0 none;
   
   span {
     padding: 0 4px;
@@ -297,6 +304,7 @@ span.small-btn-text {
   &:hover{
     background-color:$red-main;
     color: #fff;
+    outline: 0 none;
 
     .g-icon {
       fill: #fff;
@@ -335,6 +343,7 @@ span.small-btn-text {
   &:hover, &.active{
     background-color:$red-main;
     color: #fff;
+    outline: 0 none;
     svg {
       fill: #fff;
     }
