@@ -23,14 +23,40 @@
         return this.each(function() {
 
             $(settings.gallthumb).click(function() {
-                $(settings.gallthumb).removeClass('active');
-                $(this).addClass('active');
-                $(settings.gallcontent).find('img').stop(true,true).fadeOut(settings.galltime).hide();
 
                 var img_attr = $(this).find('img').attr("id"),
                     image_id = img_attr.replace('thumb_', '');
 
-                $('.image_' + image_id + '').stop(true,true).fadeIn(settings.galltime);
+                var currentThumb =  $(settings.thumbId).find('.thumb.active');
+                var currentImg = $(settings.galleryId).find('.gallery-content img.current');
+
+                var nextThumb = $(this);
+                var nextImg = $(settings.galleryId).find('.image_' + image_id + '');
+
+                debugger;
+
+                currentThumb.removeClass('active');
+                nextThumb.addClass('active');
+
+                currentImg.css({opacity: 1.0}).animate({opacity: 0.0}, settings.galltime, function(){
+                    currentImg.hide();
+                    nextImg.css({opacity: 0.0}).show().animate({opacity: 1.0}, settings.galltime);
+                    currentImg.removeClass('current');
+                    nextImg.addClass('current');
+                });
+
+                //currentImg.animate({opacity: 0.0}, 1000);
+                //nextImg.fadeIn(settings.galltime);
+
+                //
+                //$(settings.gallthumb).removeClass('active');
+                //$(this).addClass('active');
+                //$(settings.gallcontent).find('img').stop(true,true).animate({opacity: 0.0}, settings.galltime).hide();
+                //
+                //var img_attr = $(this).find('img').attr("id"),
+                //    image_id = img_attr.replace('thumb_', '');
+                //
+                //$('.image_' + image_id + '').stop(true,true).fadeIn(settings.galltime);
                 return false;
 
             });

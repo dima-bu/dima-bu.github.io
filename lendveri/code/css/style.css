@@ -9358,6 +9358,14 @@ h5.footer-title {
   display: inline-block;
 }
 
+.opacity-hide {
+  opacity: 0;
+}
+
+.opacity-show {
+  opacity: 1;
+}
+
 .preloader-container {
   text-align: center;
   height: 500px;

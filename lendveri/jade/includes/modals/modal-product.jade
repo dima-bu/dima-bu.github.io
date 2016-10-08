@@ -3,13 +3,13 @@
     .modal-content#gallery-modal-product
 
       .gallery-content.gallery-wrapper
-          img.image_1(src="img/product--lg-img-4.jpg" style="display:block")
+          img.image_1.current(src="img/product--lg-img-4.jpg")
           img.image_2(src="img/product--lg-img-2.jpg" style="display:none")
           img.image_3(src="img/product--lg-img-3.jpg" style="display:none")
       a(type="button" class="close" data-dismiss="modal" aria-label="Close")
         +svg('close', 'close-md close-icon')
 
-    .product-modal_left.clearfix
+    .product-modal_left.clearfix#gallery-modal-product_thumbs
       .thumbnail.thumbnail-vertical.fll
         .thumb.active
           a(rel="1")

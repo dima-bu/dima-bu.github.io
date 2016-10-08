@@ -12,17 +12,21 @@ $(document).ready(function() {
 
     // галлерея продукта
     $('#gallery').simplegallery({
-        galltime : 400, // transition delay
+        galltime : 200, // transition delay
         gallcontent: '.gallery-content',
         gallthumbnail: '.thumbnail',
-        gallthumb: '.thumb'
+        gallthumb: '.thumb',
+        galleryId: '#gallery',
+        thumbId: '#gallery'
     });
 
     $('#gallery-modal-product').simplegallery({
-        galltime : 400, // transition delay
+        galltime : 200, // transition delay
         gallcontent: '.gallery-content',
         gallthumbnail: '.thumbnail',
-        gallthumb: '.thumb'
+        gallthumb: '.thumb',
+        galleryId: '#gallery-modal-product',
+        thumbId: '#gallery-modal-product_thumbs'
     });
 
 
