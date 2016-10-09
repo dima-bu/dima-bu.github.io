@@ -188,6 +188,8 @@
 }
 
 .simple-popup_corner {
+  display: none;
+
   @include media-breakpoint-down(sm) {
     display: none;
   }

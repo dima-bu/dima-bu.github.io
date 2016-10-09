@@ -3769,6 +3769,9 @@ button.list-group-item-danger.active:hover {
   }
 }
 
+.simple-popup_corner {
+  display: none;
+}
 @media (max-width: 767px) {
   .simple-popup_corner {
     display: none;
@@ -5350,9 +5353,11 @@ a {
 }
 .btn:focus, .btn:hover {
   text-decoration: none;
+  outline: 0 none;
 }
 .btn.focus {
   text-decoration: none;
+  outline: 0 none;
 }
 .btn:active, .btn.active {
   background-image: none;
