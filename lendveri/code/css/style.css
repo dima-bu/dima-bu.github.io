@@ -5319,6 +5319,10 @@ hr.space.-md {
   left: 0;
 }
 
+.mb-2 {
+  margin-bottom: 20px;
+}
+
 a {
   transition: color 70ms linear 0s;
   -webkit-transition: color 70ms linear 0s;
@@ -5346,27 +5350,27 @@ a {
   border-radius: 5px;
 }
 .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
-  outline: 0 none;
+  outline: 0 none !important;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 .btn:focus, .btn:hover {
   text-decoration: none;
-  outline: 0 none;
+  outline: 0 none !important;
 }
 .btn.focus {
   text-decoration: none;
-  outline: 0 none;
+  outline: 0 none !important;
 }
 .btn:active, .btn.active {
   background-image: none;
-  outline: 0 none;
+  outline: 0 none !important;
 }
 .btn.disabled, .btn:disabled {
-  outline: 0 none;
   cursor: not-allowed;
   opacity: .65;
+  outline: 0 none !important;
 }
 
 a.btn.disabled,
@@ -6181,11 +6185,6 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   background-color: #ffffff;
   margin-bottom: 30px;
 }
-@media (max-width: 991px) {
-  .header_bottom {
-    padding-bottom: 10px;
-  }
-}
 
 .header_bottom-contacts {
   font-size: 0;
@@ -6789,11 +6788,6 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .header_bottom {
   background-color: #ffffff;
   margin-bottom: 30px;
-}
-@media (max-width: 991px) {
-  .header_bottom {
-    padding-bottom: 10px;
-  }
 }
 
 .header_bottom-contacts {
