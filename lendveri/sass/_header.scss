@@ -79,8 +79,8 @@ footer {
   background-color: #ffffff;
   margin-bottom: 30px;
 
-  @include media-breakpoint-down(md){
-    //padding-bottom: 10px;
+  @include media-breakpoint-down(sm){
+    padding-bottom: 10px;
   }
   
 }

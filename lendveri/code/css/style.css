@@ -6185,6 +6185,11 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
   background-color: #ffffff;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .header_bottom {
+    padding-bottom: 10px;
+  }
+}
 
 .header_bottom-contacts {
   font-size: 0;
@@ -6788,6 +6793,11 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .header_bottom {
   background-color: #ffffff;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .header_bottom {
+    padding-bottom: 10px;
+  }
 }
 
 .header_bottom-contacts {
