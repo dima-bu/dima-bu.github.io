@@ -8604,7 +8604,7 @@ h2.product-teaser_title {
   background-color: #ffffff;
   margin-bottom: 50px;
 }
-@media (max-width: 1219px) {
+@media (max-width: 599px) {
   .thank-you-wrapper {
     padding: 20px;
   }
