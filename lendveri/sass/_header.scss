@@ -187,7 +187,7 @@ footer {
     padding: 0px;
 
     @include media-breakpoint-only(md) {
-      top: 0px;
+      top: 6px;
       width: 100%;
       left: 0;
     }
@@ -319,7 +319,7 @@ footer {
   float: none;
   //overflow: visible;
   @include media-breakpoint-up(md){
-    height: auto !important;
+    height: 56px !important;
   }
 
   @include media-breakpoint-down(md){
