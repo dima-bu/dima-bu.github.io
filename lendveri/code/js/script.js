@@ -245,12 +245,11 @@ $(document).ready(function() {
 
     $('#carousel-articles').slick({
         dots: true,
-        dotsClass: 'carousel-indicators',
+        dotsClass: 'carousel-indicators -invert',
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false
     });
-
 
     $('#search-btn').click(function(e) {
         $('#search-input').show();

@@ -6288,7 +6288,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay {
   position: absolute;
   z-index: 1;
-  bottom: 10px;
+  top: 6px;
   width: calc(100% - 194px);
   left: 194px;
   padding: 0px;
@@ -6897,7 +6897,7 @@ body.overflow .main-content > .container > .row > .col-xl-9 {
 .search-wrapper.-search-overlay {
   position: absolute;
   z-index: 1;
-  bottom: 10px;
+  top: 6px;
   width: calc(100% - 194px);
   left: 194px;
   padding: 0px;
