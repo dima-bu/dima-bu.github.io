@@ -11,7 +11,8 @@
             option Письмо директору
         label.form-label.-less-indent Представьтесь, пожалуйста
         .form-group
-          input.form-control(type="text")
+          input.form-control.-md-size(type="text")
+
         label.form-label.-less-indent(for="phone") Номер вашего телефона
         .form-group
           input.form-control.js-phone-mask.-md-size(type="text" id="phone")
@@ -19,7 +20,7 @@
         .form-group
           textarea.form-control(rows="5" id="textM")
         .btn-wrapper.-right
-          button.btn.btn-transparent.btn-lg_mod#js-feedback(data-dismiss="modal") Вызвать
+          button.btn.btn-transparent.btn-lg_mod#js-feedback(data-dismiss="modal") Отправить
       a(type="button" class="close" data-dismiss="modal" aria-label="Close")
         +svg('close', 'close-md close-icon')
 

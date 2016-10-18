@@ -429,19 +429,24 @@
 .product-page_descr {
   background-color: #ffffff;
   margin-bottom: 35px;
+  padding: 40px 40px 20px 40px;
 
-  @include media-breakpoint-up(lg){
-    padding: 40px 40px;
-  }
-  
-  @include media-breakpoint-down(lg){
-    padding: 40px 40px;
-    padding-bottom: 0;
-  }
+
+  //@include media-breakpoint-up(lg){
+  //  padding: 40px 40px 20px 40px;
+  //}
 
   @include media-breakpoint-down(md){
     padding: 20px 13px 0px 13px;
   }
+
+  //@include media-breakpoint-only(md){
+  //  padding: 20px 13px 0px 13px;
+  //}
+
+  //@include media-breakpoint-only(sm){
+  //  padding: 20px 13px 0px 13px;
+  //}
   
 }
 
