@@ -40,7 +40,7 @@ function createRequest(url, method = 'GET') {
     let xhr = new XMLHttpRequest();
 
     xhr.open(method || "GET", url, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
+    //xhr.setRequestHeader('Content-Type', 'application/json');
 
     return xhr;
 }

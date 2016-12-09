@@ -6,7 +6,7 @@ class Data {
     }
 
     static getData(days, items) {
-        return http.send('?days'+days+'&Items'+items);
+        return http.send('?days='+days+'&Items='+items);
     }
 }
 
