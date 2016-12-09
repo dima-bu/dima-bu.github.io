@@ -96,7 +96,7 @@
 
 	        //http.setContext(params.context);
 
-	        _http2.default.setGlobalUrl('https://api.themoviedb.org/3/movie');
+	        _http2.default.setGlobalUrl('http://private-ec872-me19.apiary-mock.com');
 
 	        _movie2.default.estimate().then(function (resp) {
 	            debugger;
@@ -20235,10 +20235,9 @@
 
 	            var xhr = createRequest(self.globalUrl + url, params.method, params.headers == false ? false : params.headers);
 
-	            //xhr.setRequestHeader('Location', '/questions/2');
-
 	            xhr.onload = function (resp) {
 	                if (this.status == 200) {
+
 	                    try {
 	                        if (this.responseText) {
 	                            resolve(JSON.parse(this.responseText));
@@ -20272,12 +20271,9 @@
 
 	    xhr.open(method || "GET", url, true);
 
-	    if (header) {
-	        xhr.setRequestHeader('Content-Type', 'application/json');
-	        for (var i = 0, keys = Object.keys(header); i < keys.length; i++) {
-	            xhr.setRequestHeader(keys[i], header[keys[i]]);
-	        }
-	    }
+	    xhr.setRequestHeader('Content-Type', 'application/json');
+	    xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+	    xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
 
 	    return xhr;
 	}
@@ -20310,7 +20306,7 @@
 	    estimate: function estimate() {
 	        var params = {};
 
-	        return _http2.default.send('/550?api_key=edafd66587f9b1ee007e2eda9007e228', params).then(function (resp) {
+	        return _http2.default.send('/clients', params).then(function (resp) {
 	            debugger;
 	            //this._estimate = resp;
 	            //this.events.resolve('estimateUpdate', resp);

@@ -13,10 +13,9 @@ var http = {
 
             var xhr = createRequest(self.globalUrl + url, params.method , params.headers == false ? false : params.headers);
 
-            //xhr.setRequestHeader('Location', '/questions/2');
-
             xhr.onload = function(resp) {
                 if(this.status == 200) {
+
                     try{
                         if(this.responseText) {
                             resolve(JSON.parse(this.responseText))
@@ -48,12 +47,9 @@ function createRequest(url, method = 'GET' , header = {}) {
 
     xhr.open(method || "GET", url, true);
 
-    if(header) {
         xhr.setRequestHeader('Content-Type', 'application/json');
-        for(var i = 0, keys = Object.keys(header); i < keys.length; i++) {
-            xhr.setRequestHeader(keys[i], header[keys[i]]);
-        }
-    }
+        xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+        xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
 
     return xhr;
 }

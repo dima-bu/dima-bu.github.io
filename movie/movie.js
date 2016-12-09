@@ -8,7 +8,7 @@ var Movie = {
         var params = {
         };
 
-        return http.send('/550?api_key=edafd66587f9b1ee007e2eda9007e228', params).then((resp)=> {
+        return http.send('/clients', params).then((resp)=> {
             debugger;
             //this._estimate = resp;
             //this.events.resolve('estimateUpdate', resp);

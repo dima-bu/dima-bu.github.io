@@ -5,3 +5,9 @@ hive/node_modules
 hive/node_modules
 .sass-cache
 lendveri/vendor
+parkingapi/node_modules
+parkingapi/skin
+parkingapi/img
+parkingapi/svg
+parkingapi/tests
+parkingapi/i18n

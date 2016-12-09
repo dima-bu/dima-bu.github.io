@@ -21,7 +21,7 @@ var MainWidget = React.createClass({
 
         //http.setContext(params.context);
 
-        http.setGlobalUrl('https://api.themoviedb.org/3/movie');
+        http.setGlobalUrl('http://private-ec872-me19.apiary-mock.com');
 
         Movie.estimate().then((resp) => {
                 debugger;
