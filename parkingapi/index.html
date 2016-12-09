@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="robots" content="all">
+    <link id="ico" rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title id="page-title">Такси</title>
+    <style>
+        @font-face {
+            font-family: 'robotobold';
+            src: url('fonts/roboto-bold-webfont.eot');
+            src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/roboto-bold-webfont.woff') format('woff'),
+            url('fonts/roboto-bold-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'robotoblack';
+            src: url('fonts/roboto-black-webfont.eot');
+            src: url('fonts/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/roboto-black-webfont.woff') format('woff'),
+            url('fonts/roboto-black-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'robotoregular';
+            src: url('fonts/roboto-regular-webfont.eot');
+            src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/roboto-regular-webfont.woff') format('woff'),
+            url('fonts/roboto-regular-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'robotolight';
+            src: url('fonts/Roboto-Light.eot');
+            src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+            url('fonts/Roboto-Light.woff') format('woff'),
+            url('fonts/Roboto-Light.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'robotothin';
+            src: url('fonts/roboto-thin-webfont.eot');
+            src: url('fonts/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/roboto-thin-webfont.woff') format('woff'),
+            url('fonts/roboto-thin-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+<div id="hive-map"></div>
+<div class="main-wrapper">
+    <div id="MainWidget"></div>
+</div>
+
+<script type="application/javascript">
+    var script = document.createElement('script');
+    script.src = 'bundle/bundle.js?v='+new Date().getTime();
+    script.type = "application/javascript";
+    document.body.appendChild(script);
+</script>
+
+<!--<script src="bundle/bundle.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+//h1, h2, h3, h4, h5, h6,
+//.h1, .h2, .h3, .h4, .h5, .h6 {
+//  font-family: @headings-font-family;
+//  font-weight: normal;
+//  line-height: @headings-line-height;
+//
+//  small,
+//  .small {
+//    font-weight: normal;
+//    line-height: 1;
+//    color: @headings-small-color;
+//  }
+//}
+
+h3, .h3 {
+  .micro-normal;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+//pico 8
+//nano 10
+//micro 12
+//milli 14
+//centi 16
+//deci 18
+//deca 20
+//hecto 22
+//kilo 24
+//mega 28
+//giga 30
+//tera  32
+//peta 36
+
+
+.nano-bold() {
+  font-family: @font-family-bold;
+  font-size: 10px;
+}
+
+
+.micro-normal() {
+  font-family: @font-family-regular;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+}
+
+.micro-bold() {
+  font-family: @font-family-bold;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+}
+
+
+.milli-normal() {
+  font-family: @font-family-regular;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  line-height: 16px;
+}
+
+.milli-bold() {
+  font-family: @font-family-bold;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  line-height: 16px;
+}
+
+.centi-light() {
+  font-family: @font-family-light;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+
+.centi-normal() {
+  font-family: @font-family-regular;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+.centi-bold() {
+  font-family: @font-family-bold;
+  font-size: 16px;
+  letter-spacing: -0.4px;
+  line-height: 20px;
+}
+
+.deci-bold() {
+  font-family: @font-family-bold;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+}
+
+.deca-bold() {
+  font-family: @font-family-bold;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 24px;
+}
+
+.hecto-bold() {
+  font-family: @font-family-bold;
+  font-size: 22px;
+  letter-spacing: -0.6px;
+  line-height: 24px;
+}
+
+.mega-bold() {
+  font-family: @font-family-bold;
+  font-size: 28px;
+  letter-spacing: -0.7px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 10px;
+  color: @gray-main_75;
+
+  &.alarm-text {
+    color: @brand-danger;
+  }
+}
+

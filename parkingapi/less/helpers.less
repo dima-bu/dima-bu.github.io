@@ -1,0 +1,296 @@
+
+.row-wrapper {
+  //display: table-row;
+
+  &.-time-select {
+    margin-top: 5px;
+  }
+}
+
+.cell-wrapper {
+  display: table-cell;
+  
+  &.-full {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  &.-narrow {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  &.-top {
+    vertical-align: top;
+  }
+
+  &.-left-pad {
+    padding-left: 10px;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: @green-main;
+  color:  rgba(255, 255, 255, 0.9);
+  text-align: center;
+  display: inline-block;
+
+  &.-sm {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    .nano-bold();
+
+    &.-border {
+      border: 2px solid #668E18;
+      width: 20px;
+      height: 20px;
+      line-height: 17px;
+    }
+  }
+
+  &.-md {
+
+    .milli-bold();
+    &.-border {
+      border: 2px solid #668E18;
+      width: 26px;
+      height: 26px;
+      line-height: 24px;
+    }
+  }
+
+  &.-sm-md {
+    .milli-bold;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+
+    &.-svg-inside {
+      line-height: 16px;
+    }
+  }
+
+  &.-bright {
+    background-color: @brand-primary;
+
+    &.-border {
+      border: 2px solid #CA8015;
+    }
+  }
+
+  &.-def {
+    background-color: @gray-main;
+  }
+
+  &.-light {
+    background-color: #ffffff;
+  }
+
+  &.-dark-light {
+    background-color: #e8e8e2;
+    box-shadow:  0px 1px 0px 0px #ffffff;
+  }
+  
+  .circle-icon {
+    vertical-align: middle;
+  }
+
+}
+
+.g-pointer {
+  cursor: pointer;
+}
+
+.regnum {
+  color: @gray-main;
+  .deci-bold();
+  line-height: 1;
+  border: 1px solid @gray-main_30;
+  display: inline-block;
+  background-color:  #ffffff;
+  border-radius: 4px;
+  padding: 4px 10px 6px 10px;
+}
+
+.regnum_letter {
+  .centi-bold();
+}
+
+.tag-list {
+  font-size: 0;
+
+  .tag_item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.tag_item-close {
+  display: inline-block;
+  padding: 3px 5px;
+  height: 17px;
+  line-height: 10px;
+
+  &:hover {
+    .close-icon {
+      fill: @gray-main;
+    }
+  }
+}
+
+.tag_item {
+  border-radius: 4px;
+  padding: 3px 5px;
+  background-color: @gray-main_75;
+  color:  #fbfdff;
+  display: inline-block;
+  line-height: 14px;
+  font-size: 12px;
+
+  &.-with-capital {
+    padding: 2px 6px 4px 5px;
+  }
+
+  .close-icon {
+    fill: #fbfdff;
+  }
+}
+
+.tag_item-title {
+  .micro-bold;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.tag_item-price {
+  .micro-bold;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.g-crop {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.g-uppercase {
+  text-transform: uppercase;
+}
+
+
+@from-color: rgba(255, 255, 255, 0.9);
+@to-color: #f8f8bf;
+
+@-moz-keyframes flicker {
+  0% {background-color: @from-color;}
+  50% {background-color: @to-color;}
+  100% {background-color: @from-color;}
+}
+
+@-webkit-keyframes flicker {
+  0% {background-color: @from-color;}
+  50% {background-color: @to-color;}
+  100% {background-color: @from-color;}
+}
+
+@-ms-keyframes flicker {
+  0% {background-color: @from-color;}
+  50% {background-color: @to-color;}
+  100% {background-color: @from-color;}
+}
+
+.flicrer {
+  animation: flicker 1s linear 3;
+}
+.address-pin_wrapper {
+  position: relative;
+  .circle {
+    position: relative;
+    z-index: 1;
+  }
+
+}
+
+.address-pin {
+  border-radius: 0 13px 13px 0 ;
+  background: @gray-bg-entire;
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.15);
+  .centi-bold();
+  color: @gray-main_75;
+  text-shadow: 0px 1px 0px #ffffff;
+  padding: 0 12px 0 22px;
+  height: 26px;
+  line-height: 26px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.map-pin_wrapper {
+  width: 40px;
+  height: 44px;
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-pin_wrapper.-car-free .map-pin {
+  fill: #8fbd21;
+  stroke: #c3fc3c;
+  stroke-width: 2px;
+}
+.map-pin_wrapper.-car-assigned .map-pin {
+  fill: #d1c025;
+  stroke: #ffef5b;
+  stroke-width: 2px;
+}
+.map-pin_wrapper.-car-waiting .map-pin {
+  fill: #2bd1f2;
+  stroke: #aff2ff;
+  stroke-width: 2px;
+}
+.map-pin_wrapper.-car-in-work .map-pin {
+  fill: #ffb913;
+  stroke: #ffeab9;
+  stroke-width: 2px;
+}
+.map-pin_wrapper.-car-from-wheels .map-pin {
+  fill: #606c6e;
+  stroke: rgba(96, 108, 110, 0.5);
+  stroke-width: 2px;
+}
+.map-pin {
+  position: absolute;
+  left: 0;
+}
+.map-pin_icon {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 7px;
+  fill: #ffffff;
+  left: 9px;
+  top: 8px;
+}
+
+.map-pin-md {
+  width: 33px;
+  height: 40px;
+}
+
+.car-xmd {
+  width: 16px;
+  height: 16px;
+}

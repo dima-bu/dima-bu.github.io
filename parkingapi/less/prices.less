@@ -1,0 +1,125 @@
+@zindex-rub: 1;
+@zindex-rub-span:-1;
+@price-main_color: @brand-primary;
+
+.price {
+  font-family: @font-family-black;
+  color: @price-main_color;
+
+  .rub {
+    font-family: @font-family-light;
+    position: relative;
+    z-index: @zindex-rub;
+    display: inline-block;
+
+    &::after {
+      content: "_";
+      position: absolute;
+      z-index: @zindex-rub-span;
+      display: block;
+    }
+  }
+
+
+
+  &.-mega {
+    .mega-bold;
+    line-height: 20px;
+    height: 20px;
+
+    .rub {
+      margin-left: 5px;
+      &::after {
+        bottom: 6px;
+        right: 5px;
+      }
+    }
+  }
+
+//  &.-main {
+//    color:@price-main_color;
+//    text-shadow: 0 1px 0 #ffffff;
+//  }
+//
+//  &.-bonus {
+//    color: @green-main-ver2;
+//    text-shadow: 0 1px 0 #ffffff;
+//  }
+//
+//  &.-cash {
+//    color: @price-cash_color;
+//    text-shadow: 0 1px 0 #ffffff;
+//  }
+//
+//  &.-cashless {
+//    color: @price-cashless_color;
+//    text-shadow: 0 1px 0 #ffffff;
+//  }
+//
+//  &.-cash-in {
+//    color: @price-in_color;
+//    text-shadow: 0 1px 0 #ffffff;
+//  }
+//
+//  &.-alarm {
+//    color: @price-alarm_color;
+//    text-shadow: 0 1px 0 #ffffff;
+//  }
+}
+
+/**/
+
+.price-label {
+  text-shadow: 0 1px 0 #ffffff;
+
+  &.-md {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+
+}
+
+
+/*price-list*/
+//
+//.price-list {
+//  .clear-list;
+//  display: table-row;
+//
+//  li {
+//    display: table-cell;
+//    border-right: 1px solid rgba(0, 0, 0, 0.05);
+//    border-left: 1px solid #ffffff;
+//    line-height: 3rem;
+//    height: 3rem;
+//    vertical-align: middle;
+//    padding: 0 0.8rem;
+//
+//    &:first-child {
+//      border-left: none;
+//      padding-left: 0;
+//    }
+//
+//    &:last-child {
+//      border-right: none;
+//      padding-right: 0;
+//    }
+//
+//    .price.-lg {
+//      line-height: 3rem;
+//      height: 3rem;
+//    }
+//
+//    .price-label.-md {
+//      margin-right: 1.0rem;
+//      line-height: 1.5rem;
+//    }
+//
+//    .price.-md {
+//      line-height: 1.5rem;
+//      height: 1.5rem;
+//    }
+//
+//  }
+//
+//}

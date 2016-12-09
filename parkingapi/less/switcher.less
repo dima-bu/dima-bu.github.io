@@ -1,0 +1,57 @@
+
+.switcher {
+  position: relative;
+  width: 30px;
+  height: 16px;
+}
+
+.switcher-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+
+input.switcher-toggle + label {
+  width: 30px;
+  height: 16px;
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input.switcher-toggle + label:before,
+input.switcher-toggle + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+
+input.switcher-toggle + label:before {
+  right: 1px;
+  background-color: @gray-main_75;
+  border-radius: 8px;
+  transition: background 0.4s;
+  margin-left: -1px;
+  //  width: 3.8rem;
+}
+
+input.switcher-toggle + label:after {
+  width:  12px;
+  height: 12px;
+  margin-top: 1px;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: margin 0.4s;
+  //  margin-left: 2rem;
+}
+
+input.switcher-toggle:checked + label:before {
+  background-color: @brand-primary;
+}
+
+input.switcher-toggle:checked + label:after {
+  margin-left: 15px;
+}

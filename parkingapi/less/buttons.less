@@ -1,0 +1,62 @@
+.s-button {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 18px;
+  position: relative;
+  letter-spacing: -0.6px;
+  font-family: @font-family-bold;
+  border: 0 none;
+  outline: 0 none;
+  
+  
+  &:hover,&:focus, &:active {
+    border: 0 none;
+    outline: 0 none;
+  }
+  
+  &.-bg-normal {
+    //background-color: @brand-primary;
+    color:  rgba(255, 255, 255, 0.9);
+    box-shadow: @shadow-bevel-bottom, @shadow-bevel-top-btn, @shadow-main;
+    &:hover {
+      //background-color: @brand-primary-light;
+    }
+
+  }
+  
+  &.-size-md {
+    height: 50px;
+    line-height: 50px;
+    border-radius: 2px;
+    font-size: 18px;
+    //letter-spacing: -0.6px;
+  }
+
+  &.-size-sm {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    font-size: 16px;
+    box-shadow: @shadow-bevel-bottom, @shadow-bevel-top-btn, @shadow-main_sm;
+    //letter-spacing: -0.6px;
+  }
+  
+  &.-width-full {
+    width: 100%;
+    text-align: center;
+  }
+
+  &.-width-sm {
+    width: 140px;
+    text-align: center;
+  }
+
+}
+
+.button-list {
+  font-size: 0;
+  
+  button {
+    margin-left: 10px;
+  }
+}
