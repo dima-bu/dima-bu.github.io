@@ -157,7 +157,13 @@
 	    },
 	    componentWillMount: function componentWillMount() {
 
-	        _data2.default.getData(20, 4000).then(function (resp) {
+	        //data.getData(20, 4000).then((resp)=>{
+	        //    debugger;
+	        //});
+
+	        $.ajax({
+	            url: "http://parkingapi.gear.host/v1/parking"
+	        }).done(function (resp) {
 	            debugger;
 	        });
 

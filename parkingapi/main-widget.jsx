@@ -34,7 +34,14 @@ var MainWidget = React.createClass({
 
         data.getData(20, 4000).then((resp)=>{
             debugger;
-        })
+        });
+
+        //$.ajax({
+        //    url: "http://parkingapi.gear.host/v1/parking"
+        //}).done(function(resp) {
+        //    debugger;
+        //
+        //});
 
         //var keys = window.location.search
         //    .substring(1)
