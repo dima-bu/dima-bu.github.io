@@ -4952,6 +4952,15 @@ img.logo-round {
   }
 }
 /*SMALL and EXTRA SMALL -- sm and xs -- END*/
+.link-md {
+  font-size: 20px;
+}
+.link-md.-white {
+  color: #fff;
+}
+.link-md.-white:hover {
+  color: #fff;
+}
 /*Buttons*/
 .simple-btn {
   height: 40px;
@@ -5134,6 +5143,31 @@ img.logo-round {
 }
 .buttons-center button {
   margin: 0 10px;
+}
+.greate-btn {
+  display: block;
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+.greate-btn.-blue {
+  background-color: #2a6496;
+  box-shadow: inset 0px -3px 3px 0px #2574a9;
+}
+.greate-btn.-blue:hover {
+  color: #fff;
+}
+.greate-btn.-yellow {
+  background-color: #f7cf2f;
+  box-shadow: inset 0px -3px 3px 0px #e0b612;
+  color: #333333;
+}
+.greate-btn.-yellow:hover {
+  color: inherit;
 }
 .pop-up_wrapper {
   width: auto;

@@ -1,3 +1,28 @@
+function addFav(e) {
+    debugger;
+    var isWebkit, isMac;
+    var UA = navigator.userAgent.toLowerCase();
+    var title = document.title;
+    var url = document.location;
+    var isMac = UA.indexOf('mac') != -1;
+    var isWebkit = UA.indexOf('webkit') != -1;
+
+    // Webkit (Chrome, Opera), Mac
+    if (isMac || isWebkit) {
+        document.getElementById('fav').innerHTML = 'Нажмите "' + (isMac ? 'Command/Cmd' : 'Ctrl') + ' + D" для добавления страницы в закладки';
+        return false;
+    }
+
+    // IE
+    if (window.external) {
+        window.external.AddFavorite(url, title);
+        return false;
+    }
+
+    e.preventDefault();
+
+}
+
 $(document).ready(function () {
 
 
@@ -69,6 +94,8 @@ $(document).ready(function () {
             $(this).val(firstval);
         }
     });
+
+
 
     $('.js-plus-count').on('click', function () {
         var $input = $(this).parents('.plus-minus').find('.g_input');

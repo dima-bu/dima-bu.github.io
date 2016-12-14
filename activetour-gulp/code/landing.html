@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Landing</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="http://mikluho.travel/assets/application-0980c43e2db18ba8be10a27a76bf3e514ff18bcb944f2150187cc4bc9efea78e.css" rel="stylesheet">
     <link href="css/sprite.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery.nouislider.css" rel="stylesheet">
+    <!--link(href='css/bootstrap.min.css', rel='stylesheet')-->
+    <!--link(href='css/jquery.nouislider.css', rel='stylesheet')-->
   </head>
   <body>
     <div class="main-wrapper">
@@ -16,14 +17,19 @@
           <nav class="landing-menu hidden-sm hidden-xs">
             <ul>
               <li><a id="to-about-tour">О ТУРЕ</a></li>
-              <li><a id="to-days">ОПИСАНИЕ ПО ДНЯМ</a></li>
-              <li><a id="to-includes">ЧТО ВКЛЮЧЕНО</a></li>
+              <li><a id="to-days">ОПИСАНИЕ</a></li>
+              <li><a id="to-includes">СТОИМОСТЬ</a></li>
               <li><a id="to-photo">ФОТОГРАФИИ</a></li>
               <li><a id="to-reviews">ОТЗЫВЫ</a></li>
+              <!--li
+              span
+                img(src="img/pdf.png" height="33px" width="33px")
+              a#to-reviews FAQ
+              -->
             </ul>
           </nav>
-          <button class="to-reserve flr simple-btn -yellow">Забронировать</button>
-          <button class="flr transparent-btn -md -white">Заказать звонок</button>
+          <!--button.to-reserve.flr.simple-btn.-yellow Забронировать-->
+          <button class="flr simple-btn transparent-btn -md -white">Заказать звонок</button><a href="tel:+79136740532" style="display: inline-block; margin: 5px 10px; font-size: 20px;" class="flr footer-menu-item">+7-913-674-05-32</a>
           <div class="flr counter-wrapper">
             <div class="counter-item"><i class="counter">12</i>
               <div class="subtitle">ДНЕЙ</div>
@@ -41,47 +47,22 @@
       <div class="main-content">
         <div class="main-inne_fixed landing-content">
           <section style="background-image: url(files/bg-landing-title.jpg)" class="landing-bg-section">
-            <div class="container">
-              <h1 class="landing-title hit2-icon"><span>Треккинг к базовому лагерю Аннапурны-1</span></h1>
-              <div class="general-descr">
-                <h2>Потрясающие виды ждут вас!</h2>
-                <div class="row">
-                  <div class="col-md-2 col-sm-2 col-xs-4">
-                    <div class="round-bg -yellow -lg -with-icon"><i class=" icon hikking-md "></i></div>
-                    <div class="round-item-label">Формат тура</div>
-                    <div class="round-item-value">Треккинг</div>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-xs-4">
-                    <div class="round-bg -yellow -lg -with-icon"><i class=" icon host-md "></i></div>
-                    <div class="round-item-label">Проживание</div>
-                    <div class="round-item-value">Отели и гестхаусы</div>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-xs-4">
-                    <div class="round-bg -yellow -lg -with-icon"><i class=" icon eat-md "></i></div>
-                    <div class="round-item-label">Питание</div>
-                    <div class="round-item-value">Местные кафе</div>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-xs-4">
-                    <div class="round-bg -yellow -lg -with-icon"><i class=" icon transport-md "></i></div>
-                    <div class="round-item-label">Транспорт</div>
-                    <div class="round-item-value">Самолет и авто</div>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-xs-4">
-                    <div class="round-bg -yellow -lg -with-icon"><i class=" icon guide-md "></i></div>
-                    <div class="round-item-label">Сопровождение</div>
-                    <div class="round-item-value">Опытный гид</div>
-                  </div>
-                  <div class="col-md-2 col-sm-2 col-xs-4">
-                    <div class="round-bg -yellow -lg -with-icon"><i class=" icon safety-md "></i></div>
-                    <div class="round-item-label">Безопасность</div>
-                    <div class="round-item-value">Надежная страховка</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h1 class="landing-title hit2-icon"><span>Треккинг к базовому лагерю Аннапурны-1</span></h1>
+            <h2 class="landing-subtitle -bottom">При полной оплате тура до 31 декабря 2016 года мы дарим Тебе путешествие по Алтаю (поход к подножию Белухи или поход по Мультинским озёрам) летом 2017 года абсолютно БЕСПЛАТНО! Тебя ждут одни из самых незабываемых путешествий в жизни! Звони или оставляй заявку прямо сейчас!</h2>
+            <!---->
+            <!--.general-descr-->
+            <!--  h2 Потрясающие виды ждут вас!-->
+            <!---->
+            <!--  .row-->
+            <!--    each item in items-->
+            <!--      .col-md-2.col-sm-2.col-xs-4-->
+            <!--        .round-bg.-yellow.-lg.-with-icon-->
+            <!--          i(class=" icon #{item.icon} ")-->
+            <!--        .round-item-label #{item.name}-->
+            <!--        .round-item-value #{item.descr}-->
           </section>
           <section class="landing-section where-when-section">
-            <div class="container">
+            <div class="container"><a style="display:block" class="greate-btn -blue">УЗНАТЬ КАК ОПЛАТИТЬ ТУР СЕЙЧАС</a>
               <h2>ГДЕ И КОГДА</h2>
               <div class="cells num-4 -yellow -type">
                 <div class="cell">
@@ -149,6 +130,15 @@
               </div>
             </div>
           </section>
+          <section style="margin-bottom: -45px">
+            <section class="landing-price landing-section">
+              <div class="container">
+                <h2>Стоимость тура от 42 000 руб.</h2>
+                <button class="to-reserve simple-btn -yellow -lg"><i class="icon rukzak"></i> Забронировать тур</button>
+                <div style="padding-top: 10px;"><a id="fav" class="link-md -white" href="" rel="sidebar"" onclick="addFav();return false;">Еще не определились? Хотите подумать? Добавьте нашу страницу в избранное!</a></div>
+              </div>
+            </section>
+          </section>
           <section style="background-image: url(files/main-descr-1.jpg)" class="landing-main-description landing-bg-section">
             <div class="container">
               <h2 class="subtitle">Вас ждет</h2>
@@ -195,6 +185,7 @@
                 <div class="ta-c">Участие в туре дает право на приобретение одежды и снаряжения с 20%, скидкой в нашем экипировочном центре на Первомайской.</div>
               </div>
             </div>
+            <div class="container"><a style="display:block" class="greate-btn -yellow">ОСТАВИТЬ ЗАЯВКУ НА КОНСУЛЬТАЦИЮ</a></div>
           </section>
           <section id="days-section" class="landing-section">
             <div class="container">
@@ -241,6 +232,7 @@
             <div class="container">
               <h2>Стоимость тура от 42 000 руб.</h2>
               <button class="to-reserve simple-btn -yellow -lg"><i class="icon rukzak"></i> Забронировать тур</button>
+              <div style="padding-top: 10px;"><a id="fav" class="link-md -white" href="" rel="sidebar"" onclick="addFav();return false;">Еще не определились? Хотите подумать? Добавьте нашу страницу в избранное!</a></div>
             </div>
           </section>
           <section id="includes" class="landing-section enter-section">

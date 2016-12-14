@@ -3,6 +3,7 @@ node_modules
 hive/node_modules
 */node_modules
 hive/node_modules
+coupon/node_modules
 .sass-cache
 lendveri/vendor
 parkingapi/node_modules

@@ -88,4 +88,4 @@ gulp.task('watch', function(){
     gulp.watch(['forsprites/*.**', 'forsprites/**/*.**'], ['sprite'])
 });
 
-gulp.task('default', [ 'jade', 'watch']);
+gulp.task('default', [ 'jade', 'less', 'watch']);

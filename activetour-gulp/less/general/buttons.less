@@ -194,3 +194,35 @@
     margin: 0 10px;
   }
 }
+
+.greate-btn {
+  display:block;
+  font-size: 32px;
+  border-radius: 10px;
+  padding: 10px 10px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+
+  &.-blue {
+    background-color: @main-blue;
+    box-shadow: inset 0px -3px 3px 0px @dark-blue;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &.-yellow {
+    background-color: @yellow;
+    box-shadow: inset 0px -3px 3px 0px @yellow-dark;
+    color: #333333;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+
+}
