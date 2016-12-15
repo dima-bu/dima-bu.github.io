@@ -2473,6 +2473,15 @@ footer {
 .landing-bg-section.-full-height {
   height: calc(100vh - 100px);
 }
+.header-phone {
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin: 0px 10px;
+  font-size: 20px;
+  line-height: 16px;
+  margin-top: 7px;
+}
 /****************/
 /** RESPONSIVE **/
 /****************/
@@ -3524,7 +3533,7 @@ footer {
   background-color: #67809f;
   text-align: center;
   padding: 35px 0;
-  margin-bottom: 45px;
+  margin-bottom: 0 !important;
 }
 .landing-price h2 {
   text-transform: uppercase;
@@ -3763,6 +3772,20 @@ ul.photolist li img {
 .mans-wrapper i {
   width: 32px !important;
   cursor: pointer;
+}
+.landing-favorites {
+  padding: 10px 0;
+  background-color: #f7cf2f;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.landing-payment {
+  padding: 30px 0;
+  background-color: #f7cf2f;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -20px;
 }
 /****************/
 /** RESPONSIVE **/
@@ -5072,6 +5095,10 @@ img.logo-round {
   border-radius: 26px;
   cursor: pointer;
 }
+.transparent-btn .icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
 .transparent-btn.-md {
   height: 38px;
   line-height: 36px;
@@ -5121,6 +5148,13 @@ img.logo-round {
 .transparent-btn.-yellow i {
   vertical-align: top;
   margin-right: 8px;
+}
+.transparent-btn.-gray {
+  border-color: #333333;
+  color: #333333;
+}
+.transparent-btn.-gray:hover {
+  border-color: #333333;
 }
 .transparent-btn.-more-sqr {
   border-radius: 5px;

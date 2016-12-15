@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     jade = require('gulp-jade'),
     data = require('gulp-data'),
+    pug = require('gulp-pug'),
     fs = require('fs'),
     watch = require('gulp-watch'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -62,7 +63,7 @@ gulp.task('autoprefixer', function(){
 
 
 gulp.task('jade', function() {
-
+    console.log('gfg');
     gulp.src('./jade/*.jade')
         .pipe(jade({
             pretty: true,
@@ -88,4 +89,4 @@ gulp.task('watch', function(){
     gulp.watch(['forsprites/*.**', 'forsprites/**/*.**'], ['sprite'])
 });
 
-gulp.task('default', [ 'jade', 'less', 'watch']);
+gulp.task('default', ['jade', 'less', 'watch']);
