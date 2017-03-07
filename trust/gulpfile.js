@@ -12,16 +12,13 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./css'));
 });
 
-
 gulp.task('import', function () {
   gulp.src('./index.html')
     .pipe(htmlImport('./components/'))
     .pipe(gulp.dest('build'));
 })
 
-
 gulp.task('cimport', function () {
-  // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
   gulp.watch('./components/*.html', function () {
     gulp.src('./index.html')
       .pipe(htmlImport('./components/'))
@@ -34,10 +31,7 @@ gulp.task('cimport', function () {
   });
 });
 
-
-
 gulp.task('cless', function () {
-  // Callback mode, useful if any plugin in the pipeline depends on the `end`/`flush` event
   return watch('./less/*.less', function () {
     return gulp.src('./less/**/style.less')
       .pipe(less({
