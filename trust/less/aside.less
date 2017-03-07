@@ -1,0 +1,33 @@
+@import "variables.less";
+
+.aside-section {
+  border-bottom: 1px solid @grey-lightest;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.avatar-section {
+  text-align: center;
+
+  .avatar {
+    margin-top: -50%;
+    display: inline-block;
+
+    @media (max-width: 767px) {
+      margin-top: 20px;
+      width: 70%;
+    }
+
+    margin-bottom: 30px;
+  }
+}
+
+.avatar {
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  font-size: 0;
+  line-height: 0;
+  img {
+    border-radius: 6px;
+  }
+}

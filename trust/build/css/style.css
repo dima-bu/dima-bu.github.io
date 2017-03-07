@@ -1232,14 +1232,14 @@ p.lg {
 .ti-button.-normal:active {
   background-color: #28619b;
 }
-.ti-button.-submit {
+.ti-button.-request {
   background-color: #4caf50;
   color: #ffffff;
 }
-.ti-button.-submit:hover {
+.ti-button.-request:hover {
   background-color: #55b559;
 }
-.ti-button.-submit:active {
+.ti-button.-request:active {
   background-color: #47a44b;
 }
 .add-photo {
@@ -1301,36 +1301,8 @@ p.lg {
   font-size: 18px;
   color: #2b69a7;
 }
-.aside-section {
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-}
 .g-round {
   border-radius: 50%;
-}
-.avatar-section {
-  text-align: center;
-}
-.avatar-section .avatar {
-  margin-top: -50%;
-  display: inline-block;
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .avatar-section .avatar {
-    margin-top: 20px;
-    width: 70%;
-  }
-}
-.avatar {
-  border: 4px solid #ffffff;
-  border-radius: 10px;
-  font-size: 0;
-  line-height: 0;
-}
-.avatar img {
-  border-radius: 6px;
 }
 .img-fluid {
   max-width: 100%;
@@ -1365,6 +1337,34 @@ p.lg {
   position: absolute;
   right: 15px;
   bottom: 15px;
+}
+.aside-section {
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.avatar-section {
+  text-align: center;
+}
+.avatar-section .avatar {
+  margin-top: -50%;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .avatar-section .avatar {
+    margin-top: 20px;
+    width: 70%;
+  }
+}
+.avatar {
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  font-size: 0;
+  line-height: 0;
+}
+.avatar img {
+  border-radius: 6px;
 }
 .ti-card {
   border-radius: 4px;
@@ -1434,6 +1434,7 @@ p.lg {
 }
 .info-logo .info-logo_img {
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 .info-logo_img {
   opacity: 0.5;
