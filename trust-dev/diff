@@ -1,0 +1,30 @@
+
+---- <i class="fa fa-plus-circle" aria-hidden="true"></i>
+
+++++ <i class="fa fa-plus" aria-hidden="true"></i>
+
+
+----
+<div class="done-button">
+	<a onclick="javascript:submit_picture_bio();" class="btn btn-link">Done <i class="fa fa-check" aria-hidden="true"></i></a>
+</div>
+
+++++
+<div class="done-button">
+	<a onclick="javascript:submit_picture_bio();" class="ti-btn ti-btn-primary">Done </a>
+</div>
+
+
+//only for bottom div.ti-step-indicator (which after form)!!!
+---- <div class="ti-step-indicator">
+++++ <div class="ti-step-indicator -bottom">
+
+----
+<div class="paddingtop-10 paddingbottom-10">
+	<h5 class="font-bold text-center">What is your background?</h5>
+</div>
+
+++++
+<div>
+	<h5 class="font-bold text-center">What is your background?</h5>
+</div>
