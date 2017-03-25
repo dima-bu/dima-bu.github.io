@@ -2478,6 +2478,7 @@ select.ti-checkout-control {
 }
 
 .text-wizard-error {
+	top: 40px;
 	border: 0;
 	text-align: left;
 	font-size: 0.9em;
@@ -2485,19 +2486,6 @@ select.ti-checkout-control {
 	display: none;
 	padding-left: 3px;
 }
-
-.ti-wizard-step .form-group {
-    position: relative;
-}
-
-.ti-wizard-step .text-wizard-error {
-    position: absolute;
-    bottom: -20px;
-}
-
-/*.ti-wizard-step .form-group {*/
-    /*position: relative;*/
-/*}*/
 
 .ti-input-error {
 	border-bottom-color: #da3664!important;

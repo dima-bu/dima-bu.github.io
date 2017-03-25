@@ -94,7 +94,7 @@ label.ti-form-control:hover {
 	position: absolute;
 	right: 6px;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -13px;
 }
 
 .ti-signup-form
@@ -109,14 +109,6 @@ label.ti-form-control:hover {
 .ti-step-indicator {
 	text-align: center;
 	position: relative;
-	/*height: 34px;*/
-	/*line-height: 34px;*/
-}
-
-.ti-signup-form
-.ti-step-indicator.-bottom {
-	height: 34px;
-	line-height: 34px;
 }
 
 .ti-signup-form
@@ -168,12 +160,6 @@ label.ti-form-control:hover {
 }
 
 .ti-signup-form
-.ti-step-indicator .skip-button {
-	top: -5px;
-}
-
-
-.ti-signup-form
 .ti-user-avatar-label {
 	width: 100%;
 	display: block;
@@ -212,15 +198,9 @@ label.ti-form-control:hover {
 .ti-user-avatar i {
 	position: absolute;
 	right: 7px;
-	bottom: 9px;
-	color: #ffffff;
-	font-size: 1.3em;
-	background-color: #265396;
-	height: 24px;
-	width: 24px;
-	text-align: center;
-	line-height: 26px;
-	border-radius: 50%;
+	bottom: 7px;
+	color: #265396;
+	font-size: 2em;
 }
 
 .ti-signup-form
@@ -325,15 +305,15 @@ label.ti-form-control:hover {
 }
 
 .ti-texonomy li span {
-	padding: 10px 15px;
-	height: 38px;
+	padding: 6px 15px;
+	height: 40px;
 	display: block;
 	position: relative;
 }
 
 .ti-texonomy li label {
 	margin: 0;
-	padding: 10px 15px;
+	padding: 6px 15px;
 	height: 40px;
 	display: block;
 	position: relative;
@@ -343,7 +323,7 @@ label.ti-form-control:hover {
 	position: absolute;
 	right: 6px;
 	top: 50%;
-	margin-top: -8px;
+	margin-top: -13px;
 }
 
 .ti-texonomy li span .icon svg {
