@@ -1,0 +1,435 @@
+.loading-spinner {
+	position: fixed;
+	text-align: center;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+}
+
+.loading-spinner:before {
+	content: '';
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	opacity: 0.6;
+}
+
+.loading-spinner > img {
+	width: 25px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+}
+
+.ti-signup-form {
+	width: auto;
+	max-width: inherit;
+	position: relative;
+}
+
+.ti-signup-form
+.ti-form-control {
+	font-size: 14px;
+	font-weight: normal;
+	width: 100%;
+	height: 40px;
+	padding: 6px 15px;
+	border: 1px solid #c7c7c7;
+	border-radius: 0px;
+	background-color: #fff;
+	display: block;
+	position: relative;
+	background-image: none;
+}
+
+.ti-signup-form
+select.ti-form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAvxJREFUeJzt3E2ID3Ecx/G3xw152oM8JQ+Rh5DDlptyECfl6OAiOXo4iYOLkps4Ui5byMFDe6AUkQMupEhKREJ5WLLlYZfDcFHs/uc/8/vOzP/9qs91Z+bzmXbb+c8uSJIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZKkTrMYOAf0Az/Nf/MROAssytV0BS0D3hNfbN3yDliSo+/K6SO+zLrmYo6+WzKq7AMAA8CEBMdpogFgUpkHGF3mF/9tMMExmupH2QdIcQP0JThGUzWiu9nAC+J/ntYtz4FZOfqupJX4K2Ar+QisyNV0hW0AvhNfbtXzDVifs+PK2058wVXPttzt1sQh4kuuag620Wut9BJfdtVyqq1Ga2Y8cJ340quSq8C4dgqto+nAI+LLj84DYGqbXdbWAuAN8SNE5RUwr+0Wa64H+EL8GKnzGVhTQH+NsJnsM4PoUVLlB7CpkOYaZBfxw6TKzoI6a5yjxI9Tdo4U1lYDjQbOEz9SWTlDmncwam0CcJv4sYrOTaCrwJ4abQbwlPjRispjoLvQhjrAUprxMulbYGHB3XSMdcBX4kfMmwFgbeGtdJitwBDxY7aaQWBLCX10pAPED9pq9pTSRAc7SfyoI82xkjroaGOBK8SPO1wukOZt6440BbhP/Mj/yh1gYmlXLwDmAi+JH/vvPCV7fqEEVgOfiB/9T96TPbdQQhupxmvmX8meVyjADmLHHyJ7TqFAh4m7AfYnuD4NYxRwmvTjn0hxcRqZLuAG6ca/TPZcQhXSTfaxa9nj3wMmJ7omtWgR2cevZY3/ApiT7GqUy1qyj2GLHr8fWJXwOtSGLRT7mvl3sj9vV43spbgbYHvic1dBjtP++IeSn7UKMwa4RP7xe9Ofsoo2EbhL6+NfI/szdjXATOAZIx//ITAt4kRVnuXAB4Yf/zUwP+YUVbYe/v8yyROyG0UNNgXYR/b6Vj/Zd4VbwG78n8aSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJCnQL74K1b7KD2ipAAAAAElFTkSuQmCC');
+	background-position: calc(100% - 10px) center;
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+}
+
+.ti-signup-form
+textarea.ti-form-control {
+	height: auto;
+}
+
+.ti-signup-form
+.ti-form-control:focus {
+	outline: none;
+}
+
+.ti-signup-form
+label.ti-form-control {
+	cursor: pointer;
+	height: auto;
+	padding: 10px 20px 10px 15px;
+}
+
+.ti-signup-form
+label.ti-form-control:hover {
+	background-color: #f4f4f4;
+}
+
+.ti-signup-form
+.ti-form-control
+.icon {
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: -13px;
+}
+
+.ti-signup-form
+.ti-form-control
+.icon svg {
+	fill: #265396;
+	width: 15px;
+	height: 15px;
+}
+
+.ti-signup-form
+.ti-step-indicator {
+	text-align: center;
+	position: relative;
+}
+
+.ti-signup-form
+.ti-step-indicator > span {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 0px 3px;
+	background-color: #ddd;
+}
+
+.ti-signup-form
+.ti-step-indicator > span.active {
+	background-color: #265396;
+}
+
+.ti-signup-form
+.ti-step-indicator .skip-button,
+.ti-signup-form
+.ti-step-indicator .prev-button,
+.ti-signup-form
+.ti-step-indicator .next-button,
+.ti-signup-form
+.ti-step-indicator .done-button {
+	position: absolute;
+	bottom: 0;
+}
+
+.ti-signup-form
+.ti-step-indicator .prev-button {
+	left: 0;
+}
+
+.ti-signup-form
+.ti-step-indicator .skip-button > .btn-link,
+.ti-signup-form
+.ti-step-indicator .prev-button > .btn-link{
+	color: #898989!important;
+}
+
+.ti-signup-form
+.ti-step-indicator .next-button,
+.ti-signup-form
+.ti-step-indicator .skip-button,
+.ti-signup-form
+.ti-step-indicator .done-button {
+	right: 0;
+}
+
+.ti-signup-form
+.ti-user-avatar-label {
+	width: 100%;
+	display: block;
+}
+
+.ti-signup-form
+.ti-user-avatar {
+	position: relative;
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.ti-signup-form
+.ti-user-avatar
+.avatar {
+	position: relative;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	overflow: hidden;
+	text-align: center;
+	background-color: #D4D4D4;
+}
+
+.ti-signup-form
+.ti-user-avatar svg {
+	margin-top: 25px;
+	width: 100%;
+	height: 100%;
+	fill: #aaa;
+}
+
+.ti-signup-form
+.ti-user-avatar i {
+	position: absolute;
+	right: 7px;
+	bottom: 7px;
+	color: #265396;
+	font-size: 2em;
+}
+
+.ti-signup-form
+.ti-form-tag {
+	float: left;
+}
+
+.ti-signup-form
+.ti-form-tag > label {
+	font-size: 14px;
+	font-weight: normal;
+	width: auto;
+	height: 40px;
+	line-height: 25px;
+	padding: 6px 15px;
+	border: 1px solid #c7c7c7;
+	border-radius: 0px;
+	background-color: #fff;
+	display: block;
+	margin-right: 5px;
+	position: relative;
+	background-image: none;
+}
+
+.ti-signup-form
+.ti-form-tag > label:hover {
+	background-color: #f4f4f4;
+}
+
+.ti-signup-form
+.ti-form-tag > input[type="checkbox"]:checked + label {
+	color: #fff;
+	border-color: #265396;
+	background-color: #265396;
+}
+
+.ti-signup-form
+.ti-form-tag-title {
+	display: inline-block;
+	background-color: #000;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	padding: 0px 10px;
+	position: relative;
+	letter-spacing: 1px;
+}
+
+.ti-signup-form
+.ti-form-tag-title:before {
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+
+	border-left: 15px solid #000;
+}
+
+.ti-signup-form
+.ti-form-tag-title.popular {
+	background-color: #0ae3c3;
+}
+
+.ti-signup-form
+.ti-form-tag-title.popular:before {
+	border-left-color: #0ae3c3;
+}
+
+.ti-signup-form
+.ti-form-tag-title.geographies {
+	background-color: #b2e98d;
+}
+
+.ti-signup-form
+.ti-form-tag-title.geographies:before {
+	border-left-color: #b2e98d;
+}
+
+.btn-link:hover {
+	text-decoration: none;
+}
+
+.ti-texonomy,
+.ti-texonomy ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ti-texonomy,
+.ti-texonomy li {
+	margin: 0px;
+	padding: 0px;
+}
+
+.ti-texonomy > li {
+	margin-bottom: 10px;
+}
+
+.ti-texonomy li span {
+	padding: 6px 15px;
+	height: 40px;
+	display: block;
+	position: relative;
+}
+
+.ti-texonomy li label {
+	margin: 0;
+	padding: 6px 15px;
+	height: 40px;
+	display: block;
+	position: relative;
+}
+
+.ti-texonomy li span .icon {
+	position: absolute;
+	right: 6px;
+	top: 50%;
+	margin-top: -13px;
+}
+
+.ti-texonomy li span .icon svg {
+	fill: #265396;
+	width: 15px;
+	height: 15px;
+}
+
+.ti-texonomy > li {
+	border: 1px solid #c7c7c7;
+
+}
+
+.ti-texonomy > li ul {
+	height: 0;
+	overflow: hidden;
+}
+
+.ti-texonomy
+.level-2,
+.ti-texonomy
+.level-3 {
+	height: 0;
+	overflow: hidden;
+}
+
+.ti-texonomy
+.level-3 span {
+	padding: 0;
+}
+
+.ti-texonomy
+.level-3 label {
+	padding: 6px 15px;
+	height: 40px;
+	display: block;
+	position: relative;
+}
+
+.ti-texonomy input[type="radio"]:checked + label {
+	color: #fff;
+	background-color: #265396;
+}
+
+.ti-texonomy
+.level-2 span,
+.ti-texonomy
+.level-2 label {
+	background-color: #e1e1e1;
+}
+
+.ti-texonomy
+.level-2 span:hover,
+.ti-texonomy
+.level-2 label:hover {
+	background-color: #d5d5d5;
+}
+
+.ti-texonomy
+.level-3 span,
+.ti-texonomy
+.level-3 label {
+	background-color: #d2d2d2;
+}
+
+.ti-texonomy
+.level-3 span:hover,
+.ti-texonomy
+.level-3 label:hover {
+	background-color: #c4c4c4;
+}
+
+.icon-open {
+	transform: rotate(90deg);
+	transform-origin: center;
+}
+
+.open {
+	height: auto!important;
+}
+
+.ti-form-block {
+}
+
+.ti-page-title {
+	height: 100%;
+	min-height: 100vh;
+}
+
+.tt-menu
+.tt-suggestion {
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.tt-menu
+.tt-suggestion:hover {
+	color: #fff;
+	background-color: #265396;
+}
+
+@media screen and (max-width: 767px) {
+	.ti-page-title {
+		height: auto;
+	}
+	.ti-signup-form {
+		text-align: left!important;
+	}
+}
