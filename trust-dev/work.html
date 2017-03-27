@@ -1103,7 +1103,10 @@
 									<label for="company">
 										<span>Company</span>
 									</label>
-									<span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="ti-form-control tt-hint" value="DFF" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box padding-box rgb(255, 255, 255);"><input type="text" class="ti-form-control tt-input" value="DFF" name="company" id="company" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: rgba(0, 0, 0, 0);"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &#39;Open Sans&#39;, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-0"></div></div></span>
+									<span class="twitter-typeahead" style="position: relative; display: inline-block;">
+										<input type="text" class="ti-form-control tt-hint" value="" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box padding-box rgb(255, 255, 255);">
+										<input type="text" class="ti-form-control tt-input" value="" name="company" id="company" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: rgba(0, 0, 0, 0);">
+										<pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &#39;Open Sans&#39;, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-0"></div></div></span>
 									<input type="hidden" class="ti-form-control" value="5800" name="firmid" id="id_firmid">
 									<div class="text-wizard-error">Enter your firm name.</div>
 								</div>
@@ -3007,37 +3010,89 @@
 <script type="text/javascript">
 var ajax_firm_typeahead;
 $(document).ready(function() {
-    var firms = new Bloodhound({
-        datumTokenizer: function (datum) {
-            return Bloodhound.tokenizers.whitespace(datum.id);
-        },
-        queryTokenizer: Bloodhound.tokenizers.whitespace,
-        remote: {
-            url: '/autocomplete/firms-id/?q=%QUERY',
-            wildcard: '%QUERY',
-            filter: function (results) {
-                return $.map(results, function (item) {
-                    return {
-                        id: item.id,
-                        firm_name: item.firm_name
-                    };
-                });
-            }
-        }
-    });
 
-    firms.initialize();
+
+	var countries = new Bloodhound({
+		datumTokenizer: function(countries) {
+			return Bloodhound.tokenizers.whitespace(countries);
+		},
+		queryTokenizer: Bloodhound.tokenizers.whitespace,
+		remote: {
+			url: "http://vocab.nic.in/rest.php/country/json",
+			filter: function(response) {
+				return response.countries;
+			}
+		}
+	});
+
+// initialize the bloodhound suggestion engine
+
+//	countries.initialize();
+//	var typeahead = $('#company');
+//// instantiate the typeahead UI
+//	typeahead.typeahead({
+//		hint: true,
+//		highlight: true,
+//		minLength: 1
+//	}, {
+//		name: 'countries',
+//		displayKey: function(countries) {
+//			return countries.country.country_name;
+//		},
+//		source: countries.ttAdapter()
+//	});
+
+//    var firms = new Bloodhound({
+//		local: [
+//			{"id": 10257, "firm_name": "University of Texas Investment Management Company"},
+//			{"id": 10457, "firm_name": "University of Virginia Investment Management Company"},
+//			{"id": 7766, "firm_name": "Stanford Management Company"}, {"id": 10212, "firm_name": "University of Pennsylvania Office of Investments"}, {"id": 14177, "firm_name": "MacArthur Foundation"}, {"id": 7380, "firm_name": "The Kresge Foundation"}, {"id": 7946, "firm_name": "University of Notre Dame Investment Office"}, {"id": 10063, "firm_name": "Cornell University Investment Office"}, {"id": 11523, "firm_name": "Bill & Melinda Gates Foundation"}, {"id": 32196, "firm_name": "Vanderbilt University Office of Investments"}]
+//		datumTokenizer: function (datum) {
+//            return Bloodhound.tokenizers.whitespace(datum.id);
+//        },
+//        queryTokenizer: Bloodhound.tokenizers.whitespace,
+////        remote: {
+////            url: 'https://www-dev.thetrustedinsight.com/autocomplete/firms-id/?q=%QUERY',
+////            wildcard: '%QUERY',
+////            filter: function (results) {
+////                return $.map(results, function (item) {
+////                    return {
+////                        id: item.id,
+////                        firm_name: item.firm_name
+////                    };
+////                });
+////            }
+////        }
+//    });
+//
+//    firms.initialize();
 
     var typeahead = $('#company');
     typeahead.typeahead(null, {
-        displayKey: 'firm_name',
-        limit: 20,
-        source: firms.ttAdapter()
+		displayKey: function(countries) {
+			return countries.country.country_name;
+		},
+        limit: 10,
+        source: countries.ttAdapter()
     });
     var firmSelectedHandler = function (eventObject, suggestionObject, suggestionDataset) {
+		debugger;
         $('#id_firmid').val(suggestionObject.id)
     };
     typeahead.on('typeahead:selected', firmSelectedHandler);
+
+	typeahead.keypress(function (e) {
+		if (e.which == 13) {
+
+			var firstSuggestion = $('.tt-suggestion:first');
+			firstSuggestion.trigger('click');
+			e.preventDefault();
+			e.stopPropagation();
+			return true;
+		}
+	});
+
+
 });
 
 </script>

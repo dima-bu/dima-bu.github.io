@@ -2488,11 +2488,12 @@ select.ti-checkout-control {
 
 .ti-wizard-step .form-group {
     position: relative;
+    margin-bottom: 30px;
 }
 
 .ti-wizard-step .text-wizard-error {
     position: absolute;
-    bottom: -20px;
+    bottom: -22px;
 }
 
 /*.ti-wizard-step .form-group {*/

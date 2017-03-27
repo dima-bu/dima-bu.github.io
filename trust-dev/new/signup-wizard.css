@@ -80,6 +80,8 @@ textarea.ti-form-control {
 .ti-signup-form
 label.ti-form-control {
 	cursor: pointer;
+	margin-bottom: 10px;
+	
 	/*padding: 10px 20px 10px 15px;*/
 }
 
@@ -103,6 +105,10 @@ label.ti-form-control:hover {
 	fill: #265396;
 	width: 15px;
 	height: 15px;
+}
+
+.ti-signup-form_row-sm {
+	margin-bottom: 10px;
 }
 
 .ti-signup-form

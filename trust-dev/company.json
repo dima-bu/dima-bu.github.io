@@ -1,0 +1,82 @@
+[
+  {
+    "id": 11191,
+    "firm_name": "Harvard Management Company"
+  },
+  {
+    "id": 10257,
+    "firm_name": "University of Texas Investment Management Company"
+  },
+  {
+    "id": 10457,
+    "firm_name": "University of Virginia Investment Management Company"
+  },
+  {
+    "id": 7766,
+    "firm_name": "Stanford Management Company"
+  },
+  {
+    "id": 9073,
+    "firm_name": "Emory Investment Management"
+  },
+  {
+    "id": 10385,
+    "firm_name": "MIT Investment Management Company"
+  },
+  {
+    "id": 10212,
+    "firm_name": "University of Pennsylvania Office of Investments"
+  },
+  {
+    "id": 10106,
+    "firm_name": "Washington University Investment Management Company"
+  },
+  {
+    "id": 14485,
+    "firm_name": "Partners Healthcare"
+  },
+  {
+    "id": 7946,
+    "firm_name": "University of Notre Dame Investment Office"
+  },
+    {
+      "id": 11523,
+      "firm_name": "Bill & Melinda Gates Foundation"
+    },
+    {
+      "id": 7685,
+      "firm_name": "Robert Wood Johnson Foundation"
+    },
+    {
+      "id": 21290,
+      "firm_name": "University of Alabama System Investment Management"
+    },
+    {
+      "id": 32196,
+      "firm_name": "Vanderbilt University Office of Investments"
+    },
+    {
+      "id": 6937,
+      "firm_name": "Bowdoin College Investment Office"
+    },
+    {
+      "id": 9311,
+      "firm_name": "Brown University Investment Office"
+    },
+    {
+      "id": 9926,
+      "firm_name": "Berkeley Endowment Management Company"
+    },
+    {
+      "id": 21419,
+      "firm_name": "Hartford Foundation for Public Giving"
+    },
+    {
+      "id": 8088,
+      "firm_name": "Leona M. and Harry B. Helmsley Charitable Trust"
+    },
+    {
+      "id": 9306,
+      "firm_name": "Brandeis University"
+    }
+]
