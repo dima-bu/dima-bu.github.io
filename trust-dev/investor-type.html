@@ -3054,6 +3054,47 @@ $(document).ready(function() {
 			});
 		},
 		_texonomyTag: function(elm) {
+
+			var parentEl = $(elm).parent(); //li
+			var childrenEl; // ul > li
+			var siblings = parentEl.siblings(); // sibling li's and div
+
+			if($(elm).next("ul")) {
+				childrenEl = $(elm).next("ul").children();
+			}
+
+			var isOpenItem = true;
+			var level;
+
+			if ($(elm).find("svg").hasClass('icon-open')) {
+				isOpenItem = false
+			}
+
+			if ($(parentEl).hasClass('level-1')) {
+				level = 1
+			}
+
+			if(childrenEl) {
+				childrenEl.each(function( index ) {
+					$(this).css( "height", "38px" );
+				});
+			}
+
+			if (level !== 1) {
+
+				$(parentEl).css( "height", "auto" );
+				$(parentEl).toggleClass( "active" );
+
+				siblings.each(function() {
+					if(isOpenItem) {
+						$(this).css( "height", "0" );
+					} else {
+						$(this).css( "height", "38px" );
+					}
+					$(this).toggleClass("is-hide");
+				});
+			}
+
 			$(elm).find("svg").toggleClass("icon-open")
 			if($(elm).next("ul")) {
 				$(elm).next("ul").toggleClass("open");

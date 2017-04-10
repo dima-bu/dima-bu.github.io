@@ -319,19 +319,60 @@ label.ti-form-control:hover {
 
 .ti-texonomy,
 .ti-texonomy li {
-	margin: 0px;
+	margin: 10px 0px;
 	padding: 0px;
+}
+
+.ti-texonomy,
+.ti-texonomy li:last-child {
+	margin-bottom: 0;
+}
+
+.ti-texonomy,
+.ti-texonomy li:first-child {
+	margin-top: 0;
 }
 
 .ti-texonomy > li {
 	margin-bottom: 10px;
+	transition: height 0.3s ease-out 0s, margin 0.3s ease-out 0s;
+}
+
+.ti-texonomy li {
+	transition: height 0.3s ease-out 0s, margin 0.3s ease-out 0s;
+}
+
+.ti-texonomy li.active {
+	margin-bottom: 0;
+}
+
+.is-hide {
+	transition: height 2s ease-out 1s;
+	margin: 0 !important;
+	overflow: hidden;
 }
 
 .ti-texonomy li span {
+	padding: 10px 15px 10px 35px;
+	height: 38px;
+	display: block;
+	position: relative;
+	line-height: 16px;
+}
+
+.ti-texonomy > li > ul > li label{
+	/*color: red;*/
 	padding: 10px 15px;
 	height: 38px;
 	display: block;
 	position: relative;
+	/*margin: 10px 0;*/
+	border: 1px solid #c7c7c7;
+	background-color: #FFFFFF!important;
+}
+
+.ti-texonomy > li.level-1 > label {
+	border: 1px solid #c7c7c7;
 }
 
 .ti-texonomy li label {
@@ -340,13 +381,16 @@ label.ti-form-control:hover {
 	height: 40px;
 	display: block;
 	position: relative;
+	line-height: 16px;
 }
 
 .ti-texonomy li span .icon {
 	position: absolute;
-	right: 6px;
+	left: 12px;
 	top: 50%;
 	margin-top: -8px;
+	font-size: 0;
+	line-height: 1;
 }
 
 .ti-texonomy li span .icon svg {
@@ -355,14 +399,14 @@ label.ti-form-control:hover {
 	height: 15px;
 }
 
-.ti-texonomy > li {
+.ti-texonomy > li span {
 	border: 1px solid #c7c7c7;
-
 }
 
 .ti-texonomy > li ul {
 	height: 0;
 	overflow: hidden;
+	padding-left: 20px;
 }
 
 .ti-texonomy
@@ -374,17 +418,39 @@ label.ti-form-control:hover {
 }
 
 .ti-texonomy
+.level-2.open,
+.ti-texonomy
+.level-3.open {
+	border-left: 1px solid #c7c7c7;
+	margin-top: 8px;
+	position: relative;
+}
+
+.ti-texonomy
+.level-2.open:after,
+.ti-texonomy
+.level-3.open:after {
+	 	content: '';
+	 	display: block;
+	 	position : absolute;
+		bottom: 0;
+		left: 0;
+		border-bottom: 1px solid #c7c7c7;
+		width: 10px;
+}
+
+.ti-texonomy
 .level-3 span {
 	padding: 0;
 }
 
-.ti-texonomy
-.level-3 label {
-	padding: 6px 15px;
-	height: 40px;
-	display: block;
-	position: relative;
-}
+/*.ti-texonomy*/
+/*.level-3 label {*/
+	/*padding: 6px 15px;*/
+	/*height: 40px;*/
+	/*display: block;*/
+	/*position: relative;*/
+/*}*/
 
 .ti-texonomy input[type="radio"]:checked + label {
 	color: #fff;
@@ -395,14 +461,15 @@ label.ti-form-control:hover {
 .level-2 span,
 .ti-texonomy
 .level-2 label {
-	background-color: #e1e1e1;
+	/*background-color: #e1e1e1;*/
+	/*margin: 10px 0;*/
 }
 
 .ti-texonomy
 .level-2 span:hover,
 .ti-texonomy
 .level-2 label:hover {
-	background-color: #d5d5d5;
+	/*background-color: #d5d5d5;*/
 }
 
 .ti-texonomy
