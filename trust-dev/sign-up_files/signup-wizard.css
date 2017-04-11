@@ -335,19 +335,20 @@ label.ti-form-control:hover {
 
 .ti-texonomy > li {
 	margin-bottom: 10px;
-	transition: height 0.3s ease-out 0s, margin 0.3s ease-out 0s;
+	transition: height 0.3s ease-out 0s, margin-bottom 0s ease-out 0s;
 }
 
 .ti-texonomy li {
-	transition: height 0.3s ease-out 0s, margin 0.3s ease-out 0s;
+	transition: height 0.3s ease-out 0s, margin-bottom 0s ease-out 0s;
 }
 
 .ti-texonomy li.active {
 	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .is-hide {
-	transition: height 2s ease-out 1s;
+	/*//transition: height 2s ease-out 1s;*/
 	margin: 0 !important;
 	overflow: hidden;
 }
@@ -397,6 +398,7 @@ label.ti-form-control:hover {
 	fill: #265396;
 	width: 15px;
 	height: 15px;
+	transition: transform 0.2s ease-out 0s, transform-origin 0.2s ease-out 0s;
 }
 
 .ti-texonomy > li span {
@@ -489,6 +491,7 @@ label.ti-form-control:hover {
 .icon-open {
 	transform: rotate(90deg);
 	transform-origin: center;
+	transition: transform 0.2s ease-out 0s, transform-origin 0.2s ease-out 0s;
 }
 
 .open {
@@ -498,9 +501,16 @@ label.ti-form-control:hover {
 .ti-form-block {
 }
 
+.ti-signup-form {
+	max-height: calc(100vh - 200px);
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
 .ti-page-title {
 	height: 100%;
 	min-height: 100vh;
+	max-height: 100vh;
 }
 
 .tt-menu
