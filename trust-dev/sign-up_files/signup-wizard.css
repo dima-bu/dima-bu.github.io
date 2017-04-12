@@ -335,11 +335,19 @@ label.ti-form-control:hover {
 
 .ti-texonomy > li {
 	margin-bottom: 10px;
-	transition: height 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	/*transition: height 0.3s ease 0s, margin-bottom 0.3s ease 0s;*/
 }
 
 .ti-texonomy li {
-	transition: height 0.3s ease-out 0s, margin-bottom 0.3s ease-out 0s;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	/*transition: height 0.3s ease 0s, margin-bottom 0.3s ease 0s;*/
 }
 
 .ti-texonomy li.active {
@@ -409,12 +417,20 @@ label.ti-form-control:hover {
 	height: 0;
 	overflow: hidden;
 	padding-left: 20px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .ti-texonomy
 .level-2,
 .ti-texonomy
 .level-3 {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	height: 0;
 	overflow: hidden;
 }
@@ -426,6 +442,7 @@ label.ti-form-control:hover {
 	border-left: 1px solid #c7c7c7;
 	margin-top: 8px;
 	position: relative;
+	height: auto;
 }
 
 .ti-texonomy
@@ -491,7 +508,7 @@ label.ti-form-control:hover {
 .icon-open {
 	transform: rotate(90deg);
 	transform-origin: center;
-	transition: transform 0.2s ease-out 0s, transform-origin 0.2s ease-out 0s;
+	transition: transform 0.2s ease 0s, transform-origin 0.2s ease 0s;
 }
 
 .open {
@@ -532,4 +549,71 @@ label.ti-form-control:hover {
 	.ti-signup-form {
 		text-align: left!important;
 	}
+}
+
+.ti-texonomy_inner {
+	padding: 10px 15px 10px 35px;
+	height: 38px;
+	display: block;
+	position: relative;
+	line-height: 16px;
+	border: 1px solid #c7c7c7;
+	cursor: pointer;
+}
+
+label.ti-texonomy_inner {
+	padding: 10px 15px 10px 15px;
+}
+
+.item-foo {
+	height: 48px;
+	padding: 10px 0;
+}
+
+.item-foo:first-child {
+	height: 38px;
+	padding: 0;
+}
+
+.item-foo.elem-open {
+	height: 38px;
+	padding: 0;
+	/*margin-bottom: 10px;*/
+}
+
+.ti-list_inside {
+	padding-left: 20px;
+	border-left: 1px solid #c7c7c7;
+	position: relative;
+	margin-top: 10px;
+}
+
+.ti-list_inside::after {
+	content: '';
+	display: block;
+	position : absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 1px solid #c7c7c7;
+	width: 10px;
+}
+
+.ti-foo-form {
+	padding: 10px;
+}
+
+.ti-texonomy_inner .icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	margin-top: -8px;
+	font-size: 0;
+	line-height: 1;
+}
+
+.ti-texonomy_inner .icon svg{
+	fill: #265396;
+	width: 15px;
+	height: 15px;
+	transition: transform 0.2s ease-out 0s, transform-origin 0.2s ease-out 0s;
 }
