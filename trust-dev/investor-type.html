@@ -3705,15 +3705,15 @@
 
             if (childrenEl && isOpenItem && level === 1) {
                 childrenEl.each(function () {
-                    $(this).css({
-                        "height": "38px"
-                    });
-                    $(this).addClass("dirty-38");
+                    if (!$(this).hasClass('text-wizard-error')){
+                        $(this).css({
+                            "height": "38px"
+                        });
+                        $(this).addClass("dirty-38");
+                    }
+
                 });
             }
-
-
-            if (level !== 1) {
 
                 $(parentEl).css("height", "auto");
 
@@ -3724,29 +3724,36 @@
                 }
 
                 siblings.each(function () {
-                    if (isOpenItem) {
-                        $(this).fadeOut({duration: 400});
-                        $(this).css({
-                            "height": "0px"
-                        });
-                        $(this).addClass("dirty-zero");
-                        $(this).removeClass("dirty-38");
-                       $(this).addClass("is-hide");
-                    } else {
-                        $(this).fadeIn({duration: 400});
-                        $(this).css({
-                            "height": "38px"
-                        });
-                        $(this).addClass("dirty-38");
-                        $(this).removeClass("dirty-zero");
-                        $(this).removeClass("is-hide");
+                    if (!$(this).hasClass('text-wizard-error')){
+                        if (isOpenItem) {
+                            $(this).fadeOut({duration: 400});
+                            $(this).css({
+                                "height": "0px"
+                            });
+                            $(this).addClass("dirty-zero");
+                            $(this).removeClass("dirty-38");
+                            $(this).addClass("is-hide");
+                        } else {
+                            $(this).fadeIn({duration: 400});
+                            $(this).css({
+                                "height": "38px"
+                            });
+                            $(this).addClass("dirty-38");
+                            $(this).removeClass("dirty-zero");
+                            $(this).removeClass("is-hide");
+                        }
                     }
 
+
+
                 });
+
+            if (level !== 1) {
+
             } else {
-                if(!isOpenItem) {
-                    ClearAll();
-                }
+//                if(!isOpenItem) {
+//                    ClearAll();
+//                }
             }
 
             if(isOpenItem) {
