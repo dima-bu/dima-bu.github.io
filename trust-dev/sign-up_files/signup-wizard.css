@@ -501,16 +501,16 @@ label.ti-form-control:hover {
 .ti-form-block {
 }
 
-.ti-signup-form {
-	max-height: calc(100vh - 200px);
-	overflow-x: auto;
-	overflow-y: scroll;
-}
+/*.ti-signup-form {*/
+	/*max-height: calc(100vh - 200px);*/
+	/*overflow-x: auto;*/
+	/*overflow-y: scroll;*/
+/*}*/
 
 .ti-page-title {
 	height: 100%;
 	min-height: 100vh;
-	max-height: 100vh;
+	/*max-height: 100vh;*/
 }
 
 .tt-menu
