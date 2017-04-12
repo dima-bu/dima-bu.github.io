@@ -4226,14 +4226,14 @@ Endowment</span>
             accordionDescNext.find("svg").removeClass("icon-open");
             $(this).toggleClass("elem-open");
             // скрываем все кроме целевого
-            parentUl.find(".accordion-desc").not(accordionDescNext).slideUp(300);
+            parentUl.find(".accordion-desc").not(accordionDescNext).slideUp(400);
 
             // если клики будут через левел
             parentUl.find('li[data-level="'+nextLevel+'"]').slideDown(300);
             parentUl.find('li[data-level="'+nextNextLevel+'"]').slideDown(300);
 
             // скрываем все li этого же уровня исключая целевой
-            parentUl.find('li[data-level="'+level+'"]').not($(this)).slideToggle(300);
+            parentUl.find('li[data-level="'+level+'"]').not($(this)).slideToggle(400);
 
             // показываем целевой
             accordionDescNext.slideToggle(400);
