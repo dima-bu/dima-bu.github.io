@@ -4222,9 +4222,15 @@ Endowment</span>
             var nextLevel  = 1 + parseInt(level);
             var nextNextLevel  = 2 + parseInt(level);
 
+            // меняем состояние стрелочек
             $(this).find("svg").toggleClass("icon-open");
             accordionDescNext.find("svg").removeClass("icon-open");
+
+            // меняем класс у открытого Li - нужно для отступов
             $(this).toggleClass("elem-open");
+            // убираем у прошлых класс открытия, если он был
+            accordionDescNext.find(".accordion").not($(this)).removeClass("elem-open");
+
             // скрываем все кроме целевого
             parentUl.find(".accordion-desc").not(accordionDescNext).slideUp(400);
 
