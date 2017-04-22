@@ -1258,8 +1258,10 @@ ul.ti-list li:before {
   margin-bottom: 30px;
 }
 
-.ti_sidebar-snippet img {
+.ti_sidebar-snippet .ti_sidebar-snippet_img {
   margin-bottom: 15px;
+  display: block;
+  cursor: pointer;
 }
 
 .ti_sidebar-snippet-link {
