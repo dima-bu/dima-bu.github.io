@@ -43,10 +43,15 @@ a {
   color: #2b69a7;
   text-decoration: none;
 }
+
 a:hover, a:focus {
   outline: none !important;
-  color: #2b69a7;
+  color: #357ec6;
   text-decoration: none !important;
+}
+
+a:active {
+  color: #1c5289;
 }
 
 button:hover, button:focus {
