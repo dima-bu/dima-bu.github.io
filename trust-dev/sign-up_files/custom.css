@@ -1228,10 +1228,14 @@ ul.ti-list li:before {
 }
 
 .ti-news-article > h3 + p {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .ti-news-article > h2 + p {
+  margin-top: 30px;
+}
+
+.ti-news-article > p + h3 {
   margin-top: 30px;
 }
 
