@@ -1272,7 +1272,6 @@ ul.ti-list li:before {
 .ti-artcles-list_header {
   padding: 10px;
   border-bottom: 1px solid #f4f4f4;
-
 }
 
 .ti-artcles-list_header .ti-sidebar-title {
@@ -1308,9 +1307,6 @@ ul.ti-list li:before {
   display: block;
 }
 
-
-
-
 .ti-news-article-heading {
     margin-top: 2px;
 }
@@ -1334,10 +1330,6 @@ ul.ti-list li:before {
     overflow: hidden;
     position: relative;
 }
-
-
-
-
 
 /*
 .ti-streamItem-inner
