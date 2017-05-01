@@ -20,7 +20,6 @@ class LevelOne extends React.Component {
   getView() {
 
     const arr = [];
-    let foo = browserHistory.getCurrentLocation();
     let pathname = browserHistory.getCurrentLocation().hash;
 
     pathname = pathname.substr(1);

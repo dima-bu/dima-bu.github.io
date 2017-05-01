@@ -52,11 +52,10 @@ class HomeView extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.onClickHandler}>EN</button>
           <div >
             <Bubble>
                 <div className={cx('wrapper ', this.state.isHide ? 'isHide' : 'isShow')}>
-                  <p>{tr('HI_ROSBERRY')}</p>
+                  <p>{tr('HI_ROSBERRY', true)}</p>
                 </div>
             </Bubble>
           </div>
