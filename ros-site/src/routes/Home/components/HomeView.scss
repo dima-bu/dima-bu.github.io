@@ -1,0 +1,67 @@
+//.isHide {
+//  visibility: hidden;
+//  opacity: 0;
+//  transition: opacity 0.5s, visibility 0.5s;
+//}
+//
+//.isShow {
+//  visibility: visible;
+//  opacity: 1;
+//  transition: opacity 0.5s, visibility 0.5s;
+//}
+//
+//@-webkit-keyframes fadeInFromNone {
+//  0% {
+//    display: block;
+//    opacity: 1;
+//  }
+//
+//  1% {
+//    display: block;
+//    opacity: 1;
+//  }
+//
+//  100% {
+//    display: none;
+//    opacity: 0;
+//  }
+//}
+.example-appear,
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active,
+.example-enter.example-enter-active {
+  opacity: 0.01;
+  transition: opacity 1000ms  ease-in;
+}
+
+.wrapper {
+  display: block;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1000ms ease-in, height 1000ms ease-in;
+
+
+  &.isHide {
+    transition: opacity 1000ms ease-in, height 1000ms ease-in;
+    opacity: 0.01;
+  }
+
+  &.isShow {
+    transition: opacity 1000ms ease-in, height 1000ms ease-in;
+    opacity: 1;
+  }
+
+}
+
+
+h1 {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.sophis-video-control {
+  display: none;
+}

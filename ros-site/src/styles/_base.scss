@@ -1,0 +1,21 @@
+/*
+Application Settings Go Here
+------------------------------------
+This file acts as a bundler for all variables/mixins/themes, so they
+can easily be swapped out without `core.scss` ever having to know.
+
+For example:
+
+@import './variables/colors';
+@import './variables/components';
+@import './themes/default';
+*/
+
+//@font-face {
+//  font-family: "Roboto_regular";
+//  src: url('/fonts/roboto-regular-webfont.woff') format('woff'), url('/fonts/fonts/roboto-regular-webfont.woff2') format('woff2');
+//}
+@import 'mixins';
+@import 'font';
+@import 'colors';
+

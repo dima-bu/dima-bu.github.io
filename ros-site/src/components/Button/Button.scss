@@ -1,0 +1,23 @@
+@import './../../styles/base';
+
+.ros-button {
+  font-size: 22px;
+  line-height: 34px;
+  padding: 3px 20px 5px 20px;
+  border-radius: 5px;
+  border: 0 none;
+  outline:  0 none;
+  cursor: pointer;
+  font-family: $font-base;
+
+  &.primary {
+    background-color: $color-blue;
+    color: #ffffff;
+    &:hover {
+      background-color: lighten($color-blue, 9.5%)
+    }
+    &:active {
+      background-color: darken($color-blue, 6.5%)
+    }
+  }
+}

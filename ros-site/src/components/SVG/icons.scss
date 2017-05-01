@@ -1,0 +1,73 @@
+@import './../../styles/colors';
+
+
+.download-android_bg {
+  fill: #000000;
+}
+
+.download-android_stroke {
+  stroke: #000000;
+}
+
+a.icon-link {
+  &:hover {
+    .download-android_bg {
+      fill: #768496;
+    }
+
+    .download-android_stroke {
+      stroke: #768496;
+    }
+  }
+  &:active {
+    .download-android_bg {
+      fill: #000000;
+    }
+
+    .download-android_stroke {
+      stroke: #000000;
+    }
+  }
+}
+
+.facebook-link {
+  display: inline-block;
+  font-size: 0;
+
+  .facebook-icon {
+    fill: $color-dark-blue;
+  }
+
+  &:hover {
+    .facebook-icon {
+      fill: lighten($color-dark-blue, 9%);
+    }
+  }
+
+  &:active {
+    .facebook-icon {
+      fill: $color-dark-blue;
+    }
+  }
+}
+
+.vk-link {
+  display: inline-block;
+  font-size: 0;
+
+  .vk-icon {
+    fill: #4d75a3;
+  }
+
+  &:hover {
+    .vk-icon {
+      fill: #6e9bcf
+    }
+  }
+
+  &:active {
+    .vk-icon {
+      fill: #6e9bcf
+    }
+  }
+}

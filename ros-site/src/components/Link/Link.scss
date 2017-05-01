@@ -1,0 +1,20 @@
+@import './../../styles/base';
+
+.ros-link {
+  font-family: $font-base;
+  font-size: 22px;
+  line-height: 34px;
+  text-decoration: none;
+
+  &.primary {
+    color: $color-blue;
+
+    &:hover, &:focus {
+      color: lighten($color-blue, 9.5%)
+    }
+
+    &:active {
+      color: darken($color-blue, 6.5%)
+    }
+  }
+}
