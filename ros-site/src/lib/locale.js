@@ -78,6 +78,14 @@ export const formatText = (result) => {
     });
 
     return newResult;
+  } else {
+   if (result) {
+     let res = flatMap(result.split('/n'), function (part) {
+       return [part, <br />];
+     });
+     res.pop();
+     return res;
+   }
   }
   return result;
 };

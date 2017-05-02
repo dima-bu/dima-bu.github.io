@@ -71,39 +71,6 @@
       }
     }
   }
-  //
-  //&.size-sm {
-  //  font-size: 16px;
-  //  line-height: 22px;
-  //  padding: 15px 20px;
-  //  border-radius: 0 4px 4px 4px;
-  //  width: 20%;
-  //  margin-left: 25px;
-  //  border: 2px solid #ffffff;
-  //
-  //  &.type-primary {
-  //    .bubble-corner {
-  //      fill: #ffffff;
-  //      stroke: #ffffff;
-  //    }
-  //  }
-  //
-  //  .bubble-corner {
-  //    top: -2px;
-  //    left: -25px;
-  //    width: 25px;
-  //    height: 25px;
-  //  }
-  //
-  //  &.-right {
-  //    border-radius: 4px 0 4px 4px;
-  //    margin-right: 25px;
-  //
-  //    .bubble-corner {
-  //      right: -25px;
-  //    }
-  //  }
-  //}
 
   // types
   &.type-secondary {
@@ -118,7 +85,7 @@
   &.type-primary {
     background-color: #ffffff;
     margin-bottom:  20px;
-    color: rgba(0, 0, 0, 0.8);
+    color: $color-text;
 
     .bubble-corner {
       fill: #ffffff;
@@ -129,18 +96,19 @@
       content: '';
       display: block;
       position: absolute;
-      width: 60%;
-      left: 20%;
-      height: 10px;
-      border-radius: 50%;
-      bottom: 30px;
-      box-shadow: 0 20px 54px 39px $color-grey-light;
+      width: 90%;
+      left: 5%;
+      height: 60px;
+      bottom: 7px;
+      box-shadow: 0 15px 60px 0 rgba(0, 31, 82, 0.14);
       z-index: -1;
     }
   }
 }
 
 .bubble.type-link.size-sm {
+  text-decoration: none;
+  color: $color-text;
   font-size: 16px;
   line-height: 22px;
   padding: 15px 20px;

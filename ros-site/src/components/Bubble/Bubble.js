@@ -5,16 +5,26 @@ import cx from 'classnames'
 import BubbleCorner from 'components/SVG/BubbleCorner'
 
 const Bubble = (props) => {
-  const {text, type, size, isFull, rightPosition, children} = props;
-  const newText = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
+  const {text, type, size, isFull, rightPosition, children, href} = props;
+  //const newText = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
 
-  return (
-    <div className={cx("bubble", 'type-'+type, 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}>
-      {newText}
-      {children}
-      <BubbleCorner />
+  if (href) {
+    return (
+      <a href={href} className={cx("bubble", 'type-'+type, 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}>
+        {text}
+        {children}
+        <BubbleCorner />
+      </a>
+    )
+  } else {
+    return (
+      <div className={cx("bubble", 'type-'+type, 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}>
+        {text}
+        {children}
+        <BubbleCorner />
     </div>
-  )
+    )
+  }
 }
 
 Bubble.propTypes = {
@@ -23,6 +33,7 @@ Bubble.propTypes = {
     size: PropTypes.oneOf(['lg', 'md']),
     isFull: PropTypes.bool,
     rightPosition: PropTypes.bool,
+    href: PropTypes.string,
     children : PropTypes.element
 }
 

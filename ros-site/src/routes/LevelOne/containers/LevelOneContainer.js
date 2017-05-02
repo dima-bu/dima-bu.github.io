@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import {changeHash } from '../modules/levelOne.js'
-
+import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux-i18n'
 /*  This is a container component. Notice it does not contain any JSX,
  nor does it import React. This component is **only** responsible for
  wiring in the actions and state necessary to render a presentational
@@ -13,10 +13,12 @@ import LevelOne from '../components/LevelOne'
  implementing our wrapper around increment; the component doesn't care   */
 
 const mapDispatchToProps = {
-  changeHash
+ changeHash: changeHash,
+ setLocale: setLocale
 }
 
 const mapStateToProps = (state) => ({
+ i18n : state.i18n,
   hashState : state.levelOne.hashState
 })
 

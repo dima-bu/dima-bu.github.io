@@ -59,6 +59,21 @@ class HomeView extends React.Component {
                 </div>
             </Bubble>
           </div>
+        <div className="ta-c">
+          <Bubble
+            type='link'
+            size='sm'
+            href="/levelOne#projects"
+            text={tr('HI_PROJECTS_LINK_TEXT', true)}/>
+          <Bubble  type='link'
+                   size='sm'
+                   href="/levelOne#contacts"
+                   text={tr('HI_CONTACTS_LINK_TEXT', true)}/>
+          <Bubble  type='link'
+                   size='sm'
+                   href="/levelOne#gif"
+                   text={tr('HI_GIF_LINK_TEXT', true)}/>
+        </div>
       </div>
     )
   }

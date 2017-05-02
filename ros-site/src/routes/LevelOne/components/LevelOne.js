@@ -25,6 +25,7 @@ class LevelOne extends React.Component {
     pathname = pathname.substr(1);
     const elems = pathname.split('-');
 
+
     elems.forEach(elem => {
       if (elem === 'projects') {
         arr.push( <Projects key='projects' />)
