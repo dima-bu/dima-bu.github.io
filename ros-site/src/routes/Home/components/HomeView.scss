@@ -1,31 +1,23 @@
-//.isHide {
-//  visibility: hidden;
-//  opacity: 0;
-//  transition: opacity 0.5s, visibility 0.5s;
-//}
-//
-//.isShow {
-//  visibility: visible;
-//  opacity: 1;
-//  transition: opacity 0.5s, visibility 0.5s;
-//}
-//
-//@-webkit-keyframes fadeInFromNone {
-//  0% {
-//    display: block;
-//    opacity: 1;
-//  }
-//
-//  1% {
-//    display: block;
-//    opacity: 1;
-//  }
-//
-//  100% {
-//    display: none;
-//    opacity: 0;
-//  }
-//}
+@import './../../../styles/base';
+
+
+.splash {
+
+  opacity: 1;
+  transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+
+  &.isHide {
+    transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+    opacity: 0.01;
+  }
+
+  &.isShow {
+    transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+    opacity: 1;
+  }
+}
+
+
 .example-appear,
 .example-enter {
   opacity: 0.01;
@@ -54,6 +46,27 @@
     opacity: 1;
   }
 
+}
+
+.bottom-links {
+  //position: fixed;
+  //bottom: 60px;
+
+  .bubble-wrapper {
+    width: 27%;
+    display: inline-block;
+    padding: 0 45px;
+    vertical-align: top;
+  }
+
+  .bubble {
+    min-height: 78px;
+    vertical-align: top;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 

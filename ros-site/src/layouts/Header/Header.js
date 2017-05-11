@@ -8,20 +8,25 @@ import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux
 
 export const Header = (props) => {
 
+  const {isHiddenText} = props;
+
   const onChangeHandler = (e) => {
     e.preventDefault();
-    //this.setState({isHide: true});
+    props.setHiddenText();
     setTimeout(() => {
       if (props.i18n.locale === 'ru') {
-        props.setLocale('en');
+        props.setLocale('en')
       } else {
-        props.setLocale('ru');
+        props.setLocale('ru')
       }
-      //this.setState({isHide: false});
-    }, 0)
+      props.setVisableText();
+    }, 700)
   }
 
   const getChecked = () => {
+    if (isHiddenText) {
+      return (props.i18n.locale === 'en')
+    }
     return (props.i18n.locale === 'ru')
   }
 

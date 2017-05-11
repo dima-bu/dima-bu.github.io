@@ -2054,6 +2054,39 @@ textarea.ti-signup-form-control {
     font-size: 1.4em;
 }
 
+/*------------conference ------------------------------------ */
+
+.conference-wrapper {
+  margin-top: -20px;
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+}
+
+.conference-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 50px;
+  padding: 46px 0 36px 0;
+  margin: 0;
+}
+
+h2.conference-subtitle {
+  font-size: 24px;
+  line-height: 32px;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+
+.conference-date {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #43484d;
+  color: rgba(67, 72, 77, .6);
+}
+
 /* ----------------------- footer -------------------------- */
 .footer {
     padding-top: 20px;

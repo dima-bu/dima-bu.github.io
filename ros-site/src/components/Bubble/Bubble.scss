@@ -118,6 +118,8 @@
   border: 2px solid $color-grey-light;
   background-color: $color-grey-light;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
   &:hover, &:focus {
     background-color: $color-milky;
@@ -150,6 +152,7 @@
   &.-right {
     border-radius: 4px 0 4px 4px;
     margin-right: 25px;
+    margin-left: 0;
 
     .bubble-corner {
       right: -25px;
@@ -160,8 +163,9 @@
 }
 
 .bubble.full-width {
-  width: 100%;
+  width: 100% !important;
 }
+
 
 
 .bubble .bubble-corner {
@@ -176,3 +180,22 @@
     left: auto;
   }
 }
+
+
+.bubble-inner {
+  display: inline-block;
+  height: 100%;
+  opacity: 1;
+  transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+
+  &.isHide {
+    transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+    opacity: 0.01;
+  }
+
+  &.isShow {
+    transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+    opacity: 1;
+  }
+}
+

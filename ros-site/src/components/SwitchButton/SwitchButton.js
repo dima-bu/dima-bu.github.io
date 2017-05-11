@@ -61,15 +61,27 @@ export default class SwitchButton extends Component {
     return (
       <div className={cx('switch-button', `rsbc-mode-${mode}`, this.props.theme, this.props.size, this.props.disabled ? style.disabled : '')}>
         {label}
+        {this.props.checked &&
+          <input
+            onChange={this.props.onChange}
+            checked={this.props.checked}
+            disabled={this.props.disabled}
+            id={id}
+            name={this.props.name}
+            type="checkbox"
+            value="1"
+            />
+        }
+        {!this.props.checked &&
         <input
           onChange={this.props.onChange}
-          checked={this.props.checked}
           disabled={this.props.disabled}
           id={id}
           name={this.props.name}
           type="checkbox"
           value="1"
-        />
+          />
+        }
         <label htmlFor={id} >
         </label>
         {labelRight}

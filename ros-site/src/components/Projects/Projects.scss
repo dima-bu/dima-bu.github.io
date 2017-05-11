@@ -13,3 +13,22 @@
     background-color: #ccc;
   }
 }
+
+.bubble-wrapper {
+  .ros-time {
+    margin-bottom:  10px;
+    margin-left: 50px;
+  }
+}
+
+.right-bubble {
+
+  .ros-time {
+    text-align: right;
+    margin-right: 50px;
+  }
+
+  .bubble {
+    float: right;
+  }
+}
