@@ -94,12 +94,12 @@ class HomeView extends React.Component {
         </div>
         }
         <div className="main-area">
-          <div className="ta-c ">
+            <div className="ta-c ">
               <Bubble isHiddenText={this.props.isHiddenText}>
                     <p>{tr('HI_ROSBERRY', true)}</p>
               </Bubble>
-          </div>
-          {this.getView()}
+            </div>
+            {this.getView()}
         </div>
         <div className="ta-c bottom-links container">
           <div className="bubble-wrapper">

@@ -53384,7 +53384,6 @@ webpackJsonp([0],[
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	});
 
 	var _getPrototypeOf = __webpack_require__(508);
 
