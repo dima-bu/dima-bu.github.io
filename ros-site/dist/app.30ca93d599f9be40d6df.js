@@ -51416,7 +51416,7 @@ webpackJsonp([0],[
 
 	  locales.forEach(function (lang) {
 	    promisses.push(new _promise2.default(function (resolve, reject) {
-	      fetch('./../../i18n/' + lang + '.json').then(function (resp) {
+	      fetch('./../i18n/' + lang + '.json').then(function (resp) {
 	        var langObj = {
 	          lang: lang
 	        };
