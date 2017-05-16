@@ -4,6 +4,7 @@ var expandSlideShow = true;
 
 //
 $(function () {
+	$("#id_phone_number").intlTelInput();
 	// social share modal
 	$("[data-toggle-modal]").click(function(e) {
 		e.preventDefault();
@@ -180,11 +181,20 @@ function stickyNavbar() {
 		head = $("#main_navbar"),
 		profileBriefBar = $("#id_profile_brief"),
 		profileBriefBarReveal = $("#section_2"),
+		streamsWrapper = $(".conference-streams_wrapper"),
+		streamsAnchor = $(".conference-streams_anchor"),
+		streamsAnchorEnd = $(".conference-streams_anchor_end"),
+		streamsDivider = $(".conference-streams_divider_anchor"),
 		prevScroll = window.scrollY || 0,
+		streams = false,
 		smbanner = false;
 
 	if(headTop.length == 0 || headMain.length == 0) {
 		return;
+	}
+
+	if(streamsWrapper.length != 0) {
+		streams = true;
 	}
 
 	if(smartbanner.length != 0) {
@@ -245,6 +255,27 @@ function stickyNavbar() {
 						profileBriefBar.css("top", (headWrap.height() + 5 - headTop.height()));
 					}
 				}
+
+				if (streams) {
+					if (scrollY+100 > streamsAnchor.offset().top && scrollY+100 < streamsAnchorEnd.offset().top) {
+						streamsWrapper.addClass('sticky')
+						streamsWrapper.css("top", '40px');
+
+						if (scrollY > streamsDivider.offset().top) {
+							$('.conference-stream:first-child').removeClass('active');
+							$('.conference-stream:last-child').addClass('active');
+						} else {
+							$('.conference-stream:first-child').addClass('active');
+							$('.conference-stream:last-child').removeClass('active');
+						}
+
+					} else {
+						streamsWrapper.removeClass('sticky');
+						$('.conference-stream').removeClass('active');
+					}
+				}
+
+
 			} else {
 				headTop.css("top", "0px");
 				headMain.css("top", headTop.height());
@@ -254,6 +285,24 @@ function stickyNavbar() {
 						profileBriefBar.css("top", (-profileBriefBar.height()));
 					} else {
 						profileBriefBar.css("top", (headWrap.height() + 5));
+					}
+				}
+
+				if (streams) {
+					if (scrollY+100 > streamsAnchor.offset().top && scrollY+100 < streamsAnchorEnd.offset().top) {
+						streamsWrapper.addClass('sticky');
+						streamsWrapper.css("top", '60px');
+						if (scrollY > streamsDivider.offset().top) {
+							$('.conference-stream:first-child').removeClass('active');
+							$('.conference-stream:last-child').addClass('active');
+						} else {
+							$('.conference-stream:first-child').addClass('active');
+							$('.conference-stream:last-child').removeClass('active');
+						}
+
+					} else {
+						streamsWrapper.removeClass('sticky');
+						$('.conference-stream').removeClass('active');
 					}
 				}
 			}
