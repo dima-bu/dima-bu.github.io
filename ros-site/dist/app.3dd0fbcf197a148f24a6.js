@@ -54666,18 +54666,22 @@ webpackJsonp([0],[
 	            'zIndex': '100' } }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'ta-c ' },
+	          { className: 'main-area' },
 	          _react2.default.createElement(
-	            _Bubble2.default,
-	            { isHiddenText: this.props.isHiddenText },
+	            'div',
+	            { className: 'ta-c ' },
 	            _react2.default.createElement(
-	              'p',
-	              null,
-	              (0, _locale.tr)('HI_ROSBERRY', true)
+	              _Bubble2.default,
+	              { isHiddenText: this.props.isHiddenText },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                (0, _locale.tr)('HI_ROSBERRY', true)
+	              )
 	            )
-	          )
+	          ),
+	          this.getView()
 	        ),
-	        this.getView(),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'ta-c bottom-links container' },
