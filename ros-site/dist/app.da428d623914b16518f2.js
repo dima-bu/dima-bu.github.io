@@ -51416,7 +51416,7 @@ webpackJsonp([0],[
 
 	  locales.forEach(function (lang) {
 	    promisses.push(new _promise2.default(function (resolve, reject) {
-	      fetch('./../../i18n/' + lang + '.json').then(function (resp) {
+	      fetch('./../i18n/' + lang + '.json').then(function (resp) {
 	        var langObj = {
 	          lang: lang
 	        };
@@ -53356,10 +53356,10 @@ webpackJsonp([0],[
 		"COMMON_TRANSLATE": "EN",
 		"STUFF_TARIFFS": "Tariffs",
 		"STUFF_GROUP_MEMBERS": "Group members",
-		"HI_ROSBERRY": "Hi! /n We — Rosberry /:emo-smiling  and we create mobile apps /n Can we help you?",
-		"HI_PROJECTS_LINK_TEXT": "Hi! /n Покажит ваши проекты",
-		"HI_CONTACTS_LINK_TEXT": "How с вами связаться?",
-		"HI_GIF_LINK_TEXT": "gifochaka?"
+		"HI_ROSBERRY": "Hi! /n We — Rosberry /:emo-smiling and we create mobile apps /n Can we help you?",
+		"HI_PROJECTS_LINK_TEXT": "Hi! /n Will show your projects",
+		"HI_CONTACTS_LINK_TEXT": "How to contact you?",
+		"HI_GIF_LINK_TEXT": "And is there any gif?"
 	};
 
 /***/ },
@@ -53368,12 +53368,6 @@ webpackJsonp([0],[
 
 	module.exports = {
 		"COMMON_TRANSLATE": "RU",
-		"STUFF_STUFF": "Сотрудники",
-		"STUFF_TARIFFS": "Тарифы",
-		"STUFF_GROUP_MEMBERS": "Состав группы",
-		"STUFF_GROUP_INFO": "Сведения",
-		"STUFF_ACTIVE": "Активен",
-		"STUFF_PHONES": "Телефоны",
 		"HI_ROSBERRY": "Привет! /n Мы — Rosberry  и мы делаем /:emo-approve мобильные/:emo-smiling приложения /:emo-wink /n Чем мы можем вам помочь?",
 		"HI_PROJECTS_LINK_TEXT": "Привет! /n Покажит ваши проекты",
 		"HI_CONTACTS_LINK_TEXT": "Как с вами связаться?",
@@ -53389,6 +53383,7 @@ webpackJsonp([0],[
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
+	});
 	});
 
 	var _getPrototypeOf = __webpack_require__(508);
@@ -54672,18 +54667,22 @@ webpackJsonp([0],[
 	            'zIndex': '100' } }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'ta-c ' },
+	          { className: 'main-area' },
 	          _react2.default.createElement(
-	            _Bubble2.default,
-	            { isHiddenText: this.props.isHiddenText },
+	            'div',
+	            { className: 'ta-c ' },
 	            _react2.default.createElement(
-	              'p',
-	              null,
-	              (0, _locale.tr)('HI_ROSBERRY', true)
+	              _Bubble2.default,
+	              { isHiddenText: this.props.isHiddenText },
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                (0, _locale.tr)('HI_ROSBERRY', true)
+	              )
 	            )
-	          )
+	          ),
+	          this.getView()
 	        ),
-	        this.getView(),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'ta-c bottom-links container' },
