@@ -48,6 +48,10 @@
 
 }
 
+.main-area {
+  min-height: calc(100vh - 200px);
+}
+
 .bottom-links {
   //position: fixed;
   //bottom: 60px;
