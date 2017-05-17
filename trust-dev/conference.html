@@ -261,7 +261,7 @@
 		<div id="top"></div>
 
 
-			<div class="ti-header-wrap" id="main_navbar">
+		<div class="ti-header-wrap" id="main_navbar">
 				<header role="nav">
 
 					<div class="ti-nav-wrap ti-fixed-top" id="navbar_header">
@@ -400,6 +400,24 @@
 			</div>
 		<!-- .main-header end -->
 
+		<div class="ti-conference-streams" id="id_streams">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-9 col-md-10">
+							<div class="ti-conference-streams_inner">
+							<div class="conference-streams_wrapper">
+								<div class="conference-stream to-stream-a">
+									Stream A
+								</div>
+								<div class="conference-stream to-stream-b">
+									Stream B
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- .main-header end -->
 		<div class="conference-wrapper">
@@ -715,12 +733,12 @@
 					<div class="conference-day_title">
 						<h3 class="conference-subtitle">Session Two: Driving Alpha Returns</h3>
 					</div>
-
-
-					<div class="conference-streams_anchor"></div>
+					<div id="id_stream_A"></div>
+					<div class="conference-streams_wrapper_area">
 					<div class="conference-streams_wrapper">
-						<div class="conference-stream active">Stream A</div>
-						<div class="conference-stream">Stream B</div>
+						<div class="conference-stream to-stream-a">Stream A</div>
+						<div class="conference-stream to-stream-b">Stream B</div>
+					</div>
 					</div>
 
 					<div class="conference-stream_title">Stream A: Real Assets and Natural Resources</div>
@@ -832,6 +850,7 @@
 							</div>
 						</div>
 					</section>
+
 						<section class="conference-report">
 						<div class="row">
 							<div class="conference-left-col">
@@ -923,6 +942,7 @@
 					</section>
 
                     <div class="conference-streams_divider_anchor"></div>
+					<div id="id_stream_B"></div>
 					<div class="conference-stream_title">Stream B: Venture Capital, Private Equity and Hedge Funds</div>
 
 					<section class="conference-report">
@@ -1136,7 +1156,7 @@
 					</div>
 				</div>
 			</section>
-            <div class="conference-streams_anchor_end"></div>
+            <div id="id_streams_end"></div>
 			<div class="conference-day_title">
 				<h3 class="conference-subtitle">Session Three: Views From A Venture Capitalist</h3>
 			</div>
@@ -1514,11 +1534,20 @@
 					<small class="ti-small-caption">
 						Input your phone number to receive a direct link to download our App
 					</small>
-					<input type="tel" class="ti-phone-controls" placeholder="Phone Number" id="id_phone_number">
-					<button class="ti-btn ti-btn-green btn--wide-md">Request a link</button>
+					<div>
+						<input type="tel" class="ti-phone-controls" placeholder="Phone Number" id="id_phone_number">
+					</div>
+					<div>
+						<button class="ti-btn ti-btn-green btn--wide-md">Request a link</button>
+					</div>
 					<div class="download-app-section_links">
-						<a href="" class="app-store"></a>
-						<a href="" class="google-play"></a>
+						<div>
+							<a href="" class="app-store"></a>
+						</div>
+						<div>
+							<a href="" class="google-play"></a>
+						</div>
+
 					</div>
 				</div>
 			</div>

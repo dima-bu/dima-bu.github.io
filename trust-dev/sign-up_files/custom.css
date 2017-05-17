@@ -2289,7 +2289,27 @@ h2.conference-subtitle {
 .ti-streamItem-inner {
   position: relative;
   width: 100%;
+}
 
+.ti-conference-streams {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1015;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.conference-streams_wrapper_area {
+  height: 62px;
+}
+
+.ti-conference-streams_inner  {
+  padding: 0 10px;
 }
 
 .conference-streams_wrapper {
@@ -2302,6 +2322,7 @@ h2.conference-subtitle {
   -ms-transition: top 0.5s ease-in-out;
   -webkit-transition: top 0.5s ease-in-out;
   transition: top 0.5s ease-in-out;
+  box-shadow: 0 3px 6px 0 rgba(31, 54, 77, 0.25);
 }
 
 .conference-streams_wrapper.sticky {
@@ -2340,6 +2361,7 @@ h2.conference-subtitle {
   border-right: solid 1px #d9d9d9;
   width: 50%;
   padding: 11px 0;
+  cursor: pointer;
 }
 
 .conference-stream.active {
@@ -2440,6 +2462,27 @@ a.app-store {
 
   .conference-day_title .conference-date {
     position: static;
+  }
+}
+
+@media (max-width: 767px) {
+  .conference-left-col {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .conference-left-right {
+    width: 100%;
+  }
+
+  .conference-day_title .conference-date {
+    position: static;
+    text-align: left;
+  }
+
+  div > .ti-sidebar-right.conference-indent {
+    display: block;
+    margin-top: 30px;
   }
 }
 

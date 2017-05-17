@@ -181,10 +181,10 @@ function stickyNavbar() {
 		head = $("#main_navbar"),
 		profileBriefBar = $("#id_profile_brief"),
 		profileBriefBarReveal = $("#section_2"),
-		streamsWrapper = $(".conference-streams_wrapper"),
-		streamsAnchor = $(".conference-streams_anchor"),
-		streamsAnchorEnd = $(".conference-streams_anchor_end"),
-		streamsDivider = $(".conference-streams_divider_anchor"),
+		streamsWrapper = $("#id_streams"),
+		streamAReveal = $("#id_stream_A"),
+		streamBReveal = $("#id_stream_B"),
+		streamEnd = $("#id_streams_end"),
 		prevScroll = window.scrollY || 0,
 		streams = false,
 		smbanner = false;
@@ -195,6 +195,27 @@ function stickyNavbar() {
 
 	if(streamsWrapper.length != 0) {
 		streams = true;
+
+		$('.to-stream-a').on('click', function () {
+			$("html, body").animate({
+				scrollTop: streamAReveal.offset().top - 110
+			}, 500);
+		});
+
+		$('.to-stream-b').on('click', function () {
+			$("html, body").animate({
+				scrollTop: streamBReveal.offset().top - 110
+			}, 500);
+		});
+
+		if(prevScroll > streamAReveal.offset().top && prevScroll < streamEnd.offset().top) {
+			streamsWrapper.show();
+			streamsWrapper.css("top", (headWrap.outerHeight() + 5));
+		} else {
+			streamsWrapper.css("top", (-streamsWrapper.outerHeight()));
+		}
+	} else {
+		streamsWrapper.hide();
 	}
 
 	if(smartbanner.length != 0) {
@@ -205,7 +226,13 @@ function stickyNavbar() {
 		if(prevScroll > profileBriefBarReveal.offset().top) {
 			profileBriefBar.show();
 			profileBriefBar.css("top", (headWrap.outerHeight() + 5));
-
+			if (prevScroll > streamBReveal.offset().top - 130) {
+				$('.conference-stream:first-child').removeClass('active');
+				$('.conference-stream:last-child').addClass('active');
+			} else {
+				$('.conference-stream:first-child').addClass('active');
+				$('.conference-stream:last-child').removeClass('active');
+			}
 		} else {
 			profileBriefBar.css("top", (-profileBriefBar.outerHeight()));
 		}
@@ -243,12 +270,18 @@ function stickyNavbar() {
 				 .css("height", hOff);
 		}
 
+
+
 		$(window).scroll(function(event) {
 			var scrollY = window.scrollY || 0;
+
+
+			//to DOWN
 			if(scrollY > prevScroll) {
 				headTop.css("top", (-headTop.height()));
 				headMain.css("top", "0px");
 				if(leftPanel.length > 0) { leftPanel.css("top", (lpTop - headTop.height())); }
+
 				if(profileBriefBar.length != 0) {
 					if(scrollY > profileBriefBarReveal.offset().top) {
 						profileBriefBar.show();
@@ -256,30 +289,29 @@ function stickyNavbar() {
 					}
 				}
 
-				if (streams) {
-					if (scrollY+100 > streamsAnchor.offset().top && scrollY+100 < streamsAnchorEnd.offset().top) {
-						streamsWrapper.addClass('sticky')
-						streamsWrapper.css("top", '40px');
-
-						if (scrollY > streamsDivider.offset().top) {
+				if(streams) {
+					if(scrollY > streamAReveal.offset().top && scrollY < streamEnd.offset().top) {
+						streamsWrapper.show();
+						streamsWrapper.css("top", (headWrap.height() + 5 - headTop.height()));
+						if (scrollY > streamBReveal.offset().top  - 130)  {
 							$('.conference-stream:first-child').removeClass('active');
 							$('.conference-stream:last-child').addClass('active');
 						} else {
 							$('.conference-stream:first-child').addClass('active');
 							$('.conference-stream:last-child').removeClass('active');
 						}
-
 					} else {
-						streamsWrapper.removeClass('sticky');
-						$('.conference-stream').removeClass('active');
+						streamsWrapper.css("top", (-streamsWrapper.height()));
 					}
 				}
 
 
 			} else {
+				//to TOP
 				headTop.css("top", "0px");
 				headMain.css("top", headTop.height());
 				if(leftPanel.length > 0){ leftPanel.css("top", (lpTop)); }
+
 				if(profileBriefBar.length != 0) {
 					if(scrollY < profileBriefBarReveal.offset().top) {
 						profileBriefBar.css("top", (-profileBriefBar.height()));
@@ -288,23 +320,21 @@ function stickyNavbar() {
 					}
 				}
 
-				if (streams) {
-					if (scrollY+100 > streamsAnchor.offset().top && scrollY+100 < streamsAnchorEnd.offset().top) {
-						streamsWrapper.addClass('sticky');
-						streamsWrapper.css("top", '60px');
-						if (scrollY > streamsDivider.offset().top) {
+				if(streams) {
+					if (scrollY < streamAReveal.offset().top || scrollY > streamEnd.offset().top) {
+						streamsWrapper.css("top", (-streamsWrapper.height()));
+					} else {
+						streamsWrapper.css("top", (headWrap.height() + 5));
+						if (scrollY > streamBReveal.offset().top) {
 							$('.conference-stream:first-child').removeClass('active');
 							$('.conference-stream:last-child').addClass('active');
 						} else {
 							$('.conference-stream:first-child').addClass('active');
 							$('.conference-stream:last-child').removeClass('active');
 						}
-
-					} else {
-						streamsWrapper.removeClass('sticky');
-						$('.conference-stream').removeClass('active');
 					}
 				}
+
 			}
 			prevScroll = scrollY;
 		});
