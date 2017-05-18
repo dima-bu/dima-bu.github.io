@@ -198,7 +198,7 @@ function stickyNavbar() {
 
 		$('.to-stream-a').on('click', function () {
 			$("html, body").animate({
-				scrollTop: streamAReveal.offset().top - 110
+				scrollTop: streamAReveal.offset().top - 80
 			}, 500);
 		});
 
@@ -278,6 +278,8 @@ function stickyNavbar() {
 
 			//to DOWN
 			if(scrollY > prevScroll) {
+				debugger;
+
 				headTop.css("top", (-headTop.height()));
 				headMain.css("top", "0px");
 				if(leftPanel.length > 0) { leftPanel.css("top", (lpTop - headTop.height())); }
@@ -291,8 +293,14 @@ function stickyNavbar() {
 
 				if(streams) {
 					if(scrollY > streamAReveal.offset().top && scrollY < streamEnd.offset().top) {
+
+						var headTopHeight = 0;
 						streamsWrapper.show();
-						streamsWrapper.css("top", (headWrap.height() + 5 - headTop.height()));
+						if ((headTop).is(':visible')) {
+							headTopHeight = headTop.height();
+						}
+
+						streamsWrapper.css("top", (headWrap.height() + 5 - headTopHeight));
 						if (scrollY > streamBReveal.offset().top  - 130)  {
 							$('.conference-stream:first-child').removeClass('active');
 							$('.conference-stream:last-child').addClass('active');

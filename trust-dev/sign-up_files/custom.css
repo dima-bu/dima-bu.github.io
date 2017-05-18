@@ -2484,6 +2484,14 @@ a.app-store {
     display: block;
     margin-top: 30px;
   }
+
+  .ti-conference-streams_inner {
+    padding: 0 15px 0 0px;
+  }
+
+  .conference-stream {
+    padding: 5px 0;
+  }
 }
 
 
