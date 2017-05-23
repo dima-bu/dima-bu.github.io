@@ -88,7 +88,7 @@ export const Contacts = (props) => (
     <div className="clearfix bubble-row container">
       <div className="bubble-wrapper">
         <Time from/>
-        <Bubble sizes="lg" type="primary" autoWidth>
+        <Bubble size="lg" type="primary" autoWidth>
           {tr('CONTACTS_COME_AGAIN', true)}
         </Bubble>
       </div>

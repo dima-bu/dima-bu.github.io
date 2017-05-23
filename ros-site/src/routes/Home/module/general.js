@@ -39,15 +39,21 @@ const ACTION_HANDLERS = {
   [SET_HIDDEN_TEXT]    : state => { return Object.assign({}, state, { isHiddenText: true }) },
   [SET_VISABLE_TEXT] :  state => { return Object.assign({}, state, { isHiddenText: false }) },
   [CHANGE_HASH]    : (state, action) => {
+
     const hash = action.payload.split('#')[1];
 
+    const fpp = hashHistory;
+
     if(window.location.hash) {
-      window.location.hash = window.location.hash+'-'+hash;
+      const newN = document.location.hash+'-'+hash;
+      //browserHistory.createLocation({hash: newN, pathname: '/'})
+      document.location.hash = newN
     } else {
-      window.location.hash = hash;
+      //browserHistory.createLocation({hash: hash, pathname: '/'})
+      document.location.hash = hash
     }
 
-    return Object.assign({}, state, { hashState: window.location.hash });
+    return Object.assign({}, state, { hashState:  document.location.hash });
   }
 }
 
@@ -56,7 +62,7 @@ const ACTION_HANDLERS = {
 // ------------------------------------
 const initialState = {
   isHiddenText: false,
-  hashState: ''
+  hashState: browserHistory.getCurrentLocation().hash
 }
 
 export default function generalReducer (state = initialState, action) {

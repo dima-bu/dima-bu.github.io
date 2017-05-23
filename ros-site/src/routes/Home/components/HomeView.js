@@ -50,14 +50,16 @@ class HomeView extends React.Component {
     )
   }
 
+
+
+
   getView() {
 
     const arr = [];
-    let pathname = browserHistory.getCurrentLocation().hash;
+    let pathname = document.location.hash;
 
     pathname = pathname.substr(1);
     const elems = pathname.split('-');
-
 
     elems.forEach(elem => {
       if (elem === 'projects') {
@@ -78,7 +80,18 @@ class HomeView extends React.Component {
     )
   }
 
+
+
   render() {
+
+    const getStyleWrapper = ( )=> {
+      const hash = document.location.hash;
+      if (hash) {
+      } else {
+        return {transform: 'translateY(calc(50vh - 200px)'}
+      }
+    }
+
     return (
 
       <div>
@@ -95,16 +108,15 @@ class HomeView extends React.Component {
                  }>
         </div>
         }
-        <div className="main-area">
-        <div className="ta-c bubble-row">
+        <div className="main-area" style={getStyleWrapper()} >
+          <div className="ta-c bubble-row">
             <Bubble isHiddenText={this.props.isHiddenText}>
                   <p>{tr('HI_ROSBERRY', true)}</p>
             </Bubble>
+          </div>
+          {this.getView()}
         </div>
-        {this.getView()}
-        </div>
-        <Nav onChangeHash={this.props.changeHash} hashState={this.props.hashState} isHiddenText={this.props.isHiddenText}/>
-
+        <Nav onChangeHash={this.props.changeHash} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
       </div>
     )
   }
@@ -117,6 +129,7 @@ const mapDispatchToProps = {
 
 const mapStateToProps = (state) => ({
   i18n : state.i18n,
+  hash : state.location.hash,
   isHiddenText: state.general.isHiddenText,
   hashState : state.general.hashState
 })

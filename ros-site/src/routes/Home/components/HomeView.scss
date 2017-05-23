@@ -49,30 +49,9 @@
 }
 
 .main-area {
-  min-height: calc(100vh - 200px);
+  //min-height: calc(100vh - 200px);
+
 }
-
-.bottom-links {
-  //position: fixed;
-  //bottom: 60px;
-
-  .bubble-wrapper {
-    width: 33%;
-    display: inline-block;
-    padding: 0 45px;
-    vertical-align: top;
-  }
-
-  .bubble {
-    min-height: 78px;
-    vertical-align: top;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
 
 h1 {
   opacity: 1;

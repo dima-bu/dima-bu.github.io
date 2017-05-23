@@ -53,7 +53,7 @@ const Bubble = (props) => {
 Bubble.propTypes = {
     text: PropTypes.string,
     type: PropTypes.oneOf(['primary', 'secondary', 'link']),
-    size: PropTypes.oneOf(['lg', 'md']),
+    size: PropTypes.oneOf(['lg', 'md', 'sm']),
     isFull: PropTypes.bool,
     rightPosition: PropTypes.bool,
     href: PropTypes.string,

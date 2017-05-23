@@ -36,7 +36,7 @@ stories.add('Bubble link right', () => {
   return <Bubble
     text='А есть какая-нибудь<br> гифочка?'
     type='link'
-    size='sm'
+    size='md'
     rightPosition
     />
 });
@@ -46,6 +46,6 @@ stories.add('Bubble link left', () => {
     text='А есть какая-нибудь<br> гифочка?'
     type='link'
     href="#"
-    size='sm'
+    size='md'
     />
 });

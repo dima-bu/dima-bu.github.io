@@ -54,7 +54,7 @@ export const Projects = (props) => {
               secondLine: 'By Apple'
             },
             {
-              firstLine: tr('50_mln'),
+              firstLine: tr('50_MLN'),
               secondLine: tr('DOWNLOADS')
             }
           ]}

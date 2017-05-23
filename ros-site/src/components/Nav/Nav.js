@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { IndexLink, Link, browserHistory} from 'react-router'
 import {tr} from 'lib/locale.js';
 import Bubble from 'components/Bubble/Bubble'
-
+import './Nav.scss'
 
 class Nav extends Component {
 
@@ -39,18 +39,29 @@ class Nav extends Component {
   render () {
     const {items, onChangeHash, isHiddenText, hashState} = this.props;
 
+    const hash = document.location.hash
+
     const onClickHandler = (path) => {
       onChangeHash(path)
     };
 
     const itemsMap = items.filter((item)=>{
-      return (hashState.indexOf(item.path) === -1)
+      return (hash.indexOf(item.path) === -1)
     });
+
+
+    const getStyleWrapper = ( )=> {
+      if (hash) {
+      } else {
+        return {position: 'fixed', bottom: '0', width: '100%'}
+      }
+    }
 
     return (
     <div>
     {onChangeHash &&
-    <div className="ta-c bottom-links container">
+    <div style={getStyleWrapper()}>
+      <div className="ta-c bottom-links container" >
       {itemsMap.map(item => {
           return (
           <div
@@ -68,22 +79,22 @@ class Nav extends Component {
           </div>
           );
         })}
-    </div>
+        </div>
+      </div>
     }
 
      {!onChangeHash &&
-
+     <div style={getStyleWrapper()}>
       <div className="ta-c bottom-links container">
         {items.map(item => {
           return (
             <Link to={item.path} key={item.path} activeClassName='route--active'>
               {item.title}
-              <br/>
-              222
             </Link>
           );
         })}
       </div>
+     </div>
     }
     </div>
 
