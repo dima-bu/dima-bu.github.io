@@ -88,7 +88,7 @@ class HomeView extends React.Component {
       const hash = document.location.hash;
       if (hash) {
       } else {
-        return {transform: 'translateY(calc(50vh - 200px)'}
+        return {transform: 'translateY(calc(50vh - 220px)'}
       }
     }
 
