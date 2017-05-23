@@ -2236,6 +2236,7 @@ h2.conference-subtitle {
   -webkit-flex: 1 1 0%;
   -ms-flex: 1 1 0%;
   flex: 1 1 0%;
+  display: block;
 }
 
 .ti-card-person_img {
@@ -2279,6 +2280,7 @@ h2.conference-subtitle {
   font-size: 12px;
   line-height: 16px;
   color: rgba(0, 0, 0, 0.8);
+  display: block;
 }
 
 .ti-card-person_descr-lg {
@@ -2306,6 +2308,7 @@ h2.conference-subtitle {
 
 .conference-streams_wrapper_area {
   height: 62px;
+  margin-bottom: 20px;
 }
 
 .ti-conference-streams_inner  {
@@ -2316,7 +2319,6 @@ h2.conference-subtitle {
   display: table;
   width: 100%;
   border: solid 1px #d9d9d9;
-  margin-bottom: 20px;
   background-color: #ffffff;
   -moz-transition: top 0.5s ease-in-out;
   -ms-transition: top 0.5s ease-in-out;
