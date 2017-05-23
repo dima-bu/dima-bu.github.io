@@ -1,6 +1,10 @@
 @import './../../styles/base';
 
 
+* {
+  box-sizing: border-box;
+}
+
 .bubble {
   font-family: $font-base;
   display: inline-block;
@@ -10,9 +14,11 @@
 
 
 .bubble {
+  box-sizing: border-box;
 
   .emoji-img {
     vertical-align: middle;
+    margin-bottom: 6px;
   }
   // sizes
 
@@ -22,8 +28,12 @@
     padding: 40px 80px 40px 60px;
     border-radius:  0 10px 10px 10px;
     border: 4px solid $color-grey-light;
-    width: 40%;
+    width: auto;
     margin-left: 50px;
+
+    &.with-video {
+      padding: 20px;
+    }
 
     .bubble-corner {
       top: -4px;
@@ -37,6 +47,10 @@
       border-radius:  10px 0 10px 10px;
       margin-right: 50px;
       margin-left: 0;
+
+      &.with-video {
+        padding: 20px;
+      }
 
       .bubble-corner {
         transform: scale(-1, 1);
@@ -84,7 +98,6 @@
 
   &.type-primary {
     background-color: #ffffff;
-    margin-bottom:  20px;
     color: $color-text;
 
     .bubble-corner {
@@ -166,6 +179,9 @@
   width: 100% !important;
 }
 
+.bubble.auto-width {
+  width: auto !important;
+}
 
 
 .bubble .bubble-corner {

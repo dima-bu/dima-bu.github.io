@@ -20,4 +20,9 @@
       background-color: darken($color-blue, 6.5%)
     }
   }
+
+  &.link-btn {
+    display: inline-block;
+    text-decoration: none;
+  }
 }

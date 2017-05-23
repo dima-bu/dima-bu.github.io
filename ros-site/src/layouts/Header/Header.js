@@ -31,14 +31,14 @@ export const Header = (props) => {
   }
 
   return (
-    <div className="container">
+    <header className="container-zero fixed-header">
       <div className='header-wraaper clearfix'>
         <Logo />
         <div style={{float: 'right'}}>
           <SwitchButton label="Eng" checked={getChecked()} labelRight="Рус" onChange={onChangeHandler}/>
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

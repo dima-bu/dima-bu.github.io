@@ -4,6 +4,7 @@ import React from 'react'
 import EmojiApprove from './assets/emoji-approve.png'
 import EmojiSmiling from './assets/emoji-smiling.png'
 import EmojiWink from './assets/emoji-wink.png'
+import EmojiSurprise from './assets/emoji-surprise.png'
 
 export const tr = (word, format = false) => {
   let newText;
@@ -40,12 +41,17 @@ export const formatText = (result) => {
   const getEmoji = (num) => {
     switch (num) {
       case "smiling":
-      return <img height="24" width="24" className="emoji-img" src={EmojiSmiling} />
-      break;
+        return <img height="24" width="24" className="emoji-img" src={EmojiSmiling} />
+        break;
       case "wink":
-      return <img height="24" width="24" className="emoji-img" src={EmojiWink} />
+        return <img height="24" width="24" className="emoji-img" src={EmojiWink} />
+        break;
+      case "surprise":
+        return <img height="24" width="24" className="emoji-img" src={EmojiSurprise} />
+        break;
       case "approve":
         return <img height="24" width="24" className="emoji-img" src={EmojiApprove} />
+        break;
     }
   }
 

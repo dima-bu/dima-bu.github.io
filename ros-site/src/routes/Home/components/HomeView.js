@@ -12,6 +12,8 @@ import Projects from 'components/Projects/Projects.js'
 import Contacts from 'components/Contacts/Contacts.js'
 import Gif from 'components/Gif/Gif.js'
 import browserHistory from 'react-router/lib/browserHistory'
+import {changeHash } from './../module/general.js'
+import Nav from 'components/Nav/Nav.js'
 
 const achievements = [
   {
@@ -59,13 +61,13 @@ class HomeView extends React.Component {
 
     elems.forEach(elem => {
       if (elem === 'projects') {
-        arr.push( <Projects key='projects' />)
+        arr.push( <Projects key='projects' isHiddenText={this.props.isHiddenText} />)
       }
       if (elem === 'gif') {
-        arr.push( <Gif key='gif'/>)
+        arr.push( <Gif key='gif' isHiddenText={this.props.isHiddenText} />)
       }
       if (elem === 'contacts') {
-        arr.push( <Contacts key='contacts'/>)
+        arr.push( <Contacts key='contacts' isHiddenText={this.props.isHiddenText}/>)
       }
     });
 
@@ -94,59 +96,29 @@ class HomeView extends React.Component {
         </div>
         }
         <div className="main-area">
-        <div className="ta-c ">
+        <div className="ta-c bubble-row">
             <Bubble isHiddenText={this.props.isHiddenText}>
                   <p>{tr('HI_ROSBERRY', true)}</p>
             </Bubble>
         </div>
         {this.getView()}
         </div>
-        <div className="ta-c bottom-links container">
-          <div className="bubble-wrapper">
-            <Bubble
-              isFull
-              rightPosition
-              isHiddenText={this.props.isHiddenText}
-              type='link'
-              size='sm'
-              href="/#projects"
-              text={tr('HI_PROJECTS_LINK_TEXT', true)}/>
-          </div>
+        <Nav onChangeHash={this.props.changeHash} hashState={this.props.hashState} isHiddenText={this.props.isHiddenText}/>
 
-          <div className="bubble-wrapper">
-              <Bubble
-                rightPosition
-                isFull
-                isHiddenText={this.props.isHiddenText}
-                type='link'
-                size='sm'
-                href="/#contacts"
-                text={tr('HI_CONTACTS_LINK_TEXT', true)}/>
-          </div>
-            <div className="bubble-wrapper">
-              <Bubble
-                rightPosition
-                isFull
-                isHiddenText={this.props.isHiddenText}
-                type='link'
-                size='sm'
-                href="/#gif"
-                text={tr('HI_GIF_LINK_TEXT', true)}/>
-            </div>
-
-        </div>
       </div>
     )
   }
 }
 
 const mapDispatchToProps = {
-  setLocale
+  setLocale: setLocale,
+  changeHash: changeHash
 }
 
 const mapStateToProps = (state) => ({
   i18n : state.i18n,
-  isHiddenText: state.general.isHiddenText
+  isHiddenText: state.general.isHiddenText,
+  hashState : state.general.hashState
 })
 
-export default connect(mapStateToProps)(HomeView)
+export default connect(mapStateToProps, mapDispatchToProps)(HomeView)

@@ -1,10 +1,16 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import { IndexLink, Link, browserHistory} from 'react-router'
+import {tr} from 'lib/locale.js';
+import Bubble from 'components/Bubble/Bubble'
+
+
 class Nav extends Component {
 
   static propTypes = {
     onChangeHash: PropTypes.func,
+    isHiddenText: PropTypes.bool,
+    hashState: PropTypes.string,
     items: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string,
@@ -16,50 +22,64 @@ class Nav extends Component {
   static defaultProps = {
     items: [
       {
-        title: 'Привет, покажите ваши проекты',
-        path: '/levelOne#projects'
+        title: 'HI_PROJECTS_LINK_TEXT',
+        path: 'projects'
       },
       {
-        title: 'Как с вами связаться',
-        path: '/levelOne#contacts'
+        title: 'HI_CONTACTS_LINK_TEXT',
+        path: 'contacts'
       },
       {
-        title: 'Гифка',
-        path: '/levelOne#gif'
+        title: 'HI_GIF_LINK_TEXT',
+        path: 'gif'
       }
     ]
   };
 
   render () {
-    const {items, onChangeHash} = this.props;
+    const {items, onChangeHash, isHiddenText, hashState} = this.props;
 
     const onClickHandler = (path) => {
       onChangeHash(path)
     };
 
+    const itemsMap = items.filter((item)=>{
+      return (hashState.indexOf(item.path) === -1)
+    });
+
     return (
     <div>
     {onChangeHash &&
-    <div>
-      {items.map(item => {
+    <div className="ta-c bottom-links container">
+      {itemsMap.map(item => {
           return (
-            <a key={item.path} onClick={onClickHandler.bind(this, item.path)}>
-              {item.title}
-              <br/>
-            </a>
+          <div
+             className="bubble-wrapper"
+             key={item.path}
+            >
+            <Bubble
+              rightPosition
+              isFull
+              isHiddenText={isHiddenText}
+              onClick={onClickHandler.bind(this, `#${item.path}`)}
+              type='link'
+              size='sm'
+              text={tr(item.title, true)} />
+          </div>
           );
         })}
-      </div>
+    </div>
     }
 
-      {!onChangeHash &&
+     {!onChangeHash &&
 
-      <div>
+      <div className="ta-c bottom-links container">
         {items.map(item => {
           return (
             <Link to={item.path} key={item.path} activeClassName='route--active'>
               {item.title}
               <br/>
+              222
             </Link>
           );
         })}

@@ -1,5 +1,39 @@
 @import './../../styles/base';
 
+.project-bubble_wrapper {
+  width: 90%;
+  padding-left: 50px;
+  position: relative;
+  height: 500px;
+  line-height: 500px;
+  .bubble-inner {
+    width: 55%;
+  }
+}
+
+
+.project-bubble .ros-time {
+  position: absolute;
+  left: 0;
+  top: -42px;
+}
+
+.project-bubble.bubble.size-lg {
+  margin-left: 0;
+  vertical-align: middle;
+}
+
+.project-bubble_wrapper.-left {
+  .project-bubble-img {
+    left: 110px;
+    right: inherit;
+  }
+
+  .bubble-inner {
+    margin-left:  340px;
+  }
+}
+
 h2.project-title {
   font-size: 46px;
   line-height: 50px;
@@ -30,5 +64,13 @@ h2.project-title {
   .achievement-wrapper {
     margin-right: 30px;
   }
+}
+.project-bubble {
+  position: relative;
+}
+
+.project-bubble-img {
+  position: absolute;
+  right: 80px;
 }
 

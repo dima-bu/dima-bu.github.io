@@ -6,47 +6,55 @@ import Bubble from 'components/Bubble/Bubble';
 import DownloadAndroid from 'components/SVG/DownloadAndroid';
 import DownloadApple from 'components/SVG/DownloadApple';
 import Achievement from 'components/Achievement/Achievement';
+import Time from 'components/Time/Time.js'
 
 const ProjectBubble = (props) => {
-  const {title, description, achievements, linkForApple, linkForAndroid} = props;
-  const newDescription = description.split('<br>').map((item, i) => <div key={i}>{item}</div>);
+  const {title, description, achievements, linkForApple, linkForAndroid, style, children, isLeft, isHiddenText } = props;
+ // const newDescription = description.split('<br>').map((item, i) => <div key={i}>{item}</div>);
 
   return (
-    <Bubble isFull>
-      <div>
-        <h2 className="project-title">{title}</h2>
+    <div className={cx('project-bubble_wrapper', isLeft ? '-left' : '')}>
 
-        <p className="project-desc">{newDescription}</p>
+      <Bubble isFull className="project-bubble" style={style} isHiddenText={isHiddenText}>
+        <Time from />
+        <div>
+          <h2 className="project-title">{title}</h2>
 
-        <div className="project-achievements">
-          {achievements.map((achievement, key) => {
-            return (
-              <Achievement
-                key={key}
-                firstLine={achievement.firstLine}
-                secondLine={achievement.secondLine}
-                />
-            )
-          })}
-          { linkForAndroid &&
-            <a className="icon-link project-available" href={linkForAndroid}>
-              <DownloadAndroid />
-            </a>
-          }
-          {linkForApple &&
-            <a className="icon-link project-available" href={linkForApple}>
-              <DownloadApple />
-            </a>
-          }
+          <p className="project-desc">{description}</p>
 
+          <div className="project-achievements">
+            {achievements.map((achievement, key) => {
+              return (
+                <Achievement
+                  key={key}
+                  firstLine={achievement.firstLine}
+                  secondLine={achievement.secondLine}
+                  />
+              )
+            })}
+            { linkForAndroid &&
+              <a className="icon-link project-available" href={linkForAndroid}>
+                <DownloadAndroid />
+              </a>
+            }
+            {linkForApple &&
+              <a className="icon-link project-available" href={linkForApple}>
+                <DownloadApple />
+              </a>
+            }
+
+          </div>
         </div>
-      </div>
-    </Bubble>
+      </Bubble>
+      {children}
+    </div>
   )
 }
 
 ProjectBubble.propTypes = {
   title: PropTypes.string,
+  isLeft: PropTypes.bool,
+  isHiddenText: PropTypes.bool,
   description: PropTypes.string,
   linkForApple: PropTypes.string,
   linkForAndroid: PropTypes.string,
@@ -63,7 +71,9 @@ ProjectBubble.defaultProps = {
   text: '',
   type: 'primary',
   size: 'lg',
-  achievements: []
+  achievements: [],
+  isLeft: false,
+  isHiddenText: false
 }
 
 export default ProjectBubble;

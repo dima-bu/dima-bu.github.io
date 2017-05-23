@@ -5,12 +5,31 @@ import cx from 'classnames'
 import BubbleCorner from 'components/SVG/BubbleCorner'
 
 const Bubble = (props) => {
-  const {text, type, size, isFull, rightPosition, children, href, isHiddenText} = props;
-  //const newText = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
+  const {
+    text,
+    type,
+    size,
+    isFull,
+    rightPosition,
+    children,
+    href,
+    isHiddenText,
+    className,
+    style,
+    autoWidth,
+    withVideo,
+    onClick
+  } = props;
+  //const new//Text = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
 
-  if (href) {
+  if (href || onClick) {
     return (
-      <a href={href} className={cx("bubble", 'type-'+type, 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}>
+      <a
+        href={href}
+        style={style}
+        onClick={onClick}
+        className={cx("bubble", className, 'type-'+type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width': '', 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}
+        >
         <span className={cx('bubble-inner', isHiddenText ? 'isHide': 'isShow')}>
           {text}
           {children}
@@ -20,7 +39,7 @@ const Bubble = (props) => {
     )
   } else {
     return (
-        <div className={cx("bubble", 'type-'+type, 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}>
+        <div style={style} className={cx("bubble", className, 'type-'+type, autoWidth ? 'auto-width': '',  withVideo ? 'with-video' : '','size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}>
           <span className={cx('bubble-inner', isHiddenText ? 'isHide': 'isShow')}>
             {text}
             {children}
@@ -40,7 +59,10 @@ Bubble.propTypes = {
     href: PropTypes.string,
     children : PropTypes.element,
     isHiddenText: PropTypes.bool,
-    isTime: PropTypes.bool
+    withVideo: PropTypes.bool,
+    isTime: PropTypes.bool,
+    className: PropTypes.string,
+    onClick: PropTypes.func
 }
 
 Bubble.defaultProps = {
@@ -50,7 +72,10 @@ Bubble.defaultProps = {
   isFull: false,
   rightPosition: false,
   isHiddenText: false,
-  isTime: false
+  isTime: false,
+  autoWidth: false,
+  withVideo: false,
+  className: ''
 }
 
 export default Bubble;

@@ -7,9 +7,11 @@ const Link = (props) => {
   const {caption, url, children} = props;
 
   return (
-    <a className={cx('primary', 'ros-link')} href={url}>
+    <a className={cx('primary', 'ros-link', 'd-flex', 'align-items-center', children ? '-indent' : '')} href={url}>
       {children}
-      {caption}
+      <span className="caption">
+        {caption}
+      </span>
     </a>
   )
 }

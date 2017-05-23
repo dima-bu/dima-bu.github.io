@@ -6,3 +6,28 @@
   font-weight: bold;
   text-decoration: underline;
 }
+
+.fixed-header {
+  position: fixed;
+  left: 50%;
+}
+
+@media (min-width: 768px) {
+  header.fixed-header {
+    margin-left: -375px;
+  }
+}
+
+@media (min-width: 992px){
+  header.fixed-header {
+    margin-left: -485px;
+  }
+}
+
+@media (min-width: 1300px){
+  header.fixed-header {
+    margin-left: -700px;
+  }
+}
+
+

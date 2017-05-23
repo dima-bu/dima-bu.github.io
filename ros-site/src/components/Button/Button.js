@@ -4,22 +4,34 @@ import cx from 'classnames'
 import './Button.scss'
 
 const Button = (props) => {
-  const {caption, onClickHandler} = props;
+  const {caption, onClickHandler, isLink, href} = props;
 
-  return (
-    <button className={cx('primary', 'ros-button')} onClick={onClickHandler}>
-      {caption}
-    </button>
-  )
+  if (isLink) {
+    return (
+      <a href={href} className={cx('primary', 'ros-button', 'link-btn')}>
+        {caption}
+      </a>
+    )
+  } else {
+    return (
+      <button className={cx('primary', 'ros-button')} onClick={onClickHandler}>
+        {caption}
+      </button>
+    )
+  }
 }
 
 Button.propTypes = {
   caption: PropTypes.string,
-  onClickHandler: PropTypes.func
+  href: PropTypes.string,
+  onClickHandler: PropTypes.func,
+  isLink: PropTypes.bool
 }
 
 Button.defaultProps = {
   caption: '',
+  href: '#',
+  isLink: false,
   onClickHandler: () => {}
 }
 

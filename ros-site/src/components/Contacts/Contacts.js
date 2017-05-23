@@ -1,21 +1,97 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
+import { IndexLink } from 'react-router'
 import './Contacts.scss'
+import Bubble from './../Bubble/Bubble.js'
+import Button from './../Button/Button.js'
+import Time from './../Time/Time.js'
+import {tr} from 'lib/locale.js'
+import Link from './../Link/Link.js'
+import Mail from './../SVG/Mail.js'
+import Skype from './../SVG/Skype.js'
+import VKLink from './../SVG/VKLink.js'
+import FacebookLink from './../SVG/FacebookLink.js'
+import UpworkImg from './assets/logo-upwork@2x.jpg';
+import GoodFirmsImg from './assets/logo-goodfirms@2x.jpg';
 
-export const Contacts = () => (
+export const Contacts = (props) => (
+
   <div className="clearfix">
-    <div className="chat-item -to">
-      Как с вами связаться?
+    <div className="clearfix right-bubble bubble-row container">
+      <div className="bubble-wrapper ">
+        <Time />
+        <Bubble isHiddenText={props.isHiddenText} size="md" type="secondary" rightPosition>
+          {tr('HI_CONTACTS_LINK_TEXT', true)}
+        </Bubble>
+      </div>
     </div>
-    <div className="chat-item">
-      О, это очень легко. Вы можете написать нам в мессенджере или на почту, а так же посмотреть наши группы в социальных сетях:
+
+    <div className="clearfix bubble-row container">
+      <div className="bubble-wrapper">
+        <Time from/>
+        <Bubble size="lg" type="primary" autoWidth isHiddenText={props.isHiddenText}>
+          {tr('CONTACTS_SIMPLE', true)}
+        </Bubble>
+      </div>
     </div>
-    <div className="chat-item">
-      <div>develop@rosberry.com</div>
-      <div>rosberry4u</div>
+    <div className="clearfix bubble-row container">
+      <div className="bubble-wrapper">
+        <Time from/>
+        <Bubble size="lg" type="primary" autoWidth isHiddenText={props.isHiddenText}>
+          <div  style={{marginBottom: '15px'}} >
+            <Link caption='develop@rosberry.com' url="mailto:develop@rosberry.com">
+              <Mail />
+            </Link>
+          </div>
+          <div style={{marginBottom: '15px'}}>
+            <Link caption='rosberry4u'>
+              <Skype />
+            </Link>
+          </div>
+          <div className="d-flex align-items-center"  style={{lineHeight: '0'}}>
+            <FacebookLink style={{marginRight: '20px'}} />
+            <VKLink />
+          </div>
+        </Bubble>
+      </div>
     </div>
-    <div className="chat-item">
-      Спасибо, что зашли на наш сайт. Приходите еще, скоро у нас появится много нового: больше проектов в портфолио
+
+    <div className="clearfix bubble-row container">
+      <div className="bubble-wrapper">
+        <Time from/>
+        <Bubble size="lg" type="primary" autoWidth>
+          <div style={{marginBottom: '15px'}}>
+            <img src={UpworkImg} width="215" height="60" alt=""/>
+          </div>
+          {tr('CONTACTS_EXPERIENCE', true)}
+          <div style={{marginTop: '25px'}}>
+            <Button isLink caption='Посмотреть портфолио' />
+          </div>
+        </Bubble>
+      </div>
+    </div>
+
+    <div className="clearfix bubble-row container">
+      <div className="bubble-wrapper">
+        <Time from/>
+        <Bubble size="lg" type="primary" autoWidth>
+          <div style={{marginBottom: '15px'}}>
+            <img src={GoodFirmsImg} width="301" height="44" alt=""/>
+          </div>
+          {tr('CONTACTS_GOODFIRM', true)}
+          <div style={{marginTop: '25px'}}>
+            <Button isLink caption='Почитать интервью' />
+          </div>
+        </Bubble>
+      </div>
+    </div>
+
+    <div className="clearfix bubble-row container">
+      <div className="bubble-wrapper">
+        <Time from/>
+        <Bubble sizes="lg" type="primary" autoWidth>
+          {tr('CONTACTS_COME_AGAIN', true)}
+        </Bubble>
+      </div>
     </div>
   </div>
 )
