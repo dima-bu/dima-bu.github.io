@@ -278,9 +278,9 @@ function stickyNavbar() {
 
 			//to DOWN
 			if(scrollY > prevScroll) {
-				debugger;
 
 				headTop.css("top", (-headTop.height()));
+				headTop.addClass("onHide");
 				headMain.css("top", "0px");
 				if(leftPanel.length > 0) { leftPanel.css("top", (lpTop - headTop.height())); }
 
@@ -296,11 +296,12 @@ function stickyNavbar() {
 
 						var headTopHeight = 0;
 						streamsWrapper.show();
-						if ((headTop).is(':visible')) {
+						if ((headTop).is(':visible') && !(headTop).hasClass('onHide')) {
 							headTopHeight = headTop.height();
 						}
 
-						streamsWrapper.css("top", (headWrap.height() + 5 - headTopHeight));
+						streamsWrapper.css("top", (headTopHeight + headMain.outerHeight() + 5));
+
 						if (scrollY > streamBReveal.offset().top  - 130)  {
 							$('.conference-stream:first-child').removeClass('active');
 							$('.conference-stream:last-child').addClass('active');
@@ -318,6 +319,7 @@ function stickyNavbar() {
 				//to TOP
 				headTop.css("top", "0px");
 				headMain.css("top", headTop.height());
+				headTop.removeClass("onHide");
 				if(leftPanel.length > 0){ leftPanel.css("top", (lpTop)); }
 
 				if(profileBriefBar.length != 0) {
@@ -329,10 +331,17 @@ function stickyNavbar() {
 				}
 
 				if(streams) {
+
+					var headTopHeight2 = 0;
+
+					if ((headTop).is(':visible') && !(headTop).hasClass('onHide')) {
+						headTopHeight2 = headTop.height();
+					}
+
 					if (scrollY < streamAReveal.offset().top || scrollY > streamEnd.offset().top) {
 						streamsWrapper.css("top", (-streamsWrapper.height()));
 					} else {
-						streamsWrapper.css("top", (headWrap.height() + 5));
+						streamsWrapper.css("top", (headTopHeight2 + headMain.outerHeight() + 5));
 						if (scrollY > streamBReveal.offset().top) {
 							$('.conference-stream:first-child').removeClass('active');
 							$('.conference-stream:last-child').addClass('active');
