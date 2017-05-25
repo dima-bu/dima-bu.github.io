@@ -64,7 +64,7 @@ export const Contacts = (props) => (
           </div>
           {tr('CONTACTS_EXPERIENCE', true)}
           <div style={{marginTop: '25px'}}>
-            <Button isLink caption='Посмотреть портфолио' />
+            <Button isLink caption={tr('SEE_PORTFOLIO', true)} />
           </div>
         </Bubble>
       </div>
@@ -79,7 +79,7 @@ export const Contacts = (props) => (
           </div>
           {tr('CONTACTS_GOODFIRM', true)}
           <div style={{marginTop: '25px'}}>
-            <Button isLink caption='Почитать интервью' />
+            <Button isLink caption={tr('READ_INTERVIEW', true)} />
           </div>
         </Bubble>
       </div>
