@@ -80,11 +80,9 @@ class HomeView extends React.Component {
     )
   }
 
-
-
   render() {
 
-    const getStyleWrapper = ( )=> {
+    const getStyleWrapper = ()=> {
       const hash = document.location.hash;
       if (hash) {
       } else {
