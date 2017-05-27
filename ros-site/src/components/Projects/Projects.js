@@ -5,11 +5,11 @@ import Bubble from './../Bubble/Bubble.js'
 import ProjectBubble from './../ProjectBubble/ProjectBubble.js'
 import Time from './../Time/Time.js'
 import {tr} from 'lib/locale.js'
-import TrustImg from './assets/phone-trusted@2x.jpg'
-import SplitpicImg from './assets/phone-splitpic@2x.jpg'
-import CinepicImg from './assets/phone-cinepic@2x.jpg'
-import PhyzseekImg from './assets/phone-phyzseek@2x.jpg'
-import TrackdImg from './assets/phone-trackd@2x.jpg'
+import TrustImg from './assets/phone-trusted.png'
+import SplitpicImg from './assets/phone-splitpic.png'
+import CinepicImg from './assets/phone-cinepic.png'
+import PhyzseekImg from './assets/phone-phyzseek.png'
+import TrackdImg from './assets/phone-trackd.png'
 
 export const Projects = (props) => {
   return (
@@ -38,7 +38,7 @@ export const Projects = (props) => {
           linkForAndroid="#"
           linkForApple="#"
           >
-            <img className="project-bubble-img"  src={TrustImg} width='274' height='500' alt=""/>
+            <img className="project-bubble-img"  src={TrustImg} width='246' height='500' alt=""/>
           </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -59,7 +59,7 @@ export const Projects = (props) => {
             }
           ]}
           >
-          <img className="project-bubble-img"  src={SplitpicImg} width='274' height='500' alt=""/>
+          <img className="project-bubble-img"  src={SplitpicImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -76,7 +76,7 @@ export const Projects = (props) => {
             }
           ]}
           >
-          <img className="project-bubble-img"  src={CinepicImg} width='274' height='500' alt=""/>
+          <img className="project-bubble-img"  src={CinepicImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -87,7 +87,7 @@ export const Projects = (props) => {
           isHiddenText={props.isHiddenText}
           isLeft
           >
-          <img className="project-bubble-img"  src={PhyzseekImg} width='274' height='500' alt=""/>
+          <img className="project-bubble-img"  src={PhyzseekImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -103,7 +103,7 @@ export const Projects = (props) => {
             }
           ]}
           >
-          <img className="project-bubble-img"  src={TrackdImg} width='274' height='500' alt=""/>
+          <img className="project-bubble-img"  src={TrackdImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
     </div>

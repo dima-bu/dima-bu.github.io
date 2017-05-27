@@ -41,7 +41,7 @@ stories.add('with achievements', () => {
     description="Социальная сеть для профессиональных инвесторов"
     achievements={achievements}
     >
-    <img className="project-bubble-img" style={{top:'-80px'}} src={TrustImg} width='274' height='500' alt=""/>
+    <img className="project-bubble-img" style={{top:'-80px'}} src={TrustImg} width='246' height='500' alt=""/>
   </ProjectBubble>
 });
 
