@@ -7,28 +7,14 @@ import './Achievement.scss'
 const Achievement = (props) => {
   const {firstLine, secondLine, isInvert} = props;
   return (
-  <div>
-  {isInvert &&
     <div className="achievement-wrapper">
       <LaurelLeft/>
       <div className="achievement-inner">
-        <div className="achievement-secondLine"> {firstLine}</div>
-        <div className="achievement-firstLine"> {secondLine}</div>
+        <div className="achievement-firstLine"> {firstLine}</div>
+        <div className="achievement-secondLine"> {secondLine}</div>
       </div>
       <LaurelRight />
     </div>
-  }
-{!isInvert &&
-<div className="achievement-wrapper">
-  <LaurelLeft/>
-  <div className="achievement-inner">
-    <div className="achievement-firstLine"> {firstLine}</div>
-    <div className="achievement-secondLine"> {secondLine}</div>
-  </div>
-  <LaurelRight />
-</div>
-}
-  </div>
   )
 }
 

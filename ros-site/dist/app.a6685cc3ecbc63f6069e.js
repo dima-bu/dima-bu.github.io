@@ -56336,51 +56336,25 @@ webpackJsonp([0],[
 
 	  return _react2.default.createElement(
 	    'div',
-	    null,
-	    isInvert && _react2.default.createElement(
+	    { className: 'achievement-wrapper' },
+	    _react2.default.createElement(_LaurelLeft2.default, null),
+	    _react2.default.createElement(
 	      'div',
-	      { className: 'achievement-wrapper' },
-	      _react2.default.createElement(_LaurelLeft2.default, null),
+	      { className: 'achievement-inner' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'achievement-inner' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'achievement-secondLine' },
-	          ' ',
-	          firstLine
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'achievement-firstLine' },
-	          ' ',
-	          secondLine
-	        )
+	        { className: 'achievement-firstLine' },
+	        ' ',
+	        firstLine
 	      ),
-	      _react2.default.createElement(_LaurelRight2.default, null)
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'achievement-secondLine' },
+	        ' ',
+	        secondLine
+	      )
 	    ),
-	    !isInvert && _react2.default.createElement(
-	      'div',
-	      { className: 'achievement-wrapper' },
-	      _react2.default.createElement(_LaurelLeft2.default, null),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'achievement-inner' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'achievement-firstLine' },
-	          ' ',
-	          firstLine
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'achievement-secondLine' },
-	          ' ',
-	          secondLine
-	        )
-	      ),
-	      _react2.default.createElement(_LaurelRight2.default, null)
-	    )
+	    _react2.default.createElement(_LaurelRight2.default, null)
 	  );
 	};
 
