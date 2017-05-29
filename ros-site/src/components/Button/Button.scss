@@ -26,3 +26,10 @@
     text-decoration: none;
   }
 }
+
+@media (max-width: 767px) {
+  .ros-button {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

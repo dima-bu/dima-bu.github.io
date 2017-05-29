@@ -17,7 +17,7 @@ export const Projects = (props) => {
       <div className="clearfix right-bubble bubble-row container">
         <div className="bubble-wrapper ">
           <Time />
-          <Bubble size="md" type="secondary" isHiddenText={props.isHiddenText} rightPosition>
+          <Bubble size="md" type="secondary" className="w_35p" isHiddenText={props.isHiddenText} rightPosition>
             {tr('HI_PROJECTS_LINK_TEXT', true)}
           </Bubble>
         </div>
@@ -25,7 +25,7 @@ export const Projects = (props) => {
       <div className="clearfix bubble-row container">
         <div className="bubble-wrapper">
           <Time from/>
-          <Bubble size="md" type="primary" isHiddenText={props.isHiddenText} >
+          <Bubble size="md" type="primary"  className="w_35p" isHiddenText={props.isHiddenText} >
             {tr('PROJECTS_OUR_LAST_PROJECTS', true)}
           </Bubble>
         </div>
@@ -38,7 +38,7 @@ export const Projects = (props) => {
           linkForAndroid="#"
           linkForApple="#"
           >
-            <img className="project-bubble-img"  src={TrustImg} width='246' height='500' alt=""/>
+            <img className="project-bubble-img img-response"  src={TrustImg} width='246' height='500' alt=""/>
           </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -51,15 +51,17 @@ export const Projects = (props) => {
           achievements = {[
             {
               firstLine: 'Featured',
-              secondLine: 'By Apple'
+              secondLine: 'By Apple',
+              isInvert: false
             },
             {
               firstLine: tr('50_MLN'),
-              secondLine: tr('DOWNLOADS')
+              secondLine: tr('DOWNLOADS'),
+              isInvert: false
             }
           ]}
           >
-          <img className="project-bubble-img"  src={SplitpicImg} width='246' height='500' alt=""/>
+          <img className="project-bubble-img img-response"  src={SplitpicImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -71,12 +73,13 @@ export const Projects = (props) => {
           linkForApple="#"
           achievements = {[
             {
-              firstLine: 'Призёр номинации',
-              secondLine: 'Tagline 2016'
+              firstLine: tr('PRIZEWINNER'),
+              secondLine: 'Tagline 2016',
+              isInvert: false
             }
           ]}
           >
-          <img className="project-bubble-img"  src={CinepicImg} width='246' height='500' alt=""/>
+          <img className="project-bubble-img img-response" src={CinepicImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -87,7 +90,7 @@ export const Projects = (props) => {
           isHiddenText={props.isHiddenText}
           isLeft
           >
-          <img className="project-bubble-img"  src={PhyzseekImg} width='246' height='500' alt=""/>
+          <img className="project-bubble-img img-response"  src={PhyzseekImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
       <div className="bubble-row container" style={{padding:'15px 0'}}>
@@ -99,11 +102,12 @@ export const Projects = (props) => {
           achievements = {[
             {
               firstLine: 'Featured',
-              secondLine: 'By Apple'
+              secondLine: 'By Apple',
+              isInvert: false
             }
           ]}
           >
-          <img className="project-bubble-img"  src={TrackdImg} width='246' height='500' alt=""/>
+          <img className="project-bubble-img img-response"  src={TrackdImg} width='246' height='500' alt=""/>
         </ProjectBubble>
       </div>
     </div>

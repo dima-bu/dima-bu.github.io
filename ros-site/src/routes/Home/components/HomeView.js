@@ -14,6 +14,7 @@ import Gif from 'components/Gif/Gif.js'
 import browserHistory from 'react-router/lib/browserHistory'
 import {changeHash } from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
+import Time from 'components/Time/Time.js'
 
 const achievements = [
   {
@@ -50,13 +51,14 @@ class HomeView extends React.Component {
     )
   }
 
-
-
+  getHash(){
+    return document.location.hash;
+  }
 
   getView() {
 
     const arr = [];
-    let pathname = document.location.hash;
+    let pathname = this.getHash();
 
     pathname = pathname.substr(1);
     const elems = pathname.split('-');
@@ -80,6 +82,25 @@ class HomeView extends React.Component {
     )
   }
 
+  getFinishBlock(){
+    let pathname = this.getHash();
+    const elems = pathname.split('-');
+
+    if(elems.length === 3) {
+      return (
+        <div className="clearfix bubble-row container">
+          <div className="bubble-wrapper">
+            <Time from/>
+            <Bubble size="lg" type="primary" className="w_70p" isHiddenText={this.props.isHiddenText}>
+              {tr('CONTACTS_COME_AGAIN', true)}
+            </Bubble>
+          </div>
+        </div>
+      );
+    }
+
+  }
+
   render() {
 
     const getStyleWrapper = ()=> {
@@ -91,7 +112,6 @@ class HomeView extends React.Component {
     }
 
     return (
-
       <div>
         {this.state.isSplash &&
         <div className={cx('splash', this.state.isSplash ? 'isHide' : 'isHide')}
@@ -108,11 +128,12 @@ class HomeView extends React.Component {
         }
         <div className="main-area" style={getStyleWrapper()} >
           <div className="ta-c bubble-row">
-            <Bubble isHiddenText={this.props.isHiddenText}>
+            <Bubble isHiddenText={this.props.isHiddenText} className="w_45">
                   <p>{tr('HI_ROSBERRY', true)}</p>
             </Bubble>
           </div>
           {this.getView()}
+          {this.getFinishBlock()}
         </div>
         <Nav onChangeHash={this.props.changeHash} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
       </div>
