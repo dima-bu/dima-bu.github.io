@@ -54766,6 +54766,10 @@ webpackJsonp([0],[
 	  value: true
 	});
 
+	var _defineProperty2 = __webpack_require__(447);
+
+	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
 	var _react = __webpack_require__(24);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -54803,14 +54807,16 @@ webpackJsonp([0],[
 	  //const new//Text = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
 
 	  if (href || onClick) {
+	    var _React$createElement;
+
 	    return _react2.default.createElement(
 	      'a',
-	      {
+	      (_React$createElement = {
 	        href: href,
 	        style: style,
 	        onClick: onClick,
-	        className: (0, _classnames2.default)("bubble", className, 'type-' + type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width' : '', 'size-' + size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')
-	      },
+	        onTap: onClick
+	      }, (0, _defineProperty3.default)(_React$createElement, 'style', { cursor: 'pointer' }), (0, _defineProperty3.default)(_React$createElement, 'className', (0, _classnames2.default)("bubble", className, 'type-' + type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width' : '', 'size-' + size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')), _React$createElement),
 	      _react2.default.createElement(
 	        'span',
 	        { className: (0, _classnames2.default)('bubble-inner', isHiddenText ? 'isHide' : 'isShow') },
@@ -65889,14 +65895,14 @@ webpackJsonp([0],[
 	                'div',
 	                {
 	                  className: 'bubble-wrapper',
-	                  key: item.path
+	                  key: item.path,
+	                  onTap: onClickHandler.bind(_this2, '#' + item.path)
 	                },
 	                _react2.default.createElement(_Bubble2.default, {
 	                  rightPosition: true,
 	                  isFull: true,
 	                  isHiddenText: isHiddenText,
 	                  onClick: onClickHandler.bind(_this2, '#' + item.path),
-	                  onTap: onClickHandler.bind(_this2, '#' + item.path),
 	                  type: 'link',
 	                  size: 'sm',
 	                  text: (0, _locale.tr)(item.title, true) })
