@@ -51224,15 +51224,15 @@ webpackJsonp([0],[
 	  var fpp = _reactRouter.hashHistory;
 
 	  if (window.location.hash) {
-	    var newN = document.location.hash + '-' + hash;
+	    var newN = window.location.hash + '-' + hash;
 	    //browserHistory.createLocation({hash: newN, pathname: '/'})
-	    document.location.hash = newN;
+	    window.location.hash = newN;
 	  } else {
 	    //browserHistory.createLocation({hash: hash, pathname: '/'})
-	    document.location.hash = hash;
+	    window.location.hash = hash;
 	  }
 
-	  return (0, _assign2.default)({}, state, { hashState: document.location.hash });
+	  return (0, _assign2.default)({}, state, { hashState: window.location.hash });
 	}), _ACTION_HANDLERS);
 
 	// ------------------------------------
@@ -54628,7 +54628,7 @@ webpackJsonp([0],[
 	  }, {
 	    key: 'getHash',
 	    value: function getHash() {
-	      return document.location.hash;
+	      return window.location.hash;
 	    }
 	  }, {
 	    key: 'getView',
@@ -54813,8 +54813,7 @@ webpackJsonp([0],[
 	      'div',
 	      (_React$createElement = {
 	        style: style,
-	        onClick: onClick,
-	        onTap: onClick
+	        onClick: onClick
 	      }, (0, _defineProperty3.default)(_React$createElement, 'style', { cursor: 'pointer' }), (0, _defineProperty3.default)(_React$createElement, 'className', (0, _classnames2.default)("bubble", className, 'type-' + type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width' : '', 'size-' + size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')), _React$createElement),
 	      text,
 	      children
@@ -65862,6 +65861,7 @@ webpackJsonp([0],[
 	      var hash = document.location.hash;
 
 	      var onClickHandler = function onClickHandler(path) {
+
 	        onChangeHash(path);
 	      };
 
