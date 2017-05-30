@@ -54806,7 +54806,7 @@ webpackJsonp([0],[
 	      onClick = props.onClick;
 	  //const new//Text = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
 
-	  if (href || onClick) {
+	  if (type === 'link') {
 	    var _React$createElement;
 
 	    return _react2.default.createElement(
@@ -54816,13 +54816,8 @@ webpackJsonp([0],[
 	        onClick: onClick,
 	        onTap: onClick
 	      }, (0, _defineProperty3.default)(_React$createElement, 'style', { cursor: 'pointer' }), (0, _defineProperty3.default)(_React$createElement, 'className', (0, _classnames2.default)("bubble", className, 'type-' + type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width' : '', 'size-' + size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')), _React$createElement),
-	      _react2.default.createElement(
-	        'span',
-	        { className: (0, _classnames2.default)('bubble-inner', isHiddenText ? 'isHide' : 'isShow') },
-	        text,
-	        children
-	      ),
-	      _react2.default.createElement(_BubbleCorner2.default, null)
+	      text,
+	      children
 	    );
 	  } else {
 	    return _react2.default.createElement(
@@ -65895,13 +65890,12 @@ webpackJsonp([0],[
 	                {
 	                  className: 'bubble-wrapper',
 	                  key: item.path,
-	                  onTap: onClickHandler.bind(_this2, '#' + item.path)
+	                  onClick: onClickHandler.bind(_this2, '#' + item.path)
 	                },
 	                _react2.default.createElement(_Bubble2.default, {
 	                  rightPosition: true,
 	                  isFull: true,
 	                  isHiddenText: isHiddenText,
-	                  onClick: onClickHandler.bind(_this2, '#' + item.path),
 	                  type: 'link',
 	                  size: 'sm',
 	                  text: (0, _locale.tr)(item.title, true) })
