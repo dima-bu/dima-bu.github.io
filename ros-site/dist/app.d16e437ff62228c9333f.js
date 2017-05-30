@@ -54810,9 +54810,8 @@ webpackJsonp([0],[
 	    var _React$createElement;
 
 	    return _react2.default.createElement(
-	      'a',
+	      'div',
 	      (_React$createElement = {
-	        href: href,
 	        style: style,
 	        onClick: onClick,
 	        onTap: onClick
