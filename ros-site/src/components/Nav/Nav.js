@@ -67,6 +67,7 @@ class Nav extends Component {
           <div
              className="bubble-wrapper"
              key={item.path}
+             onTap={onClickHandler.bind(this, `#${item.path}`)}
             >
             <Bubble
               rightPosition

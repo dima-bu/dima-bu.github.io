@@ -24,10 +24,11 @@ const Bubble = (props) => {
 
   if (href || onClick) {
     return (
-      <a
-        href={href}
+      <div
         style={style}
         onClick={onClick}
+        onTap={onClick}
+        style={{cursor: 'pointer'}}
         className={cx("bubble", className, 'type-'+type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width': '', 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}
         >
         <span className={cx('bubble-inner', isHiddenText ? 'isHide': 'isShow')}>
@@ -35,7 +36,7 @@ const Bubble = (props) => {
           {children}
         </span>
         <BubbleCorner />
-      </a>
+      </div>
     )
   } else {
     return (
