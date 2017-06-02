@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 620:
+/***/ 627:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11,9 +11,9 @@ webpackJsonp([1],{
 
 	var _reactRedux = __webpack_require__(526);
 
-	var _counter = __webpack_require__(621);
+	var _counter = __webpack_require__(628);
 
-	var _Counter = __webpack_require__(622);
+	var _Counter = __webpack_require__(629);
 
 	var _Counter2 = _interopRequireDefault(_Counter);
 
@@ -59,7 +59,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 621:
+/***/ 628:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -149,7 +149,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 622:
+/***/ 629:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
