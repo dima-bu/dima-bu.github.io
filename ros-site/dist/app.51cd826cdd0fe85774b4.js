@@ -54815,7 +54815,8 @@ webpackJsonp([0],[
 	        onClick: onClick
 	      }, (0, _defineProperty3.default)(_React$createElement, 'style', { cursor: 'pointer' }), (0, _defineProperty3.default)(_React$createElement, 'className', (0, _classnames2.default)("bubble", className, 'type-' + type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width' : '', 'size-' + size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')), _React$createElement),
 	      text,
-	      children
+	      children,
+	      _react2.default.createElement(_BubbleCorner2.default, null)
 	    );
 	  } else {
 	    return _react2.default.createElement(
