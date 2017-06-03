@@ -58,6 +58,12 @@ h2.project-title {
 .project-achievements {
   line-height: 66px;
 
+  &.-full {
+    .achievement-wrapper {
+      width: 100%;
+    }
+  }
+
   .project-available, {
     margin-right: 20px;
   }

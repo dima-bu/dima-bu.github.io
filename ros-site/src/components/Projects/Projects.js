@@ -124,6 +124,7 @@ class Projects extends React.Component {
             description={tr('CINEPIC_DESCRIPTION', true)}
             linkForAndroid="#"
             linkForApple="#"
+            isFullAchievements
             achievements = {[
               {
                 firstLine: tr('PRIZEWINNER'),

@@ -45,15 +45,15 @@ const ACTION_HANDLERS = {
     const fpp = hashHistory;
 
     if(window.location.hash) {
-      const newN = document.location.hash+'-'+hash;
+      const newN = window.location.hash+'-'+hash;
       //browserHistory.createLocation({hash: newN, pathname: '/'})
-      document.location.hash = newN
+      window.location.hash = newN
     } else {
       //browserHistory.createLocation({hash: hash, pathname: '/'})
-      document.location.hash = hash
+      window.location.hash = hash
     }
 
-    return Object.assign({}, state, { hashState:  document.location.hash });
+    return Object.assign({}, state, { hashState:  window.location.hash });
   }
 }
 

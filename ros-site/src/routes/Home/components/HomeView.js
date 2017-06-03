@@ -90,7 +90,7 @@ class HomeView extends React.Component {
   }
 
   getHash(){
-    return document.location.hash;
+    return window.location.hash;
   }
 
   getView() {

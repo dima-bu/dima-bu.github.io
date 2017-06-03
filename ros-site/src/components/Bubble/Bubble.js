@@ -22,19 +22,16 @@ const Bubble = (props) => {
   } = props;
   //const new//Text = text.split ('<br>').map ((item, i) => <div key={i}>{item}</div>);
 
-  if (href || onClick) {
+  if (type === 'link') {
     return (
       <div
         style={style}
         onClick={onClick}
-        onTap={onClick}
         style={{cursor: 'pointer'}}
         className={cx("bubble", className, 'type-'+type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width': '', 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}
         >
-        <span className={cx('bubble-inner', isHiddenText ? 'isHide': 'isShow')}>
-          {text}
-          {children}
-        </span>
+        {text}
+        {children}
         <BubbleCorner />
       </div>
     )
