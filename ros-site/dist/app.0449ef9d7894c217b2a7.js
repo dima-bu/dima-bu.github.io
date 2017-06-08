@@ -53397,12 +53397,13 @@ webpackJsonp([0],[
 
 	module.exports = {
 		"COMMON_TRANSLATE": "EN",
+		"HI": "Hello!/n ",
 		"HI_ROSBERRY": "Hello! /n We are Rosberry /n We build mobile apps /:emo-surprise /n How can we help you?",
-		"HI_PROJECTS_LINK_TEXT": "Hello, could you show me your projects?",
+		"HI_PROJECTS_LINK_TEXT": "Could you show me your projects?",
 		"HI_CONTACTS_LINK_TEXT": "How can I get in touch with you?",
 		"HI_GIF_LINK_TEXT": "You got any GIF to laugh at?",
 		"PROJECTS_OUR_LAST_PROJECTS": "With pleasure! /:emo-approve /n Here are our five recent projects:",
-		"PROJECTS_SHOW_YOUR_PROJECTS": "Hi! /n Show me your projects, please",
+		"PROJECTS_SHOW_YOUR_PROJECTS": "Show me your projects,/n  please",
 		"TRUSTED_DESCRIPTION": "A social network /n for professional /n investors",
 		"SPLIT_DESCRIPTION": "Photo image editor for creating collages",
 		"CINEPIC_DESCRIPTION": "Editor for creating /n video collages /:emo-wink",
@@ -53426,12 +53427,13 @@ webpackJsonp([0],[
 
 	module.exports = {
 		"COMMON_TRANSLATE": "RU",
+		"HI": "Привет! /n",
 		"HI_ROSBERRY": "Привет! /n Мы — Rosberry  и мы делаем  /n  мобильные  приложения   /:emo-surprise /n Чем мы можем вам помочь?",
-		"HI_PROJECTS_LINK_TEXT": "Привет! /n Покажите ваши проекты",
+		"HI_PROJECTS_LINK_TEXT": "Покажите ваши проекты",
 		"HI_CONTACTS_LINK_TEXT": "Как с вами связаться?",
 		"HI_GIF_LINK_TEXT": "А есть какая-нибудь гифочка?",
 		"PROJECTS_OUR_LAST_PROJECTS": "С удовольствием! /:emo-approve /n Вот 5 наших последних проектов",
-		"PROJECTS_SHOW_YOUR_PROJECTS": "Привет! /n Покажит ваши проекты, пожалуйста",
+		"PROJECTS_SHOW_YOUR_PROJECTS": "Покажите ваши проекты,/n  пожалуйста",
 		"TRUSTED_DESCRIPTION": "Социальная сеть /n для профессиональных /n инвесторов",
 		"SPLIT_DESCRIPTION": "Редактор для создания фото-коллажей",
 		"CINEPIC_DESCRIPTION": "Редактор для создания /n  видео-коллажей /:emo-wink",
@@ -53440,7 +53442,7 @@ webpackJsonp([0],[
 		"50_MLN": "50 млн",
 		"DOWNLOADS": "скачиваний",
 		"CONTACTS_SIMPLE": "О, это очень легко. /n Вы можете написать нам в мессенджере /n или на почту, а также посмотреть наши группы /n в социальных сетях:",
-		"CONTACTS_EXPERIENCE": "У нас огромный опыт работы на UpWork: /n отработано больше 70 000 часов со 100% рейтингом!",
+		"CONTACTS_EXPERIENCE": "У нас огромный опыт работы на UpWork: /n отработано больше 70 000 часов со 100% рейтингом!",
 		"CONTACTS_GOODFIRM": "Наш руководитель дал большое интервью /n для сайта GoodFirms, а наши клиенты написали нам /n там отзывы. Думаем, это может быть интересно /:emo-smiling",
 		"CONTACTS_COME_AGAIN": "Спасибо, что зашли на наш сайт. Приходите ещё, /n скоро у нас появится много нового:  больше проектов /n в портфолио, развёрнутые описания рабочего процесса,/n торты и всё такое. Возвращайтесь!",
 		"YOU": "Вы",
@@ -53887,11 +53889,11 @@ webpackJsonp([0],[
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _Counter = __webpack_require__(626);
+	var _Counter = __webpack_require__(632);
 
 	var _Counter2 = _interopRequireDefault(_Counter);
 
-	var _LevelOne = __webpack_require__(630);
+	var _LevelOne = __webpack_require__(636);
 
 	var _LevelOne2 = _interopRequireDefault(_LevelOne);
 
@@ -54171,18 +54173,26 @@ webpackJsonp([0],[
 
 	  var getSvg = function getSvg() {
 	    return _react2.default.createElement(
-	      'svg',
-	      { xmlns: 'http://www.w3.org/2000/svg', width: '100', height: '27', viewBox: '0 0 100 27' },
+	      'a',
+	      { href: '/' },
 	      _react2.default.createElement(
-	        'g',
-	        { fill: '#000', fillRule: 'evenodd' },
-	        _react2.default.createElement('path', { d: 'M24.6 7.456a4.234 4.234 0 0 0-1.796-1.295c-.708-.27-1.532-.404-2.47-.404-.939 0-1.763.135-2.471.404-.709.268-1.307.7-1.796 1.295-.488.595-.857 1.367-1.106 2.317-.25.95-.374 2.107-.374 3.47 0 1.362.125 2.518.374 3.468.249.95.618 1.723 1.106 2.317a4.227 4.227 0 0 0 1.796 1.296c.708.269 1.532.403 2.47.403.939 0 1.763-.134 2.471-.403a4.228 4.228 0 0 0 1.796-1.296c.489-.594.857-1.367 1.107-2.317.248-.95.373-2.106.373-3.469 0-1.362-.125-2.519-.373-3.469-.25-.95-.618-1.722-1.107-2.317zm-2.14 8.55c-.115.73-.278 1.305-.489 1.727-.21.422-.455.715-.732.878-.278.163-.58.245-.905.245-.326 0-.628-.082-.905-.245-.278-.163-.523-.456-.733-.878-.211-.422-.374-.998-.489-1.727-.115-.73-.172-1.65-.172-2.764 0-1.113.057-2.034.172-2.764.115-.729.278-1.304.489-1.727.21-.422.455-.715.733-.878.277-.163.579-.244.905-.244.325 0 .627.081.905.244.277.164.521.456.732.878.21.423.374.998.489 1.727.115.73.172 1.651.172 2.764 0 1.113-.057 2.034-.172 2.764zM36.538 13.113a8.414 8.414 0 0 0-1.623-.85 23.816 23.816 0 0 1-1.623-.705 4.888 4.888 0 0 1-1.25-.835c-.336-.317-.503-.724-.503-1.223 0-.576.254-1.008.761-1.296.508-.288 1.164-.432 1.968-.432h3.16v-1.44a10.71 10.71 0 0 0-1.651-.402 12.083 12.083 0 0 0-2.083-.173c-.9 0-1.7.063-2.4.187-.699.125-1.283.34-1.752.648a3 3 0 0 0-1.077 1.237c-.25.518-.374 1.171-.374 1.958 0 .826.167 1.497.503 2.015.335.518.751.946 1.25 1.28a8.37 8.37 0 0 0 1.623.85c.584.23 1.125.466 1.623.706.498.24.915.518 1.25.835.335.317.503.724.503 1.223 0 .73-.278 1.248-.833 1.555-.556.307-1.38.46-2.471.46h-3.16v1.44c.44.154.99.288 1.651.403.661.115 1.355.172 2.083.172 1.035 0 1.94-.062 2.716-.186.775-.125 1.422-.35 1.939-.677.517-.326.9-.767 1.15-1.324.248-.556.373-1.267.373-2.13 0-.807-.168-1.473-.503-2.001a4.367 4.367 0 0 0-1.25-1.295zM50.832 7.456a3.95 3.95 0 0 0-1.638-1.295c-.642-.27-1.355-.404-2.14-.404-.499 0-.953.068-1.365.202a4.15 4.15 0 0 0-1.077.518V.287h-3.448v19.576c.727.288 1.446.504 2.154.648.709.144 1.571.216 2.586.216 1.073 0 2.007-.134 2.801-.403.795-.269 1.452-.7 1.969-1.296.517-.594.905-1.367 1.164-2.317.258-.95.387-2.106.387-3.47 0-1.361-.12-2.518-.359-3.468-.24-.95-.585-1.722-1.034-2.317zm-2.255 8.464c-.135.71-.33 1.271-.59 1.684-.258.413-.565.7-.92.863a2.745 2.745 0 0 1-1.163.245h-1.292V8.349c.153-.154.363-.288.632-.403.267-.116.584-.173.948-.173.363 0 .704.081 1.02.245.316.163.589.45.819.863.23.413.411.974.545 1.684.134.71.201 1.603.201 2.677 0 1.075-.067 1.968-.2 2.678zM64.005 7.456a3.978 3.978 0 0 0-1.71-1.295c-.68-.27-1.45-.404-2.312-.404-.862 0-1.633.135-2.313.404-.68.268-1.25.7-1.71 1.295-.46.595-.814 1.367-1.063 2.317-.249.95-.373 2.107-.373 3.47 0 1.362.129 2.518.388 3.468.258.95.65 1.723 1.178 2.317.526.596 1.197 1.027 2.011 1.296.814.269 1.776.403 2.887.403.728 0 1.423-.057 2.083-.172a10.662 10.662 0 0 0 1.653-.403v-1.44h-3.16c-1.227 0-2.132-.33-2.716-.993-.584-.662-.876-1.818-.876-3.47h7.47v-1.007c0-1.362-.125-2.519-.374-3.468-.25-.95-.603-1.723-1.063-2.318zm-6.033 4.779c0-.94.052-1.708.158-2.303.105-.595.244-1.065.416-1.41.173-.346.383-.581.632-.706.25-.124.517-.187.805-.187.287 0 .555.063.804.187.25.125.46.36.632.705.173.346.311.816.416 1.41.105.596.158 1.364.158 2.304h-4.021zM96.47 6.045v12.09a1.992 1.992 0 0 1-.631.404 2.397 2.397 0 0 1-.948.173c-.288 0-.57-.039-.849-.116a1.695 1.695 0 0 1-.732-.416 2.24 2.24 0 0 1-.517-.807c-.135-.335-.201-.753-.201-1.252V6.045h-3.448v10.076c0 .94.12 1.708.359 2.303.24.595.56 1.065.962 1.41.403.346.872.581 1.408.706.536.124 1.11.187 1.724.187 1.187 0 2.145-.288 2.873-.864 0 1.728-.283 2.927-.847 3.599-.565.671-1.384 1.007-2.457 1.007h-3.16v1.44c.44.153.99.287 1.652.403.66.115 1.355.172 2.083.172 2.087 0 3.639-.552 4.654-1.655 1.015-1.104 1.523-2.95 1.523-5.541V6.045H96.47zM74.6 6.05c-.863 0-1.553.12-2.07.36-.518.24-.93.504-1.237.793h-.143l-.432-1.153h-2.444v14.405h3.45V9.075c.154-.153.349-.298.62-.407a2.51 2.51 0 0 1 .962-.17s2.522.05 3.24-.281c1.419-.657 1.424-2.521 1.424-2.521s-.865.307-1.501.354c-.762.057-1.869 0-1.87 0zM85.143 6.05c-.863 0-1.553.12-2.07.36-.518.24-.93.504-1.237.793h-.143L81.26 6.05h-2.444v14.405h3.45V9.075c.154-.153.349-.298.62-.407a2.51 2.51 0 0 1 .962-.17s2.522.05 3.24-.281c1.419-.657 1.424-2.521 1.424-2.521s-.865.307-1.501.354c-.762.057-1.869 0-1.869 0zM12.135 19.522c-.619-.892-.12-2.583-1.19-4.12-.484-.697-1.145-1.625-2.825-1.946.191-.067.382-.138.578-.214.472-.182.886-.48 1.279-.806a4.385 4.385 0 0 0 1.005-1.224c.277-.489.493-1.083.646-1.784.153-.7.23-1.54.23-2.519 0-1.228-.13-2.279-.388-3.152-.258-.873-.66-1.588-1.206-2.145C9.718 1.056 9.018.648 8.166.39 7.314.129 6.294 0 5.106 0 4.015 0 3.086.043 2.32.13A13.45 13.45 0 0 0 .08.575v19.863h3.447v-6.477s.868.012 1.465.008c.332.06 1.033.28 1.471 1.068.163.292.286.721.305 1.113.02.41.043.698.06 1.06.147 3.24 4.29 4.164 6.313 3.122-.255-.088-.692-.36-1.005-.81zm-4.572-8.885a2.25 2.25 0 0 1-1.034.791c-.413.154-.887.23-1.423.23h-1.58V2.16h1.58c.536 0 1.01.077 1.423.23.411.154.756.418 1.034.792.277.374.488.864.632 1.468.144.605.216 1.358.216 2.26 0 .903-.073 1.655-.216 2.26-.144.604-.355 1.094-.632 1.468z' })
+	        'svg',
+	        { xmlns: 'http://www.w3.org/2000/svg', width: '100', height: '27', viewBox: '0 0 100 27' },
+	        _react2.default.createElement(
+	          'g',
+	          { fill: '#000', fillRule: 'evenodd' },
+	          _react2.default.createElement('path', { d: 'M24.6 7.456a4.234 4.234 0 0 0-1.796-1.295c-.708-.27-1.532-.404-2.47-.404-.939 0-1.763.135-2.471.404-.709.268-1.307.7-1.796 1.295-.488.595-.857 1.367-1.106 2.317-.25.95-.374 2.107-.374 3.47 0 1.362.125 2.518.374 3.468.249.95.618 1.723 1.106 2.317a4.227 4.227 0 0 0 1.796 1.296c.708.269 1.532.403 2.47.403.939 0 1.763-.134 2.471-.403a4.228 4.228 0 0 0 1.796-1.296c.489-.594.857-1.367 1.107-2.317.248-.95.373-2.106.373-3.469 0-1.362-.125-2.519-.373-3.469-.25-.95-.618-1.722-1.107-2.317zm-2.14 8.55c-.115.73-.278 1.305-.489 1.727-.21.422-.455.715-.732.878-.278.163-.58.245-.905.245-.326 0-.628-.082-.905-.245-.278-.163-.523-.456-.733-.878-.211-.422-.374-.998-.489-1.727-.115-.73-.172-1.65-.172-2.764 0-1.113.057-2.034.172-2.764.115-.729.278-1.304.489-1.727.21-.422.455-.715.733-.878.277-.163.579-.244.905-.244.325 0 .627.081.905.244.277.164.521.456.732.878.21.423.374.998.489 1.727.115.73.172 1.651.172 2.764 0 1.113-.057 2.034-.172 2.764zM36.538 13.113a8.414 8.414 0 0 0-1.623-.85 23.816 23.816 0 0 1-1.623-.705 4.888 4.888 0 0 1-1.25-.835c-.336-.317-.503-.724-.503-1.223 0-.576.254-1.008.761-1.296.508-.288 1.164-.432 1.968-.432h3.16v-1.44a10.71 10.71 0 0 0-1.651-.402 12.083 12.083 0 0 0-2.083-.173c-.9 0-1.7.063-2.4.187-.699.125-1.283.34-1.752.648a3 3 0 0 0-1.077 1.237c-.25.518-.374 1.171-.374 1.958 0 .826.167 1.497.503 2.015.335.518.751.946 1.25 1.28a8.37 8.37 0 0 0 1.623.85c.584.23 1.125.466 1.623.706.498.24.915.518 1.25.835.335.317.503.724.503 1.223 0 .73-.278 1.248-.833 1.555-.556.307-1.38.46-2.471.46h-3.16v1.44c.44.154.99.288 1.651.403.661.115 1.355.172 2.083.172 1.035 0 1.94-.062 2.716-.186.775-.125 1.422-.35 1.939-.677.517-.326.9-.767 1.15-1.324.248-.556.373-1.267.373-2.13 0-.807-.168-1.473-.503-2.001a4.367 4.367 0 0 0-1.25-1.295zM50.832 7.456a3.95 3.95 0 0 0-1.638-1.295c-.642-.27-1.355-.404-2.14-.404-.499 0-.953.068-1.365.202a4.15 4.15 0 0 0-1.077.518V.287h-3.448v19.576c.727.288 1.446.504 2.154.648.709.144 1.571.216 2.586.216 1.073 0 2.007-.134 2.801-.403.795-.269 1.452-.7 1.969-1.296.517-.594.905-1.367 1.164-2.317.258-.95.387-2.106.387-3.47 0-1.361-.12-2.518-.359-3.468-.24-.95-.585-1.722-1.034-2.317zm-2.255 8.464c-.135.71-.33 1.271-.59 1.684-.258.413-.565.7-.92.863a2.745 2.745 0 0 1-1.163.245h-1.292V8.349c.153-.154.363-.288.632-.403.267-.116.584-.173.948-.173.363 0 .704.081 1.02.245.316.163.589.45.819.863.23.413.411.974.545 1.684.134.71.201 1.603.201 2.677 0 1.075-.067 1.968-.2 2.678zM64.005 7.456a3.978 3.978 0 0 0-1.71-1.295c-.68-.27-1.45-.404-2.312-.404-.862 0-1.633.135-2.313.404-.68.268-1.25.7-1.71 1.295-.46.595-.814 1.367-1.063 2.317-.249.95-.373 2.107-.373 3.47 0 1.362.129 2.518.388 3.468.258.95.65 1.723 1.178 2.317.526.596 1.197 1.027 2.011 1.296.814.269 1.776.403 2.887.403.728 0 1.423-.057 2.083-.172a10.662 10.662 0 0 0 1.653-.403v-1.44h-3.16c-1.227 0-2.132-.33-2.716-.993-.584-.662-.876-1.818-.876-3.47h7.47v-1.007c0-1.362-.125-2.519-.374-3.468-.25-.95-.603-1.723-1.063-2.318zm-6.033 4.779c0-.94.052-1.708.158-2.303.105-.595.244-1.065.416-1.41.173-.346.383-.581.632-.706.25-.124.517-.187.805-.187.287 0 .555.063.804.187.25.125.46.36.632.705.173.346.311.816.416 1.41.105.596.158 1.364.158 2.304h-4.021zM96.47 6.045v12.09a1.992 1.992 0 0 1-.631.404 2.397 2.397 0 0 1-.948.173c-.288 0-.57-.039-.849-.116a1.695 1.695 0 0 1-.732-.416 2.24 2.24 0 0 1-.517-.807c-.135-.335-.201-.753-.201-1.252V6.045h-3.448v10.076c0 .94.12 1.708.359 2.303.24.595.56 1.065.962 1.41.403.346.872.581 1.408.706.536.124 1.11.187 1.724.187 1.187 0 2.145-.288 2.873-.864 0 1.728-.283 2.927-.847 3.599-.565.671-1.384 1.007-2.457 1.007h-3.16v1.44c.44.153.99.287 1.652.403.66.115 1.355.172 2.083.172 2.087 0 3.639-.552 4.654-1.655 1.015-1.104 1.523-2.95 1.523-5.541V6.045H96.47zM74.6 6.05c-.863 0-1.553.12-2.07.36-.518.24-.93.504-1.237.793h-.143l-.432-1.153h-2.444v14.405h3.45V9.075c.154-.153.349-.298.62-.407a2.51 2.51 0 0 1 .962-.17s2.522.05 3.24-.281c1.419-.657 1.424-2.521 1.424-2.521s-.865.307-1.501.354c-.762.057-1.869 0-1.87 0zM85.143 6.05c-.863 0-1.553.12-2.07.36-.518.24-.93.504-1.237.793h-.143L81.26 6.05h-2.444v14.405h3.45V9.075c.154-.153.349-.298.62-.407a2.51 2.51 0 0 1 .962-.17s2.522.05 3.24-.281c1.419-.657 1.424-2.521 1.424-2.521s-.865.307-1.501.354c-.762.057-1.869 0-1.869 0zM12.135 19.522c-.619-.892-.12-2.583-1.19-4.12-.484-.697-1.145-1.625-2.825-1.946.191-.067.382-.138.578-.214.472-.182.886-.48 1.279-.806a4.385 4.385 0 0 0 1.005-1.224c.277-.489.493-1.083.646-1.784.153-.7.23-1.54.23-2.519 0-1.228-.13-2.279-.388-3.152-.258-.873-.66-1.588-1.206-2.145C9.718 1.056 9.018.648 8.166.39 7.314.129 6.294 0 5.106 0 4.015 0 3.086.043 2.32.13A13.45 13.45 0 0 0 .08.575v19.863h3.447v-6.477s.868.012 1.465.008c.332.06 1.033.28 1.471 1.068.163.292.286.721.305 1.113.02.41.043.698.06 1.06.147 3.24 4.29 4.164 6.313 3.122-.255-.088-.692-.36-1.005-.81zm-4.572-8.885a2.25 2.25 0 0 1-1.034.791c-.413.154-.887.23-1.423.23h-1.58V2.16h1.58c.536 0 1.01.077 1.423.23.411.154.756.418 1.034.792.277.374.488.864.632 1.468.144.605.216 1.358.216 2.26 0 .903-.073 1.655-.216 2.26-.144.604-.355 1.094-.632 1.468z' })
+	        )
 	      )
 	    );
 	  };
 
 	  var getPng = function getPng() {
-	    return _react2.default.createElement('img', { className: 'logo', src: _logo3x2.default, alt: '' });
+	    return _react2.default.createElement(
+	      'a',
+	      { href: '/' },
+	      _react2.default.createElement('img', { className: 'logo', src: _logo3x2.default, alt: '' })
+	    );
 	  };
 
 	  if (type === 'svg') {
@@ -54281,7 +54291,7 @@ webpackJsonp([0],[
 	      if (this.props.label !== '') {
 	        label = _react2.default.createElement(
 	          'label',
-	          { className: 'switch-label', htmlFor: id },
+	          { className: (0, _classnames2.default)('switch-label', !this.props.checked ? 'active' : ''), htmlFor: id },
 	          this.props.label
 	        );
 	      }
@@ -54289,7 +54299,7 @@ webpackJsonp([0],[
 	      if (this.props.labelRight !== '') {
 	        labelRight = _react2.default.createElement(
 	          'label',
-	          { htmlFor: id, className: 'switch-label' },
+	          { htmlFor: id, className: (0, _classnames2.default)('switch-label', this.props.checked ? 'active' : '') },
 	          this.props.labelRight
 	        );
 	      }
@@ -54319,7 +54329,7 @@ webpackJsonp([0],[
 	          type: 'checkbox',
 	          value: '1'
 	        }),
-	        _react2.default.createElement('label', { htmlFor: id }),
+	        _react2.default.createElement('label', { htmlFor: id, className: 'switch-button_switch' }),
 	        labelRight
 	      );
 	    }
@@ -54520,11 +54530,11 @@ webpackJsonp([0],[
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Contacts = __webpack_require__(601);
+	var _Contacts = __webpack_require__(603);
 
 	var _Contacts2 = _interopRequireDefault(_Contacts);
 
-	var _Gif = __webpack_require__(613);
+	var _Gif = __webpack_require__(615);
 
 	var _Gif2 = _interopRequireDefault(_Gif);
 
@@ -54534,7 +54544,7 @@ webpackJsonp([0],[
 
 	var _general = __webpack_require__(446);
 
-	var _Nav = __webpack_require__(617);
+	var _Nav = __webpack_require__(623);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -54542,11 +54552,11 @@ webpackJsonp([0],[
 
 	var _Time2 = _interopRequireDefault(_Time);
 
-	var _reactGsapEnhancer = __webpack_require__(593);
+	var _reactGsapEnhancer = __webpack_require__(594);
 
 	var _reactGsapEnhancer2 = _interopRequireDefault(_reactGsapEnhancer);
 
-	var _gsap = __webpack_require__(599);
+	var _gsap = __webpack_require__(600);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54572,12 +54582,12 @@ webpackJsonp([0],[
 	  //    ease: Power4.easeOut
 	  //  }));
 
-	  TimelineMaxWr.add(_gsap.TweenMax.to(box, 1, {
+	  TimelineMaxWr.add(_gsap.TweenMax.to(box, 0.7, {
 	    css: {
 	      transform: 'translateX(0px)',
 	      opacity: 1
 	    },
-	    delay: 2,
+	    delay: 1.3,
 	    ease: _gsap.Power4.easeOut
 	  }));
 
@@ -54593,6 +54603,7 @@ webpackJsonp([0],[
 	    var _this = (0, _possibleConstructorReturn3.default)(this, (HomeView.__proto__ || (0, _getPrototypeOf2.default)(HomeView)).call(this, props));
 
 	    _this.state = { isSplash: true };
+	    _this.isTouch = false;
 	    _this.handleNavigateClick = _this.handleNavigateClick.bind(_this);
 	    return _this;
 	  }
@@ -54611,6 +54622,7 @@ webpackJsonp([0],[
 	  }, {
 	    key: 'handleNavigateClick',
 	    value: function handleNavigateClick(e) {
+	      this.isTouch = true;
 	      this.props.changeHash(e);
 	      this.addAnimation(createAnim);
 	    }
@@ -54640,15 +54652,15 @@ webpackJsonp([0],[
 	      pathname = pathname.substr(1);
 	      var elems = pathname.split('-');
 
-	      elems.forEach(function (elem) {
+	      elems.forEach(function (elem, index) {
 	        if (elem === 'projects') {
-	          arr.push(_react2.default.createElement(_Projects2.default, { key: 'projects', isHiddenText: _this3.props.isHiddenText }));
+	          arr.push(_react2.default.createElement(_Projects2.default, { key: 'projects', index: index, isHiddenText: _this3.props.isHiddenText }));
 	        }
 	        if (elem === 'gif') {
-	          arr.push(_react2.default.createElement(_Gif2.default, { key: 'gif', isHiddenText: _this3.props.isHiddenText }));
+	          arr.push(_react2.default.createElement(_Gif2.default, { key: 'gif', index: index, isHiddenText: _this3.props.isHiddenText }));
 	        }
 	        if (elem === 'contacts') {
-	          arr.push(_react2.default.createElement(_Contacts2.default, { key: 'contacts', isHiddenText: _this3.props.isHiddenText }));
+	          arr.push(_react2.default.createElement(_Contacts2.default, { key: 'contacts', index: index, isHiddenText: _this3.props.isHiddenText }));
 	        }
 	      });
 
@@ -54684,11 +54696,12 @@ webpackJsonp([0],[
 	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this4 = this;
 
 	      var getStyleWrapper = function getStyleWrapper() {
-	        var hash = document.location.hash;
-	        if (hash) {} else {
-	          return { transform: 'translateY(calc(50vh - 220px)' };
+	        var hash = _this4.getHash();
+	        if (!hash || _this4.isTouch) {
+	          return { transform: 'translateY(calc(50vh - 300px)' };
 	        }
 	      };
 
@@ -54705,18 +54718,14 @@ webpackJsonp([0],[
 	            'zIndex': '100' } }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'main-area', name: 'box', style: { transform: 'translateY(calc(50vh - 220px)' } },
+	          { className: 'main-area', name: 'box', style: getStyleWrapper() },
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'ta-c bubble-row' },
 	            _react2.default.createElement(
 	              _Bubble2.default,
 	              { isHiddenText: this.props.isHiddenText, className: 'w_45' },
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                (0, _locale.tr)('HI_ROSBERRY', true)
-	              )
+	              (0, _locale.tr)('HI_ROSBERRY', true)
 	            )
 	          ),
 	          this.getView(),
@@ -54814,8 +54823,12 @@ webpackJsonp([0],[
 	        style: style,
 	        onClick: onClick
 	      }, (0, _defineProperty3.default)(_React$createElement, 'style', { cursor: 'pointer' }), (0, _defineProperty3.default)(_React$createElement, 'className', (0, _classnames2.default)("bubble", className, 'type-' + type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width' : '', 'size-' + size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')), _React$createElement),
-	      text,
-	      children,
+	      _react2.default.createElement(
+	        'span',
+	        { className: (0, _classnames2.default)('bubble-inner', isHiddenText ? 'isHide' : 'isShow') },
+	        text,
+	        children
+	      ),
 	      _react2.default.createElement(_BubbleCorner2.default, null)
 	    );
 	  } else {
@@ -55965,38 +55978,45 @@ webpackJsonp([0],[
 
 	var _locale = __webpack_require__(451);
 
-	var _phoneTrusted = __webpack_require__(588);
+	var _scroll = __webpack_require__(588);
+
+	var _scroll2 = _interopRequireDefault(_scroll);
+
+	var _phoneTrusted = __webpack_require__(589);
 
 	var _phoneTrusted2 = _interopRequireDefault(_phoneTrusted);
 
-	var _phoneSplitpic = __webpack_require__(589);
+	var _phoneSplitpic = __webpack_require__(590);
 
 	var _phoneSplitpic2 = _interopRequireDefault(_phoneSplitpic);
 
-	var _phoneCinepic = __webpack_require__(590);
+	var _phoneCinepic = __webpack_require__(591);
 
 	var _phoneCinepic2 = _interopRequireDefault(_phoneCinepic);
 
-	var _phonePhyzseek = __webpack_require__(591);
+	var _phonePhyzseek = __webpack_require__(592);
 
 	var _phonePhyzseek2 = _interopRequireDefault(_phonePhyzseek);
 
-	var _phoneTrackd = __webpack_require__(592);
+	var _phoneTrackd = __webpack_require__(593);
 
 	var _phoneTrackd2 = _interopRequireDefault(_phoneTrackd);
 
-	var _reactGsapEnhancer = __webpack_require__(593);
+	var _reactGsapEnhancer = __webpack_require__(594);
 
 	var _reactGsapEnhancer2 = _interopRequireDefault(_reactGsapEnhancer);
 
-	var _gsap = __webpack_require__(599);
+	var _gsap = __webpack_require__(600);
+
+	var _lodash = __webpack_require__(602);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function createAnim(utils) {
 	  var firstBubble = utils.target.find({ name: 'firstBubble' });
 	  var secondBubble = utils.target.find({ name: 'secondBubble' });
-	  var thirdBubble = utils.target.find({ name: 'thirdBubble' });
 
 	  return new _gsap.TimelineMax().to(firstBubble, 1, {
 	    css: {
@@ -56005,18 +56025,24 @@ webpackJsonp([0],[
 	    },
 	    delay: 0.3,
 	    ease: _gsap.Power4.easeOut
-	  }).to(secondBubble, 1, {
+	  }).to(secondBubble, 0.8, {
 	    css: {
 	      transform: 'translateX(0px)',
 	      opacity: 1
 	    },
-	    delay: 2,
+	    delay: 1.1,
 	    ease: _gsap.Power4.easeOut
-	  }).to(thirdBubble, 1, {
+	  });
+	}
+
+	function scrollAnimation2(utils) {
+	  var AnimationBubble = utils.target.find({ name: utils.options.name });
+	  return new _gsap.TimelineMax().to(AnimationBubble, 1, {
 	    css: {
 	      transform: 'translateX(0px)',
 	      opacity: 1
 	    },
+	    delay: 0.7,
 	    ease: _gsap.Power4.easeOut
 	  });
 	}
@@ -56026,22 +56052,43 @@ webpackJsonp([0],[
 
 	  function Projects(props) {
 	    (0, _classCallCheck3.default)(this, Projects);
-	    return (0, _possibleConstructorReturn3.default)(this, (Projects.__proto__ || (0, _getPrototypeOf2.default)(Projects)).call(this, props));
+
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (Projects.__proto__ || (0, _getPrototypeOf2.default)(Projects)).call(this, props));
+
+	    _this.scrollBubbles = ['trusted', 'splitPic', 'cinepic', 'phyzseek', 'trackd'];
+	    return _this;
 	  }
 
 	  (0, _createClass3.default)(Projects, [{
-	    key: 'handleNavigateClick',
-	    value: function handleNavigateClick() {
-	      //this.addAnimation(createAnim)
-	    }
-	  }, {
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      var _this2 = this;
 
+	      var self = this;
+
+	      var scrollFunc = function scrollFunc() {
+	        var scrolled = window.pageYOffset;
+	        var screenHeight = screen.height;
+
+	        self.scrollBubbles.forEach(function (bubble) {
+	          var BubbleOffset = document.getElementById(bubble).offsetTop;
+	          if (scrolled + screenHeight > BubbleOffset) {
+	            var findIndex = self.scrollBubbles.findIndex(function (item) {
+	              return item === bubble;
+	            });
+	            self.addAnimation(scrollAnimation2, { name: bubble });
+	            self.scrollBubbles.splice(findIndex, 1);
+
+	            if (self.scrollBubbles.length === 0) {
+	              self.scrollFunc = false;
+	            }
+	          }
+	        });
+	      };
+
 	      setTimeout(function () {
 	        _this2.anim = _this2.addAnimation(createAnim);
-	        _this2.anim();
+	        window.onscroll = (0, _lodash2.default)(scrollFunc, 200);
 	      });
 	    }
 	  }, {
@@ -56063,7 +56110,8 @@ webpackJsonp([0],[
 	            _react2.default.createElement(
 	              _Bubble2.default,
 	              { size: 'md', type: 'secondary', className: 'w_35p', isHiddenText: props.isHiddenText, rightPosition: true },
-	              (0, _locale.tr)('HI_PROJECTS_LINK_TEXT', true)
+	              props.index === 0 && (0, _locale.tr)('HI', true),
+	              (0, _locale.tr)('PROJECTS_SHOW_YOUR_PROJECTS', true)
 	            )
 	          )
 	        ),
@@ -56083,29 +56131,31 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          (0, _defineProperty3.default)({ className: 'bubble-row container', style: { padding: '15px 0' }, name: 'thirdBubble' }, 'style', { opacity: 0, transform: 'translateX(-100px)' }),
+	          (0, _defineProperty3.default)({ className: 'bubble-row container', style: { padding: '15px 0' }, id: 'trusted', name: 'trusted' }, 'style', { opacity: 0, transform: 'translateX(-100px)' }),
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
 	              isHiddenText: props.isHiddenText,
 	              title: 'Trusted Insight',
 	              description: (0, _locale.tr)('TRUSTED_DESCRIPTION', true),
-	              linkForAndroid: '#',
-	              linkForApple: '#'
+	              linkForAndroid: 'https://play.google.com/store/apps/details?id=com.thetrustedinsight.tiapp',
+	              linkForApple: 'https://itunes.apple.com/us/app/trusted-insight-global-network/id1122381006?mt=8'
 	            },
 	            _react2.default.createElement('img', { className: 'project-bubble-img img-response', src: _phoneTrusted2.default, width: '246', height: '500', alt: '' })
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', style: { padding: '15px 0' } },
+	          { className: 'bubble-row container', id: 'splitPic', name: 'splitPic', style: { opacity: 0, transform: 'translateX(100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
 	              title: 'Split Pic',
 	              isLeft: true,
 	              description: (0, _locale.tr)('SPLIT_DESCRIPTION', true),
-	              linkForApple: '#',
+	              linkForAndroid: 'https://play.google.com/store/apps/details?id=com.rosberry.splitpic.newproject',
+	              linkForApple: 'https://itunes.apple.com/us/app/split-pic-clone-yourself/id570748340?mt=8',
+	              widthSize: 'lg',
 	              isHiddenText: props.isHiddenText,
 	              achievements: [{
 	                firstLine: 'Featured',
@@ -56122,16 +56172,17 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', style: { padding: '15px 0' } },
+	          { className: 'bubble-row container', id: 'cinepic', name: 'cinepic', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
 	              title: 'Cinepic',
 	              isHiddenText: props.isHiddenText,
 	              description: (0, _locale.tr)('CINEPIC_DESCRIPTION', true),
-	              linkForAndroid: '#',
-	              linkForApple: '#',
+	              linkForAndroid: 'https://play.google.com/store/apps/details?id=com.cinepic',
+	              linkForApple: 'https://itunes.apple.com/us/app/cinepic-create-mesmerizing/id923762113?mt=8',
 	              isFullAchievements: true,
+	              widthSize: 'sm',
 	              achievements: [{
 	                firstLine: (0, _locale.tr)('PRIZEWINNER'),
 	                secondLine: 'Tagline 2016',
@@ -56143,13 +56194,13 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', style: { padding: '15px 0' } },
+	          { className: 'bubble-row container', name: 'phyzseek', id: 'phyzseek', style: { opacity: 0, transform: 'translateX(100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
 	              title: 'Phyzseek',
 	              description: (0, _locale.tr)('PHUZSEEK_DESCRIPTION', true),
-	              linkForApple: '#',
+	              linkForApple: 'https://itunes.apple.com/us/app/id1076780161?mt=8',
 	              isHiddenText: props.isHiddenText,
 	              isLeft: true
 	            },
@@ -56158,13 +56209,13 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', style: { padding: '15px 0' } },
+	          { className: 'bubble-row container', name: 'trackd', id: 'trackd', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
 	              title: 'Trackd Studio',
 	              description: (0, _locale.tr)('TRACKD_DESCRIPTION', true),
-	              linkForApple: '#',
+	              linkForApple: 'https://itunes.apple.com/us/app/trackd-record-collaborate/id978196692',
 	              isHiddenText: props.isHiddenText,
 	              achievements: [{
 	                firstLine: 'Featured',
@@ -56245,12 +56296,14 @@ webpackJsonp([0],[
 	      children = props.children,
 	      isLeft = props.isLeft,
 	      isHiddenText = props.isHiddenText,
-	      isFullAchievements = props.isFullAchievements;
+	      isFullAchievements = props.isFullAchievements,
+	      widthSize = props.widthSize;
+
 	  // const newDescription = description.split('<br>').map((item, i) => <div key={i}>{item}</div>);
 
 	  return _react2.default.createElement(
 	    'div',
-	    { className: (0, _classnames2.default)('project-bubble_wrapper', isLeft ? '-left' : '') },
+	    { className: (0, _classnames2.default)('project-bubble_wrapper', isLeft ? '-left' : '', 'wrapper-size-' + widthSize) },
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'xs-hidden' },
@@ -56291,12 +56344,12 @@ webpackJsonp([0],[
 	          }),
 	          linkForAndroid && _react2.default.createElement(
 	            'a',
-	            { className: 'icon-link project-available', href: linkForAndroid },
+	            { className: 'icon-link project-available', href: linkForAndroid, target: '_blank' },
 	            _react2.default.createElement(_DownloadAndroid2.default, null)
 	          ),
 	          linkForApple && _react2.default.createElement(
 	            'a',
-	            { className: 'icon-link project-available', href: linkForApple },
+	            { className: 'icon-link project-available', href: linkForApple, target: '_blank' },
 	            _react2.default.createElement(_DownloadApple2.default, null)
 	          )
 	        )
@@ -56313,6 +56366,7 @@ webpackJsonp([0],[
 	  description: _propTypes2.default.string,
 	  linkForApple: _propTypes2.default.string,
 	  linkForAndroid: _propTypes2.default.string,
+	  widthSize: _propTypes2.default.oneOf(['sm', 'md', 'lg']),
 	  achievements: _propTypes2.default.arrayOf(_propTypes2.default.shape({
 	    firstLine: _propTypes2.default.string,
 	    secondLine: _propTypes2.default.string
@@ -56327,7 +56381,8 @@ webpackJsonp([0],[
 	  isFullAchievements: false,
 	  achievements: [],
 	  isLeft: false,
-	  isHiddenText: false
+	  isHiddenText: false,
+	  widthSize: 'md'
 	};
 
 	exports.default = ProjectBubble;
@@ -56663,36 +56718,69 @@ webpackJsonp([0],[
 
 /***/ },
 /* 588 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__.p + "cd749fbc57511bf7e72ff84f507d71cd.png";
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var scrollFunc = function scrollFunc() {
+	  var self = undefined;
+
+	  var scrolled = window.pageYOffset;
+	  var screenHeight = screen.height;
+
+	  self.scrollBubbles.forEach(function (bubble) {
+	    var BubbleOffset = document.getElementById(bubble).offsetTop;
+	    if (scrolled + screenHeight > BubbleOffset) {
+	      var findIndex = self.scrollBubbles.findIndex(function (item) {
+	        return item === bubble;
+	      });
+	      self.addAnimation(scrollAnimation, { name: bubble });
+	      self.scrollBubbles.splice(findIndex, 1);
+	      if (self.scrollBubbles.length === 0) {
+	        self.scrollFunc = false;
+	      }
+	    }
+	  });
+	};
+
+	exports.default = scrollFunc;
 
 /***/ },
 /* 589 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "a5f4c76cee997358e044271b1d56f7cc.png";
+	module.exports = __webpack_require__.p + "cd749fbc57511bf7e72ff84f507d71cd.png";
 
 /***/ },
 /* 590 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "43d7e1cc73e3526470fcf126d58bdadd.png";
+	module.exports = __webpack_require__.p + "a5f4c76cee997358e044271b1d56f7cc.png";
 
 /***/ },
 /* 591 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "5fbabdc57c094eabdcb882cb2c90cad5.png";
+	module.exports = __webpack_require__.p + "43d7e1cc73e3526470fcf126d58bdadd.png";
 
 /***/ },
 /* 592 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "d5d8b1fb8a081a785b9bfcb97afb7bd6.png";
+	module.exports = __webpack_require__.p + "5fbabdc57c094eabdcb882cb2c90cad5.png";
 
 /***/ },
 /* 593 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d5d8b1fb8a081a785b9bfcb97afb7bd6.png";
+
+/***/ },
+/* 594 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56701,7 +56789,7 @@ webpackJsonp([0],[
 	  value: true
 	});
 
-	var _gsapEnhancer = __webpack_require__(594);
+	var _gsapEnhancer = __webpack_require__(595);
 
 	Object.defineProperty(exports, 'default', {
 	  enumerable: true,
@@ -56710,7 +56798,7 @@ webpackJsonp([0],[
 	  }
 	});
 
-	var _createTarget = __webpack_require__(597);
+	var _createTarget = __webpack_require__(598);
 
 	Object.defineProperty(exports, 'createTarget', {
 	  enumerable: true,
@@ -56723,7 +56811,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=index.js.map
 
 /***/ },
-/* 594 */
+/* 595 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -56747,19 +56835,19 @@ webpackJsonp([0],[
 
 	var _react = __webpack_require__(24);
 
-	var _attachRefs = __webpack_require__(595);
+	var _attachRefs = __webpack_require__(596);
 
 	var _attachRefs2 = _interopRequireDefault(_attachRefs);
 
-	var _Controller = __webpack_require__(596);
+	var _Controller = __webpack_require__(597);
 
 	var _Controller2 = _interopRequireDefault(_Controller);
 
-	var _createTarget = __webpack_require__(597);
+	var _createTarget = __webpack_require__(598);
 
 	var _createTarget2 = _interopRequireDefault(_createTarget);
 
-	var _utils = __webpack_require__(598);
+	var _utils = __webpack_require__(599);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56934,7 +57022,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=gsap-enhancer.js.map
 
 /***/ },
-/* 595 */
+/* 596 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57015,7 +57103,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=attachRefs.js.map
 
 /***/ },
-/* 596 */
+/* 597 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -57152,7 +57240,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=Controller.js.map
 
 /***/ },
-/* 597 */
+/* 598 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57297,7 +57385,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=createTarget.js.map
 
 /***/ },
-/* 598 */
+/* 599 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -57369,7 +57457,7 @@ webpackJsonp([0],[
 	//# sourceMappingURL=utils.js.map
 
 /***/ },
-/* 599 */
+/* 600 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -63415,7 +63503,7 @@ webpackJsonp([0],[
 							if (global) {
 								_globals[n] = _exports[n] = cl; //provides a way to avoid global namespace pollution. By default, the main classes like TweenLite, Power1, Strong, etc. are added to window unless a GreenSockGlobals is defined. So if you want to have things added to a custom object instead, just do something like window.GreenSockGlobals = {} before loading any GreenSock files. You can even set up an alias like window.GreenSockGlobals = windows.gs = {} so that you can access everything like gs.TweenLite. Also remember that ALL classes are added to the window.com.greensock object (in their respective packages, like com.greensock.easing.Power1, com.greensock.TweenLite, etc.)
 								hasModule = (typeof(module) !== "undefined" && module.exports);
-								if (!hasModule && "function" === "function" && __webpack_require__(600)){ //AMD
+								if (!hasModule && "function" === "function" && __webpack_require__(601)){ //AMD
 									!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() { return cl; }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 								} else if (hasModule){ //node
 									if (ns === moduleName) {
@@ -65232,7 +65320,7 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 600 */
+/* 601 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -65240,195 +65328,450 @@ webpackJsonp([0],[
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 601 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.Contacts = undefined;
-
-	var _react = __webpack_require__(24);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(212);
-
-	__webpack_require__(602);
-
-	var _Bubble = __webpack_require__(559);
-
-	var _Bubble2 = _interopRequireDefault(_Bubble);
-
-	var _Button = __webpack_require__(603);
-
-	var _Button2 = _interopRequireDefault(_Button);
-
-	var _Time = __webpack_require__(586);
-
-	var _Time2 = _interopRequireDefault(_Time);
-
-	var _locale = __webpack_require__(451);
-
-	var _Link = __webpack_require__(605);
-
-	var _Link2 = _interopRequireDefault(_Link);
-
-	var _Mail = __webpack_require__(607);
-
-	var _Mail2 = _interopRequireDefault(_Mail);
-
-	var _Skype = __webpack_require__(608);
-
-	var _Skype2 = _interopRequireDefault(_Skype);
-
-	var _VKLink = __webpack_require__(609);
-
-	var _VKLink2 = _interopRequireDefault(_VKLink);
-
-	var _FacebookLink = __webpack_require__(610);
-
-	var _FacebookLink2 = _interopRequireDefault(_FacebookLink);
-
-	var _logoUpwork2x = __webpack_require__(611);
-
-	var _logoUpwork2x2 = _interopRequireDefault(_logoUpwork2x);
-
-	var _logoGoodfirms2x = __webpack_require__(612);
-
-	var _logoGoodfirms2x2 = _interopRequireDefault(_logoGoodfirms2x);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Contacts = exports.Contacts = function Contacts(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'clearfix' },
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'clearfix right-bubble bubble-row container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'bubble-wrapper ' },
-	        _react2.default.createElement(_Time2.default, null),
-	        _react2.default.createElement(
-	          _Bubble2.default,
-	          { isHiddenText: props.isHiddenText, size: 'md', className: 'w_35p', type: 'secondary', rightPosition: true },
-	          (0, _locale.tr)('HI_CONTACTS_LINK_TEXT', true)
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'clearfix bubble-row container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'bubble-wrapper' },
-	        _react2.default.createElement(_Time2.default, { from: true }),
-	        _react2.default.createElement(
-	          _Bubble2.default,
-	          { size: 'lg', type: 'primary', className: 'w_60p', isHiddenText: props.isHiddenText },
-	          (0, _locale.tr)('CONTACTS_SIMPLE', true)
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'clearfix bubble-row container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'bubble-wrapper' },
-	        _react2.default.createElement(_Time2.default, { from: true }),
-	        _react2.default.createElement(
-	          _Bubble2.default,
-	          { size: 'lg', type: 'primary', autoWidth: true },
-	          _react2.default.createElement(
-	            'div',
-	            { style: { marginBottom: '15px' } },
-	            _react2.default.createElement(
-	              _Link2.default,
-	              { caption: 'develop@rosberry.com', url: 'mailto:develop@rosberry.com' },
-	              _react2.default.createElement(_Mail2.default, null)
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { style: { marginBottom: '15px' } },
-	            _react2.default.createElement(
-	              _Link2.default,
-	              { caption: 'rosberry4u' },
-	              _react2.default.createElement(_Skype2.default, null)
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'd-flex align-items-center', style: { lineHeight: '0' } },
-	            _react2.default.createElement(_FacebookLink2.default, { style: { marginRight: '20px' } }),
-	            _react2.default.createElement(_VKLink2.default, null)
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'clearfix bubble-row container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'bubble-wrapper' },
-	        _react2.default.createElement(_Time2.default, { from: true }),
-	        _react2.default.createElement(
-	          _Bubble2.default,
-	          { size: 'lg', type: 'primary', className: 'w_70p', isHiddenText: props.isHiddenText },
-	          _react2.default.createElement(
-	            'div',
-	            { style: { marginBottom: '15px' } },
-	            _react2.default.createElement('img', { src: _logoUpwork2x2.default, width: '215', height: '60', alt: '', className: 'img-response' })
-	          ),
-	          (0, _locale.tr)('CONTACTS_EXPERIENCE', true),
-	          _react2.default.createElement(
-	            'div',
-	            { style: { marginTop: '25px' } },
-	            _react2.default.createElement(_Button2.default, { isLink: true, caption: (0, _locale.tr)('SEE_PORTFOLIO', true) })
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'clearfix bubble-row container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'bubble-wrapper' },
-	        _react2.default.createElement(_Time2.default, { from: true }),
-	        _react2.default.createElement(
-	          _Bubble2.default,
-	          { size: 'lg', type: 'primary', className: 'w_70p', isHiddenText: props.isHiddenText },
-	          _react2.default.createElement(
-	            'div',
-	            { style: { marginBottom: '15px' } },
-	            _react2.default.createElement('img', { src: _logoGoodfirms2x2.default, width: '301', height: '44', alt: '', className: 'img-response' })
-	          ),
-	          (0, _locale.tr)('CONTACTS_GOODFIRM', true),
-	          _react2.default.createElement(
-	            'div',
-	            { style: { marginTop: '25px' } },
-	            _react2.default.createElement(_Button2.default, { isLink: true, caption: (0, _locale.tr)('READ_INTERVIEW', true) })
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
-
-	exports.default = Contacts;
-
-/***/ },
 /* 602 */
 /***/ function(module, exports) {
 
-	// removed by extract-text-webpack-plugin
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * lodash (Custom Build) <https://lodash.com/>
+	 * Build: `lodash modularize exports="npm" -o ./`
+	 * Copyright jQuery Foundation and other contributors <https://jquery.org/>
+	 * Released under MIT license <https://lodash.com/license>
+	 * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+	 * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	 */
+
+	/** Used as the `TypeError` message for "Functions" methods. */
+	var FUNC_ERROR_TEXT = 'Expected a function';
+
+	/** Used as references for various `Number` constants. */
+	var NAN = 0 / 0;
+
+	/** `Object#toString` result references. */
+	var symbolTag = '[object Symbol]';
+
+	/** Used to match leading and trailing whitespace. */
+	var reTrim = /^\s+|\s+$/g;
+
+	/** Used to detect bad signed hexadecimal string values. */
+	var reIsBadHex = /^[-+]0x[0-9a-f]+$/i;
+
+	/** Used to detect binary string values. */
+	var reIsBinary = /^0b[01]+$/i;
+
+	/** Used to detect octal string values. */
+	var reIsOctal = /^0o[0-7]+$/i;
+
+	/** Built-in method references without a dependency on `root`. */
+	var freeParseInt = parseInt;
+
+	/** Detect free variable `global` from Node.js. */
+	var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+
+	/** Detect free variable `self`. */
+	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+	/** Used as a reference to the global object. */
+	var root = freeGlobal || freeSelf || Function('return this')();
+
+	/** Used for built-in method references. */
+	var objectProto = Object.prototype;
+
+	/**
+	 * Used to resolve the
+	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
+	 * of values.
+	 */
+	var objectToString = objectProto.toString;
+
+	/* Built-in method references for those with the same name as other `lodash` methods. */
+	var nativeMax = Math.max,
+	    nativeMin = Math.min;
+
+	/**
+	 * Gets the timestamp of the number of milliseconds that have elapsed since
+	 * the Unix epoch (1 January 1970 00:00:00 UTC).
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 2.4.0
+	 * @category Date
+	 * @returns {number} Returns the timestamp.
+	 * @example
+	 *
+	 * _.defer(function(stamp) {
+	 *   console.log(_.now() - stamp);
+	 * }, _.now());
+	 * // => Logs the number of milliseconds it took for the deferred invocation.
+	 */
+	var now = function() {
+	  return root.Date.now();
+	};
+
+	/**
+	 * Creates a debounced function that delays invoking `func` until after `wait`
+	 * milliseconds have elapsed since the last time the debounced function was
+	 * invoked. The debounced function comes with a `cancel` method to cancel
+	 * delayed `func` invocations and a `flush` method to immediately invoke them.
+	 * Provide `options` to indicate whether `func` should be invoked on the
+	 * leading and/or trailing edge of the `wait` timeout. The `func` is invoked
+	 * with the last arguments provided to the debounced function. Subsequent
+	 * calls to the debounced function return the result of the last `func`
+	 * invocation.
+	 *
+	 * **Note:** If `leading` and `trailing` options are `true`, `func` is
+	 * invoked on the trailing edge of the timeout only if the debounced function
+	 * is invoked more than once during the `wait` timeout.
+	 *
+	 * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+	 * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+	 *
+	 * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+	 * for details over the differences between `_.debounce` and `_.throttle`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Function
+	 * @param {Function} func The function to debounce.
+	 * @param {number} [wait=0] The number of milliseconds to delay.
+	 * @param {Object} [options={}] The options object.
+	 * @param {boolean} [options.leading=false]
+	 *  Specify invoking on the leading edge of the timeout.
+	 * @param {number} [options.maxWait]
+	 *  The maximum time `func` is allowed to be delayed before it's invoked.
+	 * @param {boolean} [options.trailing=true]
+	 *  Specify invoking on the trailing edge of the timeout.
+	 * @returns {Function} Returns the new debounced function.
+	 * @example
+	 *
+	 * // Avoid costly calculations while the window size is in flux.
+	 * jQuery(window).on('resize', _.debounce(calculateLayout, 150));
+	 *
+	 * // Invoke `sendMail` when clicked, debouncing subsequent calls.
+	 * jQuery(element).on('click', _.debounce(sendMail, 300, {
+	 *   'leading': true,
+	 *   'trailing': false
+	 * }));
+	 *
+	 * // Ensure `batchLog` is invoked once after 1 second of debounced calls.
+	 * var debounced = _.debounce(batchLog, 250, { 'maxWait': 1000 });
+	 * var source = new EventSource('/stream');
+	 * jQuery(source).on('message', debounced);
+	 *
+	 * // Cancel the trailing debounced invocation.
+	 * jQuery(window).on('popstate', debounced.cancel);
+	 */
+	function debounce(func, wait, options) {
+	  var lastArgs,
+	      lastThis,
+	      maxWait,
+	      result,
+	      timerId,
+	      lastCallTime,
+	      lastInvokeTime = 0,
+	      leading = false,
+	      maxing = false,
+	      trailing = true;
+
+	  if (typeof func != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  wait = toNumber(wait) || 0;
+	  if (isObject(options)) {
+	    leading = !!options.leading;
+	    maxing = 'maxWait' in options;
+	    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;
+	    trailing = 'trailing' in options ? !!options.trailing : trailing;
+	  }
+
+	  function invokeFunc(time) {
+	    var args = lastArgs,
+	        thisArg = lastThis;
+
+	    lastArgs = lastThis = undefined;
+	    lastInvokeTime = time;
+	    result = func.apply(thisArg, args);
+	    return result;
+	  }
+
+	  function leadingEdge(time) {
+	    // Reset any `maxWait` timer.
+	    lastInvokeTime = time;
+	    // Start the timer for the trailing edge.
+	    timerId = setTimeout(timerExpired, wait);
+	    // Invoke the leading edge.
+	    return leading ? invokeFunc(time) : result;
+	  }
+
+	  function remainingWait(time) {
+	    var timeSinceLastCall = time - lastCallTime,
+	        timeSinceLastInvoke = time - lastInvokeTime,
+	        result = wait - timeSinceLastCall;
+
+	    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;
+	  }
+
+	  function shouldInvoke(time) {
+	    var timeSinceLastCall = time - lastCallTime,
+	        timeSinceLastInvoke = time - lastInvokeTime;
+
+	    // Either this is the first call, activity has stopped and we're at the
+	    // trailing edge, the system time has gone backwards and we're treating
+	    // it as the trailing edge, or we've hit the `maxWait` limit.
+	    return (lastCallTime === undefined || (timeSinceLastCall >= wait) ||
+	      (timeSinceLastCall < 0) || (maxing && timeSinceLastInvoke >= maxWait));
+	  }
+
+	  function timerExpired() {
+	    var time = now();
+	    if (shouldInvoke(time)) {
+	      return trailingEdge(time);
+	    }
+	    // Restart the timer.
+	    timerId = setTimeout(timerExpired, remainingWait(time));
+	  }
+
+	  function trailingEdge(time) {
+	    timerId = undefined;
+
+	    // Only invoke if we have `lastArgs` which means `func` has been
+	    // debounced at least once.
+	    if (trailing && lastArgs) {
+	      return invokeFunc(time);
+	    }
+	    lastArgs = lastThis = undefined;
+	    return result;
+	  }
+
+	  function cancel() {
+	    if (timerId !== undefined) {
+	      clearTimeout(timerId);
+	    }
+	    lastInvokeTime = 0;
+	    lastArgs = lastCallTime = lastThis = timerId = undefined;
+	  }
+
+	  function flush() {
+	    return timerId === undefined ? result : trailingEdge(now());
+	  }
+
+	  function debounced() {
+	    var time = now(),
+	        isInvoking = shouldInvoke(time);
+
+	    lastArgs = arguments;
+	    lastThis = this;
+	    lastCallTime = time;
+
+	    if (isInvoking) {
+	      if (timerId === undefined) {
+	        return leadingEdge(lastCallTime);
+	      }
+	      if (maxing) {
+	        // Handle invocations in a tight loop.
+	        timerId = setTimeout(timerExpired, wait);
+	        return invokeFunc(lastCallTime);
+	      }
+	    }
+	    if (timerId === undefined) {
+	      timerId = setTimeout(timerExpired, wait);
+	    }
+	    return result;
+	  }
+	  debounced.cancel = cancel;
+	  debounced.flush = flush;
+	  return debounced;
+	}
+
+	/**
+	 * Creates a throttled function that only invokes `func` at most once per
+	 * every `wait` milliseconds. The throttled function comes with a `cancel`
+	 * method to cancel delayed `func` invocations and a `flush` method to
+	 * immediately invoke them. Provide `options` to indicate whether `func`
+	 * should be invoked on the leading and/or trailing edge of the `wait`
+	 * timeout. The `func` is invoked with the last arguments provided to the
+	 * throttled function. Subsequent calls to the throttled function return the
+	 * result of the last `func` invocation.
+	 *
+	 * **Note:** If `leading` and `trailing` options are `true`, `func` is
+	 * invoked on the trailing edge of the timeout only if the throttled function
+	 * is invoked more than once during the `wait` timeout.
+	 *
+	 * If `wait` is `0` and `leading` is `false`, `func` invocation is deferred
+	 * until to the next tick, similar to `setTimeout` with a timeout of `0`.
+	 *
+	 * See [David Corbacho's article](https://css-tricks.com/debouncing-throttling-explained-examples/)
+	 * for details over the differences between `_.throttle` and `_.debounce`.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Function
+	 * @param {Function} func The function to throttle.
+	 * @param {number} [wait=0] The number of milliseconds to throttle invocations to.
+	 * @param {Object} [options={}] The options object.
+	 * @param {boolean} [options.leading=true]
+	 *  Specify invoking on the leading edge of the timeout.
+	 * @param {boolean} [options.trailing=true]
+	 *  Specify invoking on the trailing edge of the timeout.
+	 * @returns {Function} Returns the new throttled function.
+	 * @example
+	 *
+	 * // Avoid excessively updating the position while scrolling.
+	 * jQuery(window).on('scroll', _.throttle(updatePosition, 100));
+	 *
+	 * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.
+	 * var throttled = _.throttle(renewToken, 300000, { 'trailing': false });
+	 * jQuery(element).on('click', throttled);
+	 *
+	 * // Cancel the trailing throttled invocation.
+	 * jQuery(window).on('popstate', throttled.cancel);
+	 */
+	function throttle(func, wait, options) {
+	  var leading = true,
+	      trailing = true;
+
+	  if (typeof func != 'function') {
+	    throw new TypeError(FUNC_ERROR_TEXT);
+	  }
+	  if (isObject(options)) {
+	    leading = 'leading' in options ? !!options.leading : leading;
+	    trailing = 'trailing' in options ? !!options.trailing : trailing;
+	  }
+	  return debounce(func, wait, {
+	    'leading': leading,
+	    'maxWait': wait,
+	    'trailing': trailing
+	  });
+	}
+
+	/**
+	 * Checks if `value` is the
+	 * [language type](http://www.ecma-international.org/ecma-262/7.0/#sec-ecmascript-language-types)
+	 * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 0.1.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+	 * @example
+	 *
+	 * _.isObject({});
+	 * // => true
+	 *
+	 * _.isObject([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObject(_.noop);
+	 * // => true
+	 *
+	 * _.isObject(null);
+	 * // => false
+	 */
+	function isObject(value) {
+	  var type = typeof value;
+	  return !!value && (type == 'object' || type == 'function');
+	}
+
+	/**
+	 * Checks if `value` is object-like. A value is object-like if it's not `null`
+	 * and has a `typeof` result of "object".
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is object-like, else `false`.
+	 * @example
+	 *
+	 * _.isObjectLike({});
+	 * // => true
+	 *
+	 * _.isObjectLike([1, 2, 3]);
+	 * // => true
+	 *
+	 * _.isObjectLike(_.noop);
+	 * // => false
+	 *
+	 * _.isObjectLike(null);
+	 * // => false
+	 */
+	function isObjectLike(value) {
+	  return !!value && typeof value == 'object';
+	}
+
+	/**
+	 * Checks if `value` is classified as a `Symbol` primitive or object.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to check.
+	 * @returns {boolean} Returns `true` if `value` is a symbol, else `false`.
+	 * @example
+	 *
+	 * _.isSymbol(Symbol.iterator);
+	 * // => true
+	 *
+	 * _.isSymbol('abc');
+	 * // => false
+	 */
+	function isSymbol(value) {
+	  return typeof value == 'symbol' ||
+	    (isObjectLike(value) && objectToString.call(value) == symbolTag);
+	}
+
+	/**
+	 * Converts `value` to a number.
+	 *
+	 * @static
+	 * @memberOf _
+	 * @since 4.0.0
+	 * @category Lang
+	 * @param {*} value The value to process.
+	 * @returns {number} Returns the number.
+	 * @example
+	 *
+	 * _.toNumber(3.2);
+	 * // => 3.2
+	 *
+	 * _.toNumber(Number.MIN_VALUE);
+	 * // => 5e-324
+	 *
+	 * _.toNumber(Infinity);
+	 * // => Infinity
+	 *
+	 * _.toNumber('3.2');
+	 * // => 3.2
+	 */
+	function toNumber(value) {
+	  if (typeof value == 'number') {
+	    return value;
+	  }
+	  if (isSymbol(value)) {
+	    return NAN;
+	  }
+	  if (isObject(value)) {
+	    var other = typeof value.valueOf == 'function' ? value.valueOf() : value;
+	    value = isObject(other) ? (other + '') : other;
+	  }
+	  if (typeof value != 'string') {
+	    return value === 0 ? value : +value;
+	  }
+	  value = value.replace(reTrim, '');
+	  var isBinary = reIsBinary.test(value);
+	  return (isBinary || reIsOctal.test(value))
+	    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)
+	    : (reIsBadHex.test(value) ? NAN : +value);
+	}
+
+	module.exports = throttle;
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
 /* 603 */
@@ -65440,59 +65783,292 @@ webpackJsonp([0],[
 	  value: true
 	});
 
+	var _getPrototypeOf = __webpack_require__(509);
+
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+	var _classCallCheck2 = __webpack_require__(513);
+
+	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+	var _createClass2 = __webpack_require__(514);
+
+	var _createClass3 = _interopRequireDefault(_createClass2);
+
+	var _possibleConstructorReturn2 = __webpack_require__(515);
+
+	var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+	var _inherits2 = __webpack_require__(516);
+
+	var _inherits3 = _interopRequireDefault(_inherits2);
+
 	var _react = __webpack_require__(24);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _propTypes = __webpack_require__(524);
-
-	var _propTypes2 = _interopRequireDefault(_propTypes);
-
-	var _classnames = __webpack_require__(552);
-
-	var _classnames2 = _interopRequireDefault(_classnames);
+	var _reactRouter = __webpack_require__(212);
 
 	__webpack_require__(604);
 
+	var _Bubble = __webpack_require__(559);
+
+	var _Bubble2 = _interopRequireDefault(_Bubble);
+
+	var _Button = __webpack_require__(605);
+
+	var _Button2 = _interopRequireDefault(_Button);
+
+	var _Time = __webpack_require__(586);
+
+	var _Time2 = _interopRequireDefault(_Time);
+
+	var _locale = __webpack_require__(451);
+
+	var _Link = __webpack_require__(607);
+
+	var _Link2 = _interopRequireDefault(_Link);
+
+	var _Mail = __webpack_require__(609);
+
+	var _Mail2 = _interopRequireDefault(_Mail);
+
+	var _Skype = __webpack_require__(610);
+
+	var _Skype2 = _interopRequireDefault(_Skype);
+
+	var _VKLink = __webpack_require__(611);
+
+	var _VKLink2 = _interopRequireDefault(_VKLink);
+
+	var _FacebookLink = __webpack_require__(612);
+
+	var _FacebookLink2 = _interopRequireDefault(_FacebookLink);
+
+	var _logoUpwork2x = __webpack_require__(613);
+
+	var _logoUpwork2x2 = _interopRequireDefault(_logoUpwork2x);
+
+	var _logoGoodfirms2x = __webpack_require__(614);
+
+	var _logoGoodfirms2x2 = _interopRequireDefault(_logoGoodfirms2x);
+
+	var _reactGsapEnhancer = __webpack_require__(594);
+
+	var _reactGsapEnhancer2 = _interopRequireDefault(_reactGsapEnhancer);
+
+	var _gsap = __webpack_require__(600);
+
+	var _lodash = __webpack_require__(602);
+
+	var _lodash2 = _interopRequireDefault(_lodash);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Button = function Button(props) {
-	  var caption = props.caption,
-	      onClickHandler = props.onClickHandler,
-	      isLink = props.isLink,
-	      href = props.href;
+	function createAnim(utils) {
+	  var hiContacts = utils.target.find({ name: 'hiContacts' });
+	  var simple = utils.target.find({ name: 'simple' });
 
+	  return new _gsap.TimelineMax().to(hiContacts, 0.8, {
+	    css: {
+	      transform: 'translateX(0px)',
+	      opacity: 1
+	    },
+	    ease: _gsap.Power4.easeOut
+	  }).to(simple, 0.8, {
+	    css: {
+	      transform: 'translateX(0px)',
+	      opacity: 1
+	    },
+	    ease: _gsap.Power4.easeOut
+	  });
+	}
 
-	  if (isLink) {
-	    return _react2.default.createElement(
-	      'a',
-	      { href: href, className: (0, _classnames2.default)('primary', 'ros-button', 'link-btn') },
-	      caption
-	    );
-	  } else {
-	    return _react2.default.createElement(
-	      'button',
-	      { className: (0, _classnames2.default)('primary', 'ros-button'), onClick: onClickHandler },
-	      caption
-	    );
+	function scrollAnimation(utils) {
+	  var AnimationBubble = utils.target.find({ name: utils.options.name });
+	  return new _gsap.TimelineMax().to(AnimationBubble, 1, {
+	    css: {
+	      transform: 'translateX(0px)',
+	      opacity: 1
+	    },
+	    delay: 0.7,
+	    ease: _gsap.Power4.easeOut
+	  });
+	}
+
+	var Contacts = function (_React$Component) {
+	  (0, _inherits3.default)(Contacts, _React$Component);
+
+	  function Contacts(props) {
+	    (0, _classCallCheck3.default)(this, Contacts);
+
+	    var _this = (0, _possibleConstructorReturn3.default)(this, (Contacts.__proto__ || (0, _getPrototypeOf2.default)(Contacts)).call(this, props));
+
+	    _this.scrollBubbles = ['soc', 'upwork', 'goodfirms'];
+	    return _this;
 	  }
-	};
 
-	Button.propTypes = {
-	  caption: _propTypes2.default.string,
-	  href: _propTypes2.default.string,
-	  onClickHandler: _propTypes2.default.func,
-	  isLink: _propTypes2.default.bool
-	};
+	  (0, _createClass3.default)(Contacts, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      var _this2 = this;
 
-	Button.defaultProps = {
-	  caption: '',
-	  href: '#',
-	  isLink: false,
-	  onClickHandler: function onClickHandler() {}
-	};
+	      var scrollFunc = function scrollFunc() {
+	        var self = _this2;
 
-	exports.default = Button;
+	        var scrolled = window.pageYOffset;
+	        var screenHeight = screen.height;
+
+	        self.scrollBubbles.forEach(function (bubble) {
+	          var BubbleOffset = document.getElementById(bubble).offsetTop;
+	          if (scrolled + screenHeight > BubbleOffset) {
+	            var findIndex = self.scrollBubbles.findIndex(function (item) {
+	              return item === bubble;
+	            });
+	            self.addAnimation(scrollAnimation, { name: bubble });
+	            self.scrollBubbles.splice(findIndex, 1);
+	            if (self.scrollBubbles.length === 0) {
+	              self.scrollFunc = false;
+	            }
+	          }
+	        });
+	      };
+
+	      setTimeout(function () {
+	        _this2.anim2 = _this2.addAnimation(createAnim);
+	        document.onscroll = (0, _lodash2.default)(scrollFunc, 200);
+	        //TweenLite.to(window, 1, {scrollTo:{y: document.getElementById('simple').offsetTop, x:0}, ease: Power2.easeInOut});
+	      });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var props = this.props;
+
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'clearfix' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'clearfix right-bubble bubble-row container', name: 'hiContacts', style: { opacity: 0, transform: 'translateX(100px)' } },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bubble-wrapper ' },
+	            _react2.default.createElement(_Time2.default, null),
+	            _react2.default.createElement(
+	              _Bubble2.default,
+	              { isHiddenText: props.isHiddenText, size: 'md', className: 'w_35p', type: 'secondary', rightPosition: true },
+	              props.index === 0 && (0, _locale.tr)('HI', true),
+	              (0, _locale.tr)('HI_CONTACTS_LINK_TEXT', true)
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'clearfix bubble-row container', name: 'simple', id: 'simple', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bubble-wrapper' },
+	            _react2.default.createElement(_Time2.default, { from: true }),
+	            _react2.default.createElement(
+	              _Bubble2.default,
+	              { size: 'lg', type: 'primary', className: 'w_60p', isHiddenText: props.isHiddenText },
+	              (0, _locale.tr)('CONTACTS_SIMPLE', true)
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'clearfix bubble-row container', name: 'soc', id: 'soc', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bubble-wrapper' },
+	            _react2.default.createElement(_Time2.default, { from: true }),
+	            _react2.default.createElement(
+	              _Bubble2.default,
+	              { size: 'lg', type: 'primary', autoWidth: true },
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginBottom: '15px' } },
+	                _react2.default.createElement(
+	                  _Link2.default,
+	                  { caption: 'develop@rosberry.com', url: 'mailto:develop@rosberry.com' },
+	                  _react2.default.createElement(_Mail2.default, null)
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginBottom: '15px' } },
+	                _react2.default.createElement(
+	                  _Link2.default,
+	                  { caption: 'rosberry4u' },
+	                  _react2.default.createElement(_Skype2.default, null)
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'd-flex align-items-center', style: { lineHeight: '0' } },
+	                _react2.default.createElement(_FacebookLink2.default, { style: { marginRight: '20px' }, link: 'https://www.facebook.com/RosberryApps' }),
+	                _react2.default.createElement(_VKLink2.default, { link: 'https://vk.com/rosberry' })
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'clearfix bubble-row container', id: 'upwork', name: 'upwork', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bubble-wrapper' },
+	            _react2.default.createElement(_Time2.default, { from: true }),
+	            _react2.default.createElement(
+	              _Bubble2.default,
+	              { size: 'lg', type: 'primary', className: 'w_70p', isHiddenText: props.isHiddenText },
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginBottom: '15px' } },
+	                _react2.default.createElement('img', { src: _logoUpwork2x2.default, width: '215', height: '60', alt: '', className: 'img-response' })
+	              ),
+	              (0, _locale.tr)('CONTACTS_EXPERIENCE', true),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginTop: '25px' } },
+	                _react2.default.createElement(_Button2.default, { isLink: true, href: 'https://www.upwork.com/o/companies/~01583bffbad2b46650/', caption: (0, _locale.tr)('SEE_PORTFOLIO', true) })
+	              )
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'clearfix bubble-row container', name: 'goodfirms', id: 'goodfirms', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'bubble-wrapper' },
+	            _react2.default.createElement(_Time2.default, { from: true }),
+	            _react2.default.createElement(
+	              _Bubble2.default,
+	              { size: 'lg', type: 'primary', className: 'w_70p', isHiddenText: props.isHiddenText },
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginBottom: '15px' } },
+	                _react2.default.createElement('img', { src: _logoGoodfirms2x2.default, width: '301', height: '44', alt: '', className: 'img-response' })
+	              ),
+	              (0, _locale.tr)('CONTACTS_GOODFIRM', true),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginTop: '25px' } },
+	                _react2.default.createElement(_Button2.default, { isLink: true, href: 'https://www.goodfirms.co/interviews/view/46/625/rosberry', caption: (0, _locale.tr)('READ_INTERVIEW', true) })
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+	  return Contacts;
+	}(_react2.default.Component);
+
+	exports.default = (0, _reactGsapEnhancer2.default)(Contacts);
 
 /***/ },
 /* 604 */
@@ -65523,6 +66099,76 @@ webpackJsonp([0],[
 	var _classnames2 = _interopRequireDefault(_classnames);
 
 	__webpack_require__(606);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Button = function Button(props) {
+	  var caption = props.caption,
+	      onClickHandler = props.onClickHandler,
+	      isLink = props.isLink,
+	      href = props.href;
+
+
+	  if (isLink) {
+	    return _react2.default.createElement(
+	      'a',
+	      { href: href, target: '_blank', className: (0, _classnames2.default)('primary', 'ros-button', 'link-btn') },
+	      caption
+	    );
+	  } else {
+	    return _react2.default.createElement(
+	      'button',
+	      { className: (0, _classnames2.default)('primary', 'ros-button'), onClick: onClickHandler },
+	      caption
+	    );
+	  }
+	};
+
+	Button.propTypes = {
+	  caption: _propTypes2.default.string,
+	  href: _propTypes2.default.string,
+	  onClickHandler: _propTypes2.default.func,
+	  isLink: _propTypes2.default.bool
+	};
+
+	Button.defaultProps = {
+	  caption: '',
+	  href: '#',
+	  isLink: false,
+	  onClickHandler: function onClickHandler() {}
+	};
+
+	exports.default = Button;
+
+/***/ },
+/* 606 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 607 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(24);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(524);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _classnames = __webpack_require__(552);
+
+	var _classnames2 = _interopRequireDefault(_classnames);
+
+	__webpack_require__(608);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -65558,13 +66204,13 @@ webpackJsonp([0],[
 	exports.default = Link;
 
 /***/ },
-/* 606 */
+/* 608 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 607 */
+/* 609 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65590,7 +66236,7 @@ webpackJsonp([0],[
 	exports.default = Mail;
 
 /***/ },
-/* 608 */
+/* 610 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65616,7 +66262,7 @@ webpackJsonp([0],[
 	exports.default = Skype;
 
 /***/ },
-/* 609 */
+/* 611 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65637,7 +66283,7 @@ webpackJsonp([0],[
 
 	  return _react2.default.createElement(
 	    "a",
-	    { className: "vk-link", href: link, style: style },
+	    { className: "vk-link", href: link, style: style, target: "_blank" },
 	    _react2.default.createElement(
 	      "svg",
 	      { xmlns: "http://www.w3.org/2000/svg", width: "36", height: "21", viewBox: "0 0 36 21" },
@@ -65649,7 +66295,7 @@ webpackJsonp([0],[
 	exports.default = VKLink;
 
 /***/ },
-/* 610 */
+/* 612 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -65670,7 +66316,7 @@ webpackJsonp([0],[
 
 	  return _react2.default.createElement(
 	    "a",
-	    { className: "facebook-link", href: link, style: style },
+	    { className: "facebook-link", href: link, style: style, target: "_blank" },
 	    _react2.default.createElement(
 	      "svg",
 	      { xmlns: "http://www.w3.org/2000/svg", width: "30", height: "30", viewBox: "0 0 30 30" },
@@ -65682,19 +66328,19 @@ webpackJsonp([0],[
 	exports.default = FacebookLink;
 
 /***/ },
-/* 611 */
+/* 613 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "334a06f10b218355d3d07ff80e269ce0.jpg";
 
 /***/ },
-/* 612 */
+/* 614 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "2c98b3c781115078ef86b2dcf46f462e.jpg";
 
 /***/ },
-/* 613 */
+/* 615 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65710,9 +66356,9 @@ webpackJsonp([0],[
 
 	var _reactRouter = __webpack_require__(212);
 
-	__webpack_require__(614);
+	__webpack_require__(616);
 
-	var _ = __webpack_require__(615);
+	var _ = __webpack_require__(617);
 
 	var _2 = _interopRequireDefault(_);
 
@@ -65726,13 +66372,50 @@ webpackJsonp([0],[
 
 	var _locale = __webpack_require__(451);
 
-	var _3 = __webpack_require__(616);
+	var _3 = __webpack_require__(618);
 
 	var _4 = _interopRequireDefault(_3);
+
+	var _cat = __webpack_require__(619);
+
+	var _cat2 = _interopRequireDefault(_cat);
+
+	var _cat3 = __webpack_require__(620);
+
+	var _cat4 = _interopRequireDefault(_cat3);
+
+	var _cat5 = __webpack_require__(621);
+
+	var _cat6 = _interopRequireDefault(_cat5);
+
+	var _cat7 = __webpack_require__(622);
+
+	var _cat8 = _interopRequireDefault(_cat7);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Gif = exports.Gif = function Gif(props) {
+
+	  var getVideo = function getVideo() {
+	    var count = Math.floor(Math.random() * 5) + 1;
+
+	    if (count === 1) {
+	      return _react2.default.createElement('source', { src: _4.default, type: 'video/mp4' });
+	    }
+	    if (count === 2) {
+	      return _react2.default.createElement('source', { src: _cat2.default, type: 'video/mp4' });
+	    }
+	    if (count === 3) {
+	      return _react2.default.createElement('source', { src: _cat4.default, type: 'video/mp4' });
+	    }
+	    if (count === 4) {
+	      return _react2.default.createElement('source', { src: _cat6.default, type: 'video/mp4' });
+	    }
+	    if (count === 5) {
+	      return _react2.default.createElement('source', { src: _cat8.default, type: 'video/mp4' });
+	    }
+	  };
+
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'clearfix' },
@@ -65746,6 +66429,7 @@ webpackJsonp([0],[
 	        _react2.default.createElement(
 	          _Bubble2.default,
 	          { type: 'secondary', size: 'md', className: 'w_35p', isHiddenText: props.isHiddenText, rightPosition: true },
+	          props.index === 0 && (0, _locale.tr)('HI', true),
 	          (0, _locale.tr)('HI_GIF_LINK_TEXT')
 	        )
 	      )
@@ -65763,7 +66447,7 @@ webpackJsonp([0],[
 	          _react2.default.createElement(
 	            'video',
 	            { id: 'background-video', autoplay: 'autoplay', loop: true, autoPlay: true },
-	            _react2.default.createElement('source', { src: _4.default, type: 'video/mp4' }),
+	            getVideo(),
 	            'Your browser does not support the video tag.'
 	          )
 	        )
@@ -65775,25 +66459,49 @@ webpackJsonp([0],[
 	exports.default = Gif;
 
 /***/ },
-/* 614 */
+/* 616 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 615 */
+/* 617 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "2612acfa2403677ae550d1212b096466.gif";
 
 /***/ },
-/* 616 */
+/* 618 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "35f8da17600dfddc90727ba6b9b08d85.mp4";
 
 /***/ },
-/* 617 */
+/* 619 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "6fce283a931bd955d5272eb43b91e82f.mp4";
+
+/***/ },
+/* 620 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "84a1de395eec7b5f7d5c2654f8bcaecf.mp4";
+
+/***/ },
+/* 621 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "74e33fc77a3c9038fd1a1d1093c39386.mp4";
+
+/***/ },
+/* 622 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "8bd0d3b32c3ff6fe1ad08c3a98737aa9.mp4";
+
+/***/ },
+/* 623 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -65838,9 +66546,9 @@ webpackJsonp([0],[
 
 	var _Bubble2 = _interopRequireDefault(_Bubble);
 
-	__webpack_require__(618);
+	__webpack_require__(624);
 
-	var _Tappable = __webpack_require__(619);
+	var _Tappable = __webpack_require__(625);
 
 	var _Tappable2 = _interopRequireDefault(_Tappable);
 
@@ -65960,20 +66668,20 @@ webpackJsonp([0],[
 	exports.default = Nav;
 
 /***/ },
-/* 618 */
+/* 624 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 619 */
+/* 625 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var TappableMixin = __webpack_require__(620);
-	var getComponent = __webpack_require__(621);
-	var touchStyles = __webpack_require__(625);
+	var TappableMixin = __webpack_require__(626);
+	var getComponent = __webpack_require__(627);
+	var touchStyles = __webpack_require__(631);
 
 	var Component = getComponent([TappableMixin]);
 
@@ -65982,7 +66690,7 @@ webpackJsonp([0],[
 	module.exports.Mixin = TappableMixin;
 
 /***/ },
-/* 620 */
+/* 626 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -66341,17 +67049,17 @@ webpackJsonp([0],[
 	module.exports = Mixin;
 
 /***/ },
-/* 621 */
+/* 627 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var createReactClass = __webpack_require__(622);
+	var createReactClass = __webpack_require__(628);
 	var PropTypes = __webpack_require__(524);
 	var React = __webpack_require__(24);
-	var touchStyles = __webpack_require__(625);
+	var touchStyles = __webpack_require__(631);
 
 	/**
 	 * Tappable Component
@@ -66423,7 +67131,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 622 */
+/* 628 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -66439,7 +67147,7 @@ webpackJsonp([0],[
 	'use strict';
 
 	var React = __webpack_require__(24);
-	var factory = __webpack_require__(623);
+	var factory = __webpack_require__(629);
 
 	// Hack to grab NoopUpdateQueue from isomorphic React
 	var ReactNoopUpdateQueue = new React.Component().updater;
@@ -66452,7 +67160,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 623 */
+/* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -66467,7 +67175,7 @@ webpackJsonp([0],[
 
 	'use strict';
 
-	var _assign = __webpack_require__(624);
+	var _assign = __webpack_require__(630);
 
 	var emptyObject = __webpack_require__(42);
 	var _invariant = __webpack_require__(30);
@@ -67182,7 +67890,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 624 */
+/* 630 */
 /***/ function(module, exports) {
 
 	/*
@@ -67278,7 +67986,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 625 */
+/* 631 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -67297,7 +68005,7 @@ webpackJsonp([0],[
 	module.exports = touchStyles;
 
 /***/ },
-/* 626 */
+/* 632 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67318,8 +68026,8 @@ webpackJsonp([0],[
 	      __webpack_require__.e/* nsure */(1, function (require) {
 	        /*  Webpack - use require callback to define
 	            dependencies for bundling   */
-	        var Counter = __webpack_require__(627).default;
-	        var reducer = __webpack_require__(628).default;
+	        var Counter = __webpack_require__(633).default;
+	        var reducer = __webpack_require__(634).default;
 
 	        /*  Add the reducer to the store on key 'counter'  */
 	        (0, _reducers.injectReducer)(store, { key: 'counter', reducer: reducer });
@@ -67334,10 +68042,10 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 627 */,
-/* 628 */,
-/* 629 */,
-/* 630 */
+/* 633 */,
+/* 634 */,
+/* 635 */,
+/* 636 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -67358,8 +68066,8 @@ webpackJsonp([0],[
 	      __webpack_require__.e/* nsure */(2, function (require) {
 	        /*  Webpack - use require callback to define
 	         dependencies for bundling   */
-	        var LevelOne = __webpack_require__(631).default;
-	        var reducer = __webpack_require__(632).default;
+	        var LevelOne = __webpack_require__(637).default;
+	        var reducer = __webpack_require__(638).default;
 
 	        /*  Add the reducer to the store on key 'counter'  */
 	        (0, _reducers.injectReducer)(store, { key: 'levelOne', reducer: reducer });

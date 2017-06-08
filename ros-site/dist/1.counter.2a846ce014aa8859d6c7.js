@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 627:
+/***/ 633:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11,9 +11,9 @@ webpackJsonp([1],{
 
 	var _reactRedux = __webpack_require__(526);
 
-	var _counter = __webpack_require__(628);
+	var _counter = __webpack_require__(634);
 
-	var _Counter = __webpack_require__(629);
+	var _Counter = __webpack_require__(635);
 
 	var _Counter2 = _interopRequireDefault(_Counter);
 
@@ -59,7 +59,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 628:
+/***/ 634:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -149,7 +149,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 629:
+/***/ 635:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -163,7 +163,7 @@ webpackJsonp([1],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Gif = __webpack_require__(613);
+	var _Gif = __webpack_require__(615);
 
 	var _Gif2 = _interopRequireDefault(_Gif);
 
