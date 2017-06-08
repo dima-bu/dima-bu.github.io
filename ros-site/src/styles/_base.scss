@@ -23,3 +23,28 @@ For example:
 .ta-c {
   text-align: center;
 }
+
+.xs-show {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .xs-show {
+    display: block;
+  }
+}
+
+.xs-hidden {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .xs-hidden {
+    display: none;
+  }
+}
+
+.img-response {
+  max-width: 100%;
+  height: auto;
+}

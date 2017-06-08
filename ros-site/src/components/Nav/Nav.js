@@ -4,6 +4,7 @@ import { IndexLink, Link, browserHistory} from 'react-router'
 import {tr} from 'lib/locale.js';
 import Bubble from 'components/Bubble/Bubble'
 import './Nav.scss'
+import Tappable from 'react-tappable/lib/Tappable'
 
 class Nav extends Component {
 
@@ -39,9 +40,10 @@ class Nav extends Component {
   render () {
     const {items, onChangeHash, isHiddenText, hashState} = this.props;
 
-    const hash = document.location.hash
+    const hash = document.location.hash;
 
     const onClickHandler = (path) => {
+
       onChangeHash(path)
     };
 
@@ -64,19 +66,21 @@ class Nav extends Component {
       <div className="ta-c bottom-links container" >
       {itemsMap.map(item => {
           return (
+          <Tappable onTap={onClickHandler.bind(this, `#${item.path}`)}>
           <div
              className="bubble-wrapper"
              key={item.path}
+             onClick={onClickHandler.bind(this, `#${item.path}`)}
             >
             <Bubble
               rightPosition
               isFull
               isHiddenText={isHiddenText}
-              onClick={onClickHandler.bind(this, `#${item.path}`)}
               type='link'
               size='sm'
               text={tr(item.title, true)} />
           </div>
+          </Tappable>
           );
         })}
         </div>

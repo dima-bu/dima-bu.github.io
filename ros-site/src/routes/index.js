@@ -8,6 +8,7 @@ import LevelOneRoute from './LevelOne'
     PlainRoute objects to build route definitions.   */
 
 export const createRoutes = (store) => ({
+  //path        : '/ros-site/dist/',
   path        : '/',
   component   : CoreLayout,
   indexRoute  : Home,

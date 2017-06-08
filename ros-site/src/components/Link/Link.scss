@@ -38,3 +38,10 @@
   -ms-flex-align: center!important;
   align-items: center!important;
 }
+
+@media (max-width: 767px) {
+  .ros-link {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

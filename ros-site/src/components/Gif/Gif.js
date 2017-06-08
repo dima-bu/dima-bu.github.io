@@ -13,7 +13,7 @@ export const Gif = (props) => (
       <div className="clearfix right-bubble bubble-row container">
         <div className="bubble-wrapper ">
           <Time />
-          <Bubble type="secondary" size="md" isHiddenText={props.isHiddenText} rightPosition>{tr('HI_GIF_LINK_TEXT')}</Bubble>
+          <Bubble type="secondary" size="md" className="w_35p" isHiddenText={props.isHiddenText} rightPosition>{tr('HI_GIF_LINK_TEXT')}</Bubble>
         </div>
       </div>
 

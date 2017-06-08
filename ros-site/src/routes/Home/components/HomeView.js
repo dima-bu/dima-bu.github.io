@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import './HomeView.scss'
 import Bubble from 'components/Bubble/Bubble'
 import {tr} from 'lib/locale.js';
@@ -14,6 +15,9 @@ import Gif from 'components/Gif/Gif.js'
 import browserHistory from 'react-router/lib/browserHistory'
 import {changeHash } from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
+import Time from 'components/Time/Time.js'
+import GSAP from 'react-gsap-enhancer'
+import { TweenLite, TweenMax, TimelineMax, Power4 } from 'gsap'
 
 const achievements = [
   {
@@ -26,11 +30,41 @@ const achievements = [
   }
 ];
 
+
+function createAnim(utils) {
+  var box = utils.target.find({name: 'box'});
+  var navWrapper = utils.target.find({name: 'navWrapper'});
+
+  var TimelineMaxWr = new TimelineMax();
+
+  //TimelineMaxWr.add(TweenMax
+  //  .to(navWrapper, 0.5, {
+  //    css: {
+  //      opacity: 0
+  //    },
+  //    ease: Power4.easeOut
+  //  }));
+
+  TimelineMaxWr.add(TweenMax
+    .to(box, 1, {
+      css: {
+        transform: 'translateX(0px)',
+        opacity: 1
+      },
+      delay: 2,
+      ease: Power4.easeOut
+    }));
+
+  return TimelineMaxWr;
+
+}
+
 class HomeView extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {isSplash: true};
+    this.handleNavigateClick = this.handleNavigateClick.bind(this);
   }
 
   componentDidMount(){
@@ -39,6 +73,11 @@ class HomeView extends React.Component {
         isSplash: false
       })
     }, 1000)
+  }
+
+  handleNavigateClick(e) {
+    this.props.changeHash(e);
+    this.addAnimation(createAnim)
   }
 
   getVideo(){
@@ -50,13 +89,14 @@ class HomeView extends React.Component {
     )
   }
 
-
-
+  getHash(){
+    return window.location.hash;
+  }
 
   getView() {
 
     const arr = [];
-    let pathname = document.location.hash;
+    let pathname = this.getHash();
 
     pathname = pathname.substr(1);
     const elems = pathname.split('-');
@@ -80,11 +120,27 @@ class HomeView extends React.Component {
     )
   }
 
+  getFinishBlock(){
+    let pathname = this.getHash();
+    const elems = pathname.split('-');
 
+    if(elems.length === 3) {
+      return (
+        <div className="clearfix bubble-row container">
+          <div className="bubble-wrapper">
+            <Time from/>
+            <Bubble size="lg" type="primary" className="w_70p" isHiddenText={this.props.isHiddenText}>
+              {tr('CONTACTS_COME_AGAIN', true)}
+            </Bubble>
+          </div>
+        </div>
+      );
+    }
+  }
 
   render() {
 
-    const getStyleWrapper = ( )=> {
+    const getStyleWrapper = ()=> {
       const hash = document.location.hash;
       if (hash) {
       } else {
@@ -93,7 +149,6 @@ class HomeView extends React.Component {
     }
 
     return (
-
       <div>
         {this.state.isSplash &&
         <div className={cx('splash', this.state.isSplash ? 'isHide' : 'isHide')}
@@ -108,15 +163,18 @@ class HomeView extends React.Component {
                  }>
         </div>
         }
-        <div className="main-area" style={getStyleWrapper()} >
+        <div className="main-area" name='box' style={{transform: 'translateY(calc(50vh - 220px)'}} >
           <div className="ta-c bubble-row">
-            <Bubble isHiddenText={this.props.isHiddenText}>
+            <Bubble isHiddenText={this.props.isHiddenText} className="w_45">
                   <p>{tr('HI_ROSBERRY', true)}</p>
             </Bubble>
           </div>
           {this.getView()}
+          {this.getFinishBlock()}
         </div>
-        <Nav onChangeHash={this.props.changeHash} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
+        <div name="navWrapper" style={{opacity: 1}}>
+          <Nav onChangeHash={this.handleNavigateClick} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
+        </div>
       </div>
     )
   }
@@ -134,4 +192,4 @@ const mapStateToProps = (state) => ({
   hashState : state.general.hashState
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeView)
+export default connect(mapStateToProps, mapDispatchToProps)(GSAP(HomeView))
