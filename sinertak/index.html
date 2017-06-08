@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!--CDN links for TweenLite, CSSPlugin, and EasePack-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+        <!--<img src="./assets/123.png" alt="" style="position: fixed; z-index: 102;">-->
+        <div class="slide-bg" id="bg1" style="background-image: url('./assets/bg1.jpg')"></div>
+        <div class="slide-bg" id="bg2" style="background-image: url('./assets/bg2.jpg')" style="left: 100%;"> </div>
+        <div class="slide cf" id="slide-1">
+            <div class="cf row ">
+                <div class="col-1">
+                    <img src="./assets/logo.png" alt="" class="logo" width="698" height="148" />
+                    <header class="header-titles">
+                        <h2 class="sin_title" id="title1">Российский продукт</h2>
+                        <h3 class="sin_subtitle" id="subtitle1">— так получилось, что он лучше</h3>
+                        <h2 class="sin_title" id="title2" style="opacity: 0; transform: translateX(-100px);">Уникальные свойства</h2>
+                        <h3 class="sin_subtitle" id="subtitle2" style="opacity: 0; transform: translateX(-100px);">— основа правильного выбора</h3>
+                    </header>
+                    <div class="descr">
+                        <p class="normal descr-p" id="descr1">
+                            В 2011 году мы поставили перед собой задачу: создать универсальную СОЖ, не уступающую самым титулованным продуктам зарубежного производства.  Имея собственный двадцатилетний опыт разработки технических жидкостей, мы привлекли российских ученых и компетентных зарубежных специалистов.  Мы использовали самое современное оборудование.  И мы получили СОЖ, существенно превосходящую абсолютное большинство продуктов на рынке.
+                        </p>
+                        <p class="normal descr-p" id="descr2" style="opacity: 0; line-height: 50px; transform: translateY(50px);">
+                            За счет оригинальных инновационных разработок получен универсальный продукт,  подходящий для всех видов обработки металла резанием.  Продукт обладает повышенными трибологическими характеристиками. Смазывающие, моющие и охлаждающие способности обеспечивают идеальную чистоту обрабатываемой поверхности.                        </p>
+                    </div>
+                </div>
+                <div class="col-2" style="position: relative;">
+                    <img src="./assets/img1.png" id="img1" alt="" class="float-img" width="601" height="550">
+                    <img src="./assets/img2.png" id="img2"  alt="" class="float-img" width="550" height="424" style="opacity: 0; transform: scale(0.8, 0.8);">
+                </div>
+            </div>
+            <div class="cf row footer ">
+                <div class="col-1">
+                    <div class="manual">
+                        Инструкция по применению
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="phone">
+                        +7 3812 59 3812
+                    </div>
+                </div>
+
+            </div>
+            <div class="pagination">
+                <div class="pagination-item active" data-index="1"></div>
+                <div class="pagination-item" data-index="2"></div>
+                <!--<div class="pagination-item" data-index="3"></div>-->
+                <!--<div class="pagination-item" data-index="4"></div>-->
+                <!--<div class="pagination-item"></div>-->
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
