@@ -54174,7 +54174,7 @@ webpackJsonp([0],[
 	  var getSvg = function getSvg() {
 	    return _react2.default.createElement(
 	      'a',
-	      { href: '/' },
+	      { href: 'http://dima-bu.github.io/ros-site/dist/' },
 	      _react2.default.createElement(
 	        'svg',
 	        { xmlns: 'http://www.w3.org/2000/svg', width: '100', height: '27', viewBox: '0 0 100 27' },
@@ -54190,7 +54190,7 @@ webpackJsonp([0],[
 	  var getPng = function getPng() {
 	    return _react2.default.createElement(
 	      'a',
-	      { href: '/' },
+	      { href: 'http://dima-bu.github.io/ros-site/dist/' },
 	      _react2.default.createElement('img', { className: 'logo', src: _logo3x2.default, alt: '' })
 	    );
 	  };
