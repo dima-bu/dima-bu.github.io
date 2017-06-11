@@ -56135,7 +56135,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          (0, _defineProperty3.default)({ className: 'bubble-row container', style: { padding: '15px 0' }, id: 'trusted', name: 'trusted' }, 'style', { opacity: 0, transform: 'translateX(-100px)' }),
+	          (0, _defineProperty3.default)({ className: 'bubble-row -project container', style: { padding: '15px 0' }, id: 'trusted', name: 'trusted' }, 'style', { opacity: 0, transform: 'translateX(-100px)' }),
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
@@ -56151,7 +56151,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', id: 'splitPic', name: 'splitPic', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          { className: 'bubble-row -project container', id: 'splitPic', name: 'splitPic', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
@@ -56178,7 +56178,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', id: 'cinepic', name: 'cinepic', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          { className: 'bubble-row -project container', id: 'cinepic', name: 'cinepic', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
@@ -56201,7 +56201,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', name: 'phyzseek', id: 'phyzseek', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          { className: 'bubble-row -project container', name: 'phyzseek', id: 'phyzseek', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
@@ -56217,7 +56217,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row container', name: 'trackd', id: 'trackd', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          { className: 'bubble-row -project container', name: 'trackd', id: 'trackd', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
@@ -66088,7 +66088,7 @@ webpackJsonp([0],[
 	                { style: { marginBottom: '15px' } },
 	                _react2.default.createElement(
 	                  _Link2.default,
-	                  { caption: 'develop@rosberry.com', url: 'mailto:develop@rosberry.com' },
+	                  { caption: 'develop@rosberry.com', url: 'mailto:develop@rosberry.com', isHiddenText: props.isHiddenText },
 	                  _react2.default.createElement(_Mail2.default, null)
 	                )
 	              ),
@@ -66097,7 +66097,7 @@ webpackJsonp([0],[
 	                { style: { marginBottom: '15px' } },
 	                _react2.default.createElement(
 	                  _Link2.default,
-	                  { caption: 'rosberry4u' },
+	                  { caption: 'rosberry4u', isHiddenText: props.isHiddenText },
 	                  _react2.default.createElement(_Skype2.default, null)
 	                )
 	              ),
