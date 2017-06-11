@@ -53418,7 +53418,9 @@ webpackJsonp([0],[
 		"YOU": "You",
 		"SEE_PORTFOLIO": "View portfolio",
 		"READ_INTERVIEW": "Read interview",
-		"PRIZEWINNER": "Prize winner"
+		"PRIZEWINNER": "Prize winner",
+		"VK_NAME": "Vkontakte",
+		"FB_NAME": "Facebook"
 	};
 
 /***/ },
@@ -53448,7 +53450,9 @@ webpackJsonp([0],[
 		"YOU": "Вы",
 		"SEE_PORTFOLIO": "Посмотреть портфолио",
 		"READ_INTERVIEW": "Почитать интервью",
-		"PRIZEWINNER": "Призёр"
+		"PRIZEWINNER": "Призёр",
+		"VK_NAME": "Вконтакте",
+		"FB_NAME": "Фейсбук"
 	};
 
 /***/ },
@@ -66099,9 +66103,21 @@ webpackJsonp([0],[
 	              ),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'd-flex align-items-center', style: { lineHeight: '0' } },
-	                _react2.default.createElement(_FacebookLink2.default, { style: { marginRight: '20px' }, link: 'https://www.facebook.com/RosberryApps' }),
-	                _react2.default.createElement(_VKLink2.default, { link: 'https://vk.com/rosberry' })
+	                { style: { marginBottom: '15px' } },
+	                _react2.default.createElement(
+	                  _Link2.default,
+	                  { caption: (0, _locale.tr)('FB_NAME'), url: 'https://www.facebook.com/RosberryApps', isHiddenText: props.isHiddenText },
+	                  _react2.default.createElement(_FacebookLink2.default, null)
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { marginBottom: '15px', marginLeft: '-6px' } },
+	                _react2.default.createElement(
+	                  _Link2.default,
+	                  { caption: (0, _locale.tr)('VK_NAME'), url: 'https://vk.com/rosberry', isHiddenText: props.isHiddenText },
+	                  _react2.default.createElement(_VKLink2.default, null)
+	                )
 	              )
 	            )
 	          )
@@ -66267,12 +66283,13 @@ webpackJsonp([0],[
 	var Link = function Link(props) {
 	  var caption = props.caption,
 	      url = props.url,
-	      children = props.children;
+	      children = props.children,
+	      isHiddenText = props.isHiddenText;
 
 
 	  return _react2.default.createElement(
 	    'a',
-	    { className: (0, _classnames2.default)('primary', 'ros-link', 'd-flex', 'align-items-center', children ? '-indent' : ''), href: url },
+	    { className: (0, _classnames2.default)('normal', 'ros-link', 'd-flex', 'align-items-center', children ? '-indent' : '', isHiddenText ? 'isHide' : 'isShow'), target: '_blank', href: url },
 	    children,
 	    _react2.default.createElement(
 	      'span',
@@ -66285,12 +66302,14 @@ webpackJsonp([0],[
 	Link.propTypes = {
 	  caption: _propTypes2.default.string,
 	  url: _propTypes2.default.func,
-	  children: _propTypes2.default.element
+	  children: _propTypes2.default.element,
+	  isHiddenText: _propTypes2.default.bool
 	};
 
 	Link.defaultProps = {
 	  caption: '',
-	  url: '#'
+	  url: '#',
+	  isHiddenText: false
 	};
 
 	exports.default = Link;
@@ -66369,18 +66388,11 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var VKLink = function VKLink(props) {
-	  var link = props.link,
-	      style = props.style;
-
+	var VKLink = function VKLink() {
 	  return _react2.default.createElement(
-	    "a",
-	    { className: "vk-link", href: link, style: style, target: "_blank" },
-	    _react2.default.createElement(
-	      "svg",
-	      { xmlns: "http://www.w3.org/2000/svg", width: "36", height: "21", viewBox: "0 0 36 21" },
-	      _react2.default.createElement("path", { className: "vk-icon", fillRule: "evenodd", d: "M29.906 10.297S34.649 3.63 35.12 1.44c.156-.783-.19-1.221-1.006-1.221H30c-.942 0-1.288.407-1.57 1.002 0 0-2.226 4.722-4.933 7.699-.869.962-1.31 1.251-1.79 1.251-.387 0-.566-.321-.566-1.189V1.377C21.141.313 21.016 0 20.136 0H13.54c-.502 0-.817.291-.817.689 0 1.002 1.54 1.228 1.54 3.943v5.602c0 1.127-.063 1.565-.597 1.565-1.414 0-4.775-4.851-6.66-10.36C6.628.314 6.22 0 5.152 0H1.037C.44 0 0 .407 0 1.001c0 1.096 1.288 6.166 6.346 12.957C9.738 18.528 14.199 21 18.22 21c2.45 0 3.047-.407 3.047-1.44v-3.505c0-.876.346-1.252.848-1.252.565 0 1.563.181 3.895 2.473C28.775 19.905 28.963 21 30.471 21h4.618c.471 0 .911-.219.911-1.002 0-1.032-1.351-2.879-3.424-5.07-.848-1.126-2.23-2.347-2.67-2.91-.629-.657-.44-1.033 0-1.721" })
-	    )
+	    "svg",
+	    { xmlns: "http://www.w3.org/2000/svg", width: "36", height: "21", viewBox: "0 0 36 21" },
+	    _react2.default.createElement("path", { className: "vk-icon", fillRule: "evenodd", d: "M29.906 10.297S34.649 3.63 35.12 1.44c.156-.783-.19-1.221-1.006-1.221H30c-.942 0-1.288.407-1.57 1.002 0 0-2.226 4.722-4.933 7.699-.869.962-1.31 1.251-1.79 1.251-.387 0-.566-.321-.566-1.189V1.377C21.141.313 21.016 0 20.136 0H13.54c-.502 0-.817.291-.817.689 0 1.002 1.54 1.228 1.54 3.943v5.602c0 1.127-.063 1.565-.597 1.565-1.414 0-4.775-4.851-6.66-10.36C6.628.314 6.22 0 5.152 0H1.037C.44 0 0 .407 0 1.001c0 1.096 1.288 6.166 6.346 12.957C9.738 18.528 14.199 21 18.22 21c2.45 0 3.047-.407 3.047-1.44v-3.505c0-.876.346-1.252.848-1.252.565 0 1.563.181 3.895 2.473C28.775 19.905 28.963 21 30.471 21h4.618c.471 0 .911-.219.911-1.002 0-1.032-1.351-2.879-3.424-5.07-.848-1.126-2.23-2.347-2.67-2.91-.629-.657-.44-1.033 0-1.721" })
 	  );
 	};
 
@@ -66402,18 +66414,11 @@ webpackJsonp([0],[
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var FacebookLink = function FacebookLink(props) {
-	  var link = props.link,
-	      style = props.style;
-
+	var FacebookLink = function FacebookLink() {
 	  return _react2.default.createElement(
-	    "a",
-	    { className: "facebook-link", href: link, style: style, target: "_blank" },
-	    _react2.default.createElement(
-	      "svg",
-	      { xmlns: "http://www.w3.org/2000/svg", width: "30", height: "30", viewBox: "0 0 30 30" },
-	      _react2.default.createElement("path", { className: "facebook-icon", fillRule: "evenodd", d: "M1.656 0C.74 0 0 .741 0 1.656v26.688C0 29.26.741 30 1.656 30h14.368V18.382h-3.91v-4.527h3.91v-3.34c0-3.874 2.367-5.984 5.823-5.984 1.656 0 3.08.123 3.494.178v4.05l-2.398.001c-1.88 0-2.244.893-2.244 2.204v2.89h4.484l-.584 4.528h-3.9V30h7.645C29.26 30 30 29.259 30 28.344V1.656C30 .74 29.259 0 28.344 0H1.656z" })
-	    )
+	    "svg",
+	    { xmlns: "http://www.w3.org/2000/svg", width: "30", height: "30", viewBox: "0 0 30 30" },
+	    _react2.default.createElement("path", { className: "facebook-icon", fillRule: "evenodd", d: "M1.656 0C.74 0 0 .741 0 1.656v26.688C0 29.26.741 30 1.656 30h14.368V18.382h-3.91v-4.527h3.91v-3.34c0-3.874 2.367-5.984 5.823-5.984 1.656 0 3.08.123 3.494.178v4.05l-2.398.001c-1.88 0-2.244.893-2.244 2.204v2.89h4.484l-.584 4.528h-3.9V30h7.645C29.26 30 30 29.259 30 28.344V1.656C30 .74 29.259 0 28.344 0H1.656z" })
 	  );
 	};
 
