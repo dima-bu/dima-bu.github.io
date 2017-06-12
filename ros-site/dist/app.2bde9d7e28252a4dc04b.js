@@ -56151,7 +56151,7 @@ webpackJsonp([0],[
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'bubble-row -project container', id: 'splitPic', name: 'splitPic', style: { opacity: 0, transform: 'translateX(-100px)' } },
+	          { className: 'bubble-row -project -high container', id: 'splitPic', name: 'splitPic', style: { opacity: 0, transform: 'translateX(-100px)' } },
 	          _react2.default.createElement(
 	            _ProjectBubble2.default,
 	            {
