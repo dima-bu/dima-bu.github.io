@@ -53920,8 +53920,8 @@ webpackJsonp([0],[
 	// We only need to import the modules necessary for initial render
 	var createRoutes = exports.createRoutes = function createRoutes(store) {
 	  return {
-	    path: '/ros-site/dist/',
-	    //path        : '/',
+	    //path        : '/ros-site/dist/',
+	    path: '/',
 	    component: _CoreLayout2.default,
 	    indexRoute: _Home2.default,
 	    childRoutes: [(0, _Counter2.default)(store), (0, _LevelOne2.default)(store)]
@@ -56073,7 +56073,7 @@ webpackJsonp([0],[
 
 	      if (utils.options.isClicked) {
 	        var firstOffset = document.getElementById('firstBubble').offsetTop;
-	        _reactScroll2.default.animateScroll.scrollTo(firstOffset - 80, {
+	        _reactScroll2.default.animateScroll.scrollTo(firstOffset - 120, {
 	          duration: 400,
 	          smooth: true
 	        });
@@ -69731,7 +69731,7 @@ webpackJsonp([0],[
 
 	      if (utils.options.isClicked) {
 	        var hiContactsOffset = document.getElementById('hiContacts').offsetTop;
-	        _reactScroll2.default.animateScroll.scrollTo(hiContactsOffset - 80, {
+	        _reactScroll2.default.animateScroll.scrollTo(hiContactsOffset - 120, {
 	          duration: 400,
 	          smooth: true
 	        });
@@ -69790,11 +69790,6 @@ webpackJsonp([0],[
 	  }
 
 	  (0, _createClass3.default)(Contacts, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      debugger;
-	    }
-	  }, {
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
 	      var _this3 = this;
@@ -69858,13 +69853,13 @@ webpackJsonp([0],[
 	            _react2.default.createElement(_Time2.default, { from: true }),
 	            _react2.default.createElement(
 	              _Bubble2.default,
-	              { size: 'lg', type: 'primary', autoWidth: true },
+	              { size: 'lg', type: 'primary', autoWidth: true, isHiddenText: props.isHiddenText },
 	              _react2.default.createElement(
 	                'div',
 	                { style: { marginBottom: '15px' } },
 	                _react2.default.createElement(
 	                  _Link2.default,
-	                  { caption: 'develop@rosberry.com', url: 'mailto:develop@rosberry.com', isHiddenText: props.isHiddenText },
+	                  { caption: 'develop@rosberry.com', url: 'mailto:develop@rosberry.com' },
 	                  _react2.default.createElement(_Mail2.default, null)
 	                )
 	              ),
@@ -69873,7 +69868,7 @@ webpackJsonp([0],[
 	                { style: { marginBottom: '15px' } },
 	                _react2.default.createElement(
 	                  _Link2.default,
-	                  { caption: 'rosberry4u', isHiddenText: props.isHiddenText },
+	                  { caption: 'rosberry4u' },
 	                  _react2.default.createElement(_Skype2.default, null)
 	                )
 	              ),
@@ -69882,7 +69877,7 @@ webpackJsonp([0],[
 	                { style: { marginBottom: '15px' } },
 	                _react2.default.createElement(
 	                  _Link2.default,
-	                  { caption: (0, _locale.tr)('FB_NAME'), url: 'https://www.facebook.com/RosberryApps', isHiddenText: props.isHiddenText },
+	                  { caption: (0, _locale.tr)('FB_NAME'), url: 'https://www.facebook.com/RosberryApps' },
 	                  _react2.default.createElement(_FacebookLink2.default, null)
 	                )
 	              ),
@@ -69891,7 +69886,7 @@ webpackJsonp([0],[
 	                { style: { marginBottom: '15px', marginLeft: '-6px' } },
 	                _react2.default.createElement(
 	                  _Link2.default,
-	                  { caption: (0, _locale.tr)('VK_NAME'), url: 'https://vk.com/rosberry', isHiddenText: props.isHiddenText },
+	                  { caption: (0, _locale.tr)('VK_NAME'), url: 'https://vk.com/rosberry' },
 	                  _react2.default.createElement(_VKLink2.default, null)
 	                )
 	              )
@@ -70298,9 +70293,15 @@ webpackJsonp([0],[
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
+	var _reactScroll = __webpack_require__(603);
+
+	var _reactScroll2 = _interopRequireDefault(_reactScroll);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function scrollAnimation3(utils) {
+	  var _this = this;
+
 	  var AnimationBubble = utils.target.find({ name: utils.options.name });
 	  return new _gsap.TimelineMax().to(AnimationBubble, 1, {
 	    css: {
@@ -70308,7 +70309,22 @@ webpackJsonp([0],[
 	      opacity: 1
 	    },
 	    delay: 0.7,
-	    ease: _gsap.Power4.easeOut
+	    ease: _gsap.Power4.easeOut,
+	    onComplete: function onComplete() {
+	      if ((!_this.data || !_this.data.alreadyScroll) && utils.options.isClicked) {
+	        var hiGifOffset = document.getElementById('hiGif').offsetTop;
+	        _reactScroll2.default.animateScroll.scrollTo(hiGifOffset - 120, {
+	          duration: 400,
+	          smooth: true
+	        });
+	        _this.data = { alreadyScroll: true };
+	      } else {
+	        _reactScroll2.default.animateScroll.scrollTo(window.pageYOffset + 1, {
+	          duration: 400,
+	          smooth: true
+	        });
+	      }
+	    }
 	  });
 	}
 
@@ -70318,12 +70334,12 @@ webpackJsonp([0],[
 	  function Gif(props) {
 	    (0, _classCallCheck3.default)(this, Gif);
 
-	    var _this = (0, _possibleConstructorReturn3.default)(this, (Gif.__proto__ || (0, _getPrototypeOf2.default)(Gif)).call(this, props));
+	    var _this2 = (0, _possibleConstructorReturn3.default)(this, (Gif.__proto__ || (0, _getPrototypeOf2.default)(Gif)).call(this, props));
 
-	    _this.scrollBubbles = ['hiGif', 'video'];
-	    var self = _this;
+	    _this2.scrollBubbles = ['hiGif', 'video'];
+	    var self = _this2;
 
-	    _this.scrollFunc = function () {
+	    _this2.scrollFunc = function () {
 	      var scrolled = window.pageYOffset;
 	      var screenHeight = screen.height;
 
@@ -70335,7 +70351,7 @@ webpackJsonp([0],[
 	          });
 
 	          if (true) {
-	            self.addAnimation(scrollAnimation3, { name: bubble });
+	            self.addAnimation(scrollAnimation3, { name: bubble, isClicked: _this2.props.isClicked });
 	            self.scrollBubbles.splice(findIndex, 1);
 
 	            if (self.scrollBubbles.length === 0) {
@@ -70345,16 +70361,21 @@ webpackJsonp([0],[
 	        }
 	      });
 	    };
-	    return _this;
+	    return _this2;
 	  }
 
 	  (0, _createClass3.default)(Gif, [{
 	    key: 'componentWillMount',
 	    value: function componentWillMount() {
-	      var _this2 = this;
+	      var _this3 = this;
 
 	      setTimeout(function () {
-	        _this2.scrollFunc();
+	        _this3.scrollFunc();
+
+	        //Scroll.animateScroll.scrollTo(window.pageYOffset+200, {
+	        //  duration: 400,
+	        //  smooth: true
+	        //}, 3000);
 	      });
 	    }
 	  }, {
