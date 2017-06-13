@@ -53920,8 +53920,8 @@ webpackJsonp([0],[
 	// We only need to import the modules necessary for initial render
 	var createRoutes = exports.createRoutes = function createRoutes(store) {
 	  return {
-	    //path        : '/ros-site/dist/',
-	    path: '/',
+	    path: '/ros-site/dist/',
+	    //path        : '/',
 	    component: _CoreLayout2.default,
 	    indexRoute: _Home2.default,
 	    childRoutes: [(0, _Counter2.default)(store), (0, _LevelOne2.default)(store)]
