@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 631:
+/***/ 672:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -11,11 +11,11 @@ webpackJsonp([2],{
 
 	var _reactRedux = __webpack_require__(526);
 
-	var _levelOne = __webpack_require__(632);
+	var _levelOne = __webpack_require__(673);
 
 	var _reactReduxI18n = __webpack_require__(291);
 
-	var _LevelOne = __webpack_require__(633);
+	var _LevelOne = __webpack_require__(674);
 
 	var _LevelOne2 = _interopRequireDefault(_LevelOne);
 
@@ -59,7 +59,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 632:
+/***/ 673:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -128,7 +128,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 633:
+/***/ 674:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -165,15 +165,15 @@ webpackJsonp([2],{
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Contacts = __webpack_require__(601);
+	var _Contacts = __webpack_require__(638);
 
 	var _Contacts2 = _interopRequireDefault(_Contacts);
 
-	var _Gif = __webpack_require__(613);
+	var _Gif = __webpack_require__(650);
 
 	var _Gif2 = _interopRequireDefault(_Gif);
 
-	var _Nav = __webpack_require__(617);
+	var _Nav = __webpack_require__(658);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
