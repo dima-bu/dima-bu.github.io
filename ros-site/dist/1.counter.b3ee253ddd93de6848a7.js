@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 668:
+/***/ 512:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -9,11 +9,11 @@ webpackJsonp([1],{
 	    value: true
 	});
 
-	var _reactRedux = __webpack_require__(526);
+	var _reactRedux = __webpack_require__(380);
 
-	var _counter = __webpack_require__(669);
+	var _counter = __webpack_require__(513);
 
-	var _Counter = __webpack_require__(670);
+	var _Counter = __webpack_require__(514);
 
 	var _Counter2 = _interopRequireDefault(_Counter);
 
@@ -59,7 +59,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 669:
+/***/ 513:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -69,11 +69,11 @@ webpackJsonp([1],{
 	});
 	exports.actions = exports.doubleAsync = exports.COUNTER_DOUBLE_ASYNC = exports.COUNTER_INCREMENT = undefined;
 
-	var _defineProperty2 = __webpack_require__(447);
+	var _defineProperty2 = __webpack_require__(353);
 
 	var _defineProperty3 = _interopRequireDefault(_defineProperty2);
 
-	var _promise = __webpack_require__(452);
+	var _promise = __webpack_require__(355);
 
 	var _promise2 = _interopRequireDefault(_promise);
 
@@ -149,7 +149,7 @@ webpackJsonp([1],{
 
 /***/ },
 
-/***/ 670:
+/***/ 514:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -163,11 +163,11 @@ webpackJsonp([1],{
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Gif = __webpack_require__(650);
+	var _Gif = __webpack_require__(494);
 
 	var _Gif2 = _interopRequireDefault(_Gif);
 
-	var _propTypes = __webpack_require__(524);
+	var _propTypes = __webpack_require__(378);
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
