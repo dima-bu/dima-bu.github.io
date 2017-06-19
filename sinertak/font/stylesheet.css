@@ -7,7 +7,7 @@
 html, body {
     margin: 0;
     /*font-size: 0.7vw;*/
-    font-size: 9.7px;
+    font-size: 9.6px;
 }
 
 @font-face {
@@ -81,12 +81,12 @@ p.normal {
     margin:0;
     font-family: 'pt_sansregular';
     color:  #242424;
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     line-height: 3.4rem;
 }
 
 .header-titles {
-    margin-bottom: 4rem;
+    margin-bottom: 3.7rem;
     position: relative;
     height: 10rem;
 }

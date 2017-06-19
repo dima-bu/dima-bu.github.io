@@ -216,23 +216,23 @@
 }
 @media (min-width: 768px) {
     .container {
-        width: 100%;
+        width:  96%;
     }
 }
 @media (min-width: 992px) {
     .container {
-        width: 100%;
+        width:  96%;
     }
 }
 @media (min-width: 1200px) {
     .container {
-        width: 100%;
+        width: 96%;
     }
 }
 
 @media (min-width: 1400px) {
     .container {
-        width: 1370px;
+        width: 1350px;
     }
 }
 
@@ -934,7 +934,7 @@
 @media (max-width: 1399px) {
     html, body {
         /*font-size: 8px;*/
-        font-size: 0.7vw;
+        font-size: 0.66vw;
     }
 }
 
@@ -942,7 +942,7 @@
 @media (max-width: 1199px) {
 
     html, body {
-        font-size: 0.7vw;
+        font-size: 0.66vw;
         /*font-size: 6.6px;*/
     }
 
