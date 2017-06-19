@@ -6,6 +6,7 @@
 
 html, body {
     margin: 0;
+    font-size: 10px;
 }
 
 @font-face {
@@ -43,6 +44,7 @@ html, body {
 body {
     height: 100vh;
     overflow: hidden;
+
 }
 
 .main-wrapper {
@@ -56,11 +58,13 @@ body {
 .slide {
     /*margin: 0 auto;*/
     /*width: 1200px;*/
-    padding-top: 150px;
+    padding-top: 10rem;
 }
 
 .logo {
-    margin-bottom: 60px;
+    width: 69.8rem;
+    height: 14.8rem;
+    margin-bottom: 6rem;
     position: relative;
     z-index: 100;
 }
@@ -68,7 +72,7 @@ body {
 .slide-bg {
     position: fixed;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     z-index: -1;
 }
 
@@ -76,14 +80,14 @@ p.normal {
     margin:0;
     font-family: 'pt_sansregular';
     color:  #242424;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
 }
 
 .header-titles {
-    margin-bottom:40px;
+    margin-bottom: 4rem;
     position: relative;
-    height: 100px;
+    height: 10rem;
 }
 
 .header-titles .sin_title {
@@ -98,24 +102,24 @@ p.normal {
 
 .sin_title {
     font-family: 'ttsupermolot-thinuploadedfile';
-    font-size: 66px;
+    font-size: 6.6rem;
     color:  #ffffff;
-    line-height: 50px;
+    line-height: 5rem;
     margin: 0;
 }
 
 .sin_subtitle {
     font-family: 'ttsupermolot-bolduploadedfile';
-    font-size: 38px;
+    font-size: 3.8rem;
     color:  #ffffff;
-    line-height: 50px;
+    line-height: 5rem;
     margin: 0;
 }
 
 .phone {
     font-family: 'ttsupermolot-bolduploadedfile';
     color:  #ffffff;
-    font-size: 42px;
+    font-size: 4.2rem;
     background: transparent url('./../assets/phone.png') no-repeat 0% 50%;
     padding-left: 45px;
     display: inline-block;
@@ -124,7 +128,7 @@ p.normal {
 .manual {
     font-family: 'ttsupermolot-bolduploadedfile';
     color:  #ffffff;
-    font-size: 28px;
+    font-size: 2.8rem;
     background: transparent url('./../assets/manual.png') no-repeat 0% 50%;
     padding-left: 45px;
     text-decoration: none;
@@ -137,18 +141,16 @@ p.normal {
 
 .pagination {
     position: fixed;
-    right: 20px;
+    right: 2rem;
     top: 50%;
-    margin-top: -50px;
+    margin-top: -5rem;
     z-index: 102;
 }
 
 .pagination-item {
     height: 20px;
-    width: 20px;
+    width:  20px;
     border: 1px solid #ffffff;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     box-sizing: border-box;
     margin: 5px 0;
@@ -165,8 +167,6 @@ p.normal {
     display: block;
     content: '';
     background-color:  rgba(255, 255, 255, 0.75);
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
     border-radius: 7px;
 }
 
@@ -188,26 +188,15 @@ p.normal {
     *zoom: 1;
 }
 
-.col-1 {
-    float: left;
-    width:60%;
-}
-
-.col-2 {
-    float: left;
-    width: 40%;
-    position: relative;
-}
 
 .img-block img {
     position: absolute;
 }
 
 
-
 .footer {
     position: fixed;
-    bottom: 20px;
+    bottom: 2rem;
     width: 100%;
     z-index: 100;
 }
@@ -246,7 +235,7 @@ p.normal {
 }
 
 .float-img {
-    top: 150px;
+    top: 15rem;
     position: absolute;
 }
 
@@ -254,8 +243,15 @@ p.normal {
     /*z-index: 1;*/
 }
 
+#img1 {
+    width: 100%;
+    height: auto;
+
+}
+
 #img2 {
-    /*z-index: 3;*/
+    width: 100%;
+    height: auto;
 }
 
 

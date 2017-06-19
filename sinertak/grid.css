@@ -229,6 +229,13 @@
         width: 1170px;
     }
 }
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+}
+
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
@@ -923,42 +930,62 @@
 }
 
 
-@media (max-width: 991px) {
-    .img-block {
-        display: none;
-    }
-
-    .phone-block.ta-r {
-        text-align: left;
+@media (max-width: 1399px) {
+    html, body {
+        font-size: 8px;
     }
 }
 
 
 @media (max-width: 1199px) {
-    .logo {
-        width: 100%;
-        height: auto;
+
+    html, body {
+        font-size: 8px;
     }
 
-    .sin_title {
-        font-size: 44px;
-        line-height: 30px;
+    /*.logo {*/
+        /*width: auto;*/
+        /*height: 15vh;*/
+        /*margin-bottom:  10vh;*/
+    /*}*/
+
+    /*.sin_title {*/
+        /*font-size: 44px;*/
+        /*line-height: 30px;*/
+    /*}*/
+
+    /*.sin_subtitle {*/
+        /*font-size: 25px;*/
+        /*line-height: 30px;*/
+    /*}*/
+
+    /*.header-titles {*/
+        /*height: 11vh;*/
+    /*}*/
+
+    /*#img1, #img2  {*/
+        /*width: 100%;*/
+        /*height: auto;*/
+    /*}*/
+
+
+}
+
+
+@media (max-width: 991px) {
+
+    html, body {
+        font-size: 6px;
     }
 
-    .sin_subtitle {
-        font-size: 25px;
-        line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    html, body {
+        font-size: 5px;
     }
 
-    .header-titles {
-        height: 70px;
+    .img-block {
+        display: none;
     }
-
-    #img1, #img2  {
-        width:350px;
-        height: auto;
-    }
-
-
-
 }
