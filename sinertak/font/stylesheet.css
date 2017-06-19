@@ -6,7 +6,8 @@
 
 html, body {
     margin: 0;
-    font-size: 10px;
+    /*font-size: 0.7vw;*/
+    font-size: 9.7px;
 }
 
 @font-face {
@@ -102,10 +103,11 @@ p.normal {
 
 .sin_title {
     font-family: 'ttsupermolot-thinuploadedfile';
-    font-size: 6.6rem;
+    font-size: 6.4rem;
     color:  #ffffff;
     line-height: 5rem;
     margin: 0;
+    letter-spacing: -1px;
 }
 
 .sin_subtitle {
