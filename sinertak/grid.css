@@ -912,6 +912,16 @@
     box-sizing: border-box;
 }
 
+#img1 {
+    width: 60.1rem;
+    height: 55rem;
+}
+
+#img2 {
+    width: 55rem;
+    height: 42.4rem;
+}
+
 
 @media (max-width: 991px) {
     .img-block {
