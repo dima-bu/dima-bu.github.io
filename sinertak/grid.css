@@ -934,7 +934,7 @@
 @media (max-width: 1399px) {
     html, body {
         /*font-size: 8px;*/
-        font-size: 0.66vw;
+        font-size: 0.60vw;
     }
 }
 
@@ -942,7 +942,7 @@
 @media (max-width: 1199px) {
 
     html, body {
-        font-size: 0.66vw;
+        font-size: 0.60vw;
         /*font-size: 6.6px;*/
     }
 

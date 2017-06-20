@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     TweenLite.to($('#descr'+newIndex), 0.7, {
-      css: {'line-height': "3.4rem", opacity: 1, transform: 'translateY(0px)'},
+      css: {'line-height': "3.2rem", opacity: 1, transform: 'translateY(0px)'},
       ease: Power3.easeOut,
       delay: 0.8
     });
