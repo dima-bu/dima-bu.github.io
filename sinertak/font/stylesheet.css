@@ -6,8 +6,8 @@
 
 html, body {
     margin: 0;
-    /*font-size: 0.7vw;*/
-    font-size: 9.6px;
+    /*font-size: 0.5vw;*/
+    font-size: 8px;
 }
 
 @font-face {
@@ -49,7 +49,10 @@ body {
 }
 
 .main-wrapper {
-
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ta-r {
@@ -57,9 +60,10 @@ body {
 }
 
 .slide {
+    flex-grow: 1;
     /*margin: 0 auto;*/
     /*width: 1200px;*/
-    padding-top: 10rem;
+    /*padding-top: 10rem;*/
 }
 
 .logo {
@@ -123,8 +127,10 @@ p.normal {
     color:  #ffffff;
     font-size: 4.2rem;
     background: transparent url('./../assets/phone.png') no-repeat 0% 50%;
-    padding-left: 45px;
+    padding-left: 5.5rem;
     display: inline-block;
+    background-size: contain;
+    line-height: 3.5rem;
 }
 
 .manual {
@@ -132,9 +138,11 @@ p.normal {
     color:  #ffffff;
     font-size: 2.8rem;
     background: transparent url('./../assets/manual.png') no-repeat 0% 50%;
-    padding-left: 45px;
+    padding-left: 4.5rem;
     text-decoration: none;
     display: block;
+    background-size: contain;
+    line-height: 3.5rem;
 }
 
 .slide {
@@ -197,14 +205,15 @@ p.normal {
 
 
 .footer {
-    position: fixed;
-    bottom: 2rem;
+    position: relative;
+    /*bottom: 2rem;*/
     width: 100%;
     z-index: 100;
 }
 
 .descr {
     position: relative;
+    height: 40rem;
 }
 
 .descr-p {
