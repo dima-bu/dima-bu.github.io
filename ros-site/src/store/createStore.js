@@ -3,7 +3,7 @@ import thunk from 'redux-thunk'
 import { browserHistory } from 'react-router'
 import makeRootReducer from './reducers'
 import { updateLocation } from './location'
-import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux-i18n'
+import {loadTranslations, setLocale, syncTranslationWithStore} from 'lib/react-redux-i18n'
 import {initTranslationsObject} from 'lib/locale'
 
 export default (initialState = {}) => {
@@ -51,7 +51,6 @@ export default (initialState = {}) => {
 
     store.dispatch(loadTranslations(translationsObject));
     store.dispatch(setLocale('ru'));
-
 
   });
 

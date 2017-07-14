@@ -4,7 +4,6 @@ import './Header.scss'
 import Logo from 'components/Logo/Logo.js'
 import SwitchButton from 'components/SwitchButton/SwitchButton.js'
 import { connect } from 'react-redux'
-import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux-i18n'
 
 export const Header = (props) => {
 

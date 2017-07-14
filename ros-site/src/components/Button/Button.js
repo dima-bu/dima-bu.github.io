@@ -8,7 +8,7 @@ const Button = (props) => {
 
   if (isLink) {
     return (
-      <a href={href} className={cx('primary', 'ros-button', 'link-btn')}>
+      <a href={href} target="_blank" className={cx('primary', 'ros-button', 'link-btn')}>
         {caption}
       </a>
     )

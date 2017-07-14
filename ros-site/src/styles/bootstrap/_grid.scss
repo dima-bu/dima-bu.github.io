@@ -25,13 +25,16 @@
   @include container-fixed;
 
   @media (min-width: $screen-sm-min) {
-    width: $container-sm;
+    width: 100%;
+    left: 0;
   }
   @media (min-width: $screen-md-min) {
-    width: $container-md;
+    width: 100%;
+    left: 0;
   }
   @media (min-width: $screen-lg-min) {
     width: $container-lg+270;
+    left: 50%;
   }
 }
 

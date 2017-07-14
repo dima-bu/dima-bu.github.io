@@ -1,4 +1,4 @@
-import {I18n} from 'react-redux-i18n'
+import {I18n} from 'lib/react-redux-i18n'
 import 'whatwg-fetch'
 import React from 'react'
 import EmojiApprove from './assets/emoji-approve.png'

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import {changeHash } from '../modules/levelOne.js'
-import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux-i18n'
+import {setLocale} from 'lib/react-redux-i18n'
 /*  This is a container component. Notice it does not contain any JSX,
  nor does it import React. This component is **only** responsible for
  wiring in the actions and state necessary to render a presentational

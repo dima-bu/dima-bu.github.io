@@ -9,11 +9,25 @@ import Achievement from 'components/Achievement/Achievement';
 import Time from 'components/Time/Time.js'
 
 const ProjectBubble = (props) => {
-  const {title, description, achievements, linkForApple, linkForAndroid, style, children, isLeft, isHiddenText, isFullAchievements } = props;
+  const {
+    title,
+    description,
+    achievements,
+    linkForApple,
+    linkForAndroid,
+    style,
+    children,
+    isLeft,
+    isHiddenText,
+    isFullAchievements,
+    widthSize,
+    lang
+    } = props;
+
  // const newDescription = description.split('<br>').map((item, i) => <div key={i}>{item}</div>);
 
   return (
-    <div className={cx('project-bubble_wrapper', isLeft ? '-left' : '')}>
+    <div className={cx('project-bubble_wrapper', isLeft ? '-left' : '', 'wrapper-size-'+widthSize)}>
       <div className="xs-hidden">{children}</div>
 
       <Bubble isFull className="project-bubble" style={style} isHiddenText={isHiddenText}>
@@ -37,13 +51,13 @@ const ProjectBubble = (props) => {
               )
             })}
             { linkForAndroid &&
-              <a className="icon-link project-available" href={linkForAndroid}>
-                <DownloadAndroid />
+              <a className="icon-link project-available" href={linkForAndroid} target="_blank">
+                <DownloadAndroid lang={lang} />
               </a>
             }
             {linkForApple &&
-              <a className="icon-link project-available" href={linkForApple}>
-                <DownloadApple />
+              <a className="icon-link project-available" href={linkForApple} target="_blank">
+                <DownloadApple lang={lang} />
               </a>
             }
           </div>
@@ -62,6 +76,10 @@ ProjectBubble.propTypes = {
   description: PropTypes.string,
   linkForApple: PropTypes.string,
   linkForAndroid: PropTypes.string,
+  lang: PropTypes.string,
+  widthSize: PropTypes.oneOf([
+      'sm', 'md', 'lg'
+  ]),
   achievements: PropTypes.arrayOf(
     PropTypes.shape({
       firstLine: PropTypes.string,
@@ -78,7 +96,9 @@ ProjectBubble.defaultProps = {
   isFullAchievements: false,
   achievements: [],
   isLeft: false,
-  isHiddenText: false
+  isHiddenText: false,
+  widthSize: 'md',
+  lang: 'ru'
 }
 
 export default ProjectBubble;

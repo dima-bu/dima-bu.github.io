@@ -1,11 +1,12 @@
 {
   "COMMON_TRANSLATE": "EN",
+  "HI": "Hello!/n ",
   "HI_ROSBERRY": "Hello! /n We are Rosberry /n We build mobile apps /:emo-surprise /n How can we help you?",
-  "HI_PROJECTS_LINK_TEXT": "Hello, could you show me your projects?",
+  "HI_PROJECTS_LINK_TEXT": "Could you show me your projects?",
   "HI_CONTACTS_LINK_TEXT": "How can I get in touch with you?",
   "HI_GIF_LINK_TEXT": "You got any GIF to laugh at?",
   "PROJECTS_OUR_LAST_PROJECTS": "With pleasure! /:emo-approve /n Here are our five recent projects:",
-  "PROJECTS_SHOW_YOUR_PROJECTS": "Hi! /n Show me your projects, please",
+  "PROJECTS_SHOW_YOUR_PROJECTS": "Show me your projects,/n  please",
   "TRUSTED_DESCRIPTION": "A social network /n for professional /n investors",
   "SPLIT_DESCRIPTION": "Photo image editor for creating collages",
   "CINEPIC_DESCRIPTION": "Editor for creating /n video collages /:emo-wink",
@@ -20,5 +21,7 @@
   "YOU": "You",
   "SEE_PORTFOLIO": "View portfolio",
   "READ_INTERVIEW": "Read interview",
-  "PRIZEWINNER": "Prize winner"
+  "PRIZEWINNER": "Prize winner",
+  "VK_NAME": "Vkontakte",
+  "FB_NAME": "Facebook"
 }

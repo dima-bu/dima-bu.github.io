@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux-i18n'
+import {setLocale} from 'lib/react-redux-i18n'
 import {setHiddenText, setVisableText} from './../../../routes/Home/module/general'
 
 /*  This is a container component. Notice it does not contain any JSX,

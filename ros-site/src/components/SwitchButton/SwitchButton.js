@@ -44,13 +44,13 @@ export default class SwitchButton extends Component {
 
     if( this.props.label !== '' ) {
       label = (
-        <label  className="switch-label" htmlFor={id}>{this.props.label}</label>
+        <label  className={cx('switch-label', !this.props.checked ? 'active' : '')} htmlFor={id}>{this.props.label}</label>
       );
     }
 
     if( this.props.labelRight !== '' ) {
       labelRight = (
-        <label htmlFor={id} className="switch-label">{this.props.labelRight}</label>
+        <label htmlFor={id} className={cx('switch-label', this.props.checked ? 'active' : '')} >{this.props.labelRight}</label>
       );
     }
 
@@ -82,7 +82,7 @@ export default class SwitchButton extends Component {
           value="1"
           />
         }
-        <label htmlFor={id} >
+        <label htmlFor={id} className="switch-button_switch">
         </label>
         {labelRight}
       </div>

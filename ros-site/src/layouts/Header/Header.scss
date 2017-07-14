@@ -1,3 +1,5 @@
+@import './../../styles/variables';
+
 .header-wraaper {
   clear: both;
 }
@@ -13,36 +15,35 @@
   z-index: 2;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $screen-sm-max) {
   header.fixed-header {
     margin-left: 0px;
     left: 0;
     width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+79,0+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 79%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 79%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    top: 0;
+    padding: 10px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-sm-min) {
   header.fixed-header {
-    margin-left: -375px;
+    margin-left: 0;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $screen-md-min){
   header.fixed-header {
-    margin-left: -375px;
+    margin-left: 0;
   }
 }
 
-@media (min-width: 992px){
-  header.fixed-header {
-    margin-left: -485px;
-  }
-}
-
-@media (min-width: 1300px){
+@media (min-width: $screen-lg-min){
   header.fixed-header {
     margin-left: -700px;
   }
 }
-
-

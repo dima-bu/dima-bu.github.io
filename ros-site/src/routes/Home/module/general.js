@@ -1,6 +1,7 @@
 export const SET_HIDDEN_TEXT = 'SET_HIDDEN_TEXT'
 export const SET_VISABLE_TEXT = 'SET_VISABLE_TEXT'
 export const CHANGE_HASH = 'CHANGE_HASH'
+export const SCROLL_WINDOW = 'SCROLL_WINDOW'
 
 import { hashHistory, browserHistory } from 'react-router';
 
@@ -26,10 +27,18 @@ export function changeHash (hash) {
   }
 }
 
+export function scrollWindow (yPosition) {
+  return {
+    type    : SCROLL_WINDOW,
+    payload : yPosition
+  }
+}
+
 export const actions = {
   setHiddenText,
   setVisableText,
-  changeHash
+  changeHash,
+  scrollWindow
 }
 
 // ------------------------------------
@@ -38,11 +47,12 @@ export const actions = {
 const ACTION_HANDLERS = {
   [SET_HIDDEN_TEXT]    : state => { return Object.assign({}, state, { isHiddenText: true }) },
   [SET_VISABLE_TEXT] :  state => { return Object.assign({}, state, { isHiddenText: false }) },
+  [SCROLL_WINDOW]: (state, action) => {
+    return Object.assign({}, state, { yPosition: action.payload})
+  },
   [CHANGE_HASH]    : (state, action) => {
 
     const hash = action.payload.split('#')[1];
-
-    const fpp = hashHistory;
 
     if(window.location.hash) {
       const newN = window.location.hash+'-'+hash;
@@ -62,7 +72,8 @@ const ACTION_HANDLERS = {
 // ------------------------------------
 const initialState = {
   isHiddenText: false,
-  hashState: browserHistory.getCurrentLocation().hash
+  hashState: browserHistory.getCurrentLocation().hash,
+  yPosition: window.pageYOffset
 }
 
 export default function generalReducer (state = initialState, action) {

@@ -1,4 +1,4 @@
-@import './../../styles/base';
+@import './../../styles/variables';
 
 .ros-button {
   font-size: 22px;
@@ -27,9 +27,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $screen-xs-max) {
   .ros-button {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 10px 10px 10px;
   }
 }

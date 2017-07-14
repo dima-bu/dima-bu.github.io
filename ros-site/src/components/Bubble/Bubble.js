@@ -30,8 +30,10 @@ const Bubble = (props) => {
         style={{cursor: 'pointer'}}
         className={cx("bubble", className, 'type-'+type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width': '', 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}
         >
-        {text}
-        {children}
+         <span className={cx('bubble-inner', isHiddenText ? 'isHide': 'isShow')}>
+              {text}
+              {children}
+            </span>
         <BubbleCorner />
       </div>
     )

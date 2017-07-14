@@ -4,10 +4,10 @@ import cx from 'classnames'
 import './Link.scss'
 
 const Link = (props) => {
-  const {caption, url, children} = props;
+  const {caption, url, children, isHiddenText} = props;
 
   return (
-    <a className={cx('primary', 'ros-link', 'd-flex', 'align-items-center', children ? '-indent' : '')} href={url}>
+    <a className={cx('normal', 'ros-link', 'd-flex', 'align-items-center', children ? '-indent' : '', isHiddenText ? 'isHide': 'isShow')} target="_blank" href={url}>
       {children}
       <span className="caption">
         {caption}
@@ -19,12 +19,14 @@ const Link = (props) => {
 Link.propTypes = {
   caption: PropTypes.string,
   url: PropTypes.func,
-  children : PropTypes.element
+  children : PropTypes.element,
+  isHiddenText: PropTypes.bool
 }
 
 Link.defaultProps = {
   caption: '',
-  url: '#'
+  url: '#',
+  isHiddenText: false
 }
 
 export default Link;

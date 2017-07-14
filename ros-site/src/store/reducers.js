@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 import locationReducer from './location'
-import { i18nReducer } from 'react-redux-i18n'
+import { i18nReducer } from 'lib/react-redux-i18n'
 import general from './../routes/Home/module/general'
 
 export const makeRootReducer = (asyncReducers) => {

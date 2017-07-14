@@ -4,20 +4,18 @@ import './HomeView.scss'
 import Bubble from 'components/Bubble/Bubble'
 import {tr} from 'lib/locale.js';
 import { connect } from 'react-redux'
-import {loadTranslations, setLocale, syncTranslationWithStore} from 'react-redux-i18n'
+import {setLocale} from 'lib/react-redux-i18n';
 import cx from 'classnames'
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup'
-import TransitionGroup from 'react-transition-group/TransitionGroup'
-import video from './../assets/320.mp4'
 import Projects from 'components/Projects/Projects.js'
 import Contacts from 'components/Contacts/Contacts.js'
 import Gif from 'components/Gif/Gif.js'
 import browserHistory from 'react-router/lib/browserHistory'
-import {changeHash } from './../module/general.js'
+import {changeHash, scrollWindow} from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
 import Time from 'components/Time/Time.js'
 import GSAP from 'react-gsap-enhancer'
-import { TweenLite, TweenMax, TimelineMax, Power4 } from 'gsap'
+import { TweenMax, TimelineMax, Power4 } from 'gsap'
+import throttle from 'lodash.throttle';
 
 const achievements = [
   {
@@ -46,12 +44,12 @@ function createAnim(utils) {
   //  }));
 
   TimelineMaxWr.add(TweenMax
-    .to(box, 1, {
+    .to(box, 0.7, {
       css: {
         transform: 'translateX(0px)',
         opacity: 1
       },
-      delay: 2,
+      delay: 1.3,
       ease: Power4.easeOut
     }));
 
@@ -63,21 +61,37 @@ class HomeView extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {isSplash: true};
+    this.state = {
+      isSplash: true,
+      isHiddenSplash: false
+    };
+    this.isTouch = false;
+    this.clikedElem = false;
     this.handleNavigateClick = this.handleNavigateClick.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount() {
+    var throttled = throttle(()=>{this.props.scrollWindow(window.pageYOffset)}, 500);
+    window.onscroll = throttled;
+
     setTimeout(() => {
       this.setState({
         isSplash: false
       })
-    }, 1000)
+    }, 700);
+
+    setTimeout(() => {
+      this.setState({
+        isHiddenSplash: true
+      })
+    }, 1200);
   }
 
   handleNavigateClick(e) {
+    this.isTouch = true;
+    this.clikedElem = e;
     this.props.changeHash(e);
-    this.addAnimation(createAnim)
+    //this.addAnimation(createAnim)
   }
 
   getVideo(){
@@ -101,15 +115,15 @@ class HomeView extends React.Component {
     pathname = pathname.substr(1);
     const elems = pathname.split('-');
 
-    elems.forEach(elem => {
+    elems.forEach( (elem, index) => {
       if (elem === 'projects') {
-        arr.push( <Projects key='projects' isHiddenText={this.props.isHiddenText} />)
+        arr.push( <Projects key='projects' isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} lang={this.props.i18n.locale} index={index} isHiddenText={this.props.isHiddenText} />)
       }
       if (elem === 'gif') {
-        arr.push( <Gif key='gif' isHiddenText={this.props.isHiddenText} />)
+        arr.push( <Gif key='gif' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
       }
       if (elem === 'contacts') {
-        arr.push( <Contacts key='contacts' isHiddenText={this.props.isHiddenText}/>)
+        arr.push( <Contacts key='contacts' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem}  yPosition={this.props.yPosition}  isHiddenText={this.props.isHiddenText}/>)
       }
     });
 
@@ -141,32 +155,31 @@ class HomeView extends React.Component {
   render() {
 
     const getStyleWrapper = ()=> {
-      const hash = document.location.hash;
-      if (hash) {
-      } else {
-        return {transform: 'translateY(calc(50vh - 220px)'}
-      }
+      //const hash = this.getHash();
+      //if (!hash || this.isTouch) {
+      //  return {transform: 'translateY(calc(50vh - 300px)'}
+      //}
     }
 
     return (
       <div>
-        {this.state.isSplash &&
-        <div className={cx('splash', this.state.isSplash ? 'isHide' : 'isHide')}
+        {!this.state.isHiddenSplash &&
+        <div className={cx('splash', this.state.isSplash ? 'isShow' : 'isHide')}
              style={
                       {'position': 'fixed',
-                      'height': '100%',
+                      'height': '100vh',
                       'width': '100%',
                       'left': '0',
                       'top': '0',
-                      'backgroundColor': '#ccc',
+                      'backgroundColor': '#cccccc',
                       'zIndex': '100'}
                  }>
         </div>
         }
-        <div className="main-area" name='box' style={{transform: 'translateY(calc(50vh - 220px)'}} >
-          <div className="ta-c bubble-row">
+        <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()} >
+          <div className="ta-c bubble-row" style={{marginTop: '20vh'}}>
             <Bubble isHiddenText={this.props.isHiddenText} className="w_45">
-                  <p>{tr('HI_ROSBERRY', true)}</p>
+              {tr('HI_ROSBERRY', true)}
             </Bubble>
           </div>
           {this.getView()}
@@ -182,14 +195,16 @@ class HomeView extends React.Component {
 
 const mapDispatchToProps = {
   setLocale: setLocale,
-  changeHash: changeHash
+  changeHash: changeHash,
+  scrollWindow: scrollWindow
 }
 
 const mapStateToProps = (state) => ({
   i18n : state.i18n,
   hash : state.location.hash,
   isHiddenText: state.general.isHiddenText,
-  hashState : state.general.hashState
+  hashState : state.general.hashState,
+  yPosition: state.general.yPosition
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(GSAP(HomeView))

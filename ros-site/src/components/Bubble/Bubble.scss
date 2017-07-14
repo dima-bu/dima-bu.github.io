@@ -1,5 +1,6 @@
-@import './../../styles/base';
+@import './../../styles/variables';
 
+$hoverAnimation: all 300ms ease-out 0s;
 
 * {
   box-sizing: border-box;
@@ -19,6 +20,7 @@
   .emoji-img {
     vertical-align: middle;
     margin-bottom: 6px;
+
   }
   // sizes
 
@@ -136,6 +138,26 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  -webkit-transition: $hoverAnimation;
+  -moz-transition: $hoverAnimation;
+  -o-transition: $hoverAnimation;
+  transition: $hoverAnimation;
+  &:after {
+    -webkit-transition: $hoverAnimation;
+    -moz-transition: $hoverAnimation;
+    -o-transition: $hoverAnimation;
+    transition: $hoverAnimation;
+    box-shadow: 0;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 60px;
+    bottom: 7px;
+    z-index: -1;
+  }
+
   //z-index: 1;
   //position: relative;
 
@@ -145,8 +167,16 @@
     .bubble-corner {
       fill: $color-milky;
       stroke: $color-milky;
+      -webkit-transition: $hoverAnimation;
+      -moz-transition: $hoverAnimation;
+      -o-transition: $hoverAnimation;
+      transition: $hoverAnimation;
     }
     &:after {
+      -webkit-transition: $hoverAnimation;
+      -moz-transition: $hoverAnimation;
+      -o-transition: $hoverAnimation;
+      transition: $hoverAnimation;
       content: '';
       display: block;
       position: absolute;
@@ -177,6 +207,10 @@
     height: 25px;
     fill: $color-grey-light;
     stroke: $color-grey-light;
+    -webkit-transition: $hoverAnimation;
+    -moz-transition: $hoverAnimation;
+    -o-transition: $hoverAnimation;
+    transition: $hoverAnimation;
   }
 
   &.-right {
@@ -251,12 +285,18 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: $screen-xs-max) {
+
+  .bubble .emoji-img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+  }
 
   .bubble.size-lg {
     font-size: 16px;
     line-height: 22px;
-    padding: 20px 40px 20px 20px;
+    padding: 20px 30px 20px 20px;
     border-width: 2px;
     margin-left: 25px;
 
@@ -279,6 +319,7 @@
       margin-right: 25px;
       .bubble-corner {
         right: -25px;
+        left: inherit;
       }
     }
 
@@ -286,6 +327,7 @@
       top: -2px;
       width: 25px;
       height: 25px;
+      left: -25px;
     }
   }
 
@@ -296,7 +338,6 @@
   .bubble.w_35p {
     width: 75%;
   }
-
 
   .bubble.w_60p {
     width: 85%;
@@ -326,19 +367,30 @@
       br {  display: none;}
     }
   }
+
+ .bubble br{
+   display: none;
+  }
 }
 
-@media (min-width: 768px) {
 
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .bubble.w_35p {
+    width: 60%;
+  }
+
+  .bubble.w_60p {
+    width: 60%;
+  }
+
+  .bubble.w_70p {
+    width: 80%;
+  }
 }
 
-
-@media (min-width: 992px){
-
+@media (max-width: $screen-sm-max ){
+  .bubble.type-link.size-sm .bubble-inner br, .bubble br {
+    display: none;
+  }
 }
-
-@media (min-width: 1300px){
-
-}
-
 
