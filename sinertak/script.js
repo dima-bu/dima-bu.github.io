@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var bg2 = $('#bg2');
 
-  var initStyle = {'left': '100%', 'top': '100%' ,'z-index': 1, 'transform': 'rotate(30deg)'};
+  var initStyle = {'left': '100%', 'top': '0%' ,'z-index': 1, 'transform': 'skewX(-30deg)'};
 
   bg2.css(initStyle);
 
@@ -75,8 +75,6 @@ document.addEventListener('DOMContentLoaded', function(){
     //e.preventDefault ? e.preventDefault() : (e.returnValue = false);
   }
 
-
-
   function changeSlide(currentIndex){
 
     console.log('changeSlide');
@@ -97,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function(){
     $('#img'+newIndex).css('z-index', 2);
     $('#img'+lastIndex).css('z-index', 1);
     $('#bg'+newIndex).css('z-index', 2);
-    $('#bg'+lastIndex).css({'z-index': 1});
+    $('#bg'+lastIndex).css('z-index', 1);
     $('#descr'+newIndex).css('z-index', 2);
     $('#descr'+lastIndex).css('z-index', 1);
     $('#title'+newIndex).css('z-index', 2);
@@ -106,16 +104,17 @@ document.addEventListener('DOMContentLoaded', function(){
     $('#subtitle'+lastIndex).css('z-index', 1);
 
 
+    // background
+
     TweenLite.to($('#bg'+newIndex), 0.7, {
       css: {
         left: "0%",
         top: '0%',
-        transform: 'rotate(0deg)'
+        transform: 'skewX(0deg)'
       },
       delay: 0.1,
       ease: Power3.easeOut
     });
-
 
 
     TweenLite.to($('#bg'+lastIndex), 0, {
@@ -195,7 +194,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
   paginationItem.click(function () {
 
-
     if (isActiveBtn) {
       isActiveBtn = false;
       paginationItem.removeClass('active');
@@ -210,8 +208,6 @@ document.addEventListener('DOMContentLoaded', function(){
         $(this).addClass('active');
       }
     }
-
-
 
     //if ($(this).hasClass('active') || !isActiveBtn){
     //  return false;
@@ -307,9 +303,5 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
   });
-
-
-  
-
 
 });

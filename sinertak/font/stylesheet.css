@@ -229,6 +229,8 @@ p.normal {
     /*z-index: 2;*/
 }
 
+
+
 #bg2 {
     /*position: fixed;*/
     /*width: 100%;*/
@@ -250,8 +252,24 @@ p.normal {
     position: absolute;
 }
 
+/*#bg1 {*/
+    /*background-color: red;*/
+    /*transform: skewX(-30deg);*/
+/*}*/
+
+/*#bg-inside {*/
+    /*background-size: 90%;*/
+    /*position: absolute;*/
+    /*height: 100vh;*/
+    /*width: 100%;*/
+    /*background-repeat: no-repeat;*/
+    /*left: 5%;*/
+    /*top: 10%;*/
+
+/*}*/
+
 #img1, #bg1  {
-    /*z-index: 1;*/
+    z-index: 2;
 }
 
 #img1 {
