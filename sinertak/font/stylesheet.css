@@ -255,7 +255,7 @@ p.normal {
     -webkit-mask-size: 230% 230%;
     -webkit-mask-image: -webkit-gradient(linear, left top, right bottom,
     color-stop(0.00,  rgba(0,0,0,1)),
-    color-stop(0.45,  rgba(0,0,0,1)),
+    color-stop(0.499,  rgba(0,0,0,1)),
     color-stop(0.50,  rgba(0,0,0,0)),
     color-stop(0.55,  rgba(0,0,0,0)),
     color-stop(1.00,  rgba(0,0,0,0)));

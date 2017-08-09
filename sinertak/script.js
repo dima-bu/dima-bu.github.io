@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // background
 
-    var initStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 2};
-    var finishStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 1};
+    var initStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 2, transform: 'scale(1.1, 1.1)'};
+    var finishStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 1, transform: 'scale(1 , 1)'};
 
     //bg1.css(finishStyle);
     //bg2.css(initStyle);
@@ -115,7 +115,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
     TweenLite.to($('#bg'+newIndex), 0.7, {
       css: {
-        '-webkit-mask-position': '100% 0%'
+        '-webkit-mask-position': '100% 0%',
+        'transform': 'scale(1.1 , 1.1)'
+      },
+      delay: 0,
+      ease: Power0.easeNone
+    });
+
+
+    TweenLite.to($('#bg'+lastIndex), 0.7, {
+      css: {
+        'transform': 'scale(1.1 , 1.1)'
       },
       delay: 0,
       ease: Power0.easeNone
