@@ -13,10 +13,9 @@ document.addEventListener('DOMContentLoaded', function(){
   var img2 = $('#img2')
 
   var bg2 = $('#bg2');
+  var bg1 = $('#bg1');
 
-  var initStyle = {'left': '100%', 'top': '0%' ,'z-index': 1, 'transform': 'skewX(-30deg)'};
 
-  bg2.css(initStyle);
 
   var isActiveBtn = true;
   var currentIndex = '1';
@@ -92,34 +91,45 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //paginationItem.removeClass('active');
 
-    $('#img'+newIndex).css('z-index', 2);
-    $('#img'+lastIndex).css('z-index', 1);
-    $('#bg'+newIndex).css('z-index', 2);
-    $('#bg'+lastIndex).css('z-index', 1);
-    $('#descr'+newIndex).css('z-index', 2);
-    $('#descr'+lastIndex).css('z-index', 1);
-    $('#title'+newIndex).css('z-index', 2);
-    $('#title'+lastIndex).css('z-index', 1);
-    $('#subtitle'+newIndex).css('z-index', 2);
-    $('#subtitle'+lastIndex).css('z-index', 1);
+    $('#img'+newIndex).css('z-index', 3);
+    $('#img'+lastIndex).css('z-index', 2);
+    $('#descr'+newIndex).css('z-index', 3);
+    $('#descr'+lastIndex).css('z-index', 2);
+    $('#title'+newIndex).css('z-index', 3);
+    $('#title'+lastIndex).css('z-index', 2);
+    $('#subtitle'+newIndex).css('z-index', 3);
+    $('#subtitle'+lastIndex).css('z-index', 2);
 
 
     // background
 
+    var initStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 2};
+    var finishStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 1};
+
+    //bg1.css(finishStyle);
+    //bg2.css(initStyle);
+
+    $('#bg'+newIndex).css({'z-index': 2, '-webkit-mask-position': '0% 0%'});
+    $('#bg'+lastIndex).css({'z-index': 1, '-webkit-mask-position': '0% 0%'});
+
+
     TweenLite.to($('#bg'+newIndex), 0.7, {
       css: {
-        left: "0%",
-        top: '0%',
-        transform: 'skewX(0deg)'
+        '-webkit-mask-position': '100% 0%'
       },
-      delay: 0.1,
-      ease: Power3.easeOut
+      delay: 0,
+      ease: Power0.easeNone
     });
 
 
     TweenLite.to($('#bg'+lastIndex), 0, {
       css: initStyle,
-      delay: 0.8
+      delay: 0.7
+    });
+
+    TweenLite.to($('#bg'+newIndex), 0, {
+      css: finishStyle,
+      delay: 0.7
     });
 
     //title
@@ -180,10 +190,10 @@ document.addEventListener('DOMContentLoaded', function(){
       delay: 0.8
     });
 
-    TweenLite.to($('#img'+lastIndex), 0.4, {
+    TweenLite.to($('#img'+lastIndex), 0.35, {
       css: {opacity: 0, transform: 'scale(0.8 ,0.8)'},
       ease: Power3.easeOut,
-      delay: 0.8,
+      delay: 0.2,
       onComplete: function () {
         isActiveBtn = true;
       }
