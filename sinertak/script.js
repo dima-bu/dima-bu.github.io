@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function(){
         'transform': 'scale(1.1 , 1.1)'
       },
       delay: 0,
-      ease: Power0.easeNone
+      ease: Power3.easeOut
     });
 
 
