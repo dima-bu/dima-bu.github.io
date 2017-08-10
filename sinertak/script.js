@@ -212,9 +212,9 @@ document.addEventListener('DOMContentLoaded', function(){
       delay: 0.8
     });
 
-    TweenLite.to($('#img'+newIndex), 0.3, {
+    TweenLite.to($('#img'+newIndex), 0.4, {
       css: {opacity: 1, transform: 'scale(1,1)'},
-      ease: Power3.easeOut,
+      ease: Power1.easeOut,
       delay: 1.1
     });
 
