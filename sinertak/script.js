@@ -103,8 +103,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // background
 
-    var initStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 2, transform: 'scale(1.1, 1.1)'};
-    var finishStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 1, transform: 'scale(1 , 1)'};
+    var initStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 2, transform: 'scale(1, 1)'};
+    var finishStyle = { '-webkit-mask-position': '0% 0%', 'z-index': 1, transform: 'scale(1.35 , 1.35)'};
 
     //bg1.css(finishStyle);
     //bg2.css(initStyle);
@@ -113,19 +113,35 @@ document.addEventListener('DOMContentLoaded', function(){
     $('#bg'+lastIndex).css({'z-index': 1, '-webkit-mask-position': '0% 0%'});
 
 
+
+    // верхняя картинка
     TweenLite.to($('#bg'+newIndex), 0.7, {
       css: {
         '-webkit-mask-position': '100% 0%',
-        'transform': 'scale(1.1 , 1.1)'
       },
       delay: 0,
       ease: Power0.easeNone
     });
 
+    TweenLite.to($('#bg'+newIndex), 0.7, {
+      css: {
+        'transform': 'scale(1 , 1)'
+      },
+      delay: 0,
+      ease: Power3.easeOut
+    });
 
+
+    TweenLite.to($('#bg'+newIndex), 0, {
+      css: finishStyle,
+      delay: 0.7
+    });
+
+
+    // нижняя картинка
     TweenLite.to($('#bg'+lastIndex), 0.7, {
       css: {
-        'transform': 'scale(1.1 , 1.1)'
+        'transform': 'scale(1 , 1)'
       },
       delay: 0,
       ease: Power3.easeOut
@@ -137,10 +153,6 @@ document.addEventListener('DOMContentLoaded', function(){
       delay: 0.7
     });
 
-    TweenLite.to($('#bg'+newIndex), 0, {
-      css: finishStyle,
-      delay: 0.7
-    });
 
     //title
 
@@ -194,11 +206,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
     //img
 
-    TweenLite.to($('#img'+newIndex), 0.4, {
-      css: {opacity: 1, transform: 'scale(1,1)'},
-      ease: Power3.easeOut,
+    TweenLite.to($('#img'+newIndex), 0.3, {
+      css: {opacity: 1, transform: 'scale(1.1, 1.1)'},
+      ease: Power0.easeNone,
       delay: 0.8
     });
+
+    TweenLite.to($('#img'+newIndex), 0.3, {
+      css: {opacity: 1, transform: 'scale(1,1)'},
+      ease: Power3.easeOut,
+      delay: 1.1
+    });
+
 
     TweenLite.to($('#img'+lastIndex), 0.35, {
       css: {opacity: 0, transform: 'scale(0.8 ,0.8)'},
