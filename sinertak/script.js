@@ -241,16 +241,16 @@ document.addEventListener('DOMContentLoaded', function(){
     // img
 
     TweenLite.to($('#img'+newIndex), 0.3, {
-      css: {opacity: 1, transform: 'scale(1.1, 1.1)'},
-      ease: Power0.easeNone,
+      css: {opacity: 1, transform: 'scale(1, 1)'},
+      ease: Power2.easeOut,
       delay: 0.8
     });
 
-    TweenLite.to($('#img'+newIndex), 0.4, {
-      css: {opacity: 1, transform: 'scale(1,1)'},
-      ease: Power1.easeOut,
-      delay: 1.1
-    });
+    // TweenLite.to($('#img'+newIndex), 0.4, {
+    //   css: {opacity: 1, transform: 'scale(1,1)'},
+    //   ease: Power1.easeOut,
+    //   delay: 1.1
+    // });
 
 
     TweenLite.to($('#img'+lastIndex), 0.35, {
