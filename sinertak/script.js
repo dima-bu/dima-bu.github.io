@@ -1,27 +1,33 @@
 document.addEventListener('DOMContentLoaded', function(){
   var paginationItem = $('.pagination-item');
 
-  var sinTitle1 = $('#title1');
-  var sinSubtitle1 = $('#subtitle1');
+  //var sinTitle1 = $('#title1');
+  //var sinSubtitle1 = $('#subtitle1');
+  //
+  //var sinTitle2 = $('#title2');
+  //var sinSubtitle2 = $('#subtitle2');
+  //
+  //var sinTitle3 = $('#title3');
+  //var sinSubtitle3 = $('#subtitle3');
+  //
+  //var descr1 = $('#descr1');
+  //var descr2 = $('#descr2');
+  //var descr3 = $('#descr3');
+  //var descr4 = $('#descr4');
+  //var descr5 = $('#descr5');
+  //
+  //var img1 = $('#img1');
+  //var img2 = $('#img2');
+  //var img3 = $('#img3');
+  //var img4 = $('#img4');
+  //var img5 = $('#img5');
+  //
+  //var bg1 = $('#bg1');
+  //var bg2 = $('#bg2');
+  //var bg3 = $('#bg3');
+  //var bg3 = $('#bg4');
+  //var bg3 = $('#bg5');
 
-  var sinTitle2 = $('#title2');
-  var sinSubtitle2 = $('#subtitle2');
-
-  var sinTitle3 = $('#title3');
-  var sinSubtitle3 = $('#subtitle3');
-
-  var descr1 = $('#descr1');
-  var descr2 = $('#descr2');
-  var descr3 = $('#descr3');
-
-  var img1 = $('#img1');
-  var img2 = $('#img2');
-  var img3 = $('#img3');
-
-
-  var bg1 = $('#bg1');
-  var bg2 = $('#bg2');
-  var bg3 = $('#bg3');
 
   var isActiveBtn = true;
   var currentIndex = '1';
@@ -41,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function(){
     window.attachEvent("onmousewheel", onWheel);
   }
 
-
   function onWheel(e) {
     e = e || window.event;
 
@@ -53,61 +58,83 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log('deltaX ', deltaX);
       isActiveBtn = false;
 
+      var currentIndex = $('.pagination-item.active')[0].dataset.index;
       paginationItem.removeClass('active');
+      var nextIndex;
 
-      switch(currentIndex) {
-        case '1':
-          currentIndex = '2';
-          changeSlide('1');
-          $('.pagination-item[data-index=' + 2 + ']').addClass('active');
-          break;
-        case '2':
-          currentIndex = '3';
-          changeSlide('2');
-          $('.pagination-item[data-index=' + 3 + ']').addClass('active');
-          break;
-        case '3':
-          currentIndex = '1';
-          changeSlide('3');
-          $('.pagination-item[data-index=' + 1 + ']').addClass('active');
-          break;
+      if (deltaX > 0) {
+
+        if (currentIndex === '5') {
+          nextIndex = 1;
+        } else {
+          nextIndex = +currentIndex+1;
+        }
+
+        changeSlide(currentIndex, ''+nextIndex);
+
+      }
+      if (deltaX <= 0) {
+
+        if (currentIndex === '1') {
+          nextIndex = 5;
+        } else {
+          nextIndex = +currentIndex-1;
+        }
+
+        changeSlide(currentIndex, ''+nextIndex);
+
       }
 
-      //
-      // if (currentIndex === '2') {
-      //
-      // } else {
-      //   currentIndex = '2';
-      //   changeSlide('1');
-      //   $('.pagination-item[data-index=' + 2 + ']').addClass('active')
-      // }
+      $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
+
 
     }
   }
 
-  function changeSlide(currentIndex){
+  function changeSlide(currentIndex, lastIndexStrong){
 
-    console.log('changeSlide');
+    console.log('changeSlide', currentIndex);
+
+    var allIndexes = ['1', '2', '3', '4', '5'];
 
     var newIndex;
     var otherIndex;
     var lastIndex = currentIndex;
 
-    switch(lastIndex) {
-      case '1':
-        newIndex ='2';
-        otherIndex = '3';
-        break;
-      case '2':
-        newIndex ='3';
-        otherIndex = '1';
-        break;
-      case '3':
-        newIndex ='1';
-        otherIndex = '2';
-        break;
-    }
+    //if(!lastIndexStrong){
+    //  switch(lastIndex) {
+    //    case '1':
+    //      newIndex ='2';
+    //      otherIndex = '3';
+    //      break;
+    //    case '2':
+    //      newIndex ='3';
+    //      otherIndex = '4';
+    //      break;
+    //    case '3':
+    //      newIndex ='4';
+    //      otherIndex = '5';
+    //      break;
+    //    case '4':
+    //      newIndex ='5';
+    //      otherIndex = '1';
+    //      break;
+    //    case '5':
+    //      newIndex ='1';
+    //      otherIndex = '2';
+    //      break;
+    //  }
+    //} else {
+      newIndex = lastIndexStrong;
+      lastIndex = currentIndex;
+    //}
 
+    var newIndexIndex =  allIndexes.indexOf(newIndex);
+    allIndexes.splice(newIndexIndex, 1);
+    var lastIndexIndex =  allIndexes.indexOf(lastIndex);
+    allIndexes.splice(lastIndexIndex, 1);
+
+    console.log(allIndexes);
     console.log(newIndex, lastIndex);
 
     $('#img'+newIndex).css('z-index', 3);
@@ -118,6 +145,17 @@ document.addEventListener('DOMContentLoaded', function(){
     $('#title'+lastIndex).css('z-index', 2);
     $('#subtitle'+newIndex).css('z-index', 3);
     $('#subtitle'+lastIndex).css('z-index', 2);
+
+    allIndexes.forEach(function(item){
+      $('#img'+item).css('z-index', 1);
+      $('#descr'+item).css('z-index', 1);
+      $('#title'+item).css('z-index', 1);
+      $('#subtitle'+item).css('z-index', 1);
+      $('#bg'+item).css('z-index', 0);
+    });
+
+     $('#bg'+newIndex).css({'z-index': 1, '-webkit-mask-position': '0% 0%'});
+     $('#bg'+lastIndex).css({'z-index': 2, '-webkit-mask-position': '0% 0%'});
 
     // background
 
@@ -140,9 +178,10 @@ document.addEventListener('DOMContentLoaded', function(){
       delay: 0,
       ease: Power0.easeNone,
       onComplete: function () {
-        $('#bg'+lastIndex).css({'z-index': -1, '-webkit-mask-position': '0% 0%'});
-        $('#bg'+newIndex).css({'z-index': 2, '-webkit-mask-position': '0% 0%'});
-        $('#bg'+otherIndex).css({'z-index': 1, '-webkit-mask-position': '0% 0%'});
+        $('#bg'+lastIndex).css({'z-index': 0, '-webkit-mask-position': '0% 0%'});
+        currentIndex = newIndex;
+        //$('#bg'+newIndex).css({'z-index': 2, '-webkit-mask-position': '0% 0%'});
+        //$('#bg'+otherIndex).css({'z-index': 1, '-webkit-mask-position': '0% 0%'});
       }
     });
 
@@ -154,11 +193,14 @@ document.addEventListener('DOMContentLoaded', function(){
       ease: Power3.easeOut
     });
 
-    TweenLite.to($('#bg'+otherIndex), 0, {
-      css: {
-        'transform': 'scale(1.35 , 1.35)'
-      },
-      delay: 0.7
+
+    allIndexes.forEach(function(item){
+      TweenLite.to($('#bg'+item), 0, {
+        css: {
+          'transform': 'scale(1.35 , 1.35)'
+        },
+        delay: 0.7
+      });
     });
 
     TweenLite.to($('#bg'+lastIndex), 0, {
@@ -168,24 +210,6 @@ document.addEventListener('DOMContentLoaded', function(){
       delay: 0.7
     });
 
-    // TweenLite.to($('#bg'+otherIndex), 0, {
-    //   css: initStyle,
-    //   delay: 0.7
-    // });
-
-    // нижняя картинка
-    // TweenLite.to($('#bg'+lastIndex), 0.7, {
-    //   css: {
-    //     'transform': 'scale(1 , 1)'
-    //   },
-    //   delay: 0,
-    //   ease: Power3.easeOut
-    // });
-
-    // TweenLite.to($('#bg'+lastIndex), 0, {
-    //   css: otherStyle,
-    //   delay: 0.7
-    // });
 
 
     // title
@@ -243,7 +267,10 @@ document.addEventListener('DOMContentLoaded', function(){
     TweenLite.to($('#img'+newIndex), 0.3, {
       css: {opacity: 1, transform: 'scale(1, 1)'},
       ease: Power2.easeOut,
-      delay: 0.8
+      delay: 0.8,
+      onComplete: function () {
+        isActiveBtn = true;
+      }
     });
 
     // TweenLite.to($('#img'+newIndex), 0.4, {
@@ -256,10 +283,7 @@ document.addEventListener('DOMContentLoaded', function(){
     TweenLite.to($('#img'+lastIndex), 0.35, {
       css: {opacity: 0, transform: 'scale(0.8 ,0.8)'},
       ease: Power3.easeOut,
-      delay: 0.2,
-      onComplete: function () {
-        isActiveBtn = true;
-      }
+      delay: 0.2
     });
 
   }
@@ -267,42 +291,13 @@ document.addEventListener('DOMContentLoaded', function(){
   paginationItem.click(function () {
 
     if (isActiveBtn) {
+
+      var currentIndex = $('.pagination-item.active')[0].dataset.index;
       isActiveBtn = false;
       paginationItem.removeClass('active');
+      $(this).addClass('active');
 
-      debugger;
-
-      switch(currentIndex) {
-        case '1':
-          currentIndex = '2';
-          changeSlide('1');
-          $(this).addClass('active');
-          break;
-        case '2':
-          currentIndex = '3';
-          changeSlide('2');
-          $(this).addClass('active');
-          break;
-        case '3':
-          currentIndex = '1';
-          changeSlide('3');
-          $(this).addClass('active');
-          break;
-      }
-
-      //
-      //
-      // if (currentIndex === '2') {
-      //   currentIndex = '1';
-      //   changeSlide('2');
-      //   $(this).addClass('active');
-      // } else {
-      //   currentIndex = '2';
-      //   changeSlide('1');
-      //   $(this).addClass('active');
-      // }
-
-
+      changeSlide(currentIndex, this.dataset.index);
     }
   });
 
