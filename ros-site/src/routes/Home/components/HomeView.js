@@ -9,6 +9,7 @@ import cx from 'classnames'
 import Projects from 'components/Projects/Projects.js'
 import Contacts from 'components/Contacts/Contacts.js'
 import Gif from 'components/Gif/Gif.js'
+import FinishSection from 'components/FinishSection/FinishSection.js'
 import browserHistory from 'react-router/lib/browserHistory'
 import {changeHash, scrollWindow} from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
@@ -50,7 +51,9 @@ function createAnim(utils) {
         opacity: 1
       },
       delay: 1.3,
+
       ease: Power4.easeOut
+
     }));
 
   return TimelineMaxWr;
@@ -139,22 +142,13 @@ class HomeView extends React.Component {
     const elems = pathname.split('-');
 
     if(elems.length === 3) {
-      return (
-        <div className="clearfix bubble-row container">
-          <div className="bubble-wrapper">
-            <Time from/>
-            <Bubble size="lg" type="primary" className="w_70p" isHiddenText={this.props.isHiddenText}>
-              {tr('CONTACTS_COME_AGAIN', true)}
-            </Bubble>
-          </div>
-        </div>
-      );
+      return <FinishSection />;
     }
   }
 
   render() {
 
-    const getStyleWrapper = ()=> {
+    const getStyleWrapper = () => {
       //const hash = this.getHash();
       //if (!hash || this.isTouch) {
       //  return {transform: 'translateY(calc(50vh - 300px)'}

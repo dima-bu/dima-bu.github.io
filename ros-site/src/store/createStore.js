@@ -50,7 +50,13 @@ export default (initialState = {}) => {
     });
 
     store.dispatch(loadTranslations(translationsObject));
-    store.dispatch(setLocale('ru'));
+
+    if(sessionStorage.getItem('lang')){
+      store.dispatch(setLocale(sessionStorage.getItem('lang')));
+    } else {
+      store.dispatch(setLocale('ru'));
+    }
+
 
   });
 

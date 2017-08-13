@@ -15,5 +15,6 @@ export const setLocale = locale => dispatch => {
     type: SET_LOCALE,
     locale,
   });
+  sessionStorage.setItem('lang', locale);
   I18n.forceComponentsUpdate();
 };

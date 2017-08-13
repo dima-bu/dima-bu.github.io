@@ -234,11 +234,23 @@ h2.project-title {
     margin-bottom: 20px;
   }
 
+  .project-achievements.-full .achievement-wrapper {
+    width: auto;
+  }
+
   .project-achievements .project-available {
     display: inline-block;
-    margin-right: 0;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 2px;
+    margin-left:2px;
     margin-bottom: 20px;
   }
+}
+
+@media (max-width: 320px) {
+  .project-achievements .achievement-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+    white-space: nowrap;
+  }
+
 }

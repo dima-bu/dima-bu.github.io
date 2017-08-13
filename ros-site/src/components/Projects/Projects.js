@@ -20,6 +20,8 @@ function createAnim(utils) {
   const firstBubble = utils.target.find({name: 'firstBubble'});
   const secondBubble = utils.target.find({name: 'secondBubble'});
 
+
+  // начальная анимация появления первых двух баблов
   const TimelineMaxOne = new TimelineMax()
     .to(firstBubble, 0.8, {
       css: {
@@ -39,18 +41,29 @@ function createAnim(utils) {
       onComplete: () => {
         this.data = {finish : true};
 
-        if (utils.options.isClicked) {
-          var firstOffset =  document.getElementById('firstBubble').offsetTop;
-          Scroll.animateScroll.scrollTo(firstOffset-120, {
-            duration: 400,
-            smooth: true
-          });
-        } else {
+        //проверку на то что уже проскролели вниз
+        if (window.pageYOffset+200 > document.getElementById('firstBubble').offsetTop){
           Scroll.animateScroll.scrollTo(window.pageYOffset+1, {
             duration: 400,
             smooth: true
           });
+        } else {
+          // если это не первая серия баблов
+          if (utils.options.isClicked) {
+            var firstOffset = document.getElementById('firstBubble').offsetTop;
+            Scroll.animateScroll.scrollTo(firstOffset-120, {
+              duration: 400,
+              smooth: true
+            });
+          } else {
+            // если это первая серия баблов
+            Scroll.animateScroll.scrollTo(window.pageYOffset+1, {
+              duration: 400,
+              smooth: true
+            });
+          }
         }
+
       }
     });
 
@@ -78,17 +91,19 @@ class Projects extends React.Component {
     var self = this;
 
     this.scrollFunc = () => {
-      var scrolled = window.pageYOffset;
-      var screenHeight = screen.height;
+      var scrolled = window.pageYOffset; //Текущая прокрутка сверху
+      var screenHeight = screen.height; // Высота экрана
 
       self.scrollBubbles.forEach(bubble => {
         var BubbleOffset =  document.getElementById(bubble).offsetTop;
-        if ((scrolled + screenHeight+50) > (BubbleOffset)) {
+
+        if ((scrolled + screenHeight+50) > (BubbleOffset) && self.scrollBubbles.indexOf(bubble) === 0) {
           var findIndex = self.scrollBubbles.findIndex(item => {
             return item === bubble
           });
 
-          if (self.anim2 && self.anim2.data && self.anim2.data.finish) {
+          if (self.anim && self.anim.data && self.anim.data.finish) {
+            console.log(bubble);
             self.addAnimation(scrollAnimation2, {name: bubble});
             self.scrollBubbles.splice(findIndex, 1);
 
@@ -103,12 +118,13 @@ class Projects extends React.Component {
 
   componentWillMount(){
     setTimeout(() => {
-      this.anim2 = this.addAnimation(createAnim, {isClicked: this.props.isClicked});
+      this.anim = this.addAnimation(createAnim, {isClicked: this.props.isClicked});
       this.scrollFunc();
     });
   }
 
   componentWillReceiveProps(){
+    // на каждое изменение положения экрана (с задержкой 500мс) запускать функцию
     if (this.scrollFunc) {
       this.scrollFunc();
     }
@@ -131,7 +147,7 @@ class Projects extends React.Component {
             </Bubble>
           </div>
         </div>
-        <div className="clearfix bubble-row container" name="secondBubble" style={{opacity: 0, transform: 'translateX(-100px)'}}>
+        <div className="clearfix bubble-row container" name="secondBubble" id="secondBubble" style={{opacity: 0, transform: 'translateX(-100px)'}}>
           <div className="bubble-wrapper">
             <Time from/>
             <Bubble size="md" type="primary"  className="w_35p" isHiddenText={props.isHiddenText} >
@@ -234,4 +250,3 @@ class Projects extends React.Component {
 }
 
 export default (GSAP(Projects))
-
