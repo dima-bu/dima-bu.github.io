@@ -48,22 +48,22 @@ const ACTION_HANDLERS = {
   [SET_HIDDEN_TEXT]    : state => { return Object.assign({}, state, { isHiddenText: true }) },
   [SET_VISABLE_TEXT] :  state => { return Object.assign({}, state, { isHiddenText: false }) },
   [SCROLL_WINDOW]: (state, action) => {
-    return Object.assign({}, state, { yPosition: action.payload})
+    return Object.assign({}, state, { yPosition: action.payload })
   },
   [CHANGE_HASH]    : (state, action) => {
 
-    const hash = action.payload.split('#')[1];
+    const hash = action.payload.split('#')[1]
 
-    if(window.location.hash) {
-      const newN = window.location.hash+'-'+hash;
-      //browserHistory.createLocation({hash: newN, pathname: '/'})
+    if (window.location.hash) {
+      const newN = window.location.hash + '-' + hash
+      // browserHistory.createLocation({hash: newN, pathname: '/'})
       window.location.hash = newN
     } else {
-      //browserHistory.createLocation({hash: hash, pathname: '/'})
+      // browserHistory.createLocation({hash: hash, pathname: '/'})
       window.location.hash = hash
     }
 
-    return Object.assign({}, state, { hashState:  window.location.hash });
+    return Object.assign({}, state, { hashState:  window.location.hash })
   }
 }
 

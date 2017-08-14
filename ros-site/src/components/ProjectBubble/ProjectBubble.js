@@ -40,16 +40,39 @@ const ProjectBubble = (props) => {
           <p className="project-desc">{description}</p>
 
           <div className={cx("project-achievements", isFullAchievements ? "-full" : "")}>
-            {achievements.map((achievement, key) => {
-              return (
-                <Achievement
-                  key={key}
-                  firstLine={achievement.firstLine}
-                  secondLine={achievement.secondLine}
-                  isInvert={achievement.isInvert}
+
+
+            {/*{isFullAchievements &&*/}
+              {/*{achievements.map((achievement, key) => {*/}
+                {/*return (*/}
+                  {/*<Achievement*/}
+                    {/*key={key}*/}
+                    {/*firstLine={achievement.firstLine}*/}
+                    {/*secondLine={achievement.secondLine}*/}
+                    {/*isInvert={achievement.isInvert}*/}
+                  {/*/>*/}
+                {/*)*/}
+              {/*})*/}
+              {/*}*/}
+            {/*}*/}
+
+            {!isFullAchievements  &&
+            (<div>
+              {achievements.map((achievement, key) => {
+                return (
+                  <Achievement
+                    key={key}
+                    firstLine={achievement.firstLine}
+                    secondLine={achievement.secondLine}
+                    isInvert={achievement.isInvert}
                   />
-              )
-            })}
+                )
+              })}
+              </div>
+            )
+            }
+
+
             { linkForAndroid &&
               <a className="icon-link project-available" href={linkForAndroid} target="_blank">
                 <DownloadAndroid lang={lang} />

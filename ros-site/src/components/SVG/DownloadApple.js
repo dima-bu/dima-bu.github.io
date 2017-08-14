@@ -4,7 +4,7 @@ const DownloadApple = (props) => {
 
   if (props.lang === 'ru') {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40">
+    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40" className="market-btn-wrapper">
       <g fill="none" fillRule="nonzero">
         <path  className="download-android_bg" d="M135 35.99c0 2.216-1.738 4.01-3.888 4.01H3.892C1.745 40 0 38.206 0 35.99V4.015C0 1.8 1.744 0 3.893 0H131.11C133.262 0 135 1.8 135 4.015L135 35.99z"/>
         <g fill="#FFF">
@@ -22,7 +22,7 @@ const DownloadApple = (props) => {
   }
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40">
+    <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40" className="market-btn-wrapper">
 
       <g xmlns="http://www.w3.org/2000/svg" id="Apple-download-eng" fillRule="nonzero">
         <path d="M135,35.9903685 C135,38.2056114 133.262081,40 131.112496,40 L3.89257334,40 C1.74400264,40 0,38.2056114 0,35.9903685 L0,4.014866 C0,1.80067002 1.74400264,0 3.89257334,0 L131.111482,0 C133.262081,0 134.998986,1.80067002 134.998986,4.014866 L135,35.9903685 L135,35.9903685 Z" id="Shape" fill="#000000"/>

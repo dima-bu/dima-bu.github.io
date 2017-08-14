@@ -20,7 +20,7 @@
   }
 
   .bubble-inner {
-    width: 55%;
+    width: 56%;
   }
 }
 
@@ -42,7 +42,7 @@
   }
 
   .bubble-inner {
-    margin-left:  340px;
+    margin-left:  300px;
   }
 }
 
@@ -72,12 +72,13 @@ h2.project-title {
   margin-bottom: -25px;
 
   &.-full {
+
     .achievement-wrapper {
       width: 100%;
     }
   }
 
-  .project-available, {
+  .project-available {
     margin-right: 20px;
     margin-bottom: 25px;
   }
@@ -118,7 +119,7 @@ h2.project-title {
   .project-bubble_wrapper {
 
     .bubble-inner {
-      width: 50%;
+      width: 60%;
     }
 
     &.wrapper-size-sm {
@@ -140,7 +141,7 @@ h2.project-title {
   .project-bubble_wrapper {
 
     &.-left .bubble-inner {
-      margin-left: 320px;
+      margin-left: 300px;
     }
 
     .bubble-inner {

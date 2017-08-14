@@ -5,38 +5,36 @@ import Gif from 'components/Gif/Gif.js'
 import Nav from 'components/Nav/Nav.js'
 import browserHistory from 'react-router/lib/browserHistory'
 import hashHistory from 'react-router/lib/hashHistory'
-import {tr} from 'lib/locale.js';
+import { tr } from 'lib/locale.js'
 
 class LevelOne extends React.Component {
   componentWillMount () {
 
   }
 
-  hasPath(path) {
+  hasPath (path) {
     const pathname = hashHistory.getCurrentLocation().pathname;
     return (pathname.indexOf(path) >= 0);
   }
 
-  getView() {
-
-    const arr = [];
+  getView () {
+    const arr = []
     let pathname = browserHistory.getCurrentLocation().hash;
 
-    pathname = pathname.substr(1);
-    const elems = pathname.split('-');
-
+    pathname = pathname.substr(1)
+    const elems = pathname.split('-')
 
     elems.forEach(elem => {
       if (elem === 'projects') {
-        arr.push( <Projects key='projects' />)
+        arr.push(<Projects key='projects' />)
       }
       if (elem === 'gif') {
-        arr.push( <Gif key='gif'/>)
+        arr.push(<Gif key='gif' />)
       }
       if (elem === 'contacts') {
-        arr.push( <Contacts key='contacts'/>)
+        arr.push(<Contacts key='contacts' />)
       }
-    });
+    })
 
     return (
       <div>
@@ -49,7 +47,7 @@ class LevelOne extends React.Component {
   }
 
   render () {
-    return this.getView();
+    return this.getView()
   }
 }
 

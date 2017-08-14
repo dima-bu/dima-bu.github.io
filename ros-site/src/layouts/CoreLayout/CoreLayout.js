@@ -7,7 +7,7 @@ import '../../styles/core.scss'
 export const CoreLayout = ({ children }) => (
   <div className='main-wrapper'>
     <Header />
-      {children}
+    {children}
   </div>
 )
 

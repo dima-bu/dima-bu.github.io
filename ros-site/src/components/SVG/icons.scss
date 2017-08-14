@@ -1,8 +1,16 @@
 @import './../../styles/colors';
+@import './../../styles/variables';
 
 
 .download-android_bg {
   fill: #000000;
+}
+
+@media (max-width: 380px) {
+  .market-btn-wrapper {
+    width: 110px !important;
+    height: 32px !important;
+  }
 }
 
 .download-android_stroke {

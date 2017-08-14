@@ -13,12 +13,12 @@ import LevelOne from '../components/LevelOne'
  implementing our wrapper around increment; the component doesn't care   */
 
 const mapDispatchToProps = {
- changeHash: changeHash,
- setLocale: setLocale
+  changeHash: changeHash,
+  setLocale: setLocale
 }
 
 const mapStateToProps = (state) => ({
- i18n : state.i18n,
+  i18n : state.i18n,
   hashState : state.levelOne.hashState
 })
 

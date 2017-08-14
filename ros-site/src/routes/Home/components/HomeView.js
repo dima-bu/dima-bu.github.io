@@ -165,7 +165,7 @@ class HomeView extends React.Component {
                       'width': '100%',
                       'left': '0',
                       'top': '0',
-                      'backgroundColor': '#cccccc',
+                      'backgroundColor': '#ffffff',
                       'zIndex': '100'}
                  }>
         </div>
