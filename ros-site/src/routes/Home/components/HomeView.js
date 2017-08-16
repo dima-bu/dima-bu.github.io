@@ -171,8 +171,8 @@ class HomeView extends React.Component {
         </div>
         }
         <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()} >
-          <div className="ta-c bubble-row" style={{marginTop: '20vh'}}>
-            <Bubble isHiddenText={this.props.isHiddenText} className="w_45">
+          <div className="ta-c bubble-row" style={{marginTop: '10vh'}}>
+            <Bubble isHiddenText={this.props.isHiddenText} className="w_45 br-all">
               {tr('HI_ROSBERRY', true)}
             </Bubble>
           </div>
@@ -180,7 +180,7 @@ class HomeView extends React.Component {
           {this.getFinishBlock()}
         </div>
         <div name="navWrapper" style={{opacity: 1}}>
-          <Nav onChangeHash={this.handleNavigateClick} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
+          <Nav onChangeHash={this.handleNavigateClick} isTouch={this.isTouch} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
         </div>
       </div>
     )

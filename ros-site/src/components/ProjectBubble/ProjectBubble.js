@@ -30,7 +30,7 @@ const ProjectBubble = (props) => {
     <div className={cx('project-bubble_wrapper', isLeft ? '-left' : '', 'wrapper-size-'+widthSize)}>
       <div className="xs-hidden">{children}</div>
 
-      <Bubble isFull className="project-bubble" style={style} isHiddenText={isHiddenText}>
+      <Bubble isFull className="project-bubble br-desctop" style={style} isHiddenText={isHiddenText}>
         <Time from />
 
         <div>

@@ -38,18 +38,25 @@ class Nav extends Component {
   };
 
   render () {
-    const {items, onChangeHash, isHiddenText, hashState} = this.props;
+    const {items, onChangeHash, isHiddenText, hashState, isTouch} = this.props;
 
     const hash = document.location.hash;
 
     const onClickHandler = (path) => {
-
       onChangeHash(path)
     };
 
-    const itemsMap = items.filter((item)=>{
+    const itemsMap = items.filter((item)=> {
       return (hash.indexOf(item.path) === -1)
     });
+
+    debugger;
+    if (isTouch || hash !== '') {
+      itemsMap.push({
+        title: 'HI_OTHER_SITE_TEXT',
+        path: 'other-site'
+      })
+    }
 
 
     const getStyleWrapper = ( )=> {

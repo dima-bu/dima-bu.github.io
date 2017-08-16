@@ -38,18 +38,28 @@ function createAnim(utils) {
       onComplete: () => {
         this.data = {finish : true};
 
-        if (utils.options.isClicked) {
-          var hiContactsOffset = document.getElementById('hiContacts').offsetTop;
-          Scroll.animateScroll.scrollTo(hiContactsOffset - 120, {
-            duration: 400,
-            smooth: true
-          });
-        } else {
+        if (window.pageYOffset + 200 > document.getElementById('simple').offsetTop) {
+
           Scroll.animateScroll.scrollTo(window.pageYOffset+1, {
             duration: 400,
             smooth: true
           });
+
+        } else {
+          if (utils.options.isClicked) {
+            var hiContactsOffset = document.getElementById('hiContacts').offsetTop;
+            Scroll.animateScroll.scrollTo(hiContactsOffset - 120, {
+              duration: 400,
+              smooth: true
+            });
+          } else {
+            Scroll.animateScroll.scrollTo(window.pageYOffset+1, {
+              duration: 400,
+              smooth: true
+            });
+          }
         }
+
       }
     })
 }
@@ -130,11 +140,12 @@ class Contacts extends React.Component {
         <div className="clearfix bubble-row container" name="simple" id="simple" style={{opacity: 0, transform: 'translateX(-100px)'}}>
           <div className="bubble-wrapper">
             <Time from/>
-            <Bubble size="lg" type="primary" className="w_60p" isHiddenText={props.isHiddenText}>
+            <Bubble size="lg" type="primary" className="w_60p br-all" isHiddenText={props.isHiddenText}>
               {tr('CONTACTS_SIMPLE', true)}
             </Bubble>
           </div>
         </div>
+
         <div className="clearfix bubble-row container" name="soc" id="soc" style={{opacity: 0, transform: 'translateX(-100px)'}}>
           <div className="bubble-wrapper">
             <Time from/>
@@ -169,7 +180,7 @@ class Contacts extends React.Component {
         <div className="clearfix bubble-row container" id="upwork" name="upwork" style={{opacity: 0, transform: 'translateX(-100px)'}}>
           <div className="bubble-wrapper">
             <Time from/>
-            <Bubble size="lg" type="primary" className="w_70p" isHiddenText={props.isHiddenText}>
+            <Bubble size="lg" type="primary" className="w_70p br-desctop" isHiddenText={props.isHiddenText}>
               <div style={{marginBottom: '15px'}}>
                 <img src={UpworkImg} width="215" height="60" alt="" className="img-response"/>
               </div>

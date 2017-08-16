@@ -140,7 +140,7 @@ class Projects extends React.Component {
           style={{ opacity: 0, transform: 'translateX(100px)' }}>
           <div className='bubble-wrapper'>
             <Time />
-            <Bubble size='md' type='secondary' className='w_35p' isHiddenText={props.isHiddenText} rightPosition>
+            <Bubble size='md' type='secondary' className='w_35p br-desctop' isHiddenText={props.isHiddenText} rightPosition>
               {props.index === 0 &&
                 tr('HI', true)
               }
@@ -152,7 +152,7 @@ class Projects extends React.Component {
           style={{ opacity: 0, transform: 'translateX(-100px)' }}>
           <div className='bubble-wrapper'>
             <Time from />
-            <Bubble size='md' type='primary' className='w_35p' isHiddenText={props.isHiddenText} >
+            <Bubble size='md' type='primary' className='w_35p br-all' isHiddenText={props.isHiddenText} >
               {tr('PROJECTS_OUR_LAST_PROJECTS', true)}
             </Bubble>
           </div>
