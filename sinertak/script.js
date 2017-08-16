@@ -81,11 +81,13 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   $('.main-wrapper').touchwipe({ wipeLeft: function() {
-    debugger;
-    prevSlide()
+    if (isActiveBtn) {
+      prevSlide();
+    }
   }, wipeRight: function() {
-    debugger;
-    nextSlide()
+    if (isActiveBtn) {
+      nextSlide();
+    }
   }});
 
   function onWheel(e) {
@@ -208,30 +210,30 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     });
 
-    TweenLite.to($('#bg'+newIndex), 0.7, {
-      css: {
-        'transform': 'scale(1, 1)'
-      },
-      delay: 0,
-      ease: Power3.easeOut
-    });
+    // TweenLite.to($('#bg'+newIndex), 0.7, {
+    //   css: {
+    //     'transform': 'scale(1, 1)'
+    //   },
+    //   delay: 0,
+    //   ease: Power3.easeOut
+    // });
 
 
-    allIndexes.forEach(function(item){
-      TweenLite.to($('#bg'+item), 0, {
-        css: {
-          'transform': 'scale(1.35 , 1.35)'
-        },
-        delay: 0.7
-      });
-    });
+    // allIndexes.forEach(function(item){
+    //   TweenLite.to($('#bg'+item), 0, {
+    //     css: {
+    //       'transform': 'scale(1.35 , 1.35)'
+    //     },
+    //     delay: 0.7
+    //   });
+    // });
 
-    TweenLite.to($('#bg'+lastIndex), 0, {
-      css: {
-        'transform': 'scale(1.35 , 1.35)'
-      },
-      delay: 0.7
-    });
+    // TweenLite.to($('#bg'+lastIndex), 0, {
+    //   css: {
+    //     'transform': 'scale(1.35 , 1.35)'
+    //   },
+    //   delay: 0.7
+    // });
 
 
 
