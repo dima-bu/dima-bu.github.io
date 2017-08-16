@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if ('onwheel' in document) {
       // IE9+, FF17+, Ch31+
       window.addEventListener("wheel", onWheel);
+
     } else if ('onmousewheel' in document) {
       // устаревший вариант события
       window.addEventListener("mousewheel", onWheel);
@@ -46,6 +47,46 @@ document.addEventListener('DOMContentLoaded', function(){
   } else { // IE8-
     window.attachEvent("onmousewheel", onWheel);
   }
+
+
+
+  function nextSlide() {
+    var currentIndex = $('.pagination-item.active')[0].dataset.index;
+    var nextIndex;
+    debugger;
+
+    if (currentIndex === '5') {
+      nextIndex = 1;
+    } else {
+      nextIndex = +currentIndex+1;
+    }
+    changeSlide(currentIndex, ''+nextIndex);
+    paginationItem.removeClass('active');
+    $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
+  }
+
+  function prevSlide(){
+    var currentIndex = $('.pagination-item.active')[0].dataset.index;
+    var nextIndex;
+
+    if (currentIndex === '1') {
+      nextIndex = 5;
+    } else {
+      nextIndex = +currentIndex-1;
+    }
+
+    changeSlide(currentIndex, ''+nextIndex);
+    paginationItem.removeClass('active');
+    $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
+  }
+
+  $('.main-wrapper').touchwipe({ wipeLeft: function() {
+    debugger;
+    prevSlide()
+  }, wipeRight: function() {
+    debugger;
+    nextSlide()
+  }});
 
   function onWheel(e) {
     e = e || window.event;
@@ -58,35 +99,17 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log('deltaX ', deltaX);
       isActiveBtn = false;
 
-      var currentIndex = $('.pagination-item.active')[0].dataset.index;
-      paginationItem.removeClass('active');
-      var nextIndex;
+      // var currentIndex = $('.pagination-item.active')[0].dataset.index;
+      //
+      // var nextIndex;
 
       if (deltaX > 0) {
-
-        if (currentIndex === '5') {
-          nextIndex = 1;
-        } else {
-          nextIndex = +currentIndex+1;
-        }
-
-        changeSlide(currentIndex, ''+nextIndex);
-
+        nextSlide()
       }
+
       if (deltaX <= 0) {
-
-        if (currentIndex === '1') {
-          nextIndex = 5;
-        } else {
-          nextIndex = +currentIndex-1;
-        }
-
-        changeSlide(currentIndex, ''+nextIndex);
-
+        prevSlide()
       }
-
-      $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
-
 
     }
   }
