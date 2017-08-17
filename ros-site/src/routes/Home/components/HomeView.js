@@ -171,7 +171,7 @@ class HomeView extends React.Component {
         </div>
         }
         <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()} >
-          <div className="ta-c bubble-row" style={{marginTop: '10vh'}}>
+          <div className="ta-c bubble-row -first-bubble">
             <Bubble isHiddenText={this.props.isHiddenText} className="w_45 br-all">
               {tr('HI_ROSBERRY', true)}
             </Bubble>
