@@ -21,9 +21,17 @@
   }
 }
 
+
+.tap-bubble-wrapper {
+
+}
+
+
+
+
 @media (max-width: $screen-xs-max) {
   .bottom-links {
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     margin-top: 30px;
 
     .bubble-wrapper {
@@ -44,7 +52,7 @@
   .bottom-links .bubble-wrapper {
     padding: 0 20px;
   }
-  
+
   .bubble.type-link.size-sm {
     padding: 10px 15px;
   }
@@ -54,4 +62,36 @@
   .bottom-links .bubble-wrapper {
     padding: 0 60px;
   }
+}
+
+@media (max-width: $screen-sm-min) and (max-height: $screen-xs-max-height) {
+
+  .bottom-links .bubble-wrapper {
+    width: 33%;
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+    min-height: 76px;
+  }
+
+  .bottom-links  .bubble.type-link.size-sm.-right {
+    border-radius: 15px;
+  }
+
+}
+
+@media (max-width: $screen-sm-min) and (max-height: $screen-xs-max-height) {
+
+  .bottom-links .bubble-wrapper {
+    margin-bottom: 0;
+    min-height: 64px;
+  }
+
+  .bottom-links .bubble.type-link.size-sm.-right {
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 10px;
+  }
+
 }

@@ -80,8 +80,16 @@ h1 {
 
   .bubble-row {
     &.-first-bubble {
-      margin-top: calc(50vh - 200px);
+      margin-top: calc(50vh - 180px);
     }
   }
 
+}
+
+@media (max-width: $screen-sm-min) and (max-height: $screen-xs-max-height) {
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: calc(50vh - 155px);
+    }
+  }
 }

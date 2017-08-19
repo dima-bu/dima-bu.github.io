@@ -46,12 +46,14 @@ function createAnim (utils) {
         } else {
           // если это не первая серия баблов
           if (utils.options.isClicked) {
+            debugger;
             var firstOffset = document.getElementById('firstBubble').offsetTop
             Scroll.animateScroll.scrollTo(firstOffset - 120, {
               duration: 400,
               smooth: true
             })
           } else {
+            debugger;
             // если это первая серия баблов
             Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
               duration: 400,
@@ -67,6 +69,7 @@ function createAnim (utils) {
 
 function scrollAnimation2 (utils) {
   const AnimationBubble = utils.target.find({ name: utils.options.name })
+  debugger;
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
@@ -108,6 +111,7 @@ class Projects extends React.Component {
             self.addAnimation(scrollAnimation2, { name: bubble })
             if (self.scrollBubbles.length === 0) {
               self.scrollFunc = false
+              self.__runningAnimations.clear()
             }
           }
         }
@@ -129,6 +133,18 @@ class Projects extends React.Component {
     }
   }
 
+  getStyle (isRight) {
+    if (this.scrollBubbles.length === 0) {
+      return {};
+    } else {
+      if (isRight) {
+        return { opacity: 0, transform: 'translateX(100px)' }
+      } else {
+        return { opacity: 0, transform: 'translateX(-100px)' }
+      }
+    }
+  }
+
   render () {
     const props = this.props
 
@@ -137,7 +153,7 @@ class Projects extends React.Component {
         <div className='clearfix right-bubble bubble-row container'
           name='firstBubble'
           id='firstBubble'
-          style={{ opacity: 0, transform: 'translateX(100px)' }}>
+          style={this.getStyle(true)}>
           <div className='bubble-wrapper'>
             <Time />
             <Bubble size='md' type='secondary' className='w_35p br-desctop' isHiddenText={props.isHiddenText} rightPosition>
@@ -149,7 +165,7 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className='clearfix bubble-row container' name='secondBubble' id='secondBubble'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <div className='bubble-wrapper'>
             <Time from />
             <Bubble size='md' type='primary' className='w_35p br-all' isHiddenText={props.isHiddenText} >
@@ -158,7 +174,7 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className='bubble-row -project container' id='trusted' name='trusted'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <ProjectBubble
             isHiddenText={props.isHiddenText}
             title='Trusted Insight'
@@ -171,7 +187,7 @@ class Projects extends React.Component {
           </ProjectBubble>
         </div>
         <div className='bubble-row -project -high container' id='splitPic' name='splitPic'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <ProjectBubble
             title='Split Pic'
             isLeft
@@ -198,7 +214,7 @@ class Projects extends React.Component {
           </ProjectBubble>
         </div>
         <div className='bubble-row -project container' id='cinepic' name='cinepic'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <ProjectBubble
             title='Cinepic'
             isHiddenText={props.isHiddenText}
@@ -220,7 +236,7 @@ class Projects extends React.Component {
           </ProjectBubble>
         </div>
         <div className='bubble-row -project container' name='phyzseek' id='phyzseek'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <ProjectBubble
             title='Phyzseek'
             description={tr('PHUZSEEK_DESCRIPTION', true)}
@@ -233,7 +249,7 @@ class Projects extends React.Component {
           </ProjectBubble>
         </div>
         <div className='bubble-row -project container' name='trackd' id='trackd'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <ProjectBubble
             title='Trackd Studio'
             description={tr('TRACKD_DESCRIPTION', true)}

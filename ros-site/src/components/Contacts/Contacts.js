@@ -17,46 +17,52 @@ import { TweenLite, TimelineMax, Power4 } from 'gsap'
 import throttle from 'lodash.throttle';
 import Scroll from 'react-scroll';
 
-function createAnim(utils) {
-  const hiContacts = utils.target.find({name: 'hiContacts'});
-  const simple = utils.target.find({name: 'simple'});
+function createAnimContacts (utils) {
+  debugger;
+  const hiContacts = utils.target.find({ name: 'hiContacts' })
+  const simple = utils.target.find({ name: 'simple' })
 
   return new TimelineMax()
     .to(hiContacts, 0.8, {
       css: {
-        transform: 'translateX(0px)',
-        opacity: 1
-      },
-      ease: Power4.easeOut
-    })
-    .to(simple, 0.8, {
-      css: {
-        transform: 'translateX(0px)',
+        transform: 'matrix(1, 0, 0, 1, 0, 0);',
         opacity: 1
       },
       ease: Power4.easeOut,
       onComplete: () => {
-        this.data = {finish : true};
+        console.log('createAnimContacts');
+      }
+    })
+    .to(simple, 0.8, {
+      css: {
+        transform: 'matrix(1, 0, 0, 1, 0, 0);',
+        opacity: 1
+      },
+      ease: Power4.easeOut,
+      onComplete: () => {
+        console.log('createAnimContacts');
+        this.data = { finish : true };
 
         if (window.pageYOffset + 200 > document.getElementById('simple').offsetTop) {
 
-          Scroll.animateScroll.scrollTo(window.pageYOffset+1, {
+          Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
           });
 
         } else {
+          debugger;
           if (utils.options.isClicked) {
-            var hiContactsOffset = document.getElementById('hiContacts').offsetTop;
+            var hiContactsOffset = document.getElementById('hiContacts').offsetTop
             Scroll.animateScroll.scrollTo(hiContactsOffset - 120, {
               duration: 400,
               smooth: true
-            });
+            })
           } else {
-            Scroll.animateScroll.scrollTo(window.pageYOffset+1, {
+            Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
               duration: 400,
               smooth: true
-            });
+            })
           }
         }
 
@@ -64,71 +70,92 @@ function createAnim(utils) {
     })
 }
 
-function scrollAnimation(utils) {
-  const AnimationBubble = utils.target.find({name: utils.options.name});
+function scrollAnimationContacts(utils) {
+  debugger;
+  const AnimationBubble = utils.target.find({ name: utils.options.name })
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
-        transform: 'translateX(0px)',
+        transform: 'matrix(1, 0, 0, 1, 0, 0);',
         opacity: 1
       },
       delay: 0.7,
-      ease: Power4.easeOut
+      ease: Power4.easeOut,
+      onComplete: () => {
+        console.log('scrollAnimationContacts');
+      }
     })
 }
 
-
 class Contacts extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.scrollBubbles = ['soc', 'upwork', 'goodfirms'];
-    this.scrollFunc = () => {
+  constructor (props) {
+    super(props)
+    this.scrollBubbles = ['soc', 'upwork', 'goodfirms']
+    this.scrollFuncContacts = () => {
       var self = this;
-
-      var scrolled = window.pageYOffset;
-      var screenHeight = screen.height;
+      var scrolled = window.pageYOffset
+      var screenHeight = screen.height
 
       self.scrollBubbles.forEach(bubble => {
-        var BubbleOffset =  document.getElementById(bubble).offsetTop;
+        var BubbleOffset =  document.getElementById(bubble).offsetTop
         if ((scrolled + screenHeight) > (BubbleOffset)) {
           var findIndex = self.scrollBubbles.findIndex(item => {
             return item === bubble
-          });
-          self.addAnimation(scrollAnimation, {name: bubble});
-          self.scrollBubbles.splice(findIndex, 1);
+          })
+          self.addAnimation(scrollAnimationContacts, { name: bubble })
+          self.scrollBubbles.splice(findIndex, 1)
           if (self.scrollBubbles.length === 0) {
-            self.scrollFunc = false;
+            self.reset()
           }
         }
       });
     };
   }
 
-  componentWillMount(){
+  reset () {
+    debugger;
+    this.__runningAnimations.clear()
+  }
 
+  componentWillMount () {
     setTimeout(() => {
-      this.anim2 = this.addAnimation(createAnim, {isClicked: this.props.isClicked});
-      this.scrollFunc();
+      this.anim2 = this.addAnimation(createAnimContacts, { isClicked: this.props.isClicked })
+      this.scrollFuncContacts()
       //TweenLite.to(window, 1, {scrollTo:{y: document.getElementById('simple').offsetTop, x:0}, ease: Power2.easeInOut});
     });
   }
 
-  componentWillReceiveProps(){
-    if (this.scrollFunc) {
-      this.scrollFunc();
+  componentWillReceiveProps () {
+    if (this.scrollFuncContacts) {
+      this.scrollFuncContacts()
+    } else {
+      return false
     }
   }
 
-  render(){
-    const props = this.props;
+  getStyle (isRight) {
+    if (this.scrollBubbles.length === 0) {
+      return {};
+    } else {
+      console.log('getStyle translateX');
+      if (isRight) {
+        return { opacity: 0, transform: 'translateX(100px)' }
+      } else {
+        return { opacity: 0, transform: 'translateX(-100px)' }
+      }
+    }
+  }
 
+  render () {
+    const props = this.props;
+    debugger;
     return (
       <div className="clearfix">
-        <div className="clearfix right-bubble bubble-row container" name="hiContacts" id="hiContacts" style={{opacity: 0, transform: 'translateX(100px)'}}>
+        <div className="clearfix right-bubble bubble-row container" name='hiContacts' id='hiContacts' style={this.getStyle(true)}>
           <div className="bubble-wrapper ">
             <Time />
-            <Bubble isHiddenText={props.isHiddenText} size="md" className="w_35p" type="secondary" rightPosition>
+            <Bubble isHiddenText={props.isHiddenText} size="md" className='w_35p' type='secondary' rightPosition>
               {props.index === 0 &&
               tr('HI', true)
               }
@@ -137,7 +164,7 @@ class Contacts extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix bubble-row container" name="simple" id="simple" style={{opacity: 0, transform: 'translateX(-100px)'}}>
+        <div className="clearfix bubble-row container" name="simple" id="simple" style={this.getStyle()}>
           <div className="bubble-wrapper">
             <Time from/>
             <Bubble size="lg" type="primary" className="w_60p br-all" isHiddenText={props.isHiddenText}>
@@ -146,7 +173,7 @@ class Contacts extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix bubble-row container" name="soc" id="soc" style={{opacity: 0, transform: 'translateX(-100px)'}}>
+        <div className="clearfix bubble-row container" name="soc" id="soc" style={this.getStyle()}>
           <div className="bubble-wrapper">
             <Time from/>
             <Bubble size="lg" type="primary" autoWidth isHiddenText={props.isHiddenText} >
@@ -177,12 +204,12 @@ class Contacts extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix bubble-row container" id="upwork" name="upwork" style={{opacity: 0, transform: 'translateX(-100px)'}}>
+        <div className="clearfix bubble-row container" id="upwork" name="upwork" style={this.getStyle()}>
           <div className="bubble-wrapper">
             <Time from/>
             <Bubble size="lg" type="primary" className="w_70p br-desctop" isHiddenText={props.isHiddenText}>
               <div style={{marginBottom: '15px'}}>
-                <img src={UpworkImg} width="215" height="60" alt="" className="img-response"/>
+                <img src={UpworkImg} width="215" height="60" alt="" className="img-response" />
               </div>
               {tr('CONTACTS_EXPERIENCE', true)}
               <div style={{marginTop: '25px'}}>
@@ -192,12 +219,12 @@ class Contacts extends React.Component {
           </div>
         </div>
 
-        <div className="clearfix bubble-row container" name="goodfirms" id="goodfirms" style={{opacity: 0, transform: 'translateX(-100px)'}}>
+        <div className="clearfix bubble-row container" name="goodfirms" id="goodfirms" style={this.getStyle()}>
           <div className="bubble-wrapper">
             <Time from/>
             <Bubble size="lg" type="primary" className="w_70p" isHiddenText={props.isHiddenText}>
               <div style={{marginBottom: '15px'}}>
-                <img src={GoodFirmsImg} width="301" height="44" alt="" className="img-response"/>
+                <img src={GoodFirmsImg} width="301" height="44" alt="" className="img-response" />
               </div>
               {tr('CONTACTS_GOODFIRM', true)}
               <div style={{marginTop: '25px'}}>

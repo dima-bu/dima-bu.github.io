@@ -5,6 +5,14 @@ import  './Time.scss'
 import {tr} from 'lib/locale.js';
 
 export default class Time extends Component {
+  constructor(props) {
+    super(props)
+    let now = new Date()
+    this.state = {
+      time: now.toLocaleTimeString().split(':')[0] +':' +now.toLocaleTimeString().split(':')[1]
+    }
+  }
+
   static propTypes = {
     from: PropTypes.bool
   }
@@ -16,8 +24,7 @@ export default class Time extends Component {
   render() {
     const {from} = this.props;
     const getTime = () => {
-      let now = new Date();
-      return now.toLocaleTimeString().split(':')[0] +':' +now.toLocaleTimeString().split(':')[1];
+      return 'hjg';
     }
 
     return (
@@ -28,7 +35,8 @@ export default class Time extends Component {
         {!from &&
           tr('YOU')
         }
-        , {getTime()}
+        ,
+        {this.state.time}
     </div>
     )
   }

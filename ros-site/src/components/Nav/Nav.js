@@ -38,19 +38,18 @@ class Nav extends Component {
   };
 
   render () {
-    const {items, onChangeHash, isHiddenText, hashState, isTouch} = this.props;
+    const { items, onChangeHash, isHiddenText, hashState, isTouch } = this.props
 
     const hash = document.location.hash;
 
     const onClickHandler = (path) => {
       onChangeHash(path)
-    };
+    }
 
-    const itemsMap = items.filter((item)=> {
+    const itemsMap = items.filter(item => {
       return (hash.indexOf(item.path) === -1)
-    });
+    })
 
-    debugger;
     if (isTouch || hash !== '') {
       itemsMap.push({
         title: 'HI_OTHER_SITE_TEXT',
@@ -58,11 +57,10 @@ class Nav extends Component {
       })
     }
 
-
-    const getStyleWrapper = ( )=> {
+    const getStyleWrapper = () => {
       if (hash) {
       } else {
-        return {position: 'fixed', bottom: '0', width: '100%'}
+        return { position: 'fixed', bottom: '0', width: '100%' }
       }
     }
 
@@ -73,7 +71,7 @@ class Nav extends Component {
       <div className="ta-c bottom-links container" >
       {itemsMap.map(item => {
           return (
-          <Tappable onTap={onClickHandler.bind(this, `#${item.path}`)}>
+          <Tappable onTap={onClickHandler.bind(this, `#${item.path}`)} className="tap-bubble-wrapper">
           <div
              className="bubble-wrapper"
              key={item.path}
