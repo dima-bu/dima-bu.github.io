@@ -33,6 +33,11 @@ class Nav extends Component {
       {
         title: 'HI_GIF_LINK_TEXT',
         path: 'gif'
+      },
+      {
+        title: 'HI_OTHER_SITE_TEXT',
+        path: 'otherSite',
+        initHidden: true
       }
     ]
   };
@@ -47,15 +52,11 @@ class Nav extends Component {
     }
 
     const itemsMap = items.filter(item => {
+      if ((!isTouch && hash === '') && item.initHidden) {
+        return false
+      }
       return (hash.indexOf(item.path) === -1)
     })
-
-    if (isTouch || hash !== '') {
-      itemsMap.push({
-        title: 'HI_OTHER_SITE_TEXT',
-        path: 'other-site'
-      })
-    }
 
     const getStyleWrapper = () => {
       if (hash) {
