@@ -70,7 +70,12 @@ $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 
 
-//== Grid system
+$screen-xs-min-height: 360px;
+$screen-xs-max-height: 414px;
+
+
+
+  //== Grid system
 //
 //## Define your custom responsive grid.
 

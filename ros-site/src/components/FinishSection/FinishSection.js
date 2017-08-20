@@ -78,7 +78,7 @@ class FinishSection extends React.Component {
         <div className="clearfix bubble-row container" id="finishSection" name="finishSection" style={{opacity: 0, transform: 'translateX(-100px)'}}>
         <div className="bubble-wrapper">
           <Time from/>
-          <Bubble size="lg" type="primary" className="w_70p" isHiddenText={this.props.isHiddenText}>
+          <Bubble size="lg" type="primary" className="w_70p br-desctop" isHiddenText={this.props.isHiddenText}>
             {tr('CONTACTS_COME_AGAIN', true)}
           </Bubble>
         </div>

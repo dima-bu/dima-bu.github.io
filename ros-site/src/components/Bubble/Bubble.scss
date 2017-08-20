@@ -35,6 +35,8 @@ $hoverAnimation: all 300ms ease-out 0s;
 
     &.with-video {
       padding: 20px;
+      font-size: 0;
+      line-height: 0;
       video {
         width: 100%;
       }
@@ -295,8 +297,8 @@ $hoverAnimation: all 300ms ease-out 0s;
 
   .bubble.size-lg {
     font-size: 16px;
-    line-height: 22px;
-    padding: 20px 30px 20px 20px;
+    line-height: 26px;
+    padding: 20px 20px 20px 20px;
     border-width: 2px;
     margin-left: 25px;
 
@@ -368,9 +370,9 @@ $hoverAnimation: all 300ms ease-out 0s;
     }
   }
 
- .bubble br{
-   display: none;
-  }
+ //.bubble br{
+ //  display: none;
+ // }
 }
 
 
@@ -388,9 +390,14 @@ $hoverAnimation: all 300ms ease-out 0s;
   }
 }
 
-@media (max-width: $screen-sm-max ){
-  .bubble.type-link.size-sm .bubble-inner br, .bubble br {
+@media (max-width: $screen-xs-max ){
+  //.bubble.type-link.size-sm .bubble-inner br, .bubble br {
+  //  display: none;
+  //}
+
+  .br-desctop br{
     display: none;
   }
+
 }
 

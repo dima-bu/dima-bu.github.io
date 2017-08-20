@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if ('onwheel' in document) {
       // IE9+, FF17+, Ch31+
       window.addEventListener("wheel", onWheel);
+
     } else if ('onmousewheel' in document) {
       // устаревший вариант события
       window.addEventListener("mousewheel", onWheel);
@@ -46,9 +47,6 @@ document.addEventListener('DOMContentLoaded', function(){
   } else { // IE8-
     window.attachEvent("onmousewheel", onWheel);
   }
-
-
-
 
 
   function onWheel(e) {
@@ -62,11 +60,14 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log('deltaX ', deltaX);
       isActiveBtn = false;
 
-      var currentIndex = $('.pagination-item.active')[0].dataset.index;
-      paginationItem.removeClass('active');
-      var nextIndex;
+      // var currentIndex = $('.pagination-item.active')[0].dataset.index;
+      //
+      // var nextIndex;
 
       if (deltaX > 0) {
+        var currentIndex = $('.pagination-item.active')[0].dataset.index;
+        paginationItem.removeClass('active');
+        var nextIndex;
 
         if (currentIndex === '5') {
           nextIndex = 1;
@@ -75,10 +76,12 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
         changeSlide(currentIndex, ''+nextIndex);
-
       }
-      if (deltaX <= 0) {
 
+      if (deltaX <= 0) {
+        var currentIndex = $('.pagination-item.active')[0].dataset.index;
+        paginationItem.removeClass('active');
+        var nextIndex;
         if (currentIndex === '1') {
           nextIndex = 5;
         } else {
@@ -86,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
         changeSlide(currentIndex, ''+nextIndex);
-
       }
 
       $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
@@ -134,7 +136,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
     }
   });
-
 
 
   function changeSlide(currentIndex, lastIndexStrong){
@@ -231,13 +232,15 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     });
 
-    TweenLite.to($('#bg'+newIndex), 0.7, {
-      css: {
-        'transform': 'scale(1, 1)'
-      },
-      delay: 0,
-      ease: Power3.easeOut
-    });
+
+    // увеличение нижнего фото
+     //TweenLite.to($('#bg'+newIndex), 0.7, {
+     //  css: {
+     //    'transform': 'scale(1, 1)'
+     //  },
+     //  delay: 0,
+     //  ease: Power3.easeOut
+     //});
 
 
     allIndexes.forEach(function(item) {
@@ -255,6 +258,7 @@ document.addEventListener('DOMContentLoaded', function(){
       },
       delay: 0.8
     });
+
 
 
     // title
@@ -323,7 +327,6 @@ document.addEventListener('DOMContentLoaded', function(){
     //   ease: Power1.easeOut,
     //   delay: 1.1
     // });
-
 
     TweenLite.to($('#img'+lastIndex), 0.35, {
       css: {opacity: 0, transform: 'scale(0.8 ,0.8)'},

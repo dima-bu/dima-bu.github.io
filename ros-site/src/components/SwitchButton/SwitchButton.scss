@@ -187,9 +187,13 @@ $transition : 0.3s;
     display: none !important;
   }
 
-  .switch-button.sm .switch-label.active {
+  .switch-button.sm .switch-label {
     font-weight: bold;
     color: $color-blue;
+  }
+  .switch-button.sm .switch-label.active {
+    font-weight: normal;
+    color: $color-text;
   }
 }
 

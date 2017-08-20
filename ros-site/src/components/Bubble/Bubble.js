@@ -27,7 +27,6 @@ const Bubble = (props) => {
       <div
         style={style}
         onClick={onClick}
-        style={{cursor: 'pointer'}}
         className={cx("bubble", className, 'type-'+type, withVideo ? 'with-video' : '', autoWidth ? 'auto-width': '', 'size-'+size, isFull ? 'full-width' : '', rightPosition ? '-right' : '')}
         >
          <span className={cx('bubble-inner', isHiddenText ? 'isHide': 'isShow')}>
@@ -51,18 +50,18 @@ const Bubble = (props) => {
 }
 
 Bubble.propTypes = {
-    text: PropTypes.string,
-    type: PropTypes.oneOf(['primary', 'secondary', 'link']),
-    size: PropTypes.oneOf(['lg', 'md', 'sm']),
-    isFull: PropTypes.bool,
-    rightPosition: PropTypes.bool,
-    href: PropTypes.string,
-    children : PropTypes.element,
-    isHiddenText: PropTypes.bool,
-    withVideo: PropTypes.bool,
-    isTime: PropTypes.bool,
-    className: PropTypes.string,
-    onClick: PropTypes.func
+  text: PropTypes.string,
+  type: PropTypes.oneOf(['primary', 'secondary', 'link']),
+  size: PropTypes.oneOf(['lg', 'md', 'sm']),
+  isFull: PropTypes.bool,
+  rightPosition: PropTypes.bool,
+  href: PropTypes.string,
+  children : PropTypes.element,
+  isHiddenText: PropTypes.bool,
+  withVideo: PropTypes.bool,
+  isTime: PropTypes.bool,
+  className: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 Bubble.defaultProps = {

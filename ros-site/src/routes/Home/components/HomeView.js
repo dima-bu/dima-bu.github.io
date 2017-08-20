@@ -9,6 +9,7 @@ import cx from 'classnames'
 import Projects from 'components/Projects/Projects.js'
 import Contacts from 'components/Contacts/Contacts.js'
 import Gif from 'components/Gif/Gif.js'
+import OtherSite from 'components/OtherSite/OtherSite.js'
 import FinishSection from 'components/FinishSection/FinishSection.js'
 import browserHistory from 'react-router/lib/browserHistory'
 import {changeHash, scrollWindow} from './../module/general.js'
@@ -128,6 +129,11 @@ class HomeView extends React.Component {
       if (elem === 'contacts') {
         arr.push( <Contacts key='contacts' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem}  yPosition={this.props.yPosition}  isHiddenText={this.props.isHiddenText}/>)
       }
+
+      if (elem === 'otherSite') {
+        arr.push( <OtherSite key='OtherSite' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
+      }
+
     });
 
     return (
@@ -141,7 +147,7 @@ class HomeView extends React.Component {
     let pathname = this.getHash();
     const elems = pathname.split('-');
 
-    if(elems.length === 3) {
+    if(elems.length === 4) {
       return <FinishSection />;
     }
   }
@@ -171,8 +177,8 @@ class HomeView extends React.Component {
         </div>
         }
         <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()} >
-          <div className="ta-c bubble-row" style={{marginTop: '20vh'}}>
-            <Bubble isHiddenText={this.props.isHiddenText} className="w_45">
+          <div className="ta-c bubble-row -first-bubble">
+            <Bubble isHiddenText={this.props.isHiddenText} className="w_45 br-all">
               {tr('HI_ROSBERRY', true)}
             </Bubble>
           </div>
@@ -180,7 +186,7 @@ class HomeView extends React.Component {
           {this.getFinishBlock()}
         </div>
         <div name="navWrapper" style={{opacity: 1}}>
-          <Nav onChangeHash={this.handleNavigateClick} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
+          <Nav onChangeHash={this.handleNavigateClick} isTouch={this.isTouch} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
         </div>
       </div>
     )

@@ -65,11 +65,31 @@ h1 {
 
 .bubble-row {
   margin-bottom: 30px;
+
+  &.-first-bubble {
+    margin-top: calc(50vh - 240px);
+  }
+
 }
 
 @media (max-width: $screen-xs-max) {
   .bubble-row.container {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: calc(50vh - 180px);
+    }
+  }
+
+}
+
+@media (max-width: $screen-sm-min) and (max-height: $screen-xs-max-height) {
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: calc(50vh - 155px);
+    }
   }
 }
