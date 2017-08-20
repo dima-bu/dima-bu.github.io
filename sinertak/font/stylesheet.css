@@ -234,7 +234,7 @@ p.normal {
 #bg1, #bg2, #bg3, #bg4, #bg5 {
     left: 0;
     top: 0;
-
+    transform: matrix(1.35, 0, 0, 1.35, 0, 0);
 }
 
 #bg1, #bg2, #bg3, #bg4, #bg5 {
@@ -266,4 +266,10 @@ p.normal {
     height: auto;
 }
 
+
+@media (max-width: 1024px) {
+    #bg1, #bg2, #bg3, #bg4, #bg5 {
+        transform: matrix(1.35, 0, 0, 1.35, 0, 0) !important;
+    }
+}
 
