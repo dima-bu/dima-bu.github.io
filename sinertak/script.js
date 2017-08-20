@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', function(){
     window.attachEvent("onmousewheel", onWheel);
   }
 
+
+
+
+
   function onWheel(e) {
     e = e || window.event;
 
@@ -87,9 +91,51 @@ document.addEventListener('DOMContentLoaded', function(){
 
       $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
 
-
     }
   }
+
+  $('.main-wrapper').touchwipe({
+    wipeLeft: function() {
+
+    if (isActiveBtn) {
+      isActiveBtn = false;
+
+      var currentIndex = $('.pagination-item.active')[0].dataset.index;
+      paginationItem.removeClass('active');
+      var nextIndex;
+
+      if (currentIndex === '5') {
+        nextIndex = 1;
+      } else {
+        nextIndex = +currentIndex+1;
+      }
+
+      changeSlide(currentIndex, ''+nextIndex);
+
+      $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
+    }
+  }, wipeRight: function() {
+    if (isActiveBtn) {
+      isActiveBtn = false;
+
+      var currentIndex = $('.pagination-item.active')[0].dataset.index;
+      paginationItem.removeClass('active');
+      var nextIndex;
+      if (currentIndex === '1') {
+        nextIndex = 5;
+      } else {
+        nextIndex = +currentIndex-1;
+      }
+
+      changeSlide(currentIndex, ''+nextIndex);
+    }
+
+    $('.pagination-item[data-index=' + nextIndex + ']').addClass('active');
+
+    }
+  });
+
+
 
   function changeSlide(currentIndex, lastIndexStrong){
 
@@ -194,12 +240,12 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
 
-    allIndexes.forEach(function(item){
+    allIndexes.forEach(function(item) {
       TweenLite.to($('#bg'+item), 0, {
         css: {
           'transform': 'scale(1.35 , 1.35)'
         },
-        delay: 0.7
+        delay: 0.8
       });
     });
 
@@ -207,9 +253,8 @@ document.addEventListener('DOMContentLoaded', function(){
       css: {
         'transform': 'scale(1.35 , 1.35)'
       },
-      delay: 0.7
+      delay: 0.8
     });
-
 
 
     // title
