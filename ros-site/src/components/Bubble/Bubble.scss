@@ -390,6 +390,11 @@ $hoverAnimation: all 300ms ease-out 0s;
   }
 }
 
+.bubble.size-lg.with-video video {
+  width: 480px;
+  height: 480px;
+}
+
 @media (max-width: $screen-xs-max ){
   //.bubble.type-link.size-sm .bubble-inner br, .bubble br {
   //  display: none;
@@ -397,6 +402,16 @@ $hoverAnimation: all 300ms ease-out 0s;
 
   .br-desctop br{
     display: none;
+  }
+
+  .bubble.size-lg.with-video {
+    width: 100%;
+    height: auto;
+  }
+
+  .bubble.size-lg.with-video video {
+    width: 68vw;
+    height: 68vw;
   }
 
 }

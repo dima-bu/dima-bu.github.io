@@ -3,11 +3,13 @@ import './Gif.scss'
 import Bubble from 'components/Bubble/Bubble.js'
 import Time from './../Time/Time.js'
 import { tr } from 'lib/locale.js'
-import video1 from './assets/320.mp4'
+import video1 from './assets/cat1.mp4'
 import video2 from './assets/cat2.mp4'
 import video3 from './assets/cat3.mp4'
 import video4 from './assets/cat4.mp4'
 import video5 from './assets/cat5.mp4'
+import video6 from './assets/cat6.mp4'
+import video7 from './assets/cat7.mp4'
 import GSAP from 'react-gsap-enhancer'
 import { TweenLite, TimelineMax, Power4 } from 'gsap'
 import throttle from 'lodash.throttle'
@@ -157,23 +159,32 @@ class Gif extends React.Component {
     const props = this.props
 
     const getVideo = () => {
-      var count = Math.floor(Math.random() * 5) + 1
+      var count = Math.floor(Math.random() * 7) + 1
 
-      if (count === 1) {
-        return <source src={video1} type='video/mp4' />
+      switch (count) {
+        case 1:
+          return <source src={video1} type='video/mp4' />
+          break;
+        case 2:
+          return <source src={video2} type='video/mp4' />
+          break;
+        case 3:
+          return <source src={video3} type='video/mp4' />
+          break;
+        case 4:
+          return <source src={video4} type='video/mp4' />
+          break;
+        case 5:
+          return <source src={video5} type='video/mp4' />
+          break;
+        case 6:
+          return <source src={video6} type='video/mp4' />
+          break;
+        case 7:
+          return <source src={video7} type='video/mp4' />
+          break;
       }
-      if (count === 2) {
-        return <source src={video2} type='video/mp4' />
-      }
-      if (count === 3) {
-        return <source src={video3} type='video/mp4' />
-      }
-      if (count === 4) {
-        return <source src={video4} type='video/mp4' />
-      }
-      if (count === 5) {
-        return <source src={video5} type='video/mp4' />
-      }
+
     }
 
     return (
@@ -212,7 +223,7 @@ class Gif extends React.Component {
           <div className='bubble-wrapper'>
             <Time from />
             <Bubble size='lg' type='primary' autoWidth withVideo>
-              <video id='background-video' autoPlay='autoplay' loop >
+              <video id='background-video' autoPlay='autoplay' loop width='480' height='480' >
                 {getVideo()}
                 Your browser does not support the video tag.
               </video>
