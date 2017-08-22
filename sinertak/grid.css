@@ -979,15 +979,16 @@
 @media (max-width: 991px) {
 
     html, body {
-    font-size: 0.60vw;
+        font-size: 0.60vw;
     }
 
 }
 
 @media (max-width: 768px) {
-    /*html, body {*/
-        /*font-size: 5px;*/
-    /*}*/
+
+    html, body {
+        font-size: 0.5vw;
+    }
 
     /*.img-block {*/
         /*display: none;*/
