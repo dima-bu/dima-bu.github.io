@@ -51,8 +51,11 @@ body {
 .main-wrapper {
     height: 100vh;
     display: flex;
+    display: -webkit-flex;
     align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
 }
 
 .ta-r {
@@ -61,6 +64,7 @@ body {
 
 .slide {
     flex-grow: 1;
+    -webkit-flex-grow: 1;
     /*margin: 0 auto;*/
     /*width: 1200px;*/
     /*padding-top: 10rem;*/
