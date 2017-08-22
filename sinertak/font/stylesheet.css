@@ -128,13 +128,19 @@ p.normal {
 
 .phone {
     font-family: 'ttsupermolot-bolduploadedfile';
-    color:  #ffffff;
+    color:  #ffffff !important;
     font-size: 4.2rem;
     background: transparent url('./../assets/phone.png') no-repeat 0% 50%;
     padding-left: 5.5rem;
     display: inline-block;
     background-size: contain;
     line-height: 3.5rem;
+    text-decoration: none;
+}
+
+a.phone, .phone a {
+    color:  #ffffff !important;
+    text-decoration: none;
 }
 
 .manual {
