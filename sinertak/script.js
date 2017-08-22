@@ -234,13 +234,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     // увеличение нижнего фото
-     //TweenLite.to($('#bg'+newIndex), 0.7, {
-     //  css: {
-     //    'transform': 'scale(1, 1)'
-     //  },
-     //  delay: 0,
-     //  ease: Power3.easeOut
-     //});
+     TweenLite.to($('#bg'+newIndex), 0.7, {
+      css: {
+        'transform': 'scale(1, 1)'
+      },
+      delay: 0,
+      ease: Power3.easeOut
+     });
 
 
     allIndexes.forEach(function(item) {
