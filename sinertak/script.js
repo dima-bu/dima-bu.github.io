@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(){
   var paginationItem = $('.pagination-item');
+  var viewportHeight = $('body').outerHeight();
+  var viewportWidth = $('body').outerWidth();
+  //$('body').css({ height: viewportHeight, width: viewportWidth  });
+  //$('.main-wrapper').css({ height: viewportHeight, width: viewportWidth  });
 
   //var sinTitle1 = $('#title1');
   //var sinSubtitle1 = $('#subtitle1');

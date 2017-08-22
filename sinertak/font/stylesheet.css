@@ -273,46 +273,59 @@ p.normal {
 
 @media (max-width: 1024px) {
     #bg1, #bg2, #bg3, #bg4, #bg5 {
-        transform: matrix(1.35, 0, 0, 1.35, 0, 0) !important;
+        transform: matrix(1, 0, 0, 1, 0, 0) !important;
     }
 }
 
-/* fix iOS bug not displaying 100vh correctly */
-/* ipad */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    body {
-        height: 768px;
-    }
+.main-wrapper {
+    overflow: hidden;
+    position: relative;
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    body {
-        height: 1024px;
-    }
-}
 
-/* iphone5 */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
-    body {
-        height: 320px;
-    }
-}
 
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
-    body {
-        height: 568px;
-    }
-}
+/*/!* fix iOS bug not displaying 100vh correctly *!/*/
+/*/!* ipad *!/*/
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {*/
+    /*.main-wrapper {*/
+        /*padding-top: 15vh;*/
+        /*padding-left: 15vh;*/
+    /*}*/
+/*}*/
 
-/* iPhone 4 */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    body {
-        height: 320px;
-    }
-}
+/*@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {*/
+    /*.main-wrapper {*/
+        /*padding-top: 15vh;*/
+        /*padding-left: 15vh;*/
+    /*}*/
+/*}*/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    body {
-        height: 480px;
-    }
-}
+/*/!* iphone5 *!/*/
+/*@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {*/
+    /*.main-wrapper {*/
+        /*padding-top: 15vh;*/
+        /*padding-left: 15vh;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {*/
+    /*.main-wrapper {*/
+        /*padding-top: 15vh;*/
+        /*padding-left: 15vh;*/
+    /*}*/
+/*}*/
+
+/*/!* iPhone 4 *!/*/
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {*/
+    /*.main-wrapper {*/
+        /*padding-top: 15vh;*/
+        /*padding-left: 15vh;*/
+    /*}*/
+/*}*/
+
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {*/
+    /*.main-wrapper {*/
+        /*padding-top: 15vh;*/
+        /*padding-left: 15vh;*/
+    /*}*/
+/*}*/
