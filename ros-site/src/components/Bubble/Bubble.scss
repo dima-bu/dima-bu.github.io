@@ -416,3 +416,8 @@ $hoverAnimation: all 300ms ease-out 0s;
 
 }
 
+@media (max-width: $screen-xs-min ){
+  .bubble.type-link.size-sm {
+    padding: 12px 20px;
+  }
+}
