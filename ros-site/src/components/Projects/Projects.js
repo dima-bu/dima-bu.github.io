@@ -46,14 +46,12 @@ function createAnim (utils) {
         } else {
           // если это не первая серия баблов
           if (utils.options.isClicked) {
-            debugger;
             var firstOffset = document.getElementById('firstBubble').offsetTop
             Scroll.animateScroll.scrollTo(firstOffset - 120, {
               duration: 400,
               smooth: true
             })
           } else {
-            debugger;
             // если это первая серия баблов
             Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
               duration: 400,
@@ -69,7 +67,6 @@ function createAnim (utils) {
 
 function scrollAnimation2 (utils) {
   const AnimationBubble = utils.target.find({ name: utils.options.name })
-  debugger;
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
@@ -135,7 +132,7 @@ class Projects extends React.Component {
 
   getStyle (isRight) {
     if (this.scrollBubbles.length === 0) {
-      return {};
+      return {}
     } else {
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }
@@ -156,7 +153,8 @@ class Projects extends React.Component {
           style={this.getStyle(true)}>
           <div className='bubble-wrapper'>
             <Time />
-            <Bubble size='md' type='secondary' className='w_35p br-desctop' isHiddenText={props.isHiddenText} rightPosition>
+            <Bubble size='md' type='secondary' className='w_35p br-desctop'
+              isHiddenText={props.isHiddenText} rightPosition>
               {props.index === 0 &&
                 tr('HI', true)
               }

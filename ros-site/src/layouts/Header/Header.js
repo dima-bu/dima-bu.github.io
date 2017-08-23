@@ -1,13 +1,11 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
 import './Header.scss'
 import Logo from 'components/Logo/Logo.js'
 import SwitchButton from 'components/SwitchButton/SwitchButton.js'
-import { connect } from 'react-redux'
 
 export const Header = (props) => {
 
-  const {isHiddenText} = props;
+  const { isHiddenText } = props
 
   const onChangeHandler = (e) => {
     e.preventDefault();
@@ -30,11 +28,11 @@ export const Header = (props) => {
   }
 
   return (
-    <header className="container-zero fixed-header">
+    <header className='container-zero fixed-header'>
       <div className='header-wraaper clearfix'>
         <Logo />
-        <div style={{float: 'right'}}>
-          <SwitchButton label="Eng" checked={getChecked()} labelRight="Рус" onChange={onChangeHandler}/>
+        <div style={{ float: 'right' }}>
+          <SwitchButton label='Eng' checked={getChecked()} labelRight='Рус' onChange={onChangeHandler} />
         </div>
       </div>
     </header>

@@ -1,19 +1,9 @@
 import React from 'react'
-import { IndexLink } from 'react-router'
 import Bubble from './../Bubble/Bubble.js'
-import Button from './../Button/Button.js'
 import Time from './../Time/Time.js'
-import {tr} from 'lib/locale.js'
-import Link from './../Link/Link.js'
-import Mail from './../SVG/Mail.js'
-import Skype from './../SVG/Skype.js'
-import VKLink from './../SVG/VKLink.js'
-import FacebookLink from './../SVG/FacebookLink.js'
+import { tr } from 'lib/locale.js'
 import GSAP from 'react-gsap-enhancer'
-import { TweenLite, TimelineMax, Power4 } from 'gsap'
-import throttle from 'lodash.throttle';
-import Scroll from 'react-scroll';
-
+import { TimelineMax, Power4 } from 'gsap'
 
 //function createAnim(utils) {
 //  const finishSection = utils.target.find({name: 'finishSection'});
@@ -28,8 +18,8 @@ import Scroll from 'react-scroll';
 //    })
 //}
 
-function scrollAnimation(utils) {
-  const AnimationBubble = utils.target.find({name: utils.options.name});
+function scrollAnimation (utils) {
+  const AnimationBubble = utils.target.find({ name: utils.options.name })
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
@@ -43,14 +33,14 @@ function scrollAnimation(utils) {
 
 class FinishSection extends React.Component {
 
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
     this.scrollFunc = () => {
-      var self = this;
+      var self = this
 
-      var scrolled = window.pageYOffset;
-      var screenHeight = screen.height;
-      var BubbleOffset = document.getElementById('finishSection').offsetTop;
+      var scrolled = window.pageYOffset
+      var screenHeight = screen.height
+      var BubbleOffset = document.getElementById('finishSection').offsetTop
 
       if ((scrolled + screenHeight) > (BubbleOffset)) {
         self.addAnimation(scrollAnimation, {name: 'finishSection'});
@@ -58,7 +48,7 @@ class FinishSection extends React.Component {
     }
   }
 
-  componentWillMount(){
+  componentWillMount () {
     setTimeout(() => {
       //this.anim2 = this.addAnimation(createAnim);
       //this.scrollFunc();
@@ -66,22 +56,23 @@ class FinishSection extends React.Component {
     });
   }
 
-  componentWillReceiveProps(){
+  componentWillReceiveProps () {
     if (this.scrollFunc) {
-      this.scrollFunc();
+      this.scrollFunc()
     }
   }
 
-  render(){
+  render () {
     return (
-     <div className="clearfix">
-        <div className="clearfix bubble-row container" id="finishSection" name="finishSection" style={{opacity: 0, transform: 'translateX(-100px)'}}>
-        <div className="bubble-wrapper">
-          <Time from/>
-          <Bubble size="lg" type="primary" className="w_70p br-desctop" isHiddenText={this.props.isHiddenText}>
-            {tr('CONTACTS_COME_AGAIN', true)}
-          </Bubble>
-        </div>
+      <div className='clearfix'>
+        <div className='clearfix bubble-row container' id='finishSection' name='finishSection'
+          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          <div className='bubble-wrapper'>
+            <Time from />
+            <Bubble size='lg' type='primary' className='w_70p br-desctop' isHiddenText={this.props.isHiddenText}>
+              {tr('CONTACTS_COME_AGAIN', true)}
+            </Bubble>
+          </div>
         </div>
       </div>)
   }

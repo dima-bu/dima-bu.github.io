@@ -320,7 +320,7 @@ $hoverAnimation: all 300ms ease-out 0s;
     &.-right {
       margin-right: 25px;
       .bubble-corner {
-        right: -25px;
+        right: -24.9px;
         left: inherit;
       }
     }
@@ -329,7 +329,7 @@ $hoverAnimation: all 300ms ease-out 0s;
       top: -2px;
       width: 25px;
       height: 25px;
-      left: -25px;
+      left: -24.9px;
     }
   }
 
@@ -418,6 +418,6 @@ $hoverAnimation: all 300ms ease-out 0s;
 
 @media (max-width: $screen-xs-min ){
   .bubble.type-link.size-sm {
-    padding: 12px 20px;
+    padding: 10px 20px;
   }
 }

@@ -89,7 +89,22 @@ h1 {
 @media (max-width: $screen-sm-min) and (max-height: $screen-xs-max-height) {
   .bubble-row {
     &.-first-bubble {
-      margin-top: calc(50vh - 155px);
+      margin-top: 0;
     }
   }
+
+  .bottom-links_wrapper {
+    position: relative !important;
+  }
+
 }
+
+@media (max-width: $screen-xs-min) {
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: calc(50vh - 210px);
+    }
+  }
+
+}
+

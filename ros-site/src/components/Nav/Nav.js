@@ -68,7 +68,7 @@ class Nav extends Component {
     return (
     <div>
     {onChangeHash &&
-    <div style={getStyleWrapper()}>
+    <div style={getStyleWrapper()} className="bottom-links_wrapper">
       <div className="ta-c bottom-links container" >
       {itemsMap.map(item => {
           return (

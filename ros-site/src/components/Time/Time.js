@@ -1,15 +1,14 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import cx from 'classnames'
-import  './Time.scss'
-import {tr} from 'lib/locale.js';
+import './Time.scss'
+import { tr } from 'lib/locale.js'
 
 export default class Time extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     let now = new Date()
     this.state = {
-      time: now.toLocaleTimeString().split(':')[0] +':' +now.toLocaleTimeString().split(':')[1]
+      time: now.toLocaleTimeString().split(':')[0] + ':' + now.toLocaleTimeString().split(':')[1]
     }
   }
 
@@ -21,14 +20,11 @@ export default class Time extends Component {
     from: false
   }
 
-  render() {
-    const {from} = this.props;
-    const getTime = () => {
-      return 'hjg';
-    }
+  render () {
+    const { from } = this.props
 
     return (
-      <div className="ros-time">
+      <div className='ros-time'>
         {from &&
           'Rosberry'
         }
@@ -37,7 +33,7 @@ export default class Time extends Component {
         }
         ,
         {this.state.time}
-    </div>
+      </div>
     )
   }
 }

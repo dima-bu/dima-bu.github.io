@@ -11,11 +11,10 @@ import video5 from './assets/cat5.mp4'
 import video6 from './assets/cat6.mp4'
 import video7 from './assets/cat7.mp4'
 import GSAP from 'react-gsap-enhancer'
-import { TweenLite, TimelineMax, Power4 } from 'gsap'
-import throttle from 'lodash.throttle'
+import { TimelineMax, Power4 } from 'gsap'
 import Scroll from 'react-scroll'
 
-function createAnim (utils) {
+function createAnimGif (utils) {
   const first = utils.target.find({ name: 'hiGif' })
   const second = utils.target.find({ name: 'catchOne' })
 
@@ -44,10 +43,21 @@ function createAnim (utils) {
         } else {
           if (utils.options.isClicked) {
             var hiOffset = document.getElementById('hiGif').offsetTop
-            Scroll.animateScroll.scrollTo(hiOffset - 20, {
-              duration: 400,
-              smooth: true
-            })
+            var catchOneOffset = document.getElementById('catchOne').offsetTop
+            var catchOneHeight = document.getElementById('catchOne').offsetHeight
+            var screenHeight = window.innerHeight
+
+            if (window.location.hash && window.location.hash !== '#gif') {
+              Scroll.animateScroll.scrollTo((catchOneOffset - screenHeight + (catchOneHeight / 2) + 20), {
+                duration: 400,
+                smooth: true
+              })
+            } else {
+              Scroll.animateScroll.scrollTo(hiOffset - 20, {
+                duration: 400,
+                smooth: true
+              })
+            }
           } else {
             Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
               duration: 400,
@@ -60,7 +70,6 @@ function createAnim (utils) {
 }
 
 function scrollAnimation3 (utils) {
-  debugger;
   const AnimationBubble = utils.target.find({ name: utils.options.name })
   return new TimelineMax()
     .to(AnimationBubble, 1, {
@@ -124,9 +133,8 @@ class Gif extends React.Component {
   }
 
   componentWillMount () {
-
     setTimeout(() => {
-      this.anim3 = this.addAnimation(createAnim, {isClicked: this.props.isClicked})
+      this.anim3 = this.addAnimation(createAnimGif, { isClicked: this.props.isClicked })
       this.scrollFunc()
 
       //Scroll.animateScroll.scrollTo(window.pageYOffset+200, {
@@ -144,9 +152,9 @@ class Gif extends React.Component {
 
   getStyle (isRight) {
     if (this.scrollBubbles.length === 0) {
-      return {};
+      return {}
     } else {
-      console.log('getStyle translateX');
+      console.log('getStyle translateX')
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }
       } else {
@@ -164,27 +172,19 @@ class Gif extends React.Component {
       switch (count) {
         case 1:
           return <source src={video1} type='video/mp4' />
-          break;
         case 2:
           return <source src={video2} type='video/mp4' />
-          break;
         case 3:
           return <source src={video3} type='video/mp4' />
-          break;
         case 4:
           return <source src={video4} type='video/mp4' />
-          break;
         case 5:
           return <source src={video5} type='video/mp4' />
-          break;
         case 6:
           return <source src={video6} type='video/mp4' />
-          break;
         case 7:
           return <source src={video7} type='video/mp4' />
-          break;
       }
-
     }
 
     return (

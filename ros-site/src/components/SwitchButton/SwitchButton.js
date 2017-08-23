@@ -1,7 +1,7 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import cx from 'classnames'
-import  './SwitchButton.scss'
+import style from './SwitchButton.scss'
 
 export default class SwitchButton extends Component {
   static propTypes = {
@@ -29,33 +29,35 @@ export default class SwitchButton extends Component {
     defaultChecked : false,
     theme          : 'hive-b2b',
     checked        : null,
-    mode           : "switch",
+    mode           : 'switch',
     onChange       : () => {},
     size: 'sm'
   }
 
   render () {
     let id, label, labelRight,
-      mode = this.props.mode || "switch";
+      mode = this.props.mode || 'switch';
 
-    if( this.props.id === '' && this.props.name !== '' ) {
-      id = this.props.name;
+    if (this.props.id === '' && this.props.name !== '') {
+      id = this.props.name
     }
 
-    if( this.props.label !== '' ) {
+    if (this.props.label !== '') {
       label = (
-        <label  className={cx('switch-label', !this.props.checked ? 'active' : '')} htmlFor={id}>{this.props.label}</label>
-      );
+        <label className={cx('switch-label', !this.props.checked ? 'active' : '')} htmlFor={id}>
+          {this.props.label}
+        </label>
+      )
     }
 
-    if( this.props.labelRight !== '' ) {
+    if (this.props.labelRight !== '') {
       labelRight = (
         <label htmlFor={id} className={cx('switch-label', this.props.checked ? 'active' : '')} >{this.props.labelRight}</label>
-      );
+      )
     }
 
-    if( [ 'switch', 'select' ].indexOf( mode ) < -1 ) {
-      mode = "switch";
+    if ([ 'switch', 'select' ].indexOf(mode) < -1) {
+      mode = 'switch'
     }
 
     return (
@@ -68,8 +70,8 @@ export default class SwitchButton extends Component {
             disabled={this.props.disabled}
             id={id}
             name={this.props.name}
-            type="checkbox"
-            value="1"
+            type='checkbox'
+            value='1'
             />
         }
         {!this.props.checked &&
@@ -78,11 +80,11 @@ export default class SwitchButton extends Component {
           disabled={this.props.disabled}
           id={id}
           name={this.props.name}
-          type="checkbox"
-          value="1"
+          type='checkbox'
+          value='1'
           />
         }
-        <label htmlFor={id} className="switch-button_switch">
+        <label htmlFor={id} className='switch-button_switch'>
         </label>
         {labelRight}
       </div>

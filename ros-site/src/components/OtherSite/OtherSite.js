@@ -77,7 +77,7 @@ class OtherSite extends React.Component {
   constructor (props) {
     super(props)
     this.scrollBubbles = []
-    this.isFinish = false;
+    this.isFinish = false
     this.scrollFuncOtherSite = () => {
       var self = this
       var scrolled = window.pageYOffset
@@ -154,7 +154,7 @@ class OtherSite extends React.Component {
             <Bubble size='lg' type='primary' className='w_70p' isHiddenText={props.isHiddenText}>
               {tr('ORTO_SITE', true)}
               <div style={{ marginTop: '25px' }}>
-                <Button isLink href='about.rosberry.com'
+                <Button isLink href='http://about.rosberry.com'
                   caption={tr('GO_TO_SITE', true)} />
               </div>
             </Bubble>
