@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import './Bubble.scss'
 import cx from 'classnames'
 import BubbleCorner from 'components/SVG/BubbleCorner'
+import BubbleCornerPng from './bubble-corner_360.png'
+import BubbleCornerPngGray from './bubble-corner_gray.png'
 
 const Bubble = (props) => {
   const {
@@ -34,6 +36,7 @@ const Bubble = (props) => {
               {children}
             </span>
         <BubbleCorner />
+        <img className="corner-png-right" src={BubbleCornerPngGray} />
       </div>
     )
   } else {
@@ -43,6 +46,8 @@ const Bubble = (props) => {
             {text}
             {children}
           </span>
+          <img className="corner-png" src={BubbleCornerPng} />
+          <img className="corner-png-right" src={BubbleCornerPngGray} />
           <BubbleCorner />
         </div>
     )

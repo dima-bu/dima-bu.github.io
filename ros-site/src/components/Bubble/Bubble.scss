@@ -13,6 +13,26 @@ $hoverAnimation: all 300ms ease-out 0s;
   position: relative;
 }
 
+.bubble-corner {
+  display: none;
+}
+
+.corner-png {
+  position: absolute;
+  top: -4px;
+  left: -33px;
+  width: 33px;
+  height: 44px;
+}
+
+.corner-png-right {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -33px;
+  width: 33px;
+  height: 44px;
+}
 
 .bubble {
   box-sizing: border-box;
@@ -59,6 +79,10 @@ $hoverAnimation: all 300ms ease-out 0s;
         padding: 20px;
       }
 
+      .corner-png-right {
+        display: block;
+      }
+
       .bubble-corner {
         transform: scale(-1, 1);
         right: -50px;
@@ -87,6 +111,10 @@ $hoverAnimation: all 300ms ease-out 0s;
       border-radius:  10px 0 10px 10px;
       margin-right: 50px;
 
+      .corner-png-right {
+        display: block;
+      }
+
       .bubble-corner {
         right: -50px;
       }
@@ -97,7 +125,12 @@ $hoverAnimation: all 300ms ease-out 0s;
   &.type-secondary {
     background-color: $color-grey-light;
 
+    .corner-png {
+      display: none;
+    }
+
     .bubble-corner {
+      //display: block;
       fill: $color-grey-light;
       stroke: $color-grey-light;
     }
@@ -162,11 +195,15 @@ $hoverAnimation: all 300ms ease-out 0s;
 
   //z-index: 1;
   //position: relative;
+  .corner-png-right {
+    display: none;
+  }
 
   &:hover, &:focus {
     background-color: $color-milky;
     border-color: $color-milky;
     .bubble-corner {
+      display: block;
       fill: $color-milky;
       stroke: $color-milky;
       -webkit-transition: $hoverAnimation;
@@ -203,6 +240,7 @@ $hoverAnimation: all 300ms ease-out 0s;
   }
 
   .bubble-corner {
+    display: block;
     top: -2px;
     left: -25px;
     width: 25px;
@@ -244,6 +282,10 @@ $hoverAnimation: all 300ms ease-out 0s;
 
 .bubble.-right {
   margin-left: 0;
+
+  .corner-png-right {
+    display: block;
+  }
   .bubble-corner {
     transform: scale(-1, 1);
     left: auto;
@@ -302,12 +344,26 @@ $hoverAnimation: all 300ms ease-out 0s;
     border-width: 2px;
     margin-left: 25px;
 
-     .bubble-corner {
+    .corner-png {
+      top: -2px;
+      left: -16px;
+      width: 16px;
+      height: 22px;
+    }
+
+    .corner-png-right {
+        top: -2px;
+        right: -16px;
+        width: 16px;
+        height: 22px;
+    }
+
+    .bubble-corner {
        top: -2px;
        left: -25px;
        width: 25px;
        height: 25px;
-     }
+    }
   }
 
   .bubble.size-md {
@@ -323,6 +379,20 @@ $hoverAnimation: all 300ms ease-out 0s;
         right: -24.9px;
         left: inherit;
       }
+    }
+
+    .corner-png-right {
+      top: -2px;
+      right: -16px;
+      width: 16px;
+      height: 22px;
+    }
+
+    .corner-png {
+      top: -2px;
+      left: -16px;
+      width: 16px;
+      height: 22px;
     }
 
     .bubble-corner {

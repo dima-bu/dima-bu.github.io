@@ -65,8 +65,9 @@ function createAnim (utils) {
   return TimelineMaxOne
 }
 
-function scrollAnimation2 (utils) {
+function scrollAnimationProjects (utils) {
   const AnimationBubble = utils.target.find({ name: utils.options.name })
+
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
@@ -74,7 +75,15 @@ function scrollAnimation2 (utils) {
         opacity: 1
       },
       delay: 0.2,
-      ease: Power4.easeOut
+      ease: Power4.easeOut,
+      onComplete: function () {
+        var self = utils.options.self
+        self.scrollBubbles.splice(0, 1)
+        if (self.scrollBubbles.length === 0) {
+          self.scrollFunc = false
+          self.__runningAnimations.clear()
+        }
+      }
     })
 }
 
@@ -89,30 +98,28 @@ class Projects extends React.Component {
       var scrolled = window.pageYOffset // Текущая прокрутка сверху
       var screenHeight = screen.height // Высота экрана
 
-      self.scrollBubbles.forEach(bubble => {
-        var BubbleOffset = document.getElementById(bubble).offsetTop
+      // self.scrollBubbles.forEach(bubble => {
+        var bubbleName = self.scrollBubbles[0]
+        var BubbleOffset = document.getElementById(bubbleName).offsetTop
 
-        if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.scrollBubbles.indexOf(bubble) === 0) {
+        if (((scrolled + screenHeight - 100) > (BubbleOffset)) && bubbleName) {
+          // console.log('BubbleOffset ', BubbleOffset)
+          // console.log('screenHeight ', screenHeight)
+          // console.log('scrolled ', scrolled)
 
-          console.log('BubbleOffset ', BubbleOffset)
-          console.log('screenHeight ', screenHeight)
-          console.log('scrolled ', scrolled)
-
-          var findIndex = self.scrollBubbles.findIndex(item => {
-            return item === bubble
-          })
+          // var findIndex = self.scrollBubbles.findIndex(item => {
+          //   return item === bubble
+          // })
 
           if (self.anim && self.anim.data && self.anim.data.finish) {
-            console.log(bubble)
-            self.scrollBubbles.splice(findIndex, 1)
-            self.addAnimation(scrollAnimation2, { name: bubble })
-            if (self.scrollBubbles.length === 0) {
-              self.scrollFunc = false
-              self.__runningAnimations.clear()
-            }
+
+            self.addAnimation(scrollAnimationProjects, { name: bubbleName, self: self })
+            // if (self.scrollBubbles.length === 0) {
+            //  self.scrollFunc = false
+            //  self.__runningAnimations.clear()
+            // }
           }
         }
-      })
     }
   }
 
@@ -247,7 +254,7 @@ class Projects extends React.Component {
           </ProjectBubble>
         </div>
         <div className='bubble-row -project container' name='trackd' id='trackd'
-          style={this.getStyle()}>
+          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
           <ProjectBubble
             title='Trackd Studio'
             description={tr('TRACKD_DESCRIPTION', true)}

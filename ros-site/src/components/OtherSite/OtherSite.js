@@ -20,7 +20,6 @@ function createAnimOtherSite (utils) {
       ease: Power4.easeOut,
       onComplete: () => {
         utils.options.self.isFinish = true;
-        console.log('createAnimOtherSite')
       }
     })
     .to(ortoSite, 0.8, {
@@ -30,7 +29,6 @@ function createAnimOtherSite (utils) {
       },
       ease: Power4.easeOut,
       onComplete: () => {
-        console.log('createAnimOtherSite')
         this.data = { finish : true }
 
         if (window.pageYOffset + 200 > document.getElementById('ortoSite').offsetTop) {
@@ -67,7 +65,6 @@ function scrollAnimationOtherSite (utils) {
       delay: 0.7,
       ease: Power4.easeOut,
       onComplete: () => {
-        console.log('scrollAnimationOtherSite')
       }
     })
 }
@@ -122,7 +119,6 @@ class OtherSite extends React.Component {
     if (this.isFinish) {
       return {}
     } else {
-      console.log('getStyle translateX')
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }
       } else {

@@ -154,7 +154,6 @@ class Gif extends React.Component {
     if (this.scrollBubbles.length === 0) {
       return {}
     } else {
-      console.log('getStyle translateX')
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }
       } else {

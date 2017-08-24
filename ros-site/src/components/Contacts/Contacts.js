@@ -27,7 +27,6 @@ function createAnimContacts (utils) {
       },
       ease: Power4.easeOut,
       onComplete: () => {
-        console.log('createAnimContacts')
       }
     })
     .to(simple, 0.8, {
@@ -37,11 +36,10 @@ function createAnimContacts (utils) {
       },
       ease: Power4.easeOut,
       onComplete: () => {
-        console.log('createAnimContacts')
         this.data = { finish : true }
 
         // проверку на то что уже проскролели вниз
-        if (window.pageYOffset + 200 > document.getElementById('simple').offsetTop) {
+        if (window.pageYOffset + 100 > document.getElementById('simple').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
@@ -59,7 +57,6 @@ function createAnimContacts (utils) {
             // console.log('pageYOffset  ', window.pageYOffset)
             // console.log('hiContactsHeight ', hiContactsHeight)
             // console.log('delta ', delta)
-            console.log('screenHeight 111 ', screenHeight)
 
             // если это не первое открытие и больльшая delta
             if (window.location.hash && window.location.hash !== '#contacts') {
@@ -96,7 +93,6 @@ function scrollAnimationContacts (utils) {
       delay: 0.2,
       ease: Power4.easeOut,
       onComplete: () => {
-        console.log('scrollAnimationContacts')
       }
     })
 }
@@ -151,7 +147,6 @@ class Contacts extends React.Component {
     if (this.scrollBubbles.length === 0) {
       return {}
     } else {
-      console.log('getStyle translateX')
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }
       } else {
