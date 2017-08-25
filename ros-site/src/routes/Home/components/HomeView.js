@@ -147,8 +147,8 @@ class HomeView extends React.Component {
     let pathname = this.getHash();
     const elems = pathname.split('-');
 
-    if(elems.length === 4) {
-      return <FinishSection />;
+    if (elems.length === 4) {
+      return <FinishSection isHiddenText={this.props.isHiddenText}  />;
     }
   }
 

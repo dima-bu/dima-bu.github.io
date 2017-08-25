@@ -98,28 +98,30 @@ class Projects extends React.Component {
       var scrolled = window.pageYOffset // Текущая прокрутка сверху
       var screenHeight = screen.height // Высота экрана
 
-      // self.scrollBubbles.forEach(bubble => {
-        var bubbleName = self.scrollBubbles[0]
-        var BubbleOffset = document.getElementById(bubbleName).offsetTop
+      self.scrollBubbles.forEach(bubble => {
+        var BubbleOffset = document.getElementById(bubble).offsetTop
 
-        if (((scrolled + screenHeight - 100) > (BubbleOffset)) && bubbleName) {
-          // console.log('BubbleOffset ', BubbleOffset)
-          // console.log('screenHeight ', screenHeight)
-          // console.log('scrolled ', scrolled)
+        if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.scrollBubbles.indexOf(bubble) === 0) {
 
-          // var findIndex = self.scrollBubbles.findIndex(item => {
-          //   return item === bubble
-          // })
+          console.log('BubbleOffset ', BubbleOffset)
+          console.log('screenHeight ', screenHeight)
+          console.log('scrolled ', scrolled)
+
+          var findIndex = self.scrollBubbles.findIndex(item => {
+            return item === bubble
+          })
 
           if (self.anim && self.anim.data && self.anim.data.finish) {
-
-            self.addAnimation(scrollAnimationProjects, { name: bubbleName, self: self })
+            console.log(bubble)
+            self.scrollBubbles.splice(findIndex, 1)
+            self.addAnimation(scrollAnimationProjects, { name: bubble })
             // if (self.scrollBubbles.length === 0) {
             //  self.scrollFunc = false
             //  self.__runningAnimations.clear()
             // }
           }
         }
+      })
     }
   }
 

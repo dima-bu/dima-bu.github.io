@@ -109,7 +109,7 @@ class Contacts extends React.Component {
       self.scrollBubbles.forEach(bubble => {
         var BubbleOffset = document.getElementById(bubble).offsetTop
 
-        if ((scrolled + screenHeight) > (BubbleOffset) && self.animContacts.data && self.animContacts.data.finish) {
+        if ((scrolled + screenHeight) > (BubbleOffset) && self.animContacts.data && self.animContacts.data.finish && self.scrollBubbles.indexOf(bubble) === 0) {
           var findIndex = self.scrollBubbles.findIndex(item => {
             return item === bubble
           })

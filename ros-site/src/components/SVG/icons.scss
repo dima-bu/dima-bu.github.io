@@ -17,7 +17,12 @@
   stroke: #000000;
 }
 
+a {
+  cursor: pointer;
+}
+
 a.icon-link {
+
   &:hover {
     .download-android_bg {
       fill: #768496;

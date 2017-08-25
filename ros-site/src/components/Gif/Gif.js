@@ -208,7 +208,7 @@ class Gif extends React.Component {
           style={this.getStyle()}>
           <div className='bubble-wrapper'>
             <Time from />
-            <Bubble size='lg' type='primary' className='w_60p br-all' isHiddenText={props.isHiddenText}>
+            <Bubble size='lg' type='primary' autoWidth className='w_60p br-all' isHiddenText={props.isHiddenText}>
               {tr('GIF_CATCH_ONE', true)}
             </Bubble>
           </div>
