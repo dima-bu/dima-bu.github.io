@@ -78,12 +78,12 @@ function scrollAnimationProjects (utils) {
       ease: Power4.easeOut,
       onComplete: function () {
         var self = utils.options.self
-        //self.scrollBubbles.splice(0, 1)
-        //self.currentBubble = ''
-        //if (self.scrollBubbles.length === 0) {
+        // self.scrollBubbles.splice(0, 1)
+        // self.currentBubble = ''
+        // if (self.scrollBubbles.length === 0) {
         //  self.scrollFunc = false
         //  self.__runningAnimations.clear()
-        //}
+        // }
       }
     })
 }
@@ -101,8 +101,13 @@ class Projects extends React.Component {
       var screenHeight = screen.height // Высота экрана
 
       var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
+      var delta = 100
 
-      if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.currentBubble === '') {
+      if (self.scrollBubbles[0] === 'trackd') {
+        delta = 50
+      }
+
+      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
         self.currentBubble = self.scrollBubbles[0]
         self.addAnimation(scrollAnimationProjects, { name: self.currentBubble, self: self })
         self.scrollBubbles.splice(0, 1)
@@ -145,7 +150,7 @@ class Projects extends React.Component {
 
   componentWillReceiveProps () {
     // на каждое изменение положения экрана (с задержкой 500мс) запускать функцию
-    if (this.scrollFunc) {
+    if (this.scrollFunc && this.scrollBubbles.length) {
       this.scrollFunc()
     }
   }

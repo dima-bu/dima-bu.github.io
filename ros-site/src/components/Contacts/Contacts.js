@@ -93,6 +93,9 @@ function scrollAnimationContacts (utils) {
       delay: 0.2,
       ease: Power4.easeOut,
       onComplete: () => {
+        if (utils.options.name === 'upwork') {
+          utils.options.self.isFinish = true
+        }
       }
     })
 }
@@ -102,24 +105,37 @@ class Contacts extends React.Component {
   constructor (props) {
     super(props)
     this.scrollBubbles = ['soc', 'upwork']
+    this.currentBubble = ''
+    this.isFinish = false
+    var self = this
+
     this.scrollFuncContacts = () => {
-      var self = this
       var scrolled = window.pageYOffset
       var screenHeight = screen.height
-      self.scrollBubbles.forEach(bubble => {
-        var BubbleOffset = document.getElementById(bubble).offsetTop
+      var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
+      var delta = 100
 
-        if ((scrolled + screenHeight) > (BubbleOffset) && self.animContacts.data && self.animContacts.data.finish && self.scrollBubbles.indexOf(bubble) === 0) {
-          var findIndex = self.scrollBubbles.findIndex(item => {
-            return item === bubble
-          })
-          self.addAnimation(scrollAnimationContacts, { name: bubble })
-          self.scrollBubbles.splice(findIndex, 1)
-          if (self.scrollBubbles.length === 0) {
-            self.reset()
-          }
-        }
-      })
+      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
+        self.currentBubble = self.scrollBubbles[0]
+        self.addAnimation(scrollAnimationContacts, { name: self.currentBubble, self: self })
+        self.scrollBubbles.splice(0, 1)
+        self.currentBubble = ''
+      }
+
+      // self.scrollBubbles.forEach(bubble => {
+      //  var BubbleOffset = document.getElementById(bubble).offsetTop
+      //
+      //  if ((scrolled + screenHeight) > (BubbleOffset) && self.animContacts.data && self.animContacts.data.finish && self.scrollBubbles.indexOf(bubble) === 0) {
+      //    var findIndex = self.scrollBubbles.findIndex(item => {
+      //      return item === bubble
+      //    })
+      //    self.addAnimation(scrollAnimationContacts, { name: bubble })
+      //    self.scrollBubbles.splice(findIndex, 1)
+      //    if (self.scrollBubbles.length === 0) {
+      //      self.reset()
+      //    }
+      //  }
+      // })
     }
   }
 
@@ -136,7 +152,7 @@ class Contacts extends React.Component {
 
   componentWillReceiveProps () {
     // на каждое изменение положения экрана (с задержкой 500мс) запускать функцию
-    if (this.scrollFuncContacts) {
+    if (this.scrollFuncContacts && this.scrollBubbles.length) {
       this.scrollFuncContacts()
     } else {
       return false
@@ -144,7 +160,7 @@ class Contacts extends React.Component {
   }
 
   getStyle (isRight) {
-    if (this.scrollBubbles.length === 0) {
+    if (this.scrollBubbles.length === 0 && this.isFinish) {
       return {}
     } else {
       if (isRight) {

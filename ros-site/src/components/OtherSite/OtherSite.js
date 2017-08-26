@@ -75,24 +75,21 @@ class OtherSite extends React.Component {
     super(props)
     this.scrollBubbles = []
     this.isFinish = false
+    this.currentBubble = ''
+    var self = this
+
     this.scrollFuncOtherSite = () => {
-      var self = this
       var scrolled = window.pageYOffset
       var screenHeight = screen.height
+      var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
+      var delta = 100
 
-      self.scrollBubbles.forEach(bubble => {
-        var BubbleOffset = document.getElementById(bubble).offsetTop
-        if ((scrolled + screenHeight) > (BubbleOffset)) {
-          var findIndex = self.scrollBubbles.findIndex(item => {
-            return item === bubble
-          })
-          self.addAnimation(scrollAnimationOtherSite, { name: bubble })
-          self.scrollBubbles.splice(findIndex, 1)
-          if (self.scrollBubbles.length === 0) {
-            self.reset()
-          }
-        }
-      })
+      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
+        self.currentBubble = self.scrollBubbles[0]
+        self.addAnimation(createAnimOtherSite, { name: self.currentBubble, self: self })
+        self.scrollBubbles.splice(0, 1)
+        self.currentBubble = ''
+      }
     }
   }
 

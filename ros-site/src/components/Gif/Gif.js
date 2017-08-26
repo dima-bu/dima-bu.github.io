@@ -4,7 +4,7 @@ import Bubble from 'components/Bubble/Bubble.js'
 import Time from './../Time/Time.js'
 import { tr } from 'lib/locale.js'
 import video1 from './assets/cat1.mp4'
-import video2 from './assets/cat2.mp4'
+import video2 from './assets/cat1.mp4'
 import video3 from './assets/cat3.mp4'
 import video4 from './assets/cat4.mp4'
 import video5 from './assets/cat5.mp4'
@@ -77,23 +77,11 @@ function scrollAnimation3 (utils) {
         transform: 'translateX(0px)',
         opacity: 1
       },
-      delay: 0.7,
-      ease: Power4.easeOut
-/*      onComplete: () => {
-        if ((!this.data || !this.data.alreadyScroll) && utils.options.isClicked) {
-          var hiGifOffset = document.getElementById('hiGif').offsetTop
-          Scroll.animateScroll.scrollTo(hiGifOffset - 120, {
-            duration: 400,
-            smooth: true
-          });
-          this.data = { alreadyScroll: true }
-        } else {
-          Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
-            duration: 400,
-            smooth: true
-          })
-        }
-      }*/
+      delay: 0.8,
+      ease: Power4.easeOut,
+      onComplete: () => {
+        utils.options.self.isFinish = true
+      }
     })
 }
 
@@ -102,33 +90,22 @@ class Gif extends React.Component {
   constructor (props) {
     super(props)
     this.scrollBubbles = ['video']
+    this.isFinish = false
+    this.currentBubble = ''
     var self = this
 
     this.scrollFunc = () => {
       var scrolled = window.pageYOffset
       var screenHeight = screen.height
-      self.scrollBubbles.forEach(bubble => {
-        var BubbleOffset = document.getElementById(bubble).offsetTop
-        if ((scrolled + screenHeight) > (BubbleOffset)) {
-          var findIndex = self.scrollBubbles.findIndex(item => {
-            return item === bubble
-          })
-          self.addAnimation(scrollAnimation3, { name: bubble })
-          self.scrollBubbles.splice(findIndex, 1)
-          if (self.scrollBubbles.length === 0) {
-            self.scrollFunc = false
-            self.__runningAnimations.clear()
-          }
-          /*if (true) {
-            self.addAnimation(scrollAnimation3, { name: bubble, isClicked: this.props.isClicked })
-            self.scrollBubbles.splice(findIndex, 1)
+      var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
+      var delta = 200
 
-            if (self.scrollBubbles.length === 0) {
-              self.scrollFunc = false
-            }
-          }*/
-        }
-      })
+      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
+        self.currentBubble = self.scrollBubbles[0]
+        self.addAnimation(scrollAnimation3, { name: self.currentBubble, self: self })
+        self.scrollBubbles.splice(0, 1)
+        self.currentBubble = ''
+      }
     }
   }
 
@@ -145,13 +122,13 @@ class Gif extends React.Component {
   }
 
   componentWillReceiveProps () {
-    if (this.scrollFunc) {
+    if (this.scrollFunc && this.scrollBubbles.length) {
       this.scrollFunc()
     }
   }
 
   getStyle (isRight) {
-    if (this.scrollBubbles.length === 0) {
+    if (this.scrollBubbles.length === 0 && this.isFinish) {
       return {}
     } else {
       if (isRight) {
