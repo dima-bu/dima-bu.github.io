@@ -174,7 +174,7 @@ class Gif extends React.Component {
         case 2:
           return <source src={video2} type='video/mp4' />
         case 3:
-          return <source src={video3} type='video/mp4' />
+          return <source src={video5} type='video/mp4' />
         case 4:
           return <source src={video4} type='video/mp4' />
         case 5:

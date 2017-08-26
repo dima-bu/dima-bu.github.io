@@ -74,15 +74,16 @@ function scrollAnimationProjects (utils) {
         transform: 'translateX(0px)',
         opacity: 1
       },
-      delay: 0.2,
+      delay: 0.1,
       ease: Power4.easeOut,
       onComplete: function () {
         var self = utils.options.self
-        self.scrollBubbles.splice(0, 1)
-        if (self.scrollBubbles.length === 0) {
-          self.scrollFunc = false
-          self.__runningAnimations.clear()
-        }
+        //self.scrollBubbles.splice(0, 1)
+        //self.currentBubble = ''
+        //if (self.scrollBubbles.length === 0) {
+        //  self.scrollFunc = false
+        //  self.__runningAnimations.clear()
+        //}
       }
     })
 }
@@ -92,36 +93,46 @@ class Projects extends React.Component {
   constructor (props) {
     super(props)
     this.scrollBubbles = ['trusted', 'splitPic', 'cinepic', 'phyzseek', 'trackd']
+    this.currentBubble = ''
     var self = this
 
     this.scrollFunc = () => {
       var scrolled = window.pageYOffset // Текущая прокрутка сверху
       var screenHeight = screen.height // Высота экрана
 
-      self.scrollBubbles.forEach(bubble => {
-        var BubbleOffset = document.getElementById(bubble).offsetTop
+      var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
 
-        if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.scrollBubbles.indexOf(bubble) === 0) {
+      if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.currentBubble === '') {
+        self.currentBubble = self.scrollBubbles[0]
+        self.addAnimation(scrollAnimationProjects, { name: self.currentBubble, self: self })
+        self.scrollBubbles.splice(0, 1)
+        self.currentBubble = ''
+      }
 
-          console.log('BubbleOffset ', BubbleOffset)
-          console.log('screenHeight ', screenHeight)
-          console.log('scrolled ', scrolled)
-
-          var findIndex = self.scrollBubbles.findIndex(item => {
-            return item === bubble
-          })
-
-          if (self.anim && self.anim.data && self.anim.data.finish) {
-            console.log(bubble)
-            self.scrollBubbles.splice(findIndex, 1)
-            self.addAnimation(scrollAnimationProjects, { name: bubble })
-            // if (self.scrollBubbles.length === 0) {
-            //  self.scrollFunc = false
-            //  self.__runningAnimations.clear()
-            // }
-          }
-        }
-      })
+      // self.scrollBubbles.forEach(bubble => {
+      //  var BubbleOffset = document.getElementById(bubble).offsetTop
+      //
+      //  if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.scrollBubbles.indexOf(bubble) === 0) {
+      //
+      //    console.log('BubbleOffset ', BubbleOffset)
+      //    console.log('screenHeight ', screenHeight)
+      //    console.log('scrolled ', scrolled)
+      //
+      //    var findIndex = self.scrollBubbles.findIndex(item => {
+      //      return item === bubble
+      //    })
+      //
+      //    if (self.anim && self.anim.data && self.anim.data.finish) {
+      //      console.log(bubble)
+      //      self.scrollBubbles.splice(findIndex, 1)
+      //      self.addAnimation(scrollAnimationProjects, { name: bubble })
+      //      // if (self.scrollBubbles.length === 0) {
+      //      //  self.scrollFunc = false
+      //      //  self.__runningAnimations.clear()
+      //      // }
+      //    }
+      //  }
+      // })
     }
   }
 

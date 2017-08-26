@@ -101,7 +101,7 @@ class Contacts extends React.Component {
 
   constructor (props) {
     super(props)
-    this.scrollBubbles = ['soc', 'upwork', 'goodfirms']
+    this.scrollBubbles = ['soc', 'upwork']
     this.scrollFuncContacts = () => {
       var self = this
       var scrolled = window.pageYOffset
@@ -228,6 +228,7 @@ class Contacts extends React.Component {
           </div>
         </div>
 
+        {false &&
         <div className='clearfix bubble-row container' name='goodfirms' id='goodfirms' style={this.getStyle()}>
           <div className='bubble-wrapper'>
             <Time from />
@@ -243,6 +244,7 @@ class Contacts extends React.Component {
             </Bubble>
           </div>
         </div>
+        }
       </div>
     )
   }
