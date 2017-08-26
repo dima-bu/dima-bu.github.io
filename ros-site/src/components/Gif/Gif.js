@@ -2,9 +2,10 @@ import React from 'react'
 import './Gif.scss'
 import Bubble from 'components/Bubble/Bubble.js'
 import Time from './../Time/Time.js'
+import ReactDOM from 'react-dom'
 import { tr } from 'lib/locale.js'
 import video1 from './assets/cat1.mp4'
-import video2 from './assets/cat1.mp4'
+import video2 from './assets/cat4.mp4'
 import video3 from './assets/cat3.mp4'
 import video4 from './assets/cat4.mp4'
 import video5 from './assets/cat5.mp4'
@@ -35,7 +36,7 @@ function createAnimGif (utils) {
       onComplete: () => {
         this.data = { finish : true }
 
-        if (window.pageYOffset + 200 > document.getElementById('catchOne').offsetTop) {
+        if (window.pageYOffset > document.getElementById('hiGif').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
@@ -58,19 +59,19 @@ function createAnimGif (utils) {
                 smooth: true
               })
             }
-          } else {
-            Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
-              duration: 400,
-              smooth: true
-            })
           }
         }
       }
     })
 }
 
-function scrollAnimation3 (utils) {
+function scrollAnimationGif (utils) {
   const AnimationBubble = utils.target.find({ name: utils.options.name })
+
+  if (utils.options.self.isFinish) {
+    return false
+  }
+
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
@@ -93,19 +94,28 @@ class Gif extends React.Component {
     this.isFinish = false
     this.currentBubble = ''
     var self = this
-
+    this.state = { key: Math.floor(Math.random() * 7) + 1 }
+    this.handleButtonClick = () => {
+      this.setState({ key:  Math.floor(Math.random() * 7) + 1 })
+      ReactDOM.render()
+    }
     this.scrollFunc = () => {
       var scrolled = window.pageYOffset
       var screenHeight = screen.height
       var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
       var delta = 200
-
       if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
         self.currentBubble = self.scrollBubbles[0]
-        self.addAnimation(scrollAnimation3, { name: self.currentBubble, self: self })
+        self.addAnimation(scrollAnimationGif, { name: self.currentBubble, self: self })
         self.scrollBubbles.splice(0, 1)
         self.currentBubble = ''
       }
+    }
+  }
+
+  shouldComponentUpdate (nextProps, nextState) {
+    if (this.state.key !== nextState.key) {
+      return true
     }
   }
 
@@ -122,7 +132,7 @@ class Gif extends React.Component {
   }
 
   componentWillReceiveProps () {
-    if (this.scrollFunc && this.scrollBubbles.length) {
+    if (this.scrollFunc && this.scrollBubbles.length && !this.isFinish) {
       this.scrollFunc()
     }
   }
@@ -139,27 +149,29 @@ class Gif extends React.Component {
     }
   }
 
+  // handleButtonClick () {
+  //   this.setState({ key:  Math.floor(Math.random() * 7) + 1 })
+  // }
+
   render () {
     const props = this.props
 
     const getVideo = () => {
-      var count = Math.floor(Math.random() * 7) + 1
-
-      switch (count) {
+      switch (this.state.key) {
         case 1:
-          return <source src={video1} type='video/mp4' />
+          return video1
         case 2:
-          return <source src={video2} type='video/mp4' />
+          return video2
         case 3:
-          return <source src={video5} type='video/mp4' />
+          return video5
         case 4:
-          return <source src={video4} type='video/mp4' />
+          return video4
         case 5:
-          return <source src={video5} type='video/mp4' />
+          return video5
         case 6:
-          return <source src={video6} type='video/mp4' />
+          return video6
         case 7:
-          return <source src={video7} type='video/mp4' />
+          return video7
       }
     }
 
@@ -198,11 +210,9 @@ class Gif extends React.Component {
           >
           <div className='bubble-wrapper'>
             <Time from />
+            <div onClick={this.handleButtonClick}>обновить</div>
             <Bubble size='lg' type='primary' autoWidth withVideo>
-              <video id='background-video' autoPlay='autoplay' loop width='480' height='480' >
-                {getVideo()}
-                Your browser does not support the video tag.
-              </video>
+              <video id='background-video' autoPlay='autoplay' loop width='480' height='480' type='video/mp4' src={getVideo()} />
             </Bubble>
           </div>
         </div>

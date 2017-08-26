@@ -2,6 +2,7 @@ import React, {defaultProps, Component} from 'react'
 import PropTypes from 'prop-types'
 import './Logo.scss'
 import Logo3x from './assets/logo@3x.png'
+import Scroll from 'react-scroll'
 
 const Logo = (props) => {
   const {type} = props;
@@ -18,9 +19,13 @@ const Logo = (props) => {
     )
   };
 
+  const scrollTop = (e) => {
+    e.preventDefault()
+    Scroll.animateScroll.scrollTo(0)
+  }
   const getPng = () => {
     return (
-      <a href="http://dima-bu.github.io/ros-site/dist/">
+      <a onClick={scrollTop}>
         <img className='logo' src={Logo3x} alt=""/>
       </a>
     )

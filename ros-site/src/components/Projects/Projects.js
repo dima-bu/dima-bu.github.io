@@ -47,10 +47,21 @@ function createAnim (utils) {
           // если это не первая серия баблов
           if (utils.options.isClicked) {
             var firstOffset = document.getElementById('firstBubble').offsetTop
-            Scroll.animateScroll.scrollTo(firstOffset - 120, {
-              duration: 400,
-              smooth: true
-            })
+            var secondBubbleOffset = document.getElementById('secondBubble').offsetTop
+            var secondBubbleHeight = document.getElementById('secondBubble').offsetHeight
+
+            var screenHeight = window.innerHeight
+            if (window.location.hash && window.location.hash !== '#projects') {
+              Scroll.animateScroll.scrollTo((secondBubbleOffset - screenHeight + (secondBubbleHeight / 2) + 20), {
+                duration: 400,
+                smooth: true
+              })
+            } else {
+              Scroll.animateScroll.scrollTo(firstOffset - 120, {
+                duration: 400,
+                smooth: true
+              })
+            }
           } else {
             // если это первая серия баблов
             Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
@@ -68,16 +79,23 @@ function createAnim (utils) {
 function scrollAnimationProjects (utils) {
   const AnimationBubble = utils.target.find({ name: utils.options.name })
 
+  if (utils.options.self.isFinish) {
+    return false
+  }
+
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
-        transform: 'translateX(0px)',
+        transform: 'matrix(1, 0, 0, 1, 0, 0)',
         opacity: 1
       },
-      delay: 0.1,
+      delay: 0.2,
       ease: Power4.easeOut,
       onComplete: function () {
         var self = utils.options.self
+        if (utils.options.name === 'trackd') {
+          utils.options.self.isFinish = true
+        }
         // self.scrollBubbles.splice(0, 1)
         // self.currentBubble = ''
         // if (self.scrollBubbles.length === 0) {
@@ -94,6 +112,7 @@ class Projects extends React.Component {
     super(props)
     this.scrollBubbles = ['trusted', 'splitPic', 'cinepic', 'phyzseek', 'trackd']
     this.currentBubble = ''
+    this.isFinish = false
     var self = this
 
     this.scrollFunc = () => {
@@ -103,41 +122,18 @@ class Projects extends React.Component {
       var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
       var delta = 100
 
-      if (self.scrollBubbles[0] === 'trackd') {
-        delta = 50
-      }
+      // if (self.scrollBubbles[0] === 'trackd') {
+      //   delta = 50
+      // }
 
-      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
+      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '' && self.anim && self.anim.data && self.anim.data.finish) {
         self.currentBubble = self.scrollBubbles[0]
-        self.addAnimation(scrollAnimationProjects, { name: self.currentBubble, self: self })
+        if (!self.isFinish) {
+          self.addAnimation(scrollAnimationProjects, { name: self.currentBubble, self: self })
+        }
         self.scrollBubbles.splice(0, 1)
         self.currentBubble = ''
       }
-
-      // self.scrollBubbles.forEach(bubble => {
-      //  var BubbleOffset = document.getElementById(bubble).offsetTop
-      //
-      //  if ((scrolled + screenHeight - 100) > (BubbleOffset) && self.scrollBubbles.indexOf(bubble) === 0) {
-      //
-      //    console.log('BubbleOffset ', BubbleOffset)
-      //    console.log('screenHeight ', screenHeight)
-      //    console.log('scrolled ', scrolled)
-      //
-      //    var findIndex = self.scrollBubbles.findIndex(item => {
-      //      return item === bubble
-      //    })
-      //
-      //    if (self.anim && self.anim.data && self.anim.data.finish) {
-      //      console.log(bubble)
-      //      self.scrollBubbles.splice(findIndex, 1)
-      //      self.addAnimation(scrollAnimationProjects, { name: bubble })
-      //      // if (self.scrollBubbles.length === 0) {
-      //      //  self.scrollFunc = false
-      //      //  self.__runningAnimations.clear()
-      //      // }
-      //    }
-      //  }
-      // })
     }
   }
 
@@ -156,8 +152,8 @@ class Projects extends React.Component {
   }
 
   getStyle (isRight) {
-    if (this.scrollBubbles.length === 0) {
-      return {}
+    if (this.scrollBubbles.length === 0 && this.isFinish) {
+      return { opacity: 1 }
     } else {
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }
@@ -272,7 +268,7 @@ class Projects extends React.Component {
           </ProjectBubble>
         </div>
         <div className='bubble-row -project container' name='trackd' id='trackd'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+          style={this.getStyle()}>
           <ProjectBubble
             title='Trackd Studio'
             description={tr('TRACKD_DESCRIPTION', true)}

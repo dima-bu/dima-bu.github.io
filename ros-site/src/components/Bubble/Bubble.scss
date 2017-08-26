@@ -427,8 +427,22 @@ $hoverAnimation: all 300ms ease-out 0s;
       display: none;
     }
 
+    &:hover {
+      .bubble-corner {
+        display: none;
+      }
+    }
+
     &.-right {
       border-radius: 27px;
+    }
+
+    .corner-png-right {
+      display: none;
+    }
+
+    .corner-png-right {
+      display: none;
     }
 
     .bubble-corner {

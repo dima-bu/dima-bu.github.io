@@ -18,7 +18,8 @@ import { TimelineMax, Power4 } from 'gsap'
 //    })
 //}
 
-function scrollAnimation (utils) {
+function scrollAnimationFinish (utils) {
+  console.log('scrollFuncFinishs123', utils)
   const AnimationBubble = utils.target.find({ name: utils.options.name })
   return new TimelineMax()
     .to(AnimationBubble, 1, {
@@ -35,30 +36,42 @@ class FinishSection extends React.Component {
 
   constructor (props) {
     super(props)
-    this.scrollFunc = () => {
-      var self = this
-
-      var scrolled = window.pageYOffset
-      var screenHeight = screen.height
+    var self = this
+    this.scrollFuncFinish = () => {
       var BubbleOffset = document.getElementById('finishSection').offsetTop
-
+      var scrolled = window.pageYOffset
+      var screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
+      console.log('scrollFuncFinishs', scrolled + screenHeight, BubbleOffset)
       if ((scrolled + screenHeight) > (BubbleOffset)) {
-        self.addAnimation(scrollAnimation, {name: 'finishSection'});
+        self.addAnimation(scrollAnimationFinish, { name: 'finishSection' })
       }
     }
   }
 
   componentWillMount () {
     setTimeout(() => {
-      //this.anim2 = this.addAnimation(createAnim);
-      //this.scrollFunc();
-      //TweenLite.to(window, 1, {scrollTo:{y: document.getElementById('simple').offsetTop, x:0}, ease: Power2.easeInOut});
-    });
+      // this.anim2 = this.addAnimation(createAnim);
+      this.scrollFuncFinish()
+      // TweenLite.to(window, 1, {scrollTo:{y: document.getElementById('simple').offsetTop, x:0}, ease: Power2.easeInOut});
+    })
   }
 
   componentWillReceiveProps () {
-    if (this.scrollFunc) {
-      this.scrollFunc()
+    if (this.scrollFuncFinish) {
+      console.log('componentWillReceiveProps')
+      this.scrollFuncFinish()
+    }
+  }
+
+  getStyle (isRight) {
+    if (this.isFinish) {
+      return { opacity: 1 }
+    } else {
+      if (isRight) {
+        return { opacity: 0, transform: 'translateX(100px)' }
+      } else {
+        return { opacity: 0, transform: 'translateX(-100px)' }
+      }
     }
   }
 

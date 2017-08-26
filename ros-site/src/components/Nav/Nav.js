@@ -15,7 +15,8 @@ class Nav extends Component {
     items: PropTypes.arrayOf(
       PropTypes.shape({
         title: PropTypes.string,
-        path: PropTypes.string
+        path: PropTypes.string,
+        initHidden: PropTypes.bool
       })
     )
   };
@@ -48,6 +49,7 @@ class Nav extends Component {
     const hash = document.location.hash;
 
     const onClickHandler = (path) => {
+      console.log(onClickHandler)
       onChangeHash(path)
     }
 

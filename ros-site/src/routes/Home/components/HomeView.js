@@ -127,7 +127,7 @@ class HomeView extends React.Component {
         arr.push( <Gif key='gif' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
       }
       if (elem === 'contacts') {
-        arr.push( <Contacts key='contacts' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem}  yPosition={this.props.yPosition}  isHiddenText={this.props.isHiddenText}/>)
+        arr.push( <Contacts key='contacts' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition}  isHiddenText={this.props.isHiddenText}/>)
       }
 
       if (elem === 'otherSite') {
@@ -139,16 +139,17 @@ class HomeView extends React.Component {
     return (
       <div>
         {arr}
+        {this.getFinishBlock()}
       </div>
     )
   }
 
-  getFinishBlock(){
+  getFinishBlock() {
     let pathname = this.getHash();
     const elems = pathname.split('-');
 
-    if (elems.length === 4) {
-      return <FinishSection isHiddenText={this.props.isHiddenText}  />;
+    if (elems.length === 4 && elems[3] !== 'otherSite') {
+      return <FinishSection isHiddenText={this.props.isHiddenText} yPosition={this.props.yPosition} />;
     }
   }
 
@@ -183,7 +184,7 @@ class HomeView extends React.Component {
             </Bubble>
           </div>
           {this.getView()}
-          {this.getFinishBlock()}
+
         </div>
         <div name="navWrapper" style={{opacity: 1}}>
           <Nav onChangeHash={this.handleNavigateClick} isTouch={this.isTouch} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>

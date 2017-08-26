@@ -30,7 +30,7 @@ function createAnimOtherSite (utils) {
       ease: Power4.easeOut,
       onComplete: () => {
         this.data = { finish : true }
-
+        utils.options.self.isFinish = true
         if (window.pageYOffset + 200 > document.getElementById('ortoSite').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
@@ -38,8 +38,10 @@ function createAnimOtherSite (utils) {
           })
         } else {
           if (utils.options.isClicked) {
-            var hiOtherSiteOffset = document.getElementById('hiOtherSite').offsetTop
-            Scroll.animateScroll.scrollTo(hiOtherSiteOffset - 120, {
+            var ortoSiteOffset = document.getElementById('ortoSite').offsetTop
+            var ortoSiteHeight = document.getElementById('ortoSite').offsetHeight
+            var screenHeight = window.innerHeight
+            Scroll.animateScroll.scrollTo((ortoSiteOffset - screenHeight + (ortoSiteHeight / 2) + 20), {
               duration: 400,
               smooth: true
             })
@@ -76,40 +78,39 @@ class OtherSite extends React.Component {
     this.scrollBubbles = []
     this.isFinish = false
     this.currentBubble = ''
-    var self = this
 
-    this.scrollFuncOtherSite = () => {
-      var scrolled = window.pageYOffset
-      var screenHeight = screen.height
-      var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
-      var delta = 100
-
-      if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
-        self.currentBubble = self.scrollBubbles[0]
-        self.addAnimation(createAnimOtherSite, { name: self.currentBubble, self: self })
-        self.scrollBubbles.splice(0, 1)
-        self.currentBubble = ''
-      }
-    }
+    // this.scrollFuncOtherSite = () => {
+    //   var scrolled = window.pageYOffset
+    //   var screenHeight = screen.height
+    //   var BubbleOffset = document.getElementById('').offsetTop
+    //   var delta = 100
+    //
+    //   if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
+    //     self.currentBubble = self.scrollBubbles[0]
+    //     self.addAnimation(createAnimOtherSite, { name: self.currentBubble, self: self })
+    //     self.scrollBubbles.splice(0, 1)
+    //     self.currentBubble = ''
+    //   }
+    // }
   }
 
-  reset () {
-    this.__runningAnimations.clear()
-  }
+  // reset () {
+  //   this.__runningAnimations.clear()
+  // }
 
   componentWillMount () {
     setTimeout(() => {
       this.anim2 = this.addAnimation(createAnimOtherSite, { isClicked: this.props.isClicked, self: this })
-      this.scrollFuncOtherSite()
+      // this.scrollFuncOtherSite()
     })
   }
 
   componentWillReceiveProps () {
-    if (this.scrollFuncOtherSite) {
-      this.scrollFuncOtherSite()
-    } else {
-      return false
-    }
+    // if (this.scrollFuncOtherSite) {
+    //   this.scrollFuncOtherSite()
+    // } else {
+    //   return false
+    // }
   }
 
   getStyle (isRight) {

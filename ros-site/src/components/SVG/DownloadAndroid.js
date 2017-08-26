@@ -24,7 +24,7 @@ const DownloadAndroid = (props) => {
 
   return (
     <svg  xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40" style={{fontWeight: 'normal'}} className="market-btn-wrapper">
-      <g xmlns="http://www.w3.org/2000/svg" id="design" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd">
+      <g xmlns="http://www.w3.org/2000/svg" id="design" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g id="Android-download-eng" fillRule="nonzero">
           <g id="artwork">
             <path className="download-android_bg" d="M130,40 L5,40 C2.2,40 0,37.8 0,35 L0,5 C0,2.2 2.2,0 5,0 L130,0 C132.8,0 135,2.2 135,5 L135,35 C135,37.7 132.8,40 130,40 Z" id="Shape"/>

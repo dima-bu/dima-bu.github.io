@@ -70,7 +70,6 @@ function createAnimContacts (utils) {
                 smooth: true
               })
             }
-
           } else {
             Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
               duration: 400,
@@ -84,10 +83,15 @@ function createAnimContacts (utils) {
 
 function scrollAnimationContacts (utils) {
   const AnimationBubble = utils.target.find({ name: utils.options.name })
+
+  if (utils.options.self.isFinish) {
+    return false
+  }
+
   return new TimelineMax()
     .to(AnimationBubble, 1, {
       css: {
-        transform: 'matrix(1, 0, 0, 1, 0, 0);',
+        transform: 'matrix(1, 0, 0, 1, 0, 0)',
         opacity: 1
       },
       delay: 0.2,
@@ -117,7 +121,9 @@ class Contacts extends React.Component {
 
       if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
         self.currentBubble = self.scrollBubbles[0]
-        self.addAnimation(scrollAnimationContacts, { name: self.currentBubble, self: self })
+        if (!self.isFinish) {
+          self.addAnimation(scrollAnimationContacts, { name: self.currentBubble, self: self })
+        }
         self.scrollBubbles.splice(0, 1)
         self.currentBubble = ''
       }
@@ -161,7 +167,7 @@ class Contacts extends React.Component {
 
   getStyle (isRight) {
     if (this.scrollBubbles.length === 0 && this.isFinish) {
-      return {}
+      return { opacity: 1 }
     } else {
       if (isRight) {
         return { opacity: 0, transform: 'translateX(100px)' }

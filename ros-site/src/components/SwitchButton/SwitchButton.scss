@@ -188,11 +188,11 @@ $transition : 0.3s;
   }
 
   .switch-button.sm .switch-label {
-    font-weight: bold;
+    font-weight: normal;
     color: $color-blue;
   }
   .switch-button.sm .switch-label.active {
-    font-weight: normal;
+    font-weight: bold;
     color: $color-text;
   }
 }
