@@ -144,12 +144,16 @@ class HomeView extends React.Component {
     )
   }
 
-  getFinishBlock() {
-    let pathname = this.getHash();
-    const elems = pathname.split('-');
+  getFinishBlock () {
+    let pathname = this.getHash()
+    const elems = pathname.split('-')
 
-    if (elems.length === 4 && elems[3] !== 'otherSite') {
-      return <FinishSection isHiddenText={this.props.isHiddenText} yPosition={this.props.yPosition} />;
+    if (elems.length === 4) {
+      if (elems[3] !== 'otherSite') {
+        return <FinishSection isHiddenText={this.props.isHiddenText} isFull yPosition={this.props.yPosition} />
+      } else {
+        return <FinishSection isHiddenText={this.props.isHiddenText} yPosition={this.props.yPosition} />
+      }
     }
   }
 

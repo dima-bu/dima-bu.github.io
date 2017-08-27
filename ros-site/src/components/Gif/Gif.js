@@ -2,7 +2,6 @@ import React from 'react'
 import './Gif.scss'
 import Bubble from 'components/Bubble/Bubble.js'
 import Time from './../Time/Time.js'
-import ReactDOM from 'react-dom'
 import { tr } from 'lib/locale.js'
 import video1 from './assets/cat1.mp4'
 import video2 from './assets/cat4.mp4'
@@ -97,7 +96,6 @@ class Gif extends React.Component {
     this.state = { key: Math.floor(Math.random() * 7) + 1 }
     this.handleButtonClick = () => {
       this.setState({ key:  Math.floor(Math.random() * 7) + 1 })
-      ReactDOM.render()
     }
     this.scrollFunc = () => {
       var scrolled = window.pageYOffset
@@ -113,18 +111,18 @@ class Gif extends React.Component {
     }
   }
 
-  shouldComponentUpdate (nextProps, nextState) {
-    if (this.state.key !== nextState.key) {
-      return true
-    }
-  }
+  //shouldComponentUpdate (nextProps, nextState) {
+  //  if (this.state.key !== nextState.key) {
+  //    return true
+  //  }
+  //}
 
   componentWillMount () {
     setTimeout(() => {
       this.anim3 = this.addAnimation(createAnimGif, { isClicked: this.props.isClicked })
       this.scrollFunc()
 
-      //Scroll.animateScroll.scrollTo(window.pageYOffset+200, {
+      // Scroll.animateScroll.scrollTo(window.pageYOffset+200, {
       //  duration: 400,
       //  smooth: true
       //}, 3000);

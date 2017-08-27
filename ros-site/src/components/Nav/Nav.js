@@ -67,6 +67,10 @@ class Nav extends Component {
       }
     }
 
+    if (itemsMap.length === 0) {
+      return null
+    }
+
     return (
     <div>
     {onChangeHash &&

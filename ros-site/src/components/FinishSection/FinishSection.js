@@ -4,8 +4,11 @@ import Time from './../Time/Time.js'
 import { tr } from 'lib/locale.js'
 import GSAP from 'react-gsap-enhancer'
 import { TimelineMax, Power4 } from 'gsap'
+import unicornImg from './assets/unicorn.png'
+import unicornImg2 from './assets/unicorn2.png'
+import './FinishSections.scss'
 
-//function createAnim(utils) {
+// function createAnim(utils) {
 //  const finishSection = utils.target.find({name: 'finishSection'});
 //
 //  return new TimelineMax()
@@ -38,6 +41,9 @@ class FinishSection extends React.Component {
     super(props)
     var self = this
     this.scrollFuncFinish = () => {
+      if (!props.isFull) {
+        return false
+      }
       var BubbleOffset = document.getElementById('finishSection').offsetTop
       var scrolled = window.pageYOffset
       var screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
@@ -75,20 +81,59 @@ class FinishSection extends React.Component {
     }
   }
 
+  reloadPage (e) {
+    sessionStorage.setItem('touchCount', 1)
+    // e.preventDefault()
+    // location.reload()
+  }
+
+  getUnicornText () {
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
+      return tr('WHERE_HE_TOUCH', true)
+    }
+    return tr('DONT_TOUCH_UNICORN', true)
+  }
+
+  getUnicornImg () {
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
+      return <img src={unicornImg2} width='155' height='74' alt='' />
+    }
+    return <img src={unicornImg} width='59' height='56' alt='' />
+  }
+
+  getClassName () {
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
+      return 'clearfix bubble-row container unicorn-section oneTouch'
+    }
+    return 'clearfix bubble-row container unicorn-section'
+  }
+
   render () {
     return (
       <div className='clearfix'>
-        <div className='clearfix bubble-row container' id='finishSection' name='finishSection'
-          style={{ opacity: 0, transform: 'translateX(-100px)' }}>
-          <div className='bubble-wrapper'>
-            <Time from />
-            <Bubble size='lg' type='primary' className='w_70p br-desctop' isHiddenText={this.props.isHiddenText}>
-              {tr('CONTACTS_COME_AGAIN', true)}
-            </Bubble>
+        {this.props.isFull &&
+          <div className='clearfix bubble-row container' id='finishSection' name='finishSection'
+               style={{ opacity: 0, transform: 'translateX(-100px)' }}>
+            <div className='bubble-wrapper'>
+              <Time from />
+              <Bubble size='lg' type='primary' className='w_70p br-desctop' isHiddenText={this.props.isHiddenText }>
+                {tr('CONTACTS_COME_AGAIN', true)}
+              </Bubble>
+            </div>
+          </div>
+        }
+        <div className={this.getClassName()} id='unicornSection' name='unicornSection'>
+          <div className='bubble w_70p'>
+            <a href='http://dima-bu.github.io/ros-site/dist/' onClick={this.reloadPage} className='unicorn_link' >
+              <span className='unicorn_wrapper'>
+                {this.getUnicornImg()}
+                <span className='unicorn-section_text'>{this.getUnicornText()}</span>
+              </span>
+            </a>
           </div>
         </div>
       </div>)
   }
 }
 
-export default (GSAP(FinishSection));
+export default (GSAP(FinishSection))

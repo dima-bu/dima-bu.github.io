@@ -1,0 +1,64 @@
+@import './../../styles/variables';
+
+.unicorn-section .bubble{
+  text-align: center;
+}
+
+.unicorn_link {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover .unicorn-section_text {
+    color: $color-text;
+    text-decoration: none;
+  }
+  .unicorn-section_text {
+    color: $color-text;
+    text-decoration: none;
+  }
+}
+
+.unicorn-section_text {
+  font-size: 22px;
+  line-height: 34px;
+  color: $color-text;
+  position: absolute;
+  width: 240px;
+  text-align: left;
+  word-wrap: break-word;
+  line-height: 56px;
+  margin-left:  25px;
+}
+
+.unicorn_wrapper {
+  position: relative;
+  width: 59px;
+  height: 56px;
+  display: inline-block;
+}
+
+.oneTouch {
+  .unicorn_wrapper {
+    width: 155px;
+    height: 74px;
+  }
+
+  .unicorn-section_text {
+    line-height: 74px;
+  }
+}
+
+@media (max-width: $screen-xs-max ) {
+  .unicorn-section.bubble-row.container {
+    padding-left: 40px;
+    .bubble {
+      text-align: left;
+    }
+  }
+  
+  .unicorn-section_text {
+    font-size: 16px;
+    width: 200px;
+  }
+}
+
