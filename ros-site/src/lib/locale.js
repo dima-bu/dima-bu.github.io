@@ -96,12 +96,47 @@ export const formatText = (result) => {
   return result;
 };
 
+export const jsonp = (url, callback) => {
+  let callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
+  window[callbackName] = function(data) {
+    delete window[callbackName];
+    document.body.removeChild(script);
+    callback(data);
+  };
+
+  let script = document.createElement('script');
+  script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
+  document.body.appendChild(script);
+}
+
+export const jsonpPromise = (url) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.indexOf('ru') || userLang.indexOf('RU')) {
+        resolve('ru')
+      } else {
+        resolve('en')
+      }
+
+    }, 0);
+
+    // jsonp(url, data => {
+    //  if (data && data['X-Appengine-Country']) {
+    //    resolve(data['X-Appengine-Country'])
+    //  } else {
+    //    reject('jsonpPromise')
+    //  }
+    // })
+  })
+}
+
 export const initTranslationsObject = () => {
 
-  const promisses = [];
-  const locales = ['ru', 'en'];
+  const promisses = []
+  const locales = ['ru', 'en']
 
-  locales.forEach((lang)=>{
+  locales.forEach((lang) => {
     promisses.push(new Promise((resolve, reject)=>{
       fetch(`./../../i18n/${lang}.json`).then((resp) => {
         let langObj = {
@@ -114,6 +149,8 @@ export const initTranslationsObject = () => {
       });
     }))
   });
+
+ // promisses.push(jsonpPromise('http://ajaxhttpheaders.appspot.com'))
 
   return Promise.all(promisses).then((values) => {
     return values;

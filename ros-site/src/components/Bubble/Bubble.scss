@@ -477,6 +477,7 @@ $hoverAnimation: all 300ms ease-out 0s;
 .bubble.size-lg.with-video video {
   width: 480px;
   height: 480px;
+  border-radius: 8px;
 }
 
 @media (max-width: $screen-xs-max ){

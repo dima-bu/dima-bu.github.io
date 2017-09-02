@@ -67,7 +67,8 @@ class HomeView extends React.Component {
     super(props);
     this.state = {
       isSplash: true,
-      isHiddenSplash: false
+      isHiddenSplash: false,
+      i18n: props.i18n
     };
     this.isTouch = false;
     this.clikedElem = false;
@@ -75,20 +76,8 @@ class HomeView extends React.Component {
   }
 
   componentDidMount() {
-    var throttled = throttle(()=>{this.props.scrollWindow(window.pageYOffset)}, 500);
+    var throttled = throttle(() => {this.props.scrollWindow(window.pageYOffset)}, 500);
     window.onscroll = throttled;
-
-    setTimeout(() => {
-      this.setState({
-        isSplash: false
-      })
-    }, 700);
-
-    setTimeout(() => {
-      this.setState({
-        isHiddenSplash: true
-      })
-    }, 1200);
   }
 
   handleNavigateClick(e) {
@@ -157,13 +146,32 @@ class HomeView extends React.Component {
     }
   }
 
-  render() {
+  showScreen () {
+    if (this.state.isSplash) {
+
+     this.setState({
+          isSplash: false
+     })
+
+     setTimeout(() => {
+        this.setState({
+          isHiddenSplash: true
+        })
+      }, 200)
+    }
+  }
+
+  render () {
 
     const getStyleWrapper = () => {
-      //const hash = this.getHash();
-      //if (!hash || this.isTouch) {
+      // const hash = this.getHash();
+      // if (!hash || this.isTouch) {
       //  return {transform: 'translateY(calc(50vh - 300px)'}
-      //}
+      // }
+    }
+
+    if (this.props.i18n.locale) {
+      this.showScreen()
     }
 
     return (

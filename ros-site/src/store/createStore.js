@@ -4,7 +4,7 @@ import { browserHistory } from 'react-router'
 import makeRootReducer from './reducers'
 import { updateLocation } from './location'
 import {loadTranslations, setLocale, syncTranslationWithStore} from 'lib/react-redux-i18n'
-import {initTranslationsObject} from 'lib/locale'
+import {initTranslationsObject, jsonp, jsonpPromise} from 'lib/locale'
 
 export default (initialState = {}) => {
   // ======================================================
@@ -43,22 +43,31 @@ export default (initialState = {}) => {
   store.unsubscribeHistory = browserHistory.listen(updateLocation(store))
   syncTranslationWithStore(store)
 
-  initTranslationsObject().then((langArray)=>{
-    const translationsObject = {};
+  initTranslationsObject().then((langArray) => {
+
+    const translationsObject = {}
+
     langArray.forEach(langObj => {
       translationsObject[langObj.lang] = langObj.vocabulary
-    });
+    })
 
     store.dispatch(loadTranslations(translationsObject));
 
-    if(sessionStorage.getItem('lang')){
-      store.dispatch(setLocale(sessionStorage.getItem('lang')));
-    } else {
-      store.dispatch(setLocale('ru'));
+     if (sessionStorage.getItem('lang')) {
+      store.dispatch(setLocale(sessionStorage.getItem('lang')))
+     } else {
+
+    jsonpPromise('http://ajaxhttpheaders.appspot.com').then((resp) => {
+      store.dispatch(setLocale(resp))
+        // if (data && data['X-Appengine-Country'] && data['X-Appengine-Country'] === 'RU') {
+        //      store.dispatch(setLocale('ru'))
+        //    } else {
+        //      store.dispatch(setLocale('en'))
+        //    }
+    })
     }
 
-
-  });
+  })
 
   if (module.hot) {
     module.hot.accept('./reducers', () => {
