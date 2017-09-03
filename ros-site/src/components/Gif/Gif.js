@@ -13,6 +13,7 @@ import video7 from './assets/cat7.mp4'
 import GSAP from 'react-gsap-enhancer'
 import { TimelineMax, Power4 } from 'gsap'
 import Scroll from 'react-scroll'
+import Reload from 'components/SVG/Reload.js'
 
 function createAnimGif (utils) {
   const first = utils.target.find({ name: 'hiGif' })
@@ -208,8 +209,8 @@ class Gif extends React.Component {
           >
           <div className='bubble-wrapper'>
             <Time from />
-            <div onClick={this.handleButtonClick}>обновить</div>
             <Bubble size='lg' type='primary' autoWidth withVideo>
+              <div onClick={this.handleButtonClick} className='reload-wrapper'><Reload /></div>
               <video id='background-video' autoPlay='autoplay' loop width='480' height='480' type='video/mp4' src={getVideo()} />
             </Bubble>
           </div>
