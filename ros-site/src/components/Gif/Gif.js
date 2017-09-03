@@ -95,9 +95,7 @@ class Gif extends React.Component {
     this.currentBubble = ''
     var self = this
     this.state = { key: Math.floor(Math.random() * 7) + 1 }
-    this.handleButtonClick = () => {
-      this.setState({ key:  Math.floor(Math.random() * 7) + 1 })
-    }
+    this.textInput;
     this.scrollFunc = () => {
       var scrolled = window.pageYOffset
       var screenHeight = screen.height
@@ -128,6 +126,14 @@ class Gif extends React.Component {
       //  smooth: true
       //}, 3000);
     })
+  }
+  handleButtonClick = (e) => {
+    this.textInput.className = this.textInput.className + ' -animate'
+    this.setState({ key:  Math.floor(Math.random() * 7) + 1 })
+
+    setTimeout(() => {
+      this.textInput.className = 'reload-wrapper'
+    }, 400)
   }
 
   componentWillReceiveProps () {
@@ -210,7 +216,7 @@ class Gif extends React.Component {
           <div className='bubble-wrapper'>
             <Time from />
             <Bubble size='lg' type='primary' autoWidth withVideo>
-              <div onClick={this.handleButtonClick} className='reload-wrapper'><Reload /></div>
+              <div onClick={this.handleButtonClick} className='reload-wrapper' ref={(input) => { this.textInput = input }} ><Reload /></div>
               <video id='background-video' autoPlay='autoplay' loop width='480' height='480' type='video/mp4' src={getVideo()} />
             </Bubble>
           </div>
