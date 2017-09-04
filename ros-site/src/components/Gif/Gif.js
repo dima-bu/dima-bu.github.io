@@ -3,13 +3,20 @@ import './Gif.scss'
 import Bubble from 'components/Bubble/Bubble.js'
 import Time from './../Time/Time.js'
 import { tr } from 'lib/locale.js'
-import video1 from './assets/cat1.mp4'
-import video2 from './assets/cat4.mp4'
-import video3 from './assets/cat3.mp4'
-import video4 from './assets/cat4.mp4'
-import video5 from './assets/cat5.mp4'
-import video6 from './assets/cat6.mp4'
-import video7 from './assets/cat7.mp4'
+import video1 from './assets/cat-cleaner.mp4'
+import video2 from './assets/cat-commentator.mp4'
+import video3 from './assets/cat-dancing.mp4'
+import video4 from './assets/cat-fat.mp4'
+import video5 from './assets/cat-sup.mp4'
+import video6 from './assets/dog.mp4'
+import video7 from './assets/kitten-brick.mp4'
+import video8 from './assets/cat7.mp4'
+import video9 from './assets/kitten-dj.mp4'
+import video10 from './assets/kitten-give-up.mp4'
+import video11 from './assets/kitten-masage.mp4'
+import video12 from './assets/cat1.mp4'
+import video13 from './assets/cat4.mp4'
+
 import GSAP from 'react-gsap-enhancer'
 import { TimelineMax, Power4 } from 'gsap'
 import Scroll from 'react-scroll'
@@ -36,16 +43,16 @@ function createAnimGif (utils) {
       onComplete: () => {
         this.data = { finish : true }
 
-        if (window.pageYOffset > document.getElementById('hiGif').offsetTop) {
+        if (window.pageYOffset + 200 > document.getElementById('hiGif').offsetHeight) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
           })
         } else {
           if (utils.options.isClicked) {
-            var hiOffset = document.getElementById('hiGif').offsetTop
             var catchOneOffset = document.getElementById('catchOne').offsetTop
             var catchOneHeight = document.getElementById('catchOne').offsetHeight
+            var hiOffset = document.getElementById('hiGif').offsetTop
             var screenHeight = window.innerHeight
 
             if (window.location.hash && window.location.hash !== '#gif') {
@@ -124,12 +131,12 @@ class Gif extends React.Component {
       // Scroll.animateScroll.scrollTo(window.pageYOffset+200, {
       //  duration: 400,
       //  smooth: true
-      //}, 3000);
+      // }, 3000);
     })
   }
   handleButtonClick = (e) => {
     this.textInput.className = this.textInput.className + ' -animate'
-    this.setState({ key:  Math.floor(Math.random() * 7) + 1 })
+    this.setState({ key:  Math.floor(Math.random() * 13) + 1 })
 
     setTimeout(() => {
       this.textInput.className = 'reload-wrapper'
@@ -177,6 +184,18 @@ class Gif extends React.Component {
           return video6
         case 7:
           return video7
+        case 8:
+          return video8
+        case 9:
+          return video9
+        case 10:
+          return video10
+        case 11:
+          return video11
+        case 12:
+          return video12
+        case 13:
+          return video13
       }
     }
 

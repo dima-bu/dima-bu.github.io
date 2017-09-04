@@ -48,6 +48,27 @@
   }
 }
 
+.secondTouch {
+
+  .unicorn_wrapper {
+    width: 226px;
+    height: 59px;
+  }
+
+  .bubble.w_70p {
+    margin-left: 50px;
+  }
+  
+
+  .unicorn-section_text {
+    display: none;
+  }
+
+  a {
+    cursor: default;
+  }
+}
+
 @media (max-width: $screen-xs-max ) {
   .unicorn-section.bubble-row.container {
     padding-left: 40px;
@@ -60,5 +81,8 @@
     font-size: 16px;
     width: 200px;
   }
+   .unicorn-section.bubble-row.container.secondTouch .bubble {
+      text-align: center;
+   }
 }
 

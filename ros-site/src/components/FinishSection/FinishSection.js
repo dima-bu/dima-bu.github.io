@@ -6,6 +6,7 @@ import GSAP from 'react-gsap-enhancer'
 import { TimelineMax, Power4 } from 'gsap'
 import unicornImg from './assets/unicorn.png'
 import unicornImg2 from './assets/unicorn2.png'
+import unicornImg3 from './assets/unicorn3.png'
 import './FinishSections.scss'
 
 // function createAnim(utils) {
@@ -82,14 +83,27 @@ class FinishSection extends React.Component {
   }
 
   reloadPage (e) {
-    sessionStorage.setItem('touchCount', 1)
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '2') {
+      e.preventDefault()
+      e.stopPropagation()
+      return false
+    }
+
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
+      sessionStorage.setItem('touchCount', 2)
+    } else {
+      sessionStorage.setItem('touchCount', 1)
+    }
     // e.preventDefault()
     // location.reload()
   }
 
   getUnicornText () {
     if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
-      return tr('WHERE_HE_TOUCH', true)
+      return tr('DONT_TOUCH_DOCTOR', true)
+    }
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '2') {
+      return ''
     }
     return tr('DONT_TOUCH_UNICORN', true)
   }
@@ -98,6 +112,9 @@ class FinishSection extends React.Component {
     if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
       return <img src={unicornImg2} width='155' height='74' alt='' />
     }
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '2') {
+      return <img src={unicornImg3} width='226' height='59' alt='' />
+    }
     return <img src={unicornImg} width='59' height='56' alt='' />
   }
 
@@ -105,6 +122,11 @@ class FinishSection extends React.Component {
     if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '1') {
       return 'clearfix bubble-row container unicorn-section oneTouch'
     }
+
+    if (sessionStorage.getItem('touchCount') && sessionStorage.getItem('touchCount') === '2') {
+      return 'clearfix bubble-row container unicorn-section secondTouch'
+    }
+
     return 'clearfix bubble-row container unicorn-section'
   }
 
@@ -124,7 +146,7 @@ class FinishSection extends React.Component {
         }
         <div className={this.getClassName()} id='unicornSection' name='unicornSection'>
           <div className='bubble w_70p'>
-            <a href='http://dima-bu.github.io/ros-site/dist/' onClick={this.reloadPage} className='unicorn_link' >
+            <a href='dima-bu.github.io/ros-site/dist/' onClick={this.reloadPage} className='unicorn_link' >
               <span className='unicorn_wrapper'>
                 {this.getUnicornImg()}
                 <span className='unicorn-section_text'>{this.getUnicornText()}</span>

@@ -39,20 +39,19 @@ function createAnimContacts (utils) {
         this.data = { finish : true }
 
         // проверку на то что уже проскролели вниз
-        if (window.pageYOffset + 100 > document.getElementById('simple').offsetTop) {
+        if (window.pageYOffset + 200 > document.getElementById('simple').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
           })
         } else {
           if (utils.options.isClicked) {
-            var hiContactsOffset = document.getElementById('hiContacts').offsetTop
             // var hiContactsHeight = document.getElementById('hiContacts').offsetHeight
+            var screenHeight = window.innerHeight
             var simpleContactsOffset = document.getElementById('simple').offsetTop
             var simpleContactsHeight = document.getElementById('simple').offsetHeight
-
             // var delta = hiContactsOffset - window.pageYOffset
-            var screenHeight = window.innerHeight
+            // var screenHeight = window.innerHeight
 
             // console.log('pageYOffset  ', window.pageYOffset)
             // console.log('hiContactsHeight ', hiContactsHeight)
@@ -65,6 +64,7 @@ function createAnimContacts (utils) {
                 smooth: true
               })
             } else {
+              var hiContactsOffset = document.getElementById('hiContacts').offsetTop
               Scroll.animateScroll.scrollTo(hiContactsOffset, {
                 duration: 400,
                 smooth: true
@@ -117,7 +117,7 @@ class Contacts extends React.Component {
       var scrolled = window.pageYOffset
       var screenHeight = screen.height
       var BubbleOffset = document.getElementById(self.scrollBubbles[0]).offsetTop
-      var delta = 100
+      var delta = 120
 
       if ((scrolled + screenHeight - delta) > (BubbleOffset) && self.currentBubble === '') {
         self.currentBubble = self.scrollBubbles[0]
