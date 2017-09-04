@@ -31,8 +31,7 @@ export default class Time extends Component {
         {!from &&
           tr('YOU')
         }
-        ,
-        {this.state.time}
+        , {this.state.time}
       </div>
     )
   }

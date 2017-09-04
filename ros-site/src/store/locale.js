@@ -9,13 +9,15 @@ export const actions = {
 
 const initialState = {
   isLoadingLocale: true
-};
+}
+
+const SET_LOADING = 'SET_LOADING'
 
 const ACTION_HANDLERS = {
   [SET_LOADING]    : (state, action) => {
-    return Object.assign({}, state, { hashState: window.location.hash });
+    return Object.assign({}, state, { hashState: window.location.hash })
   }
-};
+}
 
 export default function levelOneReducer (state = initialState, action) {
 

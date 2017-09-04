@@ -120,7 +120,7 @@ class HomeView extends React.Component {
       }
 
       if (elem === 'otherSite') {
-        arr.push( <OtherSite key='OtherSite' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
+        arr.push( <OtherSite key='OtherSite' locale={this.props.i18n.locale} index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
       }
 
     });

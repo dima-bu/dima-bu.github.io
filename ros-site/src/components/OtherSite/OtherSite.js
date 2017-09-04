@@ -127,6 +127,14 @@ class OtherSite extends React.Component {
 
   render () {
     const props = this.props
+
+    const getLink = () => {
+      if (props.locale === 'ru') {
+        return 'http://about.rosberry.com/ru'
+      }
+      return 'http://about.rosberry.com/'
+    }
+
     return (
       <div className='clearfix'>
         <div className='clearfix right-bubble bubble-row container' name='hiOtherSite' id='hiOtherSite'
@@ -148,7 +156,7 @@ class OtherSite extends React.Component {
             <Bubble size='lg' type='primary' className='w_70p' isHiddenText={props.isHiddenText}>
               {tr('ORTO_SITE', true)}
               <div style={{ marginTop: '25px' }}>
-                <Button isLink href='http://about.rosberry.com'
+                <Button isLink href={getLink()}
                   caption={tr('GO_TO_SITE', true)} />
               </div>
             </Bubble>
