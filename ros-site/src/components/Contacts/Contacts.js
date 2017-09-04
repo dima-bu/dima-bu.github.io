@@ -39,7 +39,7 @@ function createAnimContacts (utils) {
         this.data = { finish : true }
 
         // проверку на то что уже проскролели вниз
-        if (window.pageYOffset + 200 > document.getElementById('simple').offsetTop) {
+        if (window.pageYOffset + 200 > document.getElementById('hiContacts').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true

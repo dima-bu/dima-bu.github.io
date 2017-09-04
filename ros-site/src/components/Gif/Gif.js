@@ -43,7 +43,7 @@ function createAnimGif (utils) {
       onComplete: () => {
         this.data = { finish : true }
 
-        if (window.pageYOffset + 200 > document.getElementById('hiGif').offsetHeight) {
+        if (window.pageYOffset + 200 > document.getElementById('hiGif').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
@@ -52,7 +52,7 @@ function createAnimGif (utils) {
           if (utils.options.isClicked) {
             var catchOneOffset = document.getElementById('catchOne').offsetTop
             var catchOneHeight = document.getElementById('catchOne').offsetHeight
-            var hiOffset = document.getElementById('hiGif').offsetTop
+
             var screenHeight = window.innerHeight
 
             if (window.location.hash && window.location.hash !== '#gif') {
@@ -61,6 +61,7 @@ function createAnimGif (utils) {
                 smooth: true
               })
             } else {
+              var hiOffset = document.getElementById('hiGif').offsetTop
               Scroll.animateScroll.scrollTo(hiOffset - 20, {
                 duration: 400,
                 smooth: true

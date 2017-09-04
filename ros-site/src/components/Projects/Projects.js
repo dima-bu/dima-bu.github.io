@@ -46,11 +46,11 @@ function createAnim (utils) {
         } else {
           // если это не первая серия баблов
           if (utils.options.isClicked) {
-            var firstOffset = document.getElementById('firstBubble').offsetTop
+            var firstOffset = document.getElementById('firstBubble').offsetTop;
             var secondBubbleOffset = document.getElementById('secondBubble').offsetTop
-            var secondBubbleHeight = document.getElementById('secondBubble').offsetHeight
+            var secondBubbleHeight = document.getElementById('secondBubble').offsetHeight;
+            var screenHeight = window.innerHeight;
 
-            var screenHeight = window.innerHeight
             if (window.location.hash && window.location.hash !== '#projects') {
               Scroll.animateScroll.scrollTo((secondBubbleOffset - screenHeight + (secondBubbleHeight / 2) + 20), {
                 duration: 400,

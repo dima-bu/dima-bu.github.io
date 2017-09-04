@@ -32,7 +32,7 @@ function createAnimOtherSite (utils) {
         this.data = { finish : true }
         utils.options.self.isFinish = true
 
-        if (window.pageYOffset + window.innerHeight - document.getElementById('ortoSite').offsetHeight > document.getElementById('ortoSite').offsetTop) {
+        if (window.pageYOffset + 200 > document.getElementById('hiOtherSite').offsetTop) {
           Scroll.animateScroll.scrollTo(window.pageYOffset + 1, {
             duration: 400,
             smooth: true
