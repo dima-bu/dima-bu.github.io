@@ -9,7 +9,7 @@ import LevelOneRoute from './LevelOne'
 
 export const createRoutes = (store) => ({
   // path        : '/ros-site/dist/',
-  path        : (__DEV__ ? '/' : '/ros-site/dist/'),
+  path        : (__DEV__ ? '/' : '/'),
   component   : CoreLayout,
   indexRoute  : Home,
   childRoutes : [
