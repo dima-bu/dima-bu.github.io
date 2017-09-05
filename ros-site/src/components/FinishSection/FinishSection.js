@@ -131,6 +131,14 @@ class FinishSection extends React.Component {
   }
 
   render () {
+    const getLink = () => {
+      if (window.location.host === 'dima-bu.github.io') { return 'http://dima-bu.github.io/ros-site/dist/' }
+
+      if (window.location.host === '') { return 'http://localhost:3000/' } else {
+        return 'http://rosberry.com/'
+      }
+    }
+
     return (
       <div className='clearfix'>
         {this.props.isFull &&
@@ -146,7 +154,7 @@ class FinishSection extends React.Component {
         }
         <div className={this.getClassName()} id='unicornSection' name='unicornSection'>
           <div className='bubble w_70p'>
-            <a href='dima-bu.github.io/ros-site/dist/' onClick={this.reloadPage} className='unicorn_link' >
+            <a href={getLink()} onClick={this.reloadPage} className='unicorn_link' >
               <span className='unicorn_wrapper'>
                 {this.getUnicornImg()}
                 <span className='unicorn-section_text'>{this.getUnicornText()}</span>
