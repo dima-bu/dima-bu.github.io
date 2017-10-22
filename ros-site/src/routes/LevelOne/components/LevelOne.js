@@ -13,9 +13,11 @@ class LevelOne extends React.Component {
   }
 
   hasPath (path) {
-    const pathname = hashHistory.getCurrentLocation().pathname;
-    return (pathname.indexOf(path) >= 0);
+    const pathname = hashHistory.getCurrentLocation().pathname
+    return (pathname.indexOf(path) >= 0)
   }
+
+
 
   getView () {
     const arr = []
@@ -39,6 +41,7 @@ class LevelOne extends React.Component {
     return (
       <div>
         {arr}
+        {this.getCasePopup()}
         <Nav onChangeHash={this.props.changeHash} />
         <h3>{this.props.hashState}</h3>
         <h2>{tr('STUFF_TARIFFS')}</h2>

@@ -7,6 +7,8 @@ import DownloadAndroid from 'components/SVG/DownloadAndroid';
 import DownloadApple from 'components/SVG/DownloadApple';
 import Achievement from 'components/Achievement/Achievement';
 import Time from 'components/Time/Time.js'
+import Button from 'components/Button/Button';
+import { tr } from 'lib/locale.js'
 
 const ProjectBubble = (props) => {
   const {
@@ -21,10 +23,16 @@ const ProjectBubble = (props) => {
     isHiddenText,
     isFullAchievements,
     widthSize,
-    lang
+    lang,
+    casePopup,
+    handlerShowCasePopup
     } = props;
 
  // const newDescription = description.split('<br>').map((item, i) => <div key={i}>{item}</div>);
+
+  const handlerShowCasePopup22 = () => {
+    handlerShowCasePopup(casePopup)
+  }
 
   return (
     <div className={cx('project-bubble_wrapper', isLeft ? '-left' : '', 'wrapper-size-'+widthSize)}>
@@ -84,6 +92,11 @@ const ProjectBubble = (props) => {
               </a>
             }
           </div>
+          {casePopup &&
+            <div style={{marginTop: '20px'}}>
+              <Button caption={tr('SEE_CASE', true)} onClickHandler={handlerShowCasePopup22} />
+            </div>
+          }
         </div>
       </Bubble>
 
@@ -109,7 +122,9 @@ ProjectBubble.propTypes = {
       secondLine: PropTypes.string
     })
   ),
-  children: PropTypes.element
+  children: PropTypes.element,
+  casePopup: PropTypes.string,
+  handlerShowCasePopup: PropTypes.func
 }
 
 ProjectBubble.defaultProps = {
@@ -121,7 +136,9 @@ ProjectBubble.defaultProps = {
   isLeft: false,
   isHiddenText: false,
   widthSize: 'md',
-  lang: 'ru'
+  lang: 'ru',
+  casePopup: '',
+  handlerShowCasePopup: () => {}
 }
 
 export default ProjectBubble;

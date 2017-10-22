@@ -79,7 +79,8 @@ Bubble.defaultProps = {
   isTime: false,
   autoWidth: false,
   withVideo: false,
-  className: ''
+  className: '',
+  children: null
 }
 
 export default Bubble;

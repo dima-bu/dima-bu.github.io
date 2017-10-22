@@ -2,6 +2,7 @@ export const SET_HIDDEN_TEXT = 'SET_HIDDEN_TEXT'
 export const SET_VISABLE_TEXT = 'SET_VISABLE_TEXT'
 export const CHANGE_HASH = 'CHANGE_HASH'
 export const SCROLL_WINDOW = 'SCROLL_WINDOW'
+export const SHOW_CASE_POPUP = 'SHOW_CASE_POPUP'
 
 import { hashHistory, browserHistory } from 'react-router';
 
@@ -34,11 +35,19 @@ export function scrollWindow (yPosition) {
   }
 }
 
+export function showCasePopup (popupName) {
+  return {
+    type    : SHOW_CASE_POPUP,
+    payload : popupName
+  }
+}
+
 export const actions = {
   setHiddenText,
   setVisableText,
   changeHash,
-  scrollWindow
+  scrollWindow,
+  showCasePopup
 }
 
 // ------------------------------------
@@ -64,6 +73,10 @@ const ACTION_HANDLERS = {
     }
 
     return Object.assign({}, state, { hashState:  window.location.hash })
+  },
+  [SHOW_CASE_POPUP]: (state, action) => {
+    const popupName = action.payload
+    return Object.assign({}, state, { shownCasePopup: popupName })
   }
 }
 
@@ -73,7 +86,8 @@ const ACTION_HANDLERS = {
 const initialState = {
   isHiddenText: false,
   hashState: browserHistory.getCurrentLocation().hash,
-  yPosition: window.pageYOffset
+  yPosition: window.pageYOffset,
+  shownCasePopup: ''
 }
 
 export default function generalReducer (state = initialState, action) {

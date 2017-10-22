@@ -102,7 +102,7 @@
     "ip": "^1.1.2",
     "json-loader": "^0.5.4",
     "lodash.throttle": "^4.1.1",
-    "node-sass": "^4.0.0",
+    "node-sass": "^4.1.1",
     "normalize.css": "^5.0.0",
     "npm": "^4.6.1",
     "postcss-loader": "^1.1.0",

@@ -12,12 +12,13 @@ import Gif from 'components/Gif/Gif.js'
 import OtherSite from 'components/OtherSite/OtherSite.js'
 import FinishSection from 'components/FinishSection/FinishSection.js'
 import browserHistory from 'react-router/lib/browserHistory'
-import {changeHash, scrollWindow} from './../module/general.js'
+import {changeHash, scrollWindow, showCasePopup} from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
 import Time from 'components/Time/Time.js'
 import GSAP from 'react-gsap-enhancer'
 import { TweenMax, TimelineMax, Power4 } from 'gsap'
-import throttle from 'lodash.throttle';
+import throttle from 'lodash.throttle'
+import Popup from 'components/Popup/Popup.js'
 
 const achievements = [
   {
@@ -29,7 +30,6 @@ const achievements = [
     secondLine: 'скачиваний'
   }
 ];
-
 
 function createAnim(utils) {
   var box = utils.target.find({name: 'box'});
@@ -72,7 +72,9 @@ class HomeView extends React.Component {
     };
     this.isTouch = false;
     this.clikedElem = false;
-    this.handleNavigateClick = this.handleNavigateClick.bind(this);
+    this.handleNavigateClick = this.handleNavigateClick.bind(this)
+    this.handlerClosePopup = this.handlerClosePopup.bind(this)
+    this.handleShowCasePopup = this.handleShowCasePopup.bind(this)
   }
 
   componentDidMount() {
@@ -96,8 +98,20 @@ class HomeView extends React.Component {
     )
   }
 
-  getHash(){
-    return window.location.hash;
+  getHash () {
+    return window.location.hash
+  }
+
+
+  handleShowCasePopup (val) {
+    this.props.showCasePopup(val)
+    // setTimeout(() => {
+    //  this.setState({
+    //    isHiddenSplash: true,
+    //    isSplash: false
+    //  })
+    // }, 1000)
+
   }
 
   getView() {
@@ -110,7 +124,7 @@ class HomeView extends React.Component {
 
     elems.forEach( (elem, index) => {
       if (elem === 'projects') {
-        arr.push( <Projects key='projects' isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} lang={this.props.i18n.locale} index={index} isHiddenText={this.props.isHiddenText} />)
+        arr.push( <Projects key='projects' showCasePopup={this.handleShowCasePopup} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} lang={this.props.i18n.locale} index={index} isHiddenText={this.props.isHiddenText} />)
       }
       if (elem === 'gif') {
         arr.push( <Gif key='gif' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
@@ -161,6 +175,21 @@ class HomeView extends React.Component {
     }
   }
 
+  handlerClosePopup  () {
+    this.props.showCasePopup('');
+  }
+
+  getCasePopup () {
+    if (this.props.shownCasePopup) {
+      return (
+        <Popup onClose={this.handlerClosePopup}>
+          <span>dsdf</span>
+        </Popup>
+      )
+    }
+  }
+
+
   render () {
 
     const getStyleWrapper = () => {
@@ -189,6 +218,7 @@ class HomeView extends React.Component {
                  }>
         </div>
         }
+        {this.getCasePopup()}
         <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()} >
           <div className="ta-c bubble-row -first-bubble">
             <Bubble isHiddenText={this.props.isHiddenText} className="w_45 br-all">
@@ -209,7 +239,8 @@ class HomeView extends React.Component {
 const mapDispatchToProps = {
   setLocale: setLocale,
   changeHash: changeHash,
-  scrollWindow: scrollWindow
+  scrollWindow: scrollWindow,
+  showCasePopup: showCasePopup
 }
 
 const mapStateToProps = (state) => ({
@@ -217,7 +248,8 @@ const mapStateToProps = (state) => ({
   hash : state.location.hash,
   isHiddenText: state.general.isHiddenText,
   hashState : state.general.hashState,
-  yPosition: state.general.yPosition
+  yPosition: state.general.yPosition,
+  shownCasePopup:  state.general.shownCasePopup
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(GSAP(HomeView))

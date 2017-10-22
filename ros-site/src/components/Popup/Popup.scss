@@ -1,0 +1,48 @@
+@import './../../styles/variables';
+
+.popup-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 3;
+  height: 100vh;
+  transition: opacity 0.5s ease-out 0s;
+  opacity: 0;
+
+  &.-show {
+    opacity: 1;
+  }
+
+
+}
+
+.popup-header {
+  padding: 30px 0;
+  box-shadow: 0 15px 60px 0 rgba(0,31,82,.14);
+}
+
+.popup-header_inner {
+  line-height: 27px;
+}
+
+.popup-close {
+  float: right;
+  font-size: 16px;
+  color: $text-color;
+  cursor: pointer;
+}
+
+.popup-close_icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-left: 12px;
+}
+
+
+@media (max-width: $screen-sm-min) {
+  .popup-header {
+    padding: 20px 0;
+  }
+}

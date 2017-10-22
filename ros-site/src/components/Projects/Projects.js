@@ -115,6 +115,8 @@ class Projects extends React.Component {
     this.isFinish = false
     var self = this
 
+    this.handlerShowCasePopup = this.handlerShowCasePopup.bind(this);
+
     this.scrollFunc = () => {
       var scrolled = window.pageYOffset // Текущая прокрутка сверху
       var screenHeight = screen.height // Высота экрана
@@ -163,6 +165,10 @@ class Projects extends React.Component {
     }
   }
 
+  handlerShowCasePopup (val) {
+    this.props.showCasePopup(val)
+  }
+
   render () {
     const props = this.props
 
@@ -201,6 +207,8 @@ class Projects extends React.Component {
             description={tr('TRUSTED_DESCRIPTION', true)}
             linkForAndroid='https://play.google.com/store/apps/details?id=com.thetrustedinsight.tiapp'
             linkForApple='https://itunes.apple.com/us/app/trusted-insight-global-network/id1122381006?mt=8'
+            casePopup='TRUSTED'
+            handlerShowCasePopup={this.handlerShowCasePopup}
             >
             <img className='project-bubble-img img-response' src={TrustImg} width='246' height='500' alt='' />
           </ProjectBubble>
