@@ -7,7 +7,7 @@
   background-color: #ffffff;
   z-index: 3;
   height: 100vh;
-  transition: opacity 0.5s ease-out 0s;
+  transition: opacity 0.5s ease-out 0.1s;
   opacity: 0;
 
   &.-show {

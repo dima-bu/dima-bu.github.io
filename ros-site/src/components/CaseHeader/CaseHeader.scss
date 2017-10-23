@@ -1,0 +1,60 @@
+@import './../../styles/variables';
+
+
+p.case-paragraph {
+  font-size: 32px;
+  line-height: 1.81;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: $font-base;
+}
+
+h1.case-header {
+  font-size: 75px;
+  line-height: 75px;
+  color: #000000;
+  line-height: 1;
+  margin: 0 0 15px 0;
+  font-family: $font-bold;
+  text-align: center;
+  &.-mb {
+    margin-bottom: 25px;
+  }
+
+  &.-mt {
+    margin-top: 120px;
+  }
+}
+
+h2.case-subtitle {
+  font-size: 46px;
+  line-height: 1.09;
+  font-family: $font-bold;
+}
+
+.case-header-subtitle {
+  font-size: 22px;
+  text-align: center;
+  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: $font-base;
+  line-height: 1.55;
+  margin-bottom: 80px;
+}
+
+@media (max-width: $screen-sm-min) {
+  h1.case-header {
+    font-size: 46px;
+    &.-mb {
+      margin-bottom: 20px;
+    }
+
+    &.-mt {
+      margin-top: 32px;
+    }
+  }
+
+  .case-header-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

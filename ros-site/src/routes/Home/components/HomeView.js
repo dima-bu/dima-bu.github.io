@@ -12,13 +12,14 @@ import Gif from 'components/Gif/Gif.js'
 import OtherSite from 'components/OtherSite/OtherSite.js'
 import FinishSection from 'components/FinishSection/FinishSection.js'
 import browserHistory from 'react-router/lib/browserHistory'
-import {changeHash, scrollWindow, showCasePopup} from './../module/general.js'
+import { changeHash, scrollWindow, showCasePopup, visableCasePopup } from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
 import Time from 'components/Time/Time.js'
 import GSAP from 'react-gsap-enhancer'
 import { TweenMax, TimelineMax, Power4 } from 'gsap'
 import throttle from 'lodash.throttle'
 import Popup from 'components/Popup/Popup.js'
+import CaseTrusted from 'components/CaseTrusted/CaseTrusted.js'
 
 const achievements = [
   {
@@ -32,10 +33,10 @@ const achievements = [
 ];
 
 function createAnim(utils) {
-  var box = utils.target.find({name: 'box'});
-  var navWrapper = utils.target.find({name: 'navWrapper'});
+  var box = utils.target.find({name: 'box'})
+  var navWrapper = utils.target.find({name: 'navWrapper'})
 
-  var TimelineMaxWr = new TimelineMax();
+  var TimelineMaxWr = new TimelineMax()
 
   //TimelineMaxWr.add(TweenMax
   //  .to(navWrapper, 0.5, {
@@ -102,18 +103,6 @@ class HomeView extends React.Component {
     return window.location.hash
   }
 
-
-  handleShowCasePopup (val) {
-    this.props.showCasePopup(val)
-    // setTimeout(() => {
-    //  this.setState({
-    //    isHiddenSplash: true,
-    //    isSplash: false
-    //  })
-    // }, 1000)
-
-  }
-
   getView() {
 
     const arr = [];
@@ -176,19 +165,32 @@ class HomeView extends React.Component {
   }
 
   handlerClosePopup  () {
-    this.props.showCasePopup('');
+    var body = document.getElementById('body')
+    body.className = ""
+    this.props.showCasePopup('')
+    this.props.visableCasePopup(false)
+  }
+
+  handleShowCasePopup (val) {
+
+    var body = document.getElementById('body')
+    body.className = "-hide"
+
+    this.props.showCasePopup(val)
+     setTimeout(() => {
+       this.props.visableCasePopup(true)
+     }, 0)
   }
 
   getCasePopup () {
     if (this.props.shownCasePopup) {
       return (
-        <Popup onClose={this.handlerClosePopup}>
-          <span>dsdf</span>
+        <Popup onClose={this.handlerClosePopup} visabledCasePopup={this.props.visabledCasePopup}>
+            <CaseTrusted />
         </Popup>
       )
     }
   }
-
 
   render () {
 
@@ -240,7 +242,8 @@ const mapDispatchToProps = {
   setLocale: setLocale,
   changeHash: changeHash,
   scrollWindow: scrollWindow,
-  showCasePopup: showCasePopup
+  showCasePopup: showCasePopup,
+  visableCasePopup: visableCasePopup
 }
 
 const mapStateToProps = (state) => ({
@@ -249,7 +252,8 @@ const mapStateToProps = (state) => ({
   isHiddenText: state.general.isHiddenText,
   hashState : state.general.hashState,
   yPosition: state.general.yPosition,
-  shownCasePopup:  state.general.shownCasePopup
+  shownCasePopup:  state.general.shownCasePopup,
+  visabledCasePopup:  state.general.visabledCasePopup
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(GSAP(HomeView))
