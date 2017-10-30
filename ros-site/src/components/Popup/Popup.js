@@ -30,13 +30,15 @@ class Popup extends React.Component {
           <div className='container clearfix popup-header_inner'>
             <Logo type='png' />
             <div className='popup-close' onClick={onClose}>
-              Закрыть
+              {tr('CLOSE')}
               <img src={CloseIcon} className='popup-close_icon' alt='' />
             </div>
           </div>
         </header>
-        <div className='container popup-body'>
-          {children}
+        <div className='popup-body'>
+          <div className='container'>
+            {children}
+          </div>
         </div>
       </div>
     )

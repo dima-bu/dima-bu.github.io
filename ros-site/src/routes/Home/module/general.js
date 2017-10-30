@@ -100,7 +100,7 @@ const initialState = {
   isHiddenText: false,
   hashState: browserHistory.getCurrentLocation().hash,
   yPosition: window.pageYOffset,
-  shownCasePopup: 'TRUSTED',
+  shownCasePopup: '',
   visabledCasePopup: false
 }
 

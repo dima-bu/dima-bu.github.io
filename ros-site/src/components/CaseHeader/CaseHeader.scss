@@ -1,11 +1,25 @@
 @import './../../styles/variables';
 
-
 p.case-paragraph {
   font-size: 32px;
   line-height: 1.81;
   color: rgba(0, 0, 0, 0.8);
   font-family: $font-base;
+  margin-bottom: 80px;
+  a {
+    color: $color-blue;
+    text-decoration:none;
+    &:hover {
+      color: lighten($color-blue, 9.5%)
+    }
+    &:active {
+      color: darken($color-blue, 6.5%)
+    }
+  }
+}
+
+p.case-paragraph + h2.case-subtitle {
+  margin-top: 120px;
 }
 
 h1.case-header {
@@ -25,10 +39,16 @@ h1.case-header {
   }
 }
 
+.case-width {
+  padding: 0 80px;
+
+}
+
 h2.case-subtitle {
   font-size: 46px;
   line-height: 1.09;
   font-family: $font-bold;
+  margin-bottom: 50px;
 }
 
 .case-header-subtitle {
@@ -41,6 +61,46 @@ h2.case-subtitle {
   margin-bottom: 80px;
 }
 
+.case-img_caption {
+  opacity: 0.5;
+  font-family: $font-base;
+  font-size: 22px;
+  line-height: 1.55;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.case-img + .case-img_caption {
+  margin-top: 40px;
+}
+
+.case-img_caption + p.case-paragraph {
+  margin-top: 80px;
+}
+
+.case-img + p.case-paragraph {
+  margin-top: 80px;
+}
+
+.case-img + .case-subtitle {
+  margin-top: 120px;
+}
+
+.case-download-wrapper {
+  text-align: center;
+  .market-btn-wrapper {
+    margin: 0px 20px;
+    width: 270px;
+    height: 80px;
+  }
+}
+
+.case-download-wrapper {
+  margin-bottom: 80px;
+
+}
+
+// MOBILE
 @media (max-width: $screen-sm-min) {
   h1.case-header {
     font-size: 46px;
@@ -53,8 +113,62 @@ h2.case-subtitle {
     }
   }
 
+  p.case-paragraph + h2.case-subtitle {
+    margin-top: 60px;
+  }
+
   .case-header-subtitle {
     font-size: 16px;
     margin-bottom: 20px;
   }
+
+  h2.case-subtitle {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  p.case-paragraph {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 30px ;
+  }
+
+  .case-width {
+    padding: 0 6px;
+  }
+
+  .case-img_caption {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .case-img + .case-img_caption {
+    margin-top: 10px;
+  }
+
+  .case-img_caption + p.case-paragraph {
+    margin-top: 30px;
+  }
+
+  .case-img + p.case-paragraph {
+    margin-top: 30px;
+  }
+
+  .case-img + .case-subtitle {
+    margin-top: 60px;
+  }
+
+  .case-download-wrapper {
+    .market-btn-wrapper {
+      margin: 0px 10px;
+      width: 135px;
+      height: 40px;
+    }
+  }
+
+  .case-download-wrapper {
+    margin-bottom: 30px;
+  }
+
+
 }
