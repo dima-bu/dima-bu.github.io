@@ -20,7 +20,7 @@ class Popup extends React.Component {
       if (visabledCasePopup) {
         return { 'opacity': 1 }
       }
-      return { 'opacity': 1 }
+      return { 'opacity': 0 }
     }
 
     return (

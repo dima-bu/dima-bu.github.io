@@ -6,9 +6,9 @@ import TrustedLogo from './assets/trusted_logo.png'
 import IntroImg1 from './assets/intro_iphone_1.png'
 import IntroImg2 from './assets/intro_iphone_2.png'
 
-
 import UsersImg from './assets/users.jpg'
-import HandImg from './assets/hand.jpg'
+import HandImg from './assets/hand-transparent.png'
+import handGif from './assets/hangGif.gif'
 
 import DetailsWhatsImg from './assets/details_whats.jpg'
 import DetailAlexImg from './assets/details_alex.png'
@@ -17,7 +17,6 @@ import DetailRoundImg from './assets/details_round.png'
 import DetailsVentureImg from './assets/details_venture.jpg'
 import DetailsUSCNoneImg from './assets/details_usc_none.jpg'
 import DetailsUSCDoneImg from './assets/details_usc_done.jpg'
-
 
 import Stream2Img from './assets/stream2.png'
 import Stream3Img from './assets/stream3.png'
@@ -28,6 +27,12 @@ import ChatAvatar from './assets/chat_avatars.png'
 import ChatContacts from './assets/chat_contacts.png'
 
 import VersionsImg from './assets/versions.jpg'
+import VersionsImg1v1 from './assets/version-news-1.png'
+import VersionsImg1v2 from './assets/version-news-2.png'
+import VersionsImg2v1 from './assets/version-profile-1.png'
+import VersionsImg2v2 from './assets/version-profile-2.png'
+import VersionsImg3v2 from './assets/version-firm-2.png'
+import VersionsImg3v1 from './assets/version-firm-1.png'
 
 import DownloadAndroid from 'components/SVG/DownloadAndroid'
 import DownloadApple from 'components/SVG/DownloadApple'
@@ -66,7 +71,10 @@ class CaseTrusted extends React.Component {
         <p className='case-paragraph case-width'>{tr('TRUSTED_USERS_TEXT')}</p>
         <h2 className='case-subtitle case-width'>{tr('TRUSTED_STREAMS_TITLE')}</h2>
         <p className='case-paragraph case-width'>{tr('TRUSTED_STREAMS_TEXT_1')}</p>
-        <div className='img-hand case-img' style={{backgroundImage: `url(${HandImg})`}}></div>
+        <div className='img-hand case-img g-radial-bg'>
+          <img className='img-hand_gif' src={handGif} alt='' />
+          <img src={HandImg} className='img-hand_hand' alt='' />
+        </div>
         <p className='case-paragraph case-width'>{tr('TRUSTED_STREAMS_TEXT_2')}</p>
 
         <div className='case-img case-img-wrapper'>
@@ -138,15 +146,34 @@ class CaseTrusted extends React.Component {
 
         <h2 className='case-subtitle case-width'>{tr('TRUSTED_VERSIONS_TITLE')}</h2>
         <p className='case-paragraph case-width'>{tr('TRUSTED_VERSIONS_TEXT_1')}</p>
-        <div className='img-versions case-img' style={{backgroundImage: `url(${VersionsImg})`}}></div>
+        <div className='img-versions case-img'>
+          <div className="version-title_wrapper">
+            <div className='version-title'>Version 1.0</div>
+            <div className='version-title'>Version 2.0</div>
+          </div>
+          <div className='row'>
+            <div className='col-sm-4  hidden-xs img-versions_img img-versions_img_col-1'>
+              <img src={VersionsImg1v1} alt='' width='320' />
+              <img src={VersionsImg1v2} alt='' width='320' />
+            </div>
+            <div className='col-sm-4 col-xs-12 img-versions_img img-versions_img_col-2'>
+              <img src={VersionsImg2v1} alt='' width='320' />
+              <img src={VersionsImg2v2} alt='' width='320' />
+            </div>
+            <div className='col-sm-4 hidden-xs img-versions_img img-versions_img_col-3'>
+              <img src={VersionsImg3v1} alt='' width='320' />
+              <img src={VersionsImg3v2} alt='' width='320' />
+            </div>
+          </div>
+        </div>
         <p className='case-paragraph case-width'>{tr('TRUSTED_VERSIONS_TEXT_2')}</p>
 
         <div className='case-download-wrapper' >
               <a className='icon-link project-available' href='#' target='_blank'>
-                <DownloadAndroid lang='en' height={80} width={270} />
+                <DownloadAndroid lang={this.props.locale} height={80} width={270} />
               </a>
               <a className='icon-link project-available' href='#' target='_blank'>
-                <DownloadApple lang='en' height={80} width={270} />
+                <DownloadApple lang={this.props.locale} height={80} width={270} />
               </a>
             </div>
             <Tweet/>

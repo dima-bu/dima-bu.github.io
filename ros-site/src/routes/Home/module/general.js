@@ -5,7 +5,7 @@ export const SCROLL_WINDOW = 'SCROLL_WINDOW'
 export const SHOW_CASE_POPUP = 'SHOW_CASE_POPUP'
 export const VISABLE_CASE_POPUP = 'VISABLE_CASE_POPUP'
 
-import { hashHistory, browserHistory } from 'react-router';
+import { hashHistory, browserHistory } from 'react-router'
 
 // ------------------------------------
 // Actions

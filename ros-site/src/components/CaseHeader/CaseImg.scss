@@ -19,8 +19,34 @@
   height: 550px;
 }
 
+.g-radial-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f2f2+2,c7c7c7+50,a4a4a4+100 */
+  background: #f2f2f2; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #f2f2f2 2%, #c7c7c7 50%, #a4a4a4 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #f2f2f2 2%,#c7c7c7 50%,#a4a4a4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #f2f2f2 2%,#c7c7c7 50%,#a4a4a4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#a4a4a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
 .img-hand {
-  height: 660px;
+  height: 720px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .img-hand_hand {
+    width: 525px;
+    height: auto;
+  }
+  
+  .img-hand_gif {
+    position: absolute;
+    width: 277px;
+    top: 112px;
+    margin-left: 6px;
+  }
 }
 
 .img-details-whats {
@@ -33,9 +59,123 @@
   width: 100%;
 }
 
-.img-versions {
-  height: 720px;
+@keyframes example {
+  0%   {opacity: 1;}
+  40%   {opacity: 1;}
+  66%   {opacity: 0;}
+  100% {opacity: 0;}
 }
+
+@keyframes example1 {
+  0%   {opacity: 0;}
+  40%   {opacity: 0;}
+  66%   {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+.version-title_wrapper {
+  position: relative;
+  width: 160px;
+  margin: 0 auto;
+}
+
+.version-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  background-color: #4a90e2;
+  font-family: $font-base;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+
+  &:first-child {
+    opacity: 0;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  &:last-child {
+    position: absolute;
+    top: 0;
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+.img-versions {
+  padding: 20px 60px 80px 60px;
+  background-color: #ededed;
+
+  .row {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  .col-sm-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .img-versions_img {
+    position: relative;
+    //height: 568px;
+
+
+    &.img-versions_img_col-1 {
+      img {
+        animation-delay: 0s;
+      }
+    }
+
+    &.img-versions_img_col-2 {
+      img {
+        animation-delay: 300ms;
+      }
+    }
+
+    &.img-versions_img_col-3 {
+      img {
+        animation-delay: 600ms;
+      }
+    }
+
+
+    img {
+
+      &:first-child {
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: absolute;
+        width: 100%;
+        padding: 0 20px;
+        left: 0;
+      }
+
+      &:last-child {
+        width: 100%;
+        animation-name: example1;
+        animation-duration: 4s;
+        //animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    }
+  }
+}
+
+
 
 .img-details-alex {
   max-width: 518px;
@@ -47,12 +187,15 @@
   max-width: 368px;
   height: auto;
   width: 100%;
+  //margin-top: 60px;
 }
 
 .chat-jay-img {
   max-width: 600px;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .chat-avatar-img {
@@ -61,6 +204,7 @@
   position: absolute;
   right: 18px;
   top: 40px;
+  z-index: 1;
 }
 
 .chat-contacts-img {
@@ -68,7 +212,6 @@
   width: 100%;
   height: auto;
 }
-
 
 .case-img-wrapper_xs {
   border-radius: 8px;
@@ -147,6 +290,18 @@
 }
 
 
+@media (min-width: $screen-md-min) {
+  .img-details-round {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .img-details-round {
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: $screen-sm-min) {
 
   .img-details-usn, .img-details-whats, .img-hand, .img-user, .case-img-wrapper, .case-img,  {
@@ -159,7 +314,22 @@
   //  width: auto;
   //}
 
-  .img-user, .img-hand  {
+  .img-hand {
+    height: 468px;
+
+    .img-hand_hand {
+      width: 341px;
+      height: auto;
+    }
+
+    .img-hand_gif {
+      width: 180px;
+      top: 73px;
+      margin-left: 4px;
+    }
+  }
+
+  .img-user  {
     height: 395px;
   }
 
@@ -176,6 +346,7 @@
   }
 
   .img-details-round {
+    margin-top: 0;
     margin-bottom: 60px;
   }
 

@@ -186,7 +186,7 @@ class HomeView extends React.Component {
     if (this.props.shownCasePopup) {
       return (
         <Popup onClose={this.handlerClosePopup} visabledCasePopup={this.props.visabledCasePopup}>
-            <CaseTrusted />
+            <CaseTrusted locale={this.props.i18n.locale} />
         </Popup>
       )
     }
