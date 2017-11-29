@@ -5,7 +5,7 @@ import Logo3x from './assets/logo@3x.png'
 import Scroll from 'react-scroll'
 
 const Logo = (props) => {
-  const { type } = props
+  const { type, onClickHandler } = props
 
   const getLink = () => {
     if (window.location.host === 'dima-bu.github.io') { return 'http://dima-bu.github.io/ros-site/dist/' }
@@ -28,9 +28,14 @@ const Logo = (props) => {
   };
 
   const scrollTop = (e) => {
-    e.preventDefault()
-    Scroll.animateScroll.scrollTo(0)
+    if (onClickHandler) {
+      onClickHandler()
+    } else {
+      e.preventDefault()
+      Scroll.animateScroll.scrollTo(0)
+    }
   }
+
   const getPng = () => {
     return (
       <a onClick={scrollTop} className='logo-link'>
@@ -50,7 +55,8 @@ const Logo = (props) => {
 }
 
 Logo.defaultProps = {
-  type: 'png'
+  type: 'png',
+  onClickHandler: false
 }
 
-export default Logo;
+export default Logo

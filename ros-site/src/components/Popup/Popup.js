@@ -28,7 +28,7 @@ class Popup extends React.Component {
         <div className='popup-bg'></div>
         <header className='popup-header'>
           <div className='container clearfix popup-header_inner'>
-            <Logo type='png' />
+            <Logo type='png' onClickHandler={onClose} />
             <div className='popup-close' onClick={onClose}>
               {tr('CLOSE')}
               <img src={CloseIcon} className='popup-close_icon' alt='' />

@@ -13,6 +13,10 @@
   position: fixed;
   left: 50%;
   z-index: 2;
+  &.-no-fix {
+    position: relative;
+    left: none;
+  }
 }
 
 
@@ -29,6 +33,7 @@
     // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
     top: 0;
     // padding: 10px;
+    box-shadow: 0 15px 60px 0 rgba(0,31,82,.14);
   }
 }
 
@@ -49,6 +54,7 @@
 @media (min-width: $screen-md-min){
   header.fixed-header {
     margin-left: 0;
+
   }
 }
 
