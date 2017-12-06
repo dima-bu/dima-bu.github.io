@@ -12,7 +12,7 @@ import Gif from 'components/Gif/Gif.js'
 import OtherSite from 'components/OtherSite/OtherSite.js'
 import FinishSection from 'components/FinishSection/FinishSection.js'
 import browserHistory from 'react-router/lib/browserHistory'
-import { changeHash, scrollWindow, showCasePopup, visableCasePopup } from './../module/general.js'
+import { changeHash, scrollWindow, showCasePopup, visableCasePopup, setHash } from './../module/general.js'
 import Nav from 'components/Nav/Nav.js'
 import Time from 'components/Time/Time.js'
 import GSAP from 'react-gsap-enhancer'
@@ -73,9 +73,11 @@ class HomeView extends React.Component {
     };
     this.isTouch = false;
     this.clikedElem = false;
+    this.isInitPopup = false;
     this.handleNavigateClick = this.handleNavigateClick.bind(this)
     this.handlerClosePopup = this.handlerClosePopup.bind(this)
     this.handleShowCasePopup = this.handleShowCasePopup.bind(this)
+    this.initPopup = this.initPopup.bind(this)
   }
 
   componentDidMount() {
@@ -151,7 +153,6 @@ class HomeView extends React.Component {
 
   showScreen () {
     if (this.state.isSplash) {
-
      this.setState({
           isSplash: false
      })
@@ -160,33 +161,63 @@ class HomeView extends React.Component {
         this.setState({
           isHiddenSplash: true
         })
-      }, 200)
+     }, 300)
     }
   }
 
-  handlerClosePopup  () {
+  handlerClosePopup () {
     var body = document.getElementById('body')
-    body.className = ""
+    body.className = ''
     this.props.showCasePopup('')
     this.props.visableCasePopup(false)
+    let pathname = this.getHash()
+    const elems = pathname.split('-')
+
+    const index = elems.indexOf('trusted')
+    if (elems.indexOf('trusted') >= 0) {
+      elems.splice(index, 1)
+    }
+    const newPath = elems.join('-')
+    this.props.setHash(newPath)
   }
 
   handleShowCasePopup (val) {
-
     var body = document.getElementById('body')
-    body.className = "-hide"
+    body.className = '-hide'
 
     this.props.showCasePopup(val)
+
+    if (this.isInitPopup) {
+      this.props.changeHash('#'+val)
+    } else {
+      this.isInitPopup = true
+    }
+
      setTimeout(() => {
        this.props.visableCasePopup(true)
      }, 0)
+  }
+
+  initPopup(){
+    const popups = ['trusted']
+
+    let pathname = this.getHash()
+    const elems = pathname.split('-')
+
+    popups.forEach(popup => {
+      if (elems.indexOf(popup) >= 0 && !this.isInitPopup) {
+        this.handleShowCasePopup(popup)
+      }
+    })
+
+    this.isInitPopup = true
   }
 
   getCasePopup () {
     if (this.props.shownCasePopup) {
       return (
         <Popup onClose={this.handlerClosePopup} visabledCasePopup={this.props.visabledCasePopup}>
-            <CaseTrusted locale={this.props.i18n.locale} />
+          <CaseTrusted locale={this.props.i18n.locale}/>
         </Popup>
       )
     }
@@ -204,6 +235,8 @@ class HomeView extends React.Component {
     if (this.props.i18n.locale) {
       this.showScreen()
     }
+
+    this.initPopup();
 
     return (
       <div>
@@ -241,6 +274,7 @@ class HomeView extends React.Component {
 const mapDispatchToProps = {
   setLocale: setLocale,
   changeHash: changeHash,
+  setHash: setHash,
   scrollWindow: scrollWindow,
   showCasePopup: showCasePopup,
   visableCasePopup: visableCasePopup

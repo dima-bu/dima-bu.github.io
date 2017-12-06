@@ -1,6 +1,7 @@
 export const SET_HIDDEN_TEXT = 'SET_HIDDEN_TEXT'
 export const SET_VISABLE_TEXT = 'SET_VISABLE_TEXT'
 export const CHANGE_HASH = 'CHANGE_HASH'
+export const SET_HASH = 'SET_HASH'
 export const SCROLL_WINDOW = 'SCROLL_WINDOW'
 export const SHOW_CASE_POPUP = 'SHOW_CASE_POPUP'
 export const VISABLE_CASE_POPUP = 'VISABLE_CASE_POPUP'
@@ -25,6 +26,13 @@ export function setVisableText () {
 export function changeHash (hash) {
   return {
     type    : CHANGE_HASH,
+    payload : hash
+  }
+}
+
+export function setHash (hash) {
+  return {
+    type    : SET_HASH,
     payload : hash
   }
 }
@@ -54,6 +62,7 @@ export const actions = {
   setHiddenText,
   setVisableText,
   changeHash,
+  setHash,
   scrollWindow,
   showCasePopup,
   visableCasePopup
@@ -69,9 +78,7 @@ const ACTION_HANDLERS = {
     return Object.assign({}, state, { yPosition: action.payload })
   },
   [CHANGE_HASH]    : (state, action) => {
-
     const hash = action.payload.split('#')[1]
-
     if (window.location.hash) {
       const newN = window.location.hash + '-' + hash
       // browserHistory.createLocation({hash: newN, pathname: '/'})
@@ -80,7 +87,11 @@ const ACTION_HANDLERS = {
       // browserHistory.createLocation({hash: hash, pathname: '/'})
       window.location.hash = hash
     }
-
+    return Object.assign({}, state, { hashState:  window.location.hash })
+  },
+  [SET_HASH]    : (state, action) => {
+    const hash = action.payload
+    window.location.hash = hash
     return Object.assign({}, state, { hashState:  window.location.hash })
   },
   [SHOW_CASE_POPUP]: (state, action) => {

@@ -207,7 +207,7 @@ class Projects extends React.Component {
             description={tr('TRUSTED_DESCRIPTION', true)}
             linkForAndroid='https://play.google.com/store/apps/details?id=com.thetrustedinsight.tiapp'
             linkForApple='https://itunes.apple.com/us/app/trusted-insight-global-network/id1122381006?mt=8'
-            casePopup='TRUSTED'
+            casePopup='trusted'
             handlerShowCasePopup={this.handlerShowCasePopup}
             >
             <img className='project-bubble-img img-response' src={TrustImg} width='246' height='500' alt='' />
