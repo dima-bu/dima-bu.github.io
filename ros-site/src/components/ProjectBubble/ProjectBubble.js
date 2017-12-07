@@ -49,7 +49,6 @@ const ProjectBubble = (props) => {
 
           <div className={cx("project-achievements", isFullAchievements ? "-full" : "")}>
 
-
             {/*{isFullAchievements &&*/}
               {/*{achievements.map((achievement, key) => {*/}
                 {/*return (*/}
@@ -79,7 +78,6 @@ const ProjectBubble = (props) => {
               </div>
             )
             }
-
 
             { linkForAndroid &&
               <a className="icon-link project-available" href={linkForAndroid} target="_blank">
