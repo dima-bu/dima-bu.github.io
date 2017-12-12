@@ -3,18 +3,20 @@ import CoreLayout from '../layouts/CoreLayout'
 import Home from './Home'
 import CounterRoute from './Counter'
 import LevelOneRoute from './LevelOne'
+import TrustedRoute from './Trusted'
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
 
 export const createRoutes = (store) => ({
   path        : '/ros-site/dist/',
-  //path        : (__DEV__ ? '/' : '/'),
+  // path        : (__DEV__ ? '/' : '/'),
   component   : CoreLayout,
   indexRoute  : Home,
   childRoutes : [
     CounterRoute(store),
-    LevelOneRoute(store)
+    LevelOneRoute(store),
+    TrustedRoute(store)
   ]
 })
 

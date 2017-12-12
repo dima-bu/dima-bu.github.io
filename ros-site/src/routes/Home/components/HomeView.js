@@ -20,17 +20,18 @@ import { TweenMax, TimelineMax, Power4 } from 'gsap'
 import throttle from 'lodash.throttle'
 import Popup from 'components/Popup/Popup.js'
 import CaseTrusted from 'components/CaseTrusted/CaseTrusted.js'
+import Header from './../../../layouts/Header/index.js'
 
-const achievements = [
-  {
-    firstLine: 'Featured',
-    secondLine: 'By Apple'
-  },
-  {
-    firstLine: '50 млн',
-    secondLine: 'скачиваний'
-  }
-];
+//const achievements = [
+//  {
+//    firstLine: 'Featured',
+//    secondLine: 'By Apple'
+//  },
+//  {
+//    firstLine: '50 млн',
+//    secondLine: 'скачиваний'
+//  }
+//];
 
 function createAnim(utils) {
   var box = utils.target.find({name: 'box'})
@@ -240,6 +241,7 @@ class HomeView extends React.Component {
 
     return (
       <div>
+        <Header />
         {!this.state.isHiddenSplash &&
         <div className={cx('splash', this.state.isSplash ? 'isShow' : 'isHide')}
              style={

@@ -52,7 +52,7 @@ class CaseTrusted extends React.Component {
 
         <div className='case-img-wrapper_over row'>
           <div className='col-sm-6'>
-            <img className='img-intro_1' src={IntroImg1} alt='' height={486} width={793} />
+            <img className='img-intro_1' src={IntroImg1} alt='' height={485} width={793} />
           </div>
           <div className='col-sm-6'>
             <img className='img-intro_2' src={IntroImg2} alt='' height={405} width={726} />
@@ -119,12 +119,12 @@ class CaseTrusted extends React.Component {
 
         <div className='case-img clearfix'>
           <div className='col-sm-6 '>
-            <div className='case-img-wrapper -no-padding ta-c -xs-mb'>
+            <div className='case-img-wrapper  -no-padding ta-c -xs-mb'>
               <img src={DetailsUSCNoneImg} className='img-details-usn case-img'  alt='' />
             </div>
           </div>
           <div className='col-sm-6 '>
-            <div className='case-img-wrapper -no-padding ta-c'>
+            <div className='case-img-wrapper -mod-bg -no-padding ta-c'>
               <img src={DetailsUSCDoneImg} className='img-details-usn case-img -mt' alt='' />
             </div>
           </div>
