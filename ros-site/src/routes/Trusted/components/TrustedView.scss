@@ -1,0 +1,110 @@
+@import './../../../styles/variables';
+
+
+.splash {
+
+  opacity: 1;
+  transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+
+  &.isHide {
+    transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+    opacity: 0.01;
+  }
+
+  &.isShow {
+    transition: opacity $translate-animation ease-in, height $translate-animation ease-in;
+    opacity: 1;
+  }
+}
+
+
+.example-appear,
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active,
+.example-enter.example-enter-active {
+  opacity: 0.01;
+  transition: opacity 1000ms  ease-in;
+}
+
+.wrapper {
+  display: block;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 1000ms ease-in, height 1000ms ease-in;
+
+
+  &.isHide {
+    transition: opacity 1000ms ease-in, height 1000ms ease-in;
+    opacity: 0.01;
+  }
+
+  &.isShow {
+    transition: opacity 1000ms ease-in, height 1000ms ease-in;
+    opacity: 1;
+  }
+
+}
+
+.main-area {
+  padding-top: 40px;
+  //min-height: calc(100vh - 200px);
+
+}
+
+h1 {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.sophis-video-control {
+  display: none;
+}
+
+.bubble-row {
+  margin-bottom: 30px;
+
+  &.-first-bubble {
+    margin-top: calc(50vh - 240px);
+  }
+
+}
+
+@media (max-width: $screen-xs-max) {
+  .bubble-row.container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: calc(50vh - 190px);
+    }
+  }
+
+}
+
+@media (max-width: $screen-sm-min) and (max-height: $screen-xs-max-height) {
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: 0;
+    }
+  }
+
+  .bottom-links_wrapper {
+    position: relative !important;
+  }
+
+}
+
+@media (max-width: $screen-xs-min) {
+  .bubble-row {
+    &.-first-bubble {
+      margin-top: calc(50vh - 210px);
+    }
+  }
+
+}
+
