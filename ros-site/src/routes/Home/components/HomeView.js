@@ -21,6 +21,7 @@ import throttle from 'lodash.throttle'
 import Popup from 'components/Popup/Popup.js'
 import CaseTrusted from 'components/CaseTrusted/CaseTrusted.js'
 import Header from './../../../layouts/Header/index.js'
+import Scroll from 'react-scroll'
 
 //const achievements = [
 //  {
@@ -82,7 +83,9 @@ class HomeView extends React.Component {
   }
 
   componentDidMount() {
-    var throttled = throttle(() => {this.props.scrollWindow(window.pageYOffset)}, 500);
+    var throttled = throttle(() => {
+      this.props.scrollWindow(window.pageYOffset)
+    }, 500);
     window.onscroll = throttled;
   }
 
@@ -93,16 +96,16 @@ class HomeView extends React.Component {
     //this.addAnimation(createAnim)
   }
 
-  getVideo(){
+  getVideo() {
     return (
       <video id="background-video" autoplay="autoplay" loop autoPlay>
-        <source src={video} type="video/mp4" />
+        <source src={video} type="video/mp4"/>
         Your browser does not support the video tag.
       </video>
     )
   }
 
-  getHash () {
+  getHash() {
     return window.location.hash
   }
 
@@ -114,19 +117,25 @@ class HomeView extends React.Component {
     pathname = pathname.substr(1);
     const elems = pathname.split('-');
 
-    elems.forEach( (elem, index) => {
+    elems.forEach((elem, index) => {
       if (elem === 'projects') {
-        arr.push( <Projects key='projects' showCasePopup={this.handleShowCasePopup} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} lang={this.props.i18n.locale} index={index} isHiddenText={this.props.isHiddenText} />)
+        arr.push(<Projects key='projects' showCasePopup={this.handleShowCasePopup} isTouch={this.isTouch}
+                           isClicked={this.clikedElem === '#'+elem} yPosition={this.props.yPosition}
+                           lang={this.props.i18n.locale} index={index} isHiddenText={this.props.isHiddenText}/>)
       }
       if (elem === 'gif') {
-        arr.push( <Gif key='gif' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
+        arr.push(<Gif key='gif' index={index} isTouch={this.isTouch} isClicked={this.clikedElem === '#'+elem}
+                      yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText}/>)
       }
       if (elem === 'contacts') {
-        arr.push( <Contacts key='contacts' index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition}  isHiddenText={this.props.isHiddenText}/>)
+        arr.push(<Contacts key='contacts' index={index} isTouch={this.isTouch} isClicked={this.clikedElem === '#'+elem}
+                           yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText}/>)
       }
 
       if (elem === 'otherSite') {
-        arr.push( <OtherSite key='OtherSite' locale={this.props.i18n.locale} index={index} isTouch={this.isTouch} isClicked = {this.clikedElem === '#'+elem} yPosition={this.props.yPosition} isHiddenText={this.props.isHiddenText} />)
+        arr.push(<OtherSite key='OtherSite' locale={this.props.i18n.locale} index={index} isTouch={this.isTouch}
+                            isClicked={this.clikedElem === '#'+elem} yPosition={this.props.yPosition}
+                            isHiddenText={this.props.isHiddenText}/>)
       }
 
     });
@@ -139,36 +148,36 @@ class HomeView extends React.Component {
     )
   }
 
-  getFinishBlock () {
+  getFinishBlock() {
     let pathname = this.getHash()
     const elems = pathname.split('-')
 
     if (elems.length === 4) {
       if (elems[3] !== 'otherSite') {
-        return <FinishSection isHiddenText={this.props.isHiddenText} isFull yPosition={this.props.yPosition} />
+        return <FinishSection isHiddenText={this.props.isHiddenText} isFull yPosition={this.props.yPosition}/>
       } else {
-        return <FinishSection isHiddenText={this.props.isHiddenText} yPosition={this.props.yPosition} />
+        return <FinishSection isHiddenText={this.props.isHiddenText} yPosition={this.props.yPosition}/>
       }
     }
   }
 
-  showScreen () {
+  showScreen() {
     if (this.state.isSplash) {
-     this.setState({
-          isSplash: false
-     })
+      this.setState({
+        isSplash: false
+      })
 
-     setTimeout(() => {
+      setTimeout(() => {
         this.setState({
           isHiddenSplash: true
         })
-     }, 300)
+      }, 300)
     }
   }
 
-  handlerClosePopup () {
-    var body = document.getElementById('body')
-    body.className = ''
+  handlerClosePopup() {
+    //var body = document.getElementById('body')
+    //body.className = ''
     this.props.showCasePopup('')
     this.props.visableCasePopup(false)
     let pathname = this.getHash()
@@ -180,26 +189,32 @@ class HomeView extends React.Component {
     }
     const newPath = elems.join('-')
     this.props.setHash(newPath)
+    Scroll.animateScroll.scrollTo(0, { duration: 0})
+
+    // setTimeout(() => {
+    //  Scroll.animateScroll.scrollTo('trusted')
+    // }, 200)
   }
 
-  handleShowCasePopup (val) {
-    var body = document.getElementById('body')
-    body.className = '-hide'
+  handleShowCasePopup(val) {
+    //var body = document.getElementById('body')
+    //body.className = '-hide'
 
     this.props.showCasePopup(val)
 
     if (this.isInitPopup) {
-      this.props.changeHash('#'+val)
+      this.props.changeHash('#' + val)
     } else {
       this.isInitPopup = true
     }
 
-     setTimeout(() => {
-       this.props.visableCasePopup(true)
-     }, 0)
+    Scroll.animateScroll.scrollTo(0, { duration: 0});
+    setTimeout(() => {
+      this.props.visableCasePopup(true)
+    }, 300)
   }
 
-  initPopup(){
+  initPopup() {
     const popups = ['trusted']
 
     let pathname = this.getHash()
@@ -214,7 +229,7 @@ class HomeView extends React.Component {
     this.isInitPopup = true
   }
 
-  getCasePopup () {
+  getCasePopup() {
     if (this.props.shownCasePopup) {
       return (
         <Popup onClose={this.handlerClosePopup} visabledCasePopup={this.props.visabledCasePopup}>
@@ -224,7 +239,7 @@ class HomeView extends React.Component {
     }
   }
 
-  render () {
+  render() {
 
     const getStyleWrapper = () => {
       // const hash = this.getHash();
@@ -241,7 +256,10 @@ class HomeView extends React.Component {
 
     return (
       <div>
+
+        {!this.props.shownCasePopup &&
         <Header />
+        }
         {!this.state.isHiddenSplash &&
         <div className={cx('splash', this.state.isSplash ? 'isShow' : 'isHide')}
              style={
@@ -256,7 +274,8 @@ class HomeView extends React.Component {
         </div>
         }
         {this.getCasePopup()}
-        <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()} >
+        {!this.props.shownCasePopup &&
+        <div className="main-area" name='box' id="hiInit" style={getStyleWrapper()}>
           <div className="ta-c bubble-row -first-bubble">
             <Bubble isHiddenText={this.props.isHiddenText} className="w_45 br-all">
               {tr('HI_ROSBERRY', true)}
@@ -265,9 +284,13 @@ class HomeView extends React.Component {
           {this.getView()}
 
         </div>
+        }
+        {!this.props.shownCasePopup &&
         <div name="navWrapper" style={{opacity: 1}}>
-          <Nav onChangeHash={this.handleNavigateClick} isTouch={this.isTouch} hashState={this.props.hashState} hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
+          <Nav onChangeHash={this.handleNavigateClick} isTouch={this.isTouch} hashState={this.props.hashState}
+               hash={this.props.hash} isHiddenText={this.props.isHiddenText}/>
         </div>
+        }
       </div>
     )
   }
@@ -283,13 +306,13 @@ const mapDispatchToProps = {
 }
 
 const mapStateToProps = (state) => ({
-  i18n : state.i18n,
-  hash : state.location.hash,
+  i18n: state.i18n,
+  hash: state.location.hash,
   isHiddenText: state.general.isHiddenText,
-  hashState : state.general.hashState,
+  hashState: state.general.hashState,
   yPosition: state.general.yPosition,
-  shownCasePopup:  state.general.shownCasePopup,
-  visabledCasePopup:  state.general.visabledCasePopup
+  shownCasePopup: state.general.shownCasePopup,
+  visabledCasePopup: state.general.visabledCasePopup
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(GSAP(HomeView))

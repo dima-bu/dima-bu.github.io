@@ -72,8 +72,10 @@ class CaseTrusted extends React.Component {
         <h2 className='case-subtitle case-width'>{tr('TRUSTED_STREAMS_TITLE')}</h2>
         <p className='case-paragraph case-width'>{tr('TRUSTED_STREAMS_TEXT_1')}</p>
         <div className='img-hand case-img g-radial-bg'>
-          <img className='img-hand_gif' src={handGif} alt='' />
-          <img src={HandImg} className='img-hand_hand' alt='' />
+          <div>
+            <img className='img-hand_gif' src={handGif} alt='' />
+            <img src={HandImg} className='img-hand_hand' alt='' />
+          </div>
         </div>
         <p className='case-paragraph case-width'>{tr('TRUSTED_STREAMS_TEXT_2')}</p>
 

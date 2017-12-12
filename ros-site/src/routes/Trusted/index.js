@@ -9,14 +9,14 @@ export default (store) => ({
     require.ensure([], (require) => {
       /*  Webpack - use require callback to define
        dependencies for bundling   */
-      const Counter = require('./components/TrustedView').default
+      const Trusted = require('./components/TrustedView').default
       const reducer = require('./modules/trusted').default
 
       /*  Add the reducer to the store on key 'counter'  */
       injectReducer(store, { key: 'trusted', reducer })
 
       /*  Return getComponent   */
-      cb(null, Counter)
+      cb(null, Trusted)
 
       /* Webpack named bundle   */
     }, 'trusted')
