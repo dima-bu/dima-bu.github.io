@@ -10,7 +10,7 @@ import TrustedRoute from './Trusted'
 
 export const createRoutes = (store) => ({
   path        : '/ros-site/dist',
-  //path        : (__DEV__ ? '/' : '/'),
+  // path        : (__DEV__ ? '/' : '/'),
   component   : CoreLayout,
   indexRoute  : Home,
   childRoutes : [

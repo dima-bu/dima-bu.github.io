@@ -169,10 +169,10 @@ class CaseTrusted extends React.Component {
         <p className='case-paragraph case-width'>{tr('TRUSTED_VERSIONS_TEXT_2')}</p>
 
         <div className='case-download-wrapper' >
-              <a className='icon-link project-available' href='#' target='_blank'>
+              <a className='icon-link project-available' href='https://play.google.com/store/apps/details?id=com.thetrustedinsight.tiapp' target='_blank'>
                 <DownloadAndroid lang={this.props.locale} height={80} width={270} />
               </a>
-              <a className='icon-link project-available' href='#' target='_blank'>
+              <a className='icon-link project-available' href='https://itunes.apple.com/us/app/trusted-insight-global-network/id1122381006?mt=8' target='_blank'>
                 <DownloadApple lang={this.props.locale} height={80} width={270} />
               </a>
             </div>
