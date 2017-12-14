@@ -63,7 +63,7 @@ class CaseTrusted extends React.Component {
           {tr('TRUSTED_INTRO')}
           <br/>
           <img src={TrustedLogo}  className='trusted-logo -mr' alt='' />
-          <a href='href://thetrustedinsight.com' className='case-link'>thetrustedinsight.com</a>
+          <a href='http://thetrustedinsight.com' target="_blank" className='case-link'>thetrustedinsight.com</a>
         </p>
         <h2 className='case-subtitle case-width'>{tr('TRUSTED_USERS_TITLE')}</h2>
         <div className='img-user case-img' style={{backgroundImage: `url(${UsersImg})`}}></div>
