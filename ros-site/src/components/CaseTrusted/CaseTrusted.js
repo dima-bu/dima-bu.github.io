@@ -38,11 +38,22 @@ import DownloadAndroid from 'components/SVG/DownloadAndroid'
 import DownloadApple from 'components/SVG/DownloadApple'
 import Tweet from 'components/Tweet/index'
 
+import Slider from 'react-slick'
+
 class CaseTrusted extends React.Component {
   constructor (props) {
     super(props)
   }
   render () {
+    const settings = {
+      dots: false,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    }
+
     return (
       <div>
         <CaseHeader
@@ -146,8 +157,24 @@ class CaseTrusted extends React.Component {
 
         <h2 className='case-subtitle case-width'>{tr('TRUSTED_VERSIONS_TITLE')}</h2>
         <p className='case-paragraph case-width'>{tr('TRUSTED_VERSIONS_TEXT_1')}</p>
-        <div className='img-versions case-img'>
-          <div className="version-title_wrapper">
+        <div className='img-versions case-img hidden-sm hidden-md hidden-lg hidden-xl' >
+          <Slider {...settings}>
+            <div className='col-sm-4 col-xs-4 img-versions_img img-versions_img_col-1'>
+              <img src={VersionsImg1v1} alt='' width='320' />
+              <img src={VersionsImg1v2} alt='' width='320' />
+            </div>
+            <div className='col-sm-4 col-xs-4 img-versions_img img-versions_img_col-2'>
+              <img src={VersionsImg2v1} alt='' width='320' />
+              <img src={VersionsImg2v2} alt='' width='320' />
+            </div>
+            <div className='col-sm-4  col-xs-4 img-versions_img img-versions_img_col-3'>
+              <img src={VersionsImg3v1} alt='' width='320' />
+              <img src={VersionsImg3v2} alt='' width='320' />
+            </div>
+        </Slider>
+        </div>
+        <div className='img-versions case-img hidden-xs' >
+          <div className='version-title_wrapper'>
             <div className='version-title'>Version 1.0</div>
             <div className='version-title'>Version 2.0</div>
           </div>

@@ -15,6 +15,10 @@
   background-position: 50% 50%;
 }
 
+.img-versions {
+  overflow: hidden;
+}
+
 .img-user {
   height: 550px;
 }
@@ -175,8 +179,6 @@
   }
 }
 
-
-
 .img-details-alex {
   max-width: 518px;
   height: auto;
@@ -332,6 +334,11 @@
       top: 73px;
       margin-left: 4px;
     }
+  }
+
+  .img-versions {
+    padding: 30px 60px;
+
   }
 
   .img-user  {

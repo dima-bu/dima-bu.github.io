@@ -16,7 +16,7 @@ class Tweet extends React.Component {
           </div>
           <p className='tweet-message'>
             {tr('TRUSTED_TWEET_TEXT', true)}
-            <a href='https://bit.ly/ASdcw' target='_blank'>https://bit.ly/ASdcw</a>
+            <a href='http://bit.ly/2zdHWeR' target='_blank'>https://bit.ly/ASdcw</a>
           </p>
         </div>
       </div>
