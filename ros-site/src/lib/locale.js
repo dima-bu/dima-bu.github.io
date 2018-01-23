@@ -85,22 +85,24 @@ export const formatText = (result) => {
 
     return newResult;
   } else {
-   if (result) {
-     let res = flatMap(result.split('/n'), function (part) {
-       return [part, <br />];
-     });
-     res.pop();
-     return res;
-   }
+    if (result) {
+      let res = flatMap(result.split('/n'), function (part) {
+        return [part, <br />];
+      });
+      res.pop();
+      return res;
+    }
   }
   return result;
 };
 
 export const jsonp = (url, callback) => {
+  debugger;
   let callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
   window[callbackName] = function(data) {
     delete window[callbackName];
     document.body.removeChild(script);
+    debugger;
     callback(data);
   };
 
@@ -111,23 +113,24 @@ export const jsonp = (url, callback) => {
 
 export const jsonpPromise = (url) => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.indexOf('ru') || userLang.indexOf('RU')) {
-        resolve('ru')
+    // setTimeout(() => {
+    //   const userLang = navigator.language || navigator.userLanguage;
+    //   if (userLang.indexOf('ru') || userLang.indexOf('RU')) {
+    //     resolve('ru')
+    //   } else {
+    //     resolve('en')
+    //   }
+    //
+    // }, 0);
+
+    jsonp(url, (data) => {
+      debugger
+      if (data && data['prefered_language']) {
+        resolve(data['prefered_language'])
       } else {
-        resolve('en')
+        reject('jsonp')
       }
-
-    }, 0);
-
-    // jsonp(url, data => {
-    //  if (data && data['X-Appengine-Country']) {
-    //    resolve(data['X-Appengine-Country'])
-    //  } else {
-    //    reject('jsonpPromise')
-    //  }
-    // })
+    })
   })
 }
 
@@ -150,7 +153,7 @@ export const initTranslationsObject = () => {
     }))
   });
 
- // promisses.push(jsonpPromise('http://ajaxhttpheaders.appspot.com'))
+  // promisses.push(jsonpPromise('http://ajaxhttpheaders.appspot.com'))
 
   return Promise.all(promisses).then((values) => {
     return values;
@@ -159,4 +162,3 @@ export const initTranslationsObject = () => {
   });
 
 };
-

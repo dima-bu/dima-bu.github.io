@@ -9,7 +9,8 @@ import TrustedRoute from './Trusted'
     PlainRoute objects to build route definitions.   */
 
 export const createRoutes = (store) => ({
-  path        : '/ros-site/dist',
+  //path        : '/ros-site/dist',
+  path        : '/',
   //path        : (__DEV__ ? '/' : '/'),
   component   : CoreLayout,
   indexRoute  : Home,

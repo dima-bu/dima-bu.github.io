@@ -53,20 +53,20 @@ export default (initialState = {}) => {
 
     store.dispatch(loadTranslations(translationsObject));
 
-     if (sessionStorage.getItem('lang')) {
-      store.dispatch(setLocale(sessionStorage.getItem('lang')))
-     } else {
-
-    jsonpPromise('http://ajaxhttpheaders.appspot.com').then((resp) => {
-      store.dispatch(setLocale(resp))
+    if (localStorage.getItem('lang')) {
+      store.dispatch(setLocale(localStorage.getItem('lang')))
+    } else {
+      jsonpPromise('https://dev.rosberry.com/lang.js?full_info=1&languages=ru,en').then((resp) => {
+        store.dispatch(setLocale(resp))
         // if (data && data['X-Appengine-Country'] && data['X-Appengine-Country'] === 'RU') {
         //      store.dispatch(setLocale('ru'))
         //    } else {
         //      store.dispatch(setLocale('en'))
         //    }
-    })
+      }).catch((e) =>{
+        store.dispatch(setLocale('en'))
+      })
     }
-
   })
 
   if (module.hot) {

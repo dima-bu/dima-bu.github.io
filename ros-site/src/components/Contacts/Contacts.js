@@ -213,7 +213,7 @@ class Contacts extends React.Component {
                 </Link>
               </div>
               <div style={{ marginBottom: '15px' }}>
-                <Link caption='rosberry4u'>
+                <Link caption='rosberry4u' url='skype:rosberry4u?chat'>
                   <Skype />
                 </Link>
               </div>

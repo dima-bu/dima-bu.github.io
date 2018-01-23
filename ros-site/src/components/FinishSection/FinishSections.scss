@@ -74,6 +74,7 @@
     padding-left: 40px;
     .bubble {
       text-align: left;
+      width: 100%;
     }
   }
   
@@ -84,5 +85,51 @@
    .unicorn-section.bubble-row.container.secondTouch .bubble {
       text-align: center;
    }
+
+    .secondTouch {
+      padding-left: 0;
+      text-align: center;
+    
+        .unicorn_wrapper {
+          width: auto;
+          height: auto;
+        }
+    
+        .bubble.w_70p {
+          width: 100%;
+          margin-left: 0;
+        }
+    }
+
+}
+
+@media (max-width: $screen-xs ) {
+  
+    .unicorn_wrapper {
+      width: auto;
+      height: auto;
+    }
+  
+    .unicorn-section_text {
+      position: relative;
+      display: block;
+      margin-left: 0;
+    }
+  
+  
+    .secondTouch {
+      padding-left: 0;
+      text-align: center;
+    
+        .unicorn_wrapper {
+          width: auto;
+          height: auto;
+        }
+    
+        .bubble.w_70p {
+          width: 100%;
+          margin-left: 0;
+        }
+    }
 }
 

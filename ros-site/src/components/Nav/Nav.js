@@ -54,7 +54,7 @@ class Nav extends Component {
     }
 
     const itemsMap = items.filter(item => {
-      if ((!isTouch || hash === '') && item.initHidden) {
+      if (hash === ''&& item.initHidden) {
         return false
       }
       return (hash.indexOf(item.path) === -1)
