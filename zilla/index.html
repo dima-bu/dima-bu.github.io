@@ -29,10 +29,6 @@ http://www.templatemo.com/tm-492-app-starter
 <!-- Main css -->
 <link rel="stylesheet" href="css/style.css">
 
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af98ce915056a92dc0d7c04fffeda8bddc83a0edb1d4d508725af1fecf882a82a&amp;id=mymap"></script>
-
-
-
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -64,10 +60,10 @@ http://www.templatemo.com/tm-492-app-starter
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#home" class="smoothScroll">Home</a></li>
-				<li><a href="#about" class="smoothScroll">About</a></li>
+				<li><a href="#divider" class="smoothScroll">About</a></li>
 				<li><a href="#screenshot" class="smoothScroll">Portfolio</a></li>
-                    <li><a href="#pricing" class="smoothScroll">Pricing</a></li>
-                    <li><a href="#contactFooter" class="smoothScroll">Contact</a></li>
+<!--                     <li><a href="#pricing" class="smoothScroll">Pricing</a></li>
+ -->                    <li><a href="#contactFooter" class="smoothScroll">Contact</a></li>
 <!--         		<li><a href="#" data-toggle="modal" data-target="#modal1">Contact</a></li>
  -->			</ul>
 		</div>
@@ -103,7 +99,7 @@ http://www.templatemo.com/tm-492-app-starter
 
 <!-- About Section -->
 
-<section id="about">
+<!-- <section id="about">
      <div class="container">
           <div class="row">
 
@@ -152,8 +148,8 @@ http://www.templatemo.com/tm-492-app-starter
 
           </div>
      </div>
-</section>
-
+</section> -->
+ -->
 
 <!-- Divider Section -->
 
@@ -244,9 +240,9 @@ http://www.templatemo.com/tm-492-app-starter
 </section>
 
 
-<!-- Pricing Section -->
+<!--  Pricing Section -->
 
-<section id="pricing">
+<!-- <section id="pricing">
      <div class="container">
           <div class="row">
 
@@ -307,8 +303,8 @@ http://www.templatemo.com/tm-492-app-starter
 
           </div>
      </div>
-</section>
-
+</section> -->
+ -->
 
 <!-- Newsletter Section -->
 
@@ -366,7 +362,7 @@ http://www.templatemo.com/tm-492-app-starter
                          </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
-                         <div id="mymap"  style="width: 580px; height: 400px;margin-left: 20px"></div> 
+                       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:580px; margin-left: 20px'><div id='gmap_canvas' style='height:400px;width:580px;'></div><div></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(55.97910539999999,-3.223102199999971),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(55.97910539999999,-3.223102199999971)});infowindow = new google.maps.InfoWindow({content:'<strong>Zilla Technology</strong><br>39/5 Granton Crescent Edinburgh EH5 1BN United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
                     </div>
 
                </div>
@@ -374,8 +370,6 @@ http://www.templatemo.com/tm-492-app-starter
      </div>
 </section>
 
-
-<!-- Footer Section -->
 
 <footer>
 	<div class="container">
